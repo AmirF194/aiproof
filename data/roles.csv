@@ -1,0 +1,7 @@
+role,demand_growth,automation_resistance,salary_ceiling,skill_moat,cyclical_stability,salary_low_usd,salary_high_usd,total_score
+AI/ML Engineer,10,10,10,9,6,180000,450000,91
+DevOps / Platform,8,9,8,8,9,150000,320000,84
+Backend Engineer,7,7,7,7,9,140000,280000,76
+Mobile Developer,6,6,7,7,7,135000,260000,64
+Frontend Engineer,6,4,6,6,7,120000,230000,58
+QA Engineer,4,3,4,4,6,80000,180000,42

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <style>
+    .title { font-size: 18px; font-weight: 600; fill: #111; }
+    .subtitle { font-size: 12px; fill: #666; }
+    .label { font-size: 13px; fill: #222; }
+    .value { font-size: 12px; font-weight: 600; fill: #111; }
+    .axis { font-size: 11px; fill: #888; }
+    .grid { stroke: #eee; stroke-width: 1; }
+  </style>
+  <rect width="820" height="400" fill="#fff"/>
+  <text x="20" y="28" class="title">Senior IC Total Comp Range (USD, US market)</text>
+  <text x="20" y="46" class="subtitle">Bar = low–high band for senior IC. Source: Levels.fyi 2025, normalized.</text>
+
+  <!-- x scale: $0 = 220, $500K = 740. 1.04 px / $1000 -->
+  <g>
+    <line x1="220" y1="70" x2="220" y2="370" class="grid"/>
+    <line x1="324" y1="70" x2="324" y2="370" class="grid"/>
+    <line x1="428" y1="70" x2="428" y2="370" class="grid"/>
+    <line x1="532" y1="70" x2="532" y2="370" class="grid"/>
+    <line x1="636" y1="70" x2="636" y2="370" class="grid"/>
+    <line x1="740" y1="70" x2="740" y2="370" class="grid"/>
+    <text x="220" y="385" text-anchor="middle" class="axis">$0</text>
+    <text x="324" y="385" text-anchor="middle" class="axis">$100K</text>
+    <text x="428" y="385" text-anchor="middle" class="axis">$200K</text>
+    <text x="532" y="385" text-anchor="middle" class="axis">$300K</text>
+    <text x="636" y="385" text-anchor="middle" class="axis">$400K</text>
+    <text x="740" y="385" text-anchor="middle" class="axis">$500K</text>
+  </g>
+
+  <!-- AI/ML 180-450 -->
+  <text x="210" y="96" text-anchor="end" class="label">AI/ML Engineer</text>
+  <rect x="407.2" y="80" width="280.8" height="22" fill="#16a34a" rx="3"/>
+  <text x="407.2" y="76" class="value">$180K</text>
+  <text x="688" y="76" class="value">$450K</text>
+
+  <!-- DevOps 150-320 -->
+  <text x="210" y="136" text-anchor="end" class="label">DevOps / Platform</text>
+  <rect x="376" y="120" width="176.8" height="22" fill="#22c55e" rx="3"/>
+  <text x="376" y="116" class="value">$150K</text>
+  <text x="552.8" y="116" class="value">$320K</text>
+
+  <!-- Backend 140-280 -->
+  <text x="210" y="176" text-anchor="end" class="label">Backend Engineer</text>
+  <rect x="365.6" y="160" width="145.6" height="22" fill="#84cc16" rx="3"/>
+  <text x="365.6" y="156" class="value">$140K</text>
+  <text x="511.2" y="156" class="value">$280K</text>
+
+  <!-- Mobile 135-260 -->
+  <text x="210" y="216" text-anchor="end" class="label">Mobile Developer</text>
+  <rect x="360.4" y="200" width="130" height="22" fill="#eab308" rx="3"/>
+  <text x="360.4" y="196" class="value">$135K</text>
+  <text x="490.4" y="196" class="value">$260K</text>
+
+  <!-- Frontend 120-230 -->
+  <text x="210" y="256" text-anchor="end" class="label">Frontend Engineer</text>
+  <rect x="344.8" y="240" width="114.4" height="22" fill="#f97316" rx="3"/>
+  <text x="344.8" y="236" class="value">$120K</text>
+  <text x="459.2" y="236" class="value">$230K</text>
+
+  <!-- QA 80-180 -->
+  <text x="210" y="296" text-anchor="end" class="label">QA Engineer</text>
+  <rect x="303.2" y="280" width="104" height="22" fill="#dc2626" rx="3"/>
+  <text x="303.2" y="276" class="value">$80K</text>
+  <text x="407.2" y="276" class="value">$180K</text>
+</svg>
