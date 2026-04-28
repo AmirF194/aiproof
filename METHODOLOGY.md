@@ -4,20 +4,31 @@ The scoring rubric, axis definitions, weights, sources, and limitations behind t
 
 ## Step 1 — Role identification
 
-The 36 roles in [data/roles.csv](data/roles.csv) cover every distinct, salaried function found in modern software organizations of 50+ engineers. Roles are grouped into 8 categories:
+The original frame covered 36 broad functions found in modern software organizations of 50+ engineers. The current dataset expands that to **1,000 distinct, posting-real roles** — every entry corresponds to a job title that appears as its own listing on Indeed, LinkedIn, or Levels.fyi today (2026). Roles are grouped into the same 8 categories:
 
 | Category | Roles | Rationale |
 | --- | --- | --- |
-| Engineering Leadership | 2 | Tech Lead and EM tracks — they win or lose together. |
-| Security | 4 | Distinct subdomains: general, AppSec, Cloud, Offensive. |
-| Data & AI | 7 | Bimodal — splits sharply between builders and consumers. |
-| Platform & Infrastructure | 4 | Platform/SRE/DevOps/Cloud are the dominant infra titles. |
-| Engineering (core IC) | 6 | Backend, Frontend, Full-Stack, iOS, Android, Systems, Embedded. |
-| Quality & Testing | 3 | Manual, Automation, SDET — three distinct curves. |
-| Product & Design | 5 | TPM, PM, UX, Product Designer, UI Designer. |
-| Specialized & Emerging | 3 | Solutions Architect, DX, Prompt Engineer. |
+| Engineering (core IC) | 405 | Backend / frontend / mobile / systems / game / graphics / robotics — fragments hardest because language and framework are primary hiring filters. |
+| Data & AI | 178 | Bimodal — splits sharply between builders (ML / LLM / agent / data eng) and consumers (analysts, BI, prompt). |
+| Platform & Infrastructure | 121 | Platform / SRE / DevOps / cloud / database / network / IT operations as one stack. |
+| Specialized & Emerging | 100 | Sales eng, DevRel, TPM, RPA, SaaS-vendor specialists, integration platforms. |
+| Security | 75 | AppSec, cloud, offensive, IR, GRC, IAM, crypto, AI-safety adjacent. |
+| Product & Design | 48 | PM ladder × discipline (TPM, AI PM, growth, platform); design ladder + design eng. |
+| Engineering Leadership | 45 | C-suite, VP, director, EM ladder, IC ladder (Staff → Distinguished → Fellow). |
+| Quality & Testing | 28 | Manual, automation, SDET, perf, security QA, test architect. |
 
-Roles are deliberately kept distinct even when titles overlap in industry use (e.g., Backend vs. Full-Stack, Cloud vs. DevOps vs. Platform). The point is to expose where the underlying work — not the title — is durable.
+### How distinctness is decided
+
+To reach 1,000 without padding, four legitimate dimensions of distinctness are used. A row earns a place only when it would post as its own job listing — not as a filter on a more generic posting:
+
+1. **Function** (~250 base) — Backend Engineer vs SRE vs Compiler Engineer vs ML Engineer.
+2. **Seniority**, when the comp band shifts >50% — Junior / Mid / Senior / Staff / Principal for IC; Manager / Senior / Group / Director / VP / C-suite for management.
+3. **Stack or framework**, when it is the primary hiring filter — Solidity Developer, Salesforce Developer, COBOL Developer, SAP ABAP Developer, Java Spring vs FastAPI vs Rails.
+4. **Vertical**, when domain knowledge dominates — HFT Engineer, Bioinformatics Engineer, Automotive Security Engineer, HL7/FHIR Integration Engineer.
+
+Roles are deliberately kept distinct even when titles overlap in industry use (e.g., Backend vs. Full-Stack, Cloud vs. DevOps vs. Platform). The point is to expose where the underlying work — not the title — is durable. Duplicates with the *same* underlying work but different vendors (e.g., Salesforce Developer vs Apex Developer) are kept only when the hiring market treats them as separate filters.
+
+The full role list is generated from a single source of truth, [scripts/data_collection/generate_roles.py](scripts/data_collection/generate_roles.py), which emits [data/roles.csv](data/roles.csv) deterministically. Edit the script (not the CSV) to add, remove, or rescore roles — the cleaning step verifies that scores and tiers match the methodology and fails the build on drift.
 
 ## Step 2 — Per-role evaluation criteria
 
@@ -79,13 +90,17 @@ Roles are ranked by total score, descending. Ties are common (multiple roles at 
 
 ## Step 5 — Tier interpretation
 
+The tier cutoffs are calibrated to the curated `data/roles.csv` distribution and live in [scripts/analysis/_common.py](scripts/analysis/_common.py) — the cleaning step recomputes scores from the four axes and verifies tier assignments match.
+
 | Tier | Score | Meaning |
 | --- | --- | --- |
-| **Fortress** | 85–100 | Build a career here without hedging. Demand and automation resistance both strong. |
-| **Safe** | 70–84 | Senior path is durable. Junior path is harder than it was in 2020. |
-| **Stable** | 55–69 | Specialize within the role or get exposed. Generalist track is the soft spot. |
-| **Exposed** | 40–54 | Plan an adjacent move within 2–3 years. Headcount compresses, salaries plateau. |
-| **At risk** | <40 | Plan a transition. Headcount shrinks every year through 2030. |
+| **Fortress** | 83–100 | Build a career here without hedging. Demand and automation resistance both strong. |
+| **Safe** | 70–82 | Senior path is durable. Junior path is harder than it was in 2020. |
+| **Stable** | 58–69 | Specialize within the role or get exposed. Generalist track is the soft spot. |
+| **Exposed** | 41–57 | Plan an adjacent move within 2–3 years. Headcount compresses, salaries plateau. |
+| **At risk** | ≤40 | Plan a transition. Headcount shrinks every year through 2030. |
+
+Across the 1,000-role dataset the tiers fall: Fortress 79, Safe 315, Stable 329, Exposed 223, At risk 54. The Stable + Exposed bands together hold 55% of all software/AI job titles — the "specialize or compress" middle is where most career decisions actually sit.
 
 ## Sources
 
@@ -155,13 +170,14 @@ No proprietary data is used. All cited sources are public or publicly summarized
 
 ## Re-running the analysis
 
-Raw scoring data is in [data/roles.csv](data/roles.csv) — every score and weight is exposed so you can re-weight if you disagree with the methodology. To reproduce charts after editing data:
+Raw scoring data lives in [data/roles.csv](data/roles.csv), but it is generated — edit [scripts/data_collection/generate_roles.py](scripts/data_collection/generate_roles.py) and re-run the pipeline:
 
 ```bash
-python3 scripts/generate_charts.py
+python3 scripts/data_collection/generate_roles.py   # rebuild data/roles.csv
+python3 scripts/run_pipeline.py                     # collection → cleaning → analysis → charts → rasterize
 ```
 
-No third-party dependencies. Pure-Python SVG generation; runs in <1 second.
+The cleaning step recomputes every score from the four axes and fails the build if tiers drift from the published table. Charts are pure-Python SVG; rasterization to PNG (for the LaTeX PDF) uses `cairosvg`. The pipeline runs in under 5 seconds end-to-end with no other third-party dependencies.
 
 ## Limitations and caveats
 

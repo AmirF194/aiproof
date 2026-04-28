@@ -1,6 +1,6 @@
 # Career Paths — Entry Points, Pivots, Skill Combinations
 
-Practical paths derived from the 36-role ranking. For why each role lands where it does, see [REPORT.md](../REPORT.md). For the rubric, [METHODOLOGY.md](../METHODOLOGY.md). For 2025–26 sourcing, [INSIGHTS.md](../INSIGHTS.md).
+Practical paths derived from the original 36-role ranking. The dataset has since expanded to 1,000 distinct titles ([REPORT.md](../REPORT.md)) but the structural transition paths described below — Manual QA → SDET → AI Eval, Frontend → Design Systems, Data Analyst → Analytics Eng → Data Eng — hold across the expansion because they describe shifts in *function*, not in *title*. For the rubric, [METHODOLOGY.md](../METHODOLOGY.md). For 2025–26 sourcing, [INSIGHTS.md](../INSIGHTS.md).
 
 ---
 

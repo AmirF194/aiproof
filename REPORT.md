@@ -1,588 +1,330 @@
 # Per-Role Analysis (2026–2035)
 
-All 36 roles, grouped by category. Each entry covers the four scoring axes plus salary range, key dynamics, and risks. Scoring methodology in [METHODOLOGY.md](METHODOLOGY.md). Raw data in [data/roles.csv](data/roles.csv). For the deep research synthesis with citations per claim, see [INSIGHTS.md](INSIGHTS.md).
+The full **1,000-role** dataset, scored on demand, automation resistance, skill depth, and strategic importance. Methodology in [METHODOLOGY.md](METHODOLOGY.md). Raw inputs in [data/roles.csv](data/roles.csv). Computed outputs (rankings, tier summaries, category averages) in [data/processed/](data/processed/). Deep research synthesis with citations in [INSIGHTS.md](INSIGHTS.md).
 
-**Reading the score**: 0–100, where higher = more durable over the 5–10 year window. Tiers: Fortress (85+), Safe (70–84), Stable (55–69), Exposed (40–54), At risk (<40).
+**Reading the score:** 0–100, where higher = more durable over the 5–10 year window.
+
+| Tier | Score | Verdict |
+| --- | --- | --- |
+| Fortress | 83+ | Build a career here without hedging. |
+| Safe | 70–82 | Senior path is durable. Junior path is harder than 2020. |
+| Stable | 58–69 | Specialize within the role or get exposed. |
+| Exposed | 41–57 | Plan an adjacent move within 2–3 years. |
+| At risk | ≤40 | Plan a transition. Headcount shrinks every year. |
+
+**Distribution across the 1,000 roles:** Fortress 79 · Safe 315 · Stable 329 · Exposed 223 · At risk 54.
+
+This file enumerates the **top of the ranking, the bottom, and the top + bottom of each category**. The full per-role table — all 1,000 rows — is [data/processed/role_ranking.csv](data/processed/role_ranking.csv).
 
 ---
 
-## Master ranking
+## Master ranking — Top 30
 
-| Rank | Role | Category | Score | Tier |
-| --- | --- | --- | --- | --- |
-| 1 | Staff Engineer / Tech Lead | Engineering Leadership | 94 | Fortress |
-| 2 | Security Engineer | Security | 92 | Fortress |
-| 3 | AI Research Engineer | Data & AI | 89 | Fortress |
-| 4 | ML Engineer | Data & AI | 87 | Fortress |
-| 4 | MLOps Engineer | Data & AI | 87 | Fortress |
-| 4 | Platform Engineer | Platform & Infrastructure | 87 | Fortress |
-| 4 | Application Security Engineer | Security | 87 | Fortress |
-| 4 | Cloud Security Engineer | Security | 87 | Fortress |
-| 9 | Site Reliability Engineer | Platform & Infrastructure | 84 | Fortress |
-| 9 | Offensive Security / Red Team | Security | 84 | Fortress |
-| 11 | Engineering Manager | Engineering Leadership | 83 | Safe |
-| 12 | Data Engineer | Data & AI | 82 | Safe |
-| 13 | Systems / Low-level Engineer | Engineering | 81 | Safe |
-| 14 | Technical Product Manager | Product & Design | 79 | Safe |
-| 14 | Solutions Architect | Specialized & Emerging | 79 | Safe |
-| 16 | Developer Experience Engineer | Specialized & Emerging | 75 | Safe |
-| 17 | Embedded Engineer | Engineering | 74 | Safe |
-| 18 | AI Application Engineer | Data & AI | 73 | Safe |
-| 18 | Product Manager | Product & Design | 73 | Safe |
-| 20 | Backend Engineer | Engineering | 72 | Safe |
-| 20 | DevOps Engineer | Platform & Infrastructure | 72 | Safe |
-| 22 | Cloud Engineer | Platform & Infrastructure | 67 | Stable |
-| 22 | UX Designer / Researcher | Product & Design | 67 | Stable |
-| 24 | Product Designer | Product & Design | 64 | Stable |
-| 24 | SDET / Test Infrastructure | Quality & Testing | 64 | Stable |
-| 26 | iOS Engineer | Engineering | 62 | Stable |
-| 26 | Android Engineer | Engineering | 62 | Stable |
-| 26 | Full-Stack Engineer | Engineering | 62 | Stable |
-| 29 | Analytics Engineer | Data & AI | 57 | Exposed |
-| 30 | Frontend Engineer | Engineering | 52 | Exposed |
-| 30 | Data Scientist | Data & AI | 52 | Exposed |
-| 32 | QA Automation | Quality & Testing | 40 | At risk |
-| 32 | UI Designer | Product & Design | 40 | At risk |
-| 34 | Data Analyst | Data & AI | 33 | At risk |
-| 35 | Prompt Engineer | Specialized & Emerging | 27 | At risk |
-| 36 | QA Manual | Quality & Testing | 20 | At risk |
+| Rank | Role | Category | Score |
+| --- | --- | --- | --- |
+| 1 | Chief AI Officer | Engineering Leadership | 94 |
+| 1 | Staff Engineer / Tech Lead | Engineering Leadership | 94 |
+| 1 | VP of AI / ML | Engineering Leadership | 94 |
+| 1 | Staff Security Engineer | Security | 94 |
+| 5 | Senior LLM Engineer | Data & AI | 92 |
+| 5 | Security Engineer | Security | 92 |
+| 5 | Senior Security Engineer | Security | 92 |
+| 8 | CTO | Engineering Leadership | 91 |
+| 8 | Principal Engineer | Engineering Leadership | 91 |
+| 8 | Senior Principal Engineer | Engineering Leadership | 91 |
+| 8 | Senior Staff Engineer | Engineering Leadership | 91 |
+| 12 | Chief Information Security Officer | Engineering Leadership | 90 |
+| 12 | VP of Engineering | Engineering Leadership | 90 |
+| 12 | VP of Security | Engineering Leadership | 90 |
+| 15 | AI Research Engineer | Data & AI | 89 |
+| 15 | AI Safety / Alignment Researcher | Data & AI | 89 |
+| 15 | Foundation Model Engineer | Data & AI | 89 |
+| 15 | LLM Research Scientist | Data & AI | 89 |
+| 15 | Senior AI Research Engineer | Data & AI | 89 |
+| 15 | Staff ML Engineer | Data & AI | 89 |
+| 15 | CUDA Engineer | Engineering | 89 |
+| 22 | Chief Architect | Engineering Leadership | 88 |
+| 22 | VP of Infrastructure | Engineering Leadership | 88 |
+| 22 | VP of Platform | Engineering Leadership | 88 |
+| 25 | AI Infrastructure Engineer | Data & AI | 87 |
+| 25 | LLM Engineer | Data & AI | 87 |
+| 25 | ML Engineer | Data & AI | 87 |
+| 25 | MLOps Engineer | Data & AI | 87 |
+| 25 | Senior ML Engineer | Data & AI | 87 |
+| 25 | SVP of Engineering | Engineering Leadership | 87 |
+
+**What the top reveals:** four clusters dominate the Fortress band — (1) the IC-staff and IC-principal track, (2) the AI/ML build path (LLM, foundation-model, ML systems, AI safety), (3) the security track at every seniority, (4) C-suite and VP roles whose work AI cannot meaningfully automate. Notice that **CUDA Engineer** lands in the top 21 — an ostensibly "low-level" role that sits at the structural bottleneck of every frontier-AI training run.
 
 ---
 
-## 1. Engineering Leadership
+## Bottom 20 — most at-risk
 
-### Staff Engineer / Tech Lead — **94 (Fortress)**
+| Rank | Role | Category | Score |
+| --- | --- | --- | --- |
+| 979 | Selenium Engineer | Quality & Testing | 35 |
+| 979 | No-code Developer / Maker | Specialized & Emerging | 35 |
+| 983 | Sigma / ThoughtSpot Developer | Data & AI | 34 |
+| 983 | Alpine.js Engineer | Engineering | 34 |
+| 983 | KaiOS Engineer | Engineering | 34 |
+| 983 | PowerBuilder Maintainer | Engineering | 34 |
+| 983 | Visual Basic / VB.NET Maintainer | Engineering | 34 |
+| 988 | Data Analyst | Data & AI | 33 |
+| 989 | Pardot Developer | Specialized & Emerging | 32 |
+| 990 | QA Manual Lead | Quality & Testing | 31 |
+| 991 | MicroStrategy Developer | Data & AI | 30 |
+| 991 | Game QA Tester | Engineering | 30 |
+| 991 | Desktop Support | Platform & Infrastructure | 30 |
+| 994 | Domo Developer | Data & AI | 29 |
+| 994 | Mode Analytics Developer | Data & AI | 29 |
+| 994 | ColdFusion Maintainer | Engineering | 29 |
+| 994 | jQuery Maintainer | Engineering | 29 |
+| 998 | Prompt Engineer | Data & AI | 27 |
+| 999 | Help Desk Tier 1 | Platform & Infrastructure | 25 |
+| 1000 | QA Manual | Quality & Testing | 20 |
 
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 9 | Every org of 50+ engineers needs them; supply does not scale. |
-| Automation Resistance | 9 | The role *is* judgment + cross-team coordination. AI cannot own this. |
-| Skill Depth | 10 | 10–15 years to reach the bar. Compounds slowly, holds value. |
-| Strategic Importance | 10 | Architectural decisions outlive the codebase. |
+**What the bottom reveals:** three patterns repeat — (1) **legacy stacks** with shrinking maintainer pools (ColdFusion, PowerBuilder, VB.NET, jQuery, Alpine.js, KaiOS) — these survive but the runway is short; (2) **vendor-bound BI / no-code tools** (MicroStrategy, Domo, Mode, Sigma, Pardot, no-code maker) — the work is real but the tooling is being eaten by LLM SQL and modern semantic layers; (3) **routine tier-1 / manual roles** (Help Desk, Manual QA, Desktop Support, Game QA Tester) — the textbook AI-replacement category.
 
-**Salary range**: $250K – $700K+ TC (US senior IC, public-company range).
-**Key dynamics**: AI raises the value of senior IC work because it lowers the cost of mid-level work. Companies hire fewer mid-engineers and pay staff more. The "missing middle" hypothesis bears out in 2025 levels.fyi data — staff comp grew 11% YoY while mid-level grew 2%.
-**Risks**: None within the window. Comp normalization possible after 2030 if AI displacement curves accelerate.
-
-### Engineering Manager — **83 (Fortress)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 7 | Steady. Span-of-control increasing as AI amplifies IC throughput. |
-| Automation Resistance | 9 | People management is among the least automatable functions. |
-| Skill Depth | 8 | Hard to develop; requires both technical and human judgment. |
-| Strategic Importance | 9 | Allocation, hiring, retention — all critical and durable. |
-
-**Salary range**: $160K – $400K TC.
-**Key dynamics**: Span of control is rising — 2026 EMs commonly own 8–12 ICs vs. 6–8 in 2020 — because AI tooling makes ICs higher-leverage. Net effect on EM headcount is roughly flat: fewer EMs per IC, but more ICs in absolute terms. EMs who can do AI-aware planning (capacity, eval, model-cost forecasting) command a premium.
-**2025–26 data**: Fortune (April 2026) reports **Meta's applied-AI engineering division running a 50:1 IC-to-manager ratio** — about double the historical functional limit. Pragmatic Engineer's 2026 industry report and DX's Q1 2026 study both confirm rising span of control across most engineering orgs. **Coaching and mentorship are the first casualties** of this shift, which is the durability risk to the EM track.
-**Risks**: First-line EM at small companies is the exposed tier — companies skip the layer entirely or convert to "tech lead manager" hybrids.
-
----
-
-## 2. Security
-
-### Security Engineer (general) — **92 (Fortress)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 9 | Cyber spend grows 12–14% YoY (Gartner 2025 forecast). |
-| Automation Resistance | 9 | Adversarial domain; attackers also use AI, so defenders are net-up. |
-| Skill Depth | 9 | Multi-year ramp; cross-cutting domain knowledge required. |
-| Strategic Importance | 10 | Existential — a breach can end a company. |
-
-**Salary range**: $130K – $350K TC.
-**Key dynamics**: Three forces compound. (1) AI-generated code multiplies attack surface. (2) Regulatory pressure (EU AI Act enforcement 2026, SEC cyber-disclosure, PCI 4.0, sectoral rules) creates structural compliance demand. (3) Senior security talent is genuinely scarce — pipeline is narrow because security takes 5+ years to develop credibly. **The headcount-to-vacancy ratio in security is the worst of any tech category.**
-**2025–26 data**: ISC2 2025 Workforce Study reports a **4.8M global workforce gap** (US ~700K) and **59% of orgs reporting critical or significant skills shortages — up from 44% in 2024**. AI/ML is now the **#1 cited security skill gap (41%)**, with cloud security at #2 (30%). BLS projects information security analyst employment **+32% through 2034** — the strongest growth rate of any role on this list. **88% of organizations had a significant security consequence from these shortages**, 69% had more than one.
-**Risks**: Tooling consolidation (CNAPP, SIEM/SOAR convergence) can reduce demand for tool-specific operators. Defensible move: own a domain (cloud, app, identity) end-to-end, not a vendor.
-
-### Application Security Engineer — **87 (Fortress)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 9 | AI-generated code volume drives proportional review demand. |
-| Automation Resistance | 8 | Threat modeling and root-cause review remain human-led. |
-| Skill Depth | 9 | Code-level + protocol-level + adversarial mindset. |
-| Strategic Importance | 9 | Shifts left into the SDLC; touches every team. |
-
-**Salary range**: $130K – $360K TC.
-**Key dynamics**: SAST/DAST tools improve, but their false-positive rates make human triage essential. AI-coding tools shift the bottleneck from "writing secure code" to "reviewing AI-written code at scale." AppSec engineers who own that review pipeline are critical-path.
-**Risks**: SaaS AppSec platforms can squeeze in-house headcount at smaller companies.
-
-### Cloud Security Engineer — **87 (Fortress)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 9 | Cloud spend keeps growing; cloud blast radius keeps growing. |
-| Automation Resistance | 8 | Misconfiguration analysis is partly automatable; response is not. |
-| Skill Depth | 9 | AWS + Azure + GCP + IaC + identity is a wide surface. |
-| Strategic Importance | 9 | Most breaches in 2024–25 traced to cloud misconfig. |
-
-**Salary range**: $130K – $340K TC.
-**Key dynamics**: Converging with cloud platform engineering at well-run companies. The bilingual role — "platform engineer who owns IAM and the security baseline" — is the highest-leverage shape.
-**Risks**: CSPM tooling automation eats junior tier of this role faster than senior tier.
-
-### Offensive Security / Red Team — **84 (Fortress)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 7 | Smaller market; high prestige; consultancy-heavy. |
-| Automation Resistance | 9 | Genuinely creative work; AI helps with recon, not exploitation. |
-| Skill Depth | 10 | Deepest skill ladder of any role on this list. |
-| Strategic Importance | 8 | Demonstrates real risk to executives in a way audits don't. |
-
-**Salary range**: $120K – $330K TC.
-**Key dynamics**: AI-assisted attack tooling (autonomous recon, exploitation chains) raises the *bar* for human red-teamers but does not displace them — adversarial AI is a force multiplier the same way it is for defenders. Niche but durable.
-**Risks**: Consultancy market is cyclical; in-house red teams cut first in downturns.
+The single role whose collapse is fastest in this dataset: **Prompt Engineer** at 27 — a 2023 artifact already absorbed back into AI Application / ML Engineer work.
 
 ---
 
-## 3. Data & AI
+## 1. Engineering Leadership (45 roles)
 
-### AI Research Engineer — **89 (Fortress)**
+Top of category leans **C-suite and IC-track** — the two paths AI cannot meaningfully automate.
 
-| Axis | Score | Note |
+**Top 8**
+
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 8 | Concentrated at frontier labs + a few hyperscalers. |
-| Automation Resistance | 9 | Frontier research is what *creates* the AI tools. |
-| Skill Depth | 10 | PhD-equivalent ramp; publication track expected. |
-| Strategic Importance | 9 | Owns the org's model-quality moat. |
+| 94 | Fortress | Chief AI Officer |
+| 94 | Fortress | Staff Engineer / Tech Lead |
+| 94 | Fortress | VP of AI / ML |
+| 91 | Fortress | CTO |
+| 91 | Fortress | Principal Engineer |
+| 91 | Fortress | Senior Principal Engineer |
+| 91 | Fortress | Senior Staff Engineer |
+| 90 | Fortress | Chief Information Security Officer |
 
-**Salary range**: $180K – $700K+ TC. Frontier-lab packages exceed $1M for top researchers.
-**Key dynamics**: The research/applied split is hardening. Pretraining is a winner-take-most subdomain — only OpenAI, Anthropic, Google DeepMind, Meta, xAI, and 3–5 Chinese labs hire at scale. Outside the frontier, "research engineer" titles increasingly mean applied evaluation and adaptation work.
-**Risks**: Comp normalization 2028–2030 if the frontier saturates. Demand will hold; magnitude won't.
+**Bottom 3 in category**
 
-### ML Engineer — **87 (Fortress)**
-
-| Axis | Score | Note |
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 9 | Every product company building AI features needs them. |
-| Automation Resistance | 8 | AI tools accelerate this role; they don't replace it. |
-| Skill Depth | 9 | ML systems + production infra + research literacy. |
-| Strategic Importance | 9 | Owns the model side of the product. |
+| 64 | Stable | Head of Frontend |
+| 63 | Stable | Engineering Operations Manager |
+| 58 | Stable | Head of QA |
 
-**Salary range**: $140K – $400K TC.
-**Key dynamics**: The applied-ML track has 10× the headcount of the research track and is where most career safety lives. The growth subniche through 2030: **agent systems engineering** — building reliable, evaluable, observable LLM-based agents in production.
-**2025–26 data**: Levels.fyi (April 2026) median ML Engineer TC is **$264K**; FAANG breakdown — **LinkedIn $450K, Meta $430K, Apple $335K, Google $290K, Nvidia $267K, Amazon $265K**. Agentic-AI subniche pays **$155K–$265K base, $400K+ TC at top tier, $500K+ at frontier labs**. AI engineer base salaries grew **+9.2% in 2025 (the "Agentic Surge") and +7% in 2026**. Gartner forecasts **40% of enterprise applications will include task-specific AI agents by end-2026**, up from <5% in 2025 — a structural demand driver for this role.
-**Risks**: Foundation-model commoditization could collapse demand for in-house training. Most ML jobs by 2030 will be *integration*, not training.
-
-### MLOps Engineer — **87 (Fortress)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 9 | Production AI fails without these people. |
-| Automation Resistance | 8 | Deep tooling, monitoring, evaluation infrastructure. |
-| Skill Depth | 9 | DevOps + ML systems + data engineering convergence. |
-| Strategic Importance | 9 | The reliability layer for every AI feature shipped. |
-
-**Salary range**: $130K – $340K TC.
-**Key dynamics**: The role is converging with platform engineering at companies where AI is core product. Eval infrastructure (golden datasets, regression suites, cost/latency dashboards) is the rising subniche. By 2028, "ML platform engineer" overtakes "MLOps engineer" as the dominant title.
-**Risks**: Managed platforms (Databricks, Vertex AI, SageMaker) eat the lower tier. Defensible move: own the eval and observability layer.
-
-### Data Engineer — **82 (Safe)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 9 | Every AI initiative starts and ends with data. |
-| Automation Resistance | 7 | Pipelines have integration complexity AI struggles with. |
-| Skill Depth | 8 | SQL + distributed systems + lakehouse + streaming. |
-| Strategic Importance | 9 | Data infrastructure is the foundation of every analytics + ML system. |
-
-**Salary range**: $110K – $310K TC.
-**Key dynamics**: dbt-native and Iceberg-native pipelines are the dominant 2026 stack. The growth subniche: **AI-data engineering** — building training data pipelines, embedding stores, retrieval indices. This is data engineering with ML literacy attached, and pays 25–30% over generic data eng.
-**Risks**: Fully-managed platforms (Snowflake, Databricks, ClickHouse Cloud) compress the bottom of the market.
-
-### AI Application Engineer — **73 (Safe)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 10 | Fastest-growing job category in 2025–26. |
-| Automation Resistance | 5 | Integration work is exactly what AI tools do well. |
-| Skill Depth | 6 | Lower barrier than ML eng; mostly orchestration + prompting + RAG. |
-| Strategic Importance | 8 | Owns user-facing AI features. |
-
-**Salary range**: $120K – $320K TC.
-**Key dynamics**: This title is having a moment but will consolidate. By 2029, the work is "Backend Engineer who knows LLMs" — the same way "JavaScript Engineer" became "Frontend Engineer" became "Full-Stack." The role is real; the title is transient.
-**Risks**: Lowest skill barrier of any Safe-tier role. Vulnerable to commoditization. The career-safe move: pair AI Application work with deeper backend or ML systems skills.
-
-### Data Scientist — **52 (Exposed)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 5 | Headcount declining since 2023 peak; LinkedIn postings down ~30%. |
-| Automation Resistance | 4 | Notebook-style EDA + modeling is highly LLM-automatable. |
-| Skill Depth | 7 | Still real — stats + ML + business judgment. |
-| Strategic Importance | 6 | Diluted by ML eng absorbing production work and analytics eng absorbing dashboards. |
-
-**Salary range**: $100K – $250K TC.
-**Key dynamics**: The role is being squeezed from two sides: ML engineers absorb the modeling work that goes to production, and analytics engineers + LLMs absorb the exploratory analysis. The surviving niche is **causal inference and experimentation specialists** at companies with mature A/B testing infrastructure (Meta, Netflix, DoorDash, Airbnb).
-**2025–26 data**: Job-postings analysis (Interview Query, Towards Data Science, Dawn Choo's market reports): **senior data scientist hiring is still growing while junior data scientist postings have collapsed**. The "data scientist" bucket is being absorbed *up* into ML Engineer roles and *down* into LLM-augmented analytics. Total data & analytics postings declined **−15.2% YoY through October 2025**.
-**Risks**: Generic "data scientist" headcount compresses 30–40% by 2030. Plan a move to ML eng or specialized causal/experimentation.
-
-### Analytics Engineer — **57 (Stable, low end)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 6 | Stable; dbt ecosystem maturity holds the role. |
-| Automation Resistance | 5 | LLMs write SQL well; modeling layer still needs a human owner. |
-| Skill Depth | 6 | SQL + dbt + warehouse-internals + business semantics. |
-| Strategic Importance | 6 | Owns the semantic layer between raw data and analyst consumers. |
-
-**Salary range**: $90K – $220K TC.
-**Key dynamics**: The role exists because BI tools didn't solve the modeling layer. Semantic-layer products (Cube, dbt Semantic Layer, Looker) plus LLM SQL generation are eating the bottom of this work. Senior analytics engineers who own the entire warehouse architecture survive; mid-level "SQL writer" tier compresses.
-**Risks**: Convergence with data engineering (likely) or absorption into a generic "platform data engineer" role (also likely) — either way, the title may not last the decade.
-
-### Data Analyst — **33 (At risk)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 4 | Declining fast; LLM SQL + BI tools cover the work. |
-| Automation Resistance | 2 | The textbook AI-replacement case in the data category. |
-| Skill Depth | 4 | Low barrier; mostly SQL + a BI tool + business sense. |
-| Strategic Importance | 4 | Critical to operations but increasingly self-service. |
-
-**Salary range**: $65K – $160K TC.
-**Key dynamics**: Self-service BI + LLM-powered NL-to-SQL has reached "good enough" for ~60% of operational analytics requests. Headcount compression is mechanical, not theoretical.
-**Recommended transitions**: Data analyst → analytics engineer (most natural; ~6 months); analytics engineer → data engineer (~12 months). The whole ladder moves up one rung.
+**Cluster read:** the IC ladder above Staff (Principal, Senior Principal, Distinguished, Fellow) is the most durable career shape in the dataset — comp scales to $1M+ and AI assists rather than substitutes. The "Head of QA" position falling to the bottom of the leadership category mirrors the Quality & Testing collapse below.
 
 ---
 
-## 4. Platform & Infrastructure
+## 2. Security (75 roles)
 
-### Platform Engineer — **87 (Fortress)**
+The single category where **every senior role lands Fortress or Safe** — supply gap is structural, not cyclical.
 
-| Axis | Score | Note |
+**Top 8**
+
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 9 | Internal-platform investment is the dominant 2026 infra trend. |
-| Automation Resistance | 8 | Builds the abstractions; AI helps build them, not own them. |
-| Skill Depth | 9 | Cross-cutting: K8s + IaC + IDPs + DX + security baseline. |
-| Strategic Importance | 9 | Platform velocity = engineering org velocity. |
+| 94 | Fortress | Staff Security Engineer |
+| 92 | Fortress | Security Engineer |
+| 92 | Fortress | Senior Security Engineer |
+| 87 | Fortress | AI / ML Security Engineer |
+| 87 | Fortress | AI Red Team Engineer |
+| 87 | Fortress | Application Security Engineer |
+| 87 | Fortress | Cloud Security Engineer |
+| 87 | Fortress | Security Architect |
 
-**Salary range**: $130K – $360K TC.
-**Key dynamics**: "DevOps engineer" as a title is fading; "platform engineer" and "SRE" are absorbing the work. Internal Developer Platforms (Backstage-derived, Port, custom) are now standard at every 200+ engineer org. The growth subniche: **AI platform engineer** — building golden paths for AI-feature delivery, eval pipelines, model serving, prompt-management infra.
-**2025–26 data**: Gartner — **80% of large software engineering orgs will have platform-engineering teams by 2026, up from 45% in 2022**. **55%** of organizations have already adopted platform engineering (2025 survey). **92% of CIOs are planning AI integrations** into their platforms. Gartner separately projects **90% of enterprise software engineers will use AI code assistants by 2028** (vs <14% in early 2024) — a tailwind for the engineers building the platforms those assistants run on.
-**Risks**: Managed IDPs (Humanitec, Port, Cortex) compress the build-it-yourself tier.
+**Bottom 3 in category**
 
-### Site Reliability Engineer — **84 (Fortress)**
-
-| Axis | Score | Note |
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 8 | Strong; uptime expectations rising as AI features get critical. |
-| Automation Resistance | 8 | AI helps with RCA; it can't carry a pager. |
-| Skill Depth | 9 | Distributed systems debugging, capacity, observability, on-call. |
-| Strategic Importance | 9 | Production reliability is the customer-facing commitment. |
+| 59 | Stable | Wireless Pentester |
+| 55 | Exposed | SOC Analyst (Tier 2) |
+| 45 | Exposed | SOC Analyst (Tier 1) |
 
-**Salary range**: $130K – $350K TC.
-**Key dynamics**: AI-assisted RCA tooling (Honeycomb's MCP integrations, Datadog Bits AI, OpenTelemetry-native AI summarizers) accelerates incident response — but the on-call ownership stays human. The growth subniche: **MLSRE / AI inference reliability** — uptime and tail-latency for LLM-backed services, which fail in genuinely new ways.
-**Risks**: Heavy on-call burden continues to push talent toward platform engineering.
-
-### DevOps Engineer — **72 (Safe)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 7 | Holding; absorbed by platform/SRE retitling. |
-| Automation Resistance | 7 | IaC and CI/CD are AI-augmentable but not replaceable. |
-| Skill Depth | 7 | Wide; depth varies by stack and scale. |
-| Strategic Importance | 8 | Touches every release. |
-
-**Salary range**: $100K – $290K TC.
-**Key dynamics**: Generic "DevOps engineer" title is in slow decline as work bifurcates into "platform engineer" (build) and "SRE" (operate). Engineers with the title still command strong comp; the rebrand path is short and natural.
-**Risks**: Junior DevOps roles compress hardest. Bootcamp-to-DevOps is a tougher path than it was in 2020.
-
-### Cloud Engineer — **67 (Stable)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 7 | Stable but commoditizing. |
-| Automation Resistance | 6 | Cloud configurations are AI-assistable. |
-| Skill Depth | 7 | One-cloud depth + IaC. |
-| Strategic Importance | 7 | Critical to cost + reliability but operationally narrow. |
-
-**Salary range**: $95K – $270K TC.
-**Key dynamics**: Pure "cloud engineer" titles are converging into platform/SRE/security roles. The defensible specialization is **FinOps + multi-cloud cost engineering** — a fast-rising and durable niche where cloud spend optimization is a board-level concern.
-**Risks**: Vendor-specific cloud certifications (AWS, Azure, GCP) without underlying systems depth lose value fastest.
+**Cluster read:** the new Fortress-tier additions are the AI-adjacent security functions — **AI/ML Security Engineer** and **AI Red Team Engineer** both land at 87, on par with AppSec and Cloud Security. The bottom of the cluster is **Tier-1 SOC analysts**, the single security role being meaningfully automated by SIEM-native LLMs and SOAR playbooks. Every seniority above Tier-2 SOC remains durable.
 
 ---
 
-## 5. Engineering (core IC)
+## 3. Data & AI (178 roles)
 
-### Systems / Low-level Engineer — **81 (Safe, top end)**
+The category with the **widest internal spread** (89 down to 27) and the most role explosion in the 1,000-row expansion. Build vs. consume splits cleanly along the score axis.
 
-| Axis | Score | Note |
+**Top 8**
+
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 6 | Smaller market but very specialized; hyperscalers + chip cos + databases. |
-| Automation Resistance | 9 | Kernel, compiler, distributed-systems internals — AI cannot reason about these reliably. |
-| Skill Depth | 10 | The deepest skill ladder in IC engineering. |
-| Strategic Importance | 8 | Performance + correctness work has direct revenue impact. |
+| 92 | Fortress | Senior LLM Engineer |
+| 89 | Fortress | AI Research Engineer |
+| 89 | Fortress | AI Safety / Alignment Researcher |
+| 89 | Fortress | Foundation Model Engineer |
+| 89 | Fortress | LLM Research Scientist |
+| 89 | Fortress | Senior AI Research Engineer |
+| 89 | Fortress | Staff ML Engineer |
+| 87 | Fortress | AI Infrastructure Engineer |
 
-**Salary range**: $110K – $350K TC. Hyperscaler comp can exceed $500K.
-**Key dynamics**: The AI inference stack (CUDA kernels, vLLM/SGLang internals, custom silicon backends) is the new growth area for systems engineers. Companies are paying systems-engineering rates for ML systems work, which has transferred a generation of skills into a new domain. Database internals (FoundationDB-derivatives, distributed OLTP, vector indexes) is the other growth area.
-**Risks**: Smaller absolute headcount means individual job loss is more impactful — fewer adjacent moves available.
+**Bottom 3 in category**
 
-### Embedded Engineer — **74 (Safe)**
-
-| Axis | Score | Note |
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 6 | IoT, automotive, robotics, defense. |
-| Automation Resistance | 8 | Hardware-software interfaces stay human-led. |
-| Skill Depth | 9 | C/C++ + RTOS + hardware literacy. |
-| Strategic Importance | 7 | Mission-critical in the industries that need it. |
+| 29 | At risk | Domo Developer |
+| 29 | At risk | Mode Analytics Developer |
+| 27 | At risk | Prompt Engineer |
 
-**Salary range**: $90K – $230K TC.
-**Key dynamics**: Demand is driven by adjacent industries (EV, robotics, drones, edge AI) more than software companies. AI-on-device (NPUs, on-device LLMs) is the rising subniche.
-**Risks**: Geographic concentration — demand pools in specific industries and regions, not broadly distributed.
-
-### Backend Engineer — **72 (Safe)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 8 | Largest absolute headcount of any role on this list. |
-| Automation Resistance | 6 | AI drafts code well; system design and ownership remain human. |
-| Skill Depth | 7 | Varies wildly — CRUD vs. distributed systems is two different careers. |
-| Strategic Importance | 8 | Touches every product surface. |
-
-**Salary range**: $90K – $280K TC.
-**Key dynamics**: Bifurcates into **systems backend** (databases, distributed systems, latency-sensitive, payments, search) — safe and well-paid — and **CRUD backend** (REST endpoints, glue code, internal tools) — heavily AI-augmentable. Senior systems backend engineers who can do system design end-to-end stay in high demand.
-**Risks**: Junior hiring contracts hard. Path-to-senior takes longer because AI does the easy work that used to be junior training ground. The "no junior backend roles" complaint in 2026 is real and structural.
-
-### iOS Engineer — **62 (Stable)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 6 | Stable but flat. Per-app headcount declining. |
-| Automation Resistance | 6 | Platform-native depth resists; UI scaffolding doesn't. |
-| Skill Depth | 7 | Swift + SwiftUI + UIKit + Apple-platform depth. |
-| Strategic Importance | 6 | Every consumer-facing company needs them; mid-market mobile teams shrinking. |
-
-**Salary range**: $95K – $260K TC.
-**Key dynamics**: Apple's SwiftUI maturity and the AI-design-to-code wave (Vercel v0-style for mobile) compress the middle. Native-only iOS roles consolidate at large consumer companies. Cross-platform (Flutter, React Native, KMP) keeps gaining share.
-**Risks**: Mid-market teams adopt cross-platform; native specialists concentrate at Meta, Google, Uber, banks.
-
-### Android Engineer — **62 (Stable)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 6 | Slightly weaker than iOS in US; stronger in emerging markets. |
-| Automation Resistance | 6 | Same logic as iOS. |
-| Skill Depth | 7 | Kotlin + Compose + Android-platform depth. |
-| Strategic Importance | 6 | Same as iOS. |
-
-**Salary range**: $90K – $250K TC.
-**Key dynamics**: Compose Multiplatform + Kotlin Multiplatform are credible cross-platform stories, which threaten and protect Android specialists in different ways. Senior Android engineers who can do KMP work travel further than either side alone.
-**Risks**: Same as iOS, plus regional consolidation.
-
-### Full-Stack Engineer — **62 (Stable)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 7 | Strong title; weakening shape. |
-| Automation Resistance | 5 | Generalist work is exactly what AI tools cover. |
-| Skill Depth | 6 | Breadth over depth. |
-| Strategic Importance | 7 | Productive at startups; less differentiated at scale. |
-
-**Salary range**: $90K – $260K TC.
-**Key dynamics**: "Full-stack TypeScript engineer" (Next.js + Node + Postgres) is the dominant 2026 generalist shape. AI tooling makes this engineer productive — and also makes one of them as productive as 2.5 of them in 2022. The career-safe move is to back the title with a depth: "full-stack with deep auth/identity," "full-stack with deep search/retrieval," "full-stack with deep payments." Generalists get compressed; specialists labeled "full-stack" do not.
-**Risks**: Most exposed of the engineering generalist titles.
-
-### Frontend Engineer — **52 (Exposed)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 6 | Compressing. Total postings down ~15% from 2024 peak. |
-| Automation Resistance | 4 | Component scaffolding, layout, and styling are AI-native tasks. |
-| Skill Depth | 5 | Easy entry; hard mastery. |
-| Strategic Importance | 6 | UX matters — but UX-from-mockup is increasingly automated. |
-
-**Salary range**: $80K – $230K TC.
-**Key dynamics**: AI tooling (v0, Cursor, Lovable, Bolt) reliably produces working components from prompts. The work that compresses is exactly the work that defined "frontend developer" 2018–2024 — component assembly from designs. The roles that survive: **design-system engineers**, **accessibility specialists**, **performance engineers**, **DX/tooling engineers**. These require taste, deep platform knowledge, or cross-cutting concerns AI can't synthesize.
-**2025–26 data**: Frontend's share of total IT job postings has fallen **from ~20% to below that and is still declining** — the **largest drop of any engineering role** in 2025. A survey of 500 tech leaders (early 2025) found **72% plan to reduce entry-level developer hiring** and 64% are *increasing* AI tooling investment. UK tech graduate roles fell **−46% in 2024** with another **−53% projected through 2026**. Junior-frontend is the cleanest displacement case in the engineering category.
-**Risks**: The bottom of the ladder collapses fastest here. Bootcamp-to-junior-frontend is no longer a reliable path.
-**Recommended transitions out**: Frontend → Design Systems engineer; Frontend → DX engineer; Frontend → Full-Stack with backend depth.
+**Cluster read:** the new title proliferation (LLM Engineer, Foundation Model Engineer, AI Agent Engineer, AI Safety Researcher, RLHF Engineer, Multimodal AI Engineer, Vector Search Engineer) all lands Fortress or high-Safe — the agentic surge is structural, not a bubble. The bottom of the category is **legacy BI tooling** (Domo, Mode, Sigma, MicroStrategy) plus the **Prompt Engineer** title, which has effectively died out as a standalone role since 2024.
 
 ---
 
-## 6. Quality & Testing
+## 4. Platform & Infrastructure (121 roles)
 
-### SDET / Test Infrastructure — **64 (Stable)**
+Includes corporate IT (sysadmin, help desk, M365 admin) — the bottom of this category captures what AI displaces hardest in the broader IT job market, even though "platform engineer" itself is Fortress-tier.
 
-| Axis | Score | Note |
+**Top 8**
+
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 6 | Holding; absorbing automation work from QA. |
-| Automation Resistance | 6 | Test infrastructure has real engineering depth. |
-| Skill Depth | 7 | CI/CD + test frameworks + production-like envs. |
-| Strategic Importance | 7 | Velocity-critical at scale. |
+| 87 | Fortress | Platform Engineer |
+| 86 | Fortress | Staff Platform Engineer |
+| 86 | Fortress | Staff SRE |
+| 84 | Fortress | Internal Developer Platform (IDP) Engineer |
+| 84 | Fortress | Senior Platform Engineer |
+| 84 | Fortress | Senior SRE |
+| 84 | Fortress | Site Reliability Engineer |
+| 82 | Safe | Kubernetes / Container Platform Engineer |
 
-**Salary range**: $100K – $230K TC.
-**Key dynamics**: SDET converges with backend engineering and platform engineering. The skills overlap so much that "QA org" as a separate function is fading at well-run companies. Senior SDETs frequently cross over to backend or platform roles.
-**Risks**: At smaller orgs, test-infra is increasingly absorbed by platform teams; standalone SDET roles rare below ~150 engineers.
+**Bottom 3 in category**
 
-### QA Automation — **40 (At risk, high end)**
-
-| Axis | Score | Note |
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 4 | Declining; AI test-gen + self-healing E2E erodes the role. |
-| Automation Resistance | 3 | Automating tests is what AI does well. |
-| Skill Depth | 5 | Selenium, Cypress, Playwright + scripting. |
-| Strategic Importance | 5 | Coverage matters; ownership rarely lives here. |
+| 35 | At risk | Help Desk Tier 2 |
+| 30 | At risk | Desktop Support |
+| 25 | At risk | Help Desk Tier 1 |
 
-**Salary range**: $70K – $170K TC.
-**Key dynamics**: Self-healing E2E frameworks (Mabl, Testim, AI-augmented Playwright) and LLM-based test generation from spec are mature enough to replace most of this role's work by 2027. The escape: convert to SDET (engineering depth) or AI Eval (model-QA — a real growing field).
-
-### QA Manual — **20 (At risk)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 2 | Shrinking the most of any role on this list. |
-| Automation Resistance | 1 | Textbook AI-replacement case. |
-| Skill Depth | 3 | Low barrier. |
-| Strategic Importance | 3 | Necessary; not differentiating. |
-
-**Salary range**: $50K – $130K TC.
-**Key dynamics**: Offshore QA centers (which absorbed much of this work in the 2010s) are the first to be AI-displaced. Career mobility *out* of pure manual QA is harder than out of any other role on this list.
-**2025–26 data**: WEF Future of Jobs 2025 — **41% of employers worldwide intend workforce reductions citing AI automation**, with manual QA among the most-cited functions. Cautionary case study: a financial firm replaced a 12-person QA team with an AI test pipeline to save $1.2M and **lost $6M in orders** because an AI agent hallucinated a discount code that zeroed out the catalog (QA Financial). Counter-signal: Tesla *grew* QA from **260 → 390 staff (2020 → 2025)** but the composition shifted to AI-testing specialists and safety-validation engineers, not manual testers. Gartner revised its testing-automation projection: **60–70% of routine testing automated by 2030**, with **demand for skilled QA professionals up 25%** as software complexity rises. The collapse is in *manual* QA specifically — not the broader QA function.
-**Recommended transitions** (in priority order):
-
-1. SDET → backend engineer (most natural; 12 months of focused study)
-2. AI Evaluation engineer (best upside; requires Python + ML literacy)
-3. DevOps / release engineering (good fit for QA-leaning automation people)
-
-Plan the move now, not later. The decline curve is exponential.
+**Cluster read:** **Internal Developer Platform Engineer** rises into the Fortress band because Backstage-style platforms are now standard at every 200+ engineer org. The bottom of the cluster is **corporate IT** — the help desk and desktop support tier is being absorbed by AI-augmented self-service portals. Cloud/DevOps mid-tier holds Stable but is rebranding into Platform.
 
 ---
 
-## 7. Product & Design
+## 5. Engineering — core IC (405 roles)
 
-### Technical Product Manager — **79 (Safe)**
+The largest category, with the widest stack/seniority fragmentation. Backend-systems and AI-adjacent engineering hold; framework-specific frontend and legacy-stack maintenance compress.
 
-| Axis | Score | Note |
+**Top 8**
+
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 7 | Rising as products get more technical (AI features, dev tools, infra). |
-| Automation Resistance | 8 | Spec writing partly automatable; cross-team negotiation isn't. |
-| Skill Depth | 8 | Both technical and product judgment required. |
-| Strategic Importance | 9 | Owns critical-path decisions. |
+| 89 | Fortress | CUDA Engineer |
+| 86 | Fortress | Autonomous Vehicle Software Engineer |
+| 86 | Fortress | Distributed Systems Engineer |
+| 86 | Fortress | GPU Engineer |
+| 86 | Fortress | Self-Driving Perception Engineer |
+| 86 | Fortress | Self-Driving Planning Engineer |
+| 86 | Fortress | Triton (GPU) Kernel Engineer |
+| 83 | Fortress | Principal Backend Engineer |
 
-**Salary range**: $130K – $340K TC.
-**Key dynamics**: TPM growth outpaces generalist PM growth as more products are technically deep (developer tools, AI features, platforms, infra). TPMs with AI/ML literacy are the highest-comp tier. The role is becoming the IC equivalent of an engineering manager — owns scope but not direct reports.
-**Risks**: Title inflation — many "TPM" roles at non-tech companies are PM-with-extra-meetings, not the real shape.
+**Bottom 3 in category**
 
-### Product Manager — **73 (Safe)**
-
-| Axis | Score | Note |
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 7 | Steady. Smaller orgs cutting layers but PM count holds. |
-| Automation Resistance | 7 | Stakeholder management + judgment is AI-resistant. |
-| Skill Depth | 6 | Wide; the moat is taste, not technique. |
-| Strategic Importance | 9 | Defines what gets built. |
+| 30 | At risk | Game QA Tester |
+| 29 | At risk | ColdFusion Maintainer |
+| 29 | At risk | jQuery Maintainer |
 
-**Salary range**: $110K – $310K TC.
-**Key dynamics**: Heavy AI augmentation in PM workflow (eval, customer research synthesis, doc-writing) — but the role itself is durable because the work is fundamentally about navigating ambiguity and people. Junior PM roles are the most exposed; senior PM is fortress-tier.
-**2025–26 data**: Total open PM roles globally are **+53.6% above the 2023 bottom** and rising. **AI PM hiring doubled in 2025 to 12,000+ new roles**. Senior PM postings up **+87% YoY**. McKinsey: demand for AI fluency in job postings has grown **~7×** in two years, mostly in management roles. **71% of business leaders** say they prefer a less-experienced candidate with strong AI skills over a more-experienced one without — which both raises the floor for PM hiring (AI fluency = table stakes) and protects the senior tier (judgment + AI fluency = premium).
-**Risks**: At smaller companies, PM is collapsing into "engineer-PM" hybrids (the ICPM model), which can compress headcount.
-
-### UX Designer / Researcher — **67 (Stable)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 6 | Stable. Research roles holding better than visual roles. |
-| Automation Resistance | 7 | Customer research and synthesis are slow to automate. |
-| Skill Depth | 7 | Real craft + research methodology. |
-| Strategic Importance | 7 | Mature orgs invest; immature orgs cut. |
-
-**Salary range**: $85K – $220K TC.
-**Key dynamics**: UX research is genuinely defensible — synthesis + interpretation + study design require human judgment. UX *design* (wireframes, IA) is more AI-augmentable. The split is widening into "UX researcher" and "Product designer" with a shrinking middle.
-**Risks**: Boom-bust cycles in design hiring; UX roles get cut first in downturns.
-
-### Product Designer — **64 (Stable)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 6 | Stable; converging with senior frontend at AI-native companies. |
-| Automation Resistance | 6 | AI design-to-code raises the bar but doesn't eliminate the role. |
-| Skill Depth | 7 | Visual + interaction + systems thinking. |
-| Strategic Importance | 7 | Owns the user-facing surface. |
-
-**Salary range**: $95K – $250K TC.
-**Key dynamics**: "Design engineer" — designers who code their own components in design systems — is the rising shape. The product designer who can ship working code beats the one who ships only Figma files.
-**Risks**: The visual-only end of product design is the soft spot.
-
-### UI Designer — **40 (At risk)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 4 | Declining. Visual-only roles compressing fastest in design. |
-| Automation Resistance | 3 | The most AI-exposed creative task. |
-| Skill Depth | 5 | Visual craft + tool fluency. |
-| Strategic Importance | 5 | Visual quality matters; ownership rarely lives in pure-UI. |
-
-**Salary range**: $75K – $190K TC.
-**Key dynamics**: Mid-journey, Stable Diffusion variants, and AI design tools (Galileo, Uizard, Vercel v0) cover the low-to-mid end of UI work. The defensible niche: UI specialists who own animation, motion, and interaction prototyping at the depth Figma + AI tools can't replicate.
-**Recommended transitions**: UI Designer → Product Designer (most natural) → Design Engineer (requires code skills; high upside).
+**Cluster read:** the top of the engineering category is now dominated by **GPU + autonomy** roles — CUDA Engineer, Triton Kernel Engineer, GPU Engineer, Self-Driving Perception/Planning. These were largely absent from the 36-role frame. Mid-tier general backend (Senior Backend, Senior Full-Stack) holds Safe; framework-specific frontend (React, Vue, Angular as standalone titles) drops into Stable. The legacy-maintenance bottom is the longest tail in the dataset — every COBOL, RPG, ColdFusion, PowerBuilder, jQuery, and Alpine.js role lands At-risk or Exposed.
 
 ---
 
-## 8. Specialized & Emerging
+## 6. Specialized & Emerging (100 roles)
 
-### Solutions Architect — **79 (Safe)**
+Sales engineering, DevRel, technical program management, integration platforms, vendor specialists. Comparatively flat distribution — most roles land Stable.
 
-| Axis | Score | Note |
+**Top 8**
+
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 7 | Steady at enterprise software vendors and consultancies. |
-| Automation Resistance | 8 | Customer-facing technical judgment is hard to automate. |
-| Skill Depth | 9 | Cross-product technical depth + customer skills. |
-| Strategic Importance | 8 | Owns the deal-side technical narrative. |
+| 84 | Fortress | Senior Forward Deployed Engineer |
+| 84 | Fortress | Senior TPM |
+| 83 | Fortress | Technical Program Manager |
+| 81 | Safe | Principal TPM |
+| 80 | Safe | Forward Deployed Engineer |
+| 79 | Safe | Senior Solutions Architect |
+| 79 | Safe | Solutions Architect |
+| 77 | Safe | Senior Sales Engineer |
 
-**Salary range**: $140K – $340K TC. OTE-heavy at vendors.
-**Key dynamics**: AI tools accelerate POC building, which makes good solutions architects 2× more productive. The role itself is durable because it's customer-facing technical work — AI assists, doesn't replace, the human-relationship layer.
-**Risks**: Vendor consolidation can shrink the role at specific companies; the function is durable but employer-specific.
+**Bottom 3 in category**
 
-### Developer Experience (DX) Engineer — **75 (Safe)**
-
-| Axis | Score | Note |
+| Score | Tier | Role |
 | --- | --- | --- |
-| Demand | 7 | Rising. Every developer-facing company invests here. |
-| Automation Resistance | 8 | Taste-driven work; AI assists but can't own it. |
-| Skill Depth | 8 | Tooling + writing + product sense. |
-| Strategic Importance | 7 | Critical to adoption at developer-tools companies. |
+| 37 | At risk | Zendesk Developer |
+| 35 | At risk | No-code Developer / Maker |
+| 32 | At risk | Pardot Developer |
 
-**Salary range**: $120K – $300K TC.
-**Key dynamics**: At developer-tools companies (Vercel, Stripe, Anthropic, Linear, Supabase), DX is core product. At product companies, DX work is internal — building the IDP, the docs, the SDK. Both flavors are durable. The growth subniche: **DX for AI tools** — onboarding, evaluation, and adoption flows for AI products, which requires very specific taste.
-**Risks**: Title is fuzzy; can be miscast as "tech writer who codes" at companies that don't take DX seriously.
-
-### Prompt Engineer — **27 (At risk)**
-
-| Axis | Score | Note |
-| --- | --- | --- |
-| Demand | 3 | Hot in 2023; quietly declining since. |
-| Automation Resistance | 2 | Better models reduce prompt sensitivity, eliminating the role. |
-| Skill Depth | 3 | Genuinely shallow as a standalone skill. |
-| Strategic Importance | 3 | Real but absorbed into AI Application Engineer / ML Eng work. |
-
-**Salary range**: $80K – $180K TC.
-**Key dynamics**: The role was always a transitional artifact of model immaturity. As models become more robust to prompt phrasing, the value of prompt-only specialists collapses. Prompt-engineering *skills* are real; the *job title* is not durable.
-**2025–26 data**: Indeed search volume for "prompt engineer" peaked at **144 per million total searches in April 2023** and has **plateaued at 20–30 per million through 2025–26**. Listings have largely been retired or merged into broader AI Product Manager / AI Quality / ML Engineer roles. Automated Prompt Engineering frameworks (DSPy and equivalents) are now standard infrastructure. Fortune (May 2025) called the role "obsolete"; SolidAITech (April 2026) confirms the standalone title is "effectively gone at any company running frontier models."
-**Recommended transitions**: Prompt Engineer → AI Application Engineer (natural; requires backend literacy) → ML Engineer (longer ramp; requires ML systems knowledge).
+**Cluster read:** **Forward Deployed Engineer** — the category that barely existed in the 36-role frame — now anchors the top with two Fortress-tier entries. AI-product companies hire FDEs aggressively because customer-specific agent integration is the most defensible work in the AI app layer. The bottom is **vendor-bound implementer roles** (Zendesk, Pardot, no-code makers) that depend on specific SaaS tools whose feature surface is being absorbed by general-purpose AI platforms.
 
 ---
 
-## Cross-cutting patterns
+## 7. Product & Design (48 roles)
 
-- **Automation pressure is bottom-up.** Junior and routine work compresses fastest in every category. The senior end is largely safe — for now. The 2026 hiring market reflects this: senior comp climbing, junior reqs scarce.
-- **Specialization beats breadth in 2026–2030.** The "full-stack generalist" identity that worked in 2018 is the most exposed shape today. Pick a moat: a domain (payments, ML infra, real-time, search), a cross-cutting skill (perf, a11y, security), or a platform (deep iOS, deep K8s, deep Postgres internals).
-- **Stability tracks distance from the UI.** The further from the screen, the more durable the role: Security ≈ ML systems ≈ Platform > Backend systems > DevOps > Backend CRUD > Mobile > Frontend > QA Manual.
-- **AI literacy is now baseline in every role.** By 2027, "doesn't use AI tools effectively" will be a hiring red flag in all 36 roles on this list — including PM and Designer. This is not a differentiator; it is table stakes.
-- **Adversarial domains are the hidden winners.** Security stands out because the threat side also gets AI. Anywhere the work involves an opponent (security, fraud, abuse, anti-cheat, market making), AI escalates both sides — and humans stay in the loop.
-- **Title inflation will obscure the real ranking.** Expect "AI Engineer" and "AI Product Manager" titles to appear on 2× as many job postings by 2028 without the underlying role changing. Look at the work, not the title.
+Senior PM and AI PM hold; UI Designer / Marketing Designer / generic Visual Designer compress.
+
+**Top 8**
+
+| Score | Tier | Role |
+| --- | --- | --- |
+| 83 | Fortress | Senior Technical PM |
+| 81 | Safe | Principal Product Manager |
+| 80 | Safe | Group Product Manager |
+| 80 | Safe | Platform Product Manager |
+| 79 | Safe | Technical Product Manager |
+| 78 | Safe | Senior Product Manager |
+| 74 | Safe | Senior Design Engineer |
+| 73 | Safe | API Product Manager |
+
+**Bottom 3 in category**
+
+| Score | Tier | Role |
+| --- | --- | --- |
+| 44 | Exposed | Visual Designer |
+| 40 | At risk | UI Designer |
+| 37 | At risk | Marketing Designer |
+
+**Cluster read:** **Senior Technical PM** is the highest-scored product role at 83 — the bilingual PM ↔ engineer track survives best. **Design Engineer** and **Senior Design Engineer** carry the design discipline forward as a Safe-tier specialty; pure-visual roles (UI, Marketing, Visual) are the most AI-exposed creative work in the dataset.
 
 ---
 
-## What the 2025–26 hard data actually shows (the bifurcation)
+## 8. Quality & Testing (28 roles)
 
-The hardest single fact to reconcile in the 2025–26 labor market: BLS projects **+15% software-developer growth through 2034**, while Challenger, Gray & Christmas logged **52,050 tech-sector layoff announcements in Q1 2026 alone (+40% YoY)**, with ~48% citing AI as a primary driver. Both are true. The reconciliation:
+Smallest category and the only one with **no Fortress entries**. SDET and security QA hold Safe; everything else compresses.
 
-- **Senior tier is rising.** Goldman Sachs comp analysis (cited via KORE1) shows senior software engineer median TC up **+12–18% YoY** at surviving companies in 2025. ISC2 reports 59% of orgs facing critical security skill shortages, up from 44% in 2024 — the gap is widening, not closing.
-- **Junior tier is being repriced.** Software developer employment for ages 22–25 is **−20% from its late-2022 peak**. Junior starting offers are **−8 to −15%** vs the 2024 peak. UK tech graduate roles fell **−46% in 2024** with another −53% projected through 2026.
-- **The middle is being compressed.** AI tooling produces 40–55% more code per sprint at comparable quality — a 10-engineer team now outputs what 15 produced in 2022. Most layoffs target the mid-tier generalist (the "full-stack TypeScript engineer" shape), not the senior IC and not the entry-level intern (which mostly is no longer being hired in the first place).
+**Top 8**
 
-This file's scoring assumes that bifurcation. **Roles whose work is heavily mid-tier generalist (Frontend, Full-Stack, generic Backend, QA Automation, Data Analyst) score lower for that reason** — even when the absolute headcount is large today. Roles whose value compounds with seniority (Staff Engineer, Security, ML Eng, Platform Engineer) score higher, because the labor-market data is still moving in their favor.
+| Score | Tier | Role |
+| --- | --- | --- |
+| 72 | Safe | Security QA Engineer |
+| 72 | Safe | Test Architect |
+| 69 | Stable | Performance / Load Test Engineer |
+| 69 | Stable | Staff SDET |
+| 67 | Stable | Senior SDET |
+| 65 | Stable | Quality Engineering Director |
+| 64 | Stable | SDET / Test Infrastructure |
+| 64 | Stable | Stress Test Engineer |
 
-The full data synthesis with sources cited per claim is in [INSIGHTS.md](INSIGHTS.md).
+**Bottom 3 in category**
+
+| Score | Tier | Role |
+| --- | --- | --- |
+| 35 | At risk | Selenium Engineer |
+| 31 | At risk | QA Manual Lead |
+| 20 | At risk | QA Manual |
+
+**Cluster read:** the only QA roles that survive are **adversarial / safety / performance** specialists — Security QA, Test Architect, Performance Engineer. The "person who writes Selenium scripts" tier collapses fully (Selenium Engineer at 35). The transition path Manual QA → SDET → Backend or AI Eval remains the cleanest exit from the bottom.
+
+---
+
+## How to use this report
+
+- **Choosing a first specialization** — pick from the per-category top 8s above. Security, Platform/SRE, ML/AI builders, and the IC ladder are the highest-confidence Fortress paths.
+- **Mid-career pivot from Stable / Exposed** — move *adjacent*, not lateral. Frontend → Design Systems → Design Engineer. Data Scientist → Senior Data Scientist or ML Engineer. QA → SDET → AI Eval.
+- **Mid-career pivot from At-risk** — give yourself 12–18 months and a structured study plan. The transitions that work: Manual QA → SDET → AI Eval; Data Analyst → Analytics Eng → Data Eng; UI Designer → Product Designer → Design Engineer; legacy maintainer (COBOL/ColdFusion) → modernization engineer.
+- **Hiring** — expect Security, ML/AI infrastructure, and Platform comp to keep climbing through 2028. Expect the bottom 200 roles in this dataset to compress 30–50% by 2030. Expect "AI Application Engineer" and "AI Agent Engineer" to consolidate back into "Backend Engineer who knows LLMs" by ~2029.
+
+The full ranking — every one of the 1,000 roles — is in [data/processed/role_ranking.csv](data/processed/role_ranking.csv).

@@ -84,22 +84,33 @@ def line(x1, y1, x2, y2, stroke="#cccccc", width=1, dash=None):
             f'stroke="{stroke}" stroke-width="{width}"{d}/>\n')
 
 
-def chart_safety_score(rows):
-    rows = sorted(rows, key=lambda r: r["score"], reverse=True)
-    n = len(rows)
-    margin_l, margin_r, margin_t, margin_b = 230, 60, 80, 40
-    bar_h = 18
-    gap = 6
-    plot_w = 600
-    width = margin_l + plot_w + margin_r
-    height = margin_t + n * (bar_h + gap) + margin_b
+def chart_safety_score(rows, top_n=50, bottom_n=25):
+    """Top-N safest + bottom-N most-at-risk roles. Ranking the full 1000 roles
+    inline produces an unreadable 24,000px chart, so the chart shows the
+    extremes and a separator counts the elided middle."""
+    s = sorted(rows, key=lambda r: r["score"], reverse=True)
+    top = s[:top_n]
+    bottom = s[-bottom_n:]
+    elided = len(s) - top_n - bottom_n
 
-    out = [svg_open(width, height, "Career Safety Score by Role")]
-    out.append(text(margin_l, 32, "Career Safety Score by Role  (2026–2035)",
+    sep_h = 36  # height of the "... N roles elided ..." band
+    margin_l, margin_r, margin_t, margin_b = 320, 80, 90, 60
+    bar_h = 16
+    gap = 4
+    plot_w = 620
+    width = margin_l + plot_w + margin_r
+    height = margin_t + (top_n + bottom_n) * (bar_h + gap) + sep_h + margin_b
+
+    out = [svg_open(width, height, "Career Safety Score — Top and Bottom Roles")]
+    out.append(text(margin_l, 32,
+                    f"Career Safety Score — Top {top_n} & Bottom {bottom_n}  (of 1{','}000 roles, 2026–2035)",
                     size=18, weight="bold"))
     out.append(text(margin_l, 52,
                     "Higher = more durable.  Score = 0.30·Demand + 0.35·AutoResist + 0.15·SkillDepth + 0.20·StrategicImportance",
                     size=11, color="#555"))
+    out.append(text(margin_l, 70,
+                    "Full 1,000-row ranking lives in data/processed/role_ranking.csv.",
+                    size=10, color="#888"))
 
     # x grid
     for v in (0, 25, 50, 75, 100):
@@ -107,32 +118,47 @@ def chart_safety_score(rows):
         out.append(line(x, margin_t, x, height - margin_b, stroke="#eeeeee"))
         out.append(text(x, margin_t - 6, str(v), size=10, color="#888", anchor="middle"))
 
-    # tier guide bands (subtle)
-    tiers = [(85, 100, "#1f7a3a"), (70, 85, "#4caf50"),
-             (55, 70, "#f0a30a"), (40, 55, "#e57321"), (0, 40, "#c62828")]
-    for lo, hi, c in tiers:
+    # tier band stripe along the bottom
+    tier_bands = [(83, 101, "#1f7a3a"), (70, 83, "#4caf50"),
+                  (58, 70, "#f0a30a"), (41, 58, "#e57321"), (0, 41, "#c62828")]
+    for lo, hi, c in tier_bands:
         x1 = margin_l + plot_w * lo / 100
         x2 = margin_l + plot_w * hi / 100
         out.append(rect(x1, height - margin_b, x2 - x1, 4, c, rx=0))
 
-    for i, r in enumerate(rows):
-        y = margin_t + i * (bar_h + gap)
-        w = plot_w * r["score"] / 100
-        color = TIER_COLOR[r["verdict_tier"]]
-        out.append(text(margin_l - 10, y + bar_h - 4, r["role"],
-                        size=12, anchor="end"))
-        out.append(rect(margin_l, y, w, bar_h, color, rx=2))
-        out.append(text(margin_l + w + 6, y + bar_h - 4, str(r["score"]),
-                        size=11, color="#333"))
+    def emit_bars(items, y0, label_prefix=""):
+        for i, r in enumerate(items):
+            y = y0 + i * (bar_h + gap)
+            w = plot_w * r["score"] / 100
+            color = TIER_COLOR[r["verdict_tier"]]
+            label = f"{label_prefix}{r['role']}  ·  {r['category']}"
+            out.append(text(margin_l - 10, y + bar_h - 3, label,
+                            size=11, anchor="end"))
+            out.append(rect(margin_l, y, w, bar_h, color, rx=2))
+            out.append(text(margin_l + w + 6, y + bar_h - 3, str(r["score"]),
+                            size=11, color="#333"))
 
-    # legend
-    legend_y = height - margin_b + 20
+    # top block
+    emit_bars(top, margin_t)
+
+    # separator band: elided count
+    sep_y = margin_t + top_n * (bar_h + gap)
+    out.append(rect(margin_l, sep_y + 6, plot_w, sep_h - 12, "#f5f5f5", rx=4))
+    out.append(text(margin_l + plot_w / 2, sep_y + sep_h / 2 + 4,
+                    f"…  {elided} mid-tier roles elided  …",
+                    size=12, color="#888", anchor="middle"))
+
+    # bottom block
+    emit_bars(bottom, sep_y + sep_h)
+
+    # legend (cutoffs match scripts/analysis/_common.py)
+    legend_y = height - margin_b + 24
     legend_items = [
-        ("Fortress (85+)", "#1f7a3a"),
-        ("Safe (70–84)",   "#4caf50"),
-        ("Stable (55–69)", "#f0a30a"),
-        ("Exposed (40–54)","#e57321"),
-        ("At risk (<40)",  "#c62828"),
+        ("Fortress (83+)",  "#1f7a3a"),
+        ("Safe (70–82)",    "#4caf50"),
+        ("Stable (58–69)",  "#f0a30a"),
+        ("Exposed (41–57)", "#e57321"),
+        ("At risk (≤40)",   "#c62828"),
     ]
     lx = margin_l
     for label, col in legend_items:

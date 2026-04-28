@@ -1,5 +1,7 @@
 # AI Impact Analysis
 
+> **Note:** The bucket narratives below were written against the original 36-role taxonomy. The active dataset now contains 1,000 roles (see [REPORT.md](../REPORT.md)); the four buckets (Multipliers, Compressors, Replacements, Untouched) still describe the right *structure*, but the bucket assignment for any specific expanded role should be inferred from its tier in [data/processed/role_ranking.csv](../data/processed/role_ranking.csv).
+
 How AI is reshaping each role over the 2026–35 window. The frame: AI is not one effect — it splits roles into three groups (multipliers, compressors, replacements) and a fourth (untouched), and the group a role lands in determines its career safety.
 
 The bucket assignments here are computed by [`scripts/analysis/trend_analysis.py`](../scripts/analysis/trend_analysis.py) from postings deltas and AI-mention deltas in the simulated postings dataset; the qualitative narratives are calibrated to public 2025–26 data (Stack Overflow Developer Survey 2025, ISC2 2025 Workforce Study, Gartner forecasts, Q1 2026 layoff data). Sources: [INSIGHTS.md](../INSIGHTS.md).

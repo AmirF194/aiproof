@@ -1,6 +1,8 @@
 # Role Taxonomy
 
-Canonical list of the 36 roles scored in this analysis, grouped by category, with a one-line definition and the primary skills that define each role.
+> **Note:** This file is the original 36-role definitional taxonomy. The active scoring dataset has since been expanded to 1,000 distinct, posting-real roles in [data/roles.csv](../data/roles.csv) — see [REPORT.md](../REPORT.md) for the per-category top-and-bottom and [data/processed/role_ranking.csv](../data/processed/role_ranking.csv) for the full ranking. The 36 broad functions below remain useful as a definitional spine — every one of the 1,000 expanded roles is a seniority, stack, or vertical specialization of one of these.
+
+Canonical list of the 36 roles in the original taxonomy, grouped by category, with a one-line definition and the primary skills that define each role.
 
 The full machine-readable version is in [data/raw/role_definitions.json](../data/raw/role_definitions.json). For per-role scoring rationale, see [REPORT.md](../REPORT.md). For the rubric and weights, see [METHODOLOGY.md](../METHODOLOGY.md).
 

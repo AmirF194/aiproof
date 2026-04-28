@@ -1,6 +1,6 @@
 # Which Tech Jobs Are Safe? A 2026–2035 Market Analysis
 
-A structured comparison of **36 roles** across modern software organizations, scored on demand, automation resistance, skill depth, and strategic importance. Designed for real career decisions — choosing a first specialization, mid-career pivots, hiring planning.
+A structured comparison of **1,000 distinct, posting-real roles** across modern software organizations, scored on demand, automation resistance, skill depth, and strategic importance. Designed for real career decisions — choosing a first specialization, mid-career pivots, hiring planning. Every entry corresponds to a job title that posts as its own listing on Indeed, LinkedIn, or Levels.fyi today.
 
 > Scope: senior-IC framing, US/EU markets, USD total comp. Sources are directional — BLS 2024–34 projections, ISC2 2025 Cybersecurity Workforce Study, Stack Overflow Developer Survey 2025 (~49K respondents), Levels.fyi (April 2026), Gartner platform-engineering and AI-agent forecasts, McKinsey 2025 generative AI workforce study, Pragmatic Engineer 2026 industry report, Challenger / Gray & Christmas Q1 2026 layoff data. Full source list: [METHODOLOGY.md](METHODOLOGY.md). Deep research synthesis with citations per claim: [INSIGHTS.md](INSIGHTS.md).
 
@@ -8,13 +8,13 @@ A structured comparison of **36 roles** across modern software organizations, sc
 
 ## TL;DR — The five tiers
 
-| Tier | Score | Verdict | Examples |
+| Tier | Score | Roles | Verdict |
 | --- | --- | --- | --- |
-| **Fortress** | 85–100 | Build a career here without hedging. | Staff Engineer, Security, ML Engineer, Platform |
-| **Safe** | 70–84 | Senior path is durable. Junior path is harder than 2020. | Backend, Data Engineer, DevOps, TPM, Solutions Arch |
-| **Stable** | 55–69 | Specialize or get exposed. Generalist track compresses. | Mobile, Full-Stack, Product Designer, SDET |
-| **Exposed** | 40–54 | Plan an adjacent move within 2–3 years. | Frontend, Data Scientist, Analytics Engineer |
-| **At risk** | <40 | Plan a transition. Headcount shrinks every year. | QA Manual, Data Analyst, UI Designer, Prompt Eng. |
+| **Fortress** | 83+ | 79 | Build a career here without hedging. |
+| **Safe** | 70–82 | 315 | Senior path is durable. Junior path is harder than 2020. |
+| **Stable** | 58–69 | 329 | Specialize or get exposed. Generalist track compresses. |
+| **Exposed** | 41–57 | 223 | Plan an adjacent move within 2–3 years. |
+| **At risk** | ≤40 | 54 | Plan a transition. Headcount shrinks every year. |
 
 ![Safety Score Ranking](charts/safety_score.svg)
 
@@ -26,26 +26,33 @@ Full per-role analysis in [REPORT.md](REPORT.md). Raw scoring data in [data/role
 
 | # | Role | Score | Why it ranks here |
 | --- | --- | --- | --- |
+| 1 | Chief AI Officer | 94 | New C-suite role; owns the model-strategy moat at every AI-first org. |
 | 1 | Staff Engineer / Tech Lead | 94 | Owns judgment, architecture, and trade-offs — none of which AI replaces. |
-| 2 | Security Engineer | 92 | Adversarial domain; attackers also use AI, so defenders are net-up. |
-| 3 | AI Research Engineer | 89 | Frontier work is a tiny, well-paid moat. Comp may compress; demand won't. |
-| 4 | ML Engineer | 87 | Builds the systems everyone else integrates. Critical-path role. |
-| 4 | MLOps Engineer | 87 | Production AI fails without these people. Demand is structural. |
-| 4 | Platform Engineer | 87 | Internal platforms scale orgs; AI helps build them, not own them. |
-| 4 | Application Security Engineer | 87 | AI-generated code creates *more* AppSec work, not less. |
-| 4 | Cloud Security Engineer | 87 | Cloud spend keeps growing; cloud blast radius keeps growing. |
-| 9 | Site Reliability Engineer | 84 | Production reliability is a 3 a.m. problem AI can't own end-to-end. |
-| 9 | Offensive Security / Red Team | 84 | Highest-skill subdomain in security; small but growing. |
+| 1 | VP of AI / ML | 94 | Allocates GPU and headcount in the highest-leverage spend category. |
+| 1 | Staff Security Engineer | 94 | Adversarial domain; attackers also use AI, so defenders are net-up. |
+| 5 | Senior LLM Engineer | 92 | Owns the production foundation-model integration layer. |
+| 5 | Security Engineer | 92 | Senior security IC remains the most-undersupplied IC role. |
+| 5 | Senior Security Engineer | 92 | Same, with proven track record; comp band $160K–$400K. |
+| 8 | CTO | 91 | Top-tier judgment role; AI augments rather than substitutes. |
+| 8 | Principal Engineer | 91 | The IC ladder above Staff is the most durable career shape. |
+| 8 | Senior Principal Engineer | 91 | Above-Principal IC tier scales to $1M+ TC at frontier labs. |
+| 8 | Senior Staff Engineer | 91 | The "Staff that ships big architecture" tier; supply is glacial. |
 
-## Bottom 5 most-at-risk roles
+For the full top-30, the bottom-20, and per-category top-and-bottom, see [REPORT.md](REPORT.md). The complete 1,000-row ranking is [data/processed/role_ranking.csv](data/processed/role_ranking.csv).
+
+## Bottom 8 most-at-risk roles
 
 | # | Role | Score | Why it ranks here |
 | --- | --- | --- | --- |
-| 32 | QA Automation | 40 | Self-healing E2E + AI test generation eat the middle of this market. |
-| 32 | UI Designer | 40 | Visual-only design work is the most AI-exposed creative task. |
-| 34 | Data Analyst | 33 | LLMs do SQL + chart generation. Headcount compression is mechanical. |
-| 35 | Prompt Engineer | 27 | A 2023 artifact. Better models reduce, not raise, prompt sensitivity. |
-| 36 | QA Manual | 20 | Textbook AI-replacement case. Plan an exit, not a defense. |
+| 988 | Data Analyst | 33 | LLM SQL + BI tools cover ~60% of operational analytics requests. |
+| 991 | MicroStrategy Developer | 30 | Vendor-bound BI; tooling absorbed by modern semantic layers. |
+| 991 | Game QA Tester | 30 | Routine play-through validation is highly automatable. |
+| 991 | Desktop Support | 30 | Self-service portals + AI agents replace tier-1 work. |
+| 994 | ColdFusion Maintainer | 29 | Legacy stack; shrinking maintainer pool with no replacement pipeline. |
+| 994 | jQuery Maintainer | 29 | Pre-React JavaScript era; runway is "until the app is rewritten." |
+| 998 | Prompt Engineer | 27 | A 2023 artifact; absorbed back into AI Application / ML Eng work. |
+| 999 | Help Desk Tier 1 | 25 | Textbook AI-replacement case in corporate IT. |
+| 1000 | QA Manual | 20 | Lowest-scored role in the dataset. Plan an exit, not a defense. |
 
 ---
 
@@ -128,7 +135,7 @@ Engineering Manager (83) and Staff Engineer (94) both score in the Fortress tier
 
 | File | What it shows |
 | --- | --- |
-| [charts/safety_score.svg](charts/safety_score.svg) | Full ranking of all 36 roles, color-coded by tier. |
+| [charts/safety_score.svg](charts/safety_score.svg) | Top 50 + bottom 25 of the 1,000-role ranking, color-coded by tier (full ranking in `data/processed/role_ranking.csv`). |
 | [charts/automation_risk.svg](charts/automation_risk.svg) | Demand vs. automation resistance — quadrant view of risk. |
 | [charts/salary_range.svg](charts/salary_range.svg) | Senior-IC salary bands for the top, middle, and bottom of the ranking. |
 | [charts/demand_growth.svg](charts/demand_growth.svg) | Average safety score and demand by category. |
@@ -142,7 +149,7 @@ Regenerate with `python3 scripts/run_pipeline.py` (no third-party dependencies).
 ```text
 .
 ├── README.md           — this file (executive summary, conclusions)
-├── REPORT.md           — per-role analysis, all 36 roles, grouped by category
+├── REPORT.md           — top + bottom of the 1,000-role ranking and each category
 ├── INSIGHTS.md         — deep research synthesis with 2025–26 data, cited per claim
 ├── METHODOLOGY.md      — scoring rubric, weights, source list, limitations
 ├── data/
@@ -180,7 +187,7 @@ Regenerate with `python3 scripts/run_pipeline.py` (no third-party dependencies).
 │   └── visualization/     — pure-Python SVG generators
 ├── charts/                — four SVG charts (regenerated by the pipeline)
 └── docs/
-    ├── role_taxonomy.md       — 36 roles, definitions, primary skills
+    ├── role_taxonomy.md       — 36-role definitional taxonomy (predates the 1,000-role expansion)
     ├── career_paths.md        — entry points, pivots, skill combinations
     └── ai_impact_analysis.md  — Multipliers / Compressors / Replacements / Untouched
 ```
@@ -197,7 +204,7 @@ Regenerate with `python3 scripts/run_pipeline.py` (no third-party dependencies).
 python3 scripts/run_pipeline.py
 ```
 
-No third-party dependencies. Pipeline runs in <2 seconds. The `compute_scores.py` step verifies all 36 published scores match the rubric to the integer (it raises if any drift is detected).
+Pipeline runs in <5 seconds and uses `cairosvg` for the optional SVG→PNG rasterization step that feeds the LaTeX PDF; the score/chart generation has no third-party dependencies. The `compute_scores.py` step verifies all 1,000 published scores match the rubric to the integer (it raises if any drift is detected).
 
 ---
 
