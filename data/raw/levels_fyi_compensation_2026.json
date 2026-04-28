@@ -1,0 +1,45 @@
+{
+  "source": "Levels.fyi — public salary panels",
+  "source_urls": [
+    "https://www.levels.fyi/t/software-engineer/title/machine-learning-engineer",
+    "https://www.levels.fyi/t/software-engineer/focus/ml-ai",
+    "https://www.levels.fyi/companies/meta/salaries/software-engineer/title/machine-learning-engineer",
+    "https://www.levels.fyi/companies/google/salaries/software-engineer/title/machine-learning-engineer"
+  ],
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "currency": "USD",
+  "scope": "Total compensation (base + stock + bonus), senior IC, US",
+  "ml_engineer": {
+    "median_tc_overall": 264000,
+    "by_company": [
+      {"company": "LinkedIn",  "median_tc": 450000},
+      {"company": "Meta",      "median_tc": 430000},
+      {"company": "Apple",     "median_tc": 335000},
+      {"company": "Google",    "median_tc": 290000},
+      {"company": "Nvidia",    "median_tc": 267000},
+      {"company": "Amazon",    "median_tc": 265000},
+      {"company": "Microsoft", "median_tc": 252000},
+      {"company": "Stripe",    "median_tc": 305000},
+      {"company": "Anthropic", "median_tc": 480000},
+      {"company": "OpenAI",    "median_tc": 530000}
+    ]
+  },
+  "agentic_ai_engineer": {
+    "base_low":  155000,
+    "base_high": 265000,
+    "tc_top_tier": 400000,
+    "tc_frontier_lab": 500000,
+    "yoy_growth_2025_pct": 9.2,
+    "yoy_growth_2026_pct": 7.0,
+    "source_summary": "Acceler8 / KORE1 / Glassdoor triangulation"
+  },
+  "senior_software_engineer": {
+    "yoy_tc_growth_pct_2025": 15,
+    "note": "Goldman Sachs comp analysis (cited via KORE1) reports +12-18% YoY for senior software engineers at surviving companies in 2025."
+  },
+  "junior_offers": {
+    "yoy_change_pct_vs_2024_peak": -11,
+    "note": "Median range -8% to -15% across surveyed company panels. Junior tier being repriced."
+  }
+}

@@ -1,0 +1,37 @@
+role,seniority,base_low_usd,base_high_usd,total_comp_low_usd,total_comp_high_usd,sample_size,data_kind,calibrated_to
+Staff Engineer / Tech Lead,Senior,200000,360000,250000,700000,1840,simulated,Levels.fyi staff bands
+Engineering Manager,Senior,170000,280000,160000,400000,1620,simulated,
+Security Engineer,Senior,150000,250000,130000,350000,2210,simulated,
+Application Security Engineer,Senior,150000,260000,130000,360000,940,simulated,
+Cloud Security Engineer,Senior,150000,250000,130000,340000,820,simulated,
+Offensive Security / Red Team,Senior,140000,240000,120000,330000,310,simulated,
+AI Research Engineer,Senior,200000,420000,180000,700000,540,simulated,Frontier-lab outliers >$1M excluded from band
+ML Engineer,Senior,170000,300000,140000,400000,2100,simulated,Levels.fyi median TC $264K
+MLOps Engineer,Senior,160000,270000,130000,340000,860,simulated,
+Data Engineer,Senior,140000,240000,110000,310000,1850,simulated,
+AI Application Engineer,Senior,150000,260000,120000,320000,1240,simulated,
+Data Scientist,Senior,130000,210000,100000,250000,1620,simulated,Down from 2023 peak
+Analytics Engineer,Senior,120000,180000,90000,220000,720,simulated,
+Data Analyst,Senior,90000,135000,65000,160000,2380,simulated,
+Platform Engineer,Senior,160000,270000,130000,360000,1320,simulated,
+Site Reliability Engineer,Senior,160000,260000,130000,350000,1480,simulated,
+DevOps Engineer,Senior,140000,220000,100000,290000,2480,simulated,
+Cloud Engineer,Senior,130000,210000,95000,270000,2120,simulated,
+Systems / Low-level Engineer,Senior,160000,280000,110000,350000,460,simulated,Hyperscalers >$500K excluded
+Embedded Engineer,Senior,130000,200000,90000,230000,920,simulated,
+Backend Engineer,Senior,140000,220000,90000,280000,4380,simulated,
+Frontend Engineer,Senior,120000,190000,80000,230000,3240,simulated,
+Full-Stack Engineer,Senior,130000,210000,90000,260000,3650,simulated,
+iOS Engineer,Senior,140000,210000,95000,260000,1080,simulated,
+Android Engineer,Senior,135000,205000,90000,250000,940,simulated,
+SDET / Test Infrastructure,Senior,130000,190000,100000,230000,720,simulated,
+QA Automation,Senior,100000,150000,70000,170000,1410,simulated,
+QA Manual,Senior,75000,110000,50000,130000,1620,simulated,
+Technical Product Manager,Senior,160000,260000,130000,340000,1280,simulated,
+Product Manager,Senior,140000,230000,110000,310000,3450,simulated,
+UX Designer / Researcher,Senior,120000,180000,85000,220000,1320,simulated,
+Product Designer,Senior,135000,200000,95000,250000,1820,simulated,
+UI Designer,Senior,110000,160000,75000,190000,860,simulated,
+Solutions Architect,Senior,160000,260000,140000,340000,1240,simulated,OTE-heavy at vendors
+Developer Experience Engineer,Senior,150000,230000,120000,300000,640,simulated,
+Prompt Engineer,Senior,110000,150000,80000,180000,180,simulated,Listings down sharply

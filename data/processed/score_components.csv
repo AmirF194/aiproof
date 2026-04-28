@@ -1,0 +1,37 @@
+role,category,demand,automation_resistance,skill_depth,strategic_importance,weighted_demand,weighted_ar,weighted_sd,weighted_si,score_recomputed,tier_recomputed,score_published,tier_published,drift
+Staff Engineer / Tech Lead,Engineering Leadership,9,9,10,10,2.7,3.15,1.5,2.0,94,fortress,94,fortress,no
+Security Engineer,Security,9,9,9,10,2.7,3.15,1.35,2.0,92,fortress,92,fortress,no
+AI Research Engineer,Data & AI,8,9,10,9,2.4,3.15,1.5,1.8,89,fortress,89,fortress,no
+ML Engineer,Data & AI,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+MLOps Engineer,Data & AI,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+Platform Engineer,Platform & Infrastructure,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+Application Security Engineer,Security,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+Cloud Security Engineer,Security,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+Site Reliability Engineer,Platform & Infrastructure,8,8,9,9,2.4,2.8,1.35,1.8,84,fortress,84,fortress,no
+Offensive Security / Red Team,Security,7,9,10,8,2.1,3.15,1.5,1.6,84,fortress,84,fortress,no
+Engineering Manager,Engineering Leadership,7,9,8,9,2.1,3.15,1.2,1.8,83,fortress,83,fortress,no
+Data Engineer,Data & AI,9,7,8,9,2.7,2.45,1.2,1.8,82,safe,82,safe,no
+Systems / Low-level Engineer,Engineering,6,9,10,8,1.8,3.15,1.5,1.6,81,safe,81,safe,no
+Technical Product Manager,Product & Design,7,8,8,9,2.1,2.8,1.2,1.8,79,safe,79,safe,no
+Solutions Architect,Specialized & Emerging,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+Developer Experience Engineer,Specialized & Emerging,7,8,8,7,2.1,2.8,1.2,1.4,75,safe,75,safe,no
+Embedded Engineer,Engineering,6,8,9,7,1.8,2.8,1.35,1.4,74,safe,74,safe,no
+AI Application Engineer,Data & AI,10,5,6,8,3.0,1.75,0.9,1.6,73,safe,73,safe,no
+Product Manager,Product & Design,7,7,6,9,2.1,2.45,0.9,1.8,73,safe,73,safe,no
+Backend Engineer,Engineering,8,6,7,8,2.4,2.1,1.05,1.6,72,safe,72,safe,no
+DevOps Engineer,Platform & Infrastructure,7,7,7,8,2.1,2.45,1.05,1.6,72,safe,72,safe,no
+Cloud Engineer,Platform & Infrastructure,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+UX Designer / Researcher,Product & Design,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Product Designer,Product & Design,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+SDET / Test Infrastructure,Quality & Testing,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+iOS Engineer,Engineering,6,6,7,6,1.8,2.1,1.05,1.2,62,stable,62,stable,no
+Android Engineer,Engineering,6,6,7,6,1.8,2.1,1.05,1.2,62,stable,62,stable,no
+Full-Stack Engineer,Engineering,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
+Analytics Engineer,Data & AI,6,5,6,6,1.8,1.75,0.9,1.2,57,exposed,57,exposed,no
+Frontend Engineer,Engineering,6,4,5,6,1.8,1.4,0.75,1.2,52,exposed,52,exposed,no
+Data Scientist,Data & AI,5,4,7,6,1.5,1.4,1.05,1.2,52,exposed,52,exposed,no
+QA Automation,Quality & Testing,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+UI Designer,Product & Design,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+Data Analyst,Data & AI,4,2,4,4,1.2,0.7,0.6,0.8,33,at_risk,33,at_risk,no
+Prompt Engineer,Specialized & Emerging,3,2,3,3,0.9,0.7,0.45,0.6,27,at_risk,27,at_risk,no
+QA Manual,Quality & Testing,2,1,3,3,0.6,0.35,0.45,0.6,20,at_risk,20,at_risk,no

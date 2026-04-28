@@ -1,0 +1,36 @@
+"""Shared helpers for data-collection scripts."""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from typing import Any
+
+REPO = Path(__file__).resolve().parent.parent.parent
+RAW = REPO / "data" / "raw"
+
+
+def write_json(path: Path, payload: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, sort_keys=False) + "\n")
+
+
+def read_json(path: Path) -> Any:
+    return json.loads(path.read_text())
+
+
+def http_get(url: str, timeout: float = 10.0) -> str | None:
+    """Best-effort HTTP fetch using only the stdlib. Returns None on failure.
+
+    Returns None when the network is unavailable, the host blocks the UA, or
+    the request times out — pipelines downstream must fall back to cache.
+    """
+    try:
+        import urllib.request
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "tech-jobs-research/1.0 (+https://github.com/fastinfer/tech-jobs)"},
+        )
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.read().decode("utf-8", errors="replace")
+    except Exception:
+        return None

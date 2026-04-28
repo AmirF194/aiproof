@@ -1,0 +1,58 @@
+{
+  "source": "Gartner — public forecasts and press releases",
+  "source_urls": [
+    "https://www.gartner.com/en/infrastructure-and-it-operations-leaders/topics/platform-engineering",
+    "https://dev.to/meena_nukala/platform-engineering-in-2026-the-numbers-behind-the-boom-and-why-its-transforming-devops-381l",
+    "https://platformengineering.com/features/platform-engineering-becomes-mandatory-the-new-devops-standard/"
+  ],
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "forecasts": [
+    {
+      "topic": "Platform engineering adoption",
+      "metric": "% of large software engineering orgs with platform engineering teams",
+      "value_2022_pct": 45,
+      "value_2025_pct": 55,
+      "value_2026_target_pct": 80,
+      "implication": "Anchor signal for Platform Engineer (87) and adjacent roles."
+    },
+    {
+      "topic": "AI agents in enterprise applications",
+      "metric": "% of enterprise applications including task-specific AI agents",
+      "value_2025_pct": 5,
+      "value_end_2026_target_pct": 40,
+      "implication": "Structural demand for ML / AI Application / MLOps engineers."
+    },
+    {
+      "topic": "AI code-assistant adoption among engineers",
+      "metric": "% of enterprise software engineers using AI code assistants",
+      "value_early_2024_pct": 14,
+      "value_2028_target_pct": 90,
+      "implication": "Tailwind for engineers building IDP/dev-platform infra; pressure on roles whose work is most AI-augmented."
+    },
+    {
+      "topic": "Test automation",
+      "metric": "% of routine QA testing automated",
+      "value_2025_actual_pct": 48,
+      "value_2030_target_pct": 65,
+      "skilled_qa_demand_yoy_pct": 25,
+      "implication": "Manual QA collapses; SDET / AI-eval QA grows."
+    },
+    {
+      "topic": "Cloud spend",
+      "metric": "Worldwide public cloud services revenue YoY growth",
+      "value_2024_yoy_pct": 19,
+      "value_2025_yoy_pct": 21,
+      "value_2026_forecast_yoy_pct": 22,
+      "implication": "Strong tailwind for Cloud + Platform + Cloud Security roles."
+    },
+    {
+      "topic": "Cybersecurity spending",
+      "metric": "Worldwide infosec spend YoY growth",
+      "value_2024_yoy_pct": 14,
+      "value_2025_yoy_pct": 13,
+      "value_2026_forecast_yoy_pct": 14,
+      "implication": "Underpins the Security cluster's Fortress-tier scoring."
+    }
+  ]
+}

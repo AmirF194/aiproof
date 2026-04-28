@@ -1,0 +1,9 @@
+category,n_roles,avg_score,avg_demand,avg_automation_resistance,avg_skill_depth,avg_strategic_importance
+Engineering Leadership,2,88.5,8.0,9.0,9.0,9.5
+Security,4,87.5,8.5,8.5,9.25,9.0
+Data & AI,8,70.0,7.5,6.0,7.38,7.5
+Platform & Infrastructure,4,77.5,7.75,7.25,8.0,8.25
+Engineering,7,66.4,6.43,6.29,7.29,6.86
+Quality & Testing,3,41.3,4.0,3.33,5.0,5.0
+Product & Design,5,64.6,6.0,6.2,6.6,7.4
+Specialized & Emerging,3,60.3,5.67,6.0,6.67,6.0

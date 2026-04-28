@@ -1,0 +1,36 @@
+{
+  "source": "World Economic Forum — Future of Jobs Report 2025",
+  "source_urls": [
+    "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+    "https://testrigor.com/blog/will-ai-replace-testers/"
+  ],
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "period_covered": "2025-2030",
+  "key_findings": {
+    "employers_planning_workforce_reductions_due_to_ai_automation_pct": 41,
+    "employers_planning_to_upskill_workforce_pct": 85,
+    "fastest_growing_roles": [
+      "Big Data Specialists",
+      "FinTech Engineers",
+      "AI / ML Specialists",
+      "Software & Application Developers",
+      "Security Management Specialists",
+      "Data Warehousing Specialists"
+    ],
+    "fastest_declining_roles": [
+      "Postal Service Clerks",
+      "Bank Tellers",
+      "Data Entry Clerks",
+      "Cashiers",
+      "Administrative Assistants",
+      "Accounting Clerks"
+    ]
+  },
+  "tech_specific_signals": {
+    "ai_ml_specialist_growth_pct_2025_2030": 40,
+    "data_warehousing_specialist_growth_pct_2025_2030": 35,
+    "cybersecurity_specialist_growth_pct_2025_2030": 32,
+    "software_developer_growth_pct_2025_2030": 23
+  }
+}

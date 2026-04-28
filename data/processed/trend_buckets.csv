@@ -1,0 +1,37 @@
+role,category,score,tier,postings_2yr_pct,ai_mention_pct_2026,ai_mention_delta_pp,ai_impact_bucket
+Backend Engineer,Engineering,72,safe,-7.0,58,40,compressor
+Cloud Engineer,Platform & Infrastructure,67,stable,-7.9,36,24,compressor
+UX Designer / Researcher,Product & Design,67,stable,-0.6,36,24,compressor
+Product Designer,Product & Design,64,stable,-5.7,42,30,compressor
+SDET / Test Infrastructure,Quality & Testing,64,stable,-5.7,60,44,compressor
+iOS Engineer,Engineering,62,stable,-5.3,30,22,compressor
+Android Engineer,Engineering,62,stable,-5.5,30,22,compressor
+UI Designer,Product & Design,40,at_risk,-28.3,28,20,compressor
+QA Manual,Quality & Testing,20,at_risk,-48.7,26,18,compressor
+AI Research Engineer,Data & AI,89,fortress,63.4,100,0,growing
+ML Engineer,Data & AI,87,fortress,52.6,99,1,growing
+MLOps Engineer,Data & AI,87,fortress,89.4,99,0,growing
+AI Application Engineer,Data & AI,73,safe,427.3,100,1,growing
+Staff Engineer / Tech Lead,Engineering Leadership,94,fortress,23.3,68,40,multiplier
+Security Engineer,Security,92,fortress,46.2,72,51,multiplier
+Platform Engineer,Platform & Infrastructure,87,fortress,71.2,62,46,multiplier
+Application Security Engineer,Security,87,fortress,56.4,82,50,multiplier
+Cloud Security Engineer,Security,87,fortress,69.5,72,50,multiplier
+Site Reliability Engineer,Platform & Infrastructure,84,fortress,20.0,58,40,multiplier
+Offensive Security / Red Team,Security,84,fortress,20.5,68,50,multiplier
+Data Engineer,Data & AI,82,safe,17.1,82,42,multiplier
+Systems / Low-level Engineer,Engineering,81,safe,18.3,46,32,multiplier
+Technical Product Manager,Product & Design,79,safe,26.4,74,46,multiplier
+Solutions Architect,Specialized & Emerging,79,safe,7.0,72,44,multiplier
+Developer Experience Engineer,Specialized & Emerging,75,safe,40.0,72,50,multiplier
+Embedded Engineer,Engineering,74,safe,8.2,28,20,multiplier
+Product Manager,Product & Design,73,safe,12.5,62,44,multiplier
+DevOps Engineer,Platform & Infrastructure,72,safe,-10.7,48,34,replacement
+Full-Stack Engineer,Engineering,62,stable,-18.4,62,44,replacement
+Analytics Engineer,Data & AI,57,exposed,-10.5,52,30,replacement
+Frontend Engineer,Engineering,52,exposed,-27.3,46,32,replacement
+Data Scientist,Data & AI,52,exposed,-28.7,80,22,replacement
+QA Automation,Quality & Testing,40,at_risk,-29.1,68,46,replacement
+Data Analyst,Data & AI,33,at_risk,-28.7,44,26,replacement
+Prompt Engineer,Specialized & Emerging,27,at_risk,-61.9,100,0,replacement
+Engineering Manager,Engineering Leadership,83,fortress,0.2,56,38,stable

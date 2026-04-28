@@ -1,0 +1,35 @@
+{
+  "source": "Stack Overflow Developer Survey 2025",
+  "source_urls": [
+    "https://survey.stackoverflow.co/2025/ai",
+    "https://stackoverflow.blog/2025/12/29/developers-remain-willing-but-reluctant-to-use-ai-the-2025-developer-survey-results-are-here/",
+    "https://stackoverflow.blog/2025/12/26/ai-vs-gen-z/"
+  ],
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "respondents": 49000,
+  "ai_use": {
+    "using_or_planning_to_use_ai_tools_pct": 84,
+    "using_in_2024_pct": 76,
+    "professional_developers_using_daily_pct": 51,
+    "trust_ai_output_pct": 29,
+    "trust_ai_output_pct_2024": 40,
+    "find_debugging_ai_code_time_consuming_pct": 45
+  },
+  "tools_top_5_in_use": [
+    {"tool": "GitHub Copilot",      "pct": 53},
+    {"tool": "ChatGPT",             "pct": 64},
+    {"tool": "Claude",              "pct": 38},
+    {"tool": "Cursor",              "pct": 24},
+    {"tool": "Gemini Code Assist",  "pct": 17}
+  ],
+  "productivity_estimate": {
+    "code_per_sprint_uplift_pct_low":  40,
+    "code_per_sprint_uplift_pct_high": 55,
+    "interpretation": "10-engineer team with AI matches 2022 output of a 15-engineer team without it. Mechanical basis for 'compressors' in the analysis."
+  },
+  "junior_developer_signal": {
+    "developers_aged_22_25_employment_change_vs_late_2022_peak_pct": -20,
+    "source_note": "Stanford / Current Population Survey analysis cited via SF Standard, Feb 2026."
+  }
+}

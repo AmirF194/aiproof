@@ -1,0 +1,217 @@
+role,month,source,postings_count,data_kind
+AI Application Engineer,2024-01,linkedin,1100,simulated
+AI Application Engineer,2024-07,linkedin,1850,simulated
+AI Application Engineer,2025-01,linkedin,3200,simulated
+AI Application Engineer,2025-07,linkedin,4600,simulated
+AI Application Engineer,2026-01,indeed,3210,simulated
+AI Application Engineer,2026-01,linkedin,5800,simulated
+AI Research Engineer,2024-01,linkedin,820,simulated
+AI Research Engineer,2024-07,linkedin,900,simulated
+AI Research Engineer,2025-01,linkedin,1010,simulated
+AI Research Engineer,2025-07,linkedin,1180,simulated
+AI Research Engineer,2026-01,indeed,640,simulated
+AI Research Engineer,2026-01,linkedin,1340,simulated
+Analytics Engineer,2024-01,linkedin,1900,simulated
+Analytics Engineer,2024-07,linkedin,1880,simulated
+Analytics Engineer,2025-01,linkedin,1830,simulated
+Analytics Engineer,2025-07,linkedin,1770,simulated
+Analytics Engineer,2026-01,indeed,920,simulated
+Analytics Engineer,2026-01,linkedin,1700,simulated
+Android Engineer,2024-01,linkedin,2900,simulated
+Android Engineer,2024-07,linkedin,2870,simulated
+Android Engineer,2025-01,linkedin,2830,simulated
+Android Engineer,2025-07,linkedin,2790,simulated
+Android Engineer,2026-01,indeed,1450,simulated
+Android Engineer,2026-01,linkedin,2740,simulated
+Application Security Engineer,2024-01,linkedin,2200,simulated
+Application Security Engineer,2024-07,linkedin,2410,simulated
+Application Security Engineer,2025-01,linkedin,2680,simulated
+Application Security Engineer,2025-07,linkedin,3060,simulated
+Application Security Engineer,2026-01,indeed,1820,simulated
+Application Security Engineer,2026-01,linkedin,3440,simulated
+Backend Engineer,2024-01,linkedin,18500,simulated
+Backend Engineer,2024-07,linkedin,18200,simulated
+Backend Engineer,2025-01,linkedin,17800,simulated
+Backend Engineer,2025-07,linkedin,17500,simulated
+Backend Engineer,2026-01,indeed,9050,simulated
+Backend Engineer,2026-01,linkedin,17200,simulated
+Cloud Engineer,2024-01,linkedin,7600,simulated
+Cloud Engineer,2024-07,linkedin,7480,simulated
+Cloud Engineer,2025-01,linkedin,7320,simulated
+Cloud Engineer,2025-07,linkedin,7150,simulated
+Cloud Engineer,2026-01,indeed,3760,simulated
+Cloud Engineer,2026-01,linkedin,7000,simulated
+Cloud Security Engineer,2024-01,linkedin,1900,simulated
+Cloud Security Engineer,2024-07,linkedin,2150,simulated
+Cloud Security Engineer,2025-01,linkedin,2480,simulated
+Cloud Security Engineer,2025-07,linkedin,2820,simulated
+Cloud Security Engineer,2026-01,indeed,1740,simulated
+Cloud Security Engineer,2026-01,linkedin,3220,simulated
+Data Analyst,2024-01,linkedin,11500,simulated
+Data Analyst,2024-07,linkedin,10800,simulated
+Data Analyst,2025-01,linkedin,9900,simulated
+Data Analyst,2025-07,linkedin,9050,simulated
+Data Analyst,2026-01,indeed,4350,simulated
+Data Analyst,2026-01,linkedin,8200,simulated
+Data Engineer,2024-01,linkedin,8200,simulated
+Data Engineer,2024-07,linkedin,8520,simulated
+Data Engineer,2025-01,linkedin,8900,simulated
+Data Engineer,2025-07,linkedin,9230,simulated
+Data Engineer,2026-01,indeed,5400,simulated
+Data Engineer,2026-01,linkedin,9600,simulated
+Data Scientist,2024-01,linkedin,5400,simulated
+Data Scientist,2024-07,linkedin,4920,simulated
+Data Scientist,2025-01,linkedin,4500,simulated
+Data Scientist,2025-07,linkedin,4180,simulated
+Data Scientist,2026-01,indeed,2100,simulated
+Data Scientist,2026-01,linkedin,3850,simulated
+DevOps Engineer,2024-01,linkedin,9400,simulated
+DevOps Engineer,2024-07,linkedin,9180,simulated
+DevOps Engineer,2025-01,linkedin,8920,simulated
+DevOps Engineer,2025-07,linkedin,8650,simulated
+DevOps Engineer,2026-01,indeed,4490,simulated
+DevOps Engineer,2026-01,linkedin,8390,simulated
+Developer Experience Engineer,2024-01,linkedin,1100,simulated
+Developer Experience Engineer,2024-07,linkedin,1190,simulated
+Developer Experience Engineer,2025-01,linkedin,1290,simulated
+Developer Experience Engineer,2025-07,linkedin,1410,simulated
+Developer Experience Engineer,2026-01,indeed,810,simulated
+Developer Experience Engineer,2026-01,linkedin,1540,simulated
+Embedded Engineer,2024-01,linkedin,2200,simulated
+Embedded Engineer,2024-07,linkedin,2240,simulated
+Embedded Engineer,2025-01,linkedin,2280,simulated
+Embedded Engineer,2025-07,linkedin,2330,simulated
+Embedded Engineer,2026-01,indeed,1280,simulated
+Embedded Engineer,2026-01,linkedin,2380,simulated
+Engineering Manager,2024-01,linkedin,5800,simulated
+Engineering Manager,2024-07,linkedin,5720,simulated
+Engineering Manager,2025-01,linkedin,5650,simulated
+Engineering Manager,2025-07,linkedin,5720,simulated
+Engineering Manager,2026-01,indeed,3120,simulated
+Engineering Manager,2026-01,linkedin,5810,simulated
+Frontend Engineer,2024-01,linkedin,12800,simulated
+Frontend Engineer,2024-07,linkedin,11900,simulated
+Frontend Engineer,2025-01,linkedin,11000,simulated
+Frontend Engineer,2025-07,linkedin,10100,simulated
+Frontend Engineer,2026-01,indeed,4820,simulated
+Frontend Engineer,2026-01,linkedin,9300,simulated
+Full-Stack Engineer,2024-01,linkedin,15200,simulated
+Full-Stack Engineer,2024-07,linkedin,14600,simulated
+Full-Stack Engineer,2025-01,linkedin,13900,simulated
+Full-Stack Engineer,2025-07,linkedin,13150,simulated
+Full-Stack Engineer,2026-01,indeed,6500,simulated
+Full-Stack Engineer,2026-01,linkedin,12400,simulated
+ML Engineer,2024-01,linkedin,7800,simulated
+ML Engineer,2024-07,linkedin,8600,simulated
+ML Engineer,2025-01,linkedin,9450,simulated
+ML Engineer,2025-07,linkedin,10580,simulated
+ML Engineer,2026-01,indeed,6300,simulated
+ML Engineer,2026-01,linkedin,11900,simulated
+MLOps Engineer,2024-01,linkedin,1700,simulated
+MLOps Engineer,2024-07,linkedin,2010,simulated
+MLOps Engineer,2025-01,linkedin,2380,simulated
+MLOps Engineer,2025-07,linkedin,2780,simulated
+MLOps Engineer,2026-01,indeed,1680,simulated
+MLOps Engineer,2026-01,linkedin,3220,simulated
+Offensive Security / Red Team,2024-01,linkedin,560,simulated
+Offensive Security / Red Team,2024-07,linkedin,580,simulated
+Offensive Security / Red Team,2025-01,linkedin,610,simulated
+Offensive Security / Red Team,2025-07,linkedin,640,simulated
+Offensive Security / Red Team,2026-01,indeed,310,simulated
+Offensive Security / Red Team,2026-01,linkedin,675,simulated
+Platform Engineer,2024-01,linkedin,3200,simulated
+Platform Engineer,2024-07,linkedin,3680,simulated
+Platform Engineer,2025-01,linkedin,4200,simulated
+Platform Engineer,2025-07,linkedin,4810,simulated
+Platform Engineer,2026-01,indeed,2980,simulated
+Platform Engineer,2026-01,linkedin,5480,simulated
+Product Designer,2024-01,linkedin,4200,simulated
+Product Designer,2024-07,linkedin,4140,simulated
+Product Designer,2025-01,linkedin,4080,simulated
+Product Designer,2025-07,linkedin,4020,simulated
+Product Designer,2026-01,indeed,2110,simulated
+Product Designer,2026-01,linkedin,3960,simulated
+Product Manager,2024-01,linkedin,8400,simulated
+Product Manager,2024-07,linkedin,8650,simulated
+Product Manager,2025-01,linkedin,8900,simulated
+Product Manager,2025-07,linkedin,9180,simulated
+Product Manager,2026-01,indeed,5020,simulated
+Product Manager,2026-01,linkedin,9450,simulated
+Prompt Engineer,2024-01,linkedin,420,simulated
+Prompt Engineer,2024-07,linkedin,360,simulated
+Prompt Engineer,2025-01,linkedin,290,simulated
+Prompt Engineer,2025-07,linkedin,220,simulated
+Prompt Engineer,2026-01,indeed,84,simulated
+Prompt Engineer,2026-01,linkedin,160,simulated
+QA Automation,2024-01,linkedin,4600,simulated
+QA Automation,2024-07,linkedin,4280,simulated
+QA Automation,2025-01,linkedin,3920,simulated
+QA Automation,2025-07,linkedin,3580,simulated
+QA Automation,2026-01,indeed,1810,simulated
+QA Automation,2026-01,linkedin,3260,simulated
+QA Manual,2024-01,linkedin,3800,simulated
+QA Manual,2024-07,linkedin,3320,simulated
+QA Manual,2025-01,linkedin,2840,simulated
+QA Manual,2025-07,linkedin,2380,simulated
+QA Manual,2026-01,indeed,1080,simulated
+QA Manual,2026-01,linkedin,1950,simulated
+SDET / Test Infrastructure,2024-01,linkedin,2100,simulated
+SDET / Test Infrastructure,2024-07,linkedin,2080,simulated
+SDET / Test Infrastructure,2025-01,linkedin,2050,simulated
+SDET / Test Infrastructure,2025-07,linkedin,2010,simulated
+SDET / Test Infrastructure,2026-01,indeed,1090,simulated
+SDET / Test Infrastructure,2026-01,linkedin,1980,simulated
+Security Engineer,2024-01,linkedin,6100,simulated
+Security Engineer,2024-07,linkedin,6580,simulated
+Security Engineer,2025-01,linkedin,7240,simulated
+Security Engineer,2025-07,linkedin,8050,simulated
+Security Engineer,2026-01,indeed,4860,simulated
+Security Engineer,2026-01,linkedin,8920,simulated
+Site Reliability Engineer,2024-01,linkedin,4100,simulated
+Site Reliability Engineer,2024-07,linkedin,4280,simulated
+Site Reliability Engineer,2025-01,linkedin,4480,simulated
+Site Reliability Engineer,2025-07,linkedin,4690,simulated
+Site Reliability Engineer,2026-01,indeed,2640,simulated
+Site Reliability Engineer,2026-01,linkedin,4920,simulated
+Solutions Architect,2024-01,linkedin,3700,simulated
+Solutions Architect,2024-07,linkedin,3760,simulated
+Solutions Architect,2025-01,linkedin,3820,simulated
+Solutions Architect,2025-07,linkedin,3890,simulated
+Solutions Architect,2026-01,indeed,2110,simulated
+Solutions Architect,2026-01,linkedin,3960,simulated
+Staff Engineer / Tech Lead,2024-01,linkedin,4200,simulated
+Staff Engineer / Tech Lead,2024-07,linkedin,4380,simulated
+Staff Engineer / Tech Lead,2025-01,linkedin,4650,simulated
+Staff Engineer / Tech Lead,2025-07,linkedin,4910,simulated
+Staff Engineer / Tech Lead,2026-01,indeed,2050,simulated
+Staff Engineer / Tech Lead,2026-01,linkedin,5180,simulated
+Systems / Low-level Engineer,2024-01,linkedin,1200,simulated
+Systems / Low-level Engineer,2024-07,linkedin,1240,simulated
+Systems / Low-level Engineer,2025-01,linkedin,1290,simulated
+Systems / Low-level Engineer,2025-07,linkedin,1350,simulated
+Systems / Low-level Engineer,2026-01,indeed,780,simulated
+Systems / Low-level Engineer,2026-01,linkedin,1420,simulated
+Technical Product Manager,2024-01,linkedin,2800,simulated
+Technical Product Manager,2024-07,linkedin,2950,simulated
+Technical Product Manager,2025-01,linkedin,3120,simulated
+Technical Product Manager,2025-07,linkedin,3320,simulated
+Technical Product Manager,2026-01,indeed,1880,simulated
+Technical Product Manager,2026-01,linkedin,3540,simulated
+UI Designer,2024-01,linkedin,2400,simulated
+UI Designer,2024-07,linkedin,2230,simulated
+UI Designer,2025-01,linkedin,2050,simulated
+UI Designer,2025-07,linkedin,1880,simulated
+UI Designer,2026-01,indeed,920,simulated
+UI Designer,2026-01,linkedin,1720,simulated
+UX Designer / Researcher,2024-01,linkedin,3100,simulated
+UX Designer / Researcher,2024-07,linkedin,3080,simulated
+UX Designer / Researcher,2025-01,linkedin,3050,simulated
+UX Designer / Researcher,2025-07,linkedin,3060,simulated
+UX Designer / Researcher,2026-01,indeed,1640,simulated
+UX Designer / Researcher,2026-01,linkedin,3080,simulated
+iOS Engineer,2024-01,linkedin,3200,simulated
+iOS Engineer,2024-07,linkedin,3160,simulated
+iOS Engineer,2025-01,linkedin,3120,simulated
+iOS Engineer,2025-07,linkedin,3080,simulated
+iOS Engineer,2026-01,indeed,1610,simulated
+iOS Engineer,2026-01,linkedin,3030,simulated

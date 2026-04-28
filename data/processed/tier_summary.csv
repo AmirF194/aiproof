@@ -1,0 +1,6 @@
+verdict_tier,n_roles,avg_score,avg_demand,avg_automation_resistance,avg_skill_depth,avg_strategic_importance
+fortress,11,87.4,8.45,8.45,9.18,9.09
+safe,10,76.0,7.4,7.3,7.8,8.1
+stable,7,64.0,6.29,6.0,6.86,6.71
+exposed,3,53.7,5.67,4.33,6.0,6.0
+at_risk,5,32.0,3.4,2.2,4.0,4.0

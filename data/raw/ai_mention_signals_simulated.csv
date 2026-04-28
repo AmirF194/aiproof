@@ -1,0 +1,109 @@
+role,month,pct_postings_mentioning_ai_or_llm,pct_postings_mentioning_copilot_or_cursor,data_kind
+Staff Engineer / Tech Lead,2024-01,28,9,simulated
+Staff Engineer / Tech Lead,2025-01,46,22,simulated
+Staff Engineer / Tech Lead,2026-01,68,41,simulated
+Engineering Manager,2024-01,18,4,simulated
+Engineering Manager,2025-01,34,12,simulated
+Engineering Manager,2026-01,56,24,simulated
+Security Engineer,2024-01,21,6,simulated
+Security Engineer,2025-01,47,18,simulated
+Security Engineer,2026-01,72,32,simulated
+ML Engineer,2024-01,98,18,simulated
+ML Engineer,2025-01,99,38,simulated
+ML Engineer,2026-01,99,55,simulated
+MLOps Engineer,2024-01,99,16,simulated
+MLOps Engineer,2025-01,99,36,simulated
+MLOps Engineer,2026-01,99,52,simulated
+AI Research Engineer,2024-01,100,8,simulated
+AI Research Engineer,2025-01,100,22,simulated
+AI Research Engineer,2026-01,100,34,simulated
+AI Application Engineer,2024-01,99,22,simulated
+AI Application Engineer,2025-01,100,46,simulated
+AI Application Engineer,2026-01,100,67,simulated
+Data Engineer,2024-01,40,7,simulated
+Data Engineer,2025-01,68,18,simulated
+Data Engineer,2026-01,82,28,simulated
+Data Scientist,2024-01,58,9,simulated
+Data Scientist,2025-01,72,17,simulated
+Data Scientist,2026-01,80,24,simulated
+Analytics Engineer,2024-01,22,3,simulated
+Analytics Engineer,2025-01,38,8,simulated
+Analytics Engineer,2026-01,52,16,simulated
+Data Analyst,2024-01,18,2,simulated
+Data Analyst,2025-01,30,4,simulated
+Data Analyst,2026-01,44,9,simulated
+Platform Engineer,2024-01,16,9,simulated
+Platform Engineer,2025-01,38,28,simulated
+Platform Engineer,2026-01,62,49,simulated
+Site Reliability Engineer,2024-01,18,6,simulated
+Site Reliability Engineer,2025-01,38,18,simulated
+Site Reliability Engineer,2026-01,58,32,simulated
+DevOps Engineer,2024-01,14,7,simulated
+DevOps Engineer,2025-01,30,18,simulated
+DevOps Engineer,2026-01,48,30,simulated
+Cloud Engineer,2024-01,12,6,simulated
+Cloud Engineer,2025-01,24,16,simulated
+Cloud Engineer,2026-01,36,26,simulated
+Cloud Security Engineer,2024-01,22,8,simulated
+Cloud Security Engineer,2025-01,48,22,simulated
+Cloud Security Engineer,2026-01,72,38,simulated
+Application Security Engineer,2024-01,32,10,simulated
+Application Security Engineer,2025-01,58,26,simulated
+Application Security Engineer,2026-01,82,44,simulated
+Offensive Security / Red Team,2024-01,18,4,simulated
+Offensive Security / Red Team,2025-01,42,14,simulated
+Offensive Security / Red Team,2026-01,68,28,simulated
+Systems / Low-level Engineer,2024-01,14,4,simulated
+Systems / Low-level Engineer,2025-01,28,12,simulated
+Systems / Low-level Engineer,2026-01,46,22,simulated
+Embedded Engineer,2024-01,8,2,simulated
+Embedded Engineer,2025-01,16,6,simulated
+Embedded Engineer,2026-01,28,14,simulated
+Backend Engineer,2024-01,18,12,simulated
+Backend Engineer,2025-01,38,32,simulated
+Backend Engineer,2026-01,58,52,simulated
+Frontend Engineer,2024-01,14,16,simulated
+Frontend Engineer,2025-01,30,38,simulated
+Frontend Engineer,2026-01,46,58,simulated
+Full-Stack Engineer,2024-01,18,18,simulated
+Full-Stack Engineer,2025-01,40,42,simulated
+Full-Stack Engineer,2026-01,62,62,simulated
+iOS Engineer,2024-01,8,8,simulated
+iOS Engineer,2025-01,18,22,simulated
+iOS Engineer,2026-01,30,38,simulated
+Android Engineer,2024-01,8,8,simulated
+Android Engineer,2025-01,18,22,simulated
+Android Engineer,2026-01,30,38,simulated
+SDET / Test Infrastructure,2024-01,16,6,simulated
+SDET / Test Infrastructure,2025-01,38,22,simulated
+SDET / Test Infrastructure,2026-01,60,40,simulated
+QA Automation,2024-01,22,4,simulated
+QA Automation,2025-01,46,12,simulated
+QA Automation,2026-01,68,22,simulated
+QA Manual,2024-01,8,1,simulated
+QA Manual,2025-01,16,2,simulated
+QA Manual,2026-01,26,4,simulated
+Technical Product Manager,2024-01,28,5,simulated
+Technical Product Manager,2025-01,52,14,simulated
+Technical Product Manager,2026-01,74,26,simulated
+Product Manager,2024-01,18,3,simulated
+Product Manager,2025-01,40,10,simulated
+Product Manager,2026-01,62,20,simulated
+UX Designer / Researcher,2024-01,12,2,simulated
+UX Designer / Researcher,2025-01,22,5,simulated
+UX Designer / Researcher,2026-01,36,12,simulated
+Product Designer,2024-01,12,3,simulated
+Product Designer,2025-01,26,10,simulated
+Product Designer,2026-01,42,20,simulated
+UI Designer,2024-01,8,2,simulated
+UI Designer,2025-01,16,6,simulated
+UI Designer,2026-01,28,12,simulated
+Solutions Architect,2024-01,28,8,simulated
+Solutions Architect,2025-01,52,22,simulated
+Solutions Architect,2026-01,72,38,simulated
+Developer Experience Engineer,2024-01,22,16,simulated
+Developer Experience Engineer,2025-01,48,38,simulated
+Developer Experience Engineer,2026-01,72,58,simulated
+Prompt Engineer,2024-01,100,12,simulated
+Prompt Engineer,2025-01,100,18,simulated
+Prompt Engineer,2026-01,100,22,simulated

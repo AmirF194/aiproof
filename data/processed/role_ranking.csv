@@ -1,0 +1,37 @@
+rank,role,category,score,tier,demand_trend
+1,Staff Engineer / Tech Lead,Engineering Leadership,94,fortress,rising
+2,Security Engineer,Security,92,fortress,rising
+3,AI Research Engineer,Data & AI,89,fortress,rising
+4,ML Engineer,Data & AI,87,fortress,rising
+4,MLOps Engineer,Data & AI,87,fortress,rising
+4,Platform Engineer,Platform & Infrastructure,87,fortress,rising
+4,Application Security Engineer,Security,87,fortress,rising
+4,Cloud Security Engineer,Security,87,fortress,rising
+9,Site Reliability Engineer,Platform & Infrastructure,84,fortress,stable
+9,Offensive Security / Red Team,Security,84,fortress,stable
+11,Engineering Manager,Engineering Leadership,83,fortress,stable
+12,Data Engineer,Data & AI,82,safe,rising
+13,Systems / Low-level Engineer,Engineering,81,safe,stable
+14,Technical Product Manager,Product & Design,79,safe,stable
+14,Solutions Architect,Specialized & Emerging,79,safe,stable
+16,Developer Experience Engineer,Specialized & Emerging,75,safe,rising
+17,Embedded Engineer,Engineering,74,safe,stable
+18,AI Application Engineer,Data & AI,73,safe,rising
+18,Product Manager,Product & Design,73,safe,stable
+20,Backend Engineer,Engineering,72,safe,stable
+20,DevOps Engineer,Platform & Infrastructure,72,safe,stable
+22,Cloud Engineer,Platform & Infrastructure,67,stable,declining
+22,UX Designer / Researcher,Product & Design,67,stable,stable
+24,Product Designer,Product & Design,64,stable,stable
+24,SDET / Test Infrastructure,Quality & Testing,64,stable,stable
+26,iOS Engineer,Engineering,62,stable,stable
+26,Android Engineer,Engineering,62,stable,stable
+26,Full-Stack Engineer,Engineering,62,stable,declining
+29,Analytics Engineer,Data & AI,57,exposed,stable
+30,Frontend Engineer,Engineering,52,exposed,declining
+30,Data Scientist,Data & AI,52,exposed,declining
+32,QA Automation,Quality & Testing,40,at_risk,declining
+32,UI Designer,Product & Design,40,at_risk,declining
+34,Data Analyst,Data & AI,33,at_risk,declining
+35,Prompt Engineer,Specialized & Emerging,27,at_risk,declining
+36,QA Manual,Quality & Testing,20,at_risk,declining

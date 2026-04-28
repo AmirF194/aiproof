@@ -1,0 +1,33 @@
+{
+  "source": "ISC2 2025 Cybersecurity Workforce Study",
+  "source_url": "https://www.isc2.org/Insights/2025/12/2025-ISC2-Cybersecurity-Workforce-Study",
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "global_workforce_size": 5500000,
+  "global_workforce_gap": 4800000,
+  "us_workforce_gap_estimate": 700000,
+  "orgs_reporting_critical_or_significant_skills_shortage_pct": 59,
+  "orgs_reporting_critical_or_significant_skills_shortage_pct_2024": 44,
+  "orgs_with_significant_security_consequence_pct": 88,
+  "orgs_with_more_than_one_consequence_pct": 69,
+  "top_skill_gaps": [
+    {"skill": "AI / ML",                "pct_orgs_citing": 41, "rank": 1},
+    {"skill": "Cloud security",         "pct_orgs_citing": 30, "rank": 2},
+    {"skill": "Zero trust architecture","pct_orgs_citing": 27, "rank": 3},
+    {"skill": "Application security",   "pct_orgs_citing": 25, "rank": 4},
+    {"skill": "DevSecOps",              "pct_orgs_citing": 23, "rank": 5},
+    {"skill": "Identity & access mgmt", "pct_orgs_citing": 22, "rank": 6}
+  ],
+  "ai_in_security_adoption": {
+    "orgs_using_ai_in_security_pct": 70,
+    "orgs_planning_to_increase_ai_security_budget_pct": 64
+  },
+  "regulatory_drivers_referenced": [
+    "EU AI Act (enforcement phasing 2025-2026)",
+    "SEC cyber-disclosure rule (2024)",
+    "PCI DSS 4.0 mandatory March 2025",
+    "NIS2 (EU)",
+    "DORA (EU financial sector)"
+  ],
+  "implication_for_scoring": "Demand–supply gap in security widened YoY (44% -> 59%). Every security role lands in the top quartile of the rubric and the data more than supports it."
+}

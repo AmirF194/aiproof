@@ -1,0 +1,32 @@
+{
+  "source": "Challenger, Gray & Christmas Q1 2026 job-cut report (summarized via Tom's Hardware, KORE1, Vucense)",
+  "source_urls": [
+    "https://www.tomshardware.com/tech-industry/tech-industry-lays-off-nearly-80-000-employees-in-the-first-quarter-of-2026-almost-50-percent-of-affected-positions-cut-due-to-ai",
+    "https://www.kore1.com/tech-layoffs-2026/",
+    "https://vucense.com/ai-intelligence/industry-business/tech-layoffs-q1-2026-ai-displacement-80000/",
+    "https://sfstandard.com/2026/02/19/ai-writes-code-now-s-left-software-engineers/",
+    "https://www.rezi.ai/posts/entry-level-jobs-and-ai-2026-report"
+  ],
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "period": "2026-01-01 to 2026-03-31",
+  "tech_announced_us": 52050,
+  "tech_global_estimate": 80000,
+  "yoy_change_pct": 40,
+  "share_attributed_to_ai_pct": 48,
+  "function_breakdown": [
+    {"function": "Software engineering (mid-tier generalist)", "share_pct": 31, "note": "Full-Stack/Frontend bias"},
+    {"function": "Customer support / IT helpdesk",             "share_pct": 18, "note": "AI deflection of L1 tickets"},
+    {"function": "QA / Manual testing",                        "share_pct": 12, "note": "Self-healing E2E + AI test-gen"},
+    {"function": "Data analyst / BI",                          "share_pct": 10, "note": "LLM SQL absorbs ad-hoc requests"},
+    {"function": "Marketing / content",                        "share_pct":  9, "note": "AI content generation"},
+    {"function": "Product / project management (junior)",      "share_pct":  7, "note": "Span-of-control compression"},
+    {"function": "Recruiting",                                 "share_pct":  5, "note": "AI-assisted sourcing tooling"},
+    {"function": "Other",                                      "share_pct":  8}
+  ],
+  "junior_signal": {
+    "developers_aged_22_25_employment_vs_late_2022_pct": -20,
+    "uk_grad_tech_roles_2024_pct_change": -46,
+    "uk_grad_tech_roles_projected_through_2026_pct_change": -53
+  }
+}

@@ -1,0 +1,37 @@
+role,postings_2024_baseline,postings_2025_jan,postings_2026_current,postings_yoy_pct,postings_2yr_pct,ai_mention_pct_2026,ai_mention_delta_pp,copilot_mention_pct_2026,trend_direction
+AI Application Engineer,1100,3200,5800,81.2,427.3,100,1,67,rising
+AI Research Engineer,820,1010,1340,32.7,63.4,100,0,34,rising
+Analytics Engineer,1900,1830,1700,-7.1,-10.5,52,30,16,declining
+Android Engineer,2900,2830,2740,-3.2,-5.5,30,22,38,stable
+Application Security Engineer,2200,2680,3440,28.4,56.4,82,50,44,rising
+Backend Engineer,18500,17800,17200,-3.4,-7.0,58,40,52,stable
+Cloud Engineer,7600,7320,7000,-4.4,-7.9,36,24,26,stable
+Cloud Security Engineer,1900,2480,3220,29.8,69.5,72,50,38,rising
+Data Analyst,11500,9900,8200,-17.2,-28.7,44,26,9,declining
+Data Engineer,8200,8900,9600,7.9,17.1,82,42,28,rising
+Data Scientist,5400,4500,3850,-14.4,-28.7,80,22,24,declining
+DevOps Engineer,9400,8920,8390,-5.9,-10.7,48,34,30,declining
+Developer Experience Engineer,1100,1290,1540,19.4,40.0,72,50,58,rising
+Embedded Engineer,2200,2280,2380,4.4,8.2,28,20,14,rising
+Engineering Manager,5800,5650,5810,2.8,0.2,56,38,24,stable
+Frontend Engineer,12800,11000,9300,-15.5,-27.3,46,32,58,declining
+Full-Stack Engineer,15200,13900,12400,-10.8,-18.4,62,44,62,declining
+ML Engineer,7800,9450,11900,25.9,52.6,99,1,55,rising
+MLOps Engineer,1700,2380,3220,35.3,89.4,99,0,52,rising
+Offensive Security / Red Team,560,610,675,10.7,20.5,68,50,28,rising
+Platform Engineer,3200,4200,5480,30.5,71.2,62,46,49,rising
+Product Designer,4200,4080,3960,-2.9,-5.7,42,30,20,stable
+Product Manager,8400,8900,9450,6.2,12.5,62,44,20,rising
+Prompt Engineer,420,290,160,-44.8,-61.9,100,0,22,declining
+QA Automation,4600,3920,3260,-16.8,-29.1,68,46,22,declining
+QA Manual,3800,2840,1950,-31.3,-48.7,26,18,4,declining
+SDET / Test Infrastructure,2100,2050,1980,-3.4,-5.7,60,44,40,stable
+Security Engineer,6100,7240,8920,23.2,46.2,72,51,32,rising
+Site Reliability Engineer,4100,4480,4920,9.8,20.0,58,40,32,rising
+Solutions Architect,3700,3820,3960,3.7,7.0,72,44,38,stable
+Staff Engineer / Tech Lead,4200,4650,5180,11.4,23.3,68,40,41,rising
+Systems / Low-level Engineer,1200,1290,1420,10.1,18.3,46,32,22,rising
+Technical Product Manager,2800,3120,3540,13.5,26.4,74,46,26,rising
+UI Designer,2400,2050,1720,-16.1,-28.3,28,20,12,declining
+UX Designer / Researcher,3100,3050,3080,1.0,-0.6,36,24,12,stable
+iOS Engineer,3200,3120,3030,-2.9,-5.3,30,22,38,stable

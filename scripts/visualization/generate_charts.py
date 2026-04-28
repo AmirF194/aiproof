@@ -13,7 +13,7 @@ import csv
 import os
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parent.parent
+REPO = Path(__file__).resolve().parent.parent.parent
 DATA = REPO / "data" / "roles.csv"
 OUT = REPO / "charts"
 

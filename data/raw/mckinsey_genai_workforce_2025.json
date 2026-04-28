@@ -1,0 +1,20 @@
+{
+  "source": "McKinsey 2025 generative-AI workforce study (summarized public excerpts)",
+  "source_urls": [
+    "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+    "https://www.news.aakashg.com/p/the-state-of-ai-product-management"
+  ],
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "key_findings": {
+    "ai_fluency_demand_growth_multiple_2_years": 7,
+    "business_leaders_preferring_less_experienced_with_ai_skills_pct": 71,
+    "orgs_using_genai_in_at_least_one_function_pct": 78,
+    "orgs_using_genai_in_at_least_one_function_pct_2024": 65,
+    "ai_pm_role_count_2025": 12000,
+    "ai_pm_role_count_2024": 6000,
+    "senior_pm_postings_yoy_pct": 87,
+    "open_pm_roles_above_2023_bottom_pct": 53.6
+  },
+  "implication_for_scoring": "AI fluency is now baseline, not differentiator. PM (73) and TPM (79) scores hold; junior PM is exposed."
+}

@@ -1,0 +1,30 @@
+{
+  "source": "GitHub Octoverse 2025 (summarized public report)",
+  "source_url": "https://github.blog/news-insights/octoverse/octoverse-2025/",
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "developer_population": {
+    "total_developers_on_github_millions": 165,
+    "yoy_growth_pct": 23,
+    "top_growth_regions": ["India", "Brazil", "Indonesia", "Nigeria", "Vietnam"]
+  },
+  "language_trends_2025": [
+    {"language": "Python",      "rank": 1, "change_yoy": "up",       "note": "Overtook JavaScript at #1 in 2024; AI/ML drives the lead"},
+    {"language": "JavaScript",  "rank": 2, "change_yoy": "stable",   "note": "Still dominant for web; growth slowing"},
+    {"language": "TypeScript",  "rank": 3, "change_yoy": "up",       "note": "Continues to displace JavaScript on new projects"},
+    {"language": "Java",        "rank": 4, "change_yoy": "stable"},
+    {"language": "Go",          "rank": 5, "change_yoy": "up",       "note": "Strong growth in cloud infra and CLI tools"},
+    {"language": "Rust",        "rank": 6, "change_yoy": "up",       "note": "Systems and ML inference stack adoption"},
+    {"language": "C++",         "rank": 7, "change_yoy": "stable"},
+    {"language": "C#",          "rank": 8, "change_yoy": "stable"},
+    {"language": "PHP",         "rank": 9, "change_yoy": "down"},
+    {"language": "Ruby",        "rank": 10, "change_yoy": "down"}
+  ],
+  "ai_coding_signals": {
+    "copilot_active_users_millions": 21,
+    "copilot_yoy_growth_pct": 75,
+    "pull_requests_with_ai_assist_pct": 41,
+    "ai_first_repos_created_2025": 1300000
+  },
+  "implication_for_scoring": "Python dominance + Rust/Go growth align with the Data/AI + Systems clusters scoring at the top. JavaScript/PHP/Ruby decline aligns with Frontend (52) and CRUD-backend compression."
+}

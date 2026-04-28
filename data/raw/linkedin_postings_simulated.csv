@@ -1,0 +1,181 @@
+role,month,postings_count,data_kind,calibrated_to
+Staff Engineer / Tech Lead,2024-01,4200,simulated,Levels.fyi senior-IC reqs + LinkedIn directory counts
+Staff Engineer / Tech Lead,2024-07,4380,simulated,
+Staff Engineer / Tech Lead,2025-01,4650,simulated,
+Staff Engineer / Tech Lead,2025-07,4910,simulated,
+Staff Engineer / Tech Lead,2026-01,5180,simulated,Goldman senior-comp +12-18% YoY signal
+Engineering Manager,2024-01,5800,simulated,Span-of-control rising; total EM count flat
+Engineering Manager,2024-07,5720,simulated,
+Engineering Manager,2025-01,5650,simulated,
+Engineering Manager,2025-07,5720,simulated,
+Engineering Manager,2026-01,5810,simulated,Megamanager pattern (Fortune Apr 2026)
+Security Engineer,2024-01,6100,simulated,ISC2 4.8M global gap
+Security Engineer,2024-07,6580,simulated,
+Security Engineer,2025-01,7240,simulated,
+Security Engineer,2025-07,8050,simulated,
+Security Engineer,2026-01,8920,simulated,ISC2 critical-shortage 44%->59% YoY
+Application Security Engineer,2024-01,2200,simulated,
+Application Security Engineer,2024-07,2410,simulated,
+Application Security Engineer,2025-01,2680,simulated,
+Application Security Engineer,2025-07,3060,simulated,
+Application Security Engineer,2026-01,3440,simulated,AI-generated code drives review demand
+Cloud Security Engineer,2024-01,1900,simulated,
+Cloud Security Engineer,2024-07,2150,simulated,
+Cloud Security Engineer,2025-01,2480,simulated,
+Cloud Security Engineer,2025-07,2820,simulated,
+Cloud Security Engineer,2026-01,3220,simulated,ISC2 cloud security #2 skill gap (30%)
+Offensive Security / Red Team,2024-01,560,simulated,Smaller market; consultancy-heavy
+Offensive Security / Red Team,2024-07,580,simulated,
+Offensive Security / Red Team,2025-01,610,simulated,
+Offensive Security / Red Team,2025-07,640,simulated,
+Offensive Security / Red Team,2026-01,675,simulated,
+AI Research Engineer,2024-01,820,simulated,Concentrated at frontier labs
+AI Research Engineer,2024-07,900,simulated,
+AI Research Engineer,2025-01,1010,simulated,
+AI Research Engineer,2025-07,1180,simulated,
+AI Research Engineer,2026-01,1340,simulated,
+ML Engineer,2024-01,7800,simulated,Levels.fyi median TC $264K
+ML Engineer,2024-07,8600,simulated,
+ML Engineer,2025-01,9450,simulated,
+ML Engineer,2025-07,10580,simulated,
+ML Engineer,2026-01,11900,simulated,Gartner 40% AI-agent adoption by end-2026
+MLOps Engineer,2024-01,1700,simulated,
+MLOps Engineer,2024-07,2010,simulated,
+MLOps Engineer,2025-01,2380,simulated,
+MLOps Engineer,2025-07,2780,simulated,
+MLOps Engineer,2026-01,3220,simulated,Production AI reliability becoming mainstream
+Data Engineer,2024-01,8200,simulated,
+Data Engineer,2024-07,8520,simulated,
+Data Engineer,2025-01,8900,simulated,
+Data Engineer,2025-07,9230,simulated,
+Data Engineer,2026-01,9600,simulated,Lakehouse/Iceberg drives demand
+AI Application Engineer,2024-01,1100,simulated,Title emerging
+AI Application Engineer,2024-07,1850,simulated,
+AI Application Engineer,2025-01,3200,simulated,
+AI Application Engineer,2025-07,4600,simulated,
+AI Application Engineer,2026-01,5800,simulated,Fastest-growing job category
+Data Scientist,2024-01,5400,simulated,
+Data Scientist,2024-07,4920,simulated,
+Data Scientist,2025-01,4500,simulated,
+Data Scientist,2025-07,4180,simulated,
+Data Scientist,2026-01,3850,simulated,Down ~30% from 2023 peak; senior holds
+Analytics Engineer,2024-01,1900,simulated,
+Analytics Engineer,2024-07,1880,simulated,
+Analytics Engineer,2025-01,1830,simulated,
+Analytics Engineer,2025-07,1770,simulated,
+Analytics Engineer,2026-01,1700,simulated,
+Data Analyst,2024-01,11500,simulated,
+Data Analyst,2024-07,10800,simulated,
+Data Analyst,2025-01,9900,simulated,
+Data Analyst,2025-07,9050,simulated,
+Data Analyst,2026-01,8200,simulated,LLM NL-to-SQL absorbs ~60% of operational asks
+Platform Engineer,2024-01,3200,simulated,
+Platform Engineer,2024-07,3680,simulated,
+Platform Engineer,2025-01,4200,simulated,
+Platform Engineer,2025-07,4810,simulated,
+Platform Engineer,2026-01,5480,simulated,Gartner 80% adoption target 2026
+Site Reliability Engineer,2024-01,4100,simulated,
+Site Reliability Engineer,2024-07,4280,simulated,
+Site Reliability Engineer,2025-01,4480,simulated,
+Site Reliability Engineer,2025-07,4690,simulated,
+Site Reliability Engineer,2026-01,4920,simulated,
+DevOps Engineer,2024-01,9400,simulated,
+DevOps Engineer,2024-07,9180,simulated,
+DevOps Engineer,2025-01,8920,simulated,
+DevOps Engineer,2025-07,8650,simulated,
+DevOps Engineer,2026-01,8390,simulated,Title fading; absorbed into Platform/SRE
+Cloud Engineer,2024-01,7600,simulated,
+Cloud Engineer,2024-07,7480,simulated,
+Cloud Engineer,2025-01,7320,simulated,
+Cloud Engineer,2025-07,7150,simulated,
+Cloud Engineer,2026-01,7000,simulated,Slow decline; converging into platform/security
+Systems / Low-level Engineer,2024-01,1200,simulated,
+Systems / Low-level Engineer,2024-07,1240,simulated,
+Systems / Low-level Engineer,2025-01,1290,simulated,
+Systems / Low-level Engineer,2025-07,1350,simulated,
+Systems / Low-level Engineer,2026-01,1420,simulated,AI inference stack creates new demand
+Embedded Engineer,2024-01,2200,simulated,
+Embedded Engineer,2024-07,2240,simulated,
+Embedded Engineer,2025-01,2280,simulated,
+Embedded Engineer,2025-07,2330,simulated,
+Embedded Engineer,2026-01,2380,simulated,EV/robotics/edge AI tailwinds
+Backend Engineer,2024-01,18500,simulated,Largest absolute headcount on this list
+Backend Engineer,2024-07,18200,simulated,
+Backend Engineer,2025-01,17800,simulated,
+Backend Engineer,2025-07,17500,simulated,
+Backend Engineer,2026-01,17200,simulated,Senior up; junior reqs scarce
+Frontend Engineer,2024-01,12800,simulated,
+Frontend Engineer,2024-07,11900,simulated,
+Frontend Engineer,2025-01,11000,simulated,
+Frontend Engineer,2025-07,10100,simulated,
+Frontend Engineer,2026-01,9300,simulated,Share <20% of postings; -27% vs 2024
+Full-Stack Engineer,2024-01,15200,simulated,
+Full-Stack Engineer,2024-07,14600,simulated,
+Full-Stack Engineer,2025-01,13900,simulated,
+Full-Stack Engineer,2025-07,13150,simulated,
+Full-Stack Engineer,2026-01,12400,simulated,Generalist tracks compressing
+iOS Engineer,2024-01,3200,simulated,
+iOS Engineer,2024-07,3160,simulated,
+iOS Engineer,2025-01,3120,simulated,
+iOS Engineer,2025-07,3080,simulated,
+iOS Engineer,2026-01,3030,simulated,Per-app headcount declining
+Android Engineer,2024-01,2900,simulated,
+Android Engineer,2024-07,2870,simulated,
+Android Engineer,2025-01,2830,simulated,
+Android Engineer,2025-07,2790,simulated,
+Android Engineer,2026-01,2740,simulated,
+SDET / Test Infrastructure,2024-01,2100,simulated,
+SDET / Test Infrastructure,2024-07,2080,simulated,
+SDET / Test Infrastructure,2025-01,2050,simulated,
+SDET / Test Infrastructure,2025-07,2010,simulated,
+SDET / Test Infrastructure,2026-01,1980,simulated,Absorbed into platform at smaller orgs
+QA Automation,2024-01,4600,simulated,
+QA Automation,2024-07,4280,simulated,
+QA Automation,2025-01,3920,simulated,
+QA Automation,2025-07,3580,simulated,
+QA Automation,2026-01,3260,simulated,Self-healing E2E erodes the role
+QA Manual,2024-01,3800,simulated,
+QA Manual,2024-07,3320,simulated,
+QA Manual,2025-01,2840,simulated,
+QA Manual,2025-07,2380,simulated,
+QA Manual,2026-01,1950,simulated,Q1 2026 layoff data confirms the steepest decline
+Technical Product Manager,2024-01,2800,simulated,
+Technical Product Manager,2024-07,2950,simulated,
+Technical Product Manager,2025-01,3120,simulated,
+Technical Product Manager,2025-07,3320,simulated,
+Technical Product Manager,2026-01,3540,simulated,Senior PM postings +87% YoY
+Product Manager,2024-01,8400,simulated,
+Product Manager,2024-07,8650,simulated,
+Product Manager,2025-01,8900,simulated,
+Product Manager,2025-07,9180,simulated,
+Product Manager,2026-01,9450,simulated,+53.6% above 2023 bottom (Lenny's)
+UX Designer / Researcher,2024-01,3100,simulated,
+UX Designer / Researcher,2024-07,3080,simulated,
+UX Designer / Researcher,2025-01,3050,simulated,
+UX Designer / Researcher,2025-07,3060,simulated,
+UX Designer / Researcher,2026-01,3080,simulated,Researcher half growing; designer half flat
+Product Designer,2024-01,4200,simulated,
+Product Designer,2024-07,4140,simulated,
+Product Designer,2025-01,4080,simulated,
+Product Designer,2025-07,4020,simulated,
+Product Designer,2026-01,3960,simulated,Convergence with senior frontend
+UI Designer,2024-01,2400,simulated,
+UI Designer,2024-07,2230,simulated,
+UI Designer,2025-01,2050,simulated,
+UI Designer,2025-07,1880,simulated,
+UI Designer,2026-01,1720,simulated,Most AI-exposed creative task
+Solutions Architect,2024-01,3700,simulated,
+Solutions Architect,2024-07,3760,simulated,
+Solutions Architect,2025-01,3820,simulated,
+Solutions Architect,2025-07,3890,simulated,
+Solutions Architect,2026-01,3960,simulated,
+Developer Experience Engineer,2024-01,1100,simulated,
+Developer Experience Engineer,2024-07,1190,simulated,
+Developer Experience Engineer,2025-01,1290,simulated,
+Developer Experience Engineer,2025-07,1410,simulated,
+Developer Experience Engineer,2026-01,1540,simulated,Rising at every dev-tools company
+Prompt Engineer,2024-01,420,simulated,
+Prompt Engineer,2024-07,360,simulated,
+Prompt Engineer,2025-01,290,simulated,
+Prompt Engineer,2025-07,220,simulated,
+Prompt Engineer,2026-01,160,simulated,Indeed search 144->20-30 per million

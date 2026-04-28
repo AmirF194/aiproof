@@ -1,0 +1,97 @@
+{
+  "source": "U.S. Bureau of Labor Statistics — Occupational Outlook Handbook + Employment Projections 2024–2034",
+  "source_urls": [
+    "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+    "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm",
+    "https://www.bls.gov/news.release/pdf/ecopro.pdf",
+    "https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm"
+  ],
+  "fetched_at": "2026-04-15",
+  "data_kind": "real",
+  "horizon": "2024-2034",
+  "all_occupations_avg_growth_pct": 3,
+  "occupations": [
+    {
+      "soc_code": "15-1252",
+      "title": "Software developers",
+      "employment_2024": 1692100,
+      "projected_2034": 1946400,
+      "growth_pct_2024_2034": 15,
+      "median_pay_2024_usd": 132270,
+      "annual_openings_avg": 129200,
+      "education": "Bachelor's degree",
+      "notes": "Includes QA analysts and testers under combined OEWS coverage; 5x all-occupations average."
+    },
+    {
+      "soc_code": "15-1212",
+      "title": "Information security analysts",
+      "employment_2024": 188400,
+      "projected_2034": 248700,
+      "growth_pct_2024_2034": 32,
+      "median_pay_2024_usd": 124910,
+      "annual_openings_avg": 17300,
+      "education": "Bachelor's degree",
+      "notes": "Strongest growth rate of any role in this analysis."
+    },
+    {
+      "soc_code": "15-1253",
+      "title": "Software quality assurance analysts and testers",
+      "employment_2024": 211000,
+      "projected_2034": 232100,
+      "growth_pct_2024_2034": 10,
+      "median_pay_2024_usd": 101800,
+      "annual_openings_avg": 17300,
+      "notes": "Aggregate hides bifurcation: SDET/test-infra growing, manual QA shrinking."
+    },
+    {
+      "soc_code": "15-2051",
+      "title": "Data scientists",
+      "employment_2024": 202900,
+      "projected_2034": 274500,
+      "growth_pct_2024_2034": 35,
+      "median_pay_2024_usd": 112590,
+      "annual_openings_avg": 20800,
+      "notes": "Aggregate strongly up but bucket re-labeled — much of the growth lands in ML Eng titles in industry."
+    },
+    {
+      "soc_code": "15-1244",
+      "title": "Network and computer systems administrators",
+      "employment_2024": 332000,
+      "projected_2034": 332300,
+      "growth_pct_2024_2034": 0,
+      "median_pay_2024_usd": 95360,
+      "annual_openings_avg": 23100,
+      "notes": "Flat — automation pressure on traditional sysadmin work."
+    },
+    {
+      "soc_code": "15-1257",
+      "title": "Web developers",
+      "employment_2024": 84300,
+      "projected_2034": 91800,
+      "growth_pct_2024_2034": 9,
+      "median_pay_2024_usd": 95380,
+      "annual_openings_avg": 7900,
+      "notes": "BLS aggregate masks frontend compression — junior web-dev roles dropping fastest."
+    },
+    {
+      "soc_code": "15-1232",
+      "title": "Computer user support specialists",
+      "employment_2024": 689000,
+      "projected_2034": 724200,
+      "growth_pct_2024_2034": 5,
+      "median_pay_2024_usd": 60810,
+      "annual_openings_avg": 65900,
+      "notes": "Front-line IT support — flat-to-modest growth despite AI deflection."
+    },
+    {
+      "soc_code": "15-1299",
+      "title": "Computer occupations, all other (incl. cloud, ML, MLOps)",
+      "employment_2024": 459000,
+      "projected_2034": 511300,
+      "growth_pct_2024_2034": 11,
+      "median_pay_2024_usd": 105990,
+      "annual_openings_avg": 39700,
+      "notes": "Catch-all bucket where Cloud, ML, MLOps, Platform engineers land in BLS taxonomy."
+    }
+  ]
+}
