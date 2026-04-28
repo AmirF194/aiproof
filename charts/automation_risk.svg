@@ -1,57 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-  <style>
-    .title { font-size: 18px; font-weight: 600; fill: #111; }
-    .subtitle { font-size: 12px; fill: #666; }
-    .label { font-size: 13px; fill: #222; }
-    .value { font-size: 13px; font-weight: 600; fill: #111; }
-    .axis { font-size: 11px; fill: #888; }
-    .grid { stroke: #eee; stroke-width: 1; }
-  </style>
-  <rect width="820" height="400" fill="#fff"/>
-  <text x="20" y="28" class="title">AI Automation Risk (0–10), 2026–2030</text>
-  <text x="20" y="46" class="subtitle">Higher bar = more of the role's work is replaceable by AI tools. Computed as 10 − automation resistance.</text>
-
-  <g>
-    <line x1="220" y1="70" x2="220" y2="370" class="grid"/>
-    <line x1="350" y1="70" x2="350" y2="370" class="grid"/>
-    <line x1="480" y1="70" x2="480" y2="370" class="grid"/>
-    <line x1="610" y1="70" x2="610" y2="370" class="grid"/>
-    <line x1="740" y1="70" x2="740" y2="370" class="grid"/>
-    <text x="220" y="385" text-anchor="middle" class="axis">0</text>
-    <text x="350" y="385" text-anchor="middle" class="axis">2.5</text>
-    <text x="480" y="385" text-anchor="middle" class="axis">5</text>
-    <text x="610" y="385" text-anchor="middle" class="axis">7.5</text>
-    <text x="740" y="385" text-anchor="middle" class="axis">10</text>
-  </g>
-
-  <!-- 52 px per unit. risk = 10 - resist -->
-  <!-- AI/ML: resist 10 -> risk 0 -->
-  <text x="210" y="96" text-anchor="end" class="label">AI/ML Engineer</text>
-  <rect x="220" y="80" width="0" height="22" fill="#16a34a"/>
-  <text x="227" y="96" class="value">0</text>
-
-  <!-- DevOps: resist 9 -> risk 1 -->
-  <text x="210" y="136" text-anchor="end" class="label">DevOps / Platform</text>
-  <rect x="220" y="120" width="52" height="22" fill="#22c55e"/>
-  <text x="279" y="136" class="value">1</text>
-
-  <!-- Backend: resist 7 -> risk 3 -->
-  <text x="210" y="176" text-anchor="end" class="label">Backend Engineer</text>
-  <rect x="220" y="160" width="156" height="22" fill="#84cc16"/>
-  <text x="383" y="176" class="value">3</text>
-
-  <!-- Mobile: resist 6 -> risk 4 -->
-  <text x="210" y="216" text-anchor="end" class="label">Mobile Developer</text>
-  <rect x="220" y="200" width="208" height="22" fill="#eab308"/>
-  <text x="435" y="216" class="value">4</text>
-
-  <!-- Frontend: resist 4 -> risk 6 -->
-  <text x="210" y="256" text-anchor="end" class="label">Frontend Engineer</text>
-  <rect x="220" y="240" width="312" height="22" fill="#f97316"/>
-  <text x="539" y="256" class="value">6</text>
-
-  <!-- QA: resist 3 -> risk 7 -->
-  <text x="210" y="296" text-anchor="end" class="label">QA Engineer</text>
-  <rect x="220" y="280" width="364" height="22" fill="#dc2626"/>
-  <text x="591" y="296" class="value">7</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 620" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="12" role="img" aria-label="Demand vs Automation Resistance">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="70" y="32" font-size="18" fill="#222" font-weight="bold" text-anchor="start">Demand vs Automation Resistance  (2026–2035)</text>
+<text x="70" y="52" font-size="11" fill="#555" font-weight="normal" text-anchor="start">Top-right = high demand AND hard to automate (the safest quadrant).</text>
+<line x1="70" y1="80" x2="70" y2="560" stroke="#333" stroke-width="1"/>
+<line x1="70" y1="560" x2="850" y2="560" stroke="#333" stroke-width="1"/>
+<line x1="460.0" y1="80" x2="460.0" y2="560" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="70" y1="320.0" x2="850" y2="320.0" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="840" y="96" font-size="14" fill="#1f7a3a" font-weight="bold" text-anchor="end">Safest</text>
+<text x="80" y="96" font-size="14" fill="#0277bd" font-weight="bold" text-anchor="start">Niche / specialist</text>
+<text x="840" y="552" font-size="14" fill="#e57321" font-weight="bold" text-anchor="end">High demand but exposed</text>
+<text x="80" y="552" font-size="14" fill="#c62828" font-weight="bold" text-anchor="start">Most at risk</text>
+<line x1="70.0" y1="560" x2="70.0" y2="564" stroke="#333" stroke-width="1"/>
+<text x="70.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">0</text>
+<line x1="66" y1="560.0" x2="70" y2="560.0" stroke="#333" stroke-width="1"/>
+<text x="62" y="564.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">0</text>
+<line x1="226.0" y1="560" x2="226.0" y2="564" stroke="#333" stroke-width="1"/>
+<text x="226.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">2</text>
+<line x1="66" y1="464.0" x2="70" y2="464.0" stroke="#333" stroke-width="1"/>
+<text x="62" y="468.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">2</text>
+<line x1="382.0" y1="560" x2="382.0" y2="564" stroke="#333" stroke-width="1"/>
+<text x="382.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">4</text>
+<line x1="66" y1="368.0" x2="70" y2="368.0" stroke="#333" stroke-width="1"/>
+<text x="62" y="372.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">4</text>
+<line x1="538.0" y1="560" x2="538.0" y2="564" stroke="#333" stroke-width="1"/>
+<text x="538.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">6</text>
+<line x1="66" y1="272.0" x2="70" y2="272.0" stroke="#333" stroke-width="1"/>
+<text x="62" y="276.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">6</text>
+<line x1="694.0" y1="560" x2="694.0" y2="564" stroke="#333" stroke-width="1"/>
+<text x="694.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">8</text>
+<line x1="66" y1="176.0" x2="70" y2="176.0" stroke="#333" stroke-width="1"/>
+<text x="62" y="180.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">8</text>
+<line x1="850.0" y1="560" x2="850.0" y2="564" stroke="#333" stroke-width="1"/>
+<text x="850.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">10</text>
+<line x1="66" y1="80.0" x2="70" y2="80.0" stroke="#333" stroke-width="1"/>
+<text x="62" y="84.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">10</text>
+<text x="460.0" y="606" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">Automation Resistance  (10 = AI cannot replace)</text>
+<text x="26" y="320.0" font-size="12" fill="#333" transform="rotate(-90 26 320.0)" text-anchor="middle">Market Demand  (10 = strongest)</text>
+<circle cx="772.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="763.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Staff Engineer / Tech Lead</text>
+<circle cx="780.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="771.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Security Engineer</text>
+<circle cx="772.0" cy="176.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="763.0" y="180.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">AI Research Engineer</text>
+<circle cx="694.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="685.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">ML Engineer</text>
+<circle cx="702.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="702.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="693.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Platform Engineer</text>
+<circle cx="702.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="702.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="694.0" cy="176.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="685.0" y="180.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Site Reliability Engineer</text>
+<circle cx="772.0" cy="224.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="780.0" cy="224.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="771.0" y="228.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Engineering Manager</text>
+<circle cx="616.0" cy="128.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="625.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Data Engineer</text>
+<circle cx="772.0" cy="272.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="763.0" y="276.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Systems / Low-level Engineer</text>
+<circle cx="694.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="702.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="702.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="694.0" cy="272.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="460.0" cy="80.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="469.0" y="84.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">AI Application Engineer</text>
+<circle cx="616.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="538.0" cy="176.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="547.0" y="180.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Backend Engineer</text>
+<circle cx="624.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="633.0" y="228.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">DevOps Engineer</text>
+<circle cx="538.0" cy="224.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="616.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="538.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="546.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="546.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="546.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="460.0" cy="224.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="460.0" cy="272.0" r="6" fill="#e57321" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="382.0" cy="272.0" r="6" fill="#e57321" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="391.0" y="276.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Frontend Engineer</text>
+<circle cx="382.0" cy="320.0" r="6" fill="#e57321" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="304.0" cy="368.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="312.0" cy="368.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="226.0" cy="368.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="235.0" y="372.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Data Analyst</text>
+<circle cx="226.0" cy="416.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="235.0" y="420.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Prompt Engineer</text>
+<circle cx="148.0" cy="464.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
+<text x="157.0" y="468.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">QA Manual</text>
 </svg>

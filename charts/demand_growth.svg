@@ -1,51 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-  <style>
-    .title { font-size: 18px; font-weight: 600; fill: #111; }
-    .subtitle { font-size: 12px; fill: #666; }
-    .label { font-size: 13px; fill: #222; }
-    .value { font-size: 13px; font-weight: 600; fill: #111; }
-    .axis { font-size: 11px; fill: #888; }
-    .grid { stroke: #eee; stroke-width: 1; }
-  </style>
-  <rect width="820" height="400" fill="#fff"/>
-  <text x="20" y="28" class="title">Projected Demand Growth, 2026 → 2035</text>
-  <text x="20" y="46" class="subtitle">Score 0–10. Combines BLS projections, LinkedIn postings trend, and private hiring trackers.</text>
-
-  <g>
-    <line x1="220" y1="70" x2="220" y2="370" class="grid"/>
-    <line x1="350" y1="70" x2="350" y2="370" class="grid"/>
-    <line x1="480" y1="70" x2="480" y2="370" class="grid"/>
-    <line x1="610" y1="70" x2="610" y2="370" class="grid"/>
-    <line x1="740" y1="70" x2="740" y2="370" class="grid"/>
-    <text x="220" y="385" text-anchor="middle" class="axis">0</text>
-    <text x="350" y="385" text-anchor="middle" class="axis">2.5</text>
-    <text x="480" y="385" text-anchor="middle" class="axis">5</text>
-    <text x="610" y="385" text-anchor="middle" class="axis">7.5</text>
-    <text x="740" y="385" text-anchor="middle" class="axis">10</text>
-  </g>
-
-  <!-- 52 px per unit -->
-  <text x="210" y="96" text-anchor="end" class="label">AI/ML Engineer</text>
-  <rect x="220" y="80" width="520" height="22" fill="#16a34a"/>
-  <text x="747" y="96" class="value">10</text>
-
-  <text x="210" y="136" text-anchor="end" class="label">DevOps / Platform</text>
-  <rect x="220" y="120" width="416" height="22" fill="#22c55e"/>
-  <text x="643" y="136" class="value">8</text>
-
-  <text x="210" y="176" text-anchor="end" class="label">Backend Engineer</text>
-  <rect x="220" y="160" width="364" height="22" fill="#84cc16"/>
-  <text x="591" y="176" class="value">7</text>
-
-  <text x="210" y="216" text-anchor="end" class="label">Mobile Developer</text>
-  <rect x="220" y="200" width="312" height="22" fill="#eab308"/>
-  <text x="539" y="216" class="value">6</text>
-
-  <text x="210" y="256" text-anchor="end" class="label">Frontend Engineer</text>
-  <rect x="220" y="240" width="312" height="22" fill="#f97316"/>
-  <text x="539" y="256" class="value">6</text>
-
-  <text x="210" y="296" text-anchor="end" class="label">QA Engineer</text>
-  <rect x="220" y="280" width="208" height="22" fill="#dc2626"/>
-  <text x="435" y="296" class="value">4</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 476" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="12" role="img" aria-label="Category Averages">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="230" y="32" font-size="18" fill="#222" font-weight="bold" text-anchor="start">Average Safety Score by Job Category</text>
+<text x="230" y="52" font-size="11" fill="#555" font-weight="normal" text-anchor="start">Bar = avg safety score (0–100).  Dot = avg demand score (1–10, scaled).</text>
+<line x1="230.0" y1="90" x2="230.0" y2="426" stroke="#eeeeee" stroke-width="1"/>
+<text x="230.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">0</text>
+<line x1="360.0" y1="90" x2="360.0" y2="426" stroke="#eeeeee" stroke-width="1"/>
+<text x="360.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">25</text>
+<line x1="490.0" y1="90" x2="490.0" y2="426" stroke="#eeeeee" stroke-width="1"/>
+<text x="490.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">50</text>
+<line x1="620.0" y1="90" x2="620.0" y2="426" stroke="#eeeeee" stroke-width="1"/>
+<text x="620.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">75</text>
+<line x1="750.0" y1="90" x2="750.0" y2="426" stroke="#eeeeee" stroke-width="1"/>
+<text x="750.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">100</text>
+<text x="220" y="110" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Engineering Leadership  (n=2)</text>
+<rect x="230" y="90" width="460.2" height="28" fill="#1f7a3a" rx="3"/>
+<text x="698.2" y="110" font-size="12" fill="#333" font-weight="bold" text-anchor="start">88.5</text>
+<circle cx="646.0" cy="122" r="4" fill="#0277bd"/>
+<text x="654.0" y="126" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 8.0/10</text>
+<text x="220" y="152" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Security  (n=4)</text>
+<rect x="230" y="132" width="455.0" height="28" fill="#1f7a3a" rx="3"/>
+<text x="693.0" y="152" font-size="12" fill="#333" font-weight="bold" text-anchor="start">87.5</text>
+<circle cx="672.0" cy="164" r="4" fill="#0277bd"/>
+<text x="680.0" y="168" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 8.5/10</text>
+<text x="220" y="194" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Platform & Infrastructure  (n=4)</text>
+<rect x="230" y="174" width="403.0" height="28" fill="#4caf50" rx="3"/>
+<text x="641.0" y="194" font-size="12" fill="#333" font-weight="bold" text-anchor="start">77.5</text>
+<circle cx="633.0" cy="206" r="4" fill="#0277bd"/>
+<text x="641.0" y="210" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 7.8/10</text>
+<text x="220" y="236" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Data & AI  (n=8)</text>
+<rect x="230" y="216" width="364.0" height="28" fill="#4caf50" rx="3"/>
+<text x="602.0" y="236" font-size="12" fill="#333" font-weight="bold" text-anchor="start">70.0</text>
+<circle cx="620.0" cy="248" r="4" fill="#0277bd"/>
+<text x="628.0" y="252" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 7.5/10</text>
+<text x="220" y="278" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Engineering  (n=7)</text>
+<rect x="230" y="258" width="345.42857142857144" height="28" fill="#f0a30a" rx="3"/>
+<text x="583.4285714285714" y="278" font-size="12" fill="#333" font-weight="bold" text-anchor="start">66.4</text>
+<circle cx="564.2857142857143" cy="290" r="4" fill="#0277bd"/>
+<text x="572.2857142857143" y="294" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 6.4/10</text>
+<text x="220" y="320" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Product & Design  (n=5)</text>
+<rect x="230" y="300" width="335.92" height="28" fill="#f0a30a" rx="3"/>
+<text x="573.9200000000001" y="320" font-size="12" fill="#333" font-weight="bold" text-anchor="start">64.6</text>
+<circle cx="542.0" cy="332" r="4" fill="#0277bd"/>
+<text x="550.0" y="336" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 6.0/10</text>
+<text x="220" y="362" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Specialized & Emerging  (n=3)</text>
+<rect x="230" y="342" width="313.73333333333335" height="28" fill="#f0a30a" rx="3"/>
+<text x="551.7333333333333" y="362" font-size="12" fill="#333" font-weight="bold" text-anchor="start">60.3</text>
+<circle cx="524.6666666666667" cy="374" r="4" fill="#0277bd"/>
+<text x="532.6666666666667" y="378" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 5.7/10</text>
+<text x="220" y="404" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Quality & Testing  (n=3)</text>
+<rect x="230" y="384" width="214.93333333333337" height="28" fill="#e57321" rx="3"/>
+<text x="452.9333333333334" y="404" font-size="12" fill="#333" font-weight="bold" text-anchor="start">41.3</text>
+<circle cx="438.0" cy="416" r="4" fill="#0277bd"/>
+<text x="446.0" y="420" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 4.0/10</text>
 </svg>

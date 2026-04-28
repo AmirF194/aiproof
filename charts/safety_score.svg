@@ -1,58 +1,138 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-  <style>
-    .title { font-size: 18px; font-weight: 600; fill: #111; }
-    .subtitle { font-size: 12px; fill: #666; }
-    .label { font-size: 13px; fill: #222; }
-    .value { font-size: 13px; font-weight: 600; fill: #111; }
-    .axis { font-size: 11px; fill: #888; }
-    .grid { stroke: #eee; stroke-width: 1; }
-  </style>
-  <rect width="820" height="400" fill="#fff"/>
-  <text x="20" y="28" class="title">Career Safety Score (0–100), 2026–2035</text>
-  <text x="20" y="46" class="subtitle">Higher = more durable. Weighted from demand, automation resistance, salary, moat, cyclical stability.</text>
-
-  <!-- gridlines at 0,25,50,75,100 -->
-  <g>
-    <line x1="220" y1="70" x2="220" y2="370" class="grid"/>
-    <line x1="350" y1="70" x2="350" y2="370" class="grid"/>
-    <line x1="480" y1="70" x2="480" y2="370" class="grid"/>
-    <line x1="610" y1="70" x2="610" y2="370" class="grid"/>
-    <line x1="740" y1="70" x2="740" y2="370" class="grid"/>
-    <text x="220" y="385" text-anchor="middle" class="axis">0</text>
-    <text x="350" y="385" text-anchor="middle" class="axis">25</text>
-    <text x="480" y="385" text-anchor="middle" class="axis">50</text>
-    <text x="610" y="385" text-anchor="middle" class="axis">75</text>
-    <text x="740" y="385" text-anchor="middle" class="axis">100</text>
-  </g>
-
-  <!-- bars: x=220 is 0, x=740 is 100, scale = 5.2 px/point -->
-  <!-- AI/ML Engineer: 91 -->
-  <text x="210" y="96" text-anchor="end" class="label">AI/ML Engineer</text>
-  <rect x="220" y="80" width="473.2" height="22" fill="#16a34a"/>
-  <text x="700" y="96" class="value">91</text>
-
-  <!-- DevOps / Platform: 84 -->
-  <text x="210" y="136" text-anchor="end" class="label">DevOps / Platform</text>
-  <rect x="220" y="120" width="436.8" height="22" fill="#22c55e"/>
-  <text x="664" y="136" class="value">84</text>
-
-  <!-- Backend Engineer: 76 -->
-  <text x="210" y="176" text-anchor="end" class="label">Backend Engineer</text>
-  <rect x="220" y="160" width="395.2" height="22" fill="#84cc16"/>
-  <text x="623" y="176" class="value">76</text>
-
-  <!-- Mobile Developer: 64 -->
-  <text x="210" y="216" text-anchor="end" class="label">Mobile Developer</text>
-  <rect x="220" y="200" width="332.8" height="22" fill="#eab308"/>
-  <text x="560" y="216" class="value">64</text>
-
-  <!-- Frontend Engineer: 58 -->
-  <text x="210" y="256" text-anchor="end" class="label">Frontend Engineer</text>
-  <rect x="220" y="240" width="301.6" height="22" fill="#f97316"/>
-  <text x="529" y="256" class="value">58</text>
-
-  <!-- QA Engineer: 42 -->
-  <text x="210" y="296" text-anchor="end" class="label">QA Engineer</text>
-  <rect x="220" y="280" width="218.4" height="22" fill="#dc2626"/>
-  <text x="446" y="296" class="value">42</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 984" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="12" role="img" aria-label="Career Safety Score by Role">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="230" y="32" font-size="18" fill="#222" font-weight="bold" text-anchor="start">Career Safety Score by Role  (2026–2035)</text>
+<text x="230" y="52" font-size="11" fill="#555" font-weight="normal" text-anchor="start">Higher = more durable.  Score = 0.30·Demand + 0.35·AutoResist + 0.15·SkillDepth + 0.20·StrategicImportance</text>
+<line x1="230.0" y1="80" x2="230.0" y2="944" stroke="#eeeeee" stroke-width="1"/>
+<text x="230.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">0</text>
+<line x1="380.0" y1="80" x2="380.0" y2="944" stroke="#eeeeee" stroke-width="1"/>
+<text x="380.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">25</text>
+<line x1="530.0" y1="80" x2="530.0" y2="944" stroke="#eeeeee" stroke-width="1"/>
+<text x="530.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">50</text>
+<line x1="680.0" y1="80" x2="680.0" y2="944" stroke="#eeeeee" stroke-width="1"/>
+<text x="680.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">75</text>
+<line x1="830.0" y1="80" x2="830.0" y2="944" stroke="#eeeeee" stroke-width="1"/>
+<text x="830.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">100</text>
+<rect x="740.0" y="944" width="90.0" height="4" fill="#1f7a3a"/>
+<rect x="650.0" y="944" width="90.0" height="4" fill="#4caf50"/>
+<rect x="560.0" y="944" width="90.0" height="4" fill="#f0a30a"/>
+<rect x="470.0" y="944" width="90.0" height="4" fill="#e57321"/>
+<rect x="230.0" y="944" width="240.0" height="4" fill="#c62828"/>
+<text x="220" y="94" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Staff Engineer / Tech Lead</text>
+<rect x="230" y="80" width="564.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="800.0" y="94" font-size="11" fill="#333" font-weight="normal" text-anchor="start">94</text>
+<text x="220" y="118" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Security Engineer</text>
+<rect x="230" y="104" width="552.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="788.0" y="118" font-size="11" fill="#333" font-weight="normal" text-anchor="start">92</text>
+<text x="220" y="142" font-size="12" fill="#222" font-weight="normal" text-anchor="end">AI Research Engineer</text>
+<rect x="230" y="128" width="534.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="770.0" y="142" font-size="11" fill="#333" font-weight="normal" text-anchor="start">89</text>
+<text x="220" y="166" font-size="12" fill="#222" font-weight="normal" text-anchor="end">ML Engineer</text>
+<rect x="230" y="152" width="522.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="758.0" y="166" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="220" y="190" font-size="12" fill="#222" font-weight="normal" text-anchor="end">MLOps Engineer</text>
+<rect x="230" y="176" width="522.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="758.0" y="190" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="220" y="214" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Platform Engineer</text>
+<rect x="230" y="200" width="522.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="758.0" y="214" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="220" y="238" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Application Security Engineer</text>
+<rect x="230" y="224" width="522.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="758.0" y="238" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="220" y="262" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Cloud Security Engineer</text>
+<rect x="230" y="248" width="522.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="758.0" y="262" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="220" y="286" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Site Reliability Engineer</text>
+<rect x="230" y="272" width="504.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="740.0" y="286" font-size="11" fill="#333" font-weight="normal" text-anchor="start">84</text>
+<text x="220" y="310" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Offensive Security / Red Team</text>
+<rect x="230" y="296" width="504.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="740.0" y="310" font-size="11" fill="#333" font-weight="normal" text-anchor="start">84</text>
+<text x="220" y="334" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Engineering Manager</text>
+<rect x="230" y="320" width="498.0" height="18" fill="#1f7a3a" rx="2"/>
+<text x="734.0" y="334" font-size="11" fill="#333" font-weight="normal" text-anchor="start">83</text>
+<text x="220" y="358" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Data Engineer</text>
+<rect x="230" y="344" width="492.0" height="18" fill="#4caf50" rx="2"/>
+<text x="728.0" y="358" font-size="11" fill="#333" font-weight="normal" text-anchor="start">82</text>
+<text x="220" y="382" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Systems / Low-level Engineer</text>
+<rect x="230" y="368" width="486.0" height="18" fill="#4caf50" rx="2"/>
+<text x="722.0" y="382" font-size="11" fill="#333" font-weight="normal" text-anchor="start">81</text>
+<text x="220" y="406" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Technical Product Manager</text>
+<rect x="230" y="392" width="474.0" height="18" fill="#4caf50" rx="2"/>
+<text x="710.0" y="406" font-size="11" fill="#333" font-weight="normal" text-anchor="start">79</text>
+<text x="220" y="430" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Solutions Architect</text>
+<rect x="230" y="416" width="474.0" height="18" fill="#4caf50" rx="2"/>
+<text x="710.0" y="430" font-size="11" fill="#333" font-weight="normal" text-anchor="start">79</text>
+<text x="220" y="454" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Developer Experience Engineer</text>
+<rect x="230" y="440" width="450.0" height="18" fill="#4caf50" rx="2"/>
+<text x="686.0" y="454" font-size="11" fill="#333" font-weight="normal" text-anchor="start">75</text>
+<text x="220" y="478" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Embedded Engineer</text>
+<rect x="230" y="464" width="444.0" height="18" fill="#4caf50" rx="2"/>
+<text x="680.0" y="478" font-size="11" fill="#333" font-weight="normal" text-anchor="start">74</text>
+<text x="220" y="502" font-size="12" fill="#222" font-weight="normal" text-anchor="end">AI Application Engineer</text>
+<rect x="230" y="488" width="438.0" height="18" fill="#4caf50" rx="2"/>
+<text x="674.0" y="502" font-size="11" fill="#333" font-weight="normal" text-anchor="start">73</text>
+<text x="220" y="526" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Product Manager</text>
+<rect x="230" y="512" width="438.0" height="18" fill="#4caf50" rx="2"/>
+<text x="674.0" y="526" font-size="11" fill="#333" font-weight="normal" text-anchor="start">73</text>
+<text x="220" y="550" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Backend Engineer</text>
+<rect x="230" y="536" width="432.0" height="18" fill="#4caf50" rx="2"/>
+<text x="668.0" y="550" font-size="11" fill="#333" font-weight="normal" text-anchor="start">72</text>
+<text x="220" y="574" font-size="12" fill="#222" font-weight="normal" text-anchor="end">DevOps Engineer</text>
+<rect x="230" y="560" width="432.0" height="18" fill="#4caf50" rx="2"/>
+<text x="668.0" y="574" font-size="11" fill="#333" font-weight="normal" text-anchor="start">72</text>
+<text x="220" y="598" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Cloud Engineer</text>
+<rect x="230" y="584" width="402.0" height="18" fill="#f0a30a" rx="2"/>
+<text x="638.0" y="598" font-size="11" fill="#333" font-weight="normal" text-anchor="start">67</text>
+<text x="220" y="622" font-size="12" fill="#222" font-weight="normal" text-anchor="end">UX Designer / Researcher</text>
+<rect x="230" y="608" width="402.0" height="18" fill="#f0a30a" rx="2"/>
+<text x="638.0" y="622" font-size="11" fill="#333" font-weight="normal" text-anchor="start">67</text>
+<text x="220" y="646" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Product Designer</text>
+<rect x="230" y="632" width="384.0" height="18" fill="#f0a30a" rx="2"/>
+<text x="620.0" y="646" font-size="11" fill="#333" font-weight="normal" text-anchor="start">64</text>
+<text x="220" y="670" font-size="12" fill="#222" font-weight="normal" text-anchor="end">SDET / Test Infrastructure</text>
+<rect x="230" y="656" width="384.0" height="18" fill="#f0a30a" rx="2"/>
+<text x="620.0" y="670" font-size="11" fill="#333" font-weight="normal" text-anchor="start">64</text>
+<text x="220" y="694" font-size="12" fill="#222" font-weight="normal" text-anchor="end">iOS Engineer</text>
+<rect x="230" y="680" width="372.0" height="18" fill="#f0a30a" rx="2"/>
+<text x="608.0" y="694" font-size="11" fill="#333" font-weight="normal" text-anchor="start">62</text>
+<text x="220" y="718" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Android Engineer</text>
+<rect x="230" y="704" width="372.0" height="18" fill="#f0a30a" rx="2"/>
+<text x="608.0" y="718" font-size="11" fill="#333" font-weight="normal" text-anchor="start">62</text>
+<text x="220" y="742" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Full-Stack Engineer</text>
+<rect x="230" y="728" width="372.0" height="18" fill="#f0a30a" rx="2"/>
+<text x="608.0" y="742" font-size="11" fill="#333" font-weight="normal" text-anchor="start">62</text>
+<text x="220" y="766" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Analytics Engineer</text>
+<rect x="230" y="752" width="342.0" height="18" fill="#e57321" rx="2"/>
+<text x="578.0" y="766" font-size="11" fill="#333" font-weight="normal" text-anchor="start">57</text>
+<text x="220" y="790" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Frontend Engineer</text>
+<rect x="230" y="776" width="312.0" height="18" fill="#e57321" rx="2"/>
+<text x="548.0" y="790" font-size="11" fill="#333" font-weight="normal" text-anchor="start">52</text>
+<text x="220" y="814" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Data Scientist</text>
+<rect x="230" y="800" width="312.0" height="18" fill="#e57321" rx="2"/>
+<text x="548.0" y="814" font-size="11" fill="#333" font-weight="normal" text-anchor="start">52</text>
+<text x="220" y="838" font-size="12" fill="#222" font-weight="normal" text-anchor="end">QA Automation</text>
+<rect x="230" y="824" width="240.0" height="18" fill="#c62828" rx="2"/>
+<text x="476.0" y="838" font-size="11" fill="#333" font-weight="normal" text-anchor="start">40</text>
+<text x="220" y="862" font-size="12" fill="#222" font-weight="normal" text-anchor="end">UI Designer</text>
+<rect x="230" y="848" width="240.0" height="18" fill="#c62828" rx="2"/>
+<text x="476.0" y="862" font-size="11" fill="#333" font-weight="normal" text-anchor="start">40</text>
+<text x="220" y="886" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Data Analyst</text>
+<rect x="230" y="872" width="198.0" height="18" fill="#c62828" rx="2"/>
+<text x="434.0" y="886" font-size="11" fill="#333" font-weight="normal" text-anchor="start">33</text>
+<text x="220" y="910" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Prompt Engineer</text>
+<rect x="230" y="896" width="162.0" height="18" fill="#c62828" rx="2"/>
+<text x="398.0" y="910" font-size="11" fill="#333" font-weight="normal" text-anchor="start">27</text>
+<text x="220" y="934" font-size="12" fill="#222" font-weight="normal" text-anchor="end">QA Manual</text>
+<rect x="230" y="920" width="120.0" height="18" fill="#c62828" rx="2"/>
+<text x="356.0" y="934" font-size="11" fill="#333" font-weight="normal" text-anchor="start">20</text>
+<rect x="230" y="954" width="12" height="12" fill="#1f7a3a" rx="2"/>
+<text x="248" y="964" font-size="11" fill="#333" font-weight="normal" text-anchor="start">Fortress (85+)</text>
+<rect x="360" y="954" width="12" height="12" fill="#4caf50" rx="2"/>
+<text x="378" y="964" font-size="11" fill="#333" font-weight="normal" text-anchor="start">Safe (70–84)</text>
+<rect x="490" y="954" width="12" height="12" fill="#f0a30a" rx="2"/>
+<text x="508" y="964" font-size="11" fill="#333" font-weight="normal" text-anchor="start">Stable (55–69)</text>
+<rect x="620" y="954" width="12" height="12" fill="#e57321" rx="2"/>
+<text x="638" y="964" font-size="11" fill="#333" font-weight="normal" text-anchor="start">Exposed (40–54)</text>
+<rect x="750" y="954" width="12" height="12" fill="#c62828" rx="2"/>
+<text x="768" y="964" font-size="11" fill="#333" font-weight="normal" text-anchor="start">At risk (<40)</text>
 </svg>
