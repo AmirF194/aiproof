@@ -1,37 +1,1001 @@
 role,category,demand,automation_resistance,skill_depth,strategic_importance,score,salary_low_usd,salary_high_usd,demand_trend,verdict_tier
+Chief AI Officer,Engineering Leadership,8,10,10,10,94,300000,1000000,rising,fortress
 Staff Engineer / Tech Lead,Engineering Leadership,9,9,10,10,94,250000,700000,rising,fortress
+VP of AI / ML,Engineering Leadership,8,10,10,10,94,280000,900000,rising,fortress
+Staff Security Engineer,Security,8,10,10,10,94,200000,500000,rising,fortress
+Senior LLM Engineer,Data & AI,9,9,10,9,92,200000,600000,rising,fortress
 Security Engineer,Security,9,9,9,10,92,130000,350000,rising,fortress
+Senior Security Engineer,Security,9,9,9,10,92,160000,400000,rising,fortress
+CTO,Engineering Leadership,7,10,10,10,91,300000,1000000,stable,fortress
+Principal Engineer,Engineering Leadership,8,9,10,10,91,250000,650000,rising,fortress
+Senior Principal Engineer,Engineering Leadership,7,10,10,10,91,280000,750000,stable,fortress
+Senior Staff Engineer,Engineering Leadership,8,9,10,10,91,280000,750000,rising,fortress
+Chief Information Security Officer,Engineering Leadership,7,10,9,10,90,220000,700000,rising,fortress
+VP of Engineering,Engineering Leadership,7,10,9,10,90,250000,800000,stable,fortress
+VP of Security,Engineering Leadership,7,10,9,10,90,240000,700000,rising,fortress
 AI Research Engineer,Data & AI,8,9,10,9,89,180000,700000,rising,fortress
+AI Safety / Alignment Researcher,Data & AI,7,10,10,9,89,180000,700000,rising,fortress
+Foundation Model Engineer,Data & AI,7,10,10,9,89,250000,900000,rising,fortress
+LLM Research Scientist,Data & AI,7,10,10,9,89,220000,800000,rising,fortress
+Senior AI Research Engineer,Data & AI,7,10,10,9,89,220000,800000,rising,fortress
+Staff ML Engineer,Data & AI,8,9,10,9,89,230000,600000,rising,fortress
+CUDA Engineer,Engineering,7,10,10,9,89,180000,500000,rising,fortress
+Chief Architect,Engineering Leadership,6,10,10,10,88,280000,800000,stable,fortress
+VP of Infrastructure,Engineering Leadership,7,10,9,9,88,230000,700000,stable,fortress
+VP of Platform,Engineering Leadership,7,10,9,9,88,230000,700000,stable,fortress
+AI Infrastructure Engineer,Data & AI,8,9,9,9,87,170000,450000,rising,fortress
+LLM Engineer,Data & AI,9,8,9,9,87,160000,500000,rising,fortress
 ML Engineer,Data & AI,9,8,9,9,87,140000,400000,rising,fortress
 MLOps Engineer,Data & AI,9,8,9,9,87,130000,340000,rising,fortress
+Senior ML Engineer,Data & AI,9,8,9,9,87,180000,450000,rising,fortress
+SVP of Engineering,Engineering Leadership,6,10,9,10,87,280000,900000,stable,fortress
 Platform Engineer,Platform & Infrastructure,9,8,9,9,87,130000,360000,rising,fortress
+AI / ML Security Engineer,Security,7,10,10,8,87,150000,400000,rising,fortress
+AI Red Team Engineer,Security,7,10,10,8,87,150000,400000,rising,fortress
 Application Security Engineer,Security,9,8,9,9,87,130000,360000,rising,fortress
 Cloud Security Engineer,Security,9,8,9,9,87,130000,340000,rising,fortress
+Security Architect,Security,8,9,9,9,87,150000,400000,rising,fortress
+Senior Application Security Engineer,Security,8,9,9,9,87,160000,400000,rising,fortress
+Senior Cloud Security Engineer,Security,8,9,9,9,87,160000,400000,rising,fortress
+ML Research Engineer,Data & AI,7,9,10,9,86,180000,600000,rising,fortress
+Pretraining Engineer,Data & AI,6,10,10,9,86,220000,800000,rising,fortress
+Principal ML Engineer,Data & AI,7,9,10,9,86,280000,700000,rising,fortress
+Autonomous Vehicle Software Engineer,Engineering,6,10,10,9,86,160000,450000,rising,fortress
+Distributed Systems Engineer,Engineering,7,9,10,9,86,160000,480000,rising,fortress
+GPU Engineer,Engineering,6,10,10,9,86,180000,500000,rising,fortress
+Self-Driving Perception Engineer,Engineering,6,10,10,9,86,170000,480000,rising,fortress
+Self-Driving Planning Engineer,Engineering,6,10,10,9,86,170000,480000,rising,fortress
+Triton (GPU) Kernel Engineer,Engineering,6,10,10,9,86,180000,500000,rising,fortress
+Director of AI / ML,Engineering Leadership,7,9,10,9,86,220000,600000,rising,fortress
+VP of Product Engineering,Engineering Leadership,7,9,9,10,86,230000,700000,stable,fortress
+Staff Platform Engineer,Platform & Infrastructure,7,9,10,9,86,200000,500000,rising,fortress
+Staff SRE,Platform & Infrastructure,7,9,10,9,86,200000,500000,stable,fortress
+AI Forward Deployed Engineer,Data & AI,9,8,8,9,85,160000,450000,rising,fortress
+Senior AI Agent Engineer,Data & AI,9,8,9,8,85,180000,480000,rising,fortress
+Distinguished Engineer,Engineering Leadership,5,10,10,10,85,300000,1000000,stable,fortress
+VP of Product,Engineering Leadership,7,9,8,10,85,230000,650000,stable,fortress
+Multimodal AI Engineer,Data & AI,7,9,10,8,84,160000,450000,rising,fortress
+Quantitative Developer,Data & AI,7,9,10,8,84,150000,600000,stable,fortress
+Red-team AI Engineer (Model Safety),Data & AI,6,10,10,8,84,160000,450000,rising,fortress
+Senior MLOps Engineer,Data & AI,8,8,9,9,84,160000,400000,rising,fortress
+Chief Data Officer (CDO),Engineering Leadership,7,9,9,9,84,250000,700000,stable,fortress
+Director of Engineering,Engineering Leadership,7,9,9,9,84,200000,500000,stable,fortress
+Group Engineering Manager,Engineering Leadership,7,9,9,9,84,200000,450000,stable,fortress
+Senior Engineering Manager,Engineering Leadership,7,9,9,9,84,180000,450000,stable,fortress
+VP of Data,Engineering Leadership,7,9,9,9,84,230000,650000,stable,fortress
+Internal Developer Platform (IDP) Engineer,Platform & Infrastructure,7,9,9,9,84,150000,380000,rising,fortress
+Senior Platform Engineer,Platform & Infrastructure,8,8,9,9,84,160000,400000,rising,fortress
+Senior SRE,Platform & Infrastructure,8,8,9,9,84,160000,400000,stable,fortress
 Site Reliability Engineer,Platform & Infrastructure,8,8,9,9,84,130000,350000,stable,fortress
+Cloud Security Architect,Security,7,9,9,9,84,160000,400000,rising,fortress
 Offensive Security / Red Team,Security,7,9,10,8,84,120000,330000,stable,fortress
+Product Security Engineer,Security,7,9,9,9,84,140000,360000,rising,fortress
+Senior Forward Deployed Engineer,Specialized & Emerging,7,9,9,9,84,180000,480000,rising,fortress
+Senior TPM,Specialized & Emerging,7,9,9,9,84,180000,450000,stable,fortress
+AI Agent Engineer,Data & AI,10,7,8,8,83,150000,400000,rising,fortress
+Principal Data Engineer,Data & AI,6,9,10,9,83,220000,550000,stable,fortress
+Principal Backend Engineer,Engineering,6,9,10,9,83,230000,600000,stable,fortress
 Engineering Manager,Engineering Leadership,7,9,8,9,83,160000,400000,stable,fortress
+Senior Technical PM,Product & Design,7,9,8,9,83,160000,400000,stable,fortress
+Technical Program Manager,Specialized & Emerging,7,9,8,9,83,150000,380000,stable,fortress
+AI Evaluations Engineer,Data & AI,7,9,9,8,82,150000,400000,rising,safe
+AI Product Manager,Data & AI,8,8,8,9,82,160000,450000,rising,safe
 Data Engineer,Data & AI,9,7,8,9,82,110000,310000,rising,safe
+ML Infrastructure Engineer,Data & AI,7,9,9,8,82,170000,420000,rising,safe
+Senior Computer Vision Engineer,Data & AI,7,9,9,8,82,160000,400000,stable,safe
+Rust Backend Engineer,Engineering,7,9,9,8,82,130000,380000,rising,safe
+Chief Product Officer,Engineering Leadership,6,9,8,10,82,250000,700000,stable,safe
+Fellow Engineer,Engineering Leadership,4,10,10,10,82,350000,1200000,stable,safe
+Tech Lead Manager,Engineering Leadership,8,8,8,9,82,180000,400000,stable,safe
+Kubernetes / Container Platform Engineer,Platform & Infrastructure,8,8,9,8,82,130000,340000,rising,safe
+Senior Kubernetes Engineer,Platform & Infrastructure,8,8,9,8,82,150000,380000,rising,safe
+Senior IR Engineer,Security,7,9,9,8,82,150000,360000,rising,safe
+AI Interpretability Researcher,Data & AI,5,10,10,8,81,180000,600000,rising,safe
+Algorithmic Trading Engineer,Data & AI,5,10,10,8,81,180000,700000,stable,safe
+Computer Vision Researcher,Data & AI,6,9,10,8,81,170000,450000,rising,safe
+Drug Discovery ML Engineer,Data & AI,5,10,10,8,81,140000,380000,rising,safe
+HFT Engineer (High-Frequency Trading),Data & AI,5,10,10,8,81,200000,1000000,stable,safe
+Quantitative Researcher,Data & AI,5,10,10,8,81,200000,800000,stable,safe
+Research Scientist,Data & AI,6,9,10,8,81,160000,500000,rising,safe
+Staff Data Engineer,Data & AI,7,8,9,9,81,180000,450000,rising,safe
+Vision-Language Model Engineer,Data & AI,6,9,10,8,81,160000,450000,rising,safe
+AI Accelerator Hardware Engineer,Engineering,5,10,10,8,81,180000,500000,rising,safe
+ASIC Design Engineer,Engineering,5,10,10,8,81,140000,400000,rising,safe
+Aerospace Embedded Engineer,Engineering,5,10,10,8,81,120000,320000,stable,safe
+C++ Backend / Server Engineer,Engineering,6,9,10,8,81,130000,360000,stable,safe
+Chip Design Engineer,Engineering,5,10,10,8,81,150000,420000,rising,safe
+Defense Embedded Engineer,Engineering,5,10,10,8,81,120000,320000,stable,safe
+Path Planning Engineer,Engineering,5,10,10,8,81,150000,420000,stable,safe
+SLAM Engineer,Engineering,5,10,10,8,81,150000,420000,stable,safe
+Self-Driving Controls Engineer,Engineering,5,10,10,8,81,160000,450000,rising,safe
+Senior Systems Engineer,Engineering,6,9,10,8,81,150000,400000,stable,safe
+Software Architect,Engineering,6,9,9,9,81,160000,400000,stable,safe
+Staff Backend Engineer,Engineering,7,8,9,9,81,200000,500000,stable,safe
 Systems / Low-level Engineer,Engineering,6,9,10,8,81,110000,350000,stable,safe
+Director of Data,Engineering Leadership,6,9,9,9,81,200000,500000,stable,safe
+Director of Infrastructure,Engineering Leadership,6,9,9,9,81,200000,500000,stable,safe
+Director of Platform,Engineering Leadership,6,9,9,9,81,200000,500000,stable,safe
+Director of Security,Engineering Leadership,6,9,9,9,81,200000,500000,rising,safe
+Head of DevOps / SRE,Engineering Leadership,6,9,9,9,81,190000,450000,stable,safe
+Head of Engineering,Engineering Leadership,6,9,9,9,81,200000,500000,stable,safe
+Senior Director of Engineering,Engineering Leadership,6,9,9,9,81,220000,550000,stable,safe
+Principal Product Manager,Product & Design,6,9,9,9,81,220000,550000,stable,safe
+Application Security Architect,Security,6,9,9,9,81,150000,380000,rising,safe
+Cryptography Engineer,Security,5,10,10,8,81,140000,380000,stable,safe
+Security Researcher,Security,5,10,10,8,81,130000,400000,stable,safe
+Vulnerability Researcher,Security,5,10,10,8,81,130000,400000,stable,safe
+Principal TPM,Specialized & Emerging,6,9,9,9,81,220000,500000,stable,safe
+Language Runtime Engineer (V8),Engineering,4,10,10,9,80,170000,480000,stable,safe
+Chief Information Officer (CIO),Engineering Leadership,6,9,8,9,80,250000,700000,stable,safe
+Deputy CISO,Engineering Leadership,6,9,8,9,80,180000,450000,rising,safe
+Head of Backend,Engineering Leadership,6,9,8,9,80,190000,450000,stable,safe
+Group Product Manager,Product & Design,6,9,8,9,80,180000,450000,stable,safe
+Platform Product Manager,Product & Design,6,9,8,9,80,160000,400000,stable,safe
+DevSecOps Engineer,Security,8,8,8,8,80,120000,310000,rising,safe
+Incident Response Engineer,Security,8,8,8,8,80,120000,310000,rising,safe
+Forward Deployed Engineer,Specialized & Emerging,8,8,8,8,80,140000,400000,rising,safe
+Computational Biology Engineer,Data & AI,5,10,10,7,79,110000,300000,stable,safe
+Computer Vision Engineer,Data & AI,7,8,9,8,79,130000,360000,stable,safe
+Diffusion Model Engineer,Data & AI,6,9,10,7,79,150000,420000,rising,safe
+Fine-tuning Specialist,Data & AI,7,8,9,8,79,150000,400000,rising,safe
+ML Platform Engineer,Data & AI,7,8,9,8,79,160000,400000,rising,safe
+RL Researcher,Data & AI,5,10,10,7,79,160000,450000,stable,safe
+RLHF Engineer,Data & AI,6,9,9,8,79,160000,450000,rising,safe
+Reinforcement Learning Engineer,Data & AI,6,9,10,7,79,140000,400000,stable,safe
+Senior Applied Scientist,Data & AI,6,8,10,9,79,180000,480000,rising,safe
+Senior Data Engineer,Data & AI,8,7,8,9,79,140000,340000,rising,safe
+Video Generation Engineer,Data & AI,6,9,10,7,79,150000,420000,rising,safe
+Automotive Software Engineer (AUTOSAR),Engineering,6,9,9,8,79,110000,290000,rising,safe
+Backend Performance Engineer,Engineering,6,9,9,8,79,140000,360000,stable,safe
+Microservices Architect,Engineering,7,8,9,8,79,160000,400000,stable,safe
+Performance Engineer,Engineering,6,9,9,8,79,120000,330000,stable,safe
+Real-time Systems Engineer,Engineering,6,9,9,8,79,140000,400000,stable,safe
+Robotics Software Engineer,Engineering,6,9,9,8,79,120000,330000,rising,safe
+Semiconductor Engineer,Engineering,5,10,10,7,79,130000,360000,rising,safe
+Senior Embedded Engineer,Engineering,6,9,9,8,79,120000,300000,stable,safe
+Streaming Systems Engineer (Kafka),Engineering,7,8,9,8,79,140000,380000,rising,safe
+Verification Engineer (RTL),Engineering,5,10,10,7,79,130000,360000,stable,safe
+Production Engineer,Platform & Infrastructure,7,8,9,8,79,140000,360000,stable,safe
+Senior Infrastructure Engineer,Platform & Infrastructure,7,8,9,8,79,150000,360000,stable,safe
 Technical Product Manager,Product & Design,7,8,8,9,79,130000,340000,stable,safe
+Cloud Pentester,Security,6,9,9,8,79,120000,300000,rising,safe
+DFIR (Forensics & Incident Response),Security,6,9,9,8,79,120000,320000,rising,safe
+Penetration Tester,Security,7,8,9,8,79,100000,280000,stable,safe
+Supply Chain Security Engineer,Security,6,9,9,8,79,140000,360000,rising,safe
+Zero Trust Architect,Security,6,9,9,8,79,150000,380000,rising,safe
+Senior Solutions Architect,Specialized & Emerging,7,8,9,8,79,170000,400000,stable,safe
 Solutions Architect,Specialized & Emerging,7,8,9,8,79,140000,340000,stable,safe
+Distributed Training Engineer,Data & AI,5,9,10,8,78,170000,480000,rising,safe
+Browser Engine Engineer (Chromium),Engineering,4,10,10,8,78,180000,500000,stable,safe
+Cleared Defense Software Engineer (TS/SCI),Engineering,6,9,8,8,78,130000,320000,rising,safe
+Compiler Engineer,Engineering,4,10,10,8,78,140000,400000,stable,safe
+"Container Runtime Engineer (containerd, runc)",Engineering,4,10,10,8,78,150000,410000,stable,safe
+Defense Software Engineer,Engineering,6,9,8,8,78,120000,300000,rising,safe
+Humanoid Robotics Engineer,Engineering,4,10,10,8,78,160000,450000,rising,safe
+Hypervisor / Virtualization Engineer,Engineering,4,10,10,8,78,150000,420000,stable,safe
+LLVM Engineer,Engineering,4,10,10,8,78,150000,420000,stable,safe
+Language Runtime Engineer (JVM),Engineering,4,10,10,8,78,160000,450000,stable,safe
+Linux Kernel Developer,Engineering,4,10,10,8,78,150000,420000,stable,safe
+Satellite Software Engineer,Engineering,4,10,10,8,78,130000,360000,rising,safe
+Senior Rendering Engineer,Engineering,5,9,10,8,78,160000,420000,stable,safe
+TPU / NPU Hardware Engineer,Engineering,4,10,10,8,78,180000,500000,rising,safe
+Trading Systems Engineer,Engineering,5,9,10,8,78,160000,500000,stable,safe
+Windows Kernel / Driver Developer,Engineering,4,10,10,8,78,140000,400000,stable,safe
+Zero-Knowledge Proof Engineer,Engineering,4,10,10,8,78,160000,480000,rising,safe
+Senior Product Manager,Product & Design,7,8,7,9,78,150000,360000,stable,safe
+Privacy Engineer,Security,6,9,8,8,78,130000,320000,rising,safe
+Applied ML Engineer,Data & AI,8,7,8,8,77,140000,360000,rising,safe
+Data Platform Engineer,Data & AI,7,8,8,8,77,140000,340000,rising,safe
+Go Backend Engineer,Engineering,8,7,8,8,77,120000,320000,rising,safe
+Senior Backend Engineer,Engineering,8,7,8,8,77,140000,320000,stable,safe
+AWS Security Specialist,Platform & Infrastructure,7,8,8,8,77,130000,340000,rising,safe
+AWS Solutions Architect,Platform & Infrastructure,7,8,8,8,77,140000,350000,stable,safe
+Cloud Architect,Platform & Infrastructure,7,8,8,8,77,150000,360000,stable,safe
+Databricks Engineer,Platform & Infrastructure,7,8,8,8,77,140000,340000,rising,safe
+Infrastructure Engineer,Platform & Infrastructure,7,8,8,8,77,120000,310000,stable,safe
+Observability Engineer,Platform & Infrastructure,7,8,8,8,77,120000,320000,rising,safe
+Senior Sales Engineer,Specialized & Emerging,7,8,8,8,77,160000,400000,rising,safe
+Senior Solutions Engineer,Specialized & Emerging,7,8,8,8,77,150000,380000,rising,safe
+3D Vision Engineer,Data & AI,5,9,10,7,76,150000,400000,rising,safe
+AI Sales Engineer,Data & AI,7,8,7,8,76,140000,380000,rising,safe
+Applied Scientist,Data & AI,6,8,9,8,76,150000,380000,rising,safe
+Climate Modeling Engineer,Data & AI,4,10,10,7,76,120000,320000,rising,safe
+Data Infrastructure Engineer,Data & AI,6,8,9,8,76,140000,340000,rising,safe
+ML Benchmark / Eval Researcher,Data & AI,5,9,9,8,76,150000,380000,rising,safe
+ML Compiler Engineer (TVM/XLA),Data & AI,4,10,10,7,76,160000,450000,rising,safe
+ML Reliability Engineer,Data & AI,5,9,9,8,76,150000,380000,rising,safe
+Protein Structure Prediction Engineer,Data & AI,4,10,10,7,76,140000,380000,rising,safe
+Aerospace Software Engineer,Engineering,5,9,9,8,76,110000,290000,stable,safe
+Analog Design Engineer,Engineering,4,10,10,7,76,130000,360000,stable,safe
+Bare Metal / Firmware-near Engineer,Engineering,4,10,10,7,76,130000,360000,stable,safe
+Blockchain Protocol Engineer,Engineering,4,10,10,7,76,150000,420000,stable,safe
+Computational Photography Engineer,Engineering,4,10,10,7,76,140000,360000,stable,safe
+DSP Engineer (Digital Signal Processing),Engineering,4,10,10,7,76,130000,340000,stable,safe
+Digital Design Engineer,Engineering,4,10,10,7,76,130000,350000,stable,safe
+DirectX Engineer,Engineering,4,10,10,7,76,130000,340000,stable,safe
+Embedded Systems Architect,Engineering,4,10,10,7,76,150000,380000,stable,safe
+Event-Driven Architecture Engineer,Engineering,6,8,9,8,76,140000,380000,stable,safe
+FPGA Design Engineer,Engineering,4,10,10,7,76,130000,360000,stable,safe
+FPGA Software Engineer,Engineering,4,10,10,7,76,130000,340000,stable,safe
+Game Rendering / Graphics Programmer,Engineering,5,9,10,7,76,130000,340000,stable,safe
+Graphics / Rendering Engineer,Engineering,5,9,10,7,76,130000,380000,stable,safe
+Layer 2 / Rollup Engineer,Engineering,4,10,10,7,76,150000,420000,stable,safe
+Medical Device Firmware Engineer,Engineering,5,9,9,8,76,110000,280000,stable,safe
+Metal Engineer (Apple),Engineering,4,10,10,7,76,130000,340000,stable,safe
+Mixed-signal Design Engineer,Engineering,4,10,10,7,76,140000,370000,stable,safe
+Physical Design Engineer,Engineering,4,10,10,7,76,140000,370000,stable,safe
+RTL Designer,Engineering,4,10,10,7,76,130000,350000,stable,safe
+Real-time Ray Tracing Engineer,Engineering,4,10,10,7,76,140000,360000,rising,safe
+Risk Engineer (Financial),Engineering,5,9,9,8,76,140000,380000,stable,safe
+Robotic Manipulation Engineer,Engineering,4,10,10,7,76,140000,380000,rising,safe
+Senior Firmware Engineer,Engineering,5,9,9,8,76,130000,320000,stable,safe
+Space / Orbital Software Engineer,Engineering,4,10,10,7,76,130000,360000,rising,safe
+SystemVerilog Engineer,Engineering,4,10,10,7,76,130000,350000,stable,safe
+VLSI Engineer,Engineering,4,10,10,7,76,130000,350000,stable,safe
+Verilog Engineer,Engineering,4,10,10,7,76,120000,340000,stable,safe
+Video Codec Engineer,Engineering,4,10,10,7,76,140000,360000,stable,safe
+Vulkan Engineer,Engineering,4,10,10,7,76,130000,340000,stable,safe
+Automotive Security Engineer,Security,5,9,9,8,76,130000,330000,rising,safe
+Cryptographic Protocol Engineer,Security,4,10,10,7,76,150000,400000,stable,safe
+Differential Privacy Engineer,Security,4,10,10,7,76,140000,360000,rising,safe
+Exploit Developer,Security,4,10,10,7,76,150000,450000,stable,safe
+GRC / Compliance Engineer,Security,7,8,7,8,76,110000,260000,rising,safe
+Hardware Security Engineer,Security,4,10,10,7,76,140000,360000,stable,safe
+Kubernetes Security Engineer,Security,6,8,9,8,76,130000,330000,rising,safe
+Reverse Engineer,Security,4,10,10,7,76,130000,360000,stable,safe
+Sales Engineer,Specialized & Emerging,7,8,7,8,76,130000,350000,rising,safe
+Solutions Engineer,Specialized & Emerging,7,8,7,8,76,120000,320000,rising,safe
+AI Solutions Engineer,Data & AI,8,7,7,8,75,130000,340000,rising,safe
+Applied AI Engineer,Data & AI,9,6,7,8,75,130000,360000,rising,safe
+Generative AI Engineer,Data & AI,9,6,7,8,75,130000,380000,rising,safe
+RAG (Retrieval-Augmented Generation) Engineer,Data & AI,8,7,7,8,75,130000,340000,rising,safe
+Enterprise Architect,Engineering,5,9,8,8,75,150000,380000,stable,safe
+Full-Stack AI Engineer,Engineering,9,6,7,8,75,130000,360000,rising,safe
+Garbage Collection Engineer,Engineering,3,10,10,8,75,160000,440000,stable,safe
+Language Runtime Engineer (CLR),Engineering,3,10,10,8,75,150000,400000,stable,safe
+Memory Management Engineer,Engineering,3,10,10,8,75,150000,410000,stable,safe
+Director of Product,Engineering Leadership,6,8,7,9,75,190000,450000,stable,safe
 Developer Experience Engineer,Specialized & Emerging,7,8,8,7,75,120000,300000,rising,safe
+Bioinformatics Engineer,Data & AI,5,9,9,7,74,100000,280000,stable,safe
+Fraud ML Engineer,Data & AI,6,8,8,8,74,130000,330000,rising,safe
+Image Generation Engineer,Data & AI,6,8,9,7,74,140000,380000,rising,safe
+JAX Specialist,Data & AI,5,9,9,7,74,140000,360000,rising,safe
+Ray / Distributed ML Engineer,Data & AI,5,9,9,7,74,150000,400000,rising,safe
+Search ML Engineer (Learning to Rank),Data & AI,6,8,9,7,74,140000,350000,stable,safe
+Triton Inference Server Engineer,Data & AI,5,9,9,7,74,150000,380000,rising,safe
+vLLM / SGLang Engineer,Data & AI,5,9,9,7,74,150000,400000,rising,safe
+Embedded C Engineer,Engineering,5,9,9,7,74,95000,250000,stable,safe
+Embedded C++ Engineer,Engineering,5,9,9,7,74,110000,280000,stable,safe
 Embedded Engineer,Engineering,6,8,9,7,74,90000,230000,stable,safe
+Embedded Linux Engineer,Engineering,5,9,9,7,74,110000,290000,stable,safe
+FinTech Backend Engineer,Engineering,7,7,8,8,74,130000,360000,stable,safe
+Firmware Engineer,Engineering,5,9,9,7,74,100000,260000,stable,safe
+Healthcare Software Engineer,Engineering,6,8,8,8,74,110000,290000,rising,safe
+ROS Engineer,Engineering,5,9,9,7,74,110000,290000,rising,safe
+"RTOS Engineer (FreeRTOS, Zephyr)",Engineering,5,9,9,7,74,110000,280000,stable,safe
+Reliability Engineer (Application),Engineering,6,8,8,8,74,130000,320000,stable,safe
+Robotics Firmware Engineer,Engineering,5,9,9,7,74,120000,310000,rising,safe
+Search Backend Engineer (Elasticsearch),Engineering,6,8,8,8,74,130000,350000,stable,safe
+Software Modernization Engineer (Legacy → Cloud),Engineering,6,8,8,8,74,140000,340000,rising,safe
+WebAssembly (WASM) Engineer,Engineering,5,9,9,7,74,130000,340000,rising,safe
+AWS Data Engineer,Platform & Infrastructure,7,7,8,8,74,120000,310000,stable,safe
+Azure AI Engineer,Platform & Infrastructure,7,7,8,8,74,120000,320000,rising,safe
+Azure Solutions Architect,Platform & Infrastructure,6,8,8,8,74,140000,340000,stable,safe
+Cloud Solutions Architect,Platform & Infrastructure,6,8,8,8,74,150000,360000,stable,safe
+GCP Solutions Architect,Platform & Infrastructure,6,8,8,8,74,140000,340000,stable,safe
+Kubernetes Operator Developer,Platform & Infrastructure,5,9,9,7,74,140000,350000,stable,safe
+Lead DevOps Engineer,Platform & Infrastructure,6,8,8,8,74,150000,360000,stable,safe
+Senior Database Engineer,Platform & Infrastructure,6,8,9,7,74,130000,310000,stable,safe
+Senior DevOps Engineer,Platform & Infrastructure,7,7,8,8,74,130000,320000,stable,safe
+Senior Design Engineer,Product & Design,6,8,9,7,74,140000,320000,rising,safe
+API Security Engineer,Security,6,8,8,8,74,120000,310000,rising,safe
+Container Security Engineer,Security,6,8,8,8,74,120000,310000,rising,safe
+Network Security Engineer,Security,6,8,8,8,74,110000,280000,stable,safe
+Open Source Security Engineer,Security,5,9,9,7,74,130000,320000,rising,safe
+Pre-sales Solutions Architect,Specialized & Emerging,6,8,8,8,74,150000,380000,stable,safe
+Senior Developer Experience Engineer,Specialized & Emerging,6,8,9,7,74,150000,360000,rising,safe
 AI Application Engineer,Data & AI,10,5,6,8,73,120000,320000,rising,safe
+Weather / Atmospheric ML Engineer,Data & AI,3,10,10,7,73,130000,340000,stable,safe
+Bitcoin Core Developer,Engineering,3,10,10,7,73,130000,360000,stable,safe
+Browser Engine Engineer (WebKit),Engineering,3,10,10,7,73,170000,480000,stable,safe
+Climate Tech Software Engineer,Engineering,5,9,8,7,73,110000,280000,rising,safe
+Codec Engineer,Engineering,3,10,10,7,73,140000,360000,stable,safe
+Domain-Driven Design Architect,Engineering,5,8,9,8,73,150000,380000,stable,safe
+EDA Software Engineer,Engineering,3,10,10,7,73,140000,360000,stable,safe
+Game Engine Programmer,Engineering,4,9,10,7,73,140000,350000,stable,safe
+Programming Language Designer,Engineering,3,10,10,7,73,150000,420000,stable,safe
+Quantum Algorithms Engineer,Engineering,3,10,10,7,73,150000,400000,rising,safe
+Quantum Software Engineer,Engineering,3,10,10,7,73,140000,380000,rising,safe
+Rendering Researcher,Engineering,3,10,10,7,73,150000,400000,stable,safe
+Smart Contract Auditor,Engineering,4,9,10,7,73,140000,400000,stable,safe
+Trading Infrastructure Engineer,Engineering,4,9,9,8,73,160000,450000,stable,safe
+macOS / Darwin Engineer,Engineering,3,10,10,7,73,140000,380000,stable,safe
+zk-SNARK Engineer,Engineering,3,10,10,7,73,150000,450000,rising,safe
+zk-STARK Engineer,Engineering,3,10,10,7,73,150000,450000,rising,safe
+API Product Manager,Product & Design,6,8,7,8,73,140000,330000,rising,safe
+Data Product Manager,Product & Design,6,8,7,8,73,140000,350000,rising,safe
+Enterprise Product Manager,Product & Design,6,8,7,8,73,140000,340000,stable,safe
 Product Manager,Product & Design,7,7,6,9,73,110000,310000,stable,safe
+GDPR / Privacy Compliance Engineer,Security,6,8,7,8,73,110000,270000,rising,safe
+Pre-sales Engineer,Specialized & Emerging,6,8,7,8,73,130000,320000,stable,safe
+Databricks Data Engineer,Data & AI,7,7,8,7,72,130000,310000,rising,safe
+Hugging Face / Transformers Engineer,Data & AI,7,7,8,7,72,130000,320000,rising,safe
+NLP Researcher,Data & AI,5,8,10,7,72,160000,420000,stable,safe
+PyTorch Specialist,Data & AI,7,7,8,7,72,130000,320000,rising,safe
+Real-time Data Engineer,Data & AI,6,8,8,7,72,130000,320000,rising,safe
+Recommender Systems Engineer,Data & AI,7,7,8,7,72,120000,310000,stable,safe
+Streaming Data Engineer,Data & AI,6,8,8,7,72,130000,310000,rising,safe
+Voice AI Engineer,Data & AI,7,7,8,7,72,130000,350000,rising,safe
+Backend API Engineer,Engineering,8,6,7,8,72,100000,280000,stable,safe
 Backend Engineer,Engineering,8,6,7,8,72,90000,280000,stable,safe
+Python Backend Engineer,Engineering,8,6,7,8,72,100000,290000,rising,safe
+AWS DevOps Engineer,Platform & Infrastructure,7,7,7,8,72,110000,290000,stable,safe
+CI/CD Engineer,Platform & Infrastructure,7,7,7,8,72,110000,290000,stable,safe
 DevOps Engineer,Platform & Infrastructure,7,7,7,8,72,100000,290000,stable,safe
+Snowflake Engineer,Platform & Infrastructure,7,7,7,8,72,130000,320000,rising,safe
+Vector Database Engineer (Pinecone/Weaviate),Platform & Infrastructure,6,8,8,7,72,130000,320000,rising,safe
+Design Director,Product & Design,4,9,8,8,72,180000,420000,stable,safe
+Design Engineer,Product & Design,7,7,8,7,72,110000,280000,rising,safe
+Design Systems Engineer,Product & Design,6,8,8,7,72,110000,270000,stable,safe
+Security QA Engineer,Quality & Testing,6,8,8,7,72,110000,270000,rising,safe
+Test Architect,Quality & Testing,6,8,8,7,72,120000,290000,stable,safe
+Bug Bounty Hunter,Security,5,9,9,6,72,50000,500000,stable,safe
+Identity & Access Management Engineer,Security,7,7,8,7,72,110000,260000,stable,safe
+Security Automation / SOAR Engineer,Security,6,8,8,7,72,120000,300000,rising,safe
+Threat Hunter,Security,6,8,8,7,72,110000,280000,rising,safe
+Web Application Pentester,Security,6,8,8,7,72,100000,260000,stable,safe
+Audio ML Engineer,Data & AI,5,8,9,7,71,130000,350000,stable,safe
+Principal Data Scientist,Data & AI,4,8,10,8,71,220000,500000,stable,safe
+Quantitative Analyst,Data & AI,5,8,9,7,71,130000,400000,stable,safe
+Speech Recognition Engineer,Data & AI,5,8,9,7,71,130000,350000,stable,safe
+Speech Synthesis (TTS) Engineer,Data & AI,5,8,9,7,71,130000,360000,rising,safe
+Audio DSP Engineer,Engineering,3,10,10,6,71,130000,330000,stable,safe
+DFT (Design for Test) Engineer,Engineering,3,10,10,6,71,130000,340000,stable,safe
+Drone Firmware Engineer,Engineering,4,9,9,7,71,110000,290000,stable,safe
+Drone Software Engineer,Engineering,4,9,9,7,71,110000,290000,rising,safe
+Energy / Smart Grid Engineer,Engineering,4,9,9,7,71,110000,290000,rising,safe
+Game Anti-cheat Engineer,Engineering,4,9,9,7,71,130000,320000,rising,safe
+Game Physics Programmer,Engineering,4,9,10,6,71,110000,280000,stable,safe
+Idempotency / Retries Engineer,Engineering,4,9,9,7,71,130000,350000,stable,safe
+Lightning Network Engineer,Engineering,3,10,10,6,71,130000,340000,stable,safe
+Medical Imaging Software Engineer,Engineering,4,9,9,7,71,130000,330000,stable,safe
+Microcontroller Programmer,Engineering,5,9,8,6,71,80000,200000,stable,safe
+Real-time Communications Engineer (WebRTC),Engineering,5,8,9,7,71,130000,330000,stable,safe
+Robotics Simulation Engineer,Engineering,4,9,9,7,71,130000,340000,stable,safe
+Senior Smart Contract Engineer,Engineering,4,9,9,7,71,140000,400000,stable,safe
+Service Mesh Architect,Engineering,4,9,9,7,71,140000,350000,stable,safe
+Shader Programmer,Engineering,4,9,10,6,71,130000,340000,stable,safe
+Staff Android Engineer,Engineering,5,8,9,7,71,175000,410000,stable,safe
+Staff Full-Stack Engineer,Engineering,6,7,8,8,71,180000,420000,stable,safe
+Staff iOS Engineer,Engineering,5,8,9,7,71,180000,420000,stable,safe
+Static Analysis Engineer,Engineering,4,9,9,7,71,130000,350000,stable,safe
+VHDL Engineer,Engineering,3,10,10,6,71,110000,320000,stable,safe
+Video Encoding Engineer,Engineering,4,9,9,7,71,130000,330000,stable,safe
+Head of Mobile,Engineering Leadership,5,8,8,8,71,180000,400000,stable,safe
+Database Architect,Platform & Infrastructure,5,8,9,7,71,140000,340000,stable,safe
+Senior Design Manager,Product & Design,5,8,8,8,71,160000,380000,stable,safe
+Senior Design Systems Engineer,Product & Design,5,8,9,7,71,140000,320000,stable,safe
+Embedded Security Engineer,Security,4,9,9,7,71,120000,310000,rising,safe
+Fuzzing Engineer,Security,4,9,9,7,71,130000,330000,stable,safe
+Hardware Pentester,Security,3,10,10,6,71,120000,320000,stable,safe
+ICS / SCADA Security Engineer,Security,4,9,9,7,71,120000,300000,rising,safe
+Malware Analyst,Security,4,9,9,7,71,110000,290000,stable,safe
+Open Source Maintainer,Specialized & Emerging,4,9,9,7,71,100000,300000,stable,safe
+AI Ethics Researcher,Data & AI,4,9,8,7,70,130000,320000,stable,safe
+AI Workflow / Orchestration Engineer,Data & AI,7,7,7,7,70,130000,330000,rising,safe
+Senior NLP Engineer,Data & AI,6,7,9,7,70,150000,360000,stable,safe
+Compliance Software Engineer,Engineering,5,8,7,8,70,120000,300000,stable,safe
+GCC Maintainer,Engineering,2,10,10,7,70,140000,380000,stable,safe
+Chief Digital Officer,Engineering Leadership,5,8,7,8,70,220000,600000,stable,safe
+Director of Design,Engineering Leadership,5,8,7,8,70,180000,420000,stable,safe
+Engineering Chief of Staff,Engineering Leadership,5,8,7,8,70,150000,380000,stable,safe
+Chaos Engineer,Platform & Infrastructure,4,9,8,7,70,130000,320000,stable,safe
+Payments Product Manager,Product & Design,5,8,7,8,70,140000,340000,stable,safe
+SOC Manager,Security,5,8,7,8,70,130000,280000,stable,safe
+Vulnerability Management Engineer,Security,7,7,7,7,70,100000,240000,stable,safe
+Anomaly Detection ML Engineer,Data & AI,5,8,8,7,69,120000,300000,stable,stable
+Big Data Engineer,Data & AI,6,7,8,7,69,120000,300000,stable,stable
+Data Lakehouse Engineer,Data & AI,6,7,8,7,69,120000,300000,rising,stable
+Data Reliability Engineer,Data & AI,5,8,8,7,69,130000,310000,stable,stable
+Embedding Engineer,Data & AI,6,7,8,7,69,130000,320000,rising,stable
+Feature Store Engineer,Data & AI,5,8,8,7,69,130000,320000,rising,stable
+Genomics Pipeline Engineer,Data & AI,4,9,9,6,69,110000,280000,stable,stable
+Iceberg / Delta / Hudi Engineer,Data & AI,5,8,8,7,69,130000,310000,rising,stable
+Kafka Streams Engineer,Data & AI,5,8,8,7,69,130000,310000,stable,stable
+ML Tooling Engineer (Ray/Dask),Data & AI,5,8,8,7,69,130000,320000,rising,stable
+Model Deployment Engineer,Data & AI,6,7,8,7,69,130000,320000,rising,stable
+Model Monitoring Engineer,Data & AI,5,8,8,7,69,130000,320000,rising,stable
+Spark Engineer,Data & AI,6,7,8,7,69,120000,290000,stable,stable
+Synthetic Data Engineer,Data & AI,5,8,8,7,69,130000,320000,rising,stable
+Time Series ML Engineer,Data & AI,5,8,8,7,69,120000,310000,stable,stable
+Vector Search Engineer,Data & AI,6,7,8,7,69,130000,320000,rising,stable
+Application Architect,Engineering,5,8,8,7,69,140000,340000,stable,stable
+Backend Caching Engineer,Engineering,5,8,8,7,69,120000,320000,stable,stable
+Developer Tools Engineer,Engineering,5,8,8,7,69,130000,320000,stable,stable
+Edge Runtime Engineer (Cloudflare Workers/Deno Deploy),Engineering,5,8,8,7,69,130000,320000,rising,stable
+Game AI Programmer,Engineering,5,8,9,6,69,110000,280000,rising,stable
+HL7 / FHIR Integration Engineer,Engineering,5,8,8,7,69,110000,270000,stable,stable
+Hardware Validation Engineer,Engineering,4,9,9,6,69,110000,280000,stable,stable
+Industrial Control / PLC Engineer,Engineering,5,8,8,7,69,95000,240000,stable,stable
+Industrial Robotics Programmer,Engineering,5,8,8,7,69,100000,240000,stable,stable
+IoT Edge Engineer,Engineering,5,8,8,7,69,110000,280000,rising,stable
+Mobile Performance Engineer,Engineering,5,8,8,7,69,130000,320000,stable,stable
+Pricing / Monetization Engineer,Engineering,5,8,8,7,69,130000,330000,stable,stable
+Refactoring / Modernization Engineer,Engineering,5,8,8,7,69,130000,320000,stable,stable
+Rust Smart Contract Engineer (Solana),Engineering,4,9,9,6,69,130000,360000,stable,stable
+Senior Android Engineer,Engineering,6,7,8,7,69,125000,300000,stable,stable
+Senior iOS Engineer,Engineering,6,7,8,7,69,130000,310000,stable,stable
+Streaming Media Engineer,Engineering,5,8,8,7,69,130000,320000,stable,stable
+Workflow Engine Engineer (Temporal/Cadence),Engineering,5,8,8,7,69,130000,340000,rising,stable
+Yocto / Buildroot Engineer,Engineering,4,9,9,6,69,110000,280000,stable,stable
+gRPC / Protobuf Engineer,Engineering,5,8,8,7,69,120000,320000,stable,stable
+Backstage Engineer,Platform & Infrastructure,5,8,8,7,69,130000,320000,rising,stable
+ClickHouse Engineer,Platform & Infrastructure,5,8,8,7,69,130000,320000,rising,stable
+Database Engineer / DBA,Platform & Infrastructure,6,7,8,7,69,100000,250000,stable,stable
+Database Reliability Engineer,Platform & Infrastructure,5,8,8,7,69,130000,320000,stable,stable
+Edge Computing Engineer,Platform & Infrastructure,5,8,8,7,69,120000,310000,stable,stable
+GCP Data Engineer,Platform & Infrastructure,6,7,8,7,69,120000,310000,stable,stable
+Multi-cloud Architect,Platform & Infrastructure,5,8,8,7,69,150000,350000,stable,stable
+Network Architect,Platform & Infrastructure,5,8,8,7,69,140000,320000,stable,stable
+PostgreSQL DBA,Platform & Infrastructure,6,7,8,7,69,110000,270000,rising,stable
+Service Mesh Engineer (Istio/Linkerd),Platform & Infrastructure,5,8,8,7,69,130000,330000,stable,stable
+Tracing Engineer (OpenTelemetry/Jaeger),Platform & Infrastructure,5,8,8,7,69,120000,290000,rising,stable
+Growth Product Manager,Product & Design,6,7,7,8,69,130000,320000,stable,stable
+Senior Product Designer,Product & Design,6,7,8,7,69,130000,300000,stable,stable
+Senior UX Researcher,Product & Design,5,8,8,7,69,120000,270000,stable,stable
+Staff Product Designer,Product & Design,5,8,8,7,69,170000,380000,stable,stable
+Performance / Load Test Engineer,Quality & Testing,6,7,8,7,69,100000,250000,stable,stable
+Staff SDET,Quality & Testing,5,8,8,7,69,160000,350000,stable,stable
+Linux Security Engineer,Security,5,8,8,7,69,110000,280000,stable,stable
+Mobile Application Pentester,Security,5,8,8,7,69,100000,260000,stable,stable
+Mobile Security Engineer,Security,5,8,8,7,69,110000,290000,rising,stable
+Network Pentester,Security,5,8,8,7,69,95000,240000,stable,stable
+Experimentation Platform Engineer,Specialized & Emerging,5,8,8,7,69,130000,310000,rising,stable
+Salesforce Architect,Specialized & Emerging,5,8,8,7,69,150000,320000,stable,stable
+Senior Developer Advocate,Specialized & Emerging,5,8,8,7,69,140000,320000,stable,stable
+AI Curriculum / Training Lead,Data & AI,5,8,7,7,68,130000,320000,rising,stable
+Causal Inference Scientist,Data & AI,4,8,9,7,68,140000,320000,stable,stable
+BCI (Brain-Computer Interface) Engineer,Engineering,2,10,10,6,68,140000,380000,rising,stable
+BSD Kernel Engineer,Engineering,2,10,10,6,68,130000,350000,stable,stable
+Browser Engine Engineer (Gecko/Firefox),Engineering,2,10,10,6,68,150000,400000,stable,stable
+Erlang Engineer,Engineering,3,9,9,7,68,120000,290000,stable,stable
+Event Sourcing / CQRS Engineer,Engineering,4,8,9,7,68,130000,350000,stable,stable
+MEV Engineer / Searcher,Engineering,3,9,10,6,68,150000,500000,stable,stable
+Photonics Software Engineer,Engineering,2,10,10,6,68,130000,350000,stable,stable
+Quantum Compiler Engineer,Engineering,2,10,10,6,68,140000,380000,stable,stable
+Scala Backend Engineer,Engineering,4,8,9,7,68,130000,320000,declining,stable
+Search Backend Engineer (Vespa),Engineering,4,8,9,7,68,130000,340000,stable,stable
+Design Manager,Product & Design,5,8,7,7,68,130000,320000,stable,stable
+Principal Product Designer,Product & Design,4,8,9,7,68,200000,450000,stable,stable
+Blockchain Security Auditor,Security,3,9,10,6,68,120000,350000,stable,stable
+Foundation Engineer (CNCF/Apache),Specialized & Emerging,3,9,9,7,68,130000,340000,stable,stable
+Senior Implementation Engineer,Specialized & Emerging,5,8,7,7,68,130000,290000,stable,stable
+Standards Engineer (W3C/IETF),Specialized & Emerging,3,9,9,7,68,130000,340000,stable,stable
+AI Tooling Engineer,Data & AI,6,7,7,7,67,130000,330000,rising,stable
+Conversational AI Engineer,Data & AI,7,6,7,7,67,120000,320000,rising,stable
+Data Pipeline Engineer,Data & AI,7,6,7,7,67,110000,280000,stable,stable
+LangGraph / Agent Framework Engineer,Data & AI,6,7,7,7,67,120000,310000,rising,stable
+SageMaker Engineer,Data & AI,6,7,7,7,67,130000,310000,rising,stable
+Snowflake Data Engineer,Data & AI,7,6,7,7,67,120000,290000,rising,stable
+FastAPI Engineer,Engineering,7,6,7,7,67,100000,260000,rising,stable
+Java Backend Engineer,Engineering,7,6,7,7,67,100000,270000,stable,stable
+Java Spring / Spring Boot Engineer,Engineering,7,6,7,7,67,100000,270000,stable,stable
+Job Scheduler Engineer (Airflow/Prefect),Engineering,6,7,7,7,67,120000,300000,stable,stable
+Kotlin Backend Engineer,Engineering,6,7,7,7,67,110000,280000,rising,stable
+Senior Full-Stack Engineer,Engineering,7,6,7,7,67,130000,310000,stable,stable
+Senior Game Engineer,Engineering,5,8,8,6,67,120000,280000,stable,stable
+AWS Engineer,Platform & Infrastructure,7,6,7,7,67,100000,270000,stable,stable
+Azure DevOps Engineer,Platform & Infrastructure,6,7,7,7,67,110000,280000,stable,stable
+BigQuery Engineer,Platform & Infrastructure,6,7,7,7,67,120000,290000,stable,stable
 Cloud Engineer,Platform & Infrastructure,7,6,7,7,67,95000,270000,declining,stable
+Disaster Recovery Engineer,Platform & Infrastructure,4,8,7,8,67,110000,270000,stable,stable
+Identity Engineer (Corp IT — Okta/Azure AD),Platform & Infrastructure,6,7,7,7,67,110000,280000,rising,stable
+Monitoring Engineer (Prometheus/Grafana),Platform & Infrastructure,6,7,7,7,67,110000,280000,stable,stable
+Redis Engineer,Platform & Infrastructure,6,7,7,7,67,110000,280000,stable,stable
 UX Designer / Researcher,Product & Design,6,7,7,7,67,85000,220000,stable,stable
+Senior SDET,Quality & Testing,6,7,7,7,67,130000,280000,stable,stable
+Endpoint Security Engineer,Security,6,7,7,7,67,100000,260000,stable,stable
+SOC Analyst (Tier 3),Security,6,7,7,7,67,100000,230000,stable,stable
+Security Operations Engineer,Security,6,7,7,7,67,110000,270000,stable,stable
+Threat Intelligence Analyst,Security,6,7,7,7,67,90000,220000,stable,stable
+Post-sales / Customer Engineer,Specialized & Emerging,6,7,7,7,67,110000,280000,stable,stable
+Senior Salesforce Developer,Specialized & Emerging,6,7,7,7,67,130000,280000,stable,stable
+AdTech ML Engineer,Data & AI,5,7,8,7,66,130000,320000,stable,stable
+CDC (Change Data Capture) Engineer,Data & AI,4,8,8,7,66,130000,310000,stable,stable
+Experimentation Scientist (A/B testing),Data & AI,5,7,8,7,66,130000,310000,stable,stable
+Staff Data Scientist,Data & AI,4,7,9,8,66,180000,420000,stable,stable
+Airline Software Engineer,Engineering,4,8,8,7,66,100000,260000,stable,stable
+Apple Vision Pro Application Engineer,Engineering,4,8,9,6,66,130000,340000,rising,stable
+CAD Software Engineer,Engineering,3,9,9,6,66,110000,280000,stable,stable
+Color Science Engineer,Engineering,3,9,9,6,66,110000,270000,stable,stable
+Console Game Engineer,Engineering,4,8,9,6,66,110000,280000,stable,stable
+Cosmos SDK Engineer,Engineering,3,9,9,6,66,120000,310000,stable,stable
+Decentralized Identity Engineer,Engineering,3,9,9,6,66,120000,310000,stable,stable
+Elixir / Phoenix Engineer,Engineering,4,8,8,7,66,110000,280000,stable,stable
+Eye Tracking Engineer,Engineering,3,9,9,6,66,130000,320000,stable,stable
+Frontend Architect,Engineering,5,7,8,7,66,150000,360000,stable,stable
+Frontend Performance Engineer,Engineering,5,7,8,7,66,130000,320000,rising,stable
+Game Network Programmer,Engineering,4,8,9,6,66,110000,280000,stable,stable
+Hand Tracking / Gesture Recognition Engineer,Engineering,3,9,9,6,66,130000,330000,stable,stable
+Hardware Wallet Firmware Engineer,Engineering,3,9,9,6,66,120000,310000,stable,stable
+IoT Software Engineer,Engineering,5,7,8,7,66,100000,260000,stable,stable
+Logistics Software Engineer,Engineering,5,7,8,7,66,110000,290000,rising,stable
+Mainframe Modernization Engineer,Engineering,4,8,8,7,66,130000,290000,rising,stable
+Mobile Architect,Engineering,5,7,8,7,66,150000,360000,stable,stable
+OpenGL Engineer,Engineering,3,9,9,6,66,110000,290000,declining,stable
+Pharma Software Engineer,Engineering,4,8,8,7,66,110000,290000,stable,stable
+Smart Contract Engineer,Engineering,4,8,9,6,66,100000,320000,stable,stable
+Spatial Computing Engineer,Engineering,4,8,9,6,66,120000,320000,rising,stable
+Supply Chain Software Engineer,Engineering,5,7,8,7,66,110000,290000,stable,stable
+VR Game Engineer,Engineering,4,8,9,6,66,110000,280000,rising,stable
+WebGL / WebGPU Engineer,Engineering,4,8,9,6,66,110000,280000,rising,stable
+Zig Engineer,Engineering,3,9,9,6,66,120000,280000,rising,stable
+visionOS / Apple Vision Pro Engineer,Engineering,4,8,9,6,66,130000,340000,rising,stable
+Capacity Planning Engineer,Platform & Infrastructure,4,8,8,7,66,120000,290000,stable,stable
+Elasticsearch DBA / Engineer,Platform & Infrastructure,5,7,8,7,66,120000,290000,stable,stable
+File System Engineer,Platform & Infrastructure,3,9,9,6,66,130000,320000,stable,stable
+FinOps Practitioner,Platform & Infrastructure,6,7,6,7,66,110000,280000,rising,stable
+Senior Network Engineer,Platform & Infrastructure,5,7,8,7,66,120000,280000,stable,stable
+Implementation Engineer,Specialized & Emerging,6,7,6,7,66,100000,240000,stable,stable
+NLP Engineer,Data & AI,6,6,8,7,65,120000,320000,declining,stable
+Haskell Engineer,Engineering,2,9,10,6,65,120000,300000,stable,stable
+OCaml Engineer,Engineering,2,9,10,6,65,120000,300000,stable,stable
+Sustainability Tech Engineer,Engineering,4,8,7,7,65,100000,250000,rising,stable
+Quality Engineering Director,Quality & Testing,4,8,7,7,65,140000,300000,stable,stable
+Field Engineer,Specialized & Emerging,4,8,7,7,65,110000,260000,stable,stable
+Open Source Program Manager (OSPO),Specialized & Emerging,4,8,7,7,65,130000,320000,stable,stable
+Active Learning Engineer,Data & AI,4,8,8,6,64,120000,300000,stable,stable
+Azure ML Engineer,Data & AI,5,7,7,7,64,120000,290000,rising,stable
+Beam / Dataflow Engineer,Data & AI,4,8,8,6,64,120000,290000,stable,stable
+BigQuery Data Engineer,Data & AI,6,6,7,7,64,110000,280000,stable,stable
+Data Lake Engineer,Data & AI,5,7,7,7,64,110000,270000,stable,stable
+Flink Engineer,Data & AI,4,8,8,6,64,130000,320000,stable,stable
+Llama Fine-tuning Engineer,Data & AI,5,7,8,6,64,130000,330000,rising,stable
+Vertex AI Engineer,Data & AI,5,7,7,7,64,130000,310000,rising,stable
+Android Auto / CarPlay Engineer,Engineering,4,8,8,6,64,120000,300000,rising,stable
+Audio Plugin Developer (VST),Engineering,3,9,9,5,64,100000,270000,stable,stable
+Banking Software Engineer,Engineering,5,7,7,7,64,110000,280000,stable,stable
+C# / .NET Backend Engineer,Engineering,6,6,7,7,64,95000,250000,stable,stable
+Crypto Exchange Engineer,Engineering,4,8,8,6,64,110000,290000,stable,stable
+Crypto Wallet Engineer,Engineering,4,8,8,6,64,110000,290000,stable,stable
+E-commerce Backend Engineer,Engineering,6,6,7,7,64,100000,270000,stable,stable
+EHR Integration Engineer,Engineering,5,7,7,7,64,100000,250000,stable,stable
+Frontend Build / Tooling Engineer,Engineering,5,7,8,6,64,130000,320000,stable,stable
+GIS Developer,Engineering,4,8,8,6,64,90000,230000,stable,stable
+Game Server Engineer,Engineering,4,8,8,6,64,110000,280000,stable,stable
+Geospatial Software Engineer,Engineering,4,8,8,6,64,100000,250000,stable,stable
+Government / GovTech Engineer,Engineering,5,7,7,7,64,95000,240000,stable,stable
+GraphQL Engineer,Engineering,6,6,7,7,64,110000,290000,stable,stable
+Haptics Engineer,Engineering,3,9,9,5,64,110000,280000,stable,stable
+Hardware Test Engineer,Engineering,4,8,8,6,64,100000,250000,stable,stable
+Mapping Software Engineer (Mapbox/OSM),Engineering,4,8,8,6,64,110000,270000,stable,stable
+Marketplace Engineer,Engineering,5,7,7,7,64,110000,280000,stable,stable
+PCB Design Engineer,Engineering,3,9,9,5,64,90000,230000,stable,stable
+Streaming Protocol Engineer (HLS/DASH),Engineering,4,8,8,6,64,120000,300000,stable,stable
+Telemedicine Software Engineer,Engineering,5,7,7,7,64,100000,260000,stable,stable
+Unreal Engine Engineer,Engineering,5,7,8,6,64,100000,260000,stable,stable
+Head of Frontend,Engineering Leadership,5,7,7,7,64,170000,380000,stable,stable
+5G Software Engineer,Platform & Infrastructure,4,8,8,6,64,110000,290000,rising,stable
+Azure Engineer,Platform & Infrastructure,6,6,7,7,64,100000,260000,stable,stable
+Build Engineer (Bazel/Buck),Platform & Infrastructure,4,8,8,6,64,130000,320000,stable,stable
+GCP Engineer,Platform & Infrastructure,6,6,7,7,64,100000,270000,stable,stable
+Neo4j / Graph Database Engineer,Platform & Infrastructure,4,8,8,6,64,110000,280000,stable,stable
+Network Automation Engineer,Platform & Infrastructure,5,7,7,7,64,110000,270000,rising,stable
+Network Engineer,Platform & Infrastructure,5,7,7,7,64,90000,220000,stable,stable
+SDN Engineer,Platform & Infrastructure,4,8,8,6,64,110000,270000,stable,stable
+Storage Architect,Platform & Infrastructure,4,8,8,6,64,130000,300000,stable,stable
+Storage Engineer,Platform & Infrastructure,4,8,8,6,64,110000,270000,stable,stable
+Wireless Software Engineer,Platform & Infrastructure,4,8,8,6,64,100000,260000,stable,stable
 Product Designer,Product & Design,6,6,7,7,64,95000,250000,stable,stable
+Quantitative UX Researcher,Product & Design,4,8,8,6,64,110000,260000,stable,stable
 SDET / Test Infrastructure,Quality & Testing,6,6,7,7,64,100000,230000,stable,stable
-iOS Engineer,Engineering,6,6,7,6,62,95000,260000,stable,stable
+Stress Test Engineer,Quality & Testing,4,8,8,6,64,100000,240000,stable,stable
+Active Directory Security Engineer,Security,5,7,7,7,64,110000,270000,stable,stable
+PKI Engineer,Security,4,8,8,6,64,110000,280000,stable,stable
+macOS Security Engineer,Security,4,8,8,6,64,110000,280000,stable,stable
+Developer Advocate / DevRel,Specialized & Emerging,5,7,7,7,64,110000,260000,stable,stable
+Clojure Engineer,Engineering,3,8,9,6,63,110000,280000,declining,stable
+DeFi Protocol Engineer,Engineering,3,8,9,6,63,130000,380000,declining,stable
+Game Producer / Tech Producer,Engineering,4,8,7,6,63,90000,220000,stable,stable
+Principal Frontend Engineer,Engineering,4,7,8,7,63,200000,480000,stable,stable
+Web Accessibility (a11y) Engineer,Engineering,5,7,6,7,63,100000,260000,rising,stable
+Engineering Operations Manager,Engineering Leadership,5,7,6,7,63,140000,320000,stable,stable
+Cloud Cost Optimization Engineer,Platform & Infrastructure,5,7,6,7,63,110000,270000,rising,stable
+Consumer Product Manager,Product & Design,5,7,6,7,63,120000,290000,stable,stable
+Mobile Product Manager,Product & Design,5,7,6,7,63,120000,290000,stable,stable
+HIPAA Compliance Engineer,Security,5,7,6,7,63,100000,240000,stable,stable
+ISO 27001 Auditor,Security,5,7,6,7,63,100000,230000,stable,stable
+PCI-DSS Compliance Engineer,Security,5,7,6,7,63,100000,240000,stable,stable
+SOC 2 Compliance Engineer,Security,5,7,6,7,63,100000,240000,rising,stable
+Program Manager (Software),Specialized & Emerging,5,7,6,7,63,110000,260000,stable,stable
+Anthropic Claude API Engineer,Data & AI,7,5,6,7,62,120000,320000,rising,stable
+AutoGen / Multi-agent Engineer,Data & AI,5,7,7,6,62,120000,300000,rising,stable
+DBT Engineer,Data & AI,6,6,6,7,62,100000,250000,rising,stable
+OpenAI GPT API Engineer,Data & AI,7,5,6,7,62,120000,320000,rising,stable
 Android Engineer,Engineering,6,6,7,6,62,90000,250000,stable,stable
 Full-Stack Engineer,Engineering,7,5,6,7,62,90000,260000,declining,stable
+Full-Stack TypeScript Engineer,Engineering,7,5,6,7,62,100000,280000,rising,stable
+Mobile Build / CI Engineer,Engineering,5,7,7,6,62,110000,270000,stable,stable
+Mobile DevOps / Release Engineer,Engineering,5,7,7,6,62,110000,270000,stable,stable
+Node.js Backend Engineer,Engineering,7,5,6,7,62,90000,260000,stable,stable
+REST API Engineer,Engineering,7,5,6,7,62,90000,240000,stable,stable
+TypeScript Specialist,Engineering,7,5,6,7,62,110000,280000,rising,stable
+iOS Engineer,Engineering,6,6,7,6,62,95000,260000,stable,stable
+Cloudflare Engineer,Platform & Infrastructure,5,7,7,6,62,110000,280000,rising,stable
+Data Modeler,Platform & Infrastructure,5,7,7,6,62,100000,240000,stable,stable
+Helm / Argo Engineer,Platform & Infrastructure,5,7,7,6,62,120000,290000,stable,stable
+Logging Engineer (ELK/Loki/Splunk),Platform & Infrastructure,5,7,7,6,62,100000,260000,stable,stable
+MySQL / MariaDB DBA,Platform & Infrastructure,6,6,7,6,62,95000,240000,stable,stable
+Release Engineer,Platform & Infrastructure,5,7,7,6,62,100000,240000,stable,stable
+UX Researcher,Product & Design,5,7,7,6,62,90000,220000,stable,stable
+SAST Engineer,Security,5,7,7,6,62,100000,240000,stable,stable
+SIEM Engineer,Security,5,7,7,6,62,100000,250000,stable,stable
+Salesforce Developer,Specialized & Emerging,6,6,6,7,62,100000,240000,stable,stable
+AR Engineer,Engineering,4,7,8,6,61,100000,270000,stable,stable
+Ada Engineer (Defense),Engineering,2,9,9,5,61,110000,260000,stable,stable
+CAM Software Engineer,Engineering,2,9,9,5,61,110000,270000,stable,stable
+Cairo Developer (StarkNet),Engineering,2,9,9,5,61,110000,320000,stable,stable
+Cardano Plutus Developer,Engineering,2,9,9,5,61,110000,280000,stable,stable
+DAW Software Engineer,Engineering,2,9,9,5,61,110000,280000,stable,stable
+Fortran Engineer (Scientific),Engineering,2,9,9,5,61,100000,240000,stable,stable
+Linter / Formatter Maintainer,Engineering,3,8,8,6,61,110000,290000,stable,stable
+Live Video / Broadcast Engineer,Engineering,3,8,8,6,61,110000,270000,stable,stable
+Micro-frontends Architect,Engineering,4,7,8,6,61,130000,320000,stable,stable
+Mixed Reality Engineer,Engineering,4,7,8,6,61,100000,270000,stable,stable
+Move Developer (Sui/Aptos),Engineering,3,8,9,5,61,110000,320000,stable,stable
+Search Backend Engineer (Solr),Engineering,4,7,8,6,61,110000,280000,declining,stable
+Solidity Developer,Engineering,4,7,8,6,61,100000,300000,stable,stable
+Staff Frontend Engineer,Engineering,5,6,7,7,61,170000,400000,stable,stable
+Substrate Engineer (Polkadot),Engineering,2,9,9,5,61,110000,290000,stable,stable
+VR Engineer,Engineering,4,7,8,6,61,100000,270000,stable,stable
+Wearable Tech Engineer,Engineering,4,7,8,6,61,100000,250000,stable,stable
+XR Engineer,Engineering,4,7,8,6,61,100000,270000,stable,stable
+Cassandra Engineer,Platform & Infrastructure,4,7,8,6,61,110000,280000,stable,stable
+CockroachDB / TiDB Engineer,Platform & Infrastructure,3,8,8,6,61,120000,290000,stable,stable
+ScyllaDB Engineer,Platform & Infrastructure,3,8,8,6,61,120000,290000,stable,stable
+Social Engineering Specialist,Security,3,9,7,5,61,90000,230000,stable,stable
+API / Integration Engineer,Engineering,7,5,5,7,60,90000,240000,stable,stable
+AgTech Software Engineer,Engineering,3,8,7,6,60,95000,230000,stable,stable
+Django Engineer,Engineering,6,6,6,6,60,90000,230000,stable,stable
+Game Engineer,Engineering,5,7,7,5,60,80000,220000,stable,stable
+Gameplay Programmer,Engineering,5,7,7,5,60,80000,200000,stable,stable
+Next.js / SSR Engineer,Engineering,7,5,6,6,60,100000,260000,rising,stable
+Backup / Recovery Engineer,Platform & Infrastructure,4,7,6,7,60,95000,230000,stable,stable
+DNS Engineer,Platform & Infrastructure,3,8,7,6,60,100000,240000,stable,stable
+Data Center Engineer,Platform & Infrastructure,3,8,7,6,60,100000,240000,stable,stable
+IT Director,Platform & Infrastructure,4,7,6,7,60,130000,280000,stable,stable
+Oracle DBA,Platform & Infrastructure,5,6,8,6,60,110000,280000,declining,stable
+Inclusive Design Specialist,Product & Design,3,8,7,6,60,95000,220000,rising,stable
+Accessibility QA Engineer,Quality & Testing,4,7,6,7,60,90000,220000,rising,stable
+Compliance Test Engineer,Quality & Testing,4,7,6,7,60,95000,230000,stable,stable
+QA Manager,Quality & Testing,4,7,6,7,60,110000,250000,stable,stable
+Intelligent Automation Engineer,Specialized & Emerging,6,6,6,6,60,100000,250000,rising,stable
+AutoML Engineer,Data & AI,4,7,7,6,59,110000,280000,stable,stable
+Data Augmentation Engineer,Data & AI,4,7,7,6,59,110000,280000,stable,stable
+Data Warehouse Engineer,Data & AI,5,6,7,6,59,100000,250000,stable,stable
+Database Administrator,Data & AI,5,6,7,6,59,90000,200000,declining,stable
+Prefect / Dagster Engineer,Data & AI,4,7,7,6,59,110000,270000,rising,stable
+Senior Analytics Engineer,Data & AI,5,6,7,6,59,110000,260000,stable,stable
+Senior Data Scientist,Data & AI,5,5,8,7,59,140000,320000,stable,stable
+TensorFlow Specialist,Data & AI,5,6,7,6,59,110000,280000,stable,stable
+XGBoost / Gradient Boosting Specialist,Data & AI,5,6,7,6,59,110000,270000,stable,stable
+BIM Software Engineer,Engineering,3,8,8,5,59,100000,250000,stable,stable
+Code Quality Engineer,Engineering,4,7,7,6,59,110000,270000,stable,stable
+Full-Stack Python Engineer,Engineering,6,5,6,7,59,95000,260000,stable,stable
+Game Audio Programmer,Engineering,3,8,8,5,59,90000,230000,stable,stable
+Game Live Ops Engineer,Engineering,4,7,7,6,59,100000,240000,stable,stable
+Game Tools Programmer,Engineering,4,7,8,5,59,90000,230000,stable,stable
+Hyperledger Fabric Engineer,Engineering,3,8,8,5,59,110000,280000,declining,stable
+Insurance Tech Engineer (Insurtech),Engineering,4,7,7,6,59,100000,250000,stable,stable
+Java EE / Jakarta EE Engineer,Engineering,4,7,7,6,59,90000,220000,declining,stable
+Kotlin Multiplatform Engineer,Engineering,4,7,7,6,59,110000,270000,rising,stable
+Legal Tech Engineer,Engineering,4,7,7,6,59,100000,250000,rising,stable
+Mainframe Engineer,Engineering,3,8,8,5,59,100000,230000,declining,stable
+Meta Quest Developer,Engineering,4,7,8,5,59,100000,260000,stable,stable
+Photography Software Engineer,Engineering,3,8,8,5,59,100000,250000,stable,stable
+Quarkus Engineer,Engineering,4,7,7,6,59,100000,240000,rising,stable
+Ruby on Rails Engineer,Engineering,5,6,7,6,59,100000,260000,declining,stable
+T3 / tRPC Stack Engineer,Engineering,5,6,7,6,59,110000,270000,rising,stable
+Unity XR Developer,Engineering,4,7,8,5,59,100000,250000,stable,stable
+Alibaba Cloud Engineer,Platform & Infrastructure,4,7,7,6,59,100000,240000,stable,stable
+Block Storage Engineer,Platform & Infrastructure,3,8,8,5,59,110000,270000,stable,stable
+CDN Engineer,Platform & Infrastructure,4,7,7,6,59,110000,270000,stable,stable
+DuckDB Engineer,Platform & Infrastructure,4,7,7,6,59,110000,270000,rising,stable
+DynamoDB Specialist,Platform & Infrastructure,5,6,7,6,59,110000,270000,stable,stable
+MongoDB Engineer,Platform & Infrastructure,5,6,7,6,59,100000,260000,stable,stable
+Monorepo Engineer (Nx/Turborepo),Platform & Infrastructure,4,7,7,6,59,120000,290000,rising,stable
+Object Storage Engineer (S3/MinIO),Platform & Infrastructure,4,7,7,6,59,110000,270000,stable,stable
+SQL Server DBA,Platform & Infrastructure,5,6,7,6,59,100000,250000,declining,stable
+Service Catalog Engineer,Platform & Infrastructure,4,7,7,6,59,110000,280000,stable,stable
+Industrial Designer (hardware-software products),Product & Design,3,8,8,5,59,95000,230000,stable,stable
+Service Designer,Product & Design,4,7,7,6,59,100000,240000,stable,stable
+Hardware QA Engineer,Quality & Testing,4,7,7,6,59,90000,220000,stable,stable
+DAST Engineer,Security,4,7,7,6,59,100000,240000,stable,stable
+Windows Security Engineer,Security,4,7,7,6,59,100000,250000,stable,stable
+Wireless Pentester,Security,3,8,8,5,59,95000,240000,stable,stable
+A/B Testing Engineer,Specialized & Emerging,4,7,7,6,59,110000,270000,stable,stable
+SAP HANA Developer,Specialized & Emerging,4,7,7,6,59,110000,260000,stable,stable
+AI Trainer / RLHF Annotator,Data & AI,8,5,4,5,58,50000,150000,rising,stable
+Active Learning / Labeling Operations Lead,Data & AI,4,7,6,6,58,110000,270000,rising,stable
+Head of QA,Engineering Leadership,4,7,6,6,58,150000,320000,declining,stable
+Conversational Designer,Product & Design,4,7,6,6,58,100000,240000,rising,stable
+Product Operations Manager,Product & Design,4,7,6,6,58,110000,250000,stable,stable
+Developer Educator,Specialized & Emerging,4,7,6,6,58,95000,230000,stable,stable
+Developer Marketing Engineer,Specialized & Emerging,4,7,6,6,58,110000,260000,stable,stable
+Airflow Engineer,Data & AI,5,6,6,6,57,100000,250000,stable,exposed
 Analytics Engineer,Data & AI,6,5,6,6,57,90000,220000,stable,exposed
-Frontend Engineer,Engineering,6,4,5,6,52,80000,230000,declining,exposed
+LangChain / LlamaIndex Engineer,Data & AI,6,5,6,6,57,110000,280000,stable,exposed
+ASP.NET Engineer,Engineering,5,6,6,6,57,90000,220000,stable,exposed
+Flutter Engineer,Engineering,6,5,6,6,57,90000,240000,rising,exposed
+Game Build / Pipeline Engineer,Engineering,4,7,7,5,57,90000,230000,stable,exposed
+Game Telemetry Engineer,Engineering,4,7,7,5,57,90000,220000,stable,exposed
+HarmonyOS Engineer,Engineering,4,7,7,5,57,100000,250000,rising,exposed
+IDE Plugin Developer,Engineering,4,7,7,5,57,100000,250000,stable,exposed
+Junior Backend Engineer,Engineering,7,5,4,6,57,70000,130000,stable,exposed
+MERN Stack Engineer,Engineering,6,5,6,6,57,90000,240000,stable,exposed
+Mobile Game Engineer,Engineering,5,6,7,5,57,85000,210000,stable,exposed
+NestJS Engineer,Engineering,5,6,6,6,57,90000,230000,rising,exposed
+React Native Engineer,Engineering,6,5,6,6,57,90000,240000,stable,exposed
+Senior Frontend Engineer,Engineering,6,5,6,6,57,120000,280000,stable,exposed
+Unity Engineer,Engineering,5,6,7,5,57,80000,200000,stable,exposed
+Deployment Engineer,Platform & Infrastructure,5,6,6,6,57,95000,240000,stable,exposed
+Endpoint Management Engineer (Intune/Jamf),Platform & Infrastructure,5,6,6,6,57,95000,230000,stable,exposed
+Telecom Software Engineer,Platform & Infrastructure,4,7,7,5,57,95000,230000,stable,exposed
+CDP / Customer Data Platform Engineer,Specialized & Emerging,5,6,6,6,57,110000,270000,rising,exposed
+Customer Success Engineer,Specialized & Emerging,5,6,6,6,57,95000,240000,stable,exposed
+Stripe Integration Engineer,Specialized & Emerging,5,6,6,6,57,100000,250000,stable,exposed
+Workflow Automation Engineer,Specialized & Emerging,5,6,6,6,57,95000,240000,rising,exposed
+Decision Scientist,Data & AI,4,6,7,6,56,110000,250000,stable,exposed
+3D Printing Software Engineer,Engineering,2,8,8,5,56,95000,230000,stable,exposed
+Bun.sh Engineer,Engineering,4,6,7,6,56,100000,250000,rising,exposed
+COBOL Developer,Engineering,3,7,8,5,56,90000,220000,stable,exposed
+IPFS / Filecoin Engineer,Engineering,2,8,8,5,56,110000,280000,stable,exposed
+Micronaut Engineer,Engineering,3,7,7,6,56,100000,230000,stable,exposed
+Oracle (Chainlink) Engineer,Engineering,2,8,8,5,56,110000,280000,stable,exposed
+Unreal XR Developer,Engineering,3,7,8,5,56,100000,260000,stable,exposed
+Vyper Developer,Engineering,2,8,8,5,56,100000,280000,stable,exposed
+z/OS Engineer,Engineering,2,8,8,5,56,100000,230000,stable,exposed
+Onboarding Engineer,Specialized & Emerging,5,6,5,6,56,90000,220000,stable,exposed
+Project Manager (Software),Specialized & Emerging,5,6,5,6,56,95000,230000,declining,exposed
+Chatbot Engineer,Data & AI,6,5,5,6,55,95000,240000,stable,exposed
+Product Data Scientist,Data & AI,5,5,7,6,55,110000,260000,stable,exposed
+Cruise / Maritime Software Engineer,Engineering,2,8,7,5,55,95000,230000,stable,exposed
+Express.js Engineer,Engineering,6,5,5,6,55,85000,220000,stable,exposed
+Internal Tools Engineer,Engineering,6,5,5,6,55,90000,230000,stable,exposed
+React Engineer,Engineering,7,4,5,6,55,90000,250000,declining,exposed
+SOC Analyst (Tier 2),Security,6,5,5,6,55,80000,180000,stable,exposed
+Curriculum Designer (Technical),Specialized & Emerging,3,7,6,6,55,90000,210000,stable,exposed
+AdTech Engineer,Engineering,5,5,6,6,54,110000,280000,stable,exposed
+Algorand Developer,Engineering,2,8,8,4,54,100000,250000,declining,exposed
+Angular Engineer,Engineering,5,5,6,6,54,90000,230000,declining,exposed
+Cartography Engineer,Engineering,2,8,8,4,54,90000,220000,stable,exposed
+Construction Tech Engineer,Engineering,3,7,7,5,54,95000,240000,rising,exposed
+Corda / R3 Engineer,Engineering,2,8,8,4,54,100000,260000,declining,exposed
+E-discovery Engineer,Engineering,3,7,7,5,54,100000,240000,stable,exposed
+EdTech Engineer,Engineering,4,6,6,6,54,90000,230000,stable,exposed
+Flask Engineer,Engineering,5,5,6,6,54,85000,220000,stable,exposed
+HR Tech Engineer,Engineering,4,6,6,6,54,95000,230000,stable,exposed
+Internationalization (i18n) Engineer,Engineering,4,6,6,6,54,95000,240000,stable,exposed
+JetBrains Plugin Developer,Engineering,3,7,7,5,54,100000,240000,stable,exposed
+Laravel Engineer,Engineering,5,5,6,6,54,80000,210000,stable,exposed
+MarTech Engineer,Engineering,5,5,6,6,54,100000,250000,stable,exposed
+Mental Health Tech Engineer,Engineering,4,6,6,6,54,90000,220000,rising,exposed
+Middleware Engineer,Engineering,4,6,7,5,54,100000,240000,declining,exposed
+Music Tech Engineer,Engineering,3,7,7,5,54,100000,250000,stable,exposed
+PHP Backend Engineer,Engineering,5,5,6,6,54,75000,200000,declining,exposed
+Real Estate Tech Engineer (Proptech),Engineering,4,6,6,6,54,95000,240000,stable,exposed
+Tezos Developer,Engineering,2,8,8,4,54,100000,250000,declining,exposed
+Travel Tech Engineer,Engineering,4,6,6,6,54,90000,230000,stable,exposed
+Webpack / Vite Specialist,Engineering,4,6,7,5,54,110000,270000,stable,exposed
+Hetzner / Bare Metal Specialist,Platform & Infrastructure,3,7,7,5,54,95000,230000,stable,exposed
+InfluxDB Engineer,Platform & Infrastructure,3,7,7,5,54,100000,240000,stable,exposed
+Linux Sysadmin,Platform & Infrastructure,4,6,7,5,54,85000,200000,stable,exposed
+Load Balancer Engineer,Platform & Infrastructure,3,7,7,5,54,95000,230000,stable,exposed
+Oracle Cloud Engineer,Platform & Infrastructure,4,6,7,5,54,100000,240000,declining,exposed
+TimescaleDB Engineer,Platform & Infrastructure,3,7,7,5,54,100000,250000,stable,exposed
+VoIP / SIP Engineer,Platform & Infrastructure,3,7,7,5,54,90000,220000,stable,exposed
+Associate Product Manager,Product & Design,6,5,4,6,54,90000,180000,stable,exposed
+Information Architect,Product & Design,3,7,7,5,54,95000,230000,stable,exposed
+Interaction Designer,Product & Design,4,6,6,6,54,90000,220000,stable,exposed
+Marketing Product Manager,Product & Design,4,6,6,6,54,110000,250000,stable,exposed
+Senior Content Designer,Product & Design,4,6,6,6,54,100000,230000,stable,exposed
+Voice Interface Designer,Product & Design,3,7,7,5,54,95000,220000,stable,exposed
+API Test Engineer,Quality & Testing,5,5,6,6,54,90000,220000,stable,exposed
+Playwright Engineer,Quality & Testing,5,5,6,6,54,95000,230000,rising,exposed
+QA Lead,Quality & Testing,4,6,6,6,54,100000,230000,stable,exposed
+Test Data Engineer,Quality & Testing,4,6,6,6,54,95000,220000,stable,exposed
+Documentation Engineer,Specialized & Emerging,4,6,6,6,54,90000,220000,stable,exposed
+Feature Flag Engineer (LaunchDarkly/Split),Specialized & Emerging,4,6,6,6,54,110000,270000,stable,exposed
+SAP ABAP Developer,Specialized & Emerging,4,6,7,5,54,100000,240000,declining,exposed
+SAP Basis Administrator,Specialized & Emerging,4,6,7,5,54,100000,240000,declining,exposed
+Senior Technical Writer,Specialized & Emerging,4,6,6,6,54,100000,230000,stable,exposed
+ServiceNow Developer,Specialized & Emerging,5,5,6,6,54,100000,230000,stable,exposed
+IT Manager,Platform & Infrastructure,4,6,5,6,53,100000,230000,stable,exposed
 Data Scientist,Data & AI,5,4,7,6,52,100000,250000,declining,exposed
-QA Automation,Quality & Testing,4,3,5,5,40,70000,170000,declining,at_risk
+ELT Engineer,Data & AI,5,5,5,6,52,90000,220000,stable,exposed
+Frontend Engineer,Engineering,6,4,5,6,52,80000,230000,declining,exposed
+Godot Engineer,Engineering,3,7,7,4,52,70000,180000,rising,exposed
+VSCode Extension Developer,Engineering,4,6,6,5,52,100000,250000,rising,exposed
+Vercel / Netlify Specialist,Platform & Infrastructure,4,6,6,5,52,95000,240000,stable,exposed
+3D Designer,Product & Design,3,7,7,4,52,80000,200000,stable,exposed
+Test Environment Engineer,Quality & Testing,4,6,6,5,52,95000,220000,stable,exposed
+MuleSoft Engineer,Specialized & Emerging,4,6,6,5,52,110000,260000,stable,exposed
+Power Platform Developer,Specialized & Emerging,5,5,5,6,52,95000,230000,stable,exposed
+Salesforce CPQ Developer,Specialized & Emerging,4,6,6,5,52,100000,230000,stable,exposed
+Workday Developer,Specialized & Emerging,4,6,6,5,52,100000,230000,stable,exposed
+AS/400 / RPG Developer,Engineering,2,7,8,4,51,85000,200000,declining,exposed
+Android TV Engineer,Engineering,3,6,7,5,51,95000,230000,stable,exposed
+Crystal Engineer,Engineering,1,8,8,4,51,80000,180000,declining,exposed
+D Lang Engineer,Engineering,1,8,8,4,51,80000,180000,declining,exposed
+Deno Engineer,Engineering,3,6,7,5,51,95000,230000,stable,exposed
+HTMX Engineer,Engineering,4,6,5,5,51,85000,210000,rising,exposed
+Nim Engineer,Engineering,1,8,8,4,51,80000,180000,declining,exposed
+Wear OS Engineer,Engineering,3,6,7,5,51,95000,230000,stable,exposed
+Web Components / Lit Engineer,Engineering,3,6,7,5,51,95000,230000,stable,exposed
+Xamarin / .NET MAUI Engineer,Engineering,3,6,7,5,51,95000,230000,declining,exposed
+iPadOS Engineer,Engineering,3,6,7,5,51,100000,240000,stable,exposed
+watchOS Engineer,Engineering,3,6,7,5,51,100000,240000,stable,exposed
+IBM Cloud Engineer,Platform & Infrastructure,3,6,7,5,51,95000,230000,declining,exposed
+Community Manager (Technical),Specialized & Emerging,4,6,5,5,51,80000,200000,stable,exposed
+Twilio Engineer,Specialized & Emerging,4,6,5,5,51,100000,240000,stable,exposed
+Customer Support Engineer,Specialized & Emerging,5,5,5,5,50,70000,170000,stable,exposed
+Data Annotation Engineer,Data & AI,5,5,4,5,49,70000,180000,rising,exposed
+Scikit-learn Specialist,Data & AI,4,5,6,5,49,95000,230000,stable,exposed
+Browser Extension Engineer,Engineering,4,5,6,5,49,90000,230000,stable,exposed
+CSS Architect (Sass/Tailwind),Engineering,4,5,6,5,49,90000,220000,stable,exposed
+Esports Platform Engineer,Engineering,3,6,6,5,49,90000,220000,stable,exposed
+Food Tech Engineer,Engineering,3,6,6,5,49,90000,220000,stable,exposed
+Full-Stack Ruby Engineer,Engineering,4,5,6,5,49,90000,230000,declining,exposed
+JAMstack Engineer,Engineering,4,5,6,5,49,90000,220000,stable,exposed
+JCL Developer,Engineering,2,7,7,4,49,85000,200000,declining,exposed
+Junior Android Engineer,Engineering,5,5,4,5,49,65000,125000,stable,exposed
+Junior iOS Engineer,Engineering,5,5,4,5,49,70000,130000,stable,exposed
+MEAN Stack Engineer,Engineering,4,5,6,5,49,85000,220000,declining,exposed
+Remix Engineer,Engineering,4,5,6,5,49,90000,230000,stable,exposed
+Sinatra / Hanami Engineer,Engineering,3,6,6,5,49,90000,200000,declining,exposed
+Sports Tech Engineer,Engineering,3,6,6,5,49,95000,230000,stable,exposed
+Svelte Engineer,Engineering,4,5,6,5,49,90000,220000,rising,exposed
+Symfony Engineer,Engineering,4,5,6,5,49,80000,200000,stable,exposed
+Tornado Backend Engineer,Engineering,3,6,6,5,49,80000,200000,declining,exposed
+Couchbase Engineer,Platform & Infrastructure,2,7,7,4,49,100000,230000,declining,exposed
+Fly.io / Render Specialist,Platform & Infrastructure,3,6,6,5,49,95000,230000,stable,exposed
+Sysadmin / System Administrator,Platform & Infrastructure,4,5,6,5,49,75000,180000,declining,exposed
+Vertica / Teradata Engineer,Platform & Infrastructure,2,7,7,4,49,100000,240000,declining,exposed
+Windows Sysadmin,Platform & Infrastructure,4,5,6,5,49,80000,190000,declining,exposed
+Apex Developer,Specialized & Emerging,4,5,6,5,49,90000,220000,stable,exposed
+Atlassian Developer (Jira/Confluence),Specialized & Emerging,4,5,6,5,49,95000,220000,stable,exposed
+Microsoft Dynamics Developer,Specialized & Emerging,4,5,6,5,49,95000,220000,stable,exposed
+NetSuite Developer,Specialized & Emerging,4,5,6,5,49,95000,220000,stable,exposed
+Release Train Engineer (SAFe),Specialized & Emerging,3,6,6,5,49,100000,230000,declining,exposed
+SEO Engineer (Technical),Specialized & Emerging,4,5,6,5,49,90000,230000,stable,exposed
+BI Developer,Data & AI,5,4,5,5,47,80000,180000,declining,exposed
+Cohere / Mistral API Engineer,Data & AI,4,5,5,5,47,100000,250000,stable,exposed
+Statistical Programmer (SAS/R),Data & AI,3,5,7,5,47,85000,210000,declining,exposed
+Astro Engineer,Engineering,4,5,5,5,47,85000,210000,rising,exposed
+Game UI Programmer,Engineering,4,5,6,4,47,80000,200000,stable,exposed
+Junior Full-Stack Engineer,Engineering,6,4,3,5,47,65000,120000,stable,exposed
+Localization (l10n) Engineer,Engineering,4,5,5,5,47,85000,210000,stable,exposed
+Vue Engineer,Engineering,5,4,5,5,47,85000,220000,stable,exposed
+IT Operations Engineer,Platform & Infrastructure,4,5,5,5,47,80000,200000,stable,exposed
+M365 / Google Workspace Admin,Platform & Infrastructure,4,5,5,5,47,80000,200000,stable,exposed
+Content Designer / UX Writer,Product & Design,4,5,5,5,47,75000,180000,declining,exposed
+Motion Designer,Product & Design,3,6,6,4,47,85000,200000,stable,exposed
+API Documentation Specialist,Specialized & Emerging,4,5,5,5,47,80000,200000,stable,exposed
+Marketing Automation Engineer,Specialized & Emerging,4,5,5,5,47,90000,220000,stable,exposed
+Mixpanel / Amplitude / Heap Engineer,Specialized & Emerging,4,5,5,5,47,95000,230000,stable,exposed
+Power BI Specialist,Specialized & Emerging,5,4,5,5,47,85000,200000,stable,exposed
+RPA Engineer (UiPath/Power Automate),Specialized & Emerging,5,4,5,5,47,80000,200000,stable,exposed
+Salesforce Marketing Cloud Developer,Specialized & Emerging,4,5,5,5,47,95000,220000,stable,exposed
+Scrum Master / Agile Coach,Specialized & Emerging,4,5,5,5,47,80000,180000,declining,exposed
+Segment / Rudderstack Engineer,Specialized & Emerging,4,5,5,5,47,100000,240000,stable,exposed
+Shopify App Developer,Specialized & Emerging,4,5,5,5,47,80000,200000,stable,exposed
+Technical Writer,Specialized & Emerging,4,5,5,5,47,70000,170000,declining,exposed
+SSIS / SQL Server Integration Engineer,Data & AI,3,5,6,5,46,85000,210000,declining,exposed
+BPM / Workflow Engineer,Engineering,3,5,6,5,46,95000,220000,stable,exposed
+DAO Tooling Engineer,Engineering,2,6,7,4,46,90000,230000,declining,exposed
+PWA Engineer,Engineering,3,5,6,5,46,90000,220000,stable,exposed
+SolidJS Engineer,Engineering,3,5,6,5,46,90000,220000,rising,exposed
+tvOS Engineer,Engineering,2,6,7,4,46,95000,230000,stable,exposed
+Oracle ERP Developer,Specialized & Emerging,3,5,6,5,46,95000,220000,declining,exposed
+Hadoop Engineer,Data & AI,3,5,7,4,45,95000,230000,declining,exposed
+Marketing Data Scientist,Data & AI,4,4,6,5,45,100000,220000,stable,exposed
+Senior UI Designer,Product & Design,4,4,6,5,45,95000,220000,declining,exposed
+Senior QA Automation,Quality & Testing,4,4,6,5,45,90000,200000,declining,exposed
+SOC Analyst (Tier 1),Security,5,4,4,5,45,60000,130000,declining,exposed
+Power Apps Developer,Specialized & Emerging,5,4,4,5,45,85000,210000,stable,exposed
+Salesforce Administrator,Specialized & Emerging,5,4,4,5,45,75000,170000,stable,exposed
+ETL Developer,Data & AI,4,4,5,5,44,80000,200000,declining,exposed
+Growth Analyst,Data & AI,4,4,5,5,44,80000,200000,stable,exposed
+Informatica Engineer,Data & AI,3,5,6,4,44,90000,210000,declining,exposed
+Looker / LookML Developer,Data & AI,4,4,5,5,44,90000,210000,stable,exposed
+Product Analyst,Data & AI,4,4,5,5,44,80000,190000,stable,exposed
+ESB / Service Bus Engineer,Engineering,3,5,6,4,44,95000,220000,declining,exposed
+LAMP Stack Engineer,Engineering,4,4,5,5,44,75000,190000,declining,exposed
+Nuxt Engineer,Engineering,4,4,5,5,44,85000,220000,stable,exposed
+Restaurant / Hospitality Tech Engineer,Engineering,3,5,5,5,44,80000,210000,stable,exposed
+Tizen Engineer,Engineering,2,6,6,4,44,90000,210000,declining,exposed
+DigitalOcean Specialist,Platform & Infrastructure,3,5,6,4,44,85000,210000,stable,exposed
+Brand Designer,Product & Design,3,5,5,5,44,80000,200000,stable,exposed
+Visual Designer,Product & Design,4,4,5,5,44,75000,190000,declining,exposed
+Cypress Engineer,Quality & Testing,4,4,5,5,44,85000,200000,stable,exposed
+Mobile QA Engineer,Quality & Testing,4,4,5,5,44,75000,180000,stable,exposed
+Boomi Engineer,Specialized & Emerging,3,5,6,4,44,100000,230000,stable,exposed
+Conversion Rate Optimization Engineer,Specialized & Emerging,3,5,5,5,44,90000,220000,stable,exposed
+Magento / Adobe Commerce Developer,Specialized & Emerging,3,5,6,4,44,85000,210000,declining,exposed
+SAP Fiori / UI5 Developer,Specialized & Emerging,3,5,6,4,44,95000,220000,stable,exposed
+Square / Block Integration Engineer,Specialized & Emerging,3,5,6,4,44,90000,220000,stable,exposed
+Junior Frontend Engineer,Engineering,6,3,3,5,43,60000,110000,declining,exposed
+Fivetran / Stitch Specialist,Data & AI,3,5,5,4,42,85000,200000,stable,exposed
+Admin Panel Engineer,Engineering,4,4,4,5,42,80000,200000,stable,exposed
+Fitness / Wellness Tech Engineer,Engineering,3,5,5,4,42,85000,210000,stable,exposed
+Ionic / Cordova Engineer,Engineering,3,5,5,4,42,80000,200000,declining,exposed
+Perl Engineer,Engineering,2,5,7,4,42,80000,200000,declining,exposed
+Collaboration Tools Engineer (Slack/Teams),Platform & Infrastructure,3,5,5,4,42,80000,190000,stable,exposed
+Heroku Specialist,Platform & Infrastructure,3,5,5,4,42,80000,200000,declining,exposed
+Game QA Lead,Quality & Testing,3,5,5,4,42,70000,170000,stable,exposed
+Localization QA Engineer,Quality & Testing,3,5,5,4,42,75000,180000,stable,exposed
+BigCommerce Developer,Specialized & Emerging,3,5,5,4,42,85000,200000,stable,exposed
+Low-code Developer,Specialized & Emerging,4,4,4,5,42,75000,190000,stable,exposed
+SendGrid / Mailgun Engineer,Specialized & Emerging,3,5,5,4,42,90000,210000,stable,exposed
+Tray.io / iPaaS Engineer,Specialized & Emerging,3,5,5,4,42,90000,210000,stable,exposed
+Workato Engineer,Specialized & Emerging,3,5,5,4,42,90000,220000,stable,exposed
+Talend Engineer,Data & AI,2,5,6,4,41,85000,200000,declining,exposed
+Ember.js Engineer,Engineering,2,5,6,4,41,85000,210000,declining,exposed
+Stencil Engineer,Engineering,2,5,6,4,41,85000,200000,stable,exposed
+IT Asset Manager,Platform & Infrastructure,3,5,4,4,41,75000,180000,stable,exposed
+Citizen Developer Coach,Specialized & Emerging,3,5,4,4,41,80000,190000,stable,exposed
+Make.com / n8n Specialist,Specialized & Emerging,3,5,4,4,41,75000,180000,rising,exposed
+Power BI Developer,Data & AI,4,3,5,5,40,75000,180000,stable,at_risk
+Senior Data Analyst,Data & AI,4,3,5,5,40,80000,190000,declining,at_risk
+Tableau Developer,Data & AI,4,3,5,5,40,75000,180000,declining,at_risk
+IT Support Engineer,Platform & Infrastructure,4,4,4,4,40,55000,130000,declining,at_risk
 UI Designer,Product & Design,4,3,5,5,40,75000,190000,declining,at_risk
+QA Automation,Quality & Testing,4,3,5,5,40,70000,170000,declining,at_risk
+UI / Web Test Engineer,Quality & Testing,4,3,5,5,40,75000,180000,declining,at_risk
+Tier 2 Technical Support Engineer,Specialized & Emerging,4,4,4,4,40,60000,140000,declining,at_risk
+WordPress Developer,Specialized & Emerging,4,4,4,4,40,70000,180000,stable,at_risk
+Business Analyst,Data & AI,4,3,4,5,39,70000,160000,declining,at_risk
+Marketing Analyst,Data & AI,4,3,4,5,39,65000,150000,declining,at_risk
+Childcare Tech Engineer,Engineering,2,5,5,4,39,80000,200000,stable,at_risk
+NFT Platform Engineer,Engineering,2,5,6,3,39,80000,200000,declining,at_risk
+Pet Tech Engineer,Engineering,2,5,5,4,39,80000,200000,stable,at_risk
+Preact Engineer,Engineering,2,5,5,4,39,80000,200000,stable,at_risk
+Appium Engineer,Quality & Testing,3,4,5,4,39,80000,190000,stable,at_risk
+SEM / Paid Search Engineer,Specialized & Emerging,3,4,5,4,39,85000,210000,stable,at_risk
+SharePoint Developer,Specialized & Emerging,3,4,5,4,39,85000,200000,declining,at_risk
+BI Analyst,Data & AI,4,3,4,4,37,70000,160000,declining,at_risk
+HTML / CSS Specialist,Engineering,4,3,4,4,37,65000,150000,declining,at_risk
+Marketing Designer,Product & Design,3,4,4,4,37,70000,170000,declining,at_risk
+Drupal Developer,Specialized & Emerging,2,5,5,3,37,80000,190000,declining,at_risk
+Freshworks Developer,Specialized & Emerging,3,4,4,4,37,80000,180000,stable,at_risk
+HubSpot Developer,Specialized & Emerging,3,4,4,4,37,80000,190000,stable,at_risk
+Intercom / Help Desk Developer,Specialized & Emerging,3,4,4,4,37,80000,180000,stable,at_risk
+Marketo Developer,Specialized & Emerging,3,4,4,4,37,80000,190000,stable,at_risk
+WooCommerce Developer,Specialized & Emerging,3,4,4,4,37,75000,180000,stable,at_risk
+Zapier Specialist,Specialized & Emerging,3,4,4,4,37,70000,170000,stable,at_risk
+Zendesk Developer,Specialized & Emerging,3,4,4,4,37,80000,180000,stable,at_risk
+Backbone.js Maintainer,Engineering,1,5,6,3,36,75000,190000,declining,at_risk
+CodeIgniter Engineer,Engineering,2,4,5,4,36,70000,170000,declining,at_risk
+Pascal / Delphi Engineer,Engineering,1,5,6,3,36,75000,180000,declining,at_risk
+Qlik Developer,Data & AI,3,3,5,4,35,75000,170000,declining,at_risk
+Help Desk Tier 2,Platform & Infrastructure,4,3,3,4,35,55000,110000,declining,at_risk
+Selenium Engineer,Quality & Testing,3,3,5,4,35,75000,180000,declining,at_risk
+No-code Developer / Maker,Specialized & Emerging,4,3,3,4,35,65000,170000,stable,at_risk
+Sigma / ThoughtSpot Developer,Data & AI,2,4,5,3,34,80000,190000,stable,at_risk
+Alpine.js Engineer,Engineering,2,4,4,4,34,75000,180000,stable,at_risk
+KaiOS Engineer,Engineering,1,5,5,3,34,75000,180000,declining,at_risk
+PowerBuilder Maintainer,Engineering,1,5,6,2,34,70000,160000,declining,at_risk
+Visual Basic / VB.NET Maintainer,Engineering,2,4,5,3,34,75000,170000,declining,at_risk
 Data Analyst,Data & AI,4,2,4,4,33,65000,160000,declining,at_risk
-Prompt Engineer,Specialized & Emerging,3,2,3,3,27,80000,180000,declining,at_risk
+Pardot Developer,Specialized & Emerging,2,4,4,3,32,75000,180000,declining,at_risk
+QA Manual Lead,Quality & Testing,2,3,4,4,31,70000,160000,declining,at_risk
+MicroStrategy Developer,Data & AI,2,3,5,3,30,75000,170000,declining,at_risk
+Game QA Tester,Engineering,3,3,3,3,30,50000,110000,declining,at_risk
+Desktop Support,Platform & Infrastructure,3,3,3,3,30,50000,110000,declining,at_risk
+Domo Developer,Data & AI,2,3,4,3,29,75000,170000,declining,at_risk
+Mode Analytics Developer,Data & AI,2,3,4,3,29,80000,180000,stable,at_risk
+ColdFusion Maintainer,Engineering,1,4,5,2,29,70000,160000,declining,at_risk
+jQuery Maintainer,Engineering,2,3,4,3,29,65000,160000,declining,at_risk
+Prompt Engineer,Data & AI,3,2,3,3,27,80000,180000,declining,at_risk
+Help Desk Tier 1,Platform & Infrastructure,3,2,2,3,25,40000,90000,declining,at_risk
 QA Manual,Quality & Testing,2,1,3,3,20,50000,130000,declining,at_risk

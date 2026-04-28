@@ -4,8 +4,8 @@ Cloud Engineer,Platform & Infrastructure,67,stable,-7.9,36,24,compressor
 UX Designer / Researcher,Product & Design,67,stable,-0.6,36,24,compressor
 Product Designer,Product & Design,64,stable,-5.7,42,30,compressor
 SDET / Test Infrastructure,Quality & Testing,64,stable,-5.7,60,44,compressor
-iOS Engineer,Engineering,62,stable,-5.3,30,22,compressor
 Android Engineer,Engineering,62,stable,-5.5,30,22,compressor
+iOS Engineer,Engineering,62,stable,-5.3,30,22,compressor
 UI Designer,Product & Design,40,at_risk,-28.3,28,20,compressor
 QA Manual,Quality & Testing,20,at_risk,-48.7,26,18,compressor
 AI Research Engineer,Data & AI,89,fortress,63.4,100,0,growing
@@ -29,9 +29,973 @@ Product Manager,Product & Design,73,safe,12.5,62,44,multiplier
 DevOps Engineer,Platform & Infrastructure,72,safe,-10.7,48,34,replacement
 Full-Stack Engineer,Engineering,62,stable,-18.4,62,44,replacement
 Analytics Engineer,Data & AI,57,exposed,-10.5,52,30,replacement
-Frontend Engineer,Engineering,52,exposed,-27.3,46,32,replacement
 Data Scientist,Data & AI,52,exposed,-28.7,80,22,replacement
+Frontend Engineer,Engineering,52,exposed,-27.3,46,32,replacement
 QA Automation,Quality & Testing,40,at_risk,-29.1,68,46,replacement
 Data Analyst,Data & AI,33,at_risk,-28.7,44,26,replacement
-Prompt Engineer,Specialized & Emerging,27,at_risk,-61.9,100,0,replacement
+Prompt Engineer,Data & AI,27,at_risk,-61.9,100,0,replacement
+Chief AI Officer,Engineering Leadership,94,fortress,0.0,0,0,stable
+VP of AI / ML,Engineering Leadership,94,fortress,0.0,0,0,stable
+Staff Security Engineer,Security,94,fortress,0.0,0,0,stable
+Senior LLM Engineer,Data & AI,92,fortress,0.0,0,0,stable
+Senior Security Engineer,Security,92,fortress,0.0,0,0,stable
+CTO,Engineering Leadership,91,fortress,0.0,0,0,stable
+Principal Engineer,Engineering Leadership,91,fortress,0.0,0,0,stable
+Senior Principal Engineer,Engineering Leadership,91,fortress,0.0,0,0,stable
+Senior Staff Engineer,Engineering Leadership,91,fortress,0.0,0,0,stable
+Chief Information Security Officer,Engineering Leadership,90,fortress,0.0,0,0,stable
+VP of Engineering,Engineering Leadership,90,fortress,0.0,0,0,stable
+VP of Security,Engineering Leadership,90,fortress,0.0,0,0,stable
+AI Safety / Alignment Researcher,Data & AI,89,fortress,0.0,0,0,stable
+Foundation Model Engineer,Data & AI,89,fortress,0.0,0,0,stable
+LLM Research Scientist,Data & AI,89,fortress,0.0,0,0,stable
+Senior AI Research Engineer,Data & AI,89,fortress,0.0,0,0,stable
+Staff ML Engineer,Data & AI,89,fortress,0.0,0,0,stable
+CUDA Engineer,Engineering,89,fortress,0.0,0,0,stable
+Chief Architect,Engineering Leadership,88,fortress,0.0,0,0,stable
+VP of Infrastructure,Engineering Leadership,88,fortress,0.0,0,0,stable
+VP of Platform,Engineering Leadership,88,fortress,0.0,0,0,stable
+AI Infrastructure Engineer,Data & AI,87,fortress,0.0,0,0,stable
+LLM Engineer,Data & AI,87,fortress,0.0,0,0,stable
+Senior ML Engineer,Data & AI,87,fortress,0.0,0,0,stable
+SVP of Engineering,Engineering Leadership,87,fortress,0.0,0,0,stable
+AI / ML Security Engineer,Security,87,fortress,0.0,0,0,stable
+AI Red Team Engineer,Security,87,fortress,0.0,0,0,stable
+Security Architect,Security,87,fortress,0.0,0,0,stable
+Senior Application Security Engineer,Security,87,fortress,0.0,0,0,stable
+Senior Cloud Security Engineer,Security,87,fortress,0.0,0,0,stable
+ML Research Engineer,Data & AI,86,fortress,0.0,0,0,stable
+Pretraining Engineer,Data & AI,86,fortress,0.0,0,0,stable
+Principal ML Engineer,Data & AI,86,fortress,0.0,0,0,stable
+Autonomous Vehicle Software Engineer,Engineering,86,fortress,0.0,0,0,stable
+Distributed Systems Engineer,Engineering,86,fortress,0.0,0,0,stable
+GPU Engineer,Engineering,86,fortress,0.0,0,0,stable
+Self-Driving Perception Engineer,Engineering,86,fortress,0.0,0,0,stable
+Self-Driving Planning Engineer,Engineering,86,fortress,0.0,0,0,stable
+Triton (GPU) Kernel Engineer,Engineering,86,fortress,0.0,0,0,stable
+Director of AI / ML,Engineering Leadership,86,fortress,0.0,0,0,stable
+VP of Product Engineering,Engineering Leadership,86,fortress,0.0,0,0,stable
+Staff Platform Engineer,Platform & Infrastructure,86,fortress,0.0,0,0,stable
+Staff SRE,Platform & Infrastructure,86,fortress,0.0,0,0,stable
+AI Forward Deployed Engineer,Data & AI,85,fortress,0.0,0,0,stable
+Senior AI Agent Engineer,Data & AI,85,fortress,0.0,0,0,stable
+Distinguished Engineer,Engineering Leadership,85,fortress,0.0,0,0,stable
+VP of Product,Engineering Leadership,85,fortress,0.0,0,0,stable
+Multimodal AI Engineer,Data & AI,84,fortress,0.0,0,0,stable
+Quantitative Developer,Data & AI,84,fortress,0.0,0,0,stable
+Red-team AI Engineer (Model Safety),Data & AI,84,fortress,0.0,0,0,stable
+Senior MLOps Engineer,Data & AI,84,fortress,0.0,0,0,stable
+Chief Data Officer (CDO),Engineering Leadership,84,fortress,0.0,0,0,stable
+Director of Engineering,Engineering Leadership,84,fortress,0.0,0,0,stable
+Group Engineering Manager,Engineering Leadership,84,fortress,0.0,0,0,stable
+Senior Engineering Manager,Engineering Leadership,84,fortress,0.0,0,0,stable
+VP of Data,Engineering Leadership,84,fortress,0.0,0,0,stable
+Internal Developer Platform (IDP) Engineer,Platform & Infrastructure,84,fortress,0.0,0,0,stable
+Senior Platform Engineer,Platform & Infrastructure,84,fortress,0.0,0,0,stable
+Senior SRE,Platform & Infrastructure,84,fortress,0.0,0,0,stable
+Cloud Security Architect,Security,84,fortress,0.0,0,0,stable
+Product Security Engineer,Security,84,fortress,0.0,0,0,stable
+Senior Forward Deployed Engineer,Specialized & Emerging,84,fortress,0.0,0,0,stable
+Senior TPM,Specialized & Emerging,84,fortress,0.0,0,0,stable
+AI Agent Engineer,Data & AI,83,fortress,0.0,0,0,stable
+Principal Data Engineer,Data & AI,83,fortress,0.0,0,0,stable
+Principal Backend Engineer,Engineering,83,fortress,0.0,0,0,stable
 Engineering Manager,Engineering Leadership,83,fortress,0.2,56,38,stable
+Senior Technical PM,Product & Design,83,fortress,0.0,0,0,stable
+Technical Program Manager,Specialized & Emerging,83,fortress,0.0,0,0,stable
+AI Evaluations Engineer,Data & AI,82,safe,0.0,0,0,stable
+AI Product Manager,Data & AI,82,safe,0.0,0,0,stable
+ML Infrastructure Engineer,Data & AI,82,safe,0.0,0,0,stable
+Senior Computer Vision Engineer,Data & AI,82,safe,0.0,0,0,stable
+Rust Backend Engineer,Engineering,82,safe,0.0,0,0,stable
+Chief Product Officer,Engineering Leadership,82,safe,0.0,0,0,stable
+Fellow Engineer,Engineering Leadership,82,safe,0.0,0,0,stable
+Tech Lead Manager,Engineering Leadership,82,safe,0.0,0,0,stable
+Kubernetes / Container Platform Engineer,Platform & Infrastructure,82,safe,0.0,0,0,stable
+Senior Kubernetes Engineer,Platform & Infrastructure,82,safe,0.0,0,0,stable
+Senior IR Engineer,Security,82,safe,0.0,0,0,stable
+AI Interpretability Researcher,Data & AI,81,safe,0.0,0,0,stable
+Algorithmic Trading Engineer,Data & AI,81,safe,0.0,0,0,stable
+Computer Vision Researcher,Data & AI,81,safe,0.0,0,0,stable
+Drug Discovery ML Engineer,Data & AI,81,safe,0.0,0,0,stable
+HFT Engineer (High-Frequency Trading),Data & AI,81,safe,0.0,0,0,stable
+Quantitative Researcher,Data & AI,81,safe,0.0,0,0,stable
+Research Scientist,Data & AI,81,safe,0.0,0,0,stable
+Staff Data Engineer,Data & AI,81,safe,0.0,0,0,stable
+Vision-Language Model Engineer,Data & AI,81,safe,0.0,0,0,stable
+AI Accelerator Hardware Engineer,Engineering,81,safe,0.0,0,0,stable
+ASIC Design Engineer,Engineering,81,safe,0.0,0,0,stable
+Aerospace Embedded Engineer,Engineering,81,safe,0.0,0,0,stable
+C++ Backend / Server Engineer,Engineering,81,safe,0.0,0,0,stable
+Chip Design Engineer,Engineering,81,safe,0.0,0,0,stable
+Defense Embedded Engineer,Engineering,81,safe,0.0,0,0,stable
+Path Planning Engineer,Engineering,81,safe,0.0,0,0,stable
+SLAM Engineer,Engineering,81,safe,0.0,0,0,stable
+Self-Driving Controls Engineer,Engineering,81,safe,0.0,0,0,stable
+Senior Systems Engineer,Engineering,81,safe,0.0,0,0,stable
+Software Architect,Engineering,81,safe,0.0,0,0,stable
+Staff Backend Engineer,Engineering,81,safe,0.0,0,0,stable
+Director of Data,Engineering Leadership,81,safe,0.0,0,0,stable
+Director of Infrastructure,Engineering Leadership,81,safe,0.0,0,0,stable
+Director of Platform,Engineering Leadership,81,safe,0.0,0,0,stable
+Director of Security,Engineering Leadership,81,safe,0.0,0,0,stable
+Head of DevOps / SRE,Engineering Leadership,81,safe,0.0,0,0,stable
+Head of Engineering,Engineering Leadership,81,safe,0.0,0,0,stable
+Senior Director of Engineering,Engineering Leadership,81,safe,0.0,0,0,stable
+Principal Product Manager,Product & Design,81,safe,0.0,0,0,stable
+Application Security Architect,Security,81,safe,0.0,0,0,stable
+Cryptography Engineer,Security,81,safe,0.0,0,0,stable
+Security Researcher,Security,81,safe,0.0,0,0,stable
+Vulnerability Researcher,Security,81,safe,0.0,0,0,stable
+Principal TPM,Specialized & Emerging,81,safe,0.0,0,0,stable
+Language Runtime Engineer (V8),Engineering,80,safe,0.0,0,0,stable
+Chief Information Officer (CIO),Engineering Leadership,80,safe,0.0,0,0,stable
+Deputy CISO,Engineering Leadership,80,safe,0.0,0,0,stable
+Head of Backend,Engineering Leadership,80,safe,0.0,0,0,stable
+Group Product Manager,Product & Design,80,safe,0.0,0,0,stable
+Platform Product Manager,Product & Design,80,safe,0.0,0,0,stable
+DevSecOps Engineer,Security,80,safe,0.0,0,0,stable
+Incident Response Engineer,Security,80,safe,0.0,0,0,stable
+Forward Deployed Engineer,Specialized & Emerging,80,safe,0.0,0,0,stable
+Computational Biology Engineer,Data & AI,79,safe,0.0,0,0,stable
+Computer Vision Engineer,Data & AI,79,safe,0.0,0,0,stable
+Diffusion Model Engineer,Data & AI,79,safe,0.0,0,0,stable
+Fine-tuning Specialist,Data & AI,79,safe,0.0,0,0,stable
+ML Platform Engineer,Data & AI,79,safe,0.0,0,0,stable
+RL Researcher,Data & AI,79,safe,0.0,0,0,stable
+RLHF Engineer,Data & AI,79,safe,0.0,0,0,stable
+Reinforcement Learning Engineer,Data & AI,79,safe,0.0,0,0,stable
+Senior Applied Scientist,Data & AI,79,safe,0.0,0,0,stable
+Senior Data Engineer,Data & AI,79,safe,0.0,0,0,stable
+Video Generation Engineer,Data & AI,79,safe,0.0,0,0,stable
+Automotive Software Engineer (AUTOSAR),Engineering,79,safe,0.0,0,0,stable
+Backend Performance Engineer,Engineering,79,safe,0.0,0,0,stable
+Microservices Architect,Engineering,79,safe,0.0,0,0,stable
+Performance Engineer,Engineering,79,safe,0.0,0,0,stable
+Real-time Systems Engineer,Engineering,79,safe,0.0,0,0,stable
+Robotics Software Engineer,Engineering,79,safe,0.0,0,0,stable
+Semiconductor Engineer,Engineering,79,safe,0.0,0,0,stable
+Senior Embedded Engineer,Engineering,79,safe,0.0,0,0,stable
+Streaming Systems Engineer (Kafka),Engineering,79,safe,0.0,0,0,stable
+Verification Engineer (RTL),Engineering,79,safe,0.0,0,0,stable
+Production Engineer,Platform & Infrastructure,79,safe,0.0,0,0,stable
+Senior Infrastructure Engineer,Platform & Infrastructure,79,safe,0.0,0,0,stable
+Cloud Pentester,Security,79,safe,0.0,0,0,stable
+DFIR (Forensics & Incident Response),Security,79,safe,0.0,0,0,stable
+Penetration Tester,Security,79,safe,0.0,0,0,stable
+Supply Chain Security Engineer,Security,79,safe,0.0,0,0,stable
+Zero Trust Architect,Security,79,safe,0.0,0,0,stable
+Senior Solutions Architect,Specialized & Emerging,79,safe,0.0,0,0,stable
+Distributed Training Engineer,Data & AI,78,safe,0.0,0,0,stable
+Browser Engine Engineer (Chromium),Engineering,78,safe,0.0,0,0,stable
+Cleared Defense Software Engineer (TS/SCI),Engineering,78,safe,0.0,0,0,stable
+Compiler Engineer,Engineering,78,safe,0.0,0,0,stable
+"Container Runtime Engineer (containerd, runc)",Engineering,78,safe,0.0,0,0,stable
+Defense Software Engineer,Engineering,78,safe,0.0,0,0,stable
+Humanoid Robotics Engineer,Engineering,78,safe,0.0,0,0,stable
+Hypervisor / Virtualization Engineer,Engineering,78,safe,0.0,0,0,stable
+LLVM Engineer,Engineering,78,safe,0.0,0,0,stable
+Language Runtime Engineer (JVM),Engineering,78,safe,0.0,0,0,stable
+Linux Kernel Developer,Engineering,78,safe,0.0,0,0,stable
+Satellite Software Engineer,Engineering,78,safe,0.0,0,0,stable
+Senior Rendering Engineer,Engineering,78,safe,0.0,0,0,stable
+TPU / NPU Hardware Engineer,Engineering,78,safe,0.0,0,0,stable
+Trading Systems Engineer,Engineering,78,safe,0.0,0,0,stable
+Windows Kernel / Driver Developer,Engineering,78,safe,0.0,0,0,stable
+Zero-Knowledge Proof Engineer,Engineering,78,safe,0.0,0,0,stable
+Senior Product Manager,Product & Design,78,safe,0.0,0,0,stable
+Privacy Engineer,Security,78,safe,0.0,0,0,stable
+Applied ML Engineer,Data & AI,77,safe,0.0,0,0,stable
+Data Platform Engineer,Data & AI,77,safe,0.0,0,0,stable
+Go Backend Engineer,Engineering,77,safe,0.0,0,0,stable
+Senior Backend Engineer,Engineering,77,safe,0.0,0,0,stable
+AWS Security Specialist,Platform & Infrastructure,77,safe,0.0,0,0,stable
+AWS Solutions Architect,Platform & Infrastructure,77,safe,0.0,0,0,stable
+Cloud Architect,Platform & Infrastructure,77,safe,0.0,0,0,stable
+Databricks Engineer,Platform & Infrastructure,77,safe,0.0,0,0,stable
+Infrastructure Engineer,Platform & Infrastructure,77,safe,0.0,0,0,stable
+Observability Engineer,Platform & Infrastructure,77,safe,0.0,0,0,stable
+Senior Sales Engineer,Specialized & Emerging,77,safe,0.0,0,0,stable
+Senior Solutions Engineer,Specialized & Emerging,77,safe,0.0,0,0,stable
+3D Vision Engineer,Data & AI,76,safe,0.0,0,0,stable
+AI Sales Engineer,Data & AI,76,safe,0.0,0,0,stable
+Applied Scientist,Data & AI,76,safe,0.0,0,0,stable
+Climate Modeling Engineer,Data & AI,76,safe,0.0,0,0,stable
+Data Infrastructure Engineer,Data & AI,76,safe,0.0,0,0,stable
+ML Benchmark / Eval Researcher,Data & AI,76,safe,0.0,0,0,stable
+ML Compiler Engineer (TVM/XLA),Data & AI,76,safe,0.0,0,0,stable
+ML Reliability Engineer,Data & AI,76,safe,0.0,0,0,stable
+Protein Structure Prediction Engineer,Data & AI,76,safe,0.0,0,0,stable
+Aerospace Software Engineer,Engineering,76,safe,0.0,0,0,stable
+Analog Design Engineer,Engineering,76,safe,0.0,0,0,stable
+Bare Metal / Firmware-near Engineer,Engineering,76,safe,0.0,0,0,stable
+Blockchain Protocol Engineer,Engineering,76,safe,0.0,0,0,stable
+Computational Photography Engineer,Engineering,76,safe,0.0,0,0,stable
+DSP Engineer (Digital Signal Processing),Engineering,76,safe,0.0,0,0,stable
+Digital Design Engineer,Engineering,76,safe,0.0,0,0,stable
+DirectX Engineer,Engineering,76,safe,0.0,0,0,stable
+Embedded Systems Architect,Engineering,76,safe,0.0,0,0,stable
+Event-Driven Architecture Engineer,Engineering,76,safe,0.0,0,0,stable
+FPGA Design Engineer,Engineering,76,safe,0.0,0,0,stable
+FPGA Software Engineer,Engineering,76,safe,0.0,0,0,stable
+Game Rendering / Graphics Programmer,Engineering,76,safe,0.0,0,0,stable
+Graphics / Rendering Engineer,Engineering,76,safe,0.0,0,0,stable
+Layer 2 / Rollup Engineer,Engineering,76,safe,0.0,0,0,stable
+Medical Device Firmware Engineer,Engineering,76,safe,0.0,0,0,stable
+Metal Engineer (Apple),Engineering,76,safe,0.0,0,0,stable
+Mixed-signal Design Engineer,Engineering,76,safe,0.0,0,0,stable
+Physical Design Engineer,Engineering,76,safe,0.0,0,0,stable
+RTL Designer,Engineering,76,safe,0.0,0,0,stable
+Real-time Ray Tracing Engineer,Engineering,76,safe,0.0,0,0,stable
+Risk Engineer (Financial),Engineering,76,safe,0.0,0,0,stable
+Robotic Manipulation Engineer,Engineering,76,safe,0.0,0,0,stable
+Senior Firmware Engineer,Engineering,76,safe,0.0,0,0,stable
+Space / Orbital Software Engineer,Engineering,76,safe,0.0,0,0,stable
+SystemVerilog Engineer,Engineering,76,safe,0.0,0,0,stable
+VLSI Engineer,Engineering,76,safe,0.0,0,0,stable
+Verilog Engineer,Engineering,76,safe,0.0,0,0,stable
+Video Codec Engineer,Engineering,76,safe,0.0,0,0,stable
+Vulkan Engineer,Engineering,76,safe,0.0,0,0,stable
+Automotive Security Engineer,Security,76,safe,0.0,0,0,stable
+Cryptographic Protocol Engineer,Security,76,safe,0.0,0,0,stable
+Differential Privacy Engineer,Security,76,safe,0.0,0,0,stable
+Exploit Developer,Security,76,safe,0.0,0,0,stable
+GRC / Compliance Engineer,Security,76,safe,0.0,0,0,stable
+Hardware Security Engineer,Security,76,safe,0.0,0,0,stable
+Kubernetes Security Engineer,Security,76,safe,0.0,0,0,stable
+Reverse Engineer,Security,76,safe,0.0,0,0,stable
+Sales Engineer,Specialized & Emerging,76,safe,0.0,0,0,stable
+Solutions Engineer,Specialized & Emerging,76,safe,0.0,0,0,stable
+AI Solutions Engineer,Data & AI,75,safe,0.0,0,0,stable
+Applied AI Engineer,Data & AI,75,safe,0.0,0,0,stable
+Generative AI Engineer,Data & AI,75,safe,0.0,0,0,stable
+RAG (Retrieval-Augmented Generation) Engineer,Data & AI,75,safe,0.0,0,0,stable
+Enterprise Architect,Engineering,75,safe,0.0,0,0,stable
+Full-Stack AI Engineer,Engineering,75,safe,0.0,0,0,stable
+Garbage Collection Engineer,Engineering,75,safe,0.0,0,0,stable
+Language Runtime Engineer (CLR),Engineering,75,safe,0.0,0,0,stable
+Memory Management Engineer,Engineering,75,safe,0.0,0,0,stable
+Director of Product,Engineering Leadership,75,safe,0.0,0,0,stable
+Bioinformatics Engineer,Data & AI,74,safe,0.0,0,0,stable
+Fraud ML Engineer,Data & AI,74,safe,0.0,0,0,stable
+Image Generation Engineer,Data & AI,74,safe,0.0,0,0,stable
+JAX Specialist,Data & AI,74,safe,0.0,0,0,stable
+Ray / Distributed ML Engineer,Data & AI,74,safe,0.0,0,0,stable
+Search ML Engineer (Learning to Rank),Data & AI,74,safe,0.0,0,0,stable
+Triton Inference Server Engineer,Data & AI,74,safe,0.0,0,0,stable
+vLLM / SGLang Engineer,Data & AI,74,safe,0.0,0,0,stable
+Embedded C Engineer,Engineering,74,safe,0.0,0,0,stable
+Embedded C++ Engineer,Engineering,74,safe,0.0,0,0,stable
+Embedded Linux Engineer,Engineering,74,safe,0.0,0,0,stable
+FinTech Backend Engineer,Engineering,74,safe,0.0,0,0,stable
+Firmware Engineer,Engineering,74,safe,0.0,0,0,stable
+Healthcare Software Engineer,Engineering,74,safe,0.0,0,0,stable
+ROS Engineer,Engineering,74,safe,0.0,0,0,stable
+"RTOS Engineer (FreeRTOS, Zephyr)",Engineering,74,safe,0.0,0,0,stable
+Reliability Engineer (Application),Engineering,74,safe,0.0,0,0,stable
+Robotics Firmware Engineer,Engineering,74,safe,0.0,0,0,stable
+Search Backend Engineer (Elasticsearch),Engineering,74,safe,0.0,0,0,stable
+Software Modernization Engineer (Legacy → Cloud),Engineering,74,safe,0.0,0,0,stable
+WebAssembly (WASM) Engineer,Engineering,74,safe,0.0,0,0,stable
+AWS Data Engineer,Platform & Infrastructure,74,safe,0.0,0,0,stable
+Azure AI Engineer,Platform & Infrastructure,74,safe,0.0,0,0,stable
+Azure Solutions Architect,Platform & Infrastructure,74,safe,0.0,0,0,stable
+Cloud Solutions Architect,Platform & Infrastructure,74,safe,0.0,0,0,stable
+GCP Solutions Architect,Platform & Infrastructure,74,safe,0.0,0,0,stable
+Kubernetes Operator Developer,Platform & Infrastructure,74,safe,0.0,0,0,stable
+Lead DevOps Engineer,Platform & Infrastructure,74,safe,0.0,0,0,stable
+Senior Database Engineer,Platform & Infrastructure,74,safe,0.0,0,0,stable
+Senior DevOps Engineer,Platform & Infrastructure,74,safe,0.0,0,0,stable
+Senior Design Engineer,Product & Design,74,safe,0.0,0,0,stable
+API Security Engineer,Security,74,safe,0.0,0,0,stable
+Container Security Engineer,Security,74,safe,0.0,0,0,stable
+Network Security Engineer,Security,74,safe,0.0,0,0,stable
+Open Source Security Engineer,Security,74,safe,0.0,0,0,stable
+Pre-sales Solutions Architect,Specialized & Emerging,74,safe,0.0,0,0,stable
+Senior Developer Experience Engineer,Specialized & Emerging,74,safe,0.0,0,0,stable
+Weather / Atmospheric ML Engineer,Data & AI,73,safe,0.0,0,0,stable
+Bitcoin Core Developer,Engineering,73,safe,0.0,0,0,stable
+Browser Engine Engineer (WebKit),Engineering,73,safe,0.0,0,0,stable
+Climate Tech Software Engineer,Engineering,73,safe,0.0,0,0,stable
+Codec Engineer,Engineering,73,safe,0.0,0,0,stable
+Domain-Driven Design Architect,Engineering,73,safe,0.0,0,0,stable
+EDA Software Engineer,Engineering,73,safe,0.0,0,0,stable
+Game Engine Programmer,Engineering,73,safe,0.0,0,0,stable
+Programming Language Designer,Engineering,73,safe,0.0,0,0,stable
+Quantum Algorithms Engineer,Engineering,73,safe,0.0,0,0,stable
+Quantum Software Engineer,Engineering,73,safe,0.0,0,0,stable
+Rendering Researcher,Engineering,73,safe,0.0,0,0,stable
+Smart Contract Auditor,Engineering,73,safe,0.0,0,0,stable
+Trading Infrastructure Engineer,Engineering,73,safe,0.0,0,0,stable
+macOS / Darwin Engineer,Engineering,73,safe,0.0,0,0,stable
+zk-SNARK Engineer,Engineering,73,safe,0.0,0,0,stable
+zk-STARK Engineer,Engineering,73,safe,0.0,0,0,stable
+API Product Manager,Product & Design,73,safe,0.0,0,0,stable
+Data Product Manager,Product & Design,73,safe,0.0,0,0,stable
+Enterprise Product Manager,Product & Design,73,safe,0.0,0,0,stable
+GDPR / Privacy Compliance Engineer,Security,73,safe,0.0,0,0,stable
+Pre-sales Engineer,Specialized & Emerging,73,safe,0.0,0,0,stable
+Databricks Data Engineer,Data & AI,72,safe,0.0,0,0,stable
+Hugging Face / Transformers Engineer,Data & AI,72,safe,0.0,0,0,stable
+NLP Researcher,Data & AI,72,safe,0.0,0,0,stable
+PyTorch Specialist,Data & AI,72,safe,0.0,0,0,stable
+Real-time Data Engineer,Data & AI,72,safe,0.0,0,0,stable
+Recommender Systems Engineer,Data & AI,72,safe,0.0,0,0,stable
+Streaming Data Engineer,Data & AI,72,safe,0.0,0,0,stable
+Voice AI Engineer,Data & AI,72,safe,0.0,0,0,stable
+Backend API Engineer,Engineering,72,safe,0.0,0,0,stable
+Python Backend Engineer,Engineering,72,safe,0.0,0,0,stable
+AWS DevOps Engineer,Platform & Infrastructure,72,safe,0.0,0,0,stable
+CI/CD Engineer,Platform & Infrastructure,72,safe,0.0,0,0,stable
+Snowflake Engineer,Platform & Infrastructure,72,safe,0.0,0,0,stable
+Vector Database Engineer (Pinecone/Weaviate),Platform & Infrastructure,72,safe,0.0,0,0,stable
+Design Director,Product & Design,72,safe,0.0,0,0,stable
+Design Engineer,Product & Design,72,safe,0.0,0,0,stable
+Design Systems Engineer,Product & Design,72,safe,0.0,0,0,stable
+Security QA Engineer,Quality & Testing,72,safe,0.0,0,0,stable
+Test Architect,Quality & Testing,72,safe,0.0,0,0,stable
+Bug Bounty Hunter,Security,72,safe,0.0,0,0,stable
+Identity & Access Management Engineer,Security,72,safe,0.0,0,0,stable
+Security Automation / SOAR Engineer,Security,72,safe,0.0,0,0,stable
+Threat Hunter,Security,72,safe,0.0,0,0,stable
+Web Application Pentester,Security,72,safe,0.0,0,0,stable
+Audio ML Engineer,Data & AI,71,safe,0.0,0,0,stable
+Principal Data Scientist,Data & AI,71,safe,0.0,0,0,stable
+Quantitative Analyst,Data & AI,71,safe,0.0,0,0,stable
+Speech Recognition Engineer,Data & AI,71,safe,0.0,0,0,stable
+Speech Synthesis (TTS) Engineer,Data & AI,71,safe,0.0,0,0,stable
+Audio DSP Engineer,Engineering,71,safe,0.0,0,0,stable
+DFT (Design for Test) Engineer,Engineering,71,safe,0.0,0,0,stable
+Drone Firmware Engineer,Engineering,71,safe,0.0,0,0,stable
+Drone Software Engineer,Engineering,71,safe,0.0,0,0,stable
+Energy / Smart Grid Engineer,Engineering,71,safe,0.0,0,0,stable
+Game Anti-cheat Engineer,Engineering,71,safe,0.0,0,0,stable
+Game Physics Programmer,Engineering,71,safe,0.0,0,0,stable
+Idempotency / Retries Engineer,Engineering,71,safe,0.0,0,0,stable
+Lightning Network Engineer,Engineering,71,safe,0.0,0,0,stable
+Medical Imaging Software Engineer,Engineering,71,safe,0.0,0,0,stable
+Microcontroller Programmer,Engineering,71,safe,0.0,0,0,stable
+Real-time Communications Engineer (WebRTC),Engineering,71,safe,0.0,0,0,stable
+Robotics Simulation Engineer,Engineering,71,safe,0.0,0,0,stable
+Senior Smart Contract Engineer,Engineering,71,safe,0.0,0,0,stable
+Service Mesh Architect,Engineering,71,safe,0.0,0,0,stable
+Shader Programmer,Engineering,71,safe,0.0,0,0,stable
+Staff Android Engineer,Engineering,71,safe,0.0,0,0,stable
+Staff Full-Stack Engineer,Engineering,71,safe,0.0,0,0,stable
+Staff iOS Engineer,Engineering,71,safe,0.0,0,0,stable
+Static Analysis Engineer,Engineering,71,safe,0.0,0,0,stable
+VHDL Engineer,Engineering,71,safe,0.0,0,0,stable
+Video Encoding Engineer,Engineering,71,safe,0.0,0,0,stable
+Head of Mobile,Engineering Leadership,71,safe,0.0,0,0,stable
+Database Architect,Platform & Infrastructure,71,safe,0.0,0,0,stable
+Senior Design Manager,Product & Design,71,safe,0.0,0,0,stable
+Senior Design Systems Engineer,Product & Design,71,safe,0.0,0,0,stable
+Embedded Security Engineer,Security,71,safe,0.0,0,0,stable
+Fuzzing Engineer,Security,71,safe,0.0,0,0,stable
+Hardware Pentester,Security,71,safe,0.0,0,0,stable
+ICS / SCADA Security Engineer,Security,71,safe,0.0,0,0,stable
+Malware Analyst,Security,71,safe,0.0,0,0,stable
+Open Source Maintainer,Specialized & Emerging,71,safe,0.0,0,0,stable
+AI Ethics Researcher,Data & AI,70,safe,0.0,0,0,stable
+AI Workflow / Orchestration Engineer,Data & AI,70,safe,0.0,0,0,stable
+Senior NLP Engineer,Data & AI,70,safe,0.0,0,0,stable
+Compliance Software Engineer,Engineering,70,safe,0.0,0,0,stable
+GCC Maintainer,Engineering,70,safe,0.0,0,0,stable
+Chief Digital Officer,Engineering Leadership,70,safe,0.0,0,0,stable
+Director of Design,Engineering Leadership,70,safe,0.0,0,0,stable
+Engineering Chief of Staff,Engineering Leadership,70,safe,0.0,0,0,stable
+Chaos Engineer,Platform & Infrastructure,70,safe,0.0,0,0,stable
+Payments Product Manager,Product & Design,70,safe,0.0,0,0,stable
+SOC Manager,Security,70,safe,0.0,0,0,stable
+Vulnerability Management Engineer,Security,70,safe,0.0,0,0,stable
+Anomaly Detection ML Engineer,Data & AI,69,stable,0.0,0,0,stable
+Big Data Engineer,Data & AI,69,stable,0.0,0,0,stable
+Data Lakehouse Engineer,Data & AI,69,stable,0.0,0,0,stable
+Data Reliability Engineer,Data & AI,69,stable,0.0,0,0,stable
+Embedding Engineer,Data & AI,69,stable,0.0,0,0,stable
+Feature Store Engineer,Data & AI,69,stable,0.0,0,0,stable
+Genomics Pipeline Engineer,Data & AI,69,stable,0.0,0,0,stable
+Iceberg / Delta / Hudi Engineer,Data & AI,69,stable,0.0,0,0,stable
+Kafka Streams Engineer,Data & AI,69,stable,0.0,0,0,stable
+ML Tooling Engineer (Ray/Dask),Data & AI,69,stable,0.0,0,0,stable
+Model Deployment Engineer,Data & AI,69,stable,0.0,0,0,stable
+Model Monitoring Engineer,Data & AI,69,stable,0.0,0,0,stable
+Spark Engineer,Data & AI,69,stable,0.0,0,0,stable
+Synthetic Data Engineer,Data & AI,69,stable,0.0,0,0,stable
+Time Series ML Engineer,Data & AI,69,stable,0.0,0,0,stable
+Vector Search Engineer,Data & AI,69,stable,0.0,0,0,stable
+Application Architect,Engineering,69,stable,0.0,0,0,stable
+Backend Caching Engineer,Engineering,69,stable,0.0,0,0,stable
+Developer Tools Engineer,Engineering,69,stable,0.0,0,0,stable
+Edge Runtime Engineer (Cloudflare Workers/Deno Deploy),Engineering,69,stable,0.0,0,0,stable
+Game AI Programmer,Engineering,69,stable,0.0,0,0,stable
+HL7 / FHIR Integration Engineer,Engineering,69,stable,0.0,0,0,stable
+Hardware Validation Engineer,Engineering,69,stable,0.0,0,0,stable
+Industrial Control / PLC Engineer,Engineering,69,stable,0.0,0,0,stable
+Industrial Robotics Programmer,Engineering,69,stable,0.0,0,0,stable
+IoT Edge Engineer,Engineering,69,stable,0.0,0,0,stable
+Mobile Performance Engineer,Engineering,69,stable,0.0,0,0,stable
+Pricing / Monetization Engineer,Engineering,69,stable,0.0,0,0,stable
+Refactoring / Modernization Engineer,Engineering,69,stable,0.0,0,0,stable
+Rust Smart Contract Engineer (Solana),Engineering,69,stable,0.0,0,0,stable
+Senior Android Engineer,Engineering,69,stable,0.0,0,0,stable
+Senior iOS Engineer,Engineering,69,stable,0.0,0,0,stable
+Streaming Media Engineer,Engineering,69,stable,0.0,0,0,stable
+Workflow Engine Engineer (Temporal/Cadence),Engineering,69,stable,0.0,0,0,stable
+Yocto / Buildroot Engineer,Engineering,69,stable,0.0,0,0,stable
+gRPC / Protobuf Engineer,Engineering,69,stable,0.0,0,0,stable
+Backstage Engineer,Platform & Infrastructure,69,stable,0.0,0,0,stable
+ClickHouse Engineer,Platform & Infrastructure,69,stable,0.0,0,0,stable
+Database Engineer / DBA,Platform & Infrastructure,69,stable,0.0,0,0,stable
+Database Reliability Engineer,Platform & Infrastructure,69,stable,0.0,0,0,stable
+Edge Computing Engineer,Platform & Infrastructure,69,stable,0.0,0,0,stable
+GCP Data Engineer,Platform & Infrastructure,69,stable,0.0,0,0,stable
+Multi-cloud Architect,Platform & Infrastructure,69,stable,0.0,0,0,stable
+Network Architect,Platform & Infrastructure,69,stable,0.0,0,0,stable
+PostgreSQL DBA,Platform & Infrastructure,69,stable,0.0,0,0,stable
+Service Mesh Engineer (Istio/Linkerd),Platform & Infrastructure,69,stable,0.0,0,0,stable
+Tracing Engineer (OpenTelemetry/Jaeger),Platform & Infrastructure,69,stable,0.0,0,0,stable
+Growth Product Manager,Product & Design,69,stable,0.0,0,0,stable
+Senior Product Designer,Product & Design,69,stable,0.0,0,0,stable
+Senior UX Researcher,Product & Design,69,stable,0.0,0,0,stable
+Staff Product Designer,Product & Design,69,stable,0.0,0,0,stable
+Performance / Load Test Engineer,Quality & Testing,69,stable,0.0,0,0,stable
+Staff SDET,Quality & Testing,69,stable,0.0,0,0,stable
+Linux Security Engineer,Security,69,stable,0.0,0,0,stable
+Mobile Application Pentester,Security,69,stable,0.0,0,0,stable
+Mobile Security Engineer,Security,69,stable,0.0,0,0,stable
+Network Pentester,Security,69,stable,0.0,0,0,stable
+Experimentation Platform Engineer,Specialized & Emerging,69,stable,0.0,0,0,stable
+Salesforce Architect,Specialized & Emerging,69,stable,0.0,0,0,stable
+Senior Developer Advocate,Specialized & Emerging,69,stable,0.0,0,0,stable
+AI Curriculum / Training Lead,Data & AI,68,stable,0.0,0,0,stable
+Causal Inference Scientist,Data & AI,68,stable,0.0,0,0,stable
+BCI (Brain-Computer Interface) Engineer,Engineering,68,stable,0.0,0,0,stable
+BSD Kernel Engineer,Engineering,68,stable,0.0,0,0,stable
+Browser Engine Engineer (Gecko/Firefox),Engineering,68,stable,0.0,0,0,stable
+Erlang Engineer,Engineering,68,stable,0.0,0,0,stable
+Event Sourcing / CQRS Engineer,Engineering,68,stable,0.0,0,0,stable
+MEV Engineer / Searcher,Engineering,68,stable,0.0,0,0,stable
+Photonics Software Engineer,Engineering,68,stable,0.0,0,0,stable
+Quantum Compiler Engineer,Engineering,68,stable,0.0,0,0,stable
+Scala Backend Engineer,Engineering,68,stable,0.0,0,0,stable
+Search Backend Engineer (Vespa),Engineering,68,stable,0.0,0,0,stable
+Design Manager,Product & Design,68,stable,0.0,0,0,stable
+Principal Product Designer,Product & Design,68,stable,0.0,0,0,stable
+Blockchain Security Auditor,Security,68,stable,0.0,0,0,stable
+Foundation Engineer (CNCF/Apache),Specialized & Emerging,68,stable,0.0,0,0,stable
+Senior Implementation Engineer,Specialized & Emerging,68,stable,0.0,0,0,stable
+Standards Engineer (W3C/IETF),Specialized & Emerging,68,stable,0.0,0,0,stable
+AI Tooling Engineer,Data & AI,67,stable,0.0,0,0,stable
+Conversational AI Engineer,Data & AI,67,stable,0.0,0,0,stable
+Data Pipeline Engineer,Data & AI,67,stable,0.0,0,0,stable
+LangGraph / Agent Framework Engineer,Data & AI,67,stable,0.0,0,0,stable
+SageMaker Engineer,Data & AI,67,stable,0.0,0,0,stable
+Snowflake Data Engineer,Data & AI,67,stable,0.0,0,0,stable
+FastAPI Engineer,Engineering,67,stable,0.0,0,0,stable
+Java Backend Engineer,Engineering,67,stable,0.0,0,0,stable
+Java Spring / Spring Boot Engineer,Engineering,67,stable,0.0,0,0,stable
+Job Scheduler Engineer (Airflow/Prefect),Engineering,67,stable,0.0,0,0,stable
+Kotlin Backend Engineer,Engineering,67,stable,0.0,0,0,stable
+Senior Full-Stack Engineer,Engineering,67,stable,0.0,0,0,stable
+Senior Game Engineer,Engineering,67,stable,0.0,0,0,stable
+AWS Engineer,Platform & Infrastructure,67,stable,0.0,0,0,stable
+Azure DevOps Engineer,Platform & Infrastructure,67,stable,0.0,0,0,stable
+BigQuery Engineer,Platform & Infrastructure,67,stable,0.0,0,0,stable
+Disaster Recovery Engineer,Platform & Infrastructure,67,stable,0.0,0,0,stable
+Identity Engineer (Corp IT — Okta/Azure AD),Platform & Infrastructure,67,stable,0.0,0,0,stable
+Monitoring Engineer (Prometheus/Grafana),Platform & Infrastructure,67,stable,0.0,0,0,stable
+Redis Engineer,Platform & Infrastructure,67,stable,0.0,0,0,stable
+Senior SDET,Quality & Testing,67,stable,0.0,0,0,stable
+Endpoint Security Engineer,Security,67,stable,0.0,0,0,stable
+SOC Analyst (Tier 3),Security,67,stable,0.0,0,0,stable
+Security Operations Engineer,Security,67,stable,0.0,0,0,stable
+Threat Intelligence Analyst,Security,67,stable,0.0,0,0,stable
+Post-sales / Customer Engineer,Specialized & Emerging,67,stable,0.0,0,0,stable
+Senior Salesforce Developer,Specialized & Emerging,67,stable,0.0,0,0,stable
+AdTech ML Engineer,Data & AI,66,stable,0.0,0,0,stable
+CDC (Change Data Capture) Engineer,Data & AI,66,stable,0.0,0,0,stable
+Experimentation Scientist (A/B testing),Data & AI,66,stable,0.0,0,0,stable
+Staff Data Scientist,Data & AI,66,stable,0.0,0,0,stable
+Airline Software Engineer,Engineering,66,stable,0.0,0,0,stable
+Apple Vision Pro Application Engineer,Engineering,66,stable,0.0,0,0,stable
+CAD Software Engineer,Engineering,66,stable,0.0,0,0,stable
+Color Science Engineer,Engineering,66,stable,0.0,0,0,stable
+Console Game Engineer,Engineering,66,stable,0.0,0,0,stable
+Cosmos SDK Engineer,Engineering,66,stable,0.0,0,0,stable
+Decentralized Identity Engineer,Engineering,66,stable,0.0,0,0,stable
+Elixir / Phoenix Engineer,Engineering,66,stable,0.0,0,0,stable
+Eye Tracking Engineer,Engineering,66,stable,0.0,0,0,stable
+Frontend Architect,Engineering,66,stable,0.0,0,0,stable
+Frontend Performance Engineer,Engineering,66,stable,0.0,0,0,stable
+Game Network Programmer,Engineering,66,stable,0.0,0,0,stable
+Hand Tracking / Gesture Recognition Engineer,Engineering,66,stable,0.0,0,0,stable
+Hardware Wallet Firmware Engineer,Engineering,66,stable,0.0,0,0,stable
+IoT Software Engineer,Engineering,66,stable,0.0,0,0,stable
+Logistics Software Engineer,Engineering,66,stable,0.0,0,0,stable
+Mainframe Modernization Engineer,Engineering,66,stable,0.0,0,0,stable
+Mobile Architect,Engineering,66,stable,0.0,0,0,stable
+OpenGL Engineer,Engineering,66,stable,0.0,0,0,stable
+Pharma Software Engineer,Engineering,66,stable,0.0,0,0,stable
+Smart Contract Engineer,Engineering,66,stable,0.0,0,0,stable
+Spatial Computing Engineer,Engineering,66,stable,0.0,0,0,stable
+Supply Chain Software Engineer,Engineering,66,stable,0.0,0,0,stable
+VR Game Engineer,Engineering,66,stable,0.0,0,0,stable
+WebGL / WebGPU Engineer,Engineering,66,stable,0.0,0,0,stable
+Zig Engineer,Engineering,66,stable,0.0,0,0,stable
+visionOS / Apple Vision Pro Engineer,Engineering,66,stable,0.0,0,0,stable
+Capacity Planning Engineer,Platform & Infrastructure,66,stable,0.0,0,0,stable
+Elasticsearch DBA / Engineer,Platform & Infrastructure,66,stable,0.0,0,0,stable
+File System Engineer,Platform & Infrastructure,66,stable,0.0,0,0,stable
+FinOps Practitioner,Platform & Infrastructure,66,stable,0.0,0,0,stable
+Senior Network Engineer,Platform & Infrastructure,66,stable,0.0,0,0,stable
+Implementation Engineer,Specialized & Emerging,66,stable,0.0,0,0,stable
+NLP Engineer,Data & AI,65,stable,0.0,0,0,stable
+Haskell Engineer,Engineering,65,stable,0.0,0,0,stable
+OCaml Engineer,Engineering,65,stable,0.0,0,0,stable
+Sustainability Tech Engineer,Engineering,65,stable,0.0,0,0,stable
+Quality Engineering Director,Quality & Testing,65,stable,0.0,0,0,stable
+Field Engineer,Specialized & Emerging,65,stable,0.0,0,0,stable
+Open Source Program Manager (OSPO),Specialized & Emerging,65,stable,0.0,0,0,stable
+Active Learning Engineer,Data & AI,64,stable,0.0,0,0,stable
+Azure ML Engineer,Data & AI,64,stable,0.0,0,0,stable
+Beam / Dataflow Engineer,Data & AI,64,stable,0.0,0,0,stable
+BigQuery Data Engineer,Data & AI,64,stable,0.0,0,0,stable
+Data Lake Engineer,Data & AI,64,stable,0.0,0,0,stable
+Flink Engineer,Data & AI,64,stable,0.0,0,0,stable
+Llama Fine-tuning Engineer,Data & AI,64,stable,0.0,0,0,stable
+Vertex AI Engineer,Data & AI,64,stable,0.0,0,0,stable
+Android Auto / CarPlay Engineer,Engineering,64,stable,0.0,0,0,stable
+Audio Plugin Developer (VST),Engineering,64,stable,0.0,0,0,stable
+Banking Software Engineer,Engineering,64,stable,0.0,0,0,stable
+C# / .NET Backend Engineer,Engineering,64,stable,0.0,0,0,stable
+Crypto Exchange Engineer,Engineering,64,stable,0.0,0,0,stable
+Crypto Wallet Engineer,Engineering,64,stable,0.0,0,0,stable
+E-commerce Backend Engineer,Engineering,64,stable,0.0,0,0,stable
+EHR Integration Engineer,Engineering,64,stable,0.0,0,0,stable
+Frontend Build / Tooling Engineer,Engineering,64,stable,0.0,0,0,stable
+GIS Developer,Engineering,64,stable,0.0,0,0,stable
+Game Server Engineer,Engineering,64,stable,0.0,0,0,stable
+Geospatial Software Engineer,Engineering,64,stable,0.0,0,0,stable
+Government / GovTech Engineer,Engineering,64,stable,0.0,0,0,stable
+GraphQL Engineer,Engineering,64,stable,0.0,0,0,stable
+Haptics Engineer,Engineering,64,stable,0.0,0,0,stable
+Hardware Test Engineer,Engineering,64,stable,0.0,0,0,stable
+Mapping Software Engineer (Mapbox/OSM),Engineering,64,stable,0.0,0,0,stable
+Marketplace Engineer,Engineering,64,stable,0.0,0,0,stable
+PCB Design Engineer,Engineering,64,stable,0.0,0,0,stable
+Streaming Protocol Engineer (HLS/DASH),Engineering,64,stable,0.0,0,0,stable
+Telemedicine Software Engineer,Engineering,64,stable,0.0,0,0,stable
+Unreal Engine Engineer,Engineering,64,stable,0.0,0,0,stable
+Head of Frontend,Engineering Leadership,64,stable,0.0,0,0,stable
+5G Software Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Azure Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Build Engineer (Bazel/Buck),Platform & Infrastructure,64,stable,0.0,0,0,stable
+GCP Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Neo4j / Graph Database Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Network Automation Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Network Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+SDN Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Storage Architect,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Storage Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Wireless Software Engineer,Platform & Infrastructure,64,stable,0.0,0,0,stable
+Quantitative UX Researcher,Product & Design,64,stable,0.0,0,0,stable
+Stress Test Engineer,Quality & Testing,64,stable,0.0,0,0,stable
+Active Directory Security Engineer,Security,64,stable,0.0,0,0,stable
+PKI Engineer,Security,64,stable,0.0,0,0,stable
+macOS Security Engineer,Security,64,stable,0.0,0,0,stable
+Developer Advocate / DevRel,Specialized & Emerging,64,stable,0.0,0,0,stable
+Clojure Engineer,Engineering,63,stable,0.0,0,0,stable
+DeFi Protocol Engineer,Engineering,63,stable,0.0,0,0,stable
+Game Producer / Tech Producer,Engineering,63,stable,0.0,0,0,stable
+Principal Frontend Engineer,Engineering,63,stable,0.0,0,0,stable
+Web Accessibility (a11y) Engineer,Engineering,63,stable,0.0,0,0,stable
+Engineering Operations Manager,Engineering Leadership,63,stable,0.0,0,0,stable
+Cloud Cost Optimization Engineer,Platform & Infrastructure,63,stable,0.0,0,0,stable
+Consumer Product Manager,Product & Design,63,stable,0.0,0,0,stable
+Mobile Product Manager,Product & Design,63,stable,0.0,0,0,stable
+HIPAA Compliance Engineer,Security,63,stable,0.0,0,0,stable
+ISO 27001 Auditor,Security,63,stable,0.0,0,0,stable
+PCI-DSS Compliance Engineer,Security,63,stable,0.0,0,0,stable
+SOC 2 Compliance Engineer,Security,63,stable,0.0,0,0,stable
+Program Manager (Software),Specialized & Emerging,63,stable,0.0,0,0,stable
+Anthropic Claude API Engineer,Data & AI,62,stable,0.0,0,0,stable
+AutoGen / Multi-agent Engineer,Data & AI,62,stable,0.0,0,0,stable
+DBT Engineer,Data & AI,62,stable,0.0,0,0,stable
+OpenAI GPT API Engineer,Data & AI,62,stable,0.0,0,0,stable
+Full-Stack TypeScript Engineer,Engineering,62,stable,0.0,0,0,stable
+Mobile Build / CI Engineer,Engineering,62,stable,0.0,0,0,stable
+Mobile DevOps / Release Engineer,Engineering,62,stable,0.0,0,0,stable
+Node.js Backend Engineer,Engineering,62,stable,0.0,0,0,stable
+REST API Engineer,Engineering,62,stable,0.0,0,0,stable
+TypeScript Specialist,Engineering,62,stable,0.0,0,0,stable
+Cloudflare Engineer,Platform & Infrastructure,62,stable,0.0,0,0,stable
+Data Modeler,Platform & Infrastructure,62,stable,0.0,0,0,stable
+Helm / Argo Engineer,Platform & Infrastructure,62,stable,0.0,0,0,stable
+Logging Engineer (ELK/Loki/Splunk),Platform & Infrastructure,62,stable,0.0,0,0,stable
+MySQL / MariaDB DBA,Platform & Infrastructure,62,stable,0.0,0,0,stable
+Release Engineer,Platform & Infrastructure,62,stable,0.0,0,0,stable
+UX Researcher,Product & Design,62,stable,0.0,0,0,stable
+SAST Engineer,Security,62,stable,0.0,0,0,stable
+SIEM Engineer,Security,62,stable,0.0,0,0,stable
+Salesforce Developer,Specialized & Emerging,62,stable,0.0,0,0,stable
+AR Engineer,Engineering,61,stable,0.0,0,0,stable
+Ada Engineer (Defense),Engineering,61,stable,0.0,0,0,stable
+CAM Software Engineer,Engineering,61,stable,0.0,0,0,stable
+Cairo Developer (StarkNet),Engineering,61,stable,0.0,0,0,stable
+Cardano Plutus Developer,Engineering,61,stable,0.0,0,0,stable
+DAW Software Engineer,Engineering,61,stable,0.0,0,0,stable
+Fortran Engineer (Scientific),Engineering,61,stable,0.0,0,0,stable
+Linter / Formatter Maintainer,Engineering,61,stable,0.0,0,0,stable
+Live Video / Broadcast Engineer,Engineering,61,stable,0.0,0,0,stable
+Micro-frontends Architect,Engineering,61,stable,0.0,0,0,stable
+Mixed Reality Engineer,Engineering,61,stable,0.0,0,0,stable
+Move Developer (Sui/Aptos),Engineering,61,stable,0.0,0,0,stable
+Search Backend Engineer (Solr),Engineering,61,stable,0.0,0,0,stable
+Solidity Developer,Engineering,61,stable,0.0,0,0,stable
+Staff Frontend Engineer,Engineering,61,stable,0.0,0,0,stable
+Substrate Engineer (Polkadot),Engineering,61,stable,0.0,0,0,stable
+VR Engineer,Engineering,61,stable,0.0,0,0,stable
+Wearable Tech Engineer,Engineering,61,stable,0.0,0,0,stable
+XR Engineer,Engineering,61,stable,0.0,0,0,stable
+Cassandra Engineer,Platform & Infrastructure,61,stable,0.0,0,0,stable
+CockroachDB / TiDB Engineer,Platform & Infrastructure,61,stable,0.0,0,0,stable
+ScyllaDB Engineer,Platform & Infrastructure,61,stable,0.0,0,0,stable
+Social Engineering Specialist,Security,61,stable,0.0,0,0,stable
+API / Integration Engineer,Engineering,60,stable,0.0,0,0,stable
+AgTech Software Engineer,Engineering,60,stable,0.0,0,0,stable
+Django Engineer,Engineering,60,stable,0.0,0,0,stable
+Game Engineer,Engineering,60,stable,0.0,0,0,stable
+Gameplay Programmer,Engineering,60,stable,0.0,0,0,stable
+Next.js / SSR Engineer,Engineering,60,stable,0.0,0,0,stable
+Backup / Recovery Engineer,Platform & Infrastructure,60,stable,0.0,0,0,stable
+DNS Engineer,Platform & Infrastructure,60,stable,0.0,0,0,stable
+Data Center Engineer,Platform & Infrastructure,60,stable,0.0,0,0,stable
+IT Director,Platform & Infrastructure,60,stable,0.0,0,0,stable
+Oracle DBA,Platform & Infrastructure,60,stable,0.0,0,0,stable
+Inclusive Design Specialist,Product & Design,60,stable,0.0,0,0,stable
+Accessibility QA Engineer,Quality & Testing,60,stable,0.0,0,0,stable
+Compliance Test Engineer,Quality & Testing,60,stable,0.0,0,0,stable
+QA Manager,Quality & Testing,60,stable,0.0,0,0,stable
+Intelligent Automation Engineer,Specialized & Emerging,60,stable,0.0,0,0,stable
+AutoML Engineer,Data & AI,59,stable,0.0,0,0,stable
+Data Augmentation Engineer,Data & AI,59,stable,0.0,0,0,stable
+Data Warehouse Engineer,Data & AI,59,stable,0.0,0,0,stable
+Database Administrator,Data & AI,59,stable,0.0,0,0,stable
+Prefect / Dagster Engineer,Data & AI,59,stable,0.0,0,0,stable
+Senior Analytics Engineer,Data & AI,59,stable,0.0,0,0,stable
+Senior Data Scientist,Data & AI,59,stable,0.0,0,0,stable
+TensorFlow Specialist,Data & AI,59,stable,0.0,0,0,stable
+XGBoost / Gradient Boosting Specialist,Data & AI,59,stable,0.0,0,0,stable
+BIM Software Engineer,Engineering,59,stable,0.0,0,0,stable
+Code Quality Engineer,Engineering,59,stable,0.0,0,0,stable
+Full-Stack Python Engineer,Engineering,59,stable,0.0,0,0,stable
+Game Audio Programmer,Engineering,59,stable,0.0,0,0,stable
+Game Live Ops Engineer,Engineering,59,stable,0.0,0,0,stable
+Game Tools Programmer,Engineering,59,stable,0.0,0,0,stable
+Hyperledger Fabric Engineer,Engineering,59,stable,0.0,0,0,stable
+Insurance Tech Engineer (Insurtech),Engineering,59,stable,0.0,0,0,stable
+Java EE / Jakarta EE Engineer,Engineering,59,stable,0.0,0,0,stable
+Kotlin Multiplatform Engineer,Engineering,59,stable,0.0,0,0,stable
+Legal Tech Engineer,Engineering,59,stable,0.0,0,0,stable
+Mainframe Engineer,Engineering,59,stable,0.0,0,0,stable
+Meta Quest Developer,Engineering,59,stable,0.0,0,0,stable
+Photography Software Engineer,Engineering,59,stable,0.0,0,0,stable
+Quarkus Engineer,Engineering,59,stable,0.0,0,0,stable
+Ruby on Rails Engineer,Engineering,59,stable,0.0,0,0,stable
+T3 / tRPC Stack Engineer,Engineering,59,stable,0.0,0,0,stable
+Unity XR Developer,Engineering,59,stable,0.0,0,0,stable
+Alibaba Cloud Engineer,Platform & Infrastructure,59,stable,0.0,0,0,stable
+Block Storage Engineer,Platform & Infrastructure,59,stable,0.0,0,0,stable
+CDN Engineer,Platform & Infrastructure,59,stable,0.0,0,0,stable
+DuckDB Engineer,Platform & Infrastructure,59,stable,0.0,0,0,stable
+DynamoDB Specialist,Platform & Infrastructure,59,stable,0.0,0,0,stable
+MongoDB Engineer,Platform & Infrastructure,59,stable,0.0,0,0,stable
+Monorepo Engineer (Nx/Turborepo),Platform & Infrastructure,59,stable,0.0,0,0,stable
+Object Storage Engineer (S3/MinIO),Platform & Infrastructure,59,stable,0.0,0,0,stable
+SQL Server DBA,Platform & Infrastructure,59,stable,0.0,0,0,stable
+Service Catalog Engineer,Platform & Infrastructure,59,stable,0.0,0,0,stable
+Industrial Designer (hardware-software products),Product & Design,59,stable,0.0,0,0,stable
+Service Designer,Product & Design,59,stable,0.0,0,0,stable
+Hardware QA Engineer,Quality & Testing,59,stable,0.0,0,0,stable
+DAST Engineer,Security,59,stable,0.0,0,0,stable
+Windows Security Engineer,Security,59,stable,0.0,0,0,stable
+Wireless Pentester,Security,59,stable,0.0,0,0,stable
+A/B Testing Engineer,Specialized & Emerging,59,stable,0.0,0,0,stable
+SAP HANA Developer,Specialized & Emerging,59,stable,0.0,0,0,stable
+AI Trainer / RLHF Annotator,Data & AI,58,stable,0.0,0,0,stable
+Active Learning / Labeling Operations Lead,Data & AI,58,stable,0.0,0,0,stable
+Head of QA,Engineering Leadership,58,stable,0.0,0,0,stable
+Conversational Designer,Product & Design,58,stable,0.0,0,0,stable
+Product Operations Manager,Product & Design,58,stable,0.0,0,0,stable
+Developer Educator,Specialized & Emerging,58,stable,0.0,0,0,stable
+Developer Marketing Engineer,Specialized & Emerging,58,stable,0.0,0,0,stable
+Airflow Engineer,Data & AI,57,exposed,0.0,0,0,stable
+LangChain / LlamaIndex Engineer,Data & AI,57,exposed,0.0,0,0,stable
+ASP.NET Engineer,Engineering,57,exposed,0.0,0,0,stable
+Flutter Engineer,Engineering,57,exposed,0.0,0,0,stable
+Game Build / Pipeline Engineer,Engineering,57,exposed,0.0,0,0,stable
+Game Telemetry Engineer,Engineering,57,exposed,0.0,0,0,stable
+HarmonyOS Engineer,Engineering,57,exposed,0.0,0,0,stable
+IDE Plugin Developer,Engineering,57,exposed,0.0,0,0,stable
+Junior Backend Engineer,Engineering,57,exposed,0.0,0,0,stable
+MERN Stack Engineer,Engineering,57,exposed,0.0,0,0,stable
+Mobile Game Engineer,Engineering,57,exposed,0.0,0,0,stable
+NestJS Engineer,Engineering,57,exposed,0.0,0,0,stable
+React Native Engineer,Engineering,57,exposed,0.0,0,0,stable
+Senior Frontend Engineer,Engineering,57,exposed,0.0,0,0,stable
+Unity Engineer,Engineering,57,exposed,0.0,0,0,stable
+Deployment Engineer,Platform & Infrastructure,57,exposed,0.0,0,0,stable
+Endpoint Management Engineer (Intune/Jamf),Platform & Infrastructure,57,exposed,0.0,0,0,stable
+Telecom Software Engineer,Platform & Infrastructure,57,exposed,0.0,0,0,stable
+CDP / Customer Data Platform Engineer,Specialized & Emerging,57,exposed,0.0,0,0,stable
+Customer Success Engineer,Specialized & Emerging,57,exposed,0.0,0,0,stable
+Stripe Integration Engineer,Specialized & Emerging,57,exposed,0.0,0,0,stable
+Workflow Automation Engineer,Specialized & Emerging,57,exposed,0.0,0,0,stable
+Decision Scientist,Data & AI,56,exposed,0.0,0,0,stable
+3D Printing Software Engineer,Engineering,56,exposed,0.0,0,0,stable
+Bun.sh Engineer,Engineering,56,exposed,0.0,0,0,stable
+COBOL Developer,Engineering,56,exposed,0.0,0,0,stable
+IPFS / Filecoin Engineer,Engineering,56,exposed,0.0,0,0,stable
+Micronaut Engineer,Engineering,56,exposed,0.0,0,0,stable
+Oracle (Chainlink) Engineer,Engineering,56,exposed,0.0,0,0,stable
+Unreal XR Developer,Engineering,56,exposed,0.0,0,0,stable
+Vyper Developer,Engineering,56,exposed,0.0,0,0,stable
+z/OS Engineer,Engineering,56,exposed,0.0,0,0,stable
+Onboarding Engineer,Specialized & Emerging,56,exposed,0.0,0,0,stable
+Project Manager (Software),Specialized & Emerging,56,exposed,0.0,0,0,stable
+Chatbot Engineer,Data & AI,55,exposed,0.0,0,0,stable
+Product Data Scientist,Data & AI,55,exposed,0.0,0,0,stable
+Cruise / Maritime Software Engineer,Engineering,55,exposed,0.0,0,0,stable
+Express.js Engineer,Engineering,55,exposed,0.0,0,0,stable
+Internal Tools Engineer,Engineering,55,exposed,0.0,0,0,stable
+React Engineer,Engineering,55,exposed,0.0,0,0,stable
+SOC Analyst (Tier 2),Security,55,exposed,0.0,0,0,stable
+Curriculum Designer (Technical),Specialized & Emerging,55,exposed,0.0,0,0,stable
+AdTech Engineer,Engineering,54,exposed,0.0,0,0,stable
+Algorand Developer,Engineering,54,exposed,0.0,0,0,stable
+Angular Engineer,Engineering,54,exposed,0.0,0,0,stable
+Cartography Engineer,Engineering,54,exposed,0.0,0,0,stable
+Construction Tech Engineer,Engineering,54,exposed,0.0,0,0,stable
+Corda / R3 Engineer,Engineering,54,exposed,0.0,0,0,stable
+E-discovery Engineer,Engineering,54,exposed,0.0,0,0,stable
+EdTech Engineer,Engineering,54,exposed,0.0,0,0,stable
+Flask Engineer,Engineering,54,exposed,0.0,0,0,stable
+HR Tech Engineer,Engineering,54,exposed,0.0,0,0,stable
+Internationalization (i18n) Engineer,Engineering,54,exposed,0.0,0,0,stable
+JetBrains Plugin Developer,Engineering,54,exposed,0.0,0,0,stable
+Laravel Engineer,Engineering,54,exposed,0.0,0,0,stable
+MarTech Engineer,Engineering,54,exposed,0.0,0,0,stable
+Mental Health Tech Engineer,Engineering,54,exposed,0.0,0,0,stable
+Middleware Engineer,Engineering,54,exposed,0.0,0,0,stable
+Music Tech Engineer,Engineering,54,exposed,0.0,0,0,stable
+PHP Backend Engineer,Engineering,54,exposed,0.0,0,0,stable
+Real Estate Tech Engineer (Proptech),Engineering,54,exposed,0.0,0,0,stable
+Tezos Developer,Engineering,54,exposed,0.0,0,0,stable
+Travel Tech Engineer,Engineering,54,exposed,0.0,0,0,stable
+Webpack / Vite Specialist,Engineering,54,exposed,0.0,0,0,stable
+Hetzner / Bare Metal Specialist,Platform & Infrastructure,54,exposed,0.0,0,0,stable
+InfluxDB Engineer,Platform & Infrastructure,54,exposed,0.0,0,0,stable
+Linux Sysadmin,Platform & Infrastructure,54,exposed,0.0,0,0,stable
+Load Balancer Engineer,Platform & Infrastructure,54,exposed,0.0,0,0,stable
+Oracle Cloud Engineer,Platform & Infrastructure,54,exposed,0.0,0,0,stable
+TimescaleDB Engineer,Platform & Infrastructure,54,exposed,0.0,0,0,stable
+VoIP / SIP Engineer,Platform & Infrastructure,54,exposed,0.0,0,0,stable
+Associate Product Manager,Product & Design,54,exposed,0.0,0,0,stable
+Information Architect,Product & Design,54,exposed,0.0,0,0,stable
+Interaction Designer,Product & Design,54,exposed,0.0,0,0,stable
+Marketing Product Manager,Product & Design,54,exposed,0.0,0,0,stable
+Senior Content Designer,Product & Design,54,exposed,0.0,0,0,stable
+Voice Interface Designer,Product & Design,54,exposed,0.0,0,0,stable
+API Test Engineer,Quality & Testing,54,exposed,0.0,0,0,stable
+Playwright Engineer,Quality & Testing,54,exposed,0.0,0,0,stable
+QA Lead,Quality & Testing,54,exposed,0.0,0,0,stable
+Test Data Engineer,Quality & Testing,54,exposed,0.0,0,0,stable
+Documentation Engineer,Specialized & Emerging,54,exposed,0.0,0,0,stable
+Feature Flag Engineer (LaunchDarkly/Split),Specialized & Emerging,54,exposed,0.0,0,0,stable
+SAP ABAP Developer,Specialized & Emerging,54,exposed,0.0,0,0,stable
+SAP Basis Administrator,Specialized & Emerging,54,exposed,0.0,0,0,stable
+Senior Technical Writer,Specialized & Emerging,54,exposed,0.0,0,0,stable
+ServiceNow Developer,Specialized & Emerging,54,exposed,0.0,0,0,stable
+IT Manager,Platform & Infrastructure,53,exposed,0.0,0,0,stable
+ELT Engineer,Data & AI,52,exposed,0.0,0,0,stable
+Godot Engineer,Engineering,52,exposed,0.0,0,0,stable
+VSCode Extension Developer,Engineering,52,exposed,0.0,0,0,stable
+Vercel / Netlify Specialist,Platform & Infrastructure,52,exposed,0.0,0,0,stable
+3D Designer,Product & Design,52,exposed,0.0,0,0,stable
+Test Environment Engineer,Quality & Testing,52,exposed,0.0,0,0,stable
+MuleSoft Engineer,Specialized & Emerging,52,exposed,0.0,0,0,stable
+Power Platform Developer,Specialized & Emerging,52,exposed,0.0,0,0,stable
+Salesforce CPQ Developer,Specialized & Emerging,52,exposed,0.0,0,0,stable
+Workday Developer,Specialized & Emerging,52,exposed,0.0,0,0,stable
+AS/400 / RPG Developer,Engineering,51,exposed,0.0,0,0,stable
+Android TV Engineer,Engineering,51,exposed,0.0,0,0,stable
+Crystal Engineer,Engineering,51,exposed,0.0,0,0,stable
+D Lang Engineer,Engineering,51,exposed,0.0,0,0,stable
+Deno Engineer,Engineering,51,exposed,0.0,0,0,stable
+HTMX Engineer,Engineering,51,exposed,0.0,0,0,stable
+Nim Engineer,Engineering,51,exposed,0.0,0,0,stable
+Wear OS Engineer,Engineering,51,exposed,0.0,0,0,stable
+Web Components / Lit Engineer,Engineering,51,exposed,0.0,0,0,stable
+Xamarin / .NET MAUI Engineer,Engineering,51,exposed,0.0,0,0,stable
+iPadOS Engineer,Engineering,51,exposed,0.0,0,0,stable
+watchOS Engineer,Engineering,51,exposed,0.0,0,0,stable
+IBM Cloud Engineer,Platform & Infrastructure,51,exposed,0.0,0,0,stable
+Community Manager (Technical),Specialized & Emerging,51,exposed,0.0,0,0,stable
+Twilio Engineer,Specialized & Emerging,51,exposed,0.0,0,0,stable
+Customer Support Engineer,Specialized & Emerging,50,exposed,0.0,0,0,stable
+Data Annotation Engineer,Data & AI,49,exposed,0.0,0,0,stable
+Scikit-learn Specialist,Data & AI,49,exposed,0.0,0,0,stable
+Browser Extension Engineer,Engineering,49,exposed,0.0,0,0,stable
+CSS Architect (Sass/Tailwind),Engineering,49,exposed,0.0,0,0,stable
+Esports Platform Engineer,Engineering,49,exposed,0.0,0,0,stable
+Food Tech Engineer,Engineering,49,exposed,0.0,0,0,stable
+Full-Stack Ruby Engineer,Engineering,49,exposed,0.0,0,0,stable
+JAMstack Engineer,Engineering,49,exposed,0.0,0,0,stable
+JCL Developer,Engineering,49,exposed,0.0,0,0,stable
+Junior Android Engineer,Engineering,49,exposed,0.0,0,0,stable
+Junior iOS Engineer,Engineering,49,exposed,0.0,0,0,stable
+MEAN Stack Engineer,Engineering,49,exposed,0.0,0,0,stable
+Remix Engineer,Engineering,49,exposed,0.0,0,0,stable
+Sinatra / Hanami Engineer,Engineering,49,exposed,0.0,0,0,stable
+Sports Tech Engineer,Engineering,49,exposed,0.0,0,0,stable
+Svelte Engineer,Engineering,49,exposed,0.0,0,0,stable
+Symfony Engineer,Engineering,49,exposed,0.0,0,0,stable
+Tornado Backend Engineer,Engineering,49,exposed,0.0,0,0,stable
+Couchbase Engineer,Platform & Infrastructure,49,exposed,0.0,0,0,stable
+Fly.io / Render Specialist,Platform & Infrastructure,49,exposed,0.0,0,0,stable
+Sysadmin / System Administrator,Platform & Infrastructure,49,exposed,0.0,0,0,stable
+Vertica / Teradata Engineer,Platform & Infrastructure,49,exposed,0.0,0,0,stable
+Windows Sysadmin,Platform & Infrastructure,49,exposed,0.0,0,0,stable
+Apex Developer,Specialized & Emerging,49,exposed,0.0,0,0,stable
+Atlassian Developer (Jira/Confluence),Specialized & Emerging,49,exposed,0.0,0,0,stable
+Microsoft Dynamics Developer,Specialized & Emerging,49,exposed,0.0,0,0,stable
+NetSuite Developer,Specialized & Emerging,49,exposed,0.0,0,0,stable
+Release Train Engineer (SAFe),Specialized & Emerging,49,exposed,0.0,0,0,stable
+SEO Engineer (Technical),Specialized & Emerging,49,exposed,0.0,0,0,stable
+BI Developer,Data & AI,47,exposed,0.0,0,0,stable
+Cohere / Mistral API Engineer,Data & AI,47,exposed,0.0,0,0,stable
+Statistical Programmer (SAS/R),Data & AI,47,exposed,0.0,0,0,stable
+Astro Engineer,Engineering,47,exposed,0.0,0,0,stable
+Game UI Programmer,Engineering,47,exposed,0.0,0,0,stable
+Junior Full-Stack Engineer,Engineering,47,exposed,0.0,0,0,stable
+Localization (l10n) Engineer,Engineering,47,exposed,0.0,0,0,stable
+Vue Engineer,Engineering,47,exposed,0.0,0,0,stable
+IT Operations Engineer,Platform & Infrastructure,47,exposed,0.0,0,0,stable
+M365 / Google Workspace Admin,Platform & Infrastructure,47,exposed,0.0,0,0,stable
+Content Designer / UX Writer,Product & Design,47,exposed,0.0,0,0,stable
+Motion Designer,Product & Design,47,exposed,0.0,0,0,stable
+API Documentation Specialist,Specialized & Emerging,47,exposed,0.0,0,0,stable
+Marketing Automation Engineer,Specialized & Emerging,47,exposed,0.0,0,0,stable
+Mixpanel / Amplitude / Heap Engineer,Specialized & Emerging,47,exposed,0.0,0,0,stable
+Power BI Specialist,Specialized & Emerging,47,exposed,0.0,0,0,stable
+RPA Engineer (UiPath/Power Automate),Specialized & Emerging,47,exposed,0.0,0,0,stable
+Salesforce Marketing Cloud Developer,Specialized & Emerging,47,exposed,0.0,0,0,stable
+Scrum Master / Agile Coach,Specialized & Emerging,47,exposed,0.0,0,0,stable
+Segment / Rudderstack Engineer,Specialized & Emerging,47,exposed,0.0,0,0,stable
+Shopify App Developer,Specialized & Emerging,47,exposed,0.0,0,0,stable
+Technical Writer,Specialized & Emerging,47,exposed,0.0,0,0,stable
+SSIS / SQL Server Integration Engineer,Data & AI,46,exposed,0.0,0,0,stable
+BPM / Workflow Engineer,Engineering,46,exposed,0.0,0,0,stable
+DAO Tooling Engineer,Engineering,46,exposed,0.0,0,0,stable
+PWA Engineer,Engineering,46,exposed,0.0,0,0,stable
+SolidJS Engineer,Engineering,46,exposed,0.0,0,0,stable
+tvOS Engineer,Engineering,46,exposed,0.0,0,0,stable
+Oracle ERP Developer,Specialized & Emerging,46,exposed,0.0,0,0,stable
+Hadoop Engineer,Data & AI,45,exposed,0.0,0,0,stable
+Marketing Data Scientist,Data & AI,45,exposed,0.0,0,0,stable
+Senior UI Designer,Product & Design,45,exposed,0.0,0,0,stable
+Senior QA Automation,Quality & Testing,45,exposed,0.0,0,0,stable
+SOC Analyst (Tier 1),Security,45,exposed,0.0,0,0,stable
+Power Apps Developer,Specialized & Emerging,45,exposed,0.0,0,0,stable
+Salesforce Administrator,Specialized & Emerging,45,exposed,0.0,0,0,stable
+ETL Developer,Data & AI,44,exposed,0.0,0,0,stable
+Growth Analyst,Data & AI,44,exposed,0.0,0,0,stable
+Informatica Engineer,Data & AI,44,exposed,0.0,0,0,stable
+Looker / LookML Developer,Data & AI,44,exposed,0.0,0,0,stable
+Product Analyst,Data & AI,44,exposed,0.0,0,0,stable
+ESB / Service Bus Engineer,Engineering,44,exposed,0.0,0,0,stable
+LAMP Stack Engineer,Engineering,44,exposed,0.0,0,0,stable
+Nuxt Engineer,Engineering,44,exposed,0.0,0,0,stable
+Restaurant / Hospitality Tech Engineer,Engineering,44,exposed,0.0,0,0,stable
+Tizen Engineer,Engineering,44,exposed,0.0,0,0,stable
+DigitalOcean Specialist,Platform & Infrastructure,44,exposed,0.0,0,0,stable
+Brand Designer,Product & Design,44,exposed,0.0,0,0,stable
+Visual Designer,Product & Design,44,exposed,0.0,0,0,stable
+Cypress Engineer,Quality & Testing,44,exposed,0.0,0,0,stable
+Mobile QA Engineer,Quality & Testing,44,exposed,0.0,0,0,stable
+Boomi Engineer,Specialized & Emerging,44,exposed,0.0,0,0,stable
+Conversion Rate Optimization Engineer,Specialized & Emerging,44,exposed,0.0,0,0,stable
+Magento / Adobe Commerce Developer,Specialized & Emerging,44,exposed,0.0,0,0,stable
+SAP Fiori / UI5 Developer,Specialized & Emerging,44,exposed,0.0,0,0,stable
+Square / Block Integration Engineer,Specialized & Emerging,44,exposed,0.0,0,0,stable
+Junior Frontend Engineer,Engineering,43,exposed,0.0,0,0,stable
+Fivetran / Stitch Specialist,Data & AI,42,exposed,0.0,0,0,stable
+Admin Panel Engineer,Engineering,42,exposed,0.0,0,0,stable
+Fitness / Wellness Tech Engineer,Engineering,42,exposed,0.0,0,0,stable
+Ionic / Cordova Engineer,Engineering,42,exposed,0.0,0,0,stable
+Perl Engineer,Engineering,42,exposed,0.0,0,0,stable
+Collaboration Tools Engineer (Slack/Teams),Platform & Infrastructure,42,exposed,0.0,0,0,stable
+Heroku Specialist,Platform & Infrastructure,42,exposed,0.0,0,0,stable
+Game QA Lead,Quality & Testing,42,exposed,0.0,0,0,stable
+Localization QA Engineer,Quality & Testing,42,exposed,0.0,0,0,stable
+BigCommerce Developer,Specialized & Emerging,42,exposed,0.0,0,0,stable
+Low-code Developer,Specialized & Emerging,42,exposed,0.0,0,0,stable
+SendGrid / Mailgun Engineer,Specialized & Emerging,42,exposed,0.0,0,0,stable
+Tray.io / iPaaS Engineer,Specialized & Emerging,42,exposed,0.0,0,0,stable
+Workato Engineer,Specialized & Emerging,42,exposed,0.0,0,0,stable
+Talend Engineer,Data & AI,41,exposed,0.0,0,0,stable
+Ember.js Engineer,Engineering,41,exposed,0.0,0,0,stable
+Stencil Engineer,Engineering,41,exposed,0.0,0,0,stable
+IT Asset Manager,Platform & Infrastructure,41,exposed,0.0,0,0,stable
+Citizen Developer Coach,Specialized & Emerging,41,exposed,0.0,0,0,stable
+Make.com / n8n Specialist,Specialized & Emerging,41,exposed,0.0,0,0,stable
+Power BI Developer,Data & AI,40,at_risk,0.0,0,0,stable
+Senior Data Analyst,Data & AI,40,at_risk,0.0,0,0,stable
+Tableau Developer,Data & AI,40,at_risk,0.0,0,0,stable
+IT Support Engineer,Platform & Infrastructure,40,at_risk,0.0,0,0,stable
+UI / Web Test Engineer,Quality & Testing,40,at_risk,0.0,0,0,stable
+Tier 2 Technical Support Engineer,Specialized & Emerging,40,at_risk,0.0,0,0,stable
+WordPress Developer,Specialized & Emerging,40,at_risk,0.0,0,0,stable
+Business Analyst,Data & AI,39,at_risk,0.0,0,0,stable
+Marketing Analyst,Data & AI,39,at_risk,0.0,0,0,stable
+Childcare Tech Engineer,Engineering,39,at_risk,0.0,0,0,stable
+NFT Platform Engineer,Engineering,39,at_risk,0.0,0,0,stable
+Pet Tech Engineer,Engineering,39,at_risk,0.0,0,0,stable
+Preact Engineer,Engineering,39,at_risk,0.0,0,0,stable
+Appium Engineer,Quality & Testing,39,at_risk,0.0,0,0,stable
+SEM / Paid Search Engineer,Specialized & Emerging,39,at_risk,0.0,0,0,stable
+SharePoint Developer,Specialized & Emerging,39,at_risk,0.0,0,0,stable
+BI Analyst,Data & AI,37,at_risk,0.0,0,0,stable
+HTML / CSS Specialist,Engineering,37,at_risk,0.0,0,0,stable
+Marketing Designer,Product & Design,37,at_risk,0.0,0,0,stable
+Drupal Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+Freshworks Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+HubSpot Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+Intercom / Help Desk Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+Marketo Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+WooCommerce Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+Zapier Specialist,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+Zendesk Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+Backbone.js Maintainer,Engineering,36,at_risk,0.0,0,0,stable
+CodeIgniter Engineer,Engineering,36,at_risk,0.0,0,0,stable
+Pascal / Delphi Engineer,Engineering,36,at_risk,0.0,0,0,stable
+Qlik Developer,Data & AI,35,at_risk,0.0,0,0,stable
+Help Desk Tier 2,Platform & Infrastructure,35,at_risk,0.0,0,0,stable
+Selenium Engineer,Quality & Testing,35,at_risk,0.0,0,0,stable
+No-code Developer / Maker,Specialized & Emerging,35,at_risk,0.0,0,0,stable
+Sigma / ThoughtSpot Developer,Data & AI,34,at_risk,0.0,0,0,stable
+Alpine.js Engineer,Engineering,34,at_risk,0.0,0,0,stable
+KaiOS Engineer,Engineering,34,at_risk,0.0,0,0,stable
+PowerBuilder Maintainer,Engineering,34,at_risk,0.0,0,0,stable
+Visual Basic / VB.NET Maintainer,Engineering,34,at_risk,0.0,0,0,stable
+Pardot Developer,Specialized & Emerging,32,at_risk,0.0,0,0,stable
+QA Manual Lead,Quality & Testing,31,at_risk,0.0,0,0,stable
+MicroStrategy Developer,Data & AI,30,at_risk,0.0,0,0,stable
+Game QA Tester,Engineering,30,at_risk,0.0,0,0,stable
+Desktop Support,Platform & Infrastructure,30,at_risk,0.0,0,0,stable
+Domo Developer,Data & AI,29,at_risk,0.0,0,0,stable
+Mode Analytics Developer,Data & AI,29,at_risk,0.0,0,0,stable
+ColdFusion Maintainer,Engineering,29,at_risk,0.0,0,0,stable
+jQuery Maintainer,Engineering,29,at_risk,0.0,0,0,stable
+Help Desk Tier 1,Platform & Infrastructure,25,at_risk,0.0,0,0,stable

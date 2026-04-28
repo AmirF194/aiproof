@@ -4,110 +4,116 @@
 <text x="240" y="52" font-size="11" fill="#555" font-weight="normal" text-anchor="start">Bar = junior → senior total comp.  Frontier-lab outliers excluded.</text>
 <line x1="240.0" y1="80" x2="240.0" y2="548" stroke="#eeeeee" stroke-width="1"/>
 <text x="240.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$0K</text>
-<line x1="307.5" y1="80" x2="307.5" y2="548" stroke="#eeeeee" stroke-width="1"/>
-<text x="307.5" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$100K</text>
-<line x1="375.0" y1="80" x2="375.0" y2="548" stroke="#eeeeee" stroke-width="1"/>
-<text x="375.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$200K</text>
-<line x1="442.5" y1="80" x2="442.5" y2="548" stroke="#eeeeee" stroke-width="1"/>
-<text x="442.5" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$300K</text>
-<line x1="510.0" y1="80" x2="510.0" y2="548" stroke="#eeeeee" stroke-width="1"/>
-<text x="510.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$400K</text>
-<line x1="577.5" y1="80" x2="577.5" y2="548" stroke="#eeeeee" stroke-width="1"/>
-<text x="577.5" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$500K</text>
-<line x1="645.0" y1="80" x2="645.0" y2="548" stroke="#eeeeee" stroke-width="1"/>
-<text x="645.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$600K</text>
-<line x1="712.5" y1="80" x2="712.5" y2="548" stroke="#eeeeee" stroke-width="1"/>
-<text x="712.5" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$700K</text>
+<line x1="289.0909090909091" y1="80" x2="289.0909090909091" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="289.0909090909091" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$100K</text>
+<line x1="338.1818181818182" y1="80" x2="338.1818181818182" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="338.1818181818182" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$200K</text>
+<line x1="387.27272727272725" y1="80" x2="387.27272727272725" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="387.27272727272725" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$300K</text>
+<line x1="436.3636363636364" y1="80" x2="436.3636363636364" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="436.3636363636364" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$400K</text>
+<line x1="485.4545454545455" y1="80" x2="485.4545454545455" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="485.4545454545455" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$500K</text>
+<line x1="534.5454545454545" y1="80" x2="534.5454545454545" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="534.5454545454545" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$600K</text>
+<line x1="583.6363636363636" y1="80" x2="583.6363636363636" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="583.6363636363636" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$700K</text>
+<line x1="632.7272727272727" y1="80" x2="632.7272727272727" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="632.7272727272727" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$800K</text>
+<line x1="681.8181818181818" y1="80" x2="681.8181818181818" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="681.8181818181818" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$900K</text>
+<line x1="730.909090909091" y1="80" x2="730.909090909091" y2="548" stroke="#eeeeee" stroke-width="1"/>
+<text x="730.909090909091" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$1000K</text>
 <line x1="780.0" y1="80" x2="780.0" y2="548" stroke="#eeeeee" stroke-width="1"/>
-<text x="780.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$800K</text>
-<text x="230" y="94" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Staff Engineer / Tech Lead</text>
-<rect x="408.75" y="83" width="303.75" height="12" fill="#1f7a3a" rx="2"/>
-<circle cx="408.75" cy="89.0" r="3" fill="#222"/>
-<circle cx="712.5" cy="89.0" r="3" fill="#222"/>
-<text x="720.5" y="94" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$250K – $700K</text>
-<text x="230" y="120" font-size="12" fill="#222" font-weight="normal" text-anchor="end">AI Research Engineer</text>
-<rect x="361.5" y="109" width="351.0" height="12" fill="#1f7a3a" rx="2"/>
-<circle cx="361.5" cy="115.0" r="3" fill="#222"/>
-<circle cx="712.5" cy="115.0" r="3" fill="#222"/>
-<text x="720.5" y="120" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$180K – $700K</text>
-<text x="230" y="146" font-size="12" fill="#222" font-weight="normal" text-anchor="end">ML Engineer</text>
-<rect x="334.5" y="135" width="175.5" height="12" fill="#1f7a3a" rx="2"/>
-<circle cx="334.5" cy="141.0" r="3" fill="#222"/>
-<circle cx="510.0" cy="141.0" r="3" fill="#222"/>
-<text x="518.0" y="146" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$140K – $400K</text>
-<text x="230" y="172" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Platform Engineer</text>
-<rect x="327.75" y="161" width="155.25" height="12" fill="#1f7a3a" rx="2"/>
-<circle cx="327.75" cy="167.0" r="3" fill="#222"/>
-<circle cx="483.0" cy="167.0" r="3" fill="#222"/>
-<text x="491.0" y="172" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$130K – $360K</text>
-<text x="230" y="198" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Application Security Engineer</text>
-<rect x="327.75" y="187" width="155.25" height="12" fill="#1f7a3a" rx="2"/>
-<circle cx="327.75" cy="193.0" r="3" fill="#222"/>
-<circle cx="483.0" cy="193.0" r="3" fill="#222"/>
-<text x="491.0" y="198" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$130K – $360K</text>
-<text x="230" y="224" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Security Engineer</text>
-<rect x="327.75" y="213" width="148.5" height="12" fill="#1f7a3a" rx="2"/>
-<circle cx="327.75" cy="219.0" r="3" fill="#222"/>
-<circle cx="476.25" cy="219.0" r="3" fill="#222"/>
-<text x="484.25" y="224" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$130K – $350K</text>
-<text x="230" y="250" font-size="12" fill="#222" font-weight="normal" text-anchor="end">MLOps Engineer</text>
-<rect x="327.75" y="239" width="141.75" height="12" fill="#1f7a3a" rx="2"/>
-<circle cx="327.75" cy="245.0" r="3" fill="#222"/>
-<circle cx="469.5" cy="245.0" r="3" fill="#222"/>
-<text x="477.5" y="250" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$130K – $340K</text>
-<text x="230" y="276" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Cloud Security Engineer</text>
-<rect x="327.75" y="265" width="141.75" height="12" fill="#1f7a3a" rx="2"/>
-<circle cx="327.75" cy="271.0" r="3" fill="#222"/>
-<circle cx="469.5" cy="271.0" r="3" fill="#222"/>
-<text x="477.5" y="276" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$130K – $340K</text>
-<text x="230" y="302" font-size="12" fill="#222" font-weight="normal" text-anchor="end">AI Application Engineer</text>
-<rect x="321.0" y="291" width="135.0" height="12" fill="#4caf50" rx="2"/>
-<circle cx="321.0" cy="297.0" r="3" fill="#222"/>
-<circle cx="456.0" cy="297.0" r="3" fill="#222"/>
-<text x="464.0" y="302" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$120K – $320K</text>
-<text x="230" y="328" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Product Manager</text>
-<rect x="314.25" y="317" width="135.0" height="12" fill="#4caf50" rx="2"/>
-<circle cx="314.25" cy="323.0" r="3" fill="#222"/>
-<circle cx="449.25" cy="323.0" r="3" fill="#222"/>
-<text x="457.25" y="328" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$110K – $310K</text>
-<text x="230" y="354" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Backend Engineer</text>
-<rect x="300.75" y="343" width="128.25" height="12" fill="#4caf50" rx="2"/>
-<circle cx="300.75" cy="349.0" r="3" fill="#222"/>
-<circle cx="429.0" cy="349.0" r="3" fill="#222"/>
-<text x="437.0" y="354" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$90K – $280K</text>
-<text x="230" y="380" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Data Scientist</text>
-<rect x="307.5" y="369" width="101.25" height="12" fill="#e57321" rx="2"/>
-<circle cx="307.5" cy="375.0" r="3" fill="#222"/>
-<circle cx="408.75" cy="375.0" r="3" fill="#222"/>
-<text x="416.75" y="380" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$100K – $250K</text>
-<text x="230" y="406" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Embedded Engineer</text>
-<rect x="300.75" y="395" width="94.5" height="12" fill="#4caf50" rx="2"/>
-<circle cx="300.75" cy="401.0" r="3" fill="#222"/>
-<circle cx="395.25" cy="401.0" r="3" fill="#222"/>
-<text x="403.25" y="406" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$90K – $230K</text>
-<text x="230" y="432" font-size="12" fill="#222" font-weight="normal" text-anchor="end">UI Designer</text>
-<rect x="290.625" y="421" width="77.625" height="12" fill="#c62828" rx="2"/>
-<circle cx="290.625" cy="427.0" r="3" fill="#222"/>
-<circle cx="368.25" cy="427.0" r="3" fill="#222"/>
-<text x="376.25" y="432" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$75K – $190K</text>
-<text x="230" y="458" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Prompt Engineer</text>
-<rect x="294.0" y="447" width="67.5" height="12" fill="#c62828" rx="2"/>
-<circle cx="294.0" cy="453.0" r="3" fill="#222"/>
-<circle cx="361.5" cy="453.0" r="3" fill="#222"/>
-<text x="369.5" y="458" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$80K – $180K</text>
-<text x="230" y="484" font-size="12" fill="#222" font-weight="normal" text-anchor="end">QA Automation</text>
-<rect x="287.25" y="473" width="67.5" height="12" fill="#c62828" rx="2"/>
-<circle cx="287.25" cy="479.0" r="3" fill="#222"/>
-<circle cx="354.75" cy="479.0" r="3" fill="#222"/>
-<text x="362.75" y="484" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$70K – $170K</text>
-<text x="230" y="510" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Data Analyst</text>
-<rect x="283.875" y="499" width="64.125" height="12" fill="#c62828" rx="2"/>
-<circle cx="283.875" cy="505.0" r="3" fill="#222"/>
-<circle cx="348.0" cy="505.0" r="3" fill="#222"/>
-<text x="356.0" y="510" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$65K – $160K</text>
-<text x="230" y="536" font-size="12" fill="#222" font-weight="normal" text-anchor="end">QA Manual</text>
-<rect x="273.75" y="525" width="54.0" height="12" fill="#c62828" rx="2"/>
-<circle cx="273.75" cy="531.0" r="3" fill="#222"/>
-<circle cx="327.75" cy="531.0" r="3" fill="#222"/>
-<text x="335.75" y="536" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$50K – $130K</text>
+<text x="780.0" y="74" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">$1100K</text>
+<text x="230" y="94" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Chief AI Officer</text>
+<rect x="387.27272727272725" y="83" width="343.63636363636374" height="12" fill="#1f7a3a" rx="2"/>
+<circle cx="387.27272727272725" cy="89.0" r="3" fill="#222"/>
+<circle cx="730.909090909091" cy="89.0" r="3" fill="#222"/>
+<text x="738.909090909091" y="94" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$300K – $1000K</text>
+<text x="230" y="120" font-size="12" fill="#222" font-weight="normal" text-anchor="end">CTO</text>
+<rect x="387.27272727272725" y="109" width="343.63636363636374" height="12" fill="#1f7a3a" rx="2"/>
+<circle cx="387.27272727272725" cy="115.0" r="3" fill="#222"/>
+<circle cx="730.909090909091" cy="115.0" r="3" fill="#222"/>
+<text x="738.909090909091" y="120" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$300K – $1000K</text>
+<text x="230" y="146" font-size="12" fill="#222" font-weight="normal" text-anchor="end">VP of AI / ML</text>
+<rect x="377.4545454545455" y="135" width="304.36363636363626" height="12" fill="#1f7a3a" rx="2"/>
+<circle cx="377.4545454545455" cy="141.0" r="3" fill="#222"/>
+<circle cx="681.8181818181818" cy="141.0" r="3" fill="#222"/>
+<text x="689.8181818181818" y="146" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$280K – $900K</text>
+<text x="230" y="172" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Staff Engineer / Tech Lead</text>
+<rect x="362.72727272727275" y="161" width="220.90909090909088" height="12" fill="#1f7a3a" rx="2"/>
+<circle cx="362.72727272727275" cy="167.0" r="3" fill="#222"/>
+<circle cx="583.6363636363636" cy="167.0" r="3" fill="#222"/>
+<text x="591.6363636363636" y="172" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$250K – $700K</text>
+<text x="230" y="198" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Senior LLM Engineer</text>
+<rect x="338.1818181818182" y="187" width="196.36363636363632" height="12" fill="#1f7a3a" rx="2"/>
+<circle cx="338.1818181818182" cy="193.0" r="3" fill="#222"/>
+<circle cx="534.5454545454545" cy="193.0" r="3" fill="#222"/>
+<text x="542.5454545454545" y="198" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$200K – $600K</text>
+<text x="230" y="224" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Staff Security Engineer</text>
+<rect x="338.1818181818182" y="213" width="147.2727272727273" height="12" fill="#1f7a3a" rx="2"/>
+<circle cx="338.1818181818182" cy="219.0" r="3" fill="#222"/>
+<circle cx="485.4545454545455" cy="219.0" r="3" fill="#222"/>
+<text x="493.4545454545455" y="224" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$200K – $500K</text>
+<text x="230" y="250" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Senior Security Engineer</text>
+<rect x="318.54545454545456" y="239" width="117.81818181818181" height="12" fill="#1f7a3a" rx="2"/>
+<circle cx="318.54545454545456" cy="245.0" r="3" fill="#222"/>
+<circle cx="436.3636363636364" cy="245.0" r="3" fill="#222"/>
+<text x="444.3636363636364" y="250" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$160K – $400K</text>
+<text x="230" y="276" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Security Engineer</text>
+<rect x="303.8181818181818" y="265" width="108.0" height="12" fill="#1f7a3a" rx="2"/>
+<circle cx="303.8181818181818" cy="271.0" r="3" fill="#222"/>
+<circle cx="411.8181818181818" cy="271.0" r="3" fill="#222"/>
+<text x="419.8181818181818" y="276" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$130K – $350K</text>
+<text x="230" y="302" font-size="12" fill="#222" font-weight="normal" text-anchor="end">AdTech ML Engineer</text>
+<rect x="303.8181818181818" y="291" width="93.27272727272731" height="12" fill="#f0a30a" rx="2"/>
+<circle cx="303.8181818181818" cy="297.0" r="3" fill="#222"/>
+<circle cx="397.0909090909091" cy="297.0" r="3" fill="#222"/>
+<text x="405.0909090909091" y="302" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$130K – $320K</text>
+<text x="230" y="328" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Post-sales / Customer Engineer</text>
+<rect x="294.0" y="317" width="83.4545454545455" height="12" fill="#f0a30a" rx="2"/>
+<circle cx="294.0" cy="323.0" r="3" fill="#222"/>
+<circle cx="377.4545454545455" cy="323.0" r="3" fill="#222"/>
+<text x="385.4545454545455" y="328" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$110K – $280K</text>
+<text x="230" y="354" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Senior Salesforce Developer</text>
+<rect x="303.8181818181818" y="343" width="73.63636363636368" height="12" fill="#f0a30a" rx="2"/>
+<circle cx="303.8181818181818" cy="349.0" r="3" fill="#222"/>
+<circle cx="377.4545454545455" cy="349.0" r="3" fill="#222"/>
+<text x="385.4545454545455" y="354" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$130K – $280K</text>
+<text x="230" y="380" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Threat Intelligence Analyst</text>
+<rect x="284.1818181818182" y="369" width="63.81818181818181" height="12" fill="#f0a30a" rx="2"/>
+<circle cx="284.1818181818182" cy="375.0" r="3" fill="#222"/>
+<circle cx="348.0" cy="375.0" r="3" fill="#222"/>
+<text x="356.0" y="380" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$90K – $220K</text>
+<text x="230" y="406" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Mode Analytics Developer</text>
+<rect x="279.27272727272725" y="395" width="49.09090909090912" height="12" fill="#c62828" rx="2"/>
+<circle cx="279.27272727272725" cy="401.0" r="3" fill="#222"/>
+<circle cx="328.3636363636364" cy="401.0" r="3" fill="#222"/>
+<text x="336.3636363636364" y="406" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$80K – $180K</text>
+<text x="230" y="432" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Prompt Engineer</text>
+<rect x="279.27272727272725" y="421" width="49.09090909090912" height="12" fill="#c62828" rx="2"/>
+<circle cx="279.27272727272725" cy="427.0" r="3" fill="#222"/>
+<circle cx="328.3636363636364" cy="427.0" r="3" fill="#222"/>
+<text x="336.3636363636364" y="432" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$80K – $180K</text>
+<text x="230" y="458" font-size="12" fill="#222" font-weight="normal" text-anchor="end">ColdFusion Maintainer</text>
+<rect x="274.3636363636364" y="447" width="44.18181818181819" height="12" fill="#c62828" rx="2"/>
+<circle cx="274.3636363636364" cy="453.0" r="3" fill="#222"/>
+<circle cx="318.54545454545456" cy="453.0" r="3" fill="#222"/>
+<text x="326.54545454545456" y="458" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$70K – $160K</text>
+<text x="230" y="484" font-size="12" fill="#222" font-weight="normal" text-anchor="end">jQuery Maintainer</text>
+<rect x="271.90909090909093" y="473" width="46.636363636363626" height="12" fill="#c62828" rx="2"/>
+<circle cx="271.90909090909093" cy="479.0" r="3" fill="#222"/>
+<circle cx="318.54545454545456" cy="479.0" r="3" fill="#222"/>
+<text x="326.54545454545456" y="484" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$65K – $160K</text>
+<text x="230" y="510" font-size="12" fill="#222" font-weight="normal" text-anchor="end">QA Manual</text>
+<rect x="264.54545454545456" y="499" width="39.27272727272725" height="12" fill="#c62828" rx="2"/>
+<circle cx="264.54545454545456" cy="505.0" r="3" fill="#222"/>
+<circle cx="303.8181818181818" cy="505.0" r="3" fill="#222"/>
+<text x="311.8181818181818" y="510" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$50K – $130K</text>
+<text x="230" y="536" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Help Desk Tier 1</text>
+<rect x="259.6363636363636" y="525" width="24.54545454545456" height="12" fill="#c62828" rx="2"/>
+<circle cx="259.6363636363636" cy="531.0" r="3" fill="#222"/>
+<circle cx="284.1818181818182" cy="531.0" r="3" fill="#222"/>
+<text x="292.1818181818182" y="536" font-size="11" fill="#333" font-weight="normal" text-anchor="start">$40K – $90K</text>
 </svg>

@@ -12,44 +12,44 @@
 <text x="620.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">75</text>
 <line x1="750.0" y1="90" x2="750.0" y2="426" stroke="#eeeeee" stroke-width="1"/>
 <text x="750.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">100</text>
-<text x="220" y="110" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Engineering Leadership  (n=2)</text>
-<rect x="230" y="90" width="460.2" height="28" fill="#1f7a3a" rx="3"/>
-<text x="698.2" y="110" font-size="12" fill="#333" font-weight="bold" text-anchor="start">88.5</text>
-<circle cx="646.0" cy="122" r="4" fill="#0277bd"/>
-<text x="654.0" y="126" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 8.0/10</text>
-<text x="220" y="152" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Security  (n=4)</text>
-<rect x="230" y="132" width="455.0" height="28" fill="#1f7a3a" rx="3"/>
-<text x="693.0" y="152" font-size="12" fill="#333" font-weight="bold" text-anchor="start">87.5</text>
-<circle cx="672.0" cy="164" r="4" fill="#0277bd"/>
-<text x="680.0" y="168" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 8.5/10</text>
-<text x="220" y="194" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Platform &amp; Infrastructure  (n=4)</text>
-<rect x="230" y="174" width="403.0" height="28" fill="#4caf50" rx="3"/>
-<text x="641.0" y="194" font-size="12" fill="#333" font-weight="bold" text-anchor="start">77.5</text>
-<circle cx="633.0" cy="206" r="4" fill="#0277bd"/>
-<text x="641.0" y="210" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 7.8/10</text>
-<text x="220" y="236" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Data &amp; AI  (n=8)</text>
-<rect x="230" y="216" width="364.0" height="28" fill="#4caf50" rx="3"/>
-<text x="602.0" y="236" font-size="12" fill="#333" font-weight="bold" text-anchor="start">70.0</text>
-<circle cx="620.0" cy="248" r="4" fill="#0277bd"/>
-<text x="628.0" y="252" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 7.5/10</text>
-<text x="220" y="278" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Engineering  (n=7)</text>
-<rect x="230" y="258" width="345.42857142857144" height="28" fill="#f0a30a" rx="3"/>
-<text x="583.4285714285714" y="278" font-size="12" fill="#333" font-weight="bold" text-anchor="start">66.4</text>
-<circle cx="564.2857142857143" cy="290" r="4" fill="#0277bd"/>
-<text x="572.2857142857143" y="294" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 6.4/10</text>
-<text x="220" y="320" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Product &amp; Design  (n=5)</text>
-<rect x="230" y="300" width="335.92" height="28" fill="#f0a30a" rx="3"/>
-<text x="573.9200000000001" y="320" font-size="12" fill="#333" font-weight="bold" text-anchor="start">64.6</text>
-<circle cx="542.0" cy="332" r="4" fill="#0277bd"/>
-<text x="550.0" y="336" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 6.0/10</text>
-<text x="220" y="362" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Specialized &amp; Emerging  (n=3)</text>
-<rect x="230" y="342" width="313.73333333333335" height="28" fill="#f0a30a" rx="3"/>
-<text x="551.7333333333333" y="362" font-size="12" fill="#333" font-weight="bold" text-anchor="start">60.3</text>
-<circle cx="524.6666666666667" cy="374" r="4" fill="#0277bd"/>
-<text x="532.6666666666667" y="378" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 5.7/10</text>
-<text x="220" y="404" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Quality &amp; Testing  (n=3)</text>
-<rect x="230" y="384" width="214.93333333333337" height="28" fill="#e57321" rx="3"/>
-<text x="452.9333333333334" y="404" font-size="12" fill="#333" font-weight="bold" text-anchor="start">41.3</text>
-<circle cx="438.0" cy="416" r="4" fill="#0277bd"/>
-<text x="446.0" y="420" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 4.0/10</text>
+<text x="220" y="110" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Engineering Leadership  (n=45)</text>
+<rect x="230" y="90" width="428.2488888888889" height="28" fill="#4caf50" rx="3"/>
+<text x="666.2488888888889" y="110" font-size="12" fill="#333" font-weight="bold" text-anchor="start">82.4</text>
+<circle cx="562.8" cy="122" r="4" fill="#0277bd"/>
+<text x="570.8" y="126" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 6.4/10</text>
+<text x="220" y="152" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Security  (n=75)</text>
+<rect x="230" y="132" width="383.2746666666667" height="28" fill="#4caf50" rx="3"/>
+<text x="621.2746666666667" y="152" font-size="12" fill="#333" font-weight="bold" text-anchor="start">73.7</text>
+<circle cx="526.0533333333333" cy="164" r="4" fill="#0277bd"/>
+<text x="534.0533333333333" y="168" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 5.7/10</text>
+<text x="220" y="194" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Data &amp; AI  (n=178)</text>
+<rect x="230" y="174" width="351.8179775280899" height="28" fill="#f0a30a" rx="3"/>
+<text x="589.8179775280898" y="194" font-size="12" fill="#333" font-weight="bold" text-anchor="start">67.7</text>
+<circle cx="521.5505617977528" cy="206" r="4" fill="#0277bd"/>
+<text x="529.5505617977528" y="210" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 5.6/10</text>
+<text x="220" y="236" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Engineering  (n=405)</text>
+<rect x="230" y="216" width="333.1595061728395" height="28" fill="#f0a30a" rx="3"/>
+<text x="571.1595061728394" y="236" font-size="12" fill="#333" font-weight="bold" text-anchor="start">64.1</text>
+<circle cx="448.5283950617284" cy="248" r="4" fill="#0277bd"/>
+<text x="456.5283950617284" y="252" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 4.2/10</text>
+<text x="220" y="278" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Platform &amp; Infrastructure  (n=121)</text>
+<rect x="230" y="258" width="332.0264462809917" height="28" fill="#f0a30a" rx="3"/>
+<text x="570.0264462809916" y="278" font-size="12" fill="#333" font-weight="bold" text-anchor="start">63.9</text>
+<circle cx="491.2892561983471" cy="290" r="4" fill="#0277bd"/>
+<text x="499.2892561983471" y="294" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 5.0/10</text>
+<text x="220" y="320" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Product &amp; Design  (n=48)</text>
+<rect x="230" y="300" width="329.76666666666665" height="28" fill="#f0a30a" rx="3"/>
+<text x="567.7666666666667" y="320" font-size="12" fill="#333" font-weight="bold" text-anchor="start">63.4</text>
+<circle cx="483.5" cy="332" r="4" fill="#0277bd"/>
+<text x="491.5" y="336" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 4.9/10</text>
+<text x="220" y="362" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Specialized &amp; Emerging  (n=100)</text>
+<rect x="230" y="342" width="284.908" height="28" fill="#e57321" rx="3"/>
+<text x="522.908" y="362" font-size="12" fill="#333" font-weight="bold" text-anchor="start">54.8</text>
+<circle cx="459.84000000000003" cy="374" r="4" fill="#0277bd"/>
+<text x="467.84000000000003" y="378" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 4.4/10</text>
+<text x="220" y="404" font-size="12" fill="#222" font-weight="normal" text-anchor="end">Quality &amp; Testing  (n=28)</text>
+<rect x="230" y="384" width="273.18571428571425" height="28" fill="#e57321" rx="3"/>
+<text x="511.18571428571425" y="404" font-size="12" fill="#333" font-weight="bold" text-anchor="start">52.5</text>
+<circle cx="447.28571428571433" cy="416" r="4" fill="#0277bd"/>
+<text x="455.28571428571433" y="420" font-size="10" fill="#0277bd" font-weight="normal" text-anchor="start">demand 4.2/10</text>
 </svg>

@@ -1,37 +1,1001 @@
 role,category,demand,automation_resistance,skill_depth,strategic_importance,weighted_demand,weighted_ar,weighted_sd,weighted_si,score_recomputed,tier_recomputed,score_published,tier_published,drift
+Chief AI Officer,Engineering Leadership,8,10,10,10,2.4,3.5,1.5,2.0,94,fortress,94,fortress,no
 Staff Engineer / Tech Lead,Engineering Leadership,9,9,10,10,2.7,3.15,1.5,2.0,94,fortress,94,fortress,no
+VP of AI / ML,Engineering Leadership,8,10,10,10,2.4,3.5,1.5,2.0,94,fortress,94,fortress,no
+Staff Security Engineer,Security,8,10,10,10,2.4,3.5,1.5,2.0,94,fortress,94,fortress,no
+Senior LLM Engineer,Data & AI,9,9,10,9,2.7,3.15,1.5,1.8,92,fortress,92,fortress,no
 Security Engineer,Security,9,9,9,10,2.7,3.15,1.35,2.0,92,fortress,92,fortress,no
+Senior Security Engineer,Security,9,9,9,10,2.7,3.15,1.35,2.0,92,fortress,92,fortress,no
+CTO,Engineering Leadership,7,10,10,10,2.1,3.5,1.5,2.0,91,fortress,91,fortress,no
+Principal Engineer,Engineering Leadership,8,9,10,10,2.4,3.15,1.5,2.0,91,fortress,91,fortress,no
+Senior Principal Engineer,Engineering Leadership,7,10,10,10,2.1,3.5,1.5,2.0,91,fortress,91,fortress,no
+Senior Staff Engineer,Engineering Leadership,8,9,10,10,2.4,3.15,1.5,2.0,91,fortress,91,fortress,no
+Chief Information Security Officer,Engineering Leadership,7,10,9,10,2.1,3.5,1.35,2.0,90,fortress,90,fortress,no
+VP of Engineering,Engineering Leadership,7,10,9,10,2.1,3.5,1.35,2.0,90,fortress,90,fortress,no
+VP of Security,Engineering Leadership,7,10,9,10,2.1,3.5,1.35,2.0,90,fortress,90,fortress,no
 AI Research Engineer,Data & AI,8,9,10,9,2.4,3.15,1.5,1.8,89,fortress,89,fortress,no
+AI Safety / Alignment Researcher,Data & AI,7,10,10,9,2.1,3.5,1.5,1.8,89,fortress,89,fortress,no
+Foundation Model Engineer,Data & AI,7,10,10,9,2.1,3.5,1.5,1.8,89,fortress,89,fortress,no
+LLM Research Scientist,Data & AI,7,10,10,9,2.1,3.5,1.5,1.8,89,fortress,89,fortress,no
+Senior AI Research Engineer,Data & AI,7,10,10,9,2.1,3.5,1.5,1.8,89,fortress,89,fortress,no
+Staff ML Engineer,Data & AI,8,9,10,9,2.4,3.15,1.5,1.8,89,fortress,89,fortress,no
+CUDA Engineer,Engineering,7,10,10,9,2.1,3.5,1.5,1.8,89,fortress,89,fortress,no
+Chief Architect,Engineering Leadership,6,10,10,10,1.8,3.5,1.5,2.0,88,fortress,88,fortress,no
+VP of Infrastructure,Engineering Leadership,7,10,9,9,2.1,3.5,1.35,1.8,88,fortress,88,fortress,no
+VP of Platform,Engineering Leadership,7,10,9,9,2.1,3.5,1.35,1.8,88,fortress,88,fortress,no
+AI Infrastructure Engineer,Data & AI,8,9,9,9,2.4,3.15,1.35,1.8,87,fortress,87,fortress,no
+LLM Engineer,Data & AI,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
 ML Engineer,Data & AI,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
 MLOps Engineer,Data & AI,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+Senior ML Engineer,Data & AI,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+SVP of Engineering,Engineering Leadership,6,10,9,10,1.8,3.5,1.35,2.0,87,fortress,87,fortress,no
 Platform Engineer,Platform & Infrastructure,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+AI / ML Security Engineer,Security,7,10,10,8,2.1,3.5,1.5,1.6,87,fortress,87,fortress,no
+AI Red Team Engineer,Security,7,10,10,8,2.1,3.5,1.5,1.6,87,fortress,87,fortress,no
 Application Security Engineer,Security,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
 Cloud Security Engineer,Security,9,8,9,9,2.7,2.8,1.35,1.8,87,fortress,87,fortress,no
+Security Architect,Security,8,9,9,9,2.4,3.15,1.35,1.8,87,fortress,87,fortress,no
+Senior Application Security Engineer,Security,8,9,9,9,2.4,3.15,1.35,1.8,87,fortress,87,fortress,no
+Senior Cloud Security Engineer,Security,8,9,9,9,2.4,3.15,1.35,1.8,87,fortress,87,fortress,no
+ML Research Engineer,Data & AI,7,9,10,9,2.1,3.15,1.5,1.8,86,fortress,86,fortress,no
+Pretraining Engineer,Data & AI,6,10,10,9,1.8,3.5,1.5,1.8,86,fortress,86,fortress,no
+Principal ML Engineer,Data & AI,7,9,10,9,2.1,3.15,1.5,1.8,86,fortress,86,fortress,no
+Autonomous Vehicle Software Engineer,Engineering,6,10,10,9,1.8,3.5,1.5,1.8,86,fortress,86,fortress,no
+Distributed Systems Engineer,Engineering,7,9,10,9,2.1,3.15,1.5,1.8,86,fortress,86,fortress,no
+GPU Engineer,Engineering,6,10,10,9,1.8,3.5,1.5,1.8,86,fortress,86,fortress,no
+Self-Driving Perception Engineer,Engineering,6,10,10,9,1.8,3.5,1.5,1.8,86,fortress,86,fortress,no
+Self-Driving Planning Engineer,Engineering,6,10,10,9,1.8,3.5,1.5,1.8,86,fortress,86,fortress,no
+Triton (GPU) Kernel Engineer,Engineering,6,10,10,9,1.8,3.5,1.5,1.8,86,fortress,86,fortress,no
+Director of AI / ML,Engineering Leadership,7,9,10,9,2.1,3.15,1.5,1.8,86,fortress,86,fortress,no
+VP of Product Engineering,Engineering Leadership,7,9,9,10,2.1,3.15,1.35,2.0,86,fortress,86,fortress,no
+Staff Platform Engineer,Platform & Infrastructure,7,9,10,9,2.1,3.15,1.5,1.8,86,fortress,86,fortress,no
+Staff SRE,Platform & Infrastructure,7,9,10,9,2.1,3.15,1.5,1.8,86,fortress,86,fortress,no
+AI Forward Deployed Engineer,Data & AI,9,8,8,9,2.7,2.8,1.2,1.8,85,fortress,85,fortress,no
+Senior AI Agent Engineer,Data & AI,9,8,9,8,2.7,2.8,1.35,1.6,85,fortress,85,fortress,no
+Distinguished Engineer,Engineering Leadership,5,10,10,10,1.5,3.5,1.5,2.0,85,fortress,85,fortress,no
+VP of Product,Engineering Leadership,7,9,8,10,2.1,3.15,1.2,2.0,85,fortress,85,fortress,no
+Multimodal AI Engineer,Data & AI,7,9,10,8,2.1,3.15,1.5,1.6,84,fortress,84,fortress,no
+Quantitative Developer,Data & AI,7,9,10,8,2.1,3.15,1.5,1.6,84,fortress,84,fortress,no
+Red-team AI Engineer (Model Safety),Data & AI,6,10,10,8,1.8,3.5,1.5,1.6,84,fortress,84,fortress,no
+Senior MLOps Engineer,Data & AI,8,8,9,9,2.4,2.8,1.35,1.8,84,fortress,84,fortress,no
+Chief Data Officer (CDO),Engineering Leadership,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+Director of Engineering,Engineering Leadership,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+Group Engineering Manager,Engineering Leadership,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+Senior Engineering Manager,Engineering Leadership,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+VP of Data,Engineering Leadership,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+Internal Developer Platform (IDP) Engineer,Platform & Infrastructure,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+Senior Platform Engineer,Platform & Infrastructure,8,8,9,9,2.4,2.8,1.35,1.8,84,fortress,84,fortress,no
+Senior SRE,Platform & Infrastructure,8,8,9,9,2.4,2.8,1.35,1.8,84,fortress,84,fortress,no
 Site Reliability Engineer,Platform & Infrastructure,8,8,9,9,2.4,2.8,1.35,1.8,84,fortress,84,fortress,no
+Cloud Security Architect,Security,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
 Offensive Security / Red Team,Security,7,9,10,8,2.1,3.15,1.5,1.6,84,fortress,84,fortress,no
+Product Security Engineer,Security,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+Senior Forward Deployed Engineer,Specialized & Emerging,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+Senior TPM,Specialized & Emerging,7,9,9,9,2.1,3.15,1.35,1.8,84,fortress,84,fortress,no
+AI Agent Engineer,Data & AI,10,7,8,8,3.0,2.45,1.2,1.6,83,fortress,83,fortress,no
+Principal Data Engineer,Data & AI,6,9,10,9,1.8,3.15,1.5,1.8,83,fortress,83,fortress,no
+Principal Backend Engineer,Engineering,6,9,10,9,1.8,3.15,1.5,1.8,83,fortress,83,fortress,no
 Engineering Manager,Engineering Leadership,7,9,8,9,2.1,3.15,1.2,1.8,83,fortress,83,fortress,no
+Senior Technical PM,Product & Design,7,9,8,9,2.1,3.15,1.2,1.8,83,fortress,83,fortress,no
+Technical Program Manager,Specialized & Emerging,7,9,8,9,2.1,3.15,1.2,1.8,83,fortress,83,fortress,no
+AI Evaluations Engineer,Data & AI,7,9,9,8,2.1,3.15,1.35,1.6,82,safe,82,safe,no
+AI Product Manager,Data & AI,8,8,8,9,2.4,2.8,1.2,1.8,82,safe,82,safe,no
 Data Engineer,Data & AI,9,7,8,9,2.7,2.45,1.2,1.8,82,safe,82,safe,no
+ML Infrastructure Engineer,Data & AI,7,9,9,8,2.1,3.15,1.35,1.6,82,safe,82,safe,no
+Senior Computer Vision Engineer,Data & AI,7,9,9,8,2.1,3.15,1.35,1.6,82,safe,82,safe,no
+Rust Backend Engineer,Engineering,7,9,9,8,2.1,3.15,1.35,1.6,82,safe,82,safe,no
+Chief Product Officer,Engineering Leadership,6,9,8,10,1.8,3.15,1.2,2.0,82,safe,82,safe,no
+Fellow Engineer,Engineering Leadership,4,10,10,10,1.2,3.5,1.5,2.0,82,safe,82,safe,no
+Tech Lead Manager,Engineering Leadership,8,8,8,9,2.4,2.8,1.2,1.8,82,safe,82,safe,no
+Kubernetes / Container Platform Engineer,Platform & Infrastructure,8,8,9,8,2.4,2.8,1.35,1.6,82,safe,82,safe,no
+Senior Kubernetes Engineer,Platform & Infrastructure,8,8,9,8,2.4,2.8,1.35,1.6,82,safe,82,safe,no
+Senior IR Engineer,Security,7,9,9,8,2.1,3.15,1.35,1.6,82,safe,82,safe,no
+AI Interpretability Researcher,Data & AI,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Algorithmic Trading Engineer,Data & AI,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Computer Vision Researcher,Data & AI,6,9,10,8,1.8,3.15,1.5,1.6,81,safe,81,safe,no
+Drug Discovery ML Engineer,Data & AI,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+HFT Engineer (High-Frequency Trading),Data & AI,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Quantitative Researcher,Data & AI,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Research Scientist,Data & AI,6,9,10,8,1.8,3.15,1.5,1.6,81,safe,81,safe,no
+Staff Data Engineer,Data & AI,7,8,9,9,2.1,2.8,1.35,1.8,81,safe,81,safe,no
+Vision-Language Model Engineer,Data & AI,6,9,10,8,1.8,3.15,1.5,1.6,81,safe,81,safe,no
+AI Accelerator Hardware Engineer,Engineering,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+ASIC Design Engineer,Engineering,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Aerospace Embedded Engineer,Engineering,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+C++ Backend / Server Engineer,Engineering,6,9,10,8,1.8,3.15,1.5,1.6,81,safe,81,safe,no
+Chip Design Engineer,Engineering,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Defense Embedded Engineer,Engineering,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Path Planning Engineer,Engineering,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+SLAM Engineer,Engineering,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Self-Driving Controls Engineer,Engineering,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Senior Systems Engineer,Engineering,6,9,10,8,1.8,3.15,1.5,1.6,81,safe,81,safe,no
+Software Architect,Engineering,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Staff Backend Engineer,Engineering,7,8,9,9,2.1,2.8,1.35,1.8,81,safe,81,safe,no
 Systems / Low-level Engineer,Engineering,6,9,10,8,1.8,3.15,1.5,1.6,81,safe,81,safe,no
+Director of Data,Engineering Leadership,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Director of Infrastructure,Engineering Leadership,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Director of Platform,Engineering Leadership,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Director of Security,Engineering Leadership,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Head of DevOps / SRE,Engineering Leadership,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Head of Engineering,Engineering Leadership,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Senior Director of Engineering,Engineering Leadership,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Principal Product Manager,Product & Design,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Application Security Architect,Security,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Cryptography Engineer,Security,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Security Researcher,Security,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Vulnerability Researcher,Security,5,10,10,8,1.5,3.5,1.5,1.6,81,safe,81,safe,no
+Principal TPM,Specialized & Emerging,6,9,9,9,1.8,3.15,1.35,1.8,81,safe,81,safe,no
+Language Runtime Engineer (V8),Engineering,4,10,10,9,1.2,3.5,1.5,1.8,80,safe,80,safe,no
+Chief Information Officer (CIO),Engineering Leadership,6,9,8,9,1.8,3.15,1.2,1.8,80,safe,80,safe,no
+Deputy CISO,Engineering Leadership,6,9,8,9,1.8,3.15,1.2,1.8,80,safe,80,safe,no
+Head of Backend,Engineering Leadership,6,9,8,9,1.8,3.15,1.2,1.8,80,safe,80,safe,no
+Group Product Manager,Product & Design,6,9,8,9,1.8,3.15,1.2,1.8,80,safe,80,safe,no
+Platform Product Manager,Product & Design,6,9,8,9,1.8,3.15,1.2,1.8,80,safe,80,safe,no
+DevSecOps Engineer,Security,8,8,8,8,2.4,2.8,1.2,1.6,80,safe,80,safe,no
+Incident Response Engineer,Security,8,8,8,8,2.4,2.8,1.2,1.6,80,safe,80,safe,no
+Forward Deployed Engineer,Specialized & Emerging,8,8,8,8,2.4,2.8,1.2,1.6,80,safe,80,safe,no
+Computational Biology Engineer,Data & AI,5,10,10,7,1.5,3.5,1.5,1.4,79,safe,79,safe,no
+Computer Vision Engineer,Data & AI,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+Diffusion Model Engineer,Data & AI,6,9,10,7,1.8,3.15,1.5,1.4,79,safe,79,safe,no
+Fine-tuning Specialist,Data & AI,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+ML Platform Engineer,Data & AI,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+RL Researcher,Data & AI,5,10,10,7,1.5,3.5,1.5,1.4,79,safe,79,safe,no
+RLHF Engineer,Data & AI,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Reinforcement Learning Engineer,Data & AI,6,9,10,7,1.8,3.15,1.5,1.4,79,safe,79,safe,no
+Senior Applied Scientist,Data & AI,6,8,10,9,1.8,2.8,1.5,1.8,79,safe,79,safe,no
+Senior Data Engineer,Data & AI,8,7,8,9,2.4,2.45,1.2,1.8,79,safe,79,safe,no
+Video Generation Engineer,Data & AI,6,9,10,7,1.8,3.15,1.5,1.4,79,safe,79,safe,no
+Automotive Software Engineer (AUTOSAR),Engineering,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Backend Performance Engineer,Engineering,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Microservices Architect,Engineering,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+Performance Engineer,Engineering,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Real-time Systems Engineer,Engineering,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Robotics Software Engineer,Engineering,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Semiconductor Engineer,Engineering,5,10,10,7,1.5,3.5,1.5,1.4,79,safe,79,safe,no
+Senior Embedded Engineer,Engineering,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Streaming Systems Engineer (Kafka),Engineering,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+Verification Engineer (RTL),Engineering,5,10,10,7,1.5,3.5,1.5,1.4,79,safe,79,safe,no
+Production Engineer,Platform & Infrastructure,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+Senior Infrastructure Engineer,Platform & Infrastructure,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
 Technical Product Manager,Product & Design,7,8,8,9,2.1,2.8,1.2,1.8,79,safe,79,safe,no
+Cloud Pentester,Security,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+DFIR (Forensics & Incident Response),Security,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Penetration Tester,Security,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+Supply Chain Security Engineer,Security,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Zero Trust Architect,Security,6,9,9,8,1.8,3.15,1.35,1.6,79,safe,79,safe,no
+Senior Solutions Architect,Specialized & Emerging,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
 Solutions Architect,Specialized & Emerging,7,8,9,8,2.1,2.8,1.35,1.6,79,safe,79,safe,no
+Distributed Training Engineer,Data & AI,5,9,10,8,1.5,3.15,1.5,1.6,78,safe,78,safe,no
+Browser Engine Engineer (Chromium),Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Cleared Defense Software Engineer (TS/SCI),Engineering,6,9,8,8,1.8,3.15,1.2,1.6,78,safe,78,safe,no
+Compiler Engineer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+"Container Runtime Engineer (containerd, runc)",Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Defense Software Engineer,Engineering,6,9,8,8,1.8,3.15,1.2,1.6,78,safe,78,safe,no
+Humanoid Robotics Engineer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Hypervisor / Virtualization Engineer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+LLVM Engineer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Language Runtime Engineer (JVM),Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Linux Kernel Developer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Satellite Software Engineer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Senior Rendering Engineer,Engineering,5,9,10,8,1.5,3.15,1.5,1.6,78,safe,78,safe,no
+TPU / NPU Hardware Engineer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Trading Systems Engineer,Engineering,5,9,10,8,1.5,3.15,1.5,1.6,78,safe,78,safe,no
+Windows Kernel / Driver Developer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Zero-Knowledge Proof Engineer,Engineering,4,10,10,8,1.2,3.5,1.5,1.6,78,safe,78,safe,no
+Senior Product Manager,Product & Design,7,8,7,9,2.1,2.8,1.05,1.8,78,safe,78,safe,no
+Privacy Engineer,Security,6,9,8,8,1.8,3.15,1.2,1.6,78,safe,78,safe,no
+Applied ML Engineer,Data & AI,8,7,8,8,2.4,2.45,1.2,1.6,77,safe,77,safe,no
+Data Platform Engineer,Data & AI,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+Go Backend Engineer,Engineering,8,7,8,8,2.4,2.45,1.2,1.6,77,safe,77,safe,no
+Senior Backend Engineer,Engineering,8,7,8,8,2.4,2.45,1.2,1.6,77,safe,77,safe,no
+AWS Security Specialist,Platform & Infrastructure,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+AWS Solutions Architect,Platform & Infrastructure,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+Cloud Architect,Platform & Infrastructure,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+Databricks Engineer,Platform & Infrastructure,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+Infrastructure Engineer,Platform & Infrastructure,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+Observability Engineer,Platform & Infrastructure,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+Senior Sales Engineer,Specialized & Emerging,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+Senior Solutions Engineer,Specialized & Emerging,7,8,8,8,2.1,2.8,1.2,1.6,77,safe,77,safe,no
+3D Vision Engineer,Data & AI,5,9,10,7,1.5,3.15,1.5,1.4,76,safe,76,safe,no
+AI Sales Engineer,Data & AI,7,8,7,8,2.1,2.8,1.05,1.6,76,safe,76,safe,no
+Applied Scientist,Data & AI,6,8,9,8,1.8,2.8,1.35,1.6,76,safe,76,safe,no
+Climate Modeling Engineer,Data & AI,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Data Infrastructure Engineer,Data & AI,6,8,9,8,1.8,2.8,1.35,1.6,76,safe,76,safe,no
+ML Benchmark / Eval Researcher,Data & AI,5,9,9,8,1.5,3.15,1.35,1.6,76,safe,76,safe,no
+ML Compiler Engineer (TVM/XLA),Data & AI,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+ML Reliability Engineer,Data & AI,5,9,9,8,1.5,3.15,1.35,1.6,76,safe,76,safe,no
+Protein Structure Prediction Engineer,Data & AI,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Aerospace Software Engineer,Engineering,5,9,9,8,1.5,3.15,1.35,1.6,76,safe,76,safe,no
+Analog Design Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Bare Metal / Firmware-near Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Blockchain Protocol Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Computational Photography Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+DSP Engineer (Digital Signal Processing),Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Digital Design Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+DirectX Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Embedded Systems Architect,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Event-Driven Architecture Engineer,Engineering,6,8,9,8,1.8,2.8,1.35,1.6,76,safe,76,safe,no
+FPGA Design Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+FPGA Software Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Game Rendering / Graphics Programmer,Engineering,5,9,10,7,1.5,3.15,1.5,1.4,76,safe,76,safe,no
+Graphics / Rendering Engineer,Engineering,5,9,10,7,1.5,3.15,1.5,1.4,76,safe,76,safe,no
+Layer 2 / Rollup Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Medical Device Firmware Engineer,Engineering,5,9,9,8,1.5,3.15,1.35,1.6,76,safe,76,safe,no
+Metal Engineer (Apple),Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Mixed-signal Design Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Physical Design Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+RTL Designer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Real-time Ray Tracing Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Risk Engineer (Financial),Engineering,5,9,9,8,1.5,3.15,1.35,1.6,76,safe,76,safe,no
+Robotic Manipulation Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Senior Firmware Engineer,Engineering,5,9,9,8,1.5,3.15,1.35,1.6,76,safe,76,safe,no
+Space / Orbital Software Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+SystemVerilog Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+VLSI Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Verilog Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Video Codec Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Vulkan Engineer,Engineering,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Automotive Security Engineer,Security,5,9,9,8,1.5,3.15,1.35,1.6,76,safe,76,safe,no
+Cryptographic Protocol Engineer,Security,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Differential Privacy Engineer,Security,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Exploit Developer,Security,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+GRC / Compliance Engineer,Security,7,8,7,8,2.1,2.8,1.05,1.6,76,safe,76,safe,no
+Hardware Security Engineer,Security,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Kubernetes Security Engineer,Security,6,8,9,8,1.8,2.8,1.35,1.6,76,safe,76,safe,no
+Reverse Engineer,Security,4,10,10,7,1.2,3.5,1.5,1.4,76,safe,76,safe,no
+Sales Engineer,Specialized & Emerging,7,8,7,8,2.1,2.8,1.05,1.6,76,safe,76,safe,no
+Solutions Engineer,Specialized & Emerging,7,8,7,8,2.1,2.8,1.05,1.6,76,safe,76,safe,no
+AI Solutions Engineer,Data & AI,8,7,7,8,2.4,2.45,1.05,1.6,75,safe,75,safe,no
+Applied AI Engineer,Data & AI,9,6,7,8,2.7,2.1,1.05,1.6,75,safe,75,safe,no
+Generative AI Engineer,Data & AI,9,6,7,8,2.7,2.1,1.05,1.6,75,safe,75,safe,no
+RAG (Retrieval-Augmented Generation) Engineer,Data & AI,8,7,7,8,2.4,2.45,1.05,1.6,75,safe,75,safe,no
+Enterprise Architect,Engineering,5,9,8,8,1.5,3.15,1.2,1.6,75,safe,75,safe,no
+Full-Stack AI Engineer,Engineering,9,6,7,8,2.7,2.1,1.05,1.6,75,safe,75,safe,no
+Garbage Collection Engineer,Engineering,3,10,10,8,0.9,3.5,1.5,1.6,75,safe,75,safe,no
+Language Runtime Engineer (CLR),Engineering,3,10,10,8,0.9,3.5,1.5,1.6,75,safe,75,safe,no
+Memory Management Engineer,Engineering,3,10,10,8,0.9,3.5,1.5,1.6,75,safe,75,safe,no
+Director of Product,Engineering Leadership,6,8,7,9,1.8,2.8,1.05,1.8,75,safe,75,safe,no
 Developer Experience Engineer,Specialized & Emerging,7,8,8,7,2.1,2.8,1.2,1.4,75,safe,75,safe,no
+Bioinformatics Engineer,Data & AI,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Fraud ML Engineer,Data & AI,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Image Generation Engineer,Data & AI,6,8,9,7,1.8,2.8,1.35,1.4,74,safe,74,safe,no
+JAX Specialist,Data & AI,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Ray / Distributed ML Engineer,Data & AI,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Search ML Engineer (Learning to Rank),Data & AI,6,8,9,7,1.8,2.8,1.35,1.4,74,safe,74,safe,no
+Triton Inference Server Engineer,Data & AI,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+vLLM / SGLang Engineer,Data & AI,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Embedded C Engineer,Engineering,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Embedded C++ Engineer,Engineering,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
 Embedded Engineer,Engineering,6,8,9,7,1.8,2.8,1.35,1.4,74,safe,74,safe,no
+Embedded Linux Engineer,Engineering,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+FinTech Backend Engineer,Engineering,7,7,8,8,2.1,2.45,1.2,1.6,74,safe,74,safe,no
+Firmware Engineer,Engineering,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Healthcare Software Engineer,Engineering,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+ROS Engineer,Engineering,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+"RTOS Engineer (FreeRTOS, Zephyr)",Engineering,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Reliability Engineer (Application),Engineering,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Robotics Firmware Engineer,Engineering,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Search Backend Engineer (Elasticsearch),Engineering,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Software Modernization Engineer (Legacy → Cloud),Engineering,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+WebAssembly (WASM) Engineer,Engineering,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+AWS Data Engineer,Platform & Infrastructure,7,7,8,8,2.1,2.45,1.2,1.6,74,safe,74,safe,no
+Azure AI Engineer,Platform & Infrastructure,7,7,8,8,2.1,2.45,1.2,1.6,74,safe,74,safe,no
+Azure Solutions Architect,Platform & Infrastructure,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Cloud Solutions Architect,Platform & Infrastructure,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+GCP Solutions Architect,Platform & Infrastructure,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Kubernetes Operator Developer,Platform & Infrastructure,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Lead DevOps Engineer,Platform & Infrastructure,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Senior Database Engineer,Platform & Infrastructure,6,8,9,7,1.8,2.8,1.35,1.4,74,safe,74,safe,no
+Senior DevOps Engineer,Platform & Infrastructure,7,7,8,8,2.1,2.45,1.2,1.6,74,safe,74,safe,no
+Senior Design Engineer,Product & Design,6,8,9,7,1.8,2.8,1.35,1.4,74,safe,74,safe,no
+API Security Engineer,Security,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Container Security Engineer,Security,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Network Security Engineer,Security,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Open Source Security Engineer,Security,5,9,9,7,1.5,3.15,1.35,1.4,74,safe,74,safe,no
+Pre-sales Solutions Architect,Specialized & Emerging,6,8,8,8,1.8,2.8,1.2,1.6,74,safe,74,safe,no
+Senior Developer Experience Engineer,Specialized & Emerging,6,8,9,7,1.8,2.8,1.35,1.4,74,safe,74,safe,no
 AI Application Engineer,Data & AI,10,5,6,8,3.0,1.75,0.9,1.6,73,safe,73,safe,no
+Weather / Atmospheric ML Engineer,Data & AI,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Bitcoin Core Developer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Browser Engine Engineer (WebKit),Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Climate Tech Software Engineer,Engineering,5,9,8,7,1.5,3.15,1.2,1.4,73,safe,73,safe,no
+Codec Engineer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Domain-Driven Design Architect,Engineering,5,8,9,8,1.5,2.8,1.35,1.6,73,safe,73,safe,no
+EDA Software Engineer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Game Engine Programmer,Engineering,4,9,10,7,1.2,3.15,1.5,1.4,73,safe,73,safe,no
+Programming Language Designer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Quantum Algorithms Engineer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Quantum Software Engineer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Rendering Researcher,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+Smart Contract Auditor,Engineering,4,9,10,7,1.2,3.15,1.5,1.4,73,safe,73,safe,no
+Trading Infrastructure Engineer,Engineering,4,9,9,8,1.2,3.15,1.35,1.6,73,safe,73,safe,no
+macOS / Darwin Engineer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+zk-SNARK Engineer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+zk-STARK Engineer,Engineering,3,10,10,7,0.9,3.5,1.5,1.4,73,safe,73,safe,no
+API Product Manager,Product & Design,6,8,7,8,1.8,2.8,1.05,1.6,73,safe,73,safe,no
+Data Product Manager,Product & Design,6,8,7,8,1.8,2.8,1.05,1.6,73,safe,73,safe,no
+Enterprise Product Manager,Product & Design,6,8,7,8,1.8,2.8,1.05,1.6,73,safe,73,safe,no
 Product Manager,Product & Design,7,7,6,9,2.1,2.45,0.9,1.8,73,safe,73,safe,no
+GDPR / Privacy Compliance Engineer,Security,6,8,7,8,1.8,2.8,1.05,1.6,73,safe,73,safe,no
+Pre-sales Engineer,Specialized & Emerging,6,8,7,8,1.8,2.8,1.05,1.6,73,safe,73,safe,no
+Databricks Data Engineer,Data & AI,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
+Hugging Face / Transformers Engineer,Data & AI,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
+NLP Researcher,Data & AI,5,8,10,7,1.5,2.8,1.5,1.4,72,safe,72,safe,no
+PyTorch Specialist,Data & AI,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
+Real-time Data Engineer,Data & AI,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Recommender Systems Engineer,Data & AI,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
+Streaming Data Engineer,Data & AI,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Voice AI Engineer,Data & AI,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
+Backend API Engineer,Engineering,8,6,7,8,2.4,2.1,1.05,1.6,72,safe,72,safe,no
 Backend Engineer,Engineering,8,6,7,8,2.4,2.1,1.05,1.6,72,safe,72,safe,no
+Python Backend Engineer,Engineering,8,6,7,8,2.4,2.1,1.05,1.6,72,safe,72,safe,no
+AWS DevOps Engineer,Platform & Infrastructure,7,7,7,8,2.1,2.45,1.05,1.6,72,safe,72,safe,no
+CI/CD Engineer,Platform & Infrastructure,7,7,7,8,2.1,2.45,1.05,1.6,72,safe,72,safe,no
 DevOps Engineer,Platform & Infrastructure,7,7,7,8,2.1,2.45,1.05,1.6,72,safe,72,safe,no
+Snowflake Engineer,Platform & Infrastructure,7,7,7,8,2.1,2.45,1.05,1.6,72,safe,72,safe,no
+Vector Database Engineer (Pinecone/Weaviate),Platform & Infrastructure,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Design Director,Product & Design,4,9,8,8,1.2,3.15,1.2,1.6,72,safe,72,safe,no
+Design Engineer,Product & Design,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
+Design Systems Engineer,Product & Design,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Security QA Engineer,Quality & Testing,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Test Architect,Quality & Testing,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Bug Bounty Hunter,Security,5,9,9,6,1.5,3.15,1.35,1.2,72,safe,72,safe,no
+Identity & Access Management Engineer,Security,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
+Security Automation / SOAR Engineer,Security,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Threat Hunter,Security,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Web Application Pentester,Security,6,8,8,7,1.8,2.8,1.2,1.4,72,safe,72,safe,no
+Audio ML Engineer,Data & AI,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Principal Data Scientist,Data & AI,4,8,10,8,1.2,2.8,1.5,1.6,71,safe,71,safe,no
+Quantitative Analyst,Data & AI,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Speech Recognition Engineer,Data & AI,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Speech Synthesis (TTS) Engineer,Data & AI,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Audio DSP Engineer,Engineering,3,10,10,6,0.9,3.5,1.5,1.2,71,safe,71,safe,no
+DFT (Design for Test) Engineer,Engineering,3,10,10,6,0.9,3.5,1.5,1.2,71,safe,71,safe,no
+Drone Firmware Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Drone Software Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Energy / Smart Grid Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Game Anti-cheat Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Game Physics Programmer,Engineering,4,9,10,6,1.2,3.15,1.5,1.2,71,safe,71,safe,no
+Idempotency / Retries Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Lightning Network Engineer,Engineering,3,10,10,6,0.9,3.5,1.5,1.2,71,safe,71,safe,no
+Medical Imaging Software Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Microcontroller Programmer,Engineering,5,9,8,6,1.5,3.15,1.2,1.2,71,safe,71,safe,no
+Real-time Communications Engineer (WebRTC),Engineering,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Robotics Simulation Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Senior Smart Contract Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Service Mesh Architect,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Shader Programmer,Engineering,4,9,10,6,1.2,3.15,1.5,1.2,71,safe,71,safe,no
+Staff Android Engineer,Engineering,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Staff Full-Stack Engineer,Engineering,6,7,8,8,1.8,2.45,1.2,1.6,71,safe,71,safe,no
+Staff iOS Engineer,Engineering,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Static Analysis Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+VHDL Engineer,Engineering,3,10,10,6,0.9,3.5,1.5,1.2,71,safe,71,safe,no
+Video Encoding Engineer,Engineering,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Head of Mobile,Engineering Leadership,5,8,8,8,1.5,2.8,1.2,1.6,71,safe,71,safe,no
+Database Architect,Platform & Infrastructure,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Senior Design Manager,Product & Design,5,8,8,8,1.5,2.8,1.2,1.6,71,safe,71,safe,no
+Senior Design Systems Engineer,Product & Design,5,8,9,7,1.5,2.8,1.35,1.4,71,safe,71,safe,no
+Embedded Security Engineer,Security,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Fuzzing Engineer,Security,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Hardware Pentester,Security,3,10,10,6,0.9,3.5,1.5,1.2,71,safe,71,safe,no
+ICS / SCADA Security Engineer,Security,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Malware Analyst,Security,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Open Source Maintainer,Specialized & Emerging,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+AI Ethics Researcher,Data & AI,4,9,8,7,1.2,3.15,1.2,1.4,70,safe,70,safe,no
+AI Workflow / Orchestration Engineer,Data & AI,7,7,7,7,2.1,2.45,1.05,1.4,70,safe,70,safe,no
+Senior NLP Engineer,Data & AI,6,7,9,7,1.8,2.45,1.35,1.4,70,safe,70,safe,no
+Compliance Software Engineer,Engineering,5,8,7,8,1.5,2.8,1.05,1.6,70,safe,70,safe,no
+GCC Maintainer,Engineering,2,10,10,7,0.6,3.5,1.5,1.4,70,safe,70,safe,no
+Chief Digital Officer,Engineering Leadership,5,8,7,8,1.5,2.8,1.05,1.6,70,safe,70,safe,no
+Director of Design,Engineering Leadership,5,8,7,8,1.5,2.8,1.05,1.6,70,safe,70,safe,no
+Engineering Chief of Staff,Engineering Leadership,5,8,7,8,1.5,2.8,1.05,1.6,70,safe,70,safe,no
+Chaos Engineer,Platform & Infrastructure,4,9,8,7,1.2,3.15,1.2,1.4,70,safe,70,safe,no
+Payments Product Manager,Product & Design,5,8,7,8,1.5,2.8,1.05,1.6,70,safe,70,safe,no
+SOC Manager,Security,5,8,7,8,1.5,2.8,1.05,1.6,70,safe,70,safe,no
+Vulnerability Management Engineer,Security,7,7,7,7,2.1,2.45,1.05,1.4,70,safe,70,safe,no
+Anomaly Detection ML Engineer,Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Big Data Engineer,Data & AI,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Data Lakehouse Engineer,Data & AI,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Data Reliability Engineer,Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Embedding Engineer,Data & AI,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Feature Store Engineer,Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Genomics Pipeline Engineer,Data & AI,4,9,9,6,1.2,3.15,1.35,1.2,69,stable,69,stable,no
+Iceberg / Delta / Hudi Engineer,Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Kafka Streams Engineer,Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+ML Tooling Engineer (Ray/Dask),Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Model Deployment Engineer,Data & AI,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Model Monitoring Engineer,Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Spark Engineer,Data & AI,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Synthetic Data Engineer,Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Time Series ML Engineer,Data & AI,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Vector Search Engineer,Data & AI,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Application Architect,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Backend Caching Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Developer Tools Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Edge Runtime Engineer (Cloudflare Workers/Deno Deploy),Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Game AI Programmer,Engineering,5,8,9,6,1.5,2.8,1.35,1.2,69,stable,69,stable,no
+HL7 / FHIR Integration Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Hardware Validation Engineer,Engineering,4,9,9,6,1.2,3.15,1.35,1.2,69,stable,69,stable,no
+Industrial Control / PLC Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Industrial Robotics Programmer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+IoT Edge Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Mobile Performance Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Pricing / Monetization Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Refactoring / Modernization Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Rust Smart Contract Engineer (Solana),Engineering,4,9,9,6,1.2,3.15,1.35,1.2,69,stable,69,stable,no
+Senior Android Engineer,Engineering,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Senior iOS Engineer,Engineering,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Streaming Media Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Workflow Engine Engineer (Temporal/Cadence),Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Yocto / Buildroot Engineer,Engineering,4,9,9,6,1.2,3.15,1.35,1.2,69,stable,69,stable,no
+gRPC / Protobuf Engineer,Engineering,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Backstage Engineer,Platform & Infrastructure,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+ClickHouse Engineer,Platform & Infrastructure,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Database Engineer / DBA,Platform & Infrastructure,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Database Reliability Engineer,Platform & Infrastructure,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Edge Computing Engineer,Platform & Infrastructure,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+GCP Data Engineer,Platform & Infrastructure,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Multi-cloud Architect,Platform & Infrastructure,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Network Architect,Platform & Infrastructure,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+PostgreSQL DBA,Platform & Infrastructure,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Service Mesh Engineer (Istio/Linkerd),Platform & Infrastructure,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Tracing Engineer (OpenTelemetry/Jaeger),Platform & Infrastructure,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Growth Product Manager,Product & Design,6,7,7,8,1.8,2.45,1.05,1.6,69,stable,69,stable,no
+Senior Product Designer,Product & Design,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Senior UX Researcher,Product & Design,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Staff Product Designer,Product & Design,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Performance / Load Test Engineer,Quality & Testing,6,7,8,7,1.8,2.45,1.2,1.4,69,stable,69,stable,no
+Staff SDET,Quality & Testing,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Linux Security Engineer,Security,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Mobile Application Pentester,Security,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Mobile Security Engineer,Security,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Network Pentester,Security,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Experimentation Platform Engineer,Specialized & Emerging,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Salesforce Architect,Specialized & Emerging,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+Senior Developer Advocate,Specialized & Emerging,5,8,8,7,1.5,2.8,1.2,1.4,69,stable,69,stable,no
+AI Curriculum / Training Lead,Data & AI,5,8,7,7,1.5,2.8,1.05,1.4,68,stable,68,stable,no
+Causal Inference Scientist,Data & AI,4,8,9,7,1.2,2.8,1.35,1.4,68,stable,68,stable,no
+BCI (Brain-Computer Interface) Engineer,Engineering,2,10,10,6,0.6,3.5,1.5,1.2,68,stable,68,stable,no
+BSD Kernel Engineer,Engineering,2,10,10,6,0.6,3.5,1.5,1.2,68,stable,68,stable,no
+Browser Engine Engineer (Gecko/Firefox),Engineering,2,10,10,6,0.6,3.5,1.5,1.2,68,stable,68,stable,no
+Erlang Engineer,Engineering,3,9,9,7,0.9,3.15,1.35,1.4,68,stable,68,stable,no
+Event Sourcing / CQRS Engineer,Engineering,4,8,9,7,1.2,2.8,1.35,1.4,68,stable,68,stable,no
+MEV Engineer / Searcher,Engineering,3,9,10,6,0.9,3.15,1.5,1.2,68,stable,68,stable,no
+Photonics Software Engineer,Engineering,2,10,10,6,0.6,3.5,1.5,1.2,68,stable,68,stable,no
+Quantum Compiler Engineer,Engineering,2,10,10,6,0.6,3.5,1.5,1.2,68,stable,68,stable,no
+Scala Backend Engineer,Engineering,4,8,9,7,1.2,2.8,1.35,1.4,68,stable,68,stable,no
+Search Backend Engineer (Vespa),Engineering,4,8,9,7,1.2,2.8,1.35,1.4,68,stable,68,stable,no
+Design Manager,Product & Design,5,8,7,7,1.5,2.8,1.05,1.4,68,stable,68,stable,no
+Principal Product Designer,Product & Design,4,8,9,7,1.2,2.8,1.35,1.4,68,stable,68,stable,no
+Blockchain Security Auditor,Security,3,9,10,6,0.9,3.15,1.5,1.2,68,stable,68,stable,no
+Foundation Engineer (CNCF/Apache),Specialized & Emerging,3,9,9,7,0.9,3.15,1.35,1.4,68,stable,68,stable,no
+Senior Implementation Engineer,Specialized & Emerging,5,8,7,7,1.5,2.8,1.05,1.4,68,stable,68,stable,no
+Standards Engineer (W3C/IETF),Specialized & Emerging,3,9,9,7,0.9,3.15,1.35,1.4,68,stable,68,stable,no
+AI Tooling Engineer,Data & AI,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Conversational AI Engineer,Data & AI,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+Data Pipeline Engineer,Data & AI,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+LangGraph / Agent Framework Engineer,Data & AI,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+SageMaker Engineer,Data & AI,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Snowflake Data Engineer,Data & AI,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+FastAPI Engineer,Engineering,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+Java Backend Engineer,Engineering,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+Java Spring / Spring Boot Engineer,Engineering,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+Job Scheduler Engineer (Airflow/Prefect),Engineering,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Kotlin Backend Engineer,Engineering,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Senior Full-Stack Engineer,Engineering,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+Senior Game Engineer,Engineering,5,8,8,6,1.5,2.8,1.2,1.2,67,stable,67,stable,no
+AWS Engineer,Platform & Infrastructure,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+Azure DevOps Engineer,Platform & Infrastructure,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+BigQuery Engineer,Platform & Infrastructure,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
 Cloud Engineer,Platform & Infrastructure,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
+Disaster Recovery Engineer,Platform & Infrastructure,4,8,7,8,1.2,2.8,1.05,1.6,67,stable,67,stable,no
+Identity Engineer (Corp IT — Okta/Azure AD),Platform & Infrastructure,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Monitoring Engineer (Prometheus/Grafana),Platform & Infrastructure,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Redis Engineer,Platform & Infrastructure,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
 UX Designer / Researcher,Product & Design,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Senior SDET,Quality & Testing,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Endpoint Security Engineer,Security,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+SOC Analyst (Tier 3),Security,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Security Operations Engineer,Security,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Threat Intelligence Analyst,Security,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Post-sales / Customer Engineer,Specialized & Emerging,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Senior Salesforce Developer,Specialized & Emerging,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+AdTech ML Engineer,Data & AI,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+CDC (Change Data Capture) Engineer,Data & AI,4,8,8,7,1.2,2.8,1.2,1.4,66,stable,66,stable,no
+Experimentation Scientist (A/B testing),Data & AI,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+Staff Data Scientist,Data & AI,4,7,9,8,1.2,2.45,1.35,1.6,66,stable,66,stable,no
+Airline Software Engineer,Engineering,4,8,8,7,1.2,2.8,1.2,1.4,66,stable,66,stable,no
+Apple Vision Pro Application Engineer,Engineering,4,8,9,6,1.2,2.8,1.35,1.2,66,stable,66,stable,no
+CAD Software Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+Color Science Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+Console Game Engineer,Engineering,4,8,9,6,1.2,2.8,1.35,1.2,66,stable,66,stable,no
+Cosmos SDK Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+Decentralized Identity Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+Elixir / Phoenix Engineer,Engineering,4,8,8,7,1.2,2.8,1.2,1.4,66,stable,66,stable,no
+Eye Tracking Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+Frontend Architect,Engineering,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+Frontend Performance Engineer,Engineering,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+Game Network Programmer,Engineering,4,8,9,6,1.2,2.8,1.35,1.2,66,stable,66,stable,no
+Hand Tracking / Gesture Recognition Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+Hardware Wallet Firmware Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+IoT Software Engineer,Engineering,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+Logistics Software Engineer,Engineering,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+Mainframe Modernization Engineer,Engineering,4,8,8,7,1.2,2.8,1.2,1.4,66,stable,66,stable,no
+Mobile Architect,Engineering,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+OpenGL Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+Pharma Software Engineer,Engineering,4,8,8,7,1.2,2.8,1.2,1.4,66,stable,66,stable,no
+Smart Contract Engineer,Engineering,4,8,9,6,1.2,2.8,1.35,1.2,66,stable,66,stable,no
+Spatial Computing Engineer,Engineering,4,8,9,6,1.2,2.8,1.35,1.2,66,stable,66,stable,no
+Supply Chain Software Engineer,Engineering,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+VR Game Engineer,Engineering,4,8,9,6,1.2,2.8,1.35,1.2,66,stable,66,stable,no
+WebGL / WebGPU Engineer,Engineering,4,8,9,6,1.2,2.8,1.35,1.2,66,stable,66,stable,no
+Zig Engineer,Engineering,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+visionOS / Apple Vision Pro Engineer,Engineering,4,8,9,6,1.2,2.8,1.35,1.2,66,stable,66,stable,no
+Capacity Planning Engineer,Platform & Infrastructure,4,8,8,7,1.2,2.8,1.2,1.4,66,stable,66,stable,no
+Elasticsearch DBA / Engineer,Platform & Infrastructure,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+File System Engineer,Platform & Infrastructure,3,9,9,6,0.9,3.15,1.35,1.2,66,stable,66,stable,no
+FinOps Practitioner,Platform & Infrastructure,6,7,6,7,1.8,2.45,0.9,1.4,66,stable,66,stable,no
+Senior Network Engineer,Platform & Infrastructure,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
+Implementation Engineer,Specialized & Emerging,6,7,6,7,1.8,2.45,0.9,1.4,66,stable,66,stable,no
+NLP Engineer,Data & AI,6,6,8,7,1.8,2.1,1.2,1.4,65,stable,65,stable,no
+Haskell Engineer,Engineering,2,9,10,6,0.6,3.15,1.5,1.2,65,stable,65,stable,no
+OCaml Engineer,Engineering,2,9,10,6,0.6,3.15,1.5,1.2,65,stable,65,stable,no
+Sustainability Tech Engineer,Engineering,4,8,7,7,1.2,2.8,1.05,1.4,65,stable,65,stable,no
+Quality Engineering Director,Quality & Testing,4,8,7,7,1.2,2.8,1.05,1.4,65,stable,65,stable,no
+Field Engineer,Specialized & Emerging,4,8,7,7,1.2,2.8,1.05,1.4,65,stable,65,stable,no
+Open Source Program Manager (OSPO),Specialized & Emerging,4,8,7,7,1.2,2.8,1.05,1.4,65,stable,65,stable,no
+Active Learning Engineer,Data & AI,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Azure ML Engineer,Data & AI,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+Beam / Dataflow Engineer,Data & AI,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+BigQuery Data Engineer,Data & AI,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+Data Lake Engineer,Data & AI,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+Flink Engineer,Data & AI,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Llama Fine-tuning Engineer,Data & AI,5,7,8,6,1.5,2.45,1.2,1.2,64,stable,64,stable,no
+Vertex AI Engineer,Data & AI,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+Android Auto / CarPlay Engineer,Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Audio Plugin Developer (VST),Engineering,3,9,9,5,0.9,3.15,1.35,1.0,64,stable,64,stable,no
+Banking Software Engineer,Engineering,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+C# / .NET Backend Engineer,Engineering,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+Crypto Exchange Engineer,Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Crypto Wallet Engineer,Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+E-commerce Backend Engineer,Engineering,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+EHR Integration Engineer,Engineering,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+Frontend Build / Tooling Engineer,Engineering,5,7,8,6,1.5,2.45,1.2,1.2,64,stable,64,stable,no
+GIS Developer,Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Game Server Engineer,Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Geospatial Software Engineer,Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Government / GovTech Engineer,Engineering,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+GraphQL Engineer,Engineering,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+Haptics Engineer,Engineering,3,9,9,5,0.9,3.15,1.35,1.0,64,stable,64,stable,no
+Hardware Test Engineer,Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Mapping Software Engineer (Mapbox/OSM),Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Marketplace Engineer,Engineering,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+PCB Design Engineer,Engineering,3,9,9,5,0.9,3.15,1.35,1.0,64,stable,64,stable,no
+Streaming Protocol Engineer (HLS/DASH),Engineering,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Telemedicine Software Engineer,Engineering,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+Unreal Engine Engineer,Engineering,5,7,8,6,1.5,2.45,1.2,1.2,64,stable,64,stable,no
+Head of Frontend,Engineering Leadership,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+5G Software Engineer,Platform & Infrastructure,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Azure Engineer,Platform & Infrastructure,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+Build Engineer (Bazel/Buck),Platform & Infrastructure,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+GCP Engineer,Platform & Infrastructure,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+Neo4j / Graph Database Engineer,Platform & Infrastructure,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Network Automation Engineer,Platform & Infrastructure,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+Network Engineer,Platform & Infrastructure,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+SDN Engineer,Platform & Infrastructure,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Storage Architect,Platform & Infrastructure,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Storage Engineer,Platform & Infrastructure,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Wireless Software Engineer,Platform & Infrastructure,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
 Product Designer,Product & Design,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
+Quantitative UX Researcher,Product & Design,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
 SDET / Test Infrastructure,Quality & Testing,6,6,7,7,1.8,2.1,1.05,1.4,64,stable,64,stable,no
-iOS Engineer,Engineering,6,6,7,6,1.8,2.1,1.05,1.2,62,stable,62,stable,no
+Stress Test Engineer,Quality & Testing,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Active Directory Security Engineer,Security,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+PKI Engineer,Security,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+macOS Security Engineer,Security,4,8,8,6,1.2,2.8,1.2,1.2,64,stable,64,stable,no
+Developer Advocate / DevRel,Specialized & Emerging,5,7,7,7,1.5,2.45,1.05,1.4,64,stable,64,stable,no
+Clojure Engineer,Engineering,3,8,9,6,0.9,2.8,1.35,1.2,63,stable,63,stable,no
+DeFi Protocol Engineer,Engineering,3,8,9,6,0.9,2.8,1.35,1.2,63,stable,63,stable,no
+Game Producer / Tech Producer,Engineering,4,8,7,6,1.2,2.8,1.05,1.2,63,stable,63,stable,no
+Principal Frontend Engineer,Engineering,4,7,8,7,1.2,2.45,1.2,1.4,63,stable,63,stable,no
+Web Accessibility (a11y) Engineer,Engineering,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+Engineering Operations Manager,Engineering Leadership,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+Cloud Cost Optimization Engineer,Platform & Infrastructure,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+Consumer Product Manager,Product & Design,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+Mobile Product Manager,Product & Design,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+HIPAA Compliance Engineer,Security,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+ISO 27001 Auditor,Security,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+PCI-DSS Compliance Engineer,Security,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+SOC 2 Compliance Engineer,Security,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+Program Manager (Software),Specialized & Emerging,5,7,6,7,1.5,2.45,0.9,1.4,63,stable,63,stable,no
+Anthropic Claude API Engineer,Data & AI,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
+AutoGen / Multi-agent Engineer,Data & AI,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+DBT Engineer,Data & AI,6,6,6,7,1.8,2.1,0.9,1.4,62,stable,62,stable,no
+OpenAI GPT API Engineer,Data & AI,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
 Android Engineer,Engineering,6,6,7,6,1.8,2.1,1.05,1.2,62,stable,62,stable,no
 Full-Stack Engineer,Engineering,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
+Full-Stack TypeScript Engineer,Engineering,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
+Mobile Build / CI Engineer,Engineering,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+Mobile DevOps / Release Engineer,Engineering,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+Node.js Backend Engineer,Engineering,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
+REST API Engineer,Engineering,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
+TypeScript Specialist,Engineering,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
+iOS Engineer,Engineering,6,6,7,6,1.8,2.1,1.05,1.2,62,stable,62,stable,no
+Cloudflare Engineer,Platform & Infrastructure,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+Data Modeler,Platform & Infrastructure,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+Helm / Argo Engineer,Platform & Infrastructure,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+Logging Engineer (ELK/Loki/Splunk),Platform & Infrastructure,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+MySQL / MariaDB DBA,Platform & Infrastructure,6,6,7,6,1.8,2.1,1.05,1.2,62,stable,62,stable,no
+Release Engineer,Platform & Infrastructure,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+UX Researcher,Product & Design,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+SAST Engineer,Security,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+SIEM Engineer,Security,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
+Salesforce Developer,Specialized & Emerging,6,6,6,7,1.8,2.1,0.9,1.4,62,stable,62,stable,no
+AR Engineer,Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+Ada Engineer (Defense),Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
+CAM Software Engineer,Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
+Cairo Developer (StarkNet),Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
+Cardano Plutus Developer,Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
+DAW Software Engineer,Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
+Fortran Engineer (Scientific),Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
+Linter / Formatter Maintainer,Engineering,3,8,8,6,0.9,2.8,1.2,1.2,61,stable,61,stable,no
+Live Video / Broadcast Engineer,Engineering,3,8,8,6,0.9,2.8,1.2,1.2,61,stable,61,stable,no
+Micro-frontends Architect,Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+Mixed Reality Engineer,Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+Move Developer (Sui/Aptos),Engineering,3,8,9,5,0.9,2.8,1.35,1.0,61,stable,61,stable,no
+Search Backend Engineer (Solr),Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+Solidity Developer,Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+Staff Frontend Engineer,Engineering,5,6,7,7,1.5,2.1,1.05,1.4,61,stable,61,stable,no
+Substrate Engineer (Polkadot),Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
+VR Engineer,Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+Wearable Tech Engineer,Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+XR Engineer,Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+Cassandra Engineer,Platform & Infrastructure,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
+CockroachDB / TiDB Engineer,Platform & Infrastructure,3,8,8,6,0.9,2.8,1.2,1.2,61,stable,61,stable,no
+ScyllaDB Engineer,Platform & Infrastructure,3,8,8,6,0.9,2.8,1.2,1.2,61,stable,61,stable,no
+Social Engineering Specialist,Security,3,9,7,5,0.9,3.15,1.05,1.0,61,stable,61,stable,no
+API / Integration Engineer,Engineering,7,5,5,7,2.1,1.75,0.75,1.4,60,stable,60,stable,no
+AgTech Software Engineer,Engineering,3,8,7,6,0.9,2.8,1.05,1.2,60,stable,60,stable,no
+Django Engineer,Engineering,6,6,6,6,1.8,2.1,0.9,1.2,60,stable,60,stable,no
+Game Engineer,Engineering,5,7,7,5,1.5,2.45,1.05,1.0,60,stable,60,stable,no
+Gameplay Programmer,Engineering,5,7,7,5,1.5,2.45,1.05,1.0,60,stable,60,stable,no
+Next.js / SSR Engineer,Engineering,7,5,6,6,2.1,1.75,0.9,1.2,60,stable,60,stable,no
+Backup / Recovery Engineer,Platform & Infrastructure,4,7,6,7,1.2,2.45,0.9,1.4,60,stable,60,stable,no
+DNS Engineer,Platform & Infrastructure,3,8,7,6,0.9,2.8,1.05,1.2,60,stable,60,stable,no
+Data Center Engineer,Platform & Infrastructure,3,8,7,6,0.9,2.8,1.05,1.2,60,stable,60,stable,no
+IT Director,Platform & Infrastructure,4,7,6,7,1.2,2.45,0.9,1.4,60,stable,60,stable,no
+Oracle DBA,Platform & Infrastructure,5,6,8,6,1.5,2.1,1.2,1.2,60,stable,60,stable,no
+Inclusive Design Specialist,Product & Design,3,8,7,6,0.9,2.8,1.05,1.2,60,stable,60,stable,no
+Accessibility QA Engineer,Quality & Testing,4,7,6,7,1.2,2.45,0.9,1.4,60,stable,60,stable,no
+Compliance Test Engineer,Quality & Testing,4,7,6,7,1.2,2.45,0.9,1.4,60,stable,60,stable,no
+QA Manager,Quality & Testing,4,7,6,7,1.2,2.45,0.9,1.4,60,stable,60,stable,no
+Intelligent Automation Engineer,Specialized & Emerging,6,6,6,6,1.8,2.1,0.9,1.2,60,stable,60,stable,no
+AutoML Engineer,Data & AI,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Data Augmentation Engineer,Data & AI,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Data Warehouse Engineer,Data & AI,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+Database Administrator,Data & AI,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+Prefect / Dagster Engineer,Data & AI,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Senior Analytics Engineer,Data & AI,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+Senior Data Scientist,Data & AI,5,5,8,7,1.5,1.75,1.2,1.4,59,stable,59,stable,no
+TensorFlow Specialist,Data & AI,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+XGBoost / Gradient Boosting Specialist,Data & AI,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+BIM Software Engineer,Engineering,3,8,8,5,0.9,2.8,1.2,1.0,59,stable,59,stable,no
+Code Quality Engineer,Engineering,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Full-Stack Python Engineer,Engineering,6,5,6,7,1.8,1.75,0.9,1.4,59,stable,59,stable,no
+Game Audio Programmer,Engineering,3,8,8,5,0.9,2.8,1.2,1.0,59,stable,59,stable,no
+Game Live Ops Engineer,Engineering,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Game Tools Programmer,Engineering,4,7,8,5,1.2,2.45,1.2,1.0,59,stable,59,stable,no
+Hyperledger Fabric Engineer,Engineering,3,8,8,5,0.9,2.8,1.2,1.0,59,stable,59,stable,no
+Insurance Tech Engineer (Insurtech),Engineering,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Java EE / Jakarta EE Engineer,Engineering,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Kotlin Multiplatform Engineer,Engineering,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Legal Tech Engineer,Engineering,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Mainframe Engineer,Engineering,3,8,8,5,0.9,2.8,1.2,1.0,59,stable,59,stable,no
+Meta Quest Developer,Engineering,4,7,8,5,1.2,2.45,1.2,1.0,59,stable,59,stable,no
+Photography Software Engineer,Engineering,3,8,8,5,0.9,2.8,1.2,1.0,59,stable,59,stable,no
+Quarkus Engineer,Engineering,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Ruby on Rails Engineer,Engineering,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+T3 / tRPC Stack Engineer,Engineering,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+Unity XR Developer,Engineering,4,7,8,5,1.2,2.45,1.2,1.0,59,stable,59,stable,no
+Alibaba Cloud Engineer,Platform & Infrastructure,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Block Storage Engineer,Platform & Infrastructure,3,8,8,5,0.9,2.8,1.2,1.0,59,stable,59,stable,no
+CDN Engineer,Platform & Infrastructure,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+DuckDB Engineer,Platform & Infrastructure,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+DynamoDB Specialist,Platform & Infrastructure,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+MongoDB Engineer,Platform & Infrastructure,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+Monorepo Engineer (Nx/Turborepo),Platform & Infrastructure,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Object Storage Engineer (S3/MinIO),Platform & Infrastructure,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+SQL Server DBA,Platform & Infrastructure,5,6,7,6,1.5,2.1,1.05,1.2,59,stable,59,stable,no
+Service Catalog Engineer,Platform & Infrastructure,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Industrial Designer (hardware-software products),Product & Design,3,8,8,5,0.9,2.8,1.2,1.0,59,stable,59,stable,no
+Service Designer,Product & Design,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Hardware QA Engineer,Quality & Testing,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+DAST Engineer,Security,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Windows Security Engineer,Security,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+Wireless Pentester,Security,3,8,8,5,0.9,2.8,1.2,1.0,59,stable,59,stable,no
+A/B Testing Engineer,Specialized & Emerging,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+SAP HANA Developer,Specialized & Emerging,4,7,7,6,1.2,2.45,1.05,1.2,59,stable,59,stable,no
+AI Trainer / RLHF Annotator,Data & AI,8,5,4,5,2.4,1.75,0.6,1.0,58,stable,58,stable,no
+Active Learning / Labeling Operations Lead,Data & AI,4,7,6,6,1.2,2.45,0.9,1.2,58,stable,58,stable,no
+Head of QA,Engineering Leadership,4,7,6,6,1.2,2.45,0.9,1.2,58,stable,58,stable,no
+Conversational Designer,Product & Design,4,7,6,6,1.2,2.45,0.9,1.2,58,stable,58,stable,no
+Product Operations Manager,Product & Design,4,7,6,6,1.2,2.45,0.9,1.2,58,stable,58,stable,no
+Developer Educator,Specialized & Emerging,4,7,6,6,1.2,2.45,0.9,1.2,58,stable,58,stable,no
+Developer Marketing Engineer,Specialized & Emerging,4,7,6,6,1.2,2.45,0.9,1.2,58,stable,58,stable,no
+Airflow Engineer,Data & AI,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
 Analytics Engineer,Data & AI,6,5,6,6,1.8,1.75,0.9,1.2,57,exposed,57,exposed,no
-Frontend Engineer,Engineering,6,4,5,6,1.8,1.4,0.75,1.2,52,exposed,52,exposed,no
+LangChain / LlamaIndex Engineer,Data & AI,6,5,6,6,1.8,1.75,0.9,1.2,57,exposed,57,exposed,no
+ASP.NET Engineer,Engineering,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
+Flutter Engineer,Engineering,6,5,6,6,1.8,1.75,0.9,1.2,57,exposed,57,exposed,no
+Game Build / Pipeline Engineer,Engineering,4,7,7,5,1.2,2.45,1.05,1.0,57,exposed,57,exposed,no
+Game Telemetry Engineer,Engineering,4,7,7,5,1.2,2.45,1.05,1.0,57,exposed,57,exposed,no
+HarmonyOS Engineer,Engineering,4,7,7,5,1.2,2.45,1.05,1.0,57,exposed,57,exposed,no
+IDE Plugin Developer,Engineering,4,7,7,5,1.2,2.45,1.05,1.0,57,exposed,57,exposed,no
+Junior Backend Engineer,Engineering,7,5,4,6,2.1,1.75,0.6,1.2,57,exposed,57,exposed,no
+MERN Stack Engineer,Engineering,6,5,6,6,1.8,1.75,0.9,1.2,57,exposed,57,exposed,no
+Mobile Game Engineer,Engineering,5,6,7,5,1.5,2.1,1.05,1.0,57,exposed,57,exposed,no
+NestJS Engineer,Engineering,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
+React Native Engineer,Engineering,6,5,6,6,1.8,1.75,0.9,1.2,57,exposed,57,exposed,no
+Senior Frontend Engineer,Engineering,6,5,6,6,1.8,1.75,0.9,1.2,57,exposed,57,exposed,no
+Unity Engineer,Engineering,5,6,7,5,1.5,2.1,1.05,1.0,57,exposed,57,exposed,no
+Deployment Engineer,Platform & Infrastructure,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
+Endpoint Management Engineer (Intune/Jamf),Platform & Infrastructure,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
+Telecom Software Engineer,Platform & Infrastructure,4,7,7,5,1.2,2.45,1.05,1.0,57,exposed,57,exposed,no
+CDP / Customer Data Platform Engineer,Specialized & Emerging,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
+Customer Success Engineer,Specialized & Emerging,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
+Stripe Integration Engineer,Specialized & Emerging,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
+Workflow Automation Engineer,Specialized & Emerging,5,6,6,6,1.5,2.1,0.9,1.2,57,exposed,57,exposed,no
+Decision Scientist,Data & AI,4,6,7,6,1.2,2.1,1.05,1.2,56,exposed,56,exposed,no
+3D Printing Software Engineer,Engineering,2,8,8,5,0.6,2.8,1.2,1.0,56,exposed,56,exposed,no
+Bun.sh Engineer,Engineering,4,6,7,6,1.2,2.1,1.05,1.2,56,exposed,56,exposed,no
+COBOL Developer,Engineering,3,7,8,5,0.9,2.45,1.2,1.0,56,exposed,56,exposed,no
+IPFS / Filecoin Engineer,Engineering,2,8,8,5,0.6,2.8,1.2,1.0,56,exposed,56,exposed,no
+Micronaut Engineer,Engineering,3,7,7,6,0.9,2.45,1.05,1.2,56,exposed,56,exposed,no
+Oracle (Chainlink) Engineer,Engineering,2,8,8,5,0.6,2.8,1.2,1.0,56,exposed,56,exposed,no
+Unreal XR Developer,Engineering,3,7,8,5,0.9,2.45,1.2,1.0,56,exposed,56,exposed,no
+Vyper Developer,Engineering,2,8,8,5,0.6,2.8,1.2,1.0,56,exposed,56,exposed,no
+z/OS Engineer,Engineering,2,8,8,5,0.6,2.8,1.2,1.0,56,exposed,56,exposed,no
+Onboarding Engineer,Specialized & Emerging,5,6,5,6,1.5,2.1,0.75,1.2,56,exposed,56,exposed,no
+Project Manager (Software),Specialized & Emerging,5,6,5,6,1.5,2.1,0.75,1.2,56,exposed,56,exposed,no
+Chatbot Engineer,Data & AI,6,5,5,6,1.8,1.75,0.75,1.2,55,exposed,55,exposed,no
+Product Data Scientist,Data & AI,5,5,7,6,1.5,1.75,1.05,1.2,55,exposed,55,exposed,no
+Cruise / Maritime Software Engineer,Engineering,2,8,7,5,0.6,2.8,1.05,1.0,55,exposed,55,exposed,no
+Express.js Engineer,Engineering,6,5,5,6,1.8,1.75,0.75,1.2,55,exposed,55,exposed,no
+Internal Tools Engineer,Engineering,6,5,5,6,1.8,1.75,0.75,1.2,55,exposed,55,exposed,no
+React Engineer,Engineering,7,4,5,6,2.1,1.4,0.75,1.2,55,exposed,55,exposed,no
+SOC Analyst (Tier 2),Security,6,5,5,6,1.8,1.75,0.75,1.2,55,exposed,55,exposed,no
+Curriculum Designer (Technical),Specialized & Emerging,3,7,6,6,0.9,2.45,0.9,1.2,55,exposed,55,exposed,no
+AdTech Engineer,Engineering,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+Algorand Developer,Engineering,2,8,8,4,0.6,2.8,1.2,0.8,54,exposed,54,exposed,no
+Angular Engineer,Engineering,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+Cartography Engineer,Engineering,2,8,8,4,0.6,2.8,1.2,0.8,54,exposed,54,exposed,no
+Construction Tech Engineer,Engineering,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+Corda / R3 Engineer,Engineering,2,8,8,4,0.6,2.8,1.2,0.8,54,exposed,54,exposed,no
+E-discovery Engineer,Engineering,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+EdTech Engineer,Engineering,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Flask Engineer,Engineering,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+HR Tech Engineer,Engineering,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Internationalization (i18n) Engineer,Engineering,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+JetBrains Plugin Developer,Engineering,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+Laravel Engineer,Engineering,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+MarTech Engineer,Engineering,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+Mental Health Tech Engineer,Engineering,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Middleware Engineer,Engineering,4,6,7,5,1.2,2.1,1.05,1.0,54,exposed,54,exposed,no
+Music Tech Engineer,Engineering,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+PHP Backend Engineer,Engineering,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+Real Estate Tech Engineer (Proptech),Engineering,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Tezos Developer,Engineering,2,8,8,4,0.6,2.8,1.2,0.8,54,exposed,54,exposed,no
+Travel Tech Engineer,Engineering,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Webpack / Vite Specialist,Engineering,4,6,7,5,1.2,2.1,1.05,1.0,54,exposed,54,exposed,no
+Hetzner / Bare Metal Specialist,Platform & Infrastructure,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+InfluxDB Engineer,Platform & Infrastructure,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+Linux Sysadmin,Platform & Infrastructure,4,6,7,5,1.2,2.1,1.05,1.0,54,exposed,54,exposed,no
+Load Balancer Engineer,Platform & Infrastructure,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+Oracle Cloud Engineer,Platform & Infrastructure,4,6,7,5,1.2,2.1,1.05,1.0,54,exposed,54,exposed,no
+TimescaleDB Engineer,Platform & Infrastructure,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+VoIP / SIP Engineer,Platform & Infrastructure,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+Associate Product Manager,Product & Design,6,5,4,6,1.8,1.75,0.6,1.2,54,exposed,54,exposed,no
+Information Architect,Product & Design,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+Interaction Designer,Product & Design,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Marketing Product Manager,Product & Design,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Senior Content Designer,Product & Design,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Voice Interface Designer,Product & Design,3,7,7,5,0.9,2.45,1.05,1.0,54,exposed,54,exposed,no
+API Test Engineer,Quality & Testing,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+Playwright Engineer,Quality & Testing,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+QA Lead,Quality & Testing,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Test Data Engineer,Quality & Testing,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Documentation Engineer,Specialized & Emerging,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+Feature Flag Engineer (LaunchDarkly/Split),Specialized & Emerging,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+SAP ABAP Developer,Specialized & Emerging,4,6,7,5,1.2,2.1,1.05,1.0,54,exposed,54,exposed,no
+SAP Basis Administrator,Specialized & Emerging,4,6,7,5,1.2,2.1,1.05,1.0,54,exposed,54,exposed,no
+Senior Technical Writer,Specialized & Emerging,4,6,6,6,1.2,2.1,0.9,1.2,54,exposed,54,exposed,no
+ServiceNow Developer,Specialized & Emerging,5,5,6,6,1.5,1.75,0.9,1.2,54,exposed,54,exposed,no
+IT Manager,Platform & Infrastructure,4,6,5,6,1.2,2.1,0.75,1.2,53,exposed,53,exposed,no
 Data Scientist,Data & AI,5,4,7,6,1.5,1.4,1.05,1.2,52,exposed,52,exposed,no
-QA Automation,Quality & Testing,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+ELT Engineer,Data & AI,5,5,5,6,1.5,1.75,0.75,1.2,52,exposed,52,exposed,no
+Frontend Engineer,Engineering,6,4,5,6,1.8,1.4,0.75,1.2,52,exposed,52,exposed,no
+Godot Engineer,Engineering,3,7,7,4,0.9,2.45,1.05,0.8,52,exposed,52,exposed,no
+VSCode Extension Developer,Engineering,4,6,6,5,1.2,2.1,0.9,1.0,52,exposed,52,exposed,no
+Vercel / Netlify Specialist,Platform & Infrastructure,4,6,6,5,1.2,2.1,0.9,1.0,52,exposed,52,exposed,no
+3D Designer,Product & Design,3,7,7,4,0.9,2.45,1.05,0.8,52,exposed,52,exposed,no
+Test Environment Engineer,Quality & Testing,4,6,6,5,1.2,2.1,0.9,1.0,52,exposed,52,exposed,no
+MuleSoft Engineer,Specialized & Emerging,4,6,6,5,1.2,2.1,0.9,1.0,52,exposed,52,exposed,no
+Power Platform Developer,Specialized & Emerging,5,5,5,6,1.5,1.75,0.75,1.2,52,exposed,52,exposed,no
+Salesforce CPQ Developer,Specialized & Emerging,4,6,6,5,1.2,2.1,0.9,1.0,52,exposed,52,exposed,no
+Workday Developer,Specialized & Emerging,4,6,6,5,1.2,2.1,0.9,1.0,52,exposed,52,exposed,no
+AS/400 / RPG Developer,Engineering,2,7,8,4,0.6,2.45,1.2,0.8,51,exposed,51,exposed,no
+Android TV Engineer,Engineering,3,6,7,5,0.9,2.1,1.05,1.0,51,exposed,51,exposed,no
+Crystal Engineer,Engineering,1,8,8,4,0.3,2.8,1.2,0.8,51,exposed,51,exposed,no
+D Lang Engineer,Engineering,1,8,8,4,0.3,2.8,1.2,0.8,51,exposed,51,exposed,no
+Deno Engineer,Engineering,3,6,7,5,0.9,2.1,1.05,1.0,51,exposed,51,exposed,no
+HTMX Engineer,Engineering,4,6,5,5,1.2,2.1,0.75,1.0,51,exposed,51,exposed,no
+Nim Engineer,Engineering,1,8,8,4,0.3,2.8,1.2,0.8,51,exposed,51,exposed,no
+Wear OS Engineer,Engineering,3,6,7,5,0.9,2.1,1.05,1.0,51,exposed,51,exposed,no
+Web Components / Lit Engineer,Engineering,3,6,7,5,0.9,2.1,1.05,1.0,51,exposed,51,exposed,no
+Xamarin / .NET MAUI Engineer,Engineering,3,6,7,5,0.9,2.1,1.05,1.0,51,exposed,51,exposed,no
+iPadOS Engineer,Engineering,3,6,7,5,0.9,2.1,1.05,1.0,51,exposed,51,exposed,no
+watchOS Engineer,Engineering,3,6,7,5,0.9,2.1,1.05,1.0,51,exposed,51,exposed,no
+IBM Cloud Engineer,Platform & Infrastructure,3,6,7,5,0.9,2.1,1.05,1.0,51,exposed,51,exposed,no
+Community Manager (Technical),Specialized & Emerging,4,6,5,5,1.2,2.1,0.75,1.0,51,exposed,51,exposed,no
+Twilio Engineer,Specialized & Emerging,4,6,5,5,1.2,2.1,0.75,1.0,51,exposed,51,exposed,no
+Customer Support Engineer,Specialized & Emerging,5,5,5,5,1.5,1.75,0.75,1.0,50,exposed,50,exposed,no
+Data Annotation Engineer,Data & AI,5,5,4,5,1.5,1.75,0.6,1.0,49,exposed,49,exposed,no
+Scikit-learn Specialist,Data & AI,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Browser Extension Engineer,Engineering,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+CSS Architect (Sass/Tailwind),Engineering,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Esports Platform Engineer,Engineering,3,6,6,5,0.9,2.1,0.9,1.0,49,exposed,49,exposed,no
+Food Tech Engineer,Engineering,3,6,6,5,0.9,2.1,0.9,1.0,49,exposed,49,exposed,no
+Full-Stack Ruby Engineer,Engineering,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+JAMstack Engineer,Engineering,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+JCL Developer,Engineering,2,7,7,4,0.6,2.45,1.05,0.8,49,exposed,49,exposed,no
+Junior Android Engineer,Engineering,5,5,4,5,1.5,1.75,0.6,1.0,49,exposed,49,exposed,no
+Junior iOS Engineer,Engineering,5,5,4,5,1.5,1.75,0.6,1.0,49,exposed,49,exposed,no
+MEAN Stack Engineer,Engineering,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Remix Engineer,Engineering,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Sinatra / Hanami Engineer,Engineering,3,6,6,5,0.9,2.1,0.9,1.0,49,exposed,49,exposed,no
+Sports Tech Engineer,Engineering,3,6,6,5,0.9,2.1,0.9,1.0,49,exposed,49,exposed,no
+Svelte Engineer,Engineering,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Symfony Engineer,Engineering,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Tornado Backend Engineer,Engineering,3,6,6,5,0.9,2.1,0.9,1.0,49,exposed,49,exposed,no
+Couchbase Engineer,Platform & Infrastructure,2,7,7,4,0.6,2.45,1.05,0.8,49,exposed,49,exposed,no
+Fly.io / Render Specialist,Platform & Infrastructure,3,6,6,5,0.9,2.1,0.9,1.0,49,exposed,49,exposed,no
+Sysadmin / System Administrator,Platform & Infrastructure,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Vertica / Teradata Engineer,Platform & Infrastructure,2,7,7,4,0.6,2.45,1.05,0.8,49,exposed,49,exposed,no
+Windows Sysadmin,Platform & Infrastructure,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Apex Developer,Specialized & Emerging,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Atlassian Developer (Jira/Confluence),Specialized & Emerging,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Microsoft Dynamics Developer,Specialized & Emerging,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+NetSuite Developer,Specialized & Emerging,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+Release Train Engineer (SAFe),Specialized & Emerging,3,6,6,5,0.9,2.1,0.9,1.0,49,exposed,49,exposed,no
+SEO Engineer (Technical),Specialized & Emerging,4,5,6,5,1.2,1.75,0.9,1.0,49,exposed,49,exposed,no
+BI Developer,Data & AI,5,4,5,5,1.5,1.4,0.75,1.0,47,exposed,47,exposed,no
+Cohere / Mistral API Engineer,Data & AI,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Statistical Programmer (SAS/R),Data & AI,3,5,7,5,0.9,1.75,1.05,1.0,47,exposed,47,exposed,no
+Astro Engineer,Engineering,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Game UI Programmer,Engineering,4,5,6,4,1.2,1.75,0.9,0.8,47,exposed,47,exposed,no
+Junior Full-Stack Engineer,Engineering,6,4,3,5,1.8,1.4,0.45,1.0,47,exposed,47,exposed,no
+Localization (l10n) Engineer,Engineering,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Vue Engineer,Engineering,5,4,5,5,1.5,1.4,0.75,1.0,47,exposed,47,exposed,no
+IT Operations Engineer,Platform & Infrastructure,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+M365 / Google Workspace Admin,Platform & Infrastructure,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Content Designer / UX Writer,Product & Design,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Motion Designer,Product & Design,3,6,6,4,0.9,2.1,0.9,0.8,47,exposed,47,exposed,no
+API Documentation Specialist,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Marketing Automation Engineer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Mixpanel / Amplitude / Heap Engineer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Power BI Specialist,Specialized & Emerging,5,4,5,5,1.5,1.4,0.75,1.0,47,exposed,47,exposed,no
+RPA Engineer (UiPath/Power Automate),Specialized & Emerging,5,4,5,5,1.5,1.4,0.75,1.0,47,exposed,47,exposed,no
+Salesforce Marketing Cloud Developer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Scrum Master / Agile Coach,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Segment / Rudderstack Engineer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Shopify App Developer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Technical Writer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+SSIS / SQL Server Integration Engineer,Data & AI,3,5,6,5,0.9,1.75,0.9,1.0,46,exposed,46,exposed,no
+BPM / Workflow Engineer,Engineering,3,5,6,5,0.9,1.75,0.9,1.0,46,exposed,46,exposed,no
+DAO Tooling Engineer,Engineering,2,6,7,4,0.6,2.1,1.05,0.8,46,exposed,46,exposed,no
+PWA Engineer,Engineering,3,5,6,5,0.9,1.75,0.9,1.0,46,exposed,46,exposed,no
+SolidJS Engineer,Engineering,3,5,6,5,0.9,1.75,0.9,1.0,46,exposed,46,exposed,no
+tvOS Engineer,Engineering,2,6,7,4,0.6,2.1,1.05,0.8,46,exposed,46,exposed,no
+Oracle ERP Developer,Specialized & Emerging,3,5,6,5,0.9,1.75,0.9,1.0,46,exposed,46,exposed,no
+Hadoop Engineer,Data & AI,3,5,7,4,0.9,1.75,1.05,0.8,45,exposed,45,exposed,no
+Marketing Data Scientist,Data & AI,4,4,6,5,1.2,1.4,0.9,1.0,45,exposed,45,exposed,no
+Senior UI Designer,Product & Design,4,4,6,5,1.2,1.4,0.9,1.0,45,exposed,45,exposed,no
+Senior QA Automation,Quality & Testing,4,4,6,5,1.2,1.4,0.9,1.0,45,exposed,45,exposed,no
+SOC Analyst (Tier 1),Security,5,4,4,5,1.5,1.4,0.6,1.0,45,exposed,45,exposed,no
+Power Apps Developer,Specialized & Emerging,5,4,4,5,1.5,1.4,0.6,1.0,45,exposed,45,exposed,no
+Salesforce Administrator,Specialized & Emerging,5,4,4,5,1.5,1.4,0.6,1.0,45,exposed,45,exposed,no
+ETL Developer,Data & AI,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+Growth Analyst,Data & AI,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+Informatica Engineer,Data & AI,3,5,6,4,0.9,1.75,0.9,0.8,44,exposed,44,exposed,no
+Looker / LookML Developer,Data & AI,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+Product Analyst,Data & AI,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+ESB / Service Bus Engineer,Engineering,3,5,6,4,0.9,1.75,0.9,0.8,44,exposed,44,exposed,no
+LAMP Stack Engineer,Engineering,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+Nuxt Engineer,Engineering,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+Restaurant / Hospitality Tech Engineer,Engineering,3,5,5,5,0.9,1.75,0.75,1.0,44,exposed,44,exposed,no
+Tizen Engineer,Engineering,2,6,6,4,0.6,2.1,0.9,0.8,44,exposed,44,exposed,no
+DigitalOcean Specialist,Platform & Infrastructure,3,5,6,4,0.9,1.75,0.9,0.8,44,exposed,44,exposed,no
+Brand Designer,Product & Design,3,5,5,5,0.9,1.75,0.75,1.0,44,exposed,44,exposed,no
+Visual Designer,Product & Design,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+Cypress Engineer,Quality & Testing,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+Mobile QA Engineer,Quality & Testing,4,4,5,5,1.2,1.4,0.75,1.0,44,exposed,44,exposed,no
+Boomi Engineer,Specialized & Emerging,3,5,6,4,0.9,1.75,0.9,0.8,44,exposed,44,exposed,no
+Conversion Rate Optimization Engineer,Specialized & Emerging,3,5,5,5,0.9,1.75,0.75,1.0,44,exposed,44,exposed,no
+Magento / Adobe Commerce Developer,Specialized & Emerging,3,5,6,4,0.9,1.75,0.9,0.8,44,exposed,44,exposed,no
+SAP Fiori / UI5 Developer,Specialized & Emerging,3,5,6,4,0.9,1.75,0.9,0.8,44,exposed,44,exposed,no
+Square / Block Integration Engineer,Specialized & Emerging,3,5,6,4,0.9,1.75,0.9,0.8,44,exposed,44,exposed,no
+Junior Frontend Engineer,Engineering,6,3,3,5,1.8,1.05,0.45,1.0,43,exposed,43,exposed,no
+Fivetran / Stitch Specialist,Data & AI,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Admin Panel Engineer,Engineering,4,4,4,5,1.2,1.4,0.6,1.0,42,exposed,42,exposed,no
+Fitness / Wellness Tech Engineer,Engineering,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Ionic / Cordova Engineer,Engineering,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Perl Engineer,Engineering,2,5,7,4,0.6,1.75,1.05,0.8,42,exposed,42,exposed,no
+Collaboration Tools Engineer (Slack/Teams),Platform & Infrastructure,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Heroku Specialist,Platform & Infrastructure,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Game QA Lead,Quality & Testing,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Localization QA Engineer,Quality & Testing,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+BigCommerce Developer,Specialized & Emerging,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Low-code Developer,Specialized & Emerging,4,4,4,5,1.2,1.4,0.6,1.0,42,exposed,42,exposed,no
+SendGrid / Mailgun Engineer,Specialized & Emerging,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Tray.io / iPaaS Engineer,Specialized & Emerging,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Workato Engineer,Specialized & Emerging,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Talend Engineer,Data & AI,2,5,6,4,0.6,1.75,0.9,0.8,41,exposed,41,exposed,no
+Ember.js Engineer,Engineering,2,5,6,4,0.6,1.75,0.9,0.8,41,exposed,41,exposed,no
+Stencil Engineer,Engineering,2,5,6,4,0.6,1.75,0.9,0.8,41,exposed,41,exposed,no
+IT Asset Manager,Platform & Infrastructure,3,5,4,4,0.9,1.75,0.6,0.8,41,exposed,41,exposed,no
+Citizen Developer Coach,Specialized & Emerging,3,5,4,4,0.9,1.75,0.6,0.8,41,exposed,41,exposed,no
+Make.com / n8n Specialist,Specialized & Emerging,3,5,4,4,0.9,1.75,0.6,0.8,41,exposed,41,exposed,no
+Power BI Developer,Data & AI,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+Senior Data Analyst,Data & AI,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+Tableau Developer,Data & AI,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+IT Support Engineer,Platform & Infrastructure,4,4,4,4,1.2,1.4,0.6,0.8,40,at_risk,40,at_risk,no
 UI Designer,Product & Design,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+QA Automation,Quality & Testing,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+UI / Web Test Engineer,Quality & Testing,4,3,5,5,1.2,1.05,0.75,1.0,40,at_risk,40,at_risk,no
+Tier 2 Technical Support Engineer,Specialized & Emerging,4,4,4,4,1.2,1.4,0.6,0.8,40,at_risk,40,at_risk,no
+WordPress Developer,Specialized & Emerging,4,4,4,4,1.2,1.4,0.6,0.8,40,at_risk,40,at_risk,no
+Business Analyst,Data & AI,4,3,4,5,1.2,1.05,0.6,1.0,39,at_risk,39,at_risk,no
+Marketing Analyst,Data & AI,4,3,4,5,1.2,1.05,0.6,1.0,39,at_risk,39,at_risk,no
+Childcare Tech Engineer,Engineering,2,5,5,4,0.6,1.75,0.75,0.8,39,at_risk,39,at_risk,no
+NFT Platform Engineer,Engineering,2,5,6,3,0.6,1.75,0.9,0.6,39,at_risk,39,at_risk,no
+Pet Tech Engineer,Engineering,2,5,5,4,0.6,1.75,0.75,0.8,39,at_risk,39,at_risk,no
+Preact Engineer,Engineering,2,5,5,4,0.6,1.75,0.75,0.8,39,at_risk,39,at_risk,no
+Appium Engineer,Quality & Testing,3,4,5,4,0.9,1.4,0.75,0.8,39,at_risk,39,at_risk,no
+SEM / Paid Search Engineer,Specialized & Emerging,3,4,5,4,0.9,1.4,0.75,0.8,39,at_risk,39,at_risk,no
+SharePoint Developer,Specialized & Emerging,3,4,5,4,0.9,1.4,0.75,0.8,39,at_risk,39,at_risk,no
+BI Analyst,Data & AI,4,3,4,4,1.2,1.05,0.6,0.8,37,at_risk,37,at_risk,no
+HTML / CSS Specialist,Engineering,4,3,4,4,1.2,1.05,0.6,0.8,37,at_risk,37,at_risk,no
+Marketing Designer,Product & Design,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+Drupal Developer,Specialized & Emerging,2,5,5,3,0.6,1.75,0.75,0.6,37,at_risk,37,at_risk,no
+Freshworks Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+HubSpot Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+Intercom / Help Desk Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+Marketo Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+WooCommerce Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+Zapier Specialist,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+Zendesk Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+Backbone.js Maintainer,Engineering,1,5,6,3,0.3,1.75,0.9,0.6,36,at_risk,36,at_risk,no
+CodeIgniter Engineer,Engineering,2,4,5,4,0.6,1.4,0.75,0.8,36,at_risk,36,at_risk,no
+Pascal / Delphi Engineer,Engineering,1,5,6,3,0.3,1.75,0.9,0.6,36,at_risk,36,at_risk,no
+Qlik Developer,Data & AI,3,3,5,4,0.9,1.05,0.75,0.8,35,at_risk,35,at_risk,no
+Help Desk Tier 2,Platform & Infrastructure,4,3,3,4,1.2,1.05,0.45,0.8,35,at_risk,35,at_risk,no
+Selenium Engineer,Quality & Testing,3,3,5,4,0.9,1.05,0.75,0.8,35,at_risk,35,at_risk,no
+No-code Developer / Maker,Specialized & Emerging,4,3,3,4,1.2,1.05,0.45,0.8,35,at_risk,35,at_risk,no
+Sigma / ThoughtSpot Developer,Data & AI,2,4,5,3,0.6,1.4,0.75,0.6,34,at_risk,34,at_risk,no
+Alpine.js Engineer,Engineering,2,4,4,4,0.6,1.4,0.6,0.8,34,at_risk,34,at_risk,no
+KaiOS Engineer,Engineering,1,5,5,3,0.3,1.75,0.75,0.6,34,at_risk,34,at_risk,no
+PowerBuilder Maintainer,Engineering,1,5,6,2,0.3,1.75,0.9,0.4,34,at_risk,34,at_risk,no
+Visual Basic / VB.NET Maintainer,Engineering,2,4,5,3,0.6,1.4,0.75,0.6,34,at_risk,34,at_risk,no
 Data Analyst,Data & AI,4,2,4,4,1.2,0.7,0.6,0.8,33,at_risk,33,at_risk,no
-Prompt Engineer,Specialized & Emerging,3,2,3,3,0.9,0.7,0.45,0.6,27,at_risk,27,at_risk,no
+Pardot Developer,Specialized & Emerging,2,4,4,3,0.6,1.4,0.6,0.6,32,at_risk,32,at_risk,no
+QA Manual Lead,Quality & Testing,2,3,4,4,0.6,1.05,0.6,0.8,31,at_risk,31,at_risk,no
+MicroStrategy Developer,Data & AI,2,3,5,3,0.6,1.05,0.75,0.6,30,at_risk,30,at_risk,no
+Game QA Tester,Engineering,3,3,3,3,0.9,1.05,0.45,0.6,30,at_risk,30,at_risk,no
+Desktop Support,Platform & Infrastructure,3,3,3,3,0.9,1.05,0.45,0.6,30,at_risk,30,at_risk,no
+Domo Developer,Data & AI,2,3,4,3,0.6,1.05,0.6,0.6,29,at_risk,29,at_risk,no
+Mode Analytics Developer,Data & AI,2,3,4,3,0.6,1.05,0.6,0.6,29,at_risk,29,at_risk,no
+ColdFusion Maintainer,Engineering,1,4,5,2,0.3,1.4,0.75,0.4,29,at_risk,29,at_risk,no
+jQuery Maintainer,Engineering,2,3,4,3,0.6,1.05,0.6,0.6,29,at_risk,29,at_risk,no
+Prompt Engineer,Data & AI,3,2,3,3,0.9,0.7,0.45,0.6,27,at_risk,27,at_risk,no
+Help Desk Tier 1,Platform & Infrastructure,3,2,2,3,0.9,0.7,0.3,0.6,25,at_risk,25,at_risk,no
 QA Manual,Quality & Testing,2,1,3,3,0.6,0.35,0.45,0.6,20,at_risk,20,at_risk,no
