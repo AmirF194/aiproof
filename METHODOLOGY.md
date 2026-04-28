@@ -89,12 +89,67 @@ Roles are ranked by total score, descending. Ties are common (multiple roles at 
 
 ## Sources
 
-Inputs are directional, not survey-grade. The goal is a defensible frame, not a published index.
+Inputs are directional, not survey-grade. The goal is a defensible frame, not a published index. Every URL below was verified during the April 2026 research pass; for a per-claim citation map, see [INSIGHTS.md](INSIGHTS.md).
 
-- **Salary**: Levels.fyi (2025 dataset), H1B LCA database (2024–25), Glassdoor, Otta, Hired.com.
-- **Demand**: LinkedIn Workforce Reports (Q1–Q4 2025), Indeed Hiring Lab, BLS Occupational Outlook 2024–34, GitHub Octoverse 2025.
-- **Automation impact**: McKinsey "The economic potential of generative AI" 2025 update, Gartner AI-impact estimates 2025, Stack Overflow Developer Survey 2025 AI section, GitHub Copilot productivity studies, Anthropic/Stripe published usage data, internal Cursor/Devin benchmarking.
-- **Cluster trends**: Pragmatic Engineer 2026 industry report, State of DevOps 2025, State of AI 2025 (Benaich/Hogarth), CNCF surveys, ESG/Gartner cybersecurity spend forecasts.
+### Government / official statistics
+
+- [BLS Occupational Outlook Handbook — Software Developers, QA Analysts, Testers](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) (2024–34: +15%, ~129,200 openings/yr)
+- [BLS Employment Projections 2024–34 release](https://www.bls.gov/news.release/pdf/ecopro.pdf)
+- [BLS Industry & Occupational Projections Overview 2024–34](https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm)
+- BLS Information Security Analysts (cited via OOH; +32% 2024–34)
+
+### Cybersecurity workforce
+
+- [ISC2 2025 Cybersecurity Workforce Study](https://www.isc2.org/Insights/2025/12/2025-ISC2-Cybersecurity-Workforce-Study) (4.8M global gap; 59% critical skill shortage; AI/ML #1 skill gap)
+- [DeepStrike — Cybersecurity Skills Gap analysis](https://deepstrike.io/blog/cybersecurity-skills-gap)
+- [Programs.com — Cybersecurity workforce stats](https://programs.com/resources/cybersecurity-talent-shortage-stats/)
+
+### Developer survey / AI adoption
+
+- [Stack Overflow 2025 Developer Survey — AI section](https://survey.stackoverflow.co/2025/ai) (84% AI use; 51% daily; 29% trust)
+- [Stack Overflow blog — 2025 results summary](https://stackoverflow.blog/2025/12/29/developers-remain-willing-but-reluctant-to-use-ai-the-2025-developer-survey-results-are-here/)
+- [Stack Overflow — AI vs Gen Z (junior dev impact)](https://stackoverflow.blog/2025/12/26/ai-vs-gen-z/)
+
+### Compensation
+
+- [Levels.fyi — ML Engineer compensation](https://www.levels.fyi/t/software-engineer/title/machine-learning-engineer) (median $264K; FAANG breakdown)
+- [Levels.fyi — ML/AI Software Engineer focus](https://www.levels.fyi/t/software-engineer/focus/ml-ai)
+- [Acceler8 Talent — AI Engineer Salary 2025–2026](https://www.acceler8talent.com/resources/blog/ai-engineer--salary---market-rates-2025-2026/)
+- [KORE1 — AI Engineer Salary Guide 2026](https://www.kore1.com/ai-engineer-salary-guide/)
+- [KORE1 — ML Engineer Salary Guide 2026](https://www.kore1.com/ml-engineer-salary-guide/)
+- [KORE1 — Cloud Engineer Salary Guide 2026](https://www.kore1.com/cloud-engineer-salary-guide-2026/)
+- [Second Talent — Freelance Data Engineer rate card 2026](https://www.secondtalent.com/resources/freelance-data-engineer-hourly-rate-us/)
+- [Glassdoor — Agentic AI Engineer salary](https://www.glassdoor.com/Salaries/agentic-ai-engineer-salary-SRCH_KO0,19.htm)
+
+### Layoffs & hiring
+
+- [Tom's Hardware — Q1 2026 tech layoffs analysis](https://www.tomshardware.com/tech-industry/tech-industry-lays-off-nearly-80-000-employees-in-the-first-quarter-of-2026-almost-50-percent-of-affected-positions-cut-due-to-ai)
+- [KORE1 — Tech Layoffs 2026: Where Displaced Talent Is Going](https://www.kore1.com/tech-layoffs-2026/)
+- [SF Standard — AI writes the code now (Stanford CPS analysis)](https://sfstandard.com/2026/02/19/ai-writes-code-now-s-left-software-engineers/)
+- [Vucense — Q1 2026 layoffs / AI displacement](https://vucense.com/ai-intelligence/industry-business/tech-layoffs-q1-2026-ai-displacement-80000/)
+- [Rezi — The Crisis of Entry-Level Labor](https://www.rezi.ai/posts/entry-level-jobs-and-ai-2026-report)
+
+### Industry analyst forecasts
+
+- [Gartner — Platform Engineering page](https://www.gartner.com/en/infrastructure-and-it-operations-leaders/topics/platform-engineering) (80% by 2026)
+- [Pragmatic Engineer 2026 industry report](https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026)
+- [DEV Community — Platform Engineering 2026 numbers](https://dev.to/meena_nukala/platform-engineering-in-2026-the-numbers-behind-the-boom-and-why-its-transforming-devops-381l)
+- [Platform Engineering — Becomes Mandatory](https://platformengineering.com/features/platform-engineering-becomes-mandatory-the-new-devops-standard/)
+
+### Cluster-specific
+
+- [Lenny's Newsletter — State of the Product Job Market](https://www.lennysnewsletter.com/p/state-of-the-product-job-market-in)
+- [Aakash Gupta — State of AI Product Management (12K+ AI PM roles)](https://www.news.aakashg.com/p/the-state-of-ai-product-management)
+- [NN/g — State of UX 2026](https://www.nngroup.com/articles/state-of-ux-2026/)
+- [UX Design Institute — UX Job Market 2026](https://www.uxdesigninstitute.com/blog/the-ux-job-market-in-2026-2/)
+- [Interview Query — Data Science Job Market](https://www.interviewquery.com/p/data-science-job-market-disappearing)
+- [State of FinOps 2026](https://data.finops.org/)
+- [Fortune — The Megamanager Era](https://fortune.com/2026/04/07/megamanager-era-how-many-direct-reports-ai-middle-management/)
+- [Organimi — Span of Control 2026](https://www.organimi.com/span-of-control-in-2026/)
+- [Fortune — Prompt Engineering Obsolete (May 2025)](https://fortune.com/2025/05/07/prompt-engineering-200k-six-figure-role-now-obsolete-thanks-to-ai/)
+- [SolidAITech — Prompt Engineer Job Dead 2026](https://www.solidaitech.com/2026/04/prompt-engineer-job-dead-ai-careers.html)
+- [QA Financial — AI replaces QA team and triggers $6M loss](https://qa-financial.com/ai-replaces-qa-team-and-triggers-6m-loss-do-banks-risk-losing-judgement/)
+- [Robert Half — 2026 Technology Job Market](https://www.roberthalf.com/us/en/insights/research/data-reveals-which-technology-roles-are-in-highest-demand)
 
 No proprietary data is used. All cited sources are public or publicly summarized. The numerical scores are the author's calibrated estimates — the value of the rubric is its consistency across roles, not the precision of any individual score.
 

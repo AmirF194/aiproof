@@ -1,6 +1,6 @@
 # Per-Role Analysis (2026–2035)
 
-All 36 roles, grouped by category. Each entry covers the four scoring axes plus salary range, key dynamics, and risks. Scoring methodology in [METHODOLOGY.md](METHODOLOGY.md). Raw data in [data/roles.csv](data/roles.csv).
+All 36 roles, grouped by category. Each entry covers the four scoring axes plus salary range, key dynamics, and risks. Scoring methodology in [METHODOLOGY.md](METHODOLOGY.md). Raw data in [data/roles.csv](data/roles.csv). For the deep research synthesis with citations per claim, see [INSIGHTS.md](INSIGHTS.md).
 
 **Reading the score**: 0–100, where higher = more durable over the 5–10 year window. Tiers: Fortress (85+), Safe (70–84), Stable (55–69), Exposed (40–54), At risk (<40).
 
@@ -75,6 +75,7 @@ All 36 roles, grouped by category. Each entry covers the four scoring axes plus 
 
 **Salary range**: $160K – $400K TC.
 **Key dynamics**: Span of control is rising — 2026 EMs commonly own 8–12 ICs vs. 6–8 in 2020 — because AI tooling makes ICs higher-leverage. Net effect on EM headcount is roughly flat: fewer EMs per IC, but more ICs in absolute terms. EMs who can do AI-aware planning (capacity, eval, model-cost forecasting) command a premium.
+**2025–26 data**: Fortune (April 2026) reports **Meta's applied-AI engineering division running a 50:1 IC-to-manager ratio** — about double the historical functional limit. Pragmatic Engineer's 2026 industry report and DX's Q1 2026 study both confirm rising span of control across most engineering orgs. **Coaching and mentorship are the first casualties** of this shift, which is the durability risk to the EM track.
 **Risks**: First-line EM at small companies is the exposed tier — companies skip the layer entirely or convert to "tech lead manager" hybrids.
 
 ---
@@ -92,6 +93,7 @@ All 36 roles, grouped by category. Each entry covers the four scoring axes plus 
 
 **Salary range**: $130K – $350K TC.
 **Key dynamics**: Three forces compound. (1) AI-generated code multiplies attack surface. (2) Regulatory pressure (EU AI Act enforcement 2026, SEC cyber-disclosure, PCI 4.0, sectoral rules) creates structural compliance demand. (3) Senior security talent is genuinely scarce — pipeline is narrow because security takes 5+ years to develop credibly. **The headcount-to-vacancy ratio in security is the worst of any tech category.**
+**2025–26 data**: ISC2 2025 Workforce Study reports a **4.8M global workforce gap** (US ~700K) and **59% of orgs reporting critical or significant skills shortages — up from 44% in 2024**. AI/ML is now the **#1 cited security skill gap (41%)**, with cloud security at #2 (30%). BLS projects information security analyst employment **+32% through 2034** — the strongest growth rate of any role on this list. **88% of organizations had a significant security consequence from these shortages**, 69% had more than one.
 **Risks**: Tooling consolidation (CNAPP, SIEM/SOAR convergence) can reduce demand for tool-specific operators. Defensible move: own a domain (cloud, app, identity) end-to-end, not a vendor.
 
 ### Application Security Engineer — **87 (Fortress)**
@@ -161,6 +163,7 @@ All 36 roles, grouped by category. Each entry covers the four scoring axes plus 
 
 **Salary range**: $140K – $400K TC.
 **Key dynamics**: The applied-ML track has 10× the headcount of the research track and is where most career safety lives. The growth subniche through 2030: **agent systems engineering** — building reliable, evaluable, observable LLM-based agents in production.
+**2025–26 data**: Levels.fyi (April 2026) median ML Engineer TC is **$264K**; FAANG breakdown — **LinkedIn $450K, Meta $430K, Apple $335K, Google $290K, Nvidia $267K, Amazon $265K**. Agentic-AI subniche pays **$155K–$265K base, $400K+ TC at top tier, $500K+ at frontier labs**. AI engineer base salaries grew **+9.2% in 2025 (the "Agentic Surge") and +7% in 2026**. Gartner forecasts **40% of enterprise applications will include task-specific AI agents by end-2026**, up from <5% in 2025 — a structural demand driver for this role.
 **Risks**: Foundation-model commoditization could collapse demand for in-house training. Most ML jobs by 2030 will be *integration*, not training.
 
 ### MLOps Engineer — **87 (Fortress)**
@@ -213,6 +216,7 @@ All 36 roles, grouped by category. Each entry covers the four scoring axes plus 
 
 **Salary range**: $100K – $250K TC.
 **Key dynamics**: The role is being squeezed from two sides: ML engineers absorb the modeling work that goes to production, and analytics engineers + LLMs absorb the exploratory analysis. The surviving niche is **causal inference and experimentation specialists** at companies with mature A/B testing infrastructure (Meta, Netflix, DoorDash, Airbnb).
+**2025–26 data**: Job-postings analysis (Interview Query, Towards Data Science, Dawn Choo's market reports): **senior data scientist hiring is still growing while junior data scientist postings have collapsed**. The "data scientist" bucket is being absorbed *up* into ML Engineer roles and *down* into LLM-augmented analytics. Total data & analytics postings declined **−15.2% YoY through October 2025**.
 **Risks**: Generic "data scientist" headcount compresses 30–40% by 2030. Plan a move to ML eng or specialized causal/experimentation.
 
 ### Analytics Engineer — **57 (Stable, low end)**
@@ -256,6 +260,7 @@ All 36 roles, grouped by category. Each entry covers the four scoring axes plus 
 
 **Salary range**: $130K – $360K TC.
 **Key dynamics**: "DevOps engineer" as a title is fading; "platform engineer" and "SRE" are absorbing the work. Internal Developer Platforms (Backstage-derived, Port, custom) are now standard at every 200+ engineer org. The growth subniche: **AI platform engineer** — building golden paths for AI-feature delivery, eval pipelines, model serving, prompt-management infra.
+**2025–26 data**: Gartner — **80% of large software engineering orgs will have platform-engineering teams by 2026, up from 45% in 2022**. **55%** of organizations have already adopted platform engineering (2025 survey). **92% of CIOs are planning AI integrations** into their platforms. Gartner separately projects **90% of enterprise software engineers will use AI code assistants by 2028** (vs <14% in early 2024) — a tailwind for the engineers building the platforms those assistants run on.
 **Risks**: Managed IDPs (Humanitec, Port, Cortex) compress the build-it-yourself tier.
 
 ### Site Reliability Engineer — **84 (Fortress)**
@@ -390,6 +395,7 @@ All 36 roles, grouped by category. Each entry covers the four scoring axes plus 
 
 **Salary range**: $80K – $230K TC.
 **Key dynamics**: AI tooling (v0, Cursor, Lovable, Bolt) reliably produces working components from prompts. The work that compresses is exactly the work that defined "frontend developer" 2018–2024 — component assembly from designs. The roles that survive: **design-system engineers**, **accessibility specialists**, **performance engineers**, **DX/tooling engineers**. These require taste, deep platform knowledge, or cross-cutting concerns AI can't synthesize.
+**2025–26 data**: Frontend's share of total IT job postings has fallen **from ~20% to below that and is still declining** — the **largest drop of any engineering role** in 2025. A survey of 500 tech leaders (early 2025) found **72% plan to reduce entry-level developer hiring** and 64% are *increasing* AI tooling investment. UK tech graduate roles fell **−46% in 2024** with another **−53% projected through 2026**. Junior-frontend is the cleanest displacement case in the engineering category.
 **Risks**: The bottom of the ladder collapses fastest here. Bootcamp-to-junior-frontend is no longer a reliable path.
 **Recommended transitions out**: Frontend → Design Systems engineer; Frontend → DX engineer; Frontend → Full-Stack with backend depth.
 
@@ -433,6 +439,7 @@ All 36 roles, grouped by category. Each entry covers the four scoring axes plus 
 
 **Salary range**: $50K – $130K TC.
 **Key dynamics**: Offshore QA centers (which absorbed much of this work in the 2010s) are the first to be AI-displaced. Career mobility *out* of pure manual QA is harder than out of any other role on this list.
+**2025–26 data**: WEF Future of Jobs 2025 — **41% of employers worldwide intend workforce reductions citing AI automation**, with manual QA among the most-cited functions. Cautionary case study: a financial firm replaced a 12-person QA team with an AI test pipeline to save $1.2M and **lost $6M in orders** because an AI agent hallucinated a discount code that zeroed out the catalog (QA Financial). Counter-signal: Tesla *grew* QA from **260 → 390 staff (2020 → 2025)** but the composition shifted to AI-testing specialists and safety-validation engineers, not manual testers. Gartner revised its testing-automation projection: **60–70% of routine testing automated by 2030**, with **demand for skilled QA professionals up 25%** as software complexity rises. The collapse is in *manual* QA specifically — not the broader QA function.
 **Recommended transitions** (in priority order):
 
 1. SDET → backend engineer (most natural; 12 months of focused study)
@@ -469,6 +476,7 @@ Plan the move now, not later. The decline curve is exponential.
 
 **Salary range**: $110K – $310K TC.
 **Key dynamics**: Heavy AI augmentation in PM workflow (eval, customer research synthesis, doc-writing) — but the role itself is durable because the work is fundamentally about navigating ambiguity and people. Junior PM roles are the most exposed; senior PM is fortress-tier.
+**2025–26 data**: Total open PM roles globally are **+53.6% above the 2023 bottom** and rising. **AI PM hiring doubled in 2025 to 12,000+ new roles**. Senior PM postings up **+87% YoY**. McKinsey: demand for AI fluency in job postings has grown **~7×** in two years, mostly in management roles. **71% of business leaders** say they prefer a less-experienced candidate with strong AI skills over a more-experienced one without — which both raises the floor for PM hiring (AI fluency = table stakes) and protects the senior tier (judgment + AI fluency = premium).
 **Risks**: At smaller companies, PM is collapsing into "engineer-PM" hybrids (the ICPM model), which can compress headcount.
 
 ### UX Designer / Researcher — **67 (Stable)**
@@ -551,6 +559,7 @@ Plan the move now, not later. The decline curve is exponential.
 
 **Salary range**: $80K – $180K TC.
 **Key dynamics**: The role was always a transitional artifact of model immaturity. As models become more robust to prompt phrasing, the value of prompt-only specialists collapses. Prompt-engineering *skills* are real; the *job title* is not durable.
+**2025–26 data**: Indeed search volume for "prompt engineer" peaked at **144 per million total searches in April 2023** and has **plateaued at 20–30 per million through 2025–26**. Listings have largely been retired or merged into broader AI Product Manager / AI Quality / ML Engineer roles. Automated Prompt Engineering frameworks (DSPy and equivalents) are now standard infrastructure. Fortune (May 2025) called the role "obsolete"; SolidAITech (April 2026) confirms the standalone title is "effectively gone at any company running frontier models."
 **Recommended transitions**: Prompt Engineer → AI Application Engineer (natural; requires backend literacy) → ML Engineer (longer ramp; requires ML systems knowledge).
 
 ---
@@ -563,3 +572,17 @@ Plan the move now, not later. The decline curve is exponential.
 - **AI literacy is now baseline in every role.** By 2027, "doesn't use AI tools effectively" will be a hiring red flag in all 36 roles on this list — including PM and Designer. This is not a differentiator; it is table stakes.
 - **Adversarial domains are the hidden winners.** Security stands out because the threat side also gets AI. Anywhere the work involves an opponent (security, fraud, abuse, anti-cheat, market making), AI escalates both sides — and humans stay in the loop.
 - **Title inflation will obscure the real ranking.** Expect "AI Engineer" and "AI Product Manager" titles to appear on 2× as many job postings by 2028 without the underlying role changing. Look at the work, not the title.
+
+---
+
+## What the 2025–26 hard data actually shows (the bifurcation)
+
+The hardest single fact to reconcile in the 2025–26 labor market: BLS projects **+15% software-developer growth through 2034**, while Challenger, Gray & Christmas logged **52,050 tech-sector layoff announcements in Q1 2026 alone (+40% YoY)**, with ~48% citing AI as a primary driver. Both are true. The reconciliation:
+
+- **Senior tier is rising.** Goldman Sachs comp analysis (cited via KORE1) shows senior software engineer median TC up **+12–18% YoY** at surviving companies in 2025. ISC2 reports 59% of orgs facing critical security skill shortages, up from 44% in 2024 — the gap is widening, not closing.
+- **Junior tier is being repriced.** Software developer employment for ages 22–25 is **−20% from its late-2022 peak**. Junior starting offers are **−8 to −15%** vs the 2024 peak. UK tech graduate roles fell **−46% in 2024** with another −53% projected through 2026.
+- **The middle is being compressed.** AI tooling produces 40–55% more code per sprint at comparable quality — a 10-engineer team now outputs what 15 produced in 2022. Most layoffs target the mid-tier generalist (the "full-stack TypeScript engineer" shape), not the senior IC and not the entry-level intern (which mostly is no longer being hired in the first place).
+
+This file's scoring assumes that bifurcation. **Roles whose work is heavily mid-tier generalist (Frontend, Full-Stack, generic Backend, QA Automation, Data Analyst) score lower for that reason** — even when the absolute headcount is large today. Roles whose value compounds with seniority (Staff Engineer, Security, ML Eng, Platform Engineer) score higher, because the labor-market data is still moving in their favor.
+
+The full data synthesis with sources cited per claim is in [INSIGHTS.md](INSIGHTS.md).

@@ -2,7 +2,7 @@
 
 A structured comparison of **36 roles** across modern software organizations, scored on demand, automation resistance, skill depth, and strategic importance. Designed for real career decisions — choosing a first specialization, mid-career pivots, hiring planning.
 
-> Scope: senior-IC framing, US/EU markets, USD total comp. Sources are directional — Levels.fyi, Stack Overflow Developer Survey 2025, BLS 2024–34 projections, LinkedIn Workforce Reports, GitHub Octoverse 2025, Gartner AI-impact estimates, McKinsey 2025 generative AI workforce study. Re-evaluate annually. See [METHODOLOGY.md](METHODOLOGY.md).
+> Scope: senior-IC framing, US/EU markets, USD total comp. Sources are directional — BLS 2024–34 projections, ISC2 2025 Cybersecurity Workforce Study, Stack Overflow Developer Survey 2025 (~49K respondents), Levels.fyi (April 2026), Gartner platform-engineering and AI-agent forecasts, McKinsey 2025 generative AI workforce study, Pragmatic Engineer 2026 industry report, Challenger / Gray & Christmas Q1 2026 layoff data. Full source list: [METHODOLOGY.md](METHODOLOGY.md). Deep research synthesis with citations per claim: [INSIGHTS.md](INSIGHTS.md).
 
 ---
 
@@ -46,6 +46,30 @@ Full per-role analysis in [REPORT.md](REPORT.md). Raw scoring data in [data/role
 | 34 | Data Analyst | 33 | LLMs do SQL + chart generation. Headcount compression is mechanical. |
 | 35 | Prompt Engineer | 27 | A 2023 artifact. Better models reduce, not raise, prompt sensitivity. |
 | 36 | QA Manual | 20 | Textbook AI-replacement case. Plan an exit, not a defense. |
+
+---
+
+## What the 2025–2026 data confirms
+
+These are the load-bearing numbers behind the rankings. Citations and full synthesis in [INSIGHTS.md](INSIGHTS.md).
+
+| Signal | Number | Source |
+| --- | --- | --- |
+| Software developer 10-yr employment growth | **+15%** (vs 3% all-occ avg) | BLS 2024–34 projections |
+| Information security analyst 10-yr growth | **+32%** | BLS OOH |
+| Global cybersecurity workforce gap | **4.8 million** unfilled | ISC2 2025 Workforce Study |
+| Orgs reporting critical security skill shortage | **59%** (up from 44% in 2024) | ISC2 2025 |
+| Large orgs with platform-engineering teams by 2026 | **80%** (from 45% in 2022) | Gartner |
+| Enterprise apps with AI agents by end-2026 | **40%** (from <5% in 2025) | Gartner |
+| Q1 2026 tech layoff announcements (US) | **52,050** (+40% YoY); **~48% AI-attributed** | Challenger, Gray & Christmas |
+| Software dev employment, ages 22–25 | **−20%** vs late-2022 peak | Stanford / CPS analysis |
+| Senior software engineer median comp | **+12–18% YoY** at surviving cos | Goldman Sachs (cited via KORE1) |
+| Stack Overflow 2025: developers using AI | **84%** (51% daily); only **29%** trust output | Stack Overflow Developer Survey |
+| ML Engineer median TC (Levels.fyi) | **$264K**; FAANG range **$265K–$450K** | Levels.fyi April 2026 |
+| Agentic AI engineer comp | **$155K–$265K base, $400K+ TC top tier** | KORE1 / Acceler8 / Glassdoor |
+| AI engineer base salary growth | **+9.2% (2025), +7% (2026)** ("Agentic Surge") | KORE1 |
+
+The single sentence that captures all of this: **the senior tier is rising, the junior tier is being repriced, and the middle is being compressed**. Every score in this analysis assumes that bifurcation.
 
 ---
 
@@ -117,6 +141,7 @@ Regenerate with `python3 scripts/generate_charts.py` (no third-party dependencie
 
 - [README.md](README.md) — this file (executive summary, conclusions)
 - [REPORT.md](REPORT.md) — per-role analysis, all 36 roles, grouped by category
+- [INSIGHTS.md](INSIGHTS.md) — deep research synthesis with 2025–26 data points, sources cited per claim
 - [METHODOLOGY.md](METHODOLOGY.md) — scoring rubric, weights, source list, limitations
 - [data/roles.csv](data/roles.csv) — raw scoring data (re-weight if you disagree)
 - [scripts/generate_charts.py](scripts/generate_charts.py) — pure-Python SVG generator
