@@ -18,6 +18,7 @@ STEPS = [
     ("analysis",   SCRIPTS / "analysis"        / "run_all.py"),
     ("charts",     SCRIPTS / "visualization"   / "generate_charts.py"),
     ("rasterize",  SCRIPTS / "visualization"   / "rasterize_charts.py"),
+    ("appendix",   SCRIPTS / "visualization"   / "generate_appendix.py"),
 ]
 
 
