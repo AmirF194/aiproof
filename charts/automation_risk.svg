@@ -1,91 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 620" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="12" role="img" aria-label="Demand vs Automation Resistance">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="12" role="img" aria-label="Demand vs Automation Resistance">
 <rect width="100%" height="100%" fill="#ffffff"/>
-<text x="70" y="32" font-size="18" fill="#222" font-weight="bold" text-anchor="start">Demand vs Automation Resistance  (2026–2035)</text>
-<text x="70" y="52" font-size="11" fill="#555" font-weight="normal" text-anchor="start">Top-right = high demand AND hard to automate (the safest quadrant).</text>
-<line x1="70" y1="80" x2="70" y2="560" stroke="#333" stroke-width="1"/>
-<line x1="70" y1="560" x2="850" y2="560" stroke="#333" stroke-width="1"/>
-<line x1="460.0" y1="80" x2="460.0" y2="560" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4 4"/>
-<line x1="70" y1="320.0" x2="850" y2="320.0" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4 4"/>
-<text x="840" y="96" font-size="14" fill="#1f7a3a" font-weight="bold" text-anchor="end">Safest</text>
-<text x="80" y="96" font-size="14" fill="#0277bd" font-weight="bold" text-anchor="start">Niche / specialist</text>
-<text x="840" y="552" font-size="14" fill="#e57321" font-weight="bold" text-anchor="end">High demand but exposed</text>
-<text x="80" y="552" font-size="14" fill="#c62828" font-weight="bold" text-anchor="start">Most at risk</text>
-<line x1="70.0" y1="560" x2="70.0" y2="564" stroke="#333" stroke-width="1"/>
-<text x="70.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">0</text>
-<line x1="66" y1="560.0" x2="70" y2="560.0" stroke="#333" stroke-width="1"/>
-<text x="62" y="564.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">0</text>
-<line x1="226.0" y1="560" x2="226.0" y2="564" stroke="#333" stroke-width="1"/>
-<text x="226.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">2</text>
-<line x1="66" y1="464.0" x2="70" y2="464.0" stroke="#333" stroke-width="1"/>
-<text x="62" y="468.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">2</text>
-<line x1="382.0" y1="560" x2="382.0" y2="564" stroke="#333" stroke-width="1"/>
-<text x="382.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">4</text>
-<line x1="66" y1="368.0" x2="70" y2="368.0" stroke="#333" stroke-width="1"/>
-<text x="62" y="372.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">4</text>
-<line x1="538.0" y1="560" x2="538.0" y2="564" stroke="#333" stroke-width="1"/>
-<text x="538.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">6</text>
-<line x1="66" y1="272.0" x2="70" y2="272.0" stroke="#333" stroke-width="1"/>
-<text x="62" y="276.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">6</text>
-<line x1="694.0" y1="560" x2="694.0" y2="564" stroke="#333" stroke-width="1"/>
-<text x="694.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">8</text>
-<line x1="66" y1="176.0" x2="70" y2="176.0" stroke="#333" stroke-width="1"/>
-<text x="62" y="180.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">8</text>
-<line x1="850.0" y1="560" x2="850.0" y2="564" stroke="#333" stroke-width="1"/>
-<text x="850.0" y="578" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">10</text>
-<line x1="66" y1="80.0" x2="70" y2="80.0" stroke="#333" stroke-width="1"/>
-<text x="62" y="84.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">10</text>
-<text x="460.0" y="606" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">Automation Resistance  (10 = AI cannot replace)</text>
-<text x="26" y="320.0" font-size="12" fill="#333" transform="rotate(-90 26 320.0)" text-anchor="middle">Market Demand  (10 = strongest)</text>
-<circle cx="772.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="763.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Staff Engineer / Tech Lead</text>
-<circle cx="780.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="771.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Security Engineer</text>
-<circle cx="772.0" cy="176.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="763.0" y="180.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">AI Research Engineer</text>
-<circle cx="694.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="685.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">ML Engineer</text>
-<circle cx="702.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="702.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="693.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Platform Engineer</text>
-<circle cx="702.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="702.0" cy="128.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="694.0" cy="176.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="685.0" y="180.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Site Reliability Engineer</text>
-<circle cx="772.0" cy="224.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="780.0" cy="224.0" r="6" fill="#1f7a3a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="771.0" y="228.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Engineering Manager</text>
-<circle cx="616.0" cy="128.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="625.0" y="132.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Data Engineer</text>
-<circle cx="772.0" cy="272.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="763.0" y="276.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Systems / Low-level Engineer</text>
-<circle cx="694.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="702.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="702.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="694.0" cy="272.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="460.0" cy="80.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="469.0" y="84.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">AI Application Engineer</text>
-<circle cx="616.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="538.0" cy="176.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="547.0" y="180.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Backend Engineer</text>
-<circle cx="624.0" cy="224.0" r="6" fill="#4caf50" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="633.0" y="228.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">DevOps Engineer</text>
-<circle cx="538.0" cy="224.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="616.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="538.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="546.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="546.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="546.0" cy="272.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="460.0" cy="224.0" r="6" fill="#f0a30a" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="460.0" cy="272.0" r="6" fill="#e57321" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="382.0" cy="272.0" r="6" fill="#e57321" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="391.0" y="276.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Frontend Engineer</text>
-<circle cx="382.0" cy="320.0" r="6" fill="#e57321" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="304.0" cy="368.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="312.0" cy="368.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<circle cx="226.0" cy="368.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="235.0" y="372.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Data Analyst</text>
-<circle cx="226.0" cy="416.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="235.0" y="420.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Prompt Engineer</text>
-<circle cx="148.0" cy="464.0" r="6" fill="#c62828" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>
-<text x="157.0" y="468.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">QA Manual</text>
+<text x="80" y="32" font-size="18" fill="#222" font-weight="bold" text-anchor="start">Demand vs Automation Resistance  (2026–2035)</text>
+<text x="80" y="52" font-size="11" fill="#555" font-weight="normal" text-anchor="start">Top-right = high demand AND hard to automate (the safest quadrant).</text>
+<line x1="80" y1="80" x2="80" y2="660" stroke="#333" stroke-width="1"/>
+<line x1="80" y1="660" x2="960" y2="660" stroke="#333" stroke-width="1"/>
+<line x1="520.0" y1="80" x2="520.0" y2="660" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="80" y1="370.0" x2="960" y2="370.0" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="950" y="96" font-size="14" fill="#1f7a3a" font-weight="bold" text-anchor="end">Safest</text>
+<text x="90" y="96" font-size="14" fill="#0277bd" font-weight="bold" text-anchor="start">Niche / specialist</text>
+<text x="950" y="652" font-size="14" fill="#e57321" font-weight="bold" text-anchor="end">High demand but exposed</text>
+<text x="90" y="652" font-size="14" fill="#c62828" font-weight="bold" text-anchor="start">Most at risk</text>
+<line x1="80.0" y1="660" x2="80.0" y2="664" stroke="#333" stroke-width="1"/>
+<text x="80.0" y="678" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">0</text>
+<line x1="76" y1="660.0" x2="80" y2="660.0" stroke="#333" stroke-width="1"/>
+<text x="72" y="664.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">0</text>
+<line x1="256.0" y1="660" x2="256.0" y2="664" stroke="#333" stroke-width="1"/>
+<text x="256.0" y="678" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">2</text>
+<line x1="76" y1="544.0" x2="80" y2="544.0" stroke="#333" stroke-width="1"/>
+<text x="72" y="548.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">2</text>
+<line x1="432.0" y1="660" x2="432.0" y2="664" stroke="#333" stroke-width="1"/>
+<text x="432.0" y="678" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">4</text>
+<line x1="76" y1="428.0" x2="80" y2="428.0" stroke="#333" stroke-width="1"/>
+<text x="72" y="432.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">4</text>
+<line x1="608.0" y1="660" x2="608.0" y2="664" stroke="#333" stroke-width="1"/>
+<text x="608.0" y="678" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">6</text>
+<line x1="76" y1="312.0" x2="80" y2="312.0" stroke="#333" stroke-width="1"/>
+<text x="72" y="316.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">6</text>
+<line x1="784.0" y1="660" x2="784.0" y2="664" stroke="#333" stroke-width="1"/>
+<text x="784.0" y="678" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">8</text>
+<line x1="76" y1="196.0" x2="80" y2="196.0" stroke="#333" stroke-width="1"/>
+<text x="72" y="200.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">8</text>
+<line x1="960.0" y1="660" x2="960.0" y2="664" stroke="#333" stroke-width="1"/>
+<text x="960.0" y="678" font-size="10" fill="#444" font-weight="normal" text-anchor="middle">10</text>
+<line x1="76" y1="80.0" x2="80" y2="80.0" stroke="#333" stroke-width="1"/>
+<text x="72" y="84.0" font-size="10" fill="#444" font-weight="normal" text-anchor="end">10</text>
+<text x="520.0" y="706" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">Automation Resistance  (10 = AI cannot replace)</text>
+<text x="30" y="370.0" font-size="12" fill="#333" transform="rotate(-90 30 370.0)" text-anchor="middle">Market Demand  (10 = strongest)</text>
+<circle cx="865.0" cy="138.0" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="879.0" cy="138.0" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="872.0" cy="196.0" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="784.0" cy="126.5" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="794.9" cy="134.4" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="790.8" cy="147.3" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="777.2" cy="147.3" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="773.1" cy="134.4" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="784.0" cy="196.0" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="865.0" cy="254.0" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="879.0" cy="254.0" r="6" fill="#1f7a3a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="696.0" cy="138.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="872.0" cy="312.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="770.0" cy="254.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="784.0" cy="254.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="798.0" cy="254.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="784.0" cy="312.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="520.0" cy="80.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="689.0" cy="254.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="703.0" cy="254.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="608.0" cy="196.0" r="6" fill="#4caf50" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="608.0" cy="254.0" r="6" fill="#f0a30a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="696.0" cy="312.0" r="6" fill="#f0a30a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="608.0" cy="302.0" r="6" fill="#f0a30a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="618.0" cy="312.0" r="6" fill="#f0a30a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="608.0" cy="322.0" r="6" fill="#f0a30a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="598.0" cy="312.0" r="6" fill="#f0a30a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="520.0" cy="254.0" r="6" fill="#f0a30a" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="520.0" cy="312.0" r="6" fill="#e57321" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="432.0" cy="312.0" r="6" fill="#e57321" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="432.0" cy="370.0" r="6" fill="#e57321" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="337.0" cy="428.0" r="6" fill="#c62828" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="351.0" cy="428.0" r="6" fill="#c62828" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="256.0" cy="428.0" r="6" fill="#c62828" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="256.0" cy="486.0" r="6" fill="#c62828" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="168.0" cy="544.0" r="6" fill="#c62828" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="872.0" y1="138.0" x2="860.0" y2="200.60000000000002" stroke="#bbbbbb" stroke-width="1"/>
+<text x="858.0" y="194.10000000000002" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Staff Engineer / Tech Lead</text>
+<text x="858.0" y="207.10000000000002" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Security Engineer</text>
+<line x1="872.0" y1="196.0" x2="860.0" y2="233.20000000000002" stroke="#bbbbbb" stroke-width="1"/>
+<text x="858.0" y="233.20000000000002" font-size="10" fill="#222" font-weight="normal" text-anchor="end">AI Research Engineer</text>
+<line x1="784.0" y1="138.0" x2="772.0" y2="142.0" stroke="#bbbbbb" stroke-width="1"/>
+<text x="770.0" y="116.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">ML Engineer</text>
+<text x="770.0" y="129.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">MLOps Engineer</text>
+<text x="770.0" y="142.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Platform Engineer</text>
+<text x="770.0" y="155.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Application Security Engineer</text>
+<text x="770.0" y="168.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Cloud Security Engineer</text>
+<line x1="784.0" y1="196.0" x2="772.0" y2="259.3" stroke="#bbbbbb" stroke-width="1"/>
+<text x="770.0" y="259.3" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Site Reliability Engineer</text>
+<line x1="872.0" y1="254.0" x2="860.0" y2="285.4" stroke="#bbbbbb" stroke-width="1"/>
+<text x="858.0" y="285.4" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Engineering Manager</text>
+<line x1="696.0" y1="138.0" x2="684.0" y2="194.10000000000002" stroke="#bbbbbb" stroke-width="1"/>
+<text x="682.0" y="194.10000000000002" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Data Engineer</text>
+<text x="858.0" y="316.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Systems / Low-level Engineer</text>
+<text x="534.0" y="84.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">AI Application Engineer</text>
+<line x1="696.0" y1="254.0" x2="684.0" y2="285.4" stroke="#bbbbbb" stroke-width="1"/>
+<text x="682.0" y="285.4" font-size="10" fill="#222" font-weight="normal" text-anchor="end">DevOps Engineer</text>
+<text x="594.0" y="200.0" font-size="10" fill="#222" font-weight="normal" text-anchor="end">Backend Engineer</text>
+<text x="446.0" y="316.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Frontend Engineer</text>
+<text x="358.0" y="432.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">UI Designer</text>
+<text x="270.0" y="432.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Data Analyst</text>
+<text x="270.0" y="490.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">Prompt Engineer</text>
+<text x="182.0" y="548.0" font-size="10" fill="#222" font-weight="normal" text-anchor="start">QA Manual</text>
 </svg>

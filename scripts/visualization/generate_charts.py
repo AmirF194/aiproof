@@ -139,8 +139,8 @@ def chart_safety_score(rows):
 
 
 def chart_automation_risk(rows):
-    width, height = 880, 620
-    margin_l, margin_r, margin_t, margin_b = 70, 30, 80, 60
+    width, height = 1000, 720
+    margin_l, margin_r, margin_t, margin_b = 80, 40, 80, 60
     plot_w = width - margin_l - margin_r
     plot_h = height - margin_t - margin_b
 
@@ -180,39 +180,136 @@ def chart_automation_risk(rows):
     # axis titles
     out.append(text(margin_l + plot_w / 2, height - 14, "Automation Resistance  (10 = AI cannot replace)",
                     size=12, color="#333", anchor="middle"))
-    out.append(f'<text x="{margin_l - 44}" y="{margin_t + plot_h / 2}" '
+    out.append(f'<text x="{margin_l - 50}" y="{margin_t + plot_h / 2}" '
                f'font-size="12" fill="#333" '
-               f'transform="rotate(-90 {margin_l - 44} {margin_t + plot_h / 2})" '
+               f'transform="rotate(-90 {margin_l - 50} {margin_t + plot_h / 2})" '
                f'text-anchor="middle">Market Demand  (10 = strongest)</text>\n')
 
-    # plot points (jitter colliding ones)
-    placed = []
+    notable = {
+        "Staff Engineer / Tech Lead", "Security Engineer", "ML Engineer",
+        "Platform Engineer", "AI Research Engineer", "AI Application Engineer",
+        "Backend Engineer", "Frontend Engineer", "QA Manual",
+        "Data Analyst", "Prompt Engineer", "Data Engineer",
+        "Site Reliability Engineer", "Engineering Manager",
+        "Systems / Low-level Engineer", "DevOps Engineer",
+        "MLOps Engineer", "Application Security Engineer",
+        "Cloud Security Engineer", "UI Designer",
+    }
+
+    # Group rows by exact (autoresist, demand) so we can lay out clusters and labels.
+    groups = {}
     for r in rows:
-        cx = margin_l + plot_w * r["automation_resistance"] / 10
-        cy = margin_t + plot_h * (10 - r["demand"]) / 10
-        # tiny jitter if collision
-        jitter = 0
-        for px, py in placed:
-            if abs(px - cx) < 6 and abs(py - cy) < 6:
-                jitter += 8
-        cx += jitter
-        placed.append((cx, cy))
-        color = TIER_COLOR[r["verdict_tier"]]
-        out.append(f'<circle cx="{cx}" cy="{cy}" r="6" fill="{color}" '
-                   f'fill-opacity="0.85" stroke="#ffffff" stroke-width="1.2"/>\n')
-        # label only the most informative roles to avoid clutter
-        notable = {
-            "Staff Engineer / Tech Lead", "Security Engineer", "ML Engineer",
-            "Platform Engineer", "AI Research Engineer", "AI Application Engineer",
-            "Backend Engineer", "Frontend Engineer", "QA Manual",
-            "Data Analyst", "Prompt Engineer", "Data Engineer",
-            "Site Reliability Engineer", "Engineering Manager",
-            "Systems / Low-level Engineer", "DevOps Engineer",
-        }
-        if r["role"] in notable:
-            anchor = "start" if r["automation_resistance"] <= 7 else "end"
-            dx = 9 if anchor == "start" else -9
-            out.append(text(cx + dx, cy + 4, r["role"], size=10, color="#222", anchor=anchor))
+        key = (r["automation_resistance"], r["demand"])
+        groups.setdefault(key, []).append(r)
+
+    # Determine each group's center, dot positions, and label block.
+    # Then resolve label-block collisions before emitting SVG, so the second pass
+    # can render leaders that point to the original cluster center.
+    line_h = 13
+    label_blocks = []  # (cx, cy, side, members_with_labels, computed_y0)
+
+    # ── pass 1: draw dot clusters ─────────────────────────────────────────────
+    dots_svg = []
+    for (ar, dem), members in groups.items():
+        cx = margin_l + plot_w * ar / 10
+        cy = margin_t + plot_h * (10 - dem) / 10
+        n = len(members)
+        # Cluster layout: single dot at center, otherwise small ring (radius scales with n)
+        radius = 6
+        if n == 1:
+            positions = [(cx, cy)]
+        else:
+            import math
+            r_off = 7 + (n - 2) * 1.5
+            positions = []
+            # If 2 or 3, lay them out in a horizontal row; otherwise ring.
+            if n <= 3:
+                for i in range(n):
+                    positions.append((cx + (i - (n - 1) / 2) * (radius * 2 + 2), cy))
+            else:
+                for i in range(n):
+                    angle = 2 * math.pi * i / n - math.pi / 2
+                    positions.append((cx + r_off * math.cos(angle),
+                                      cy + r_off * math.sin(angle)))
+
+        for (x, y), m in zip(positions, members):
+            color = TIER_COLOR[m["verdict_tier"]]
+            dots_svg.append(
+                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius}" fill="{color}" '
+                f'fill-opacity="0.88" stroke="#ffffff" stroke-width="1.2"/>\n'
+            )
+
+        labelled = [m for m in members if m["role"] in notable]
+        if labelled:
+            # Right-anchored if dot is in the right 55% of the plot, else left-anchored.
+            side = "end" if ar >= 6 else "start"
+            block_h = len(labelled) * line_h
+            y0 = cy - (block_h - line_h) / 2  # vertical center on cluster
+            longest = max(len(s) for s in (m["role"] for m in labelled))
+            label_w = longest * 10 * 0.6 + 4  # rough char-width heuristic
+            if side == "start":
+                x_left = cx + 14
+                x_right = x_left + label_w
+            else:
+                x_right = cx - 14
+                x_left = x_right - label_w
+            label_blocks.append({
+                "cx": cx, "cy": cy, "side": side,
+                "labels": [m["role"] for m in labelled],
+                "y0": y0,
+                "h": block_h,
+                "x_left": x_left,
+                "x_right": x_right,
+                "ar": ar,
+            })
+
+    out.extend(dots_svg)
+
+    # ── pass 2: resolve label-block collisions across both sides ─────────────
+    # Build occupancy: any two blocks whose x-ranges overlap must be vertically
+    # separated. Sort by y0 ascending; for each block, if any earlier block
+    # overlaps in x and would overlap in y, push the current block down.
+
+    def x_overlaps(a, b, pad=2):
+        return not (a["x_right"] + pad <= b["x_left"] or
+                    b["x_right"] + pad <= a["x_left"])
+
+    blocks_sorted = sorted(label_blocks, key=lambda b: b["y0"])
+    for i, b in enumerate(blocks_sorted):
+        top = b["y0"] - line_h * 0.9
+        # Check every prior block that shares x-range
+        for j in range(i):
+            other = blocks_sorted[j]
+            if not x_overlaps(b, other):
+                continue
+            other_bottom = other["y0"] + other["h"] - line_h * 0.2
+            if top < other_bottom + 4:
+                shift = (other_bottom + 4) - top
+                b["y0"] += shift
+                top = b["y0"] - line_h * 0.9
+        # Clamp to plot bounds (push back up if past bottom)
+        bottom_limit = height - margin_b - 4
+        if b["y0"] + b["h"] - line_h > bottom_limit:
+            b["y0"] = bottom_limit - (b["h"] - line_h)
+
+    # ── pass 3: emit leader lines and labels ─────────────────────────────────
+    for b in label_blocks:
+        cx, cy, side = b["cx"], b["cy"], b["side"]
+        if side == "start":
+            label_x = cx + 14
+            anchor_label_x = label_x - 2
+        else:
+            label_x = cx - 14
+            anchor_label_x = label_x + 2
+
+        center_label_y = b["y0"] + (b["h"] - line_h) / 2 + 4
+        if abs(center_label_y - cy) > 6 or len(b["labels"]) > 1:
+            out.append(line(cx, cy, anchor_label_x, center_label_y,
+                            stroke="#bbbbbb", width=1))
+
+        for i, role in enumerate(b["labels"]):
+            ly = b["y0"] + i * line_h + 4
+            out.append(text(label_x, ly, role, size=10, color="#222", anchor=side))
 
     out.append(svg_close())
     (OUT / "automation_risk.svg").write_text("".join(out))
