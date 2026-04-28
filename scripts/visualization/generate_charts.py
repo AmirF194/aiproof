@@ -61,9 +61,15 @@ def svg_close():
     return "</svg>\n"
 
 
+def xml_escape(s):
+    return (str(s).replace("&", "&amp;")
+                  .replace("<", "&lt;")
+                  .replace(">", "&gt;"))
+
+
 def text(x, y, s, *, size=12, color="#222", weight="normal", anchor="start"):
     return (f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}" '
-            f'font-weight="{weight}" text-anchor="{anchor}">{s}</text>\n')
+            f'font-weight="{weight}" text-anchor="{anchor}">{xml_escape(s)}</text>\n')
 
 
 def rect(x, y, w, h, fill, *, stroke=None, rx=0):
