@@ -1,9 +1,23 @@
+from pathlib import Path
+
+from django.conf import settings
 from django.db.models import Avg, Count
+from django.http import FileResponse, Http404
 from django.shortcuts import render
 
 from apps.roles.models import Category, Role, TIER_ORDER, TIER_LABELS, TIER_BLURBS
 
 from .sources import SOURCES
+
+
+# Allowlist of CSVs that the public can download from the processed data dir.
+_DOWNLOADABLE = {
+    "role_ranking.csv": "processed",
+    "category_summary.csv": "processed",
+    "tier_summary.csv": "processed",
+    "role_postings_live.csv": "processed",
+    "roles.csv": "root",
+}
 
 
 def home(request):
@@ -65,3 +79,19 @@ def sources(request):
         "core/sources.html",
         {"groups": grouped, "n_sources": len(SOURCES)},
     )
+
+
+def data_download(request, filename: str):
+    """Stream a curated CSV from data/{processed,raw}/ as an attachment."""
+    location = _DOWNLOADABLE.get(filename)
+    if location is None:
+        raise Http404
+    if location == "processed":
+        path = Path(settings.PROCESSED_DIR) / filename
+    elif location == "root":
+        path = Path(settings.DATA_DIR) / filename
+    else:
+        raise Http404
+    if not path.is_file():
+        raise Http404
+    return FileResponse(path.open("rb"), as_attachment=True, filename=filename)

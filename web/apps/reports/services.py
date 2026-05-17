@@ -73,15 +73,40 @@ def _rewrite_chart_refs(html: str) -> str:
     )
 
 
+# Local-file link targets that should become real site URLs, with friendly
+# replacement text when the author wrote the bare filename as the link text
+# (which our source markdown often does).
+_LINK_REWRITES = {
+    "REPORT.md": ("/report/", "Report"),
+    "INSIGHTS.md": ("/report/insights/", "Insights"),
+    "METHODOLOGY.md": ("/report/methodology/", "Methodology"),
+    "README.md": ("/", "Overview"),
+    "data/roles.csv": ("/data/roles.csv", "roles.csv (download)"),
+    "data/processed/role_ranking.csv": ("/data/role_ranking.csv", "role_ranking.csv (download)"),
+    "data/processed/": ("/sources/", "data sources"),
+    "data/processed": ("/sources/", "data sources"),
+    "docs/role_directory.md": ("/sources/", "role directory"),
+}
+
+_ANCHOR_RE = re.compile(r'<a\b([^>]*?)\bhref="([^"]+)"([^>]*)>(.*?)</a>', re.DOTALL)
+
+
 def _rewrite_internal_links(html: str) -> str:
-    return (
-        html.replace('href="REPORT.md', 'href="/report/')
-        .replace('href="INSIGHTS.md', 'href="/report/insights/')
-        .replace('href="METHODOLOGY.md', 'href="/report/methodology/')
-        .replace('href="README.md', 'href="/')
-        .replace('href="data/processed/role_ranking.csv', 'href="/roles/')
-        .replace('href="data/roles.csv', 'href="/roles/')
-    )
+    def _sub(m: re.Match) -> str:
+        pre, href, post, text = m.group(1), m.group(2), m.group(3), m.group(4)
+        # Preserve fragments (#section) when remapping a known target.
+        base, _, frag = href.partition("#")
+        if base in _LINK_REWRITES:
+            new_href, label = _LINK_REWRITES[base]
+            if frag:
+                new_href = f"{new_href}#{frag}"
+            # Replace the visible text when the author used the raw path as the label.
+            if text.strip() == href or text.strip() == base:
+                text = label
+            return f'<a{pre}href="{new_href}"{post}>{text}</a>'
+        return m.group(0)
+
+    return _ANCHOR_RE.sub(_sub, html)
 
 
 @lru_cache(maxsize=8)

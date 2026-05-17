@@ -8,7 +8,7 @@
       <h1 class="text-3xl font-semibold tracking-tight text-slate-900">Full ranking</h1>
       <p class="text-slate-500 mt-1 text-sm">1,000 roles. Filter by tier, category, trend. Search by name.</p>
     </div>
-    <a href="/static/data/role_ranking.csv" class="text-sm text-slate-700 hover:text-slate-900 border border-slate-300 hover:border-slate-400 rounded-md px-3 py-1.5 bg-white">Download CSV</a>
+    <a href="{% url 'core:data_download' 'role_ranking.csv' %}" class="text-sm text-slate-700 hover:text-slate-900 border border-slate-300 hover:border-slate-400 rounded-md px-3 py-1.5 bg-white">Download CSV</a>
   </div>
 
   <form
