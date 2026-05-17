@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.db.models import Q
 from django.http import Http404
 from django.shortcuts import get_object_or_404, render
@@ -11,14 +12,25 @@ from .models import (
     TIER_ORDER,
     TREND_LABELS,
 )
+from . import scoring
 
 
-SORT_FIELDS = {
-    "score": "-score",
-    "score_asc": "score",
-    "role": "role",
-    "rank": "rank",
-    "salary": "-salary_high_usd",
+# label, db field expression for ordering. Sub-score sorts are descending.
+SORT_FIELDS: dict[str, tuple[str, str]] = {
+    "rank":        ("Rank (top first)",                "rank"),
+    "score":       ("Overall score (high → low)",      "-score"),
+    "score_asc":   ("Overall score (low → high)",      "score"),
+    "role":        ("Role name (A → Z)",               "role"),
+    "salary":      ("Salary (high → low)",             "-salary_high_usd"),
+    "demand":      ("Demand (high → low)",             "-demand"),
+    "automation_resistance":           ("Automation resistance (high → low)", "-automation_resistance"),
+    "skill_depth":                     ("Skill depth (high → low)",           "-skill_depth"),
+    "strategic_importance":            ("Strategic importance (high → low)",  "-strategic_importance"),
+    "human_judgment_score":            ("Human judgment (high → low)",        "-human_judgment_score"),
+    "stakeholder_interaction_score":   ("Stakeholder interaction (high → low)", "-stakeholder_interaction_score"),
+    "ai_augmentation_potential_score": ("AI augmentation potential (high → low)", "-ai_augmentation_potential_score"),
+    "regulatory_relevance_score":      ("Regulatory relevance (high → low)",  "-regulatory_relevance_score"),
+    "confidence":  ("Confidence (high → low)",          "-confidence_score"),
 }
 
 
@@ -29,31 +41,64 @@ def _filter_roles(request):
     tier = request.GET.get("tier", "").strip()
     category = request.GET.get("category", "").strip()
     trend = request.GET.get("trend", "").strip()
+    seniority = request.GET.get("seniority", "").strip()
+    family = request.GET.get("family", "").strip()
     sort = request.GET.get("sort", "rank").strip()
 
     if q:
-        qs = qs.filter(Q(role__icontains=q) | Q(category__name__icontains=q))
+        qs = qs.filter(Q(role__icontains=q) | Q(category__name__icontains=q) | Q(notes__icontains=q))
     if tier in TIER_ORDER:
         qs = qs.filter(tier=tier)
     if category:
         qs = qs.filter(category__slug=category)
     if trend in TREND_LABELS:
         qs = qs.filter(demand_trend=trend)
+    if seniority in scoring.SENIORITY_ORDER:
+        qs = qs.filter(seniority_level=seniority)
+    if family:
+        qs = qs.filter(role_family=family)
 
-    order = SORT_FIELDS.get(sort, "rank")
-    qs = qs.order_by(order, "role")
+    order_field = SORT_FIELDS.get(sort, SORT_FIELDS["rank"])[1]
+    qs = qs.order_by(order_field, "role")
 
     return qs, {
         "q": q,
         "tier": tier,
         "category": category,
         "trend": trend,
+        "seniority": seniority,
+        "family": family,
         "sort": sort,
     }
 
 
+def _paginate(qs, request, per_page: int = 100):
+    paginator = Paginator(qs, per_page)
+    page_number = request.GET.get("page") or 1
+    try:
+        page = paginator.page(page_number)
+    except Exception:  # InvalidPage / EmptyPage / PageNotAnInteger
+        page = paginator.page(1)
+    return page, paginator
+
+
+def _family_options() -> list[str]:
+    return list(
+        Role.objects
+        .exclude(role_family="")
+        .values_list("role_family", flat=True)
+        .order_by("role_family")
+        .distinct()
+    )
+
+
+def _sort_options() -> list[dict]:
+    return [{"key": k, "label": v[0]} for k, v in SORT_FIELDS.items()]
+
+
 def ranking(request):
     qs, params = _filter_roles(request)
+    page, paginator = _paginate(qs, request, per_page=100)
     categories = Category.objects.order_by("name")
     tiers = [
         {"key": k, "label": TIER_LABELS[k], "color": TIER_COLORS[k]}
@@ -64,14 +109,19 @@ def ranking(request):
         request,
         "roles/ranking.html",
         {
-            "roles": qs[:200],
-            "total": qs.count(),
+            "roles": page.object_list,
+            "page": page,
+            "paginator": paginator,
+            "total": paginator.count,
             "categories": categories,
             "tiers": tiers,
             "trends": trends,
+            "seniorities": scoring.SENIORITY_ORDER,
+            "families": _family_options(),
+            "sort_options": _sort_options(),
             "params": params,
             "page_title": "Full ranking — 1,000 tech roles scored for AI resilience · AIProof",
-            "page_description": "Browse the full AIProof ranking of 1,000 tech roles. Filter by tier, category, and trend. Tick up to 4 to compare side-by-side. Live weekly posting signals on covered roles.",
+            "page_description": "Browse the full AIProof ranking of 1,000 tech roles. Filter by tier, category, trend, seniority, and role family. Sort by any of 8 score dimensions. Tick up to 4 to compare side-by-side.",
         },
     )
 
@@ -79,12 +129,15 @@ def ranking(request):
 def ranking_table(request):
     """HTMX partial: just the table body + meta."""
     qs, params = _filter_roles(request)
+    page, paginator = _paginate(qs, request, per_page=100)
     return render(
         request,
         "roles/_ranking_table.html",
         {
-            "roles": qs[:200],
-            "total": qs.count(),
+            "roles": page.object_list,
+            "page": page,
+            "paginator": paginator,
+            "total": paginator.count,
             "params": params,
         },
     )

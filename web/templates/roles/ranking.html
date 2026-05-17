@@ -5,23 +5,23 @@
   <div class="flex items-baseline justify-between gap-4 flex-wrap">
     <div>
       <h1 class="text-3xl font-semibold tracking-tight text-slate-900">Full ranking</h1>
-      <p class="text-slate-500 mt-1 text-sm">1,000 roles. Filter by tier, category, trend. Tick up to 4 rows to compare.</p>
+      <p class="text-slate-500 mt-1 text-sm">1,000 roles. Filter by tier, category, trend, seniority, role family. Sort by any of 8 score dimensions. Tick up to 4 rows to compare.</p>
     </div>
     <a href="{% url 'core:data_download' 'role_ranking.csv' %}" class="text-sm text-slate-700 hover:text-slate-900 border border-slate-300 hover:border-slate-400 rounded-md px-3 py-1.5 bg-white">Download CSV</a>
   </div>
 
   <form
-    class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5"
+    class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7"
     hx-get="{% url 'roles:ranking_table' %}"
     hx-target="#ranking-table"
     hx-trigger="change, keyup delay:300ms from:input[name=q]"
     hx-push-url="true"
   >
-    <label class="lg:col-span-2">
+    <label class="xl:col-span-2">
       <span class="text-xs uppercase tracking-wider text-slate-500">Search</span>
       <input
         type="text" name="q" value="{{ params.q }}"
-        placeholder="role or category..."
+        placeholder="role, category, or description..."
         class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-500"
       >
     </label>
@@ -44,6 +44,24 @@
       </select>
     </label>
     <label>
+      <span class="text-xs uppercase tracking-wider text-slate-500">Role family</span>
+      <select name="family" class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900">
+        <option value="">All families</option>
+        {% for f in families %}
+          <option value="{{ f }}" {% if params.family == f %}selected{% endif %}>{{ f }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      <span class="text-xs uppercase tracking-wider text-slate-500">Seniority</span>
+      <select name="seniority" class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900">
+        <option value="">Any seniority</option>
+        {% for s in seniorities %}
+          <option value="{{ s }}" {% if params.seniority == s %}selected{% endif %}>{{ s }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
       <span class="text-xs uppercase tracking-wider text-slate-500">Trend</span>
       <select name="trend" class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900">
         <option value="">Any</option>
@@ -53,13 +71,11 @@
       </select>
     </label>
     <label>
-      <span class="text-xs uppercase tracking-wider text-slate-500">Sort</span>
+      <span class="text-xs uppercase tracking-wider text-slate-500">Sort by</span>
       <select name="sort" class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900">
-        <option value="rank" {% if params.sort == 'rank' %}selected{% endif %}>Rank (top first)</option>
-        <option value="score" {% if params.sort == 'score' %}selected{% endif %}>Score (high to low)</option>
-        <option value="score_asc" {% if params.sort == 'score_asc' %}selected{% endif %}>Score (low to high)</option>
-        <option value="role" {% if params.sort == 'role' %}selected{% endif %}>Role name (A-Z)</option>
-        <option value="salary" {% if params.sort == 'salary' %}selected{% endif %}>Salary (high to low)</option>
+        {% for opt in sort_options %}
+          <option value="{{ opt.key }}" {% if params.sort == opt.key %}selected{% endif %}>{{ opt.label }}</option>
+        {% endfor %}
       </select>
     </label>
   </form>
@@ -90,7 +106,6 @@
     return {
       selected: JSON.parse(localStorage.getItem(KEY) || "[]"),
       init() {
-        // Sync checkbox state with stored selection after each htmx swap.
         document.body.addEventListener("htmx:afterSwap", () => this.syncFromDom());
         this.$nextTick(() => this.syncDomFromState());
       },

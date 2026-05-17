@@ -1,5 +1,11 @@
-<div class="text-xs text-slate-500 mb-2">
-  Showing {{ roles|length }} of {{ total }} match{{ total|pluralize:"es" }}{% if total > 200 %} (results capped at 200 — refine filters to narrow){% endif %}
+<div class="text-xs text-slate-500 mb-2 flex items-baseline gap-2">
+  {% if page %}
+    Showing <span class="tabular-nums text-slate-700 font-medium">{{ page.start_index }}–{{ page.end_index }}</span>
+    of <span class="tabular-nums text-slate-700 font-medium">{{ total }}</span> match{{ total|pluralize:"es" }}
+    {% if paginator.num_pages > 1 %}<span class="text-slate-400">·</span> page {{ page.number }} of {{ paginator.num_pages }}{% endif %}
+  {% else %}
+    Showing {{ roles|length }} of {{ total }} match{{ total|pluralize:"es" }}
+  {% endif %}
 </div>
 <div class="overflow-x-auto rounded-lg border border-slate-200 bg-white">
   <table class="w-full text-sm">
@@ -99,3 +105,40 @@
   <span class="text-slate-400">·</span>
   <span class="inline-flex items-center gap-1"><span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span> = live posting count this week</span>
 </div>
+
+{# Pagination — preserves all current filter query params via request.GET #}
+{% if page and paginator.num_pages > 1 %}
+  <nav class="mt-5 flex items-center justify-between gap-3 text-sm">
+    <div class="text-xs text-slate-500">
+      Page {{ page.number }} of {{ paginator.num_pages }}
+    </div>
+    <div class="flex items-center gap-1">
+      {% if page.has_previous %}
+        <a href="?{% for k, v in request.GET.items %}{% if k != 'page' %}{{ k }}={{ v|urlencode }}&{% endif %}{% endfor %}page=1"
+           hx-get="{% url 'roles:ranking_table' %}?{% for k, v in request.GET.items %}{% if k != 'page' %}{{ k }}={{ v|urlencode }}&{% endif %}{% endfor %}page=1"
+           hx-target="#ranking-table" hx-push-url="true"
+           class="px-2 py-1 rounded border border-slate-300 bg-white text-slate-700 hover:border-slate-400">«</a>
+        <a href="?{% for k, v in request.GET.items %}{% if k != 'page' %}{{ k }}={{ v|urlencode }}&{% endif %}{% endfor %}page={{ page.previous_page_number }}"
+           hx-get="{% url 'roles:ranking_table' %}?{% for k, v in request.GET.items %}{% if k != 'page' %}{{ k }}={{ v|urlencode }}&{% endif %}{% endfor %}page={{ page.previous_page_number }}"
+           hx-target="#ranking-table" hx-push-url="true"
+           class="px-3 py-1 rounded border border-slate-300 bg-white text-slate-700 hover:border-slate-400">Previous</a>
+      {% else %}
+        <span class="px-2 py-1 rounded border border-slate-200 bg-slate-50 text-slate-300">«</span>
+        <span class="px-3 py-1 rounded border border-slate-200 bg-slate-50 text-slate-300">Previous</span>
+      {% endif %}
+      {% if page.has_next %}
+        <a href="?{% for k, v in request.GET.items %}{% if k != 'page' %}{{ k }}={{ v|urlencode }}&{% endif %}{% endfor %}page={{ page.next_page_number }}"
+           hx-get="{% url 'roles:ranking_table' %}?{% for k, v in request.GET.items %}{% if k != 'page' %}{{ k }}={{ v|urlencode }}&{% endif %}{% endfor %}page={{ page.next_page_number }}"
+           hx-target="#ranking-table" hx-push-url="true"
+           class="px-3 py-1 rounded border border-slate-300 bg-white text-slate-700 hover:border-slate-400">Next</a>
+        <a href="?{% for k, v in request.GET.items %}{% if k != 'page' %}{{ k }}={{ v|urlencode }}&{% endif %}{% endfor %}page={{ paginator.num_pages }}"
+           hx-get="{% url 'roles:ranking_table' %}?{% for k, v in request.GET.items %}{% if k != 'page' %}{{ k }}={{ v|urlencode }}&{% endif %}{% endfor %}page={{ paginator.num_pages }}"
+           hx-target="#ranking-table" hx-push-url="true"
+           class="px-2 py-1 rounded border border-slate-300 bg-white text-slate-700 hover:border-slate-400">»</a>
+      {% else %}
+        <span class="px-3 py-1 rounded border border-slate-200 bg-slate-50 text-slate-300">Next</span>
+        <span class="px-2 py-1 rounded border border-slate-200 bg-slate-50 text-slate-300">»</span>
+      {% endif %}
+    </div>
+  </nav>
+{% endif %}
