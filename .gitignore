@@ -13,3 +13,6 @@ web/db.sqlite3
 data/raw/hn_who_is_hiring.csv
 data/raw/greenhouse_postings.csv
 data/raw/lever_postings.csv
+data/raw/themuse_postings.csv
+data/raw/remotive_postings.csv
+data/processed/role_postings_live.csv

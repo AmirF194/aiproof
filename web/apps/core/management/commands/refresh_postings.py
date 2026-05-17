@@ -1,12 +1,13 @@
-"""Refresh all live posting feeds from public APIs.
+"""Refresh all live posting feeds, aggregate to per-role metrics, push to DB.
 
-Invokes the three real crawlers — HN Algolia, Greenhouse public boards,
-Lever public boards — and writes normalised CSVs into data/raw/.
+Pipeline (Celery beat fires this weekly):
+  1. Run 5 live crawlers (HN, Greenhouse, Lever, The Muse, Remotive)
+       → writes raw CSVs to data/raw/
+  2. Aggregate raw postings against the 1,000-role roster
+       → writes data/processed/role_postings_live.csv
+  3. update_live_metrics
+       → updates RoleMetric rows in the database
 
-Run:
-    python manage.py refresh_postings
-
-Designed to be invoked from cron (weekly) on the production host.
 Network failures are tolerated per-source: existing cache is preserved
 when a fetch returns zero rows.
 """
@@ -18,6 +19,7 @@ import time
 from pathlib import Path
 
 from django.conf import settings
+from django.core.management import call_command
 from django.core.management.base import BaseCommand
 
 
@@ -25,11 +27,13 @@ CRAWLERS = (
     "hn_who_is_hiring",
     "greenhouse_ats",
     "lever_ats",
+    "themuse_api",
+    "remotive_api",
 )
 
 
 class Command(BaseCommand):
-    help = "Refresh live posting feeds (HN Who's Hiring, Greenhouse, Lever)."
+    help = "Crawl live posting feeds, aggregate to roles, update DB metrics."
 
     def handle(self, *args, **options):
         scripts_dir = Path(settings.REPO_DIR) / "scripts" / "data_collection"
@@ -57,3 +61,17 @@ class Command(BaseCommand):
                 total += count
                 self.stdout.write(f"  {name:24s}  {count:>6d} rows  ({dur:.1f}s)")
         self.stdout.write(self.style.SUCCESS(f"refresh_postings: {total} total rows across {len(CRAWLERS)} sources"))
+
+        # Aggregate raw → per-role metrics, then push into the database.
+        clean_dir = Path(settings.REPO_DIR) / "scripts" / "data_cleaning"
+        if str(clean_dir) not in sys.path:
+            sys.path.insert(0, str(clean_dir))
+        try:
+            agg = importlib.import_module("aggregate_live_postings")
+            n_roles = int(agg.aggregate())
+            self.stdout.write(f"  aggregate_live_postings   {n_roles:>6d} roles matched")
+        except Exception as exc:  # noqa: BLE001
+            self.stderr.write(self.style.ERROR(f"aggregate_live_postings failed: {exc!r}"))
+            return
+
+        call_command("update_live_metrics")

@@ -1,7 +1,7 @@
 from django.db.models import Avg, Count
 from django.shortcuts import render
 
-from apps.roles.models import Role, TIER_ORDER, TIER_LABELS, TIER_BLURBS
+from apps.roles.models import Category, Role, TIER_ORDER, TIER_LABELS, TIER_BLURBS
 
 from .sources import SOURCES
 
@@ -28,6 +28,7 @@ def home(request):
     bottom_10 = Role.objects.order_by("score", "role")[:10]
 
     total = Role.objects.count()
+    categories = Category.objects.order_by("name")
 
     return render(
         request,
@@ -37,6 +38,7 @@ def home(request):
             "top_10": top_10,
             "bottom_10": bottom_10,
             "total": total,
+            "categories": categories,
         },
     )
 
