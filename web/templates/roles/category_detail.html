@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{{ category.name }} — aiproof{% endblock %}
+
+{% block content %}
+<section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+  <a href="{% url 'roles:category_index' %}" class="text-xs text-slate-500 hover:text-slate-300">← All categories</a>
+  <h1 class="mt-2 text-3xl font-semibold tracking-tight">{{ category.name }}</h1>
+  <div class="mt-2 flex flex-wrap items-baseline gap-3 text-sm text-slate-400">
+    <span>{{ category.n_roles }} roles</span>
+    <span>· Avg score <span class="text-slate-200 tabular-nums">{{ category.avg_score|floatformat:1 }}</span></span>
+    <span>· Avg demand <span class="text-slate-200 tabular-nums">{{ category.avg_demand|floatformat:1 }}</span></span>
+    <span>· Avg automation resistance <span class="text-slate-200 tabular-nums">{{ category.avg_automation_resistance|floatformat:1 }}</span></span>
+  </div>
+
+  <div class="mt-6 overflow-x-auto rounded-lg border border-slate-800">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-900 text-slate-400 text-xs uppercase tracking-wider">
+        <tr>
+          <th class="px-3 py-2 text-left">#</th>
+          <th class="px-3 py-2 text-left">Role</th>
+          <th class="px-3 py-2 text-right">Score</th>
+          <th class="px-3 py-2 text-left">Tier</th>
+          <th class="px-3 py-2 text-left">Trend</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-800">
+        {% for role in roles %}
+          <tr class="hover:bg-slate-900/60">
+            <td class="px-3 py-2 text-slate-500 tabular-nums">{{ role.rank }}</td>
+            <td class="px-3 py-2">
+              <a href="{{ role.get_absolute_url }}" class="text-slate-100 hover:text-emerald-300">{{ role.role }}</a>
+            </td>
+            <td class="px-3 py-2 text-right font-semibold tabular-nums">{{ role.score }}</td>
+            <td class="px-3 py-2">
+              <span class="px-2 py-0.5 text-xs rounded-md tier-{{ role.tier }} border">{{ role.tier_label }}</span>
+            </td>
+            <td class="px-3 py-2 text-slate-300">{{ role.trend_label }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Ranking — aiproof{% endblock %}
+
+{% block content %}
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+  <div class="flex items-baseline justify-between gap-4 flex-wrap">
+    <div>
+      <h1 class="text-3xl font-semibold tracking-tight">Full ranking</h1>
+      <p class="text-slate-400 mt-1 text-sm">1,000 roles. Filter by tier, category, trend. Search by name.</p>
+    </div>
+    <a href="/static/data/role_ranking.csv" class="text-sm text-slate-300 hover:text-white border border-slate-700 hover:border-slate-500 rounded-md px-3 py-1.5">Download CSV</a>
+  </div>
+
+  <form
+    class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5"
+    hx-get="{% url 'roles:ranking_table' %}"
+    hx-target="#ranking-table"
+    hx-trigger="change, keyup delay:300ms from:input[name=q]"
+    hx-push-url="true"
+  >
+    <label class="lg:col-span-2">
+      <span class="text-xs uppercase tracking-wider text-slate-400">Search</span>
+      <input
+        type="text" name="q" value="{{ params.q }}"
+        placeholder="role or category..."
+        class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500"
+      >
+    </label>
+    <label>
+      <span class="text-xs uppercase tracking-wider text-slate-400">Tier</span>
+      <select name="tier" class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100">
+        <option value="">All tiers</option>
+        {% for t in tiers %}
+          <option value="{{ t.key }}" {% if params.tier == t.key %}selected{% endif %}>{{ t.label }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      <span class="text-xs uppercase tracking-wider text-slate-400">Category</span>
+      <select name="category" class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100">
+        <option value="">All categories</option>
+        {% for c in categories %}
+          <option value="{{ c.slug }}" {% if params.category == c.slug %}selected{% endif %}>{{ c.name }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      <span class="text-xs uppercase tracking-wider text-slate-400">Trend</span>
+      <select name="trend" class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100">
+        <option value="">Any</option>
+        {% for t in trends %}
+          <option value="{{ t.key }}" {% if params.trend == t.key %}selected{% endif %}>{{ t.label }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      <span class="text-xs uppercase tracking-wider text-slate-400">Sort</span>
+      <select name="sort" class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100">
+        <option value="rank" {% if params.sort == 'rank' %}selected{% endif %}>Rank (top first)</option>
+        <option value="score" {% if params.sort == 'score' %}selected{% endif %}>Score (high to low)</option>
+        <option value="score_asc" {% if params.sort == 'score_asc' %}selected{% endif %}>Score (low to high)</option>
+        <option value="role" {% if params.sort == 'role' %}selected{% endif %}>Role name (A-Z)</option>
+        <option value="salary" {% if params.sort == 'salary' %}selected{% endif %}>Salary (high to low)</option>
+      </select>
+    </label>
+  </form>
+
+  <div id="ranking-table" class="mt-6">
+    {% include "roles/_ranking_table.html" %}
+  </div>
+</section>
+{% endblock %}

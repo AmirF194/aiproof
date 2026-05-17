@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 1686" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="12" role="img" aria-label="Career Safety Score — Top and Bottom Roles">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="320" y="32" font-size="18" fill="#222" font-weight="bold" text-anchor="start">Career Safety Score — Top 50 &amp; Bottom 25  (of 1,000 roles, 2026–2035)</text>
+<text x="320" y="52" font-size="11" fill="#555" font-weight="normal" text-anchor="start">Higher = more durable.  Score = 0.30·Demand + 0.35·AutoResist + 0.15·SkillDepth + 0.20·StrategicImportance</text>
+<text x="320" y="70" font-size="10" fill="#888" font-weight="normal" text-anchor="start">Full 1,000-row ranking lives in data/processed/role_ranking.csv.</text>
+<line x1="320.0" y1="90" x2="320.0" y2="1626" stroke="#eeeeee" stroke-width="1"/>
+<text x="320.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">0</text>
+<line x1="475.0" y1="90" x2="475.0" y2="1626" stroke="#eeeeee" stroke-width="1"/>
+<text x="475.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">25</text>
+<line x1="630.0" y1="90" x2="630.0" y2="1626" stroke="#eeeeee" stroke-width="1"/>
+<text x="630.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">50</text>
+<line x1="785.0" y1="90" x2="785.0" y2="1626" stroke="#eeeeee" stroke-width="1"/>
+<text x="785.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">75</text>
+<line x1="940.0" y1="90" x2="940.0" y2="1626" stroke="#eeeeee" stroke-width="1"/>
+<text x="940.0" y="84" font-size="10" fill="#888" font-weight="normal" text-anchor="middle">100</text>
+<rect x="834.6" y="1626" width="111.60000000000002" height="4" fill="#1f7a3a"/>
+<rect x="754.0" y="1626" width="80.60000000000002" height="4" fill="#4caf50"/>
+<rect x="679.6" y="1626" width="74.39999999999998" height="4" fill="#f0a30a"/>
+<rect x="574.2" y="1626" width="105.39999999999998" height="4" fill="#e57321"/>
+<rect x="320.0" y="1626" width="254.20000000000005" height="4" fill="#c62828"/>
+<text x="310" y="103" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Chief AI Officer  ·  Engineering Leadership</text>
+<rect x="320" y="90" width="582.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="908.8" y="103" font-size="11" fill="#333" font-weight="normal" text-anchor="start">94</text>
+<text x="310" y="123" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Staff Engineer / Tech Lead  ·  Engineering Leadership</text>
+<rect x="320" y="110" width="582.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="908.8" y="123" font-size="11" fill="#333" font-weight="normal" text-anchor="start">94</text>
+<text x="310" y="143" font-size="11" fill="#222" font-weight="normal" text-anchor="end">VP of AI / ML  ·  Engineering Leadership</text>
+<rect x="320" y="130" width="582.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="908.8" y="143" font-size="11" fill="#333" font-weight="normal" text-anchor="start">94</text>
+<text x="310" y="163" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Staff Security Engineer  ·  Security</text>
+<rect x="320" y="150" width="582.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="908.8" y="163" font-size="11" fill="#333" font-weight="normal" text-anchor="start">94</text>
+<text x="310" y="183" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Senior LLM Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="170" width="570.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="896.4" y="183" font-size="11" fill="#333" font-weight="normal" text-anchor="start">92</text>
+<text x="310" y="203" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Security Engineer  ·  Security</text>
+<rect x="320" y="190" width="570.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="896.4" y="203" font-size="11" fill="#333" font-weight="normal" text-anchor="start">92</text>
+<text x="310" y="223" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Senior Security Engineer  ·  Security</text>
+<rect x="320" y="210" width="570.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="896.4" y="223" font-size="11" fill="#333" font-weight="normal" text-anchor="start">92</text>
+<text x="310" y="243" font-size="11" fill="#222" font-weight="normal" text-anchor="end">CTO  ·  Engineering Leadership</text>
+<rect x="320" y="230" width="564.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="890.2" y="243" font-size="11" fill="#333" font-weight="normal" text-anchor="start">91</text>
+<text x="310" y="263" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Principal Engineer  ·  Engineering Leadership</text>
+<rect x="320" y="250" width="564.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="890.2" y="263" font-size="11" fill="#333" font-weight="normal" text-anchor="start">91</text>
+<text x="310" y="283" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Senior Principal Engineer  ·  Engineering Leadership</text>
+<rect x="320" y="270" width="564.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="890.2" y="283" font-size="11" fill="#333" font-weight="normal" text-anchor="start">91</text>
+<text x="310" y="303" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Senior Staff Engineer  ·  Engineering Leadership</text>
+<rect x="320" y="290" width="564.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="890.2" y="303" font-size="11" fill="#333" font-weight="normal" text-anchor="start">91</text>
+<text x="310" y="323" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Chief Information Security Officer  ·  Engineering Leadership</text>
+<rect x="320" y="310" width="558.0" height="16" fill="#1f7a3a" rx="2"/>
+<text x="884.0" y="323" font-size="11" fill="#333" font-weight="normal" text-anchor="start">90</text>
+<text x="310" y="343" font-size="11" fill="#222" font-weight="normal" text-anchor="end">VP of Engineering  ·  Engineering Leadership</text>
+<rect x="320" y="330" width="558.0" height="16" fill="#1f7a3a" rx="2"/>
+<text x="884.0" y="343" font-size="11" fill="#333" font-weight="normal" text-anchor="start">90</text>
+<text x="310" y="363" font-size="11" fill="#222" font-weight="normal" text-anchor="end">VP of Security  ·  Engineering Leadership</text>
+<rect x="320" y="350" width="558.0" height="16" fill="#1f7a3a" rx="2"/>
+<text x="884.0" y="363" font-size="11" fill="#333" font-weight="normal" text-anchor="start">90</text>
+<text x="310" y="383" font-size="11" fill="#222" font-weight="normal" text-anchor="end">AI Research Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="370" width="551.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="877.8" y="383" font-size="11" fill="#333" font-weight="normal" text-anchor="start">89</text>
+<text x="310" y="403" font-size="11" fill="#222" font-weight="normal" text-anchor="end">AI Safety / Alignment Researcher  ·  Data &amp; AI</text>
+<rect x="320" y="390" width="551.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="877.8" y="403" font-size="11" fill="#333" font-weight="normal" text-anchor="start">89</text>
+<text x="310" y="423" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Foundation Model Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="410" width="551.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="877.8" y="423" font-size="11" fill="#333" font-weight="normal" text-anchor="start">89</text>
+<text x="310" y="443" font-size="11" fill="#222" font-weight="normal" text-anchor="end">LLM Research Scientist  ·  Data &amp; AI</text>
+<rect x="320" y="430" width="551.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="877.8" y="443" font-size="11" fill="#333" font-weight="normal" text-anchor="start">89</text>
+<text x="310" y="463" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Senior AI Research Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="450" width="551.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="877.8" y="463" font-size="11" fill="#333" font-weight="normal" text-anchor="start">89</text>
+<text x="310" y="483" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Staff ML Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="470" width="551.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="877.8" y="483" font-size="11" fill="#333" font-weight="normal" text-anchor="start">89</text>
+<text x="310" y="503" font-size="11" fill="#222" font-weight="normal" text-anchor="end">CUDA Engineer  ·  Engineering</text>
+<rect x="320" y="490" width="551.8" height="16" fill="#1f7a3a" rx="2"/>
+<text x="877.8" y="503" font-size="11" fill="#333" font-weight="normal" text-anchor="start">89</text>
+<text x="310" y="523" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Chief Architect  ·  Engineering Leadership</text>
+<rect x="320" y="510" width="545.6" height="16" fill="#1f7a3a" rx="2"/>
+<text x="871.6" y="523" font-size="11" fill="#333" font-weight="normal" text-anchor="start">88</text>
+<text x="310" y="543" font-size="11" fill="#222" font-weight="normal" text-anchor="end">VP of Infrastructure  ·  Engineering Leadership</text>
+<rect x="320" y="530" width="545.6" height="16" fill="#1f7a3a" rx="2"/>
+<text x="871.6" y="543" font-size="11" fill="#333" font-weight="normal" text-anchor="start">88</text>
+<text x="310" y="563" font-size="11" fill="#222" font-weight="normal" text-anchor="end">VP of Platform  ·  Engineering Leadership</text>
+<rect x="320" y="550" width="545.6" height="16" fill="#1f7a3a" rx="2"/>
+<text x="871.6" y="563" font-size="11" fill="#333" font-weight="normal" text-anchor="start">88</text>
+<text x="310" y="583" font-size="11" fill="#222" font-weight="normal" text-anchor="end">AI Infrastructure Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="570" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="583" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="603" font-size="11" fill="#222" font-weight="normal" text-anchor="end">LLM Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="590" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="603" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="623" font-size="11" fill="#222" font-weight="normal" text-anchor="end">ML Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="610" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="623" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="643" font-size="11" fill="#222" font-weight="normal" text-anchor="end">MLOps Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="630" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="643" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="663" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Senior ML Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="650" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="663" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="683" font-size="11" fill="#222" font-weight="normal" text-anchor="end">SVP of Engineering  ·  Engineering Leadership</text>
+<rect x="320" y="670" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="683" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="703" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Platform Engineer  ·  Platform &amp; Infrastructure</text>
+<rect x="320" y="690" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="703" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="723" font-size="11" fill="#222" font-weight="normal" text-anchor="end">AI / ML Security Engineer  ·  Security</text>
+<rect x="320" y="710" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="723" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="743" font-size="11" fill="#222" font-weight="normal" text-anchor="end">AI Red Team Engineer  ·  Security</text>
+<rect x="320" y="730" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="743" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="763" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Application Security Engineer  ·  Security</text>
+<rect x="320" y="750" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="763" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="783" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Cloud Security Engineer  ·  Security</text>
+<rect x="320" y="770" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="783" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="803" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Security Architect  ·  Security</text>
+<rect x="320" y="790" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="803" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="823" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Senior Application Security Engineer  ·  Security</text>
+<rect x="320" y="810" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="823" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="843" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Senior Cloud Security Engineer  ·  Security</text>
+<rect x="320" y="830" width="539.4" height="16" fill="#1f7a3a" rx="2"/>
+<text x="865.4" y="843" font-size="11" fill="#333" font-weight="normal" text-anchor="start">87</text>
+<text x="310" y="863" font-size="11" fill="#222" font-weight="normal" text-anchor="end">ML Research Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="850" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="863" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="883" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Pretraining Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="870" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="883" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="903" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Principal ML Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="890" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="903" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="923" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Autonomous Vehicle Software Engineer  ·  Engineering</text>
+<rect x="320" y="910" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="923" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="943" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Distributed Systems Engineer  ·  Engineering</text>
+<rect x="320" y="930" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="943" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="963" font-size="11" fill="#222" font-weight="normal" text-anchor="end">GPU Engineer  ·  Engineering</text>
+<rect x="320" y="950" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="963" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="983" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Self-Driving Perception Engineer  ·  Engineering</text>
+<rect x="320" y="970" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="983" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="1003" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Self-Driving Planning Engineer  ·  Engineering</text>
+<rect x="320" y="990" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="1003" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="1023" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Triton (GPU) Kernel Engineer  ·  Engineering</text>
+<rect x="320" y="1010" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="1023" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="1043" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Director of AI / ML  ·  Engineering Leadership</text>
+<rect x="320" y="1030" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="1043" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="1063" font-size="11" fill="#222" font-weight="normal" text-anchor="end">VP of Product Engineering  ·  Engineering Leadership</text>
+<rect x="320" y="1050" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="1063" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<text x="310" y="1083" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Staff Platform Engineer  ·  Platform &amp; Infrastructure</text>
+<rect x="320" y="1070" width="533.2" height="16" fill="#1f7a3a" rx="2"/>
+<text x="859.2" y="1083" font-size="11" fill="#333" font-weight="normal" text-anchor="start">86</text>
+<rect x="320" y="1096" width="620" height="24" fill="#f5f5f5" rx="4"/>
+<text x="630.0" y="1112.0" font-size="12" fill="#888" font-weight="normal" text-anchor="middle">…  925 mid-tier roles elided  …</text>
+<text x="310" y="1139" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Backbone.js Maintainer  ·  Engineering</text>
+<rect x="320" y="1126" width="223.2" height="16" fill="#c62828" rx="2"/>
+<text x="549.2" y="1139" font-size="11" fill="#333" font-weight="normal" text-anchor="start">36</text>
+<text x="310" y="1159" font-size="11" fill="#222" font-weight="normal" text-anchor="end">CodeIgniter Engineer  ·  Engineering</text>
+<rect x="320" y="1146" width="223.2" height="16" fill="#c62828" rx="2"/>
+<text x="549.2" y="1159" font-size="11" fill="#333" font-weight="normal" text-anchor="start">36</text>
+<text x="310" y="1179" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Pascal / Delphi Engineer  ·  Engineering</text>
+<rect x="320" y="1166" width="223.2" height="16" fill="#c62828" rx="2"/>
+<text x="549.2" y="1179" font-size="11" fill="#333" font-weight="normal" text-anchor="start">36</text>
+<text x="310" y="1199" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Qlik Developer  ·  Data &amp; AI</text>
+<rect x="320" y="1186" width="217.0" height="16" fill="#c62828" rx="2"/>
+<text x="543.0" y="1199" font-size="11" fill="#333" font-weight="normal" text-anchor="start">35</text>
+<text x="310" y="1219" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Help Desk Tier 2  ·  Platform &amp; Infrastructure</text>
+<rect x="320" y="1206" width="217.0" height="16" fill="#c62828" rx="2"/>
+<text x="543.0" y="1219" font-size="11" fill="#333" font-weight="normal" text-anchor="start">35</text>
+<text x="310" y="1239" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Selenium Engineer  ·  Quality &amp; Testing</text>
+<rect x="320" y="1226" width="217.0" height="16" fill="#c62828" rx="2"/>
+<text x="543.0" y="1239" font-size="11" fill="#333" font-weight="normal" text-anchor="start">35</text>
+<text x="310" y="1259" font-size="11" fill="#222" font-weight="normal" text-anchor="end">No-code Developer / Maker  ·  Specialized &amp; Emerging</text>
+<rect x="320" y="1246" width="217.0" height="16" fill="#c62828" rx="2"/>
+<text x="543.0" y="1259" font-size="11" fill="#333" font-weight="normal" text-anchor="start">35</text>
+<text x="310" y="1279" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Sigma / ThoughtSpot Developer  ·  Data &amp; AI</text>
+<rect x="320" y="1266" width="210.8" height="16" fill="#c62828" rx="2"/>
+<text x="536.8" y="1279" font-size="11" fill="#333" font-weight="normal" text-anchor="start">34</text>
+<text x="310" y="1299" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Alpine.js Engineer  ·  Engineering</text>
+<rect x="320" y="1286" width="210.8" height="16" fill="#c62828" rx="2"/>
+<text x="536.8" y="1299" font-size="11" fill="#333" font-weight="normal" text-anchor="start">34</text>
+<text x="310" y="1319" font-size="11" fill="#222" font-weight="normal" text-anchor="end">KaiOS Engineer  ·  Engineering</text>
+<rect x="320" y="1306" width="210.8" height="16" fill="#c62828" rx="2"/>
+<text x="536.8" y="1319" font-size="11" fill="#333" font-weight="normal" text-anchor="start">34</text>
+<text x="310" y="1339" font-size="11" fill="#222" font-weight="normal" text-anchor="end">PowerBuilder Maintainer  ·  Engineering</text>
+<rect x="320" y="1326" width="210.8" height="16" fill="#c62828" rx="2"/>
+<text x="536.8" y="1339" font-size="11" fill="#333" font-weight="normal" text-anchor="start">34</text>
+<text x="310" y="1359" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Visual Basic / VB.NET Maintainer  ·  Engineering</text>
+<rect x="320" y="1346" width="210.8" height="16" fill="#c62828" rx="2"/>
+<text x="536.8" y="1359" font-size="11" fill="#333" font-weight="normal" text-anchor="start">34</text>
+<text x="310" y="1379" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Data Analyst  ·  Data &amp; AI</text>
+<rect x="320" y="1366" width="204.6" height="16" fill="#c62828" rx="2"/>
+<text x="530.6" y="1379" font-size="11" fill="#333" font-weight="normal" text-anchor="start">33</text>
+<text x="310" y="1399" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Pardot Developer  ·  Specialized &amp; Emerging</text>
+<rect x="320" y="1386" width="198.4" height="16" fill="#c62828" rx="2"/>
+<text x="524.4" y="1399" font-size="11" fill="#333" font-weight="normal" text-anchor="start">32</text>
+<text x="310" y="1419" font-size="11" fill="#222" font-weight="normal" text-anchor="end">QA Manual Lead  ·  Quality &amp; Testing</text>
+<rect x="320" y="1406" width="192.2" height="16" fill="#c62828" rx="2"/>
+<text x="518.2" y="1419" font-size="11" fill="#333" font-weight="normal" text-anchor="start">31</text>
+<text x="310" y="1439" font-size="11" fill="#222" font-weight="normal" text-anchor="end">MicroStrategy Developer  ·  Data &amp; AI</text>
+<rect x="320" y="1426" width="186.0" height="16" fill="#c62828" rx="2"/>
+<text x="512.0" y="1439" font-size="11" fill="#333" font-weight="normal" text-anchor="start">30</text>
+<text x="310" y="1459" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Game QA Tester  ·  Engineering</text>
+<rect x="320" y="1446" width="186.0" height="16" fill="#c62828" rx="2"/>
+<text x="512.0" y="1459" font-size="11" fill="#333" font-weight="normal" text-anchor="start">30</text>
+<text x="310" y="1479" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Desktop Support  ·  Platform &amp; Infrastructure</text>
+<rect x="320" y="1466" width="186.0" height="16" fill="#c62828" rx="2"/>
+<text x="512.0" y="1479" font-size="11" fill="#333" font-weight="normal" text-anchor="start">30</text>
+<text x="310" y="1499" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Domo Developer  ·  Data &amp; AI</text>
+<rect x="320" y="1486" width="179.8" height="16" fill="#c62828" rx="2"/>
+<text x="505.8" y="1499" font-size="11" fill="#333" font-weight="normal" text-anchor="start">29</text>
+<text x="310" y="1519" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Mode Analytics Developer  ·  Data &amp; AI</text>
+<rect x="320" y="1506" width="179.8" height="16" fill="#c62828" rx="2"/>
+<text x="505.8" y="1519" font-size="11" fill="#333" font-weight="normal" text-anchor="start">29</text>
+<text x="310" y="1539" font-size="11" fill="#222" font-weight="normal" text-anchor="end">ColdFusion Maintainer  ·  Engineering</text>
+<rect x="320" y="1526" width="179.8" height="16" fill="#c62828" rx="2"/>
+<text x="505.8" y="1539" font-size="11" fill="#333" font-weight="normal" text-anchor="start">29</text>
+<text x="310" y="1559" font-size="11" fill="#222" font-weight="normal" text-anchor="end">jQuery Maintainer  ·  Engineering</text>
+<rect x="320" y="1546" width="179.8" height="16" fill="#c62828" rx="2"/>
+<text x="505.8" y="1559" font-size="11" fill="#333" font-weight="normal" text-anchor="start">29</text>
+<text x="310" y="1579" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Prompt Engineer  ·  Data &amp; AI</text>
+<rect x="320" y="1566" width="167.4" height="16" fill="#c62828" rx="2"/>
+<text x="493.4" y="1579" font-size="11" fill="#333" font-weight="normal" text-anchor="start">27</text>
+<text x="310" y="1599" font-size="11" fill="#222" font-weight="normal" text-anchor="end">Help Desk Tier 1  ·  Platform &amp; Infrastructure</text>
+<rect x="320" y="1586" width="155.0" height="16" fill="#c62828" rx="2"/>
+<text x="481.0" y="1599" font-size="11" fill="#333" font-weight="normal" text-anchor="start">25</text>
+<text x="310" y="1619" font-size="11" fill="#222" font-weight="normal" text-anchor="end">QA Manual  ·  Quality &amp; Testing</text>
+<rect x="320" y="1606" width="124.0" height="16" fill="#c62828" rx="2"/>
+<text x="450.0" y="1619" font-size="11" fill="#333" font-weight="normal" text-anchor="start">20</text>
+<rect x="320" y="1640" width="12" height="12" fill="#1f7a3a" rx="2"/>
+<text x="338" y="1650" font-size="11" fill="#333" font-weight="normal" text-anchor="start">Fortress (83+)</text>
+<rect x="450" y="1640" width="12" height="12" fill="#4caf50" rx="2"/>
+<text x="468" y="1650" font-size="11" fill="#333" font-weight="normal" text-anchor="start">Safe (70–82)</text>
+<rect x="580" y="1640" width="12" height="12" fill="#f0a30a" rx="2"/>
+<text x="598" y="1650" font-size="11" fill="#333" font-weight="normal" text-anchor="start">Stable (58–69)</text>
+<rect x="710" y="1640" width="12" height="12" fill="#e57321" rx="2"/>
+<text x="728" y="1650" font-size="11" fill="#333" font-weight="normal" text-anchor="start">Exposed (41–57)</text>
+<rect x="840" y="1640" width="12" height="12" fill="#c62828" rx="2"/>
+<text x="858" y="1650" font-size="11" fill="#333" font-weight="normal" text-anchor="start">At risk (≤40)</text>
+</svg>

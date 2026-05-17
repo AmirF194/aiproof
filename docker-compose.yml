@@ -1,0 +1,54 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: aiproof-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-aiproof}
+      POSTGRES_USER: ${POSTGRES_USER:-aiproof}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-aiproof}
+    volumes:
+      - aiproof-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-aiproof}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: aiproof-redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ./web
+    container_name: aiproof-api
+    restart: unless-stopped
+    env_file: [.env]
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./web:/app
+      - ./data:/data:ro
+      - ./charts:/charts:ro
+      - ./REPORT.md:/REPORT.md:ro
+      - ./INSIGHTS.md:/INSIGHTS.md:ro
+      - ./METHODOLOGY.md:/METHODOLOGY.md:ro
+      - ./README.md:/README.md:ro
+      - aiproof-static:/app/staticfiles
+    ports:
+      - "${AIPROOF_HOST_PORT:-9012}:8000"
+    command: ${AIPROOF_API_CMD:-gunicorn aiproof.wsgi:application --bind 0.0.0.0:8000 --workers 3 --access-logfile -}
+
+volumes:
+  aiproof-pgdata:
+  aiproof-static:

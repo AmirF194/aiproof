@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}{{ role.role }} — aiproof{% endblock %}
+
+{% block content %}
+<section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+  <div class="flex items-center gap-2 text-xs text-slate-500">
+    <a href="{% url 'roles:ranking' %}" class="hover:text-slate-300">Ranking</a>
+    <span>/</span>
+    <a href="{{ role.category.get_absolute_url }}" class="hover:text-slate-300">{{ role.category.name }}</a>
+  </div>
+  <div class="mt-4 flex items-baseline justify-between gap-4 flex-wrap">
+    <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight">{{ role.role }}</h1>
+    <div class="flex items-center gap-2">
+      <span class="px-3 py-1 rounded-md tier-{{ role.tier }} border text-sm">{{ role.tier_label }}</span>
+      <span class="px-3 py-1 rounded-md border border-slate-700 text-sm tabular-nums">Score {{ role.score }}</span>
+      <span class="px-3 py-1 rounded-md border border-slate-700 text-sm">Rank #{{ role.rank }}</span>
+    </div>
+  </div>
+  <p class="mt-3 text-slate-300 max-w-2xl">{{ tier_blurb }}</p>
+
+  <div class="mt-8 grid gap-3 sm:grid-cols-4">
+    <div class="rounded-md border border-slate-800 bg-slate-900/40 p-4">
+      <div class="text-xs uppercase tracking-wider text-slate-400">Demand</div>
+      <div class="mt-1 text-2xl font-semibold tabular-nums">{{ role.demand }}/10</div>
+    </div>
+    <div class="rounded-md border border-slate-800 bg-slate-900/40 p-4">
+      <div class="text-xs uppercase tracking-wider text-slate-400">Automation resistance</div>
+      <div class="mt-1 text-2xl font-semibold tabular-nums">{{ role.automation_resistance }}/10</div>
+    </div>
+    <div class="rounded-md border border-slate-800 bg-slate-900/40 p-4">
+      <div class="text-xs uppercase tracking-wider text-slate-400">Skill depth</div>
+      <div class="mt-1 text-2xl font-semibold tabular-nums">{{ role.skill_depth }}/10</div>
+    </div>
+    <div class="rounded-md border border-slate-800 bg-slate-900/40 p-4">
+      <div class="text-xs uppercase tracking-wider text-slate-400">Strategic importance</div>
+      <div class="mt-1 text-2xl font-semibold tabular-nums">{{ role.strategic_importance }}/10</div>
+    </div>
+  </div>
+
+  <div class="mt-8 grid gap-3 sm:grid-cols-2">
+    <div class="rounded-md border border-slate-800 bg-slate-900/40 p-4">
+      <div class="text-xs uppercase tracking-wider text-slate-400">Salary range (USD TC)</div>
+      <div class="mt-1 text-2xl font-semibold tabular-nums">{{ role.salary_range_display }}</div>
+    </div>
+    <div class="rounded-md border border-slate-800 bg-slate-900/40 p-4">
+      <div class="text-xs uppercase tracking-wider text-slate-400">Demand trend</div>
+      <div class="mt-1 text-2xl font-semibold">{{ role.trend_label }}</div>
+    </div>
+  </div>
+
+  {% if role.metrics %}
+    <div class="mt-10">
+      <h2 class="text-sm uppercase tracking-wider text-slate-400 font-semibold">Posting signals</h2>
+      <div class="mt-3 grid gap-3 sm:grid-cols-3">
+        <div class="rounded-md border border-slate-800 p-4">
+          <div class="text-xs text-slate-500">Postings 2026</div>
+          <div class="text-xl font-semibold tabular-nums">{{ role.metrics.postings_2026_current|default:"-" }}</div>
+        </div>
+        <div class="rounded-md border border-slate-800 p-4">
+          <div class="text-xs text-slate-500">YoY change</div>
+          <div class="text-xl font-semibold tabular-nums">{{ role.metrics.postings_yoy_pct|default:"-" }}%</div>
+        </div>
+        <div class="rounded-md border border-slate-800 p-4">
+          <div class="text-xs text-slate-500">AI mentions in JD</div>
+          <div class="text-xl font-semibold tabular-nums">{{ role.metrics.ai_mention_pct_2026|default:"-" }}%</div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if peers %}
+    <div class="mt-12">
+      <h2 class="text-sm uppercase tracking-wider text-slate-400 font-semibold">Peers in {{ role.category.name }}</h2>
+      <div class="mt-3 rounded-lg border border-slate-800 divide-y divide-slate-800">
+        {% for p in peers %}
+          <a href="{{ p.get_absolute_url }}" class="flex items-center justify-between gap-3 px-4 py-2.5 hover:bg-slate-900">
+            <div class="flex items-baseline gap-3 min-w-0">
+              <span class="text-slate-500 text-xs w-6 text-right">{{ p.rank }}</span>
+              <span class="text-slate-100 truncate">{{ p.role }}</span>
+            </div>
+            <span class="px-2 py-0.5 text-xs rounded-md tier-{{ p.tier }} border">{{ p.score }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</section>
+{% endblock %}

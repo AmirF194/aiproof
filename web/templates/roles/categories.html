@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Categories — aiproof{% endblock %}
+
+{% block content %}
+<section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+  <h1 class="text-3xl font-semibold tracking-tight">Categories</h1>
+  <p class="text-slate-400 mt-1 text-sm">The 1,000 roles fall into 8 categories, ranked by category-level average score.</p>
+
+  <div class="mt-6 grid gap-3 sm:grid-cols-2">
+    {% for c in categories %}
+      <a href="{{ c.get_absolute_url }}" class="block rounded-lg border border-slate-800 bg-slate-900/40 hover:border-slate-600 p-5">
+        <div class="flex items-baseline justify-between">
+          <span class="text-lg font-semibold text-slate-100">{{ c.name }}</span>
+          <span class="text-xs text-slate-500">{{ c.n_roles }} roles</span>
+        </div>
+        <div class="mt-2 flex items-baseline gap-3 text-sm text-slate-400">
+          <span>Avg score <span class="text-slate-200 tabular-nums">{{ c.avg_score|floatformat:1 }}</span></span>
+          <span>· Demand <span class="text-slate-200 tabular-nums">{{ c.avg_demand|floatformat:1 }}</span></span>
+          <span>· AR <span class="text-slate-200 tabular-nums">{{ c.avg_automation_resistance|floatformat:1 }}</span></span>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

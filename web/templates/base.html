@@ -1,0 +1,74 @@
+{% load static %}<!doctype html>
+<html lang="en" class="bg-slate-950 text-slate-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_name }} — {{ site_tagline }}{% endblock %}</title>
+  <meta name="description" content="{{ site_tagline }} — a structured ranking of 1,000 software/AI roles scored on demand, automation resistance, skill depth, and strategic importance.">
+  <link rel="icon" type="image/png" href="{% static 'favicon.png' %}">
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+  <style>
+    :root { color-scheme: dark; }
+    .tier-fortress { background-color: rgb(16 185 129 / .14); color: rgb(110 231 183); border-color: rgb(16 185 129 / .35); }
+    .tier-safe     { background-color: rgb(14 165 233 / .14); color: rgb(125 211 252); border-color: rgb(14 165 233 / .35); }
+    .tier-stable   { background-color: rgb(245 158 11 / .14); color: rgb(252 211 77); border-color: rgb(245 158 11 / .35); }
+    .tier-exposed  { background-color: rgb(249 115 22 / .14); color: rgb(253 186 116); border-color: rgb(249 115 22 / .35); }
+    .tier-at_risk  { background-color: rgb(244 63 94 / .14); color: rgb(253 164 175); border-color: rgb(244 63 94 / .35); }
+    .prose-aiproof { color: rgb(226 232 240); }
+    .prose-aiproof h1, .prose-aiproof h2, .prose-aiproof h3 { color: rgb(248 250 252); }
+    .prose-aiproof a { color: rgb(125 211 252); text-decoration: underline; text-underline-offset: 3px; }
+    .prose-aiproof a:hover { color: rgb(186 230 253); }
+    .prose-aiproof table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+    .prose-aiproof th, .prose-aiproof td { border: 1px solid rgb(51 65 85); padding: 0.5rem 0.75rem; text-align: left; }
+    .prose-aiproof th { background: rgb(15 23 42); font-weight: 600; }
+    .prose-aiproof code { background: rgb(15 23 42); padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.875em; }
+    .prose-aiproof pre { background: rgb(15 23 42); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
+    .prose-aiproof blockquote { border-left: 3px solid rgb(56 189 248); padding-left: 1rem; color: rgb(203 213 225); margin: 1rem 0; font-style: italic; }
+    .prose-aiproof img { border-radius: 0.5rem; background: white; padding: 1rem; max-width: 100%; }
+    .prose-aiproof ul, .prose-aiproof ol { padding-left: 1.5rem; }
+    .prose-aiproof ul { list-style: disc; }
+    .prose-aiproof ol { list-style: decimal; }
+    .prose-aiproof li { margin: 0.25rem 0; }
+    .prose-aiproof hr { border-color: rgb(51 65 85); margin: 2rem 0; }
+  </style>
+  {% block head_extra %}{% endblock %}
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-6">
+      <a href="{% url 'core:home' %}" class="flex items-center gap-2 group">
+        <span class="text-xl font-semibold tracking-tight">
+          <span class="text-emerald-400">ai</span><span class="text-slate-100">proof</span>
+        </span>
+        <span class="hidden sm:inline text-xs text-slate-500 group-hover:text-slate-400">/ 1,000 roles, 2026–2035</span>
+      </a>
+      <nav class="flex items-center gap-1 text-sm">
+        <a href="{% url 'roles:ranking' %}" class="px-3 py-1.5 rounded-md text-slate-300 hover:text-white hover:bg-slate-800">Ranking</a>
+        <a href="{% url 'roles:category_index' %}" class="px-3 py-1.5 rounded-md text-slate-300 hover:text-white hover:bg-slate-800">Categories</a>
+        <a href="{% url 'reports:report' %}" class="px-3 py-1.5 rounded-md text-slate-300 hover:text-white hover:bg-slate-800">Report</a>
+        <a href="{% url 'reports:insights' %}" class="px-3 py-1.5 rounded-md text-slate-300 hover:text-white hover:bg-slate-800 hidden sm:inline">Insights</a>
+        <a href="{% url 'reports:methodology' %}" class="px-3 py-1.5 rounded-md text-slate-300 hover:text-white hover:bg-slate-800 hidden md:inline">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="border-t border-slate-800/80 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 text-sm text-slate-500 flex flex-col sm:flex-row gap-3 justify-between">
+      <div>
+        <span class="text-slate-400 font-medium">aiproof.fastinfer.org</span>
+        — 1,000 roles ranked for the 2026–2035 horizon.
+      </div>
+      <div class="flex gap-4">
+        <a href="{% url 'reports:methodology' %}" class="hover:text-slate-200">Methodology</a>
+        <a href="{% url 'core:about' %}" class="hover:text-slate-200">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
