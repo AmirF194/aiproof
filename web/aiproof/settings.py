@@ -111,7 +111,14 @@ REPORT_MD_FILES = {
 CELERY_BROKER_URL = env("CELERY_BROKER_URL", default="redis://redis:6379/0")
 CELERY_RESULT_BACKEND = env("CELERY_RESULT_BACKEND", default="redis://redis:6379/1")
 CELERY_TIMEZONE = "UTC"
-CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
+CELERY_BEAT_SCHEDULER = "celery.beat:PersistentScheduler"
+CELERY_BEAT_SCHEDULE = {
+    "refresh-live-postings-weekly": {
+        "task": "apps.core.tasks.refresh_postings",
+        "schedule": 60 * 60 * 24 * 7,  # 7 days
+        "options": {"expires": 60 * 60 * 6},
+    },
+}
 
 CACHES = {
     "default": {

@@ -1,9 +1,9 @@
 <div class="text-xs text-slate-500 mb-2">
   Showing {{ roles|length }} of {{ total }} match{{ total|pluralize:"es" }}{% if total > 200 %} (results capped at 200 — refine filters to narrow){% endif %}
 </div>
-<div class="overflow-x-auto rounded-lg border border-slate-800">
+<div class="overflow-x-auto rounded-lg border border-slate-200 bg-white">
   <table class="w-full text-sm">
-    <thead class="bg-slate-900 text-slate-400 text-xs uppercase tracking-wider">
+    <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
       <tr>
         <th class="px-3 py-2 text-left">#</th>
         <th class="px-3 py-2 text-left">Role</th>
@@ -14,20 +14,20 @@
         <th class="px-3 py-2 text-right">Salary range</th>
       </tr>
     </thead>
-    <tbody class="divide-y divide-slate-800">
+    <tbody class="divide-y divide-slate-200">
       {% for role in roles %}
-        <tr class="hover:bg-slate-900/60">
-          <td class="px-3 py-2 text-slate-500 tabular-nums">{{ role.rank }}</td>
+        <tr class="hover:bg-slate-50">
+          <td class="px-3 py-2 text-slate-400 tabular-nums">{{ role.rank }}</td>
           <td class="px-3 py-2">
-            <a href="{{ role.get_absolute_url }}" class="text-slate-100 hover:text-emerald-300 font-medium">{{ role.role }}</a>
+            <a href="{{ role.get_absolute_url }}" class="text-slate-900 hover:text-emerald-700 font-medium">{{ role.role }}</a>
           </td>
-          <td class="px-3 py-2 text-slate-400">{{ role.category.name }}</td>
-          <td class="px-3 py-2 text-right font-semibold tabular-nums">{{ role.score }}</td>
+          <td class="px-3 py-2 text-slate-600">{{ role.category.name }}</td>
+          <td class="px-3 py-2 text-right font-semibold tabular-nums text-slate-900">{{ role.score }}</td>
           <td class="px-3 py-2">
             <span class="px-2 py-0.5 text-xs rounded-md tier-{{ role.tier }} border">{{ role.tier_label }}</span>
           </td>
-          <td class="px-3 py-2 text-slate-300">{{ role.trend_label }}</td>
-          <td class="px-3 py-2 text-right text-slate-300 tabular-nums">{{ role.salary_range_display }}</td>
+          <td class="px-3 py-2 text-slate-700">{{ role.trend_label }}</td>
+          <td class="px-3 py-2 text-right text-slate-700 tabular-nums">{{ role.salary_range_display }}</td>
         </tr>
       {% empty %}
         <tr><td colspan="7" class="px-3 py-8 text-center text-slate-500">No roles match those filters.</td></tr>

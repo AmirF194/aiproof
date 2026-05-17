@@ -3,6 +3,8 @@ from django.shortcuts import render
 
 from apps.roles.models import Role, TIER_ORDER, TIER_LABELS, TIER_BLURBS
 
+from .sources import SOURCES
+
 
 def home(request):
     tier_rows = (
@@ -41,3 +43,23 @@ def home(request):
 
 def about(request):
     return render(request, "core/about.html")
+
+
+ACCESS_LABELS = {
+    "api": "Public API",
+    "public_scrape": "Public scrape",
+    "annual_report": "Annual report",
+    "manual": "Manual snapshot",
+    "paid_excerpt": "Paid (public excerpt only)",
+}
+
+
+def sources(request):
+    grouped: dict[str, list] = {}
+    for s in SOURCES:
+        grouped.setdefault(ACCESS_LABELS.get(s.access, s.access), []).append(s)
+    return render(
+        request,
+        "core/sources.html",
+        {"groups": grouped, "n_sources": len(SOURCES)},
+    )

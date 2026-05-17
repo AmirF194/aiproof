@@ -38,7 +38,8 @@ services:
         condition: service_healthy
     volumes:
       - ./web:/app
-      - ./data:/data:ro
+      - ./data:/data
+      - ./scripts:/scripts:ro
       - ./charts:/charts:ro
       - ./REPORT.md:/REPORT.md:ro
       - ./INSIGHTS.md:/INSIGHTS.md:ro
@@ -49,6 +50,42 @@ services:
       - "${AIPROOF_HOST_PORT:-9012}:8000"
     command: ${AIPROOF_API_CMD:-gunicorn aiproof.wsgi:application --bind 0.0.0.0:8000 --workers 3 --access-logfile -}
 
+  worker:
+    build:
+      context: ./web
+    container_name: aiproof-worker
+    restart: unless-stopped
+    env_file: [.env]
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./web:/app
+      - ./data:/data
+      - ./scripts:/scripts:ro
+    command: celery -A aiproof worker --loglevel=INFO --concurrency=2
+
+  beat:
+    build:
+      context: ./web
+    container_name: aiproof-beat
+    restart: unless-stopped
+    env_file: [.env]
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./web:/app
+      - ./data:/data
+      - ./scripts:/scripts:ro
+      - aiproof-beat-state:/beat-state
+    command: celery -A aiproof beat --loglevel=INFO --schedule=/beat-state/celerybeat-schedule
+
 volumes:
   aiproof-pgdata:
   aiproof-static:
+  aiproof-beat-state:

@@ -5,13 +5,13 @@
 <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid gap-8 lg:grid-cols-[16rem_minmax(0,1fr)]">
   <aside class="hidden lg:block">
     <div class="sticky top-20">
-      <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-3">On this page</div>
+      <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-3">On this page</div>
       <nav class="text-sm space-y-1.5 max-h-[70vh] overflow-y-auto pr-2">
         {% for entry in doc.toc %}
           {% if entry.level <= 3 %}
             <a href="#{{ entry.slug }}"
-               class="block text-slate-400 hover:text-slate-100 leading-snug
-                      {% if entry.level == 1 %}font-medium text-slate-300{% endif %}
+               class="block text-slate-500 hover:text-slate-900 leading-snug
+                      {% if entry.level == 1 %}font-medium text-slate-700{% endif %}
                       {% if entry.level == 2 %}pl-3{% endif %}
                       {% if entry.level == 3 %}pl-6 text-xs{% endif %}">
               {{ entry.title }}
@@ -23,7 +23,7 @@
   </aside>
 
   <article class="prose-aiproof max-w-3xl">
-    <p class="text-emerald-400 text-xs uppercase tracking-[0.2em] font-medium m-0">{{ page_label }}</p>
+    <p class="text-emerald-700 text-xs uppercase tracking-[0.2em] font-medium m-0">{{ page_label }}</p>
     {{ doc.html|safe }}
   </article>
 </section>

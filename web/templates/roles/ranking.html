@@ -5,10 +5,10 @@
 <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
   <div class="flex items-baseline justify-between gap-4 flex-wrap">
     <div>
-      <h1 class="text-3xl font-semibold tracking-tight">Full ranking</h1>
-      <p class="text-slate-400 mt-1 text-sm">1,000 roles. Filter by tier, category, trend. Search by name.</p>
+      <h1 class="text-3xl font-semibold tracking-tight text-slate-900">Full ranking</h1>
+      <p class="text-slate-500 mt-1 text-sm">1,000 roles. Filter by tier, category, trend. Search by name.</p>
     </div>
-    <a href="/static/data/role_ranking.csv" class="text-sm text-slate-300 hover:text-white border border-slate-700 hover:border-slate-500 rounded-md px-3 py-1.5">Download CSV</a>
+    <a href="/static/data/role_ranking.csv" class="text-sm text-slate-700 hover:text-slate-900 border border-slate-300 hover:border-slate-400 rounded-md px-3 py-1.5 bg-white">Download CSV</a>
   </div>
 
   <form
@@ -19,16 +19,16 @@
     hx-push-url="true"
   >
     <label class="lg:col-span-2">
-      <span class="text-xs uppercase tracking-wider text-slate-400">Search</span>
+      <span class="text-xs uppercase tracking-wider text-slate-500">Search</span>
       <input
         type="text" name="q" value="{{ params.q }}"
         placeholder="role or category..."
-        class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500"
+        class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-500"
       >
     </label>
     <label>
-      <span class="text-xs uppercase tracking-wider text-slate-400">Tier</span>
-      <select name="tier" class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100">
+      <span class="text-xs uppercase tracking-wider text-slate-500">Tier</span>
+      <select name="tier" class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900">
         <option value="">All tiers</option>
         {% for t in tiers %}
           <option value="{{ t.key }}" {% if params.tier == t.key %}selected{% endif %}>{{ t.label }}</option>
@@ -36,8 +36,8 @@
       </select>
     </label>
     <label>
-      <span class="text-xs uppercase tracking-wider text-slate-400">Category</span>
-      <select name="category" class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100">
+      <span class="text-xs uppercase tracking-wider text-slate-500">Category</span>
+      <select name="category" class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900">
         <option value="">All categories</option>
         {% for c in categories %}
           <option value="{{ c.slug }}" {% if params.category == c.slug %}selected{% endif %}>{{ c.name }}</option>
@@ -45,8 +45,8 @@
       </select>
     </label>
     <label>
-      <span class="text-xs uppercase tracking-wider text-slate-400">Trend</span>
-      <select name="trend" class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100">
+      <span class="text-xs uppercase tracking-wider text-slate-500">Trend</span>
+      <select name="trend" class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900">
         <option value="">Any</option>
         {% for t in trends %}
           <option value="{{ t.key }}" {% if params.trend == t.key %}selected{% endif %}>{{ t.label }}</option>
@@ -54,8 +54,8 @@
       </select>
     </label>
     <label>
-      <span class="text-xs uppercase tracking-wider text-slate-400">Sort</span>
-      <select name="sort" class="mt-1 w-full bg-slate-900 border border-slate-700 rounded-md px-3 py-2 text-slate-100">
+      <span class="text-xs uppercase tracking-wider text-slate-500">Sort</span>
+      <select name="sort" class="mt-1 w-full bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900">
         <option value="rank" {% if params.sort == 'rank' %}selected{% endif %}>Rank (top first)</option>
         <option value="score" {% if params.sort == 'score' %}selected{% endif %}>Score (high to low)</option>
         <option value="score_asc" {% if params.sort == 'score_asc' %}selected{% endif %}>Score (low to high)</option>

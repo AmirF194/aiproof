@@ -8,3 +8,8 @@ __pycache__/
 .env.local
 web/staticfiles/
 web/db.sqlite3
+
+# Live crawler outputs — regenerated weekly by Celery beat.
+data/raw/hn_who_is_hiring.csv
+data/raw/greenhouse_postings.csv
+data/raw/lever_postings.csv

@@ -3,29 +3,32 @@
 
 {% block content %}
 <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-14 pb-10">
-  <p class="text-emerald-400 text-xs uppercase tracking-[0.2em] font-medium">{{ total }} roles · 2026–2035 horizon</p>
-  <h1 class="mt-3 text-4xl sm:text-5xl font-semibold tracking-tight max-w-3xl">
+  <p class="text-emerald-700 text-xs uppercase tracking-[0.2em] font-medium">{{ total }} roles · 2026–2035 horizon</p>
+  <h1 class="mt-3 text-4xl sm:text-5xl font-semibold tracking-tight max-w-3xl text-slate-900">
     Which tech jobs are
-    <span class="text-emerald-400">AI-proof</span>?
+    <span class="text-emerald-600">AI-proof</span>?
   </h1>
-  <p class="mt-5 text-slate-300 max-w-2xl text-lg leading-relaxed">
-    A structured ranking of <span class="text-white font-medium">{{ total }} distinct software, AI, security, and platform roles</span> — scored on demand, automation resistance, skill depth, and strategic importance. Built for real career decisions over the next decade.
+  <p class="mt-5 text-slate-600 max-w-2xl text-lg leading-relaxed">
+    A structured ranking of <span class="text-slate-900 font-medium">{{ total }} distinct software, AI, security, and platform roles</span> — scored on demand, automation resistance, skill depth, and strategic importance. Built for real career decisions over the next decade.
   </p>
   <div class="mt-7 flex flex-wrap gap-3">
-    <a href="{% url 'roles:ranking' %}" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-medium">
+    <a href="{% url 'roles:ranking' %}" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-emerald-600 hover:bg-emerald-700 text-white font-medium shadow-sm">
       Browse the full ranking →
     </a>
-    <a href="{% url 'reports:report' %}" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md border border-slate-700 hover:border-slate-500 text-slate-200">
+    <a href="{% url 'reports:report' %}" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md border border-slate-300 hover:border-slate-400 text-slate-700 bg-white">
       Read the report
+    </a>
+    <a href="{% url 'core:sources' %}" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md border border-slate-300 hover:border-slate-400 text-slate-700 bg-white">
+      Sources & citations
     </a>
   </div>
 </section>
 
 <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
-  <h2 class="text-sm uppercase tracking-wider text-slate-400 font-semibold">The five tiers</h2>
+  <h2 class="text-sm uppercase tracking-wider text-slate-500 font-semibold">The five tiers</h2>
   <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
     {% for tier in tiers %}
-      <a href="{% url 'roles:tier' tier=tier.key %}" class="group rounded-lg border tier-{{ tier.key }} p-4 hover:brightness-125 transition">
+      <a href="{% url 'roles:tier' tier=tier.key %}" class="group rounded-lg border tier-{{ tier.key }} p-4 hover:shadow-md transition">
         <div class="flex items-baseline justify-between">
           <span class="text-base font-semibold">{{ tier.label }}</span>
           <span class="text-xs opacity-70">{{ tier.n }} roles</span>
@@ -40,13 +43,13 @@
 <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
   <div class="grid gap-6 lg:grid-cols-2">
     <div>
-      <h2 class="text-sm uppercase tracking-wider text-slate-400 font-semibold">Top 10 — safest roles</h2>
-      <div class="mt-3 rounded-lg border border-slate-800 divide-y divide-slate-800">
+      <h2 class="text-sm uppercase tracking-wider text-slate-500 font-semibold">Top 10 — safest roles</h2>
+      <div class="mt-3 rounded-lg border border-slate-200 divide-y divide-slate-200 bg-white">
         {% for role in top_10 %}
-          <a href="{{ role.get_absolute_url }}" class="flex items-center justify-between gap-3 px-4 py-2.5 hover:bg-slate-900">
+          <a href="{{ role.get_absolute_url }}" class="flex items-center justify-between gap-3 px-4 py-2.5 hover:bg-slate-50">
             <div class="flex items-baseline gap-3 min-w-0">
-              <span class="text-slate-500 text-xs w-6 text-right">{{ role.rank }}</span>
-              <span class="text-slate-100 truncate">{{ role.role }}</span>
+              <span class="text-slate-400 text-xs w-6 text-right">{{ role.rank }}</span>
+              <span class="text-slate-900 truncate">{{ role.role }}</span>
               <span class="text-xs text-slate-500 truncate hidden sm:inline">{{ role.category.name }}</span>
             </div>
             <span class="px-2 py-0.5 text-xs rounded-md tier-{{ role.tier }} border">{{ role.score }}</span>
@@ -55,13 +58,13 @@
       </div>
     </div>
     <div>
-      <h2 class="text-sm uppercase tracking-wider text-slate-400 font-semibold">Bottom 10 — most exposed</h2>
-      <div class="mt-3 rounded-lg border border-slate-800 divide-y divide-slate-800">
+      <h2 class="text-sm uppercase tracking-wider text-slate-500 font-semibold">Bottom 10 — most exposed</h2>
+      <div class="mt-3 rounded-lg border border-slate-200 divide-y divide-slate-200 bg-white">
         {% for role in bottom_10 %}
-          <a href="{{ role.get_absolute_url }}" class="flex items-center justify-between gap-3 px-4 py-2.5 hover:bg-slate-900">
+          <a href="{{ role.get_absolute_url }}" class="flex items-center justify-between gap-3 px-4 py-2.5 hover:bg-slate-50">
             <div class="flex items-baseline gap-3 min-w-0">
-              <span class="text-slate-500 text-xs w-6 text-right">{{ role.rank }}</span>
-              <span class="text-slate-100 truncate">{{ role.role }}</span>
+              <span class="text-slate-400 text-xs w-6 text-right">{{ role.rank }}</span>
+              <span class="text-slate-900 truncate">{{ role.role }}</span>
               <span class="text-xs text-slate-500 truncate hidden sm:inline">{{ role.category.name }}</span>
             </div>
             <span class="px-2 py-0.5 text-xs rounded-md tier-{{ role.tier }} border">{{ role.score }}</span>
@@ -73,8 +76,8 @@
 </section>
 
 <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-20">
-  <h2 class="text-sm uppercase tracking-wider text-slate-400 font-semibold">Headline chart</h2>
-  <div class="mt-3 rounded-lg border border-slate-800 bg-white p-4">
+  <h2 class="text-sm uppercase tracking-wider text-slate-500 font-semibold">Headline chart</h2>
+  <div class="mt-3 rounded-lg border border-slate-200 bg-white p-4">
     <img src="/static/charts/safety_score.svg" alt="Safety score distribution" class="w-full">
   </div>
 </section>
