@@ -2,11 +2,11 @@
 {% block title %}Ranking — aiproof{% endblock %}
 
 {% block content %}
-<section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+<section x-data="rankingCompare()" class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
   <div class="flex items-baseline justify-between gap-4 flex-wrap">
     <div>
       <h1 class="text-3xl font-semibold tracking-tight text-slate-900">Full ranking</h1>
-      <p class="text-slate-500 mt-1 text-sm">1,000 roles. Filter by tier, category, trend. Search by name.</p>
+      <p class="text-slate-500 mt-1 text-sm">1,000 roles. Filter by tier, category, trend. Tick up to 4 rows to compare.</p>
     </div>
     <a href="{% url 'core:data_download' 'role_ranking.csv' %}" class="text-sm text-slate-700 hover:text-slate-900 border border-slate-300 hover:border-slate-400 rounded-md px-3 py-1.5 bg-white">Download CSV</a>
   </div>
@@ -68,5 +68,53 @@
   <div id="ranking-table" class="mt-6">
     {% include "roles/_ranking_table.html" %}
   </div>
+
+  {# Floating compare bar — appears when 2-4 roles are ticked #}
+  <div x-show="selected.length >= 2" x-cloak
+       x-transition.opacity
+       class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 flex items-center gap-3 rounded-full bg-slate-900 text-white px-5 py-3 shadow-xl border border-slate-700">
+    <span class="text-sm">
+      <span class="font-semibold tabular-nums" x-text="selected.length"></span>
+      <span class="text-slate-300">/ 4 selected</span>
+    </span>
+    <button @click="clear()" class="text-xs text-slate-300 hover:text-white">Clear</button>
+    <a :href="'/compare/?roles=' + selected.join(',')"
+       class="ml-2 inline-flex items-center gap-1 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-1.5 rounded-full text-sm">
+      Compare →
+    </a>
+  </div>
 </section>
+
+<script>
+  function rankingCompare() {
+    const KEY = "aiproof-compare-slugs";
+    return {
+      selected: JSON.parse(localStorage.getItem(KEY) || "[]"),
+      init() {
+        // Sync checkbox state with stored selection after each htmx swap.
+        document.body.addEventListener("htmx:afterSwap", () => this.syncFromDom());
+        this.$nextTick(() => this.syncDomFromState());
+      },
+      toggle(slug) {
+        const i = this.selected.indexOf(slug);
+        if (i >= 0) {
+          this.selected.splice(i, 1);
+        } else if (this.selected.length < 4) {
+          this.selected.push(slug);
+        }
+        this.persist();
+      },
+      clear() { this.selected = []; this.persist(); this.syncDomFromState(); },
+      persist() { localStorage.setItem(KEY, JSON.stringify(this.selected)); },
+      syncFromDom() {
+        this.$nextTick(() => this.syncDomFromState());
+      },
+      syncDomFromState() {
+        document.querySelectorAll("input[data-compare-slug]").forEach(el => {
+          el.checked = this.selected.includes(el.dataset.compareSlug);
+        });
+      },
+    };
+  }
+</script>
 {% endblock %}

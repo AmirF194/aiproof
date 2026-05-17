@@ -5,6 +5,7 @@
   <table class="w-full text-sm">
     <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
       <tr>
+        <th class="px-2 py-2 text-left w-8" title="Tick to compare">⇄</th>
         <th class="px-3 py-2 text-left">#</th>
         <th class="px-3 py-2 text-left min-w-[18rem]">Role &amp; description</th>
         <th class="px-3 py-2 text-left">Category</th>
@@ -19,6 +20,13 @@
     <tbody class="divide-y divide-slate-200">
       {% for role in roles %}
         <tr class="hover:bg-slate-50 align-top">
+          <td class="px-2 py-3">
+            <input type="checkbox"
+                   data-compare-slug="{{ role.slug }}"
+                   @change="toggle('{{ role.slug }}')"
+                   :disabled="selected.length >= 4 && !selected.includes('{{ role.slug }}')"
+                   class="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500/30">
+          </td>
           <td class="px-3 py-3 text-slate-400 tabular-nums">{{ role.rank }}</td>
           <td class="px-3 py-3 max-w-md">
             <a href="{{ role.get_absolute_url }}" class="text-slate-900 hover:text-emerald-700 font-medium">{{ role.role }}</a>
@@ -76,7 +84,7 @@
           <td class="px-3 py-3 text-right text-slate-700 tabular-nums text-xs whitespace-nowrap">{{ role.salary_range_display }}</td>
         </tr>
       {% empty %}
-        <tr><td colspan="9" class="px-3 py-8 text-center text-slate-500">No roles match those filters.</td></tr>
+        <tr><td colspan="10" class="px-3 py-8 text-center text-slate-500">No roles match those filters.</td></tr>
       {% endfor %}
     </tbody>
   </table>

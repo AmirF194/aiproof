@@ -81,6 +81,54 @@ def sources(request):
     )
 
 
+COMPARE_AXES: list[tuple[str, str, str]] = [
+    ("demand",                          "Market demand",              "#0ea5e9"),
+    ("automation_resistance",           "Automation resistance",      "#10b981"),
+    ("skill_depth",                     "Skill depth",                "#8b5cf6"),
+    ("strategic_importance",            "Strategic importance",       "#f59e0b"),
+    ("human_judgment_score",            "Human judgment",             "#06b6d4"),
+    ("stakeholder_interaction_score",   "Stakeholder interaction",    "#ec4899"),
+    ("ai_augmentation_potential_score", "AI augmentation potential",  "#f97316"),
+    ("regulatory_relevance_score",      "Regulatory relevance",       "#6366f1"),
+]
+
+
+def compare(request):
+    """Side-by-side comparison of 2–4 roles."""
+    raw = request.GET.get("roles", "").strip()
+    slugs = [s.strip() for s in raw.split(",") if s.strip()][:4]
+
+    roles = list(
+        Role.objects
+        .select_related("category", "metrics")
+        .filter(slug__in=slugs)
+    )
+    # Preserve user's ordering from the query string.
+    roles.sort(key=lambda r: slugs.index(r.slug))
+
+    rows = []
+    for axis_attr, label, color in COMPARE_AXES:
+        values = [getattr(r, axis_attr) or 0 for r in roles]
+        rows.append({
+            "label": label,
+            "color": color,
+            "values": values,
+            "best": max(values) if values else 0,
+        })
+
+    return render(
+        request,
+        "core/compare.html",
+        {
+            "roles": roles,
+            "rows": rows,
+            "slugs_csv": ",".join(slugs),
+            "n_valid": len(roles),
+            "n_requested": len(slugs),
+        },
+    )
+
+
 def data_download(request, filename: str):
     """Stream a curated CSV from data/{processed,raw}/ as an attachment."""
     location = _DOWNLOADABLE.get(filename)
