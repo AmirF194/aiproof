@@ -189,8 +189,8 @@ is verified live before the next starts.
 ## Execution log
 
 | Phase | Started | Shipped | Commit | Notes |
-|---|---|---|---|---|
-| 1 — Schema + algorithmic enrichment | 2026-05-17 | 2026-05-17 | _pending_ | All 10 fields populated. 894/1000 narrative coverage. Mean confidence 61. |
+| --- | --- | --- | --- | --- |
+| 1 — Schema + algorithmic enrichment | 2026-05-17 | 2026-05-17 | b88be47 | All 10 fields populated. 894/1000 narrative coverage. Mean confidence 61. |
 | 2 — Role detail v2 | — | — | — | — |
 | 3 — Role comparison | — | — | — | — |
 | 4 — Methodology / Limitations / Policy | — | — | — | — |
