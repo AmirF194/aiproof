@@ -18,7 +18,7 @@ is verified live before the next starts.
 
 ---
 
-## Phase 1 — Schema + algorithmic enrichment   `[ ]`
+## Phase 1 — Schema + algorithmic enrichment   `[x]`
 
 **Goal:** Add 8 new structured fields to every role, populated deterministically.
 
@@ -190,7 +190,7 @@ is verified live before the next starts.
 
 | Phase | Started | Shipped | Commit | Notes |
 |---|---|---|---|---|
-| 1 — Schema + algorithmic enrichment | — | — | — | — |
+| 1 — Schema + algorithmic enrichment | 2026-05-17 | 2026-05-17 | _pending_ | All 10 fields populated. 894/1000 narrative coverage. Mean confidence 61. |
 | 2 — Role detail v2 | — | — | — | — |
 | 3 — Role comparison | — | — | — | — |
 | 4 — Methodology / Limitations / Policy | — | — | — | — |

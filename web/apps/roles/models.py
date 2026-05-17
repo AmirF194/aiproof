@@ -107,6 +107,25 @@ class Role(models.Model):
 
     notes = models.TextField(blank=True)
 
+    # --- Extended schema (Phase 1) -----------------------------------------
+    # All derived deterministically by apps.roles.scoring at load_roles time;
+    # see /report/methodology/ for the formulas.
+    seniority_level = models.CharField(max_length=20, blank=True, db_index=True)
+    role_family = models.CharField(max_length=60, blank=True, db_index=True)
+
+    human_judgment_score = models.PositiveSmallIntegerField(null=True, blank=True)
+    stakeholder_interaction_score = models.PositiveSmallIntegerField(null=True, blank=True)
+    physical_world_dependency_score = models.PositiveSmallIntegerField(null=True, blank=True)
+    ai_augmentation_potential_score = models.PositiveSmallIntegerField(null=True, blank=True)
+    regulatory_relevance_score = models.PositiveSmallIntegerField(null=True, blank=True)
+
+    confidence_score = models.PositiveSmallIntegerField(null=True, blank=True)
+
+    why_ai_resistant = models.TextField(blank=True)
+    why_ai_exposed = models.TextField(blank=True)
+
+    last_updated = models.DateTimeField(auto_now=True)
+
     class Meta:
         ordering = ["-score", "role"]
         constraints = [

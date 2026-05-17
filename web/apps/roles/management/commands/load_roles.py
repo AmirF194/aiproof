@@ -1,6 +1,5 @@
 import csv
 from pathlib import Path
-from typing import Iterable
 
 from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
@@ -8,6 +7,7 @@ from django.db import transaction
 from django.utils.text import slugify
 
 from apps.roles.models import Category, Role, RoleMetric, TierSummary
+from apps.roles import scoring
 
 
 def _int(value: str) -> int | None:
@@ -76,6 +76,9 @@ class Command(BaseCommand):
             n_metrics = 0
         if tier_csv.exists():
             self._load_tiers(tier_csv)
+
+        # After metrics are loaded, refresh confidence to account for live data + calibration.
+        self._recompute_confidence()
 
         self.stdout.write(
             self.style.SUCCESS(
@@ -164,19 +167,56 @@ class Command(BaseCommand):
             for row in csv.DictReader(fh):
                 name = row["role"].strip()
                 category = categories[row["category"]]
+                category_name = category.name
                 tier = (row.get("verdict_tier") or "").strip().lower().replace(
                     " ", "_"
                 ).replace("-", "_")
                 if tier == "atrisk":
                     tier = "at_risk"
+
+                demand = _int(row["demand"]) or 0
+                ar = _int(row["automation_resistance"]) or 0
+                sd = _int(row["skill_depth"]) or 0
+                si = _int(row["strategic_importance"]) or 0
+
+                # --- Derived dimensions (deterministic; see apps.roles.scoring)
+                seniority = scoring.parse_seniority(name)
+                family = scoring.derive_role_family(name, category_name)
+                hj = scoring.human_judgment_score(ar, sd)
+                stake = scoring.stakeholder_interaction_score(demand, si, category_name, seniority)
+                phys = scoring.physical_world_dependency_score(name, category_name)
+                augment = scoring.ai_augmentation_potential_score(ar, sd)
+                regul = scoring.regulatory_relevance_score(si, category_name)
+                description = descriptions.get(name, "")
+
+                # Confidence depends on data coverage; recomputed below in
+                # _recompute_confidence_and_narratives after metrics are loaded.
+                placeholder_conf = scoring.confidence_score(
+                    scoring.ConfidenceInputs(
+                        has_live_postings=False,
+                        is_calibrated=False,
+                        has_salary_band=bool(_int(row.get("salary_low_usd", ""))),
+                        has_description=bool(description),
+                    )
+                )
+
+                axis_scores = {
+                    "demand": demand,
+                    "automation_resistance": ar,
+                    "skill_depth": sd,
+                    "strategic_importance": si,
+                    "human_judgment": hj,
+                    "stakeholder_interaction": stake,
+                }
+
                 Role.objects.update_or_create(
                     role=name,
                     category=category,
                     defaults={
-                        "demand": _int(row["demand"]) or 0,
-                        "automation_resistance": _int(row["automation_resistance"]) or 0,
-                        "skill_depth": _int(row["skill_depth"]) or 0,
-                        "strategic_importance": _int(row["strategic_importance"]) or 0,
+                        "demand": demand,
+                        "automation_resistance": ar,
+                        "skill_depth": sd,
+                        "strategic_importance": si,
                         "score": _int(row["score"]) or 0,
                         "tier": tier or "stable",
                         "demand_trend": (row.get("demand_trend") or "flat")
@@ -185,11 +225,39 @@ class Command(BaseCommand):
                         "salary_low_usd": _int(row.get("salary_low_usd", "")),
                         "salary_high_usd": _int(row.get("salary_high_usd", "")),
                         "rank": ranks.get((name, row["category"]), 0),
-                        "notes": descriptions.get(name, ""),
+                        "notes": description,
+                        "seniority_level": seniority,
+                        "role_family": family,
+                        "human_judgment_score": hj,
+                        "stakeholder_interaction_score": stake,
+                        "physical_world_dependency_score": phys,
+                        "ai_augmentation_potential_score": augment,
+                        "regulatory_relevance_score": regul,
+                        "confidence_score": placeholder_conf,
+                        "why_ai_resistant": scoring.why_ai_resistant(axis_scores),
+                        "why_ai_exposed": scoring.why_ai_exposed(axis_scores),
                     },
                 )
                 n += 1
         return n
+
+    def _recompute_confidence(self) -> None:
+        """Final pass: now that metrics + descriptions are loaded, refresh confidence."""
+        roles = Role.objects.select_related("metrics").all()
+        for r in roles:
+            metrics = getattr(r, "metrics", None)
+            has_live = bool(metrics and (metrics.postings_2026_current or 0) > 0)
+            # Calibrated = role appears in the original hand-scored 36 (proxy: postings_2024_baseline set).
+            is_calibrated = bool(metrics and metrics.postings_2024_baseline)
+            r.confidence_score = scoring.confidence_score(
+                scoring.ConfidenceInputs(
+                    has_live_postings=has_live,
+                    is_calibrated=is_calibrated,
+                    has_salary_band=bool(r.salary_low_usd),
+                    has_description=bool(r.notes),
+                )
+            )
+            r.save(update_fields=["confidence_score"])
 
     def _load_metrics(self, metrics_csv: Path) -> int:
         n = 0
