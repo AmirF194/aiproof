@@ -73,7 +73,7 @@ is verified live before the next starts.
 
 ---
 
-## Phase 4 — Methodology / Limitations / Data-policy pages   `[ ]`
+## Phase 4 — Methodology / Limitations / Data-policy pages   `[x]`
 
 **Goal:** Trust and transparency layer.
 
@@ -192,8 +192,8 @@ is verified live before the next starts.
 | --- | --- | --- | --- | --- |
 | 1 — Schema + algorithmic enrichment | 2026-05-17 | 2026-05-17 | b88be47 | All 10 fields populated. 894/1000 narrative coverage. Mean confidence 61. |
 | 2 — Role detail v2 | 2026-05-17 | 2026-05-17 | 9651abb | 8-axis chart, AI-resistant/exposed panels, confidence chip, live-data block, adjacent roles by score-vector. |
-| 3 — Role comparison | 2026-05-17 | 2026-05-17 | pending | /compare/ view, multi-select on ranking, floating compare button, localStorage persistence. |
-| 4 — Methodology / Limitations / Policy | — | — | — | — |
+| 3 — Role comparison | 2026-05-17 | 2026-05-17 | f833a57 | /compare/ view, multi-select on ranking, floating compare button, localStorage persistence. |
+| 4 — Methodology / Limitations / Policy | 2026-05-17 | 2026-05-17 | pending | METHODOLOGY.md gains an 'Extended scoring (2026 update)' section with all 8 formulas + confidence math + narrative templates. New /limitations/ and /data-policy/ pages. Footer links. |
 | 5 — SEO | — | — | — | — |
 | 6 — Homepage v2 | — | — | — | — |
 | 7 — Filter / search upgrade | — | — | — | — |

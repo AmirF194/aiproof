@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}Limitations — AIProof{% endblock %}
+
+{% block content %}
+<section class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <p class="text-emerald-700 text-xs uppercase tracking-[0.2em] font-medium">Trust &amp; transparency</p>
+  <h1 class="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">Limitations</h1>
+  <p class="mt-4 text-slate-700 leading-relaxed">
+    AIProof is an analytical framework, not a forecast. The scores are designed to help you
+    <em>think</em> about role durability — they are not a guarantee of which jobs will or won't exist
+    in 10 years. Before you act on anything you see here, please read the limitations below.
+  </p>
+
+  <div class="mt-10 space-y-8 text-slate-700 leading-relaxed">
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">1. Scores are estimates, not measurements</h2>
+      <p class="mt-2">
+        Two of the four base axes (<em>demand</em>, <em>salary</em>) have public data behind them. The
+        other two (<em>automation resistance</em>, <em>strategic importance</em>) and all four
+        derived dimensions are <strong>calibrated qualitative estimates</strong> encoded as numbers
+        on a 0–10 scale. Treat them as informed opinion, not laboratory measurement.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">2. Labour markets shift</h2>
+      <p class="mt-2">
+        Hiring patterns, layoffs, immigration policy, and macroeconomic conditions move
+        independently of AI capability. A role that scores well today can have its labour
+        market reshaped by factors completely outside this methodology.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">3. AI capability changes quickly</h2>
+      <p class="mt-2">
+        The score reflects 2026 tooling. A single foundation-model breakthrough or a sustained
+        capability plateau will both meaningfully change the ranking. We re-evaluate yearly; in
+        practice the rubric should be re-run, not enshrined.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">4. Role titles vary across companies</h2>
+      <p class="mt-2">
+        "AI Engineer" means at least four different jobs depending on the employer. We score the
+        <em>underlying work</em> as best we can identify it, but title noise is a real source of
+        error. If your job's day-to-day looks materially different from what a category implies,
+        weight the category-average less and your own role-specific evidence more.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">5. Geographic, seniority, and industry bias</h2>
+      <ul class="mt-2 list-disc pl-6 space-y-1.5">
+        <li><strong>Geography:</strong> US/EU bias. Mobile, Frontend, and QA Automation hold up longer in India, LATAM, and SEA markets than these scores suggest.</li>
+        <li><strong>Seniority:</strong> The framing is senior-IC. Junior dynamics are harsher than scores indicate — AI compresses the bottom of every ladder hardest.</li>
+        <li><strong>Industry:</strong> Tech-product / FAANG-adjacent assumed. Defense, healthcare, and finance shift the rankings — Mobile and QA Manual hold longer in regulated industries because of compliance overhead.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">6. Live data has uneven coverage</h2>
+      <p class="mt-2">
+        Roughly 141 of 1,000 roles currently have a live posting count this week from our crawlers.
+        The other ~860 use the calibrated baseline only. We surface this honestly via the
+        <a href="{% url 'reports:methodology' %}" class="text-sky-700 underline">confidence score</a>
+        on every role page — a score of 80+ means the role has live data behind it; below 60 means
+        coverage gaps you should be aware of.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">7. The score is not</h2>
+      <ul class="mt-2 list-disc pl-6 space-y-1.5">
+        <li><strong>A salary predictor.</strong> Compensation is correlated with score but not determined by it. Employer, geography, and timing matter more.</li>
+        <li><strong>A fit assessment.</strong> The safest career you hate is still a bad career.</li>
+        <li><strong>Personalised advice.</strong> Use this as one input alongside conversations with people in the role, mentors, and your own evidence.</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="mt-12 rounded-lg border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700">
+    <p>
+      For the full formula set, weights, and tier cutoffs, see the
+      <a href="{% url 'reports:methodology' %}" class="text-sky-700 underline">methodology</a>.
+      For the source feeds and refresh cadence, see
+      <a href="{% url 'core:data_policy' %}" class="text-sky-700 underline">data policy</a>.
+    </p>
+  </div>
+</section>
+{% endblock %}

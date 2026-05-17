@@ -9,5 +9,7 @@ urlpatterns = [
     path("about/", views.about, name="about"),
     path("sources/", views.sources, name="sources"),
     path("compare/", views.compare, name="compare"),
+    path("limitations/", views.limitations, name="limitations"),
+    path("data-policy/", views.data_policy, name="data_policy"),
     path("data/<str:filename>", views.data_download, name="data_download"),
 ]

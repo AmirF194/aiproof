@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Data policy — AIProof{% endblock %}
+
+{% block content %}
+<section class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <p class="text-emerald-700 text-xs uppercase tracking-[0.2em] font-medium">Trust &amp; transparency</p>
+  <h1 class="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">Data policy</h1>
+  <p class="mt-4 text-slate-700 leading-relaxed">
+    AIProof publishes scores derived from public data feeds. This page documents what we collect,
+    where it comes from, how often we refresh it, and how we handle takedown requests.
+  </p>
+
+  <div class="mt-10 space-y-8 text-slate-700 leading-relaxed">
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">Refresh cadence</h2>
+      <table class="mt-3 w-full text-sm border border-slate-200 rounded-md overflow-hidden">
+        <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+          <tr>
+            <th class="px-3 py-2 text-left">Feed</th>
+            <th class="px-3 py-2 text-left">Cadence</th>
+            <th class="px-3 py-2 text-left">Triggered by</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 text-slate-700">
+          <tr><td class="px-3 py-2">HN "Who is hiring?" via Algolia</td><td class="px-3 py-2">weekly</td><td class="px-3 py-2">Celery beat</td></tr>
+          <tr><td class="px-3 py-2">Greenhouse public boards (~30 companies)</td><td class="px-3 py-2">weekly</td><td class="px-3 py-2">Celery beat</td></tr>
+          <tr><td class="px-3 py-2">Lever public boards (~8 companies)</td><td class="px-3 py-2">weekly</td><td class="px-3 py-2">Celery beat</td></tr>
+          <tr><td class="px-3 py-2">The Muse API</td><td class="px-3 py-2">weekly</td><td class="px-3 py-2">Celery beat</td></tr>
+          <tr><td class="px-3 py-2">Remotive API</td><td class="px-3 py-2">weekly</td><td class="px-3 py-2">Celery beat</td></tr>
+          <tr><td class="px-3 py-2">BLS Occupational Projections (cached)</td><td class="px-3 py-2">annual</td><td class="px-3 py-2">on BLS publication</td></tr>
+          <tr><td class="px-3 py-2">Stack Overflow Developer Survey (cached)</td><td class="px-3 py-2">annual</td><td class="px-3 py-2">on survey release</td></tr>
+          <tr><td class="px-3 py-2">GitHub Octoverse (cached)</td><td class="px-3 py-2">annual</td><td class="px-3 py-2">on Octoverse release</td></tr>
+          <tr><td class="px-3 py-2">ISC2 Workforce Study (cached)</td><td class="px-3 py-2">annual</td><td class="px-3 py-2">on ISC2 release</td></tr>
+        </tbody>
+      </table>
+      <p class="mt-3 text-xs text-slate-500">
+        See the full feed metadata, licences, and last-fetched dates on the
+        <a href="{% url 'core:sources' %}" class="text-sky-700 underline">sources page</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">What we store</h2>
+      <ul class="mt-2 list-disc pl-6 space-y-1.5">
+        <li><strong>Public posting metadata:</strong> title, company, location, posting date, public URL, AI-mention flag. Stored in <code class="text-xs bg-slate-100 px-1 rounded">data/raw/*.csv</code>.</li>
+        <li><strong>Aggregated counts per role:</strong> derived metrics joined to the 1,000-role roster. Stored in <code class="text-xs bg-slate-100 px-1 rounded">data/processed/role_postings_live.csv</code>.</li>
+        <li><strong>No personal data.</strong> We never store applicant names, email addresses, or identifiable user-side information.</li>
+        <li><strong>No cookies for tracking.</strong> Only Django session cookies for admin login; no analytics, no ad tech.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">Crawler ethics</h2>
+      <ul class="mt-2 list-disc pl-6 space-y-1.5">
+        <li>Every feed we crawl publishes an explicit public API or no-auth JSON endpoint that invites programmatic access.</li>
+        <li>We respect rate limits — each crawler runs once a week with a small (≤80) per-company fan-out.</li>
+        <li>We <strong>do not</strong> scrape paywalled content, login-gated job boards, or any site whose <code class="text-xs bg-slate-100 px-1 rounded">robots.txt</code> disallows our user agent.</li>
+        <li>Identifiable User-Agent: <code class="text-xs bg-slate-100 px-1 rounded">aiproof-research/1.0 (+https://aiproof.fastinfer.org)</code>.</li>
+        <li>If a source asks us to stop, we stop — see Takedowns below.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">Score updates</h2>
+      <p class="mt-2">
+        Live posting metrics refresh weekly. The 8 score dimensions are re-derived deterministically
+        on every <code class="text-xs bg-slate-100 px-1 rounded">load_roles</code> run; the
+        underlying 4-axis calibration is reviewed annually with a published changelog. Major
+        methodology changes are versioned and noted in the
+        <a href="{% url 'reports:methodology' %}" class="text-sky-700 underline">methodology</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">Takedowns &amp; corrections</h2>
+      <p class="mt-2">
+        If you operate a data source we crawl and want us to stop, or if you spot an error in a
+        role score, email <a href="mailto:contact@fastinfer.org" class="text-sky-700 underline">contact@fastinfer.org</a>.
+        We action takedown requests within 7 business days. Corrections are handled on a best-effort
+        basis with a published changelog when the methodology changes as a result.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold text-slate-900">Licence</h2>
+      <p class="mt-2">
+        Our derived scores, prose, and visualisations are released under
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" class="text-sky-700 underline">CC BY 4.0</a> —
+        you can share, adapt, and build on them with attribution. Upstream feeds retain their
+        original licences; the <a href="{% url 'core:sources' %}" class="text-sky-700 underline">sources page</a>
+        lists each one.
+      </p>
+    </section>
+  </div>
+</section>
+{% endblock %}

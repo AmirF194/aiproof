@@ -129,6 +129,14 @@ def compare(request):
     )
 
 
+def limitations(request):
+    return render(request, "core/limitations.html")
+
+
+def data_policy(request):
+    return render(request, "core/data_policy.html")
+
+
 def data_download(request, filename: str):
     """Stream a curated CSV from data/{processed,raw}/ as an attachment."""
     location = _DOWNLOADABLE.get(filename)

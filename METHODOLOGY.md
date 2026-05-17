@@ -197,3 +197,58 @@ The cleaning step recomputes every score from the four axes and fails the build 
 ## When to re-score
 
 Re-score yearly. If a single axis moves by more than 2 points for any role between annual reviews, publish a delta. The most likely 2027 movers (in the author's view): AI Application Engineer (Demand → 8 from 10 as the title consolidates), Frontend Engineer (Demand → 5 from 6 if the trajectory holds), Security (no movement expected; Fortress tier is structural).
+
+---
+
+## Extended scoring (2026 update) — eight dimensions and confidence
+
+The original Career Safety Score (above) is a weighted blend of four axes — **demand, automation resistance, skill depth, strategic importance**. As of the 2026 update, every role is also evaluated on four **derived** dimensions and a **confidence score**, all computed by deterministic formulas in [web/apps/roles/scoring.py](web/apps/roles/scoring.py). No LLM-imagined per-role prose is involved; the same inputs always produce the same outputs.
+
+### Derived dimensions
+
+| Dimension | Formula | What it captures |
+| --- | --- | --- |
+| **Human judgment** | `0.6 × automation_resistance + 0.4 × skill_depth` | Roles where today's LLM tooling struggles tend to combine high resistance with deep expertise. |
+| **Stakeholder interaction** | `((demand + strategic_importance) / 2) × category_coeff × seniority_multiplier`, clamped 0–10 | How much of the role is human coordination vs. solo artefact production. Leadership and Product categories get a higher coefficient; seniority lifts further. |
+| **Physical-world dependency** | `category_coeff × 5`, +3 if the title contains a physical-keyword (hardware, embedded, robotics, on-site, datacenter, etc.) | Most software roles score very low; hardware, security on-site, and field roles raise it. |
+| **AI augmentation potential** | `0.5 × (10 − automation_resistance) + 0.5 × skill_depth` | High potential = low resistance × high depth: the work is mechanically helpable, but a human still owns it. |
+| **Regulatory relevance** | `category_coeff × 5 + strategic_importance / 3`, clamped 0–10 | Compliance / audit / regulated-industry exposure. Security and Leadership categories get heavier coefficients. |
+
+`category_coeff` is a fixed lookup published in `scoring.py`. `seniority_multiplier` runs from 0.70 (Junior) to 1.40 (C-suite).
+
+### Confidence score (0–100)
+
+Reports how many independent signals back the score for a given role.
+
+```text
+40   base — every role has the 4 base axes
++20  live posting count this week from one of the five public feeds
++20  originally hand-calibrated role (one of the curated 36)
++10  salary band populated
++10  one-line description from docs/role_directory.md present
+```
+
+A score of **80+** indicates the role has live data backing the score; **60–79** means the score is derived from the methodology but no live job-market signal is currently feeding it; below 60 means coverage gaps you should be aware of.
+
+### Narrative templates
+
+Two short sentences per role appear on every detail page — **Why AI-resistant** and **Where exposure shows up**. They are *not* free-form prose. They are picked deterministically:
+
+- `why_ai_resistant` selects the top two sub-scores from a curated set (`automation_resistance`, `skill_depth`, `strategic_importance`, `human_judgment`, `stakeholder_interaction`) when both clear 6/10, and templates a sentence citing them and the methodology's reason for weighting each.
+- `why_ai_exposed` does the symmetric thing for the lowest sub-scores (`automation_resistance`, `skill_depth`, `strategic_importance`, `demand`) when at least one falls below 6/10.
+
+If no axis clears the threshold, the field is blank rather than padded. This keeps the language honest — silence is preferable to forced narrative.
+
+### Seniority parsing
+
+Title prefix is matched against an ordered list of patterns (`Chief|CTO|CIO|CISO|CSO|CPO|CMO|CFO|CEO|COO` → C-suite; `VP|Vice President` → VP; `Director|Head of` → Director; `Principal|Distinguished|Fellow` → Principal; `Staff`, `Senior|Sr.`, `Lead`, `Junior|Jr.|Associate|Intern|Graduate` → Junior; otherwise Mid). 868 of 1,000 roles parse as Mid because most public job titles don't carry an explicit seniority marker.
+
+### Role family
+
+A sub-grouping inside the parent category — derived from the title by keyword match (AI & ML, Backend, Frontend, Mobile, Data, DevOps & SRE, Cloud, Security, QA & Testing, Product, Design, Hardware, Game, Blockchain). Falls back to the parent category name when no keyword matches. Used for filtering and breadcrumbs; never enters the score itself.
+
+### Honest properties of the extended schema
+
+- **Deterministic.** Same inputs, same outputs. The full formula set is auditable in [scoring.py](web/apps/roles/scoring.py) and tested in the data validation script (Phase 8).
+- **Conservative.** All formulas are bounded to 0–10, with category coefficients calibrated so the median role sits near 5/10.
+- **Honestly limited.** The four derived dimensions are *transforms* of the original four axes, not independent observations. They are useful for showing the score from multiple angles, not for triangulating an independent ground truth.
