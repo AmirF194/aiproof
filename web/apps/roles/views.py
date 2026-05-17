@@ -70,6 +70,8 @@ def ranking(request):
             "tiers": tiers,
             "trends": trends,
             "params": params,
+            "page_title": "Full ranking — 1,000 tech roles scored for AI resilience · AIProof",
+            "page_description": "Browse the full AIProof ranking of 1,000 tech roles. Filter by tier, category, and trend. Tick up to 4 to compare side-by-side. Live weekly posting signals on covered roles.",
         },
     )
 
@@ -151,6 +153,18 @@ def role_detail(request, slug):
         ("Regulatory relevance",           role.regulatory_relevance_score or 0,     "#6366f1"),
     ]
 
+    page_title = (
+        f"{role.role} — AI-proof score {role.score}/100 ({role.tier_label}) · AIProof"
+    )
+    notes_excerpt = (role.notes or "").strip()
+    if len(notes_excerpt) > 140:
+        notes_excerpt = notes_excerpt[:137].rstrip() + "..."
+    page_description = (
+        f"{role.role}: AI-proof score {role.score}/100, "
+        f"{role.tier_label.lower()} tier. {notes_excerpt} "
+        f"Full 8-dimension breakdown, live posting signals, and adjacent roles."
+    ).strip()
+
     return render(
         request,
         "roles/detail.html",
@@ -160,6 +174,8 @@ def role_detail(request, slug):
             "peers": peers,
             "breakdown": breakdown,
             "tier_blurb": TIER_BLURBS.get(role.tier, ""),
+            "page_title": page_title,
+            "page_description": page_description,
         },
     )
 
@@ -169,7 +185,11 @@ def category_index(request):
     return render(
         request,
         "roles/categories.html",
-        {"categories": categories},
+        {
+            "categories": categories,
+            "page_title": "Categories — 8 role families ranked for AI resilience · AIProof",
+            "page_description": "Eight categories spanning software, AI, data, security, platform, product, design, and quality testing — ranked by average AI-proof score across the 1,000-role dataset.",
+        },
     )
 
 
@@ -179,7 +199,12 @@ def category_detail(request, slug):
     return render(
         request,
         "roles/category_detail.html",
-        {"category": category, "roles": roles},
+        {
+            "category": category,
+            "roles": roles,
+            "page_title": f"{category.name} — AI-proof ranking of {category.n_roles} roles · AIProof",
+            "page_description": f"{category.n_roles} {category.name} roles ranked for AI resilience. Average score {category.avg_score or 0:.1f}/100. Browse top-scoring roles and dive into individual profiles.",
+        },
     )
 
 
@@ -191,14 +216,18 @@ def tier_detail(request, tier):
         .filter(tier=tier)
         .order_by("-score", "role")
     )
+    tier_label = TIER_LABELS[tier]
+    blurb = TIER_BLURBS[tier]
     return render(
         request,
         "roles/tier_detail.html",
         {
             "tier_key": tier,
-            "tier_label": TIER_LABELS[tier],
-            "tier_blurb": TIER_BLURBS[tier],
+            "tier_label": tier_label,
+            "tier_blurb": blurb,
             "tier_color": TIER_COLORS[tier],
             "roles": roles,
+            "page_title": f"{tier_label} tier — {len(roles)} AI-resilient tech roles · AIProof",
+            "page_description": f"{tier_label} tier: {blurb} {len(roles)} roles in this tier.",
         },
     )

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Admin and download endpoints — fine to crawl public, but no benefit
+Disallow: /admin/
+
+Sitemap: https://aiproof.fastinfer.org/sitemap.xml

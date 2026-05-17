@@ -86,7 +86,7 @@ is verified live before the next starts.
 
 ---
 
-## Phase 5 — SEO + structured data   `[ ]`
+## Phase 5 — SEO + structured data   `[x]`
 
 **Goal:** Index-quality metadata so the site ranks for real career queries.
 
@@ -193,8 +193,8 @@ is verified live before the next starts.
 | 1 — Schema + algorithmic enrichment | 2026-05-17 | 2026-05-17 | b88be47 | All 10 fields populated. 894/1000 narrative coverage. Mean confidence 61. |
 | 2 — Role detail v2 | 2026-05-17 | 2026-05-17 | 9651abb | 8-axis chart, AI-resistant/exposed panels, confidence chip, live-data block, adjacent roles by score-vector. |
 | 3 — Role comparison | 2026-05-17 | 2026-05-17 | f833a57 | /compare/ view, multi-select on ranking, floating compare button, localStorage persistence. |
-| 4 — Methodology / Limitations / Policy | 2026-05-17 | 2026-05-17 | pending | METHODOLOGY.md gains an 'Extended scoring (2026 update)' section with all 8 formulas + confidence math + narrative templates. New /limitations/ and /data-policy/ pages. Footer links. |
-| 5 — SEO | — | — | — | — |
+| 4 — Methodology / Limitations / Policy | 2026-05-17 | 2026-05-17 | eb8b073 | METHODOLOGY.md gains an 'Extended scoring (2026 update)' section with all 8 formulas + confidence math + narrative templates. New /limitations/ and /data-policy/ pages. Footer links. |
+| 5 — SEO | 2026-05-17 | 2026-05-17 | pending | Sitemap + robots + per-page meta + OG/Twitter cards + Article + Organization JSON-LD + canonical URLs. Site domain set via data migration. |
 | 6 — Homepage v2 | — | — | — | — |
 | 7 — Filter / search upgrade | — | — | — | — |
 | 8 — Engineering quality | — | — | — | — |

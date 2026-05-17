@@ -27,11 +27,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
+    "django.contrib.sitemaps",
     "django_celery_beat",
     "apps.core",
     "apps.roles",
     "apps.reports",
 ]
+
+SITE_ID = 1
+SITE_DOMAIN = "aiproof.fastinfer.org"
+SITE_URL = f"https://{SITE_DOMAIN}"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

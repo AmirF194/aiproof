@@ -1,10 +1,40 @@
 {% load static %}<!doctype html>
+{# Resolve final SEO strings once. Views pass page_title / page_description; otherwise we fall back to site defaults. #}
+{% with resolved_title=page_title|default:"AIProof — career resilience scores for 1,000 tech roles, 2026–2035" resolved_description=page_description|default:"AIProof is a career-intelligence platform by FastInfer that ranks 1,000 technology roles by their expected resilience to AI automation over 2026–2035. Eight scoring dimensions, weekly-refreshed live posting signals, full methodology." %}
 <html lang="en" class="bg-white text-slate-900">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}{{ site_name }} — {{ site_tagline }}{% endblock %}</title>
-  <meta name="description" content="{{ site_tagline }} — a structured ranking of 1,000 software/AI roles scored on demand, automation resistance, skill depth, and strategic importance.">
+  <title>{% block title %}{{ resolved_title }}{% endblock %}</title>
+  <meta name="description" content="{{ resolved_description }}">
+  <link rel="canonical" href="https://aiproof.fastinfer.org{{ request.path }}">
+
+  {# Open Graph + Twitter card #}
+  <meta property="og:site_name" content="AIProof">
+  <meta property="og:title" content="{{ resolved_title }}">
+  <meta property="og:description" content="{{ resolved_description }}">
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:url" content="https://aiproof.fastinfer.org{{ request.path }}">
+  <meta property="og:image" content="https://aiproof.fastinfer.org{% static 'favicon.png' %}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ resolved_title }}">
+  <meta name="twitter:description" content="{{ resolved_description }}">
+
+  {# Organization JSON-LD — published on every page #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FastInfer Inc.",
+    "url": "https://fastinfer.org",
+    "logo": "https://fastinfer.org/static/images/fastinfer-logo.png",
+    "sameAs": [
+      "https://github.com/FastInfer",
+      "https://www.linkedin.com/company/fastinfer"
+    ]
+  }
+  </script>
+
   <link rel="icon" type="image/png" href="{% static 'favicon.png' %}">
   <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -114,3 +144,4 @@
   </footer>
 </body>
 </html>
+{% endwith %}

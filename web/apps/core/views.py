@@ -53,12 +53,21 @@ def home(request):
             "bottom_10": bottom_10,
             "total": total,
             "categories": categories,
+            "page_title": "AIProof — which tech roles survive the 2026–2035 AI shake-out",
+            "page_description": "Career-intelligence platform by FastInfer. 1,000 software, AI, security, and platform roles ranked across 8 dimensions for resilience to AI automation. Live weekly posting signals. Full methodology and limitations published.",
         },
     )
 
 
 def about(request):
-    return render(request, "core/about.html")
+    return render(
+        request,
+        "core/about.html",
+        {
+            "page_title": "About — AIProof career-intelligence platform · FastInfer",
+            "page_description": "AIProof is FastInfer's open analytical framework for tech-career durability under AI automation. 1,000 roles, 8 score dimensions, weekly live data, transparent methodology.",
+        },
+    )
 
 
 ACCESS_LABELS = {
@@ -77,7 +86,12 @@ def sources(request):
     return render(
         request,
         "core/sources.html",
-        {"groups": grouped, "n_sources": len(SOURCES)},
+        {
+            "groups": grouped,
+            "n_sources": len(SOURCES),
+            "page_title": f"Sources & citations — {len(SOURCES)} feeds behind AIProof",
+            "page_description": "BLS, O*NET, Hacker News, Greenhouse, Lever, The Muse, Remotive, Stack Overflow Survey, GitHub Octoverse, ISC2, Levels.fyi, layoffs.fyi — every source AIProof crawls, with URLs, licences, and last-fetched dates.",
+        },
     )
 
 
@@ -116,6 +130,7 @@ def compare(request):
             "best": max(values) if values else 0,
         })
 
+    titles = ", ".join(r.role for r in roles) if roles else "roles"
     return render(
         request,
         "core/compare.html",
@@ -125,16 +140,32 @@ def compare(request):
             "slugs_csv": ",".join(slugs),
             "n_valid": len(roles),
             "n_requested": len(slugs),
+            "page_title": f"Compare {titles} — AIProof side-by-side career profiles",
+            "page_description": "Compare 2–4 tech roles side-by-side on AI-proof score, 8 sub-dimensions, tier, salary, and live posting signals.",
         },
     )
 
 
 def limitations(request):
-    return render(request, "core/limitations.html")
+    return render(
+        request,
+        "core/limitations.html",
+        {
+            "page_title": "Limitations — what AIProof is and isn't · AIProof",
+            "page_description": "AIProof scores are calibrated estimates, not forecasts. Read the seven limitations — measurement vs. estimate, labour-market drift, AI capability drift, title noise, geographic and seniority bias, and what the score is not.",
+        },
+    )
 
 
 def data_policy(request):
-    return render(request, "core/data_policy.html")
+    return render(
+        request,
+        "core/data_policy.html",
+        {
+            "page_title": "Data policy — refresh cadence, ethics, takedowns · AIProof",
+            "page_description": "What AIProof collects, where it comes from, how often it refreshes, crawler ethics, takedown process, CC BY 4.0 licence.",
+        },
+    )
 
 
 def data_download(request, filename: str):

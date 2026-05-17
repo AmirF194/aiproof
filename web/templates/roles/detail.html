@@ -1,5 +1,22 @@
 {% extends "base.html" %}
-{% block title %}{{ role.role }} — AIProof{% endblock %}
+{% block og_type %}article{% endblock %}
+
+{% block head_extra %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ role.role|escapejs }} — AI-proof score {{ role.score }}/100",
+  "description": "{{ page_description|escapejs }}",
+  "author": {"@type": "Organization", "name": "FastInfer Inc.", "url": "https://fastinfer.org"},
+  "publisher": {"@type": "Organization", "name": "FastInfer Inc.", "url": "https://fastinfer.org", "logo": {"@type": "ImageObject", "url": "https://fastinfer.org/static/images/fastinfer-logo.png"}},
+  "datePublished": "{{ role.last_updated|date:'c' }}",
+  "dateModified": "{{ role.last_updated|date:'c' }}",
+  "mainEntityOfPage": "https://aiproof.fastinfer.org{{ role.get_absolute_url }}",
+  "about": {"@type": "Occupation", "name": "{{ role.role|escapejs }}", "occupationLocation": {"@type": "AdministrativeArea", "name": "Global"}}
+}
+</script>
+{% endblock %}
 
 {% block content %}
 <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
