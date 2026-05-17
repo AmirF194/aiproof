@@ -42,7 +42,7 @@ is verified live before the next starts.
 
 ---
 
-## Phase 2 — Role detail page v2   `[ ]`
+## Phase 2 — Role detail page v2   `[x]`
 
 **Goal:** Polished, research-grade per-role page.
 
@@ -191,7 +191,7 @@ is verified live before the next starts.
 | Phase | Started | Shipped | Commit | Notes |
 | --- | --- | --- | --- | --- |
 | 1 — Schema + algorithmic enrichment | 2026-05-17 | 2026-05-17 | b88be47 | All 10 fields populated. 894/1000 narrative coverage. Mean confidence 61. |
-| 2 — Role detail v2 | — | — | — | — |
+| 2 — Role detail v2 | 2026-05-17 | 2026-05-17 | _pending_ | 8-axis chart, AI-resistant/exposed panels, confidence chip, live-data block, adjacent roles by score-vector. |
 | 3 — Role comparison | — | — | — | — |
 | 4 — Methodology / Limitations / Policy | — | — | — | — |
 | 5 — SEO | — | — | — | — |

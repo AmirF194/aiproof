@@ -88,21 +88,77 @@ def ranking_table(request):
     )
 
 
+def _score_vector(r: Role) -> tuple[int, ...]:
+    """8-dimensional score vector used for adjacent-role similarity."""
+    return (
+        r.demand or 0,
+        r.automation_resistance or 0,
+        r.skill_depth or 0,
+        r.strategic_importance or 0,
+        r.human_judgment_score or 0,
+        r.stakeholder_interaction_score or 0,
+        r.ai_augmentation_potential_score or 0,
+        r.regulatory_relevance_score or 0,
+    )
+
+
+def _adjacent_roles(role: Role, n: int = 3) -> list[Role]:
+    """Closest n roles to `role` by Euclidean distance over the 8-axis score vector.
+
+    Restricted to the same category (so adjacents are realistic career neighbours,
+    not just numerically similar). Fall back to the wider catalogue if the category
+    has fewer than n+1 roles.
+    """
+    candidates = (
+        Role.objects.select_related("category")
+        .filter(category=role.category)
+        .exclude(pk=role.pk)
+    )
+    if candidates.count() < n:
+        candidates = (
+            Role.objects.select_related("category")
+            .exclude(pk=role.pk)
+        )
+    target = _score_vector(role)
+
+    def dist_sq(other: Role) -> int:
+        ov = _score_vector(other)
+        return sum((a - b) ** 2 for a, b in zip(target, ov))
+
+    return sorted(candidates, key=dist_sq)[:n]
+
+
 def role_detail(request, slug):
     role = get_object_or_404(
-        Role.objects.select_related("category"), slug=slug
+        Role.objects.select_related("category", "metrics"), slug=slug
     )
+    adjacent = _adjacent_roles(role, n=3)
     peers = (
         Role.objects.filter(category=role.category)
         .exclude(pk=role.pk)
-        .order_by("-score")[:8]
+        .order_by("-score")[:6]
     )
+
+    # Score breakdown: ordered list of (label, value, color_hex) for the chart.
+    breakdown = [
+        ("Market demand",                  role.demand,                              "#0ea5e9"),
+        ("Automation resistance",          role.automation_resistance,               "#10b981"),
+        ("Skill depth",                    role.skill_depth,                         "#8b5cf6"),
+        ("Strategic importance",           role.strategic_importance,                "#f59e0b"),
+        ("Human judgment",                 role.human_judgment_score or 0,           "#06b6d4"),
+        ("Stakeholder interaction",        role.stakeholder_interaction_score or 0,  "#ec4899"),
+        ("AI augmentation potential",      role.ai_augmentation_potential_score or 0,"#f97316"),
+        ("Regulatory relevance",           role.regulatory_relevance_score or 0,     "#6366f1"),
+    ]
+
     return render(
         request,
         "roles/detail.html",
         {
             "role": role,
+            "adjacent": adjacent,
             "peers": peers,
+            "breakdown": breakdown,
             "tier_blurb": TIER_BLURBS.get(role.tier, ""),
         },
     )
