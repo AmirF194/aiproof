@@ -136,6 +136,13 @@ LOGGING = {
         },
     },
     "root": {"handlers": ["console"], "level": "INFO"},
+    "loggers": {
+        "django.security.DisallowedHost": {
+            "handlers": ["console"],
+            "level": "CRITICAL",
+            "propagate": False,
+        },
+    },
 }
 
 SITE_NAME = "aiproof"
