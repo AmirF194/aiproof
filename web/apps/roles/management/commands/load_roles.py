@@ -68,7 +68,8 @@ class Command(BaseCommand):
 
         categories = self._load_categories(roles_csv, category_csv)
         ranks = self._load_ranks(ranking_csv)
-        n_roles = self._load_roles(roles_csv, categories, ranks)
+        descriptions = self._load_descriptions(data_dir)
+        n_roles = self._load_roles(roles_csv, categories, ranks, descriptions)
         if metrics_csv.exists():
             n_metrics = self._load_metrics(metrics_csv)
         else:
@@ -123,6 +124,24 @@ class Command(BaseCommand):
             categories[name] = cat
         return categories
 
+    def _load_descriptions(self, data_dir: Path) -> dict[str, str]:
+        """Parse docs/role_directory.md → {role_name: one-line description}."""
+        import re
+        candidates = [
+            data_dir.parent / "docs" / "role_directory.md",
+            Path("/") / "docs" / "role_directory.md",
+        ]
+        path = next((p for p in candidates if p.exists()), None)
+        if path is None:
+            return {}
+        line_re = re.compile(r"^\s*-\s+\*\*(.+?)\*\*\s*[—\-]\s*(.+?)\s*$")
+        out: dict[str, str] = {}
+        for line in path.read_text(encoding="utf-8").splitlines():
+            m = line_re.match(line)
+            if m:
+                out[m.group(1).strip()] = m.group(2).strip()
+        return out
+
     def _load_ranks(self, ranking_csv: Path) -> dict[tuple[str, str], int]:
         ranks: dict[tuple[str, str], int] = {}
         if not ranking_csv.exists():
@@ -138,6 +157,7 @@ class Command(BaseCommand):
         roles_csv: Path,
         categories: dict[str, Category],
         ranks: dict[tuple[str, str], int],
+        descriptions: dict[str, str],
     ) -> int:
         n = 0
         with roles_csv.open(newline="") as fh:
@@ -165,6 +185,7 @@ class Command(BaseCommand):
                         "salary_low_usd": _int(row.get("salary_low_usd", "")),
                         "salary_high_usd": _int(row.get("salary_high_usd", "")),
                         "rank": ranks.get((name, row["category"]), 0),
+                        "notes": descriptions.get(name, ""),
                     },
                 )
                 n += 1

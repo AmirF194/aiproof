@@ -23,7 +23,7 @@ SORT_FIELDS = {
 
 
 def _filter_roles(request):
-    qs = Role.objects.select_related("category").all()
+    qs = Role.objects.select_related("category", "metrics").all()
 
     q = request.GET.get("q", "").strip()
     tier = request.GET.get("tier", "").strip()
