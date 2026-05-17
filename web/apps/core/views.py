@@ -21,6 +21,11 @@ _DOWNLOADABLE = {
 
 
 def home(request):
+    from django.db.models import Max, Sum
+
+    from apps.roles.models import RoleMetric
+    from .sources import SOURCES
+
     tier_rows = (
         Role.objects.values("tier")
         .annotate(n=Count("id"), avg_score=Avg("score"))
@@ -44,6 +49,26 @@ def home(request):
     total = Role.objects.count()
     categories = Category.objects.order_by("name")
 
+    # --- Hero stats strip ---
+    live_postings_total = (
+        RoleMetric.objects.aggregate(s=Sum("postings_2026_current"))["s"] or 0
+    )
+    n_live_roles = RoleMetric.objects.filter(postings_2026_current__gt=0).count()
+    last_updated = Role.objects.aggregate(m=Max("last_updated"))["m"]
+
+    # --- Role-family aggregates ---
+    family_rows = (
+        Role.objects
+        .exclude(role_family="")
+        .values("role_family")
+        .annotate(n=Count("id"), avg_score=Avg("score"))
+        .order_by("-n")[:8]
+    )
+    role_families = list(family_rows)
+
+    # --- Source feed grid ---
+    featured_sources = [s for s in SOURCES if s.access == "api"][:8]
+
     return render(
         request,
         "core/home.html",
@@ -53,8 +78,14 @@ def home(request):
             "bottom_10": bottom_10,
             "total": total,
             "categories": categories,
-            "page_title": "AIProof — which tech roles survive the 2026–2035 AI shake-out",
-            "page_description": "Career-intelligence platform by FastInfer. 1,000 software, AI, security, and platform roles ranked across 8 dimensions for resilience to AI automation. Live weekly posting signals. Full methodology and limitations published.",
+            "live_postings_total": live_postings_total,
+            "n_live_roles": n_live_roles,
+            "n_dimensions": 8,
+            "last_updated": last_updated,
+            "role_families": role_families,
+            "featured_sources": featured_sources,
+            "page_title": "AIProof — career-intelligence platform · 1,000 tech roles scored for AI resilience",
+            "page_description": "AIProof is a career-intelligence platform by FastInfer that ranks 1,000 technology roles by their expected resilience to AI automation over 2026–2035. Eight scoring dimensions, weekly-refreshed live posting signals, full methodology and limitations published.",
         },
     )
 

@@ -102,7 +102,7 @@ is verified live before the next starts.
 
 ---
 
-## Phase 6 — Homepage v2   `[ ]`
+## Phase 6 — Homepage v2   `[x]`
 
 **Goal:** Reposition as a research product, not just a ranking page.
 
@@ -194,8 +194,8 @@ is verified live before the next starts.
 | 2 — Role detail v2 | 2026-05-17 | 2026-05-17 | 9651abb | 8-axis chart, AI-resistant/exposed panels, confidence chip, live-data block, adjacent roles by score-vector. |
 | 3 — Role comparison | 2026-05-17 | 2026-05-17 | f833a57 | /compare/ view, multi-select on ranking, floating compare button, localStorage persistence. |
 | 4 — Methodology / Limitations / Policy | 2026-05-17 | 2026-05-17 | eb8b073 | METHODOLOGY.md gains an 'Extended scoring (2026 update)' section with all 8 formulas + confidence math + narrative templates. New /limitations/ and /data-policy/ pages. Footer links. |
-| 5 — SEO | 2026-05-17 | 2026-05-17 | pending | Sitemap + robots + per-page meta + OG/Twitter cards + Article + Organization JSON-LD + canonical URLs. Site domain set via data migration. |
-| 6 — Homepage v2 | — | — | — | — |
+| 5 — SEO | 2026-05-17 | 2026-05-17 | ce3f735 | Sitemap + robots + per-page meta + OG/Twitter cards + Article + Organization JSON-LD + canonical URLs. Site domain set via data migration. |
+| 6 — Homepage v2 | 2026-05-17 | 2026-05-17 | pending | Career-intelligence repositioning, 4-stat strip, role-family cards, sources-at-a-glance grid, keep tiers/top10/bottom10/filter bar. |
 | 7 — Filter / search upgrade | — | — | — | — |
 | 8 — Engineering quality | — | — | — | — |
 | 9 — Crawler coverage v2 | — | — | — | — |
