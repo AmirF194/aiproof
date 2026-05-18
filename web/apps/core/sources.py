@@ -1,8 +1,19 @@
 """Registry of every data source the aiproof ranking is built on.
 
 Each entry is what's needed to cite it: a name, URL, the kind of access
-(public API / public scrape / paid / manual), the licence/terms summary,
-what it feeds in the pipeline, and the date of last refresh.
+(public API / public scrape / annual report / manual snapshot / paid),
+the licence/terms summary, what it feeds in the pipeline, and the date
+of last refresh.
+
+Honesty rules for this file (binding):
+  - `access="api"` only if a live crawler exists in scripts/data_collection/
+    AND that crawler is wired into apps.core.management.commands.refresh_postings.
+  - `last_fetched="rolling"` only on entries with a live weekly Celery beat
+    refresh. Everything else uses an ISO date matching the snapshot.
+  - No entry without a corresponding script or cached file on disk.
+  - No simulated data appears on /sources/ (LinkedIn / Indeed / Glassdoor
+    simulations stay in scripts/data_collection/*_simulated.py for the
+    legacy static pipeline; they are NOT cited on the public site).
 
 Kept as a hand-curated list rather than a model — sources change once or
 twice a year, and reviewing diffs in version control is the audit trail.
@@ -25,26 +36,7 @@ class Source:
 
 
 SOURCES: tuple[Source, ...] = (
-    Source(
-        key="bls_oep",
-        name="U.S. Bureau of Labor Statistics — Occupational Employment Projections (2024–2034)",
-        url="https://www.bls.gov/emp/tables.htm",
-        access="api",
-        licence="Public domain (US federal work)",
-        feeds=("demand", "salary baseline"),
-        last_fetched="rolling",
-        notes="Free public API; SOC-code projections for every tech occupation we map roles into.",
-    ),
-    Source(
-        key="onet",
-        name="O*NET — Occupational Information Network",
-        url="https://www.onetonline.org/",
-        access="api",
-        licence="CC BY 4.0 (US Department of Labor)",
-        feeds=("skill depth", "task automation"),
-        last_fetched="rolling",
-        notes="Skill, task, and ability ratings per SOC code; primary input to the skill_depth axis.",
-    ),
+    # ---------- LIVE crawlers (Celery beat, weekly) ----------
     Source(
         key="hn_who_is_hiring",
         name="Hacker News — Who's Hiring (Algolia search API)",
@@ -63,7 +55,7 @@ SOURCES: tuple[Source, ...] = (
         licence="Public per company",
         feeds=("posting volume", "salary mention", "remote split"),
         last_fetched="rolling",
-        notes="No-auth endpoint at /v1/boards/{company}/jobs; pulls from hundreds of companies.",
+        notes="No-auth endpoint at /v1/boards/{company}/jobs; we currently pull ~30 companies.",
     ),
     Source(
         key="lever_ats",
@@ -73,7 +65,39 @@ SOURCES: tuple[Source, ...] = (
         licence="Public per company",
         feeds=("posting volume", "salary mention"),
         last_fetched="rolling",
-        notes="No-auth endpoint at /v0/postings/{company}; complements Greenhouse coverage.",
+        notes="No-auth endpoint at /v0/postings/{company}; ~8 companies confirmed live.",
+    ),
+    Source(
+        key="themuse_api",
+        name="The Muse public jobs API",
+        url="https://www.themuse.com/developers/api/v2",
+        access="api",
+        licence="Public, no key required",
+        feeds=("posting volume", "AI mention rate", "remote split"),
+        last_fetched="rolling",
+        notes="No-auth endpoint at /api/public/jobs; paginated by category.",
+    ),
+    Source(
+        key="remotive_api",
+        name="Remotive remote-jobs API",
+        url="https://remotive.com/api/remote-jobs",
+        access="api",
+        licence="Public, no key required",
+        feeds=("posting volume", "AI mention rate"),
+        last_fetched="rolling",
+        notes="No-auth endpoint listing every active remote posting on Remotive.",
+    ),
+
+    # ---------- CACHED snapshots (annual / manual, cited in methodology) ----------
+    Source(
+        key="bls_oep",
+        name="U.S. Bureau of Labor Statistics — Occupational Employment Projections (2024–2034)",
+        url="https://www.bls.gov/emp/tables.htm",
+        access="annual_report",
+        licence="Public domain (US federal work)",
+        feeds=("demand baseline",),
+        last_fetched="2024-09",
+        notes="BLS-published projections, cached at data/raw/bls_projections_2024_2034.json. Used by the original calibration; no live API call today. A live BLS Public Data API crawler is on the Phase 10 roadmap.",
     ),
     Source(
         key="so_survey",
@@ -81,9 +105,9 @@ SOURCES: tuple[Source, ...] = (
         url="https://survey.stackoverflow.co/",
         access="annual_report",
         licence="ODbL (data) / CC BY 4.0 (text)",
-        feeds=("compensation", "tooling adoption", "AI-tool use"),
+        feeds=("compensation reference", "tooling adoption", "AI-tool use"),
         last_fetched="2025-07",
-        notes="Annual CSV release; we ingest the raw responses and aggregate per role.",
+        notes="Annual CSV release; cached snapshot used in the methodology + insights pages.",
     ),
     Source(
         key="github_octoverse",
@@ -94,16 +118,6 @@ SOURCES: tuple[Source, ...] = (
         feeds=("language trend", "AI-tool adoption"),
         last_fetched="2025-10",
         notes="Annual published numbers on language usage, Copilot adoption, repo growth.",
-    ),
-    Source(
-        key="bls_oews",
-        name="BLS OEWS — Occupational Employment & Wage Statistics",
-        url="https://www.bls.gov/oes/",
-        access="api",
-        licence="Public domain (US federal work)",
-        feeds=("salary band", "headcount"),
-        last_fetched="rolling",
-        notes="Wage percentiles by SOC; anchors the salary_range field for every role.",
     ),
     Source(
         key="isc2_workforce",
@@ -119,11 +133,11 @@ SOURCES: tuple[Source, ...] = (
         key="layoffs_fyi",
         name="layoffs.fyi tech-layoff tracker",
         url="https://layoffs.fyi/",
-        access="public_scrape",
+        access="manual",
         licence="Site-published, attribution",
         feeds=("trend direction", "category risk"),
         last_fetched="2026-04",
-        notes="Aggregated layoff events by company and role family; client-side rendered so we cache snapshots.",
+        notes="Aggregated layoff events by company and role family; the site is client-side rendered so we maintain a manual snapshot rather than scrape.",
     ),
     Source(
         key="levels_fyi",
@@ -131,7 +145,7 @@ SOURCES: tuple[Source, ...] = (
         url="https://www.levels.fyi/",
         access="manual",
         licence="Site-published, attribution",
-        feeds=("senior IC compensation"),
+        feeds=("senior IC compensation",),
         last_fetched="2026-02",
         notes="No public API; we maintain a manual snapshot of headline bands for senior+ ICs.",
     ),

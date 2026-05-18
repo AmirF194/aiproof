@@ -121,7 +121,7 @@ def sources(request):
             "groups": grouped,
             "n_sources": len(SOURCES),
             "page_title": f"Sources & citations — {len(SOURCES)} feeds behind AIProof",
-            "page_description": "BLS, O*NET, Hacker News, Greenhouse, Lever, The Muse, Remotive, Stack Overflow Survey, GitHub Octoverse, ISC2, Levels.fyi, layoffs.fyi — every source AIProof crawls, with URLs, licences, and last-fetched dates.",
+            "page_description": "Hacker News, Greenhouse, Lever, The Muse, Remotive — live weekly crawl. BLS, Stack Overflow Survey, GitHub Octoverse, ISC2, Levels.fyi, layoffs.fyi, Gartner — cited annual / manual snapshots. URLs, licences, and last-fetched dates for every source.",
         },
     )
 
