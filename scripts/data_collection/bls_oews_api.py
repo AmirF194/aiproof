@@ -14,6 +14,7 @@ Output: data/raw/bls_oews_live.json — series-keyed median wage + employment co
 """
 from __future__ import annotations
 
+import datetime as _dt
 import json
 import os
 import urllib.request
@@ -23,14 +24,21 @@ from _common import RAW
 OUT = RAW / "bls_oews_live.json"
 ENDPOINT = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
 
-# OEWS series IDs follow the form: OEUN <area> <industry> <occupation> <datatype>
-# Area 0000000 = national, Industry 000000 = all, Datatype 04 = annual median wage.
+# OEWS series IDs: OEUN + area(7) + industry(6) + occupation(6) + datatype(2)
+# Area 0000000 = national. Industry 000000 = all. Datatype:
+#   01 = Employment count
+#   04 = Annual mean wage
+#   13 = Annual median wage
+# BLS publishes the May-YYYY reference snapshot the following spring, so the
+# most recent year available is current_year-1; we ask for a 2-year window
+# to also catch the prior reference if the current one is mid-release.
+DATATYPES: tuple[str, ...] = ("01", "04", "13")
 TECH_SOC_CODES: dict[str, str] = {
     "Software Developers":                "151252",
     "Data Scientists":                    "152051",
     "Information Security Analysts":      "151212",
     "Computer Network Architects":        "151241",
-    "Database Administrators":            "151245",
+    "Database Administrators":            "151242",
     "Network and Computer Systems Administrators": "151244",
     "Computer Systems Analysts":          "151211",
     "Web Developers":                     "151254",
@@ -41,14 +49,18 @@ TECH_SOC_CODES: dict[str, str] = {
 }
 
 
-def _series_id(soc: str, datatype: str = "04") -> str:
-    # OEUN + areacode (7 digits: 0000000 = US) + industry (6 digits: 000000) + soc (6 digits) + datatype (2 digits)
+def _series_id(soc: str, datatype: str) -> str:
     return f"OEUN0000000000000{soc}{datatype}"
 
 
 def collect() -> int:
-    series_ids = [_series_id(code) for code in TECH_SOC_CODES.values()]
-    payload: dict = {"seriesid": series_ids, "startyear": "2023", "endyear": "2024"}
+    series_ids = [_series_id(soc, dt) for soc in TECH_SOC_CODES.values() for dt in DATATYPES]
+    current_year = _dt.datetime.now(_dt.timezone.utc).year
+    payload: dict = {
+        "seriesid": series_ids,
+        "startyear": str(current_year - 2),
+        "endyear": str(current_year),
+    }
     api_key = os.environ.get("BLS_API_KEY", "").strip()
     if api_key:
         payload["registrationkey"] = api_key
@@ -78,22 +90,30 @@ def collect() -> int:
         return 0
 
     soc_lookup = {v: k for k, v in TECH_SOC_CODES.items()}
+    datatype_lookup = {"01": "employment", "04": "annual_mean_wage", "13": "annual_median_wage"}
     out: list[dict] = []
+    data_points = 0
     for s in series:
         sid = s.get("seriesID", "")
         soc_code = sid[-8:-2] if len(sid) >= 8 else ""
+        datatype = sid[-2:] if len(sid) >= 2 else ""
+        rows = s.get("data", []) or []
+        if not rows:
+            continue
+        data_points += len(rows)
         out.append({
             "series_id": sid,
             "occupation": soc_lookup.get(soc_code, sid),
             "soc_code": soc_code,
-            "data": s.get("data", []),
+            "metric": datatype_lookup.get(datatype, datatype),
+            "data": rows,
         })
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"fetched_at": response.get("message", []), "series": out}, indent=2))
-    return len(out)
+    return data_points
 
 
 if __name__ == "__main__":
     n = collect()
-    print(f"bls_oews_api: wrote {n} series to {OUT}")
+    print(f"bls_oews_api: wrote {n} data points to {OUT}")
