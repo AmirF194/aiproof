@@ -335,6 +335,7 @@ Data Product Manager,Product & Design,73,safe,0.0,0,0,stable
 Enterprise Product Manager,Product & Design,73,safe,0.0,0,0,stable
 GDPR / Privacy Compliance Engineer,Security,73,safe,0.0,0,0,stable
 Pre-sales Engineer,Specialized & Emerging,73,safe,0.0,0,0,stable
+Principal Software Engineer,Engineering,73,safe,0.0,0,0,stable
 Databricks Data Engineer,Data & AI,72,safe,0.0,0,0,stable
 Hugging Face / Transformers Engineer,Data & AI,72,safe,0.0,0,0,stable
 NLP Researcher,Data & AI,72,safe,0.0,0,0,stable
@@ -396,6 +397,7 @@ Hardware Pentester,Security,71,safe,0.0,0,0,stable
 ICS / SCADA Security Engineer,Security,71,safe,0.0,0,0,stable
 Malware Analyst,Security,71,safe,0.0,0,0,stable
 Open Source Maintainer,Specialized & Emerging,71,safe,0.0,0,0,stable
+Staff Software Engineer,Engineering,71,safe,0.0,0,0,stable
 AI Ethics Researcher,Data & AI,70,safe,0.0,0,0,stable
 AI Workflow / Orchestration Engineer,Data & AI,70,safe,0.0,0,0,stable
 Senior NLP Engineer,Data & AI,70,safe,0.0,0,0,stable
@@ -513,6 +515,7 @@ Security Operations Engineer,Security,67,stable,0.0,0,0,stable
 Threat Intelligence Analyst,Security,67,stable,0.0,0,0,stable
 Post-sales / Customer Engineer,Specialized & Emerging,67,stable,0.0,0,0,stable
 Senior Salesforce Developer,Specialized & Emerging,67,stable,0.0,0,0,stable
+Senior Software Engineer,Engineering,67,stable,0.0,0,0,stable
 AdTech ML Engineer,Data & AI,66,stable,0.0,0,0,stable
 CDC (Change Data Capture) Engineer,Data & AI,66,stable,0.0,0,0,stable
 Experimentation Scientist (A/B testing),Data & AI,66,stable,0.0,0,0,stable
@@ -639,6 +642,8 @@ UX Researcher,Product & Design,62,stable,0.0,0,0,stable
 SAST Engineer,Security,62,stable,0.0,0,0,stable
 SIEM Engineer,Security,62,stable,0.0,0,0,stable
 Salesforce Developer,Specialized & Emerging,62,stable,0.0,0,0,stable
+Software Engineer,Engineering,62,stable,0.0,0,0,stable
+Full Stack Developer,Engineering,62,stable,0.0,0,0,stable
 AR Engineer,Engineering,61,stable,0.0,0,0,stable
 Ada Engineer (Defense),Engineering,61,stable,0.0,0,0,stable
 CAM Software Engineer,Engineering,61,stable,0.0,0,0,stable
@@ -895,6 +900,7 @@ Scrum Master / Agile Coach,Specialized & Emerging,47,exposed,0.0,0,0,stable
 Segment / Rudderstack Engineer,Specialized & Emerging,47,exposed,0.0,0,0,stable
 Shopify App Developer,Specialized & Emerging,47,exposed,0.0,0,0,stable
 Technical Writer,Specialized & Emerging,47,exposed,0.0,0,0,stable
+Junior Software Engineer,Engineering,47,exposed,0.0,0,0,stable
 SSIS / SQL Server Integration Engineer,Data & AI,46,exposed,0.0,0,0,stable
 BPM / Workflow Engineer,Engineering,46,exposed,0.0,0,0,stable
 DAO Tooling Engineer,Engineering,46,exposed,0.0,0,0,stable
@@ -944,6 +950,7 @@ Low-code Developer,Specialized & Emerging,42,exposed,0.0,0,0,stable
 SendGrid / Mailgun Engineer,Specialized & Emerging,42,exposed,0.0,0,0,stable
 Tray.io / iPaaS Engineer,Specialized & Emerging,42,exposed,0.0,0,0,stable
 Workato Engineer,Specialized & Emerging,42,exposed,0.0,0,0,stable
+Web Developer,Engineering,42,exposed,0.0,0,0,stable
 Talend Engineer,Data & AI,41,exposed,0.0,0,0,stable
 Ember.js Engineer,Engineering,41,exposed,0.0,0,0,stable
 Stencil Engineer,Engineering,41,exposed,0.0,0,0,stable
@@ -977,6 +984,7 @@ Marketo Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
 WooCommerce Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
 Zapier Specialist,Specialized & Emerging,37,at_risk,0.0,0,0,stable
 Zendesk Developer,Specialized & Emerging,37,at_risk,0.0,0,0,stable
+Programmer,Engineering,37,at_risk,0.0,0,0,stable
 Backbone.js Maintainer,Engineering,36,at_risk,0.0,0,0,stable
 CodeIgniter Engineer,Engineering,36,at_risk,0.0,0,0,stable
 Pascal / Delphi Engineer,Engineering,36,at_risk,0.0,0,0,stable

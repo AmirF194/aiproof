@@ -119,8 +119,8 @@ def ranking(request):
             "families": _family_options(),
             "sort_options": _sort_options(),
             "params": params,
-            "page_title": "Full ranking — 1,000 tech roles scored for AI resilience · AIProof",
-            "page_description": "Browse the full AIProof ranking of 1,000 tech roles. Filter by tier, category, trend, seniority, and role family. Sort by any of 8 score dimensions. Tick up to 4 to compare side-by-side.",
+            "page_title": "Full ranking — 1,000+ tech roles scored for AI resilience · AIProof",
+            "page_description": "Browse the full AIProof ranking of 1,000+ tech roles. Filter by tier, category, trend, seniority, and role family. Sort by any of 8 score dimensions. Tick up to 4 to compare side-by-side.",
         },
     )
 
@@ -254,7 +254,7 @@ def category_index(request):
         {
             "categories": categories,
             "page_title": "Categories — 8 role families ranked for AI resilience · AIProof",
-            "page_description": "Eight categories spanning software, AI, data, security, platform, product, design, and quality testing — ranked by average AI-proof score across the 1,000-role dataset.",
+            "page_description": "Eight categories spanning software, AI, data, security, platform, product, design, and quality testing — ranked by average AI-proof score across the 1,000+ role dataset.",
         },
     )
 

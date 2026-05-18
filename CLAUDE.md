@@ -6,7 +6,7 @@ Project memory for future Claude sessions on this repo. Keep this file accurate 
 
 ## What this is
 
-**AIProof** is a career-intelligence platform by [FastInfer Inc.](https://fastinfer.org) that ranks 1,000 technology roles by their expected resilience to AI automation over 2026–2035.
+**AIProof** is a career-intelligence platform by [FastInfer Inc.](https://fastinfer.org) that ranks 1,000+ technology roles by their expected resilience to AI automation over 2026–2035. The original hand-scored roster was exactly 1,000; deterministic additions (e.g. umbrella titles whose scores are the average of comparable specialized rows) can grow it.
 
 - **Live:** https://aiproof.fastinfer.org/
 - **GitHub:** https://github.com/FastInfer/aiproof
@@ -50,7 +50,7 @@ Django apps:
 Touch these and the consequences ripple — be careful, run `validate_data` after.
 
 - [web/apps/roles/scoring.py](web/apps/roles/scoring.py) — **every** derived score formula, seniority parser, role-family classifier, narrative templates. When you change a formula here, also update the "Extended scoring" section of [METHODOLOGY.md](METHODOLOGY.md) so users can audit the math.
-- [data/roles.csv](data/roles.csv) — canonical 1,000-role roster with the 4 base axes.
+- [data/roles.csv](data/roles.csv) — canonical 1,000+ role roster with the 4 base axes.
 - [docs/role_directory.md](docs/role_directory.md) — one-line description for every role (loaded into `Role.notes` by `load_roles`).
 - [web/apps/core/sources.py](web/apps/core/sources.py) — registry of every data feed we cite on `/sources/`.
 

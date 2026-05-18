@@ -20,9 +20,12 @@ class Command(BaseCommand):
         problems: list[str] = []
 
         # --- Cardinality ---
+        # The original roster was exactly 1,000 hand-scored roles. We allow growth
+        # via deterministic additions (e.g. umbrella titles whose scores are the
+        # average of comparable specialized rows) but guard against silent loss.
         n_roles = Role.objects.count()
-        if n_roles != 1000:
-            problems.append(f"Expected exactly 1,000 roles; have {n_roles}.")
+        if n_roles < 1000:
+            problems.append(f"Expected at least 1,000 roles; have {n_roles}.")
         n_categories = Category.objects.count()
         if n_categories != 8:
             problems.append(f"Expected exactly 8 categories; have {n_categories}.")
@@ -66,7 +69,7 @@ class Command(BaseCommand):
         if no_notes:
             problems.append(
                 f"{no_notes} roles have an empty notes field (expected 0 since "
-                "docs/role_directory.md covers all 1,000)."
+                "docs/role_directory.md covers every role)."
             )
 
         # --- Scoring formula spot-check: re-derive HJ and AAP for a sample

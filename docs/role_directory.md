@@ -1025,3 +1025,16 @@ Brief one-line note for every role in the 1,000-role dataset, alphabetized withi
 - **Test Data Engineer** — Builds and operates the pipelines that move data from sources to analytics/ML.
 - **Test Environment Engineer** — Owns test environments and infrastructure.
 - **UI / Web Test Engineer** — QA engineer for UIs / web.
+
+## Canonical generic titles (8)
+
+Umbrella entries added so users searching for the most common job titles land somewhere useful. Score each is the deterministic average of comparable specialized rows already in the roster (Backend Engineer × Frontend Engineer at the matching seniority); see METHODOLOGY.md for the formula.
+
+- **Junior Software Engineer** — Umbrella entry-level engineer role; pick a specialised variant (Junior Backend / Frontend / Mobile / Full-Stack) for a stack-specific score.
+- **Software Engineer** — Umbrella term covering Backend, Frontend, Mobile, and Full-Stack — pick the variant matching your stack for a more accurate score.
+- **Senior Software Engineer** — Umbrella senior engineer role; specialised Senior X Engineer variants give a more accurate per-stack score.
+- **Staff Software Engineer** — Umbrella staff-level IC role; see Staff Backend / Frontend / ML / Platform for stack-specific scores.
+- **Principal Software Engineer** — Umbrella principal IC role; see Principal Backend / Frontend / Data / ML variants for stack-specific scores.
+- **Web Developer** — Older synonym for Frontend/Full-Stack engineer; demand and seniority ladder lag the modern engineering tracks.
+- **Full Stack Developer** — Generalist building both client and server sides; see Full-Stack Engineer and language-specific Full-Stack variants for stack-specific scores.
+- **Programmer** — Generic older title for a software-writing role; the modern equivalent is Software Engineer and the more specific stack variants score higher.

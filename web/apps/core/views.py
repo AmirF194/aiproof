@@ -84,8 +84,8 @@ def home(request):
             "last_updated": last_updated,
             "role_families": role_families,
             "featured_sources": featured_sources,
-            "page_title": "AIProof — career-intelligence platform · 1,000 tech roles scored for AI resilience",
-            "page_description": "AIProof is a career-intelligence platform by FastInfer that ranks 1,000 technology roles by their expected resilience to AI automation over 2026–2035. Eight scoring dimensions, weekly-refreshed live posting signals, full methodology and limitations published.",
+            "page_title": "AIProof — career-intelligence platform · 1,000+ tech roles scored for AI resilience",
+            "page_description": "AIProof is a career-intelligence platform by FastInfer that ranks 1,000+ technology roles by their expected resilience to AI automation over 2026–2035. Eight scoring dimensions, weekly-refreshed live posting signals, full methodology and limitations published.",
         },
     )
 
@@ -96,7 +96,7 @@ def about(request):
         "core/about.html",
         {
             "page_title": "About — AIProof career-intelligence platform · FastInfer",
-            "page_description": "AIProof is FastInfer's open analytical framework for tech-career durability under AI automation. 1,000 roles, 8 score dimensions, weekly live data, transparent methodology.",
+            "page_description": "AIProof is FastInfer's open analytical framework for tech-career durability under AI automation. 1,000+ roles, 8 score dimensions, weekly live data, transparent methodology.",
         },
     )
 

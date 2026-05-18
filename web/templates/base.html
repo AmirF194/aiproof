@@ -1,6 +1,6 @@
 {% load static %}<!doctype html>
 {# Resolve final SEO strings once. Views pass page_title / page_description; otherwise we fall back to site defaults. #}
-{% with resolved_title=page_title|default:"AIProof — career resilience scores for 1,000 tech roles, 2026–2035" resolved_description=page_description|default:"AIProof is a career-intelligence platform by FastInfer that ranks 1,000 technology roles by their expected resilience to AI automation over 2026–2035. Eight scoring dimensions, weekly-refreshed live posting signals, full methodology." %}
+{% with resolved_title=page_title|default:"AIProof — career resilience scores for 1,000+ tech roles, 2026–2035" resolved_description=page_description|default:"AIProof is a career-intelligence platform by FastInfer that ranks 1,000+ technology roles by their expected resilience to AI automation over 2026–2035. Eight scoring dimensions, weekly-refreshed live posting signals, full methodology." %}
 <html lang="en" class="bg-white text-slate-900">
 <head>
   <meta charset="utf-8">
@@ -73,7 +73,7 @@
         <span class="text-xl font-semibold tracking-tight">
           <span class="text-emerald-600">ai</span><span class="text-slate-900">proof</span>
         </span>
-        <span class="hidden sm:inline text-xs text-slate-500 group-hover:text-slate-700">/ 1,000 roles, 2026–2035</span>
+        <span class="hidden sm:inline text-xs text-slate-500 group-hover:text-slate-700">/ 1,000+ roles, 2026–2035</span>
       </a>
       <nav class="flex items-center gap-1 text-sm">
         <a href="{% url 'roles:ranking' %}" class="px-3 py-1.5 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100">Ranking</a>
@@ -98,7 +98,7 @@
           <span class="text-lg font-semibold tracking-tight">
             <span class="text-emerald-600">ai</span><span class="text-slate-900">proof</span>
           </span>
-          <span class="text-xs text-slate-500">/ 1,000 roles, 2026–2035</span>
+          <span class="text-xs text-slate-500">/ 1,000+ roles, 2026–2035</span>
         </div>
         <p class="mt-3 text-slate-600 max-w-md leading-relaxed">
           A structured ranking of software, AI, security, and platform roles — scored on demand, automation resistance, skill depth, and strategic importance.

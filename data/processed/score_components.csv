@@ -318,6 +318,7 @@ Enterprise Product Manager,Product & Design,6,8,7,8,1.8,2.8,1.05,1.6,73,safe,73,
 Product Manager,Product & Design,7,7,6,9,2.1,2.45,0.9,1.8,73,safe,73,safe,no
 GDPR / Privacy Compliance Engineer,Security,6,8,7,8,1.8,2.8,1.05,1.6,73,safe,73,safe,no
 Pre-sales Engineer,Specialized & Emerging,6,8,7,8,1.8,2.8,1.05,1.6,73,safe,73,safe,no
+Principal Software Engineer,Engineering,5,8,9,8,1.5,2.8,1.35,1.6,73,safe,73,safe,no
 Databricks Data Engineer,Data & AI,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
 Hugging Face / Transformers Engineer,Data & AI,7,7,8,7,2.1,2.45,1.2,1.4,72,safe,72,safe,no
 NLP Researcher,Data & AI,5,8,10,7,1.5,2.8,1.5,1.4,72,safe,72,safe,no
@@ -381,6 +382,7 @@ Hardware Pentester,Security,3,10,10,6,0.9,3.5,1.5,1.2,71,safe,71,safe,no
 ICS / SCADA Security Engineer,Security,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
 Malware Analyst,Security,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
 Open Source Maintainer,Specialized & Emerging,4,9,9,7,1.2,3.15,1.35,1.4,71,safe,71,safe,no
+Staff Software Engineer,Engineering,6,7,8,8,1.8,2.45,1.2,1.6,71,safe,71,safe,no
 AI Ethics Researcher,Data & AI,4,9,8,7,1.2,3.15,1.2,1.4,70,safe,70,safe,no
 AI Workflow / Orchestration Engineer,Data & AI,7,7,7,7,2.1,2.45,1.05,1.4,70,safe,70,safe,no
 Senior NLP Engineer,Data & AI,6,7,9,7,1.8,2.45,1.35,1.4,70,safe,70,safe,no
@@ -500,6 +502,7 @@ Security Operations Engineer,Security,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,sta
 Threat Intelligence Analyst,Security,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
 Post-sales / Customer Engineer,Specialized & Emerging,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
 Senior Salesforce Developer,Specialized & Emerging,6,7,7,7,1.8,2.45,1.05,1.4,67,stable,67,stable,no
+Senior Software Engineer,Engineering,7,6,7,7,2.1,2.1,1.05,1.4,67,stable,67,stable,no
 AdTech ML Engineer,Data & AI,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
 CDC (Change Data Capture) Engineer,Data & AI,4,8,8,7,1.2,2.8,1.2,1.4,66,stable,66,stable,no
 Experimentation Scientist (A/B testing),Data & AI,5,7,8,7,1.5,2.45,1.2,1.4,66,stable,66,stable,no
@@ -631,6 +634,8 @@ UX Researcher,Product & Design,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
 SAST Engineer,Security,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
 SIEM Engineer,Security,5,7,7,6,1.5,2.45,1.05,1.2,62,stable,62,stable,no
 Salesforce Developer,Specialized & Emerging,6,6,6,7,1.8,2.1,0.9,1.4,62,stable,62,stable,no
+Software Engineer,Engineering,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
+Full Stack Developer,Engineering,7,5,6,7,2.1,1.75,0.9,1.4,62,stable,62,stable,no
 AR Engineer,Engineering,4,7,8,6,1.2,2.45,1.2,1.2,61,stable,61,stable,no
 Ada Engineer (Defense),Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
 CAM Software Engineer,Engineering,2,9,9,5,0.6,3.15,1.35,1.0,61,stable,61,stable,no
@@ -890,6 +895,7 @@ Scrum Master / Agile Coach,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,e
 Segment / Rudderstack Engineer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
 Shopify App Developer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
 Technical Writer,Specialized & Emerging,4,5,5,5,1.2,1.75,0.75,1.0,47,exposed,47,exposed,no
+Junior Software Engineer,Engineering,6,4,3,5,1.8,1.4,0.45,1.0,47,exposed,47,exposed,no
 SSIS / SQL Server Integration Engineer,Data & AI,3,5,6,5,0.9,1.75,0.9,1.0,46,exposed,46,exposed,no
 BPM / Workflow Engineer,Engineering,3,5,6,5,0.9,1.75,0.9,1.0,46,exposed,46,exposed,no
 DAO Tooling Engineer,Engineering,2,6,7,4,0.6,2.1,1.05,0.8,46,exposed,46,exposed,no
@@ -939,6 +945,7 @@ Low-code Developer,Specialized & Emerging,4,4,4,5,1.2,1.4,0.6,1.0,42,exposed,42,
 SendGrid / Mailgun Engineer,Specialized & Emerging,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
 Tray.io / iPaaS Engineer,Specialized & Emerging,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
 Workato Engineer,Specialized & Emerging,3,5,5,4,0.9,1.75,0.75,0.8,42,exposed,42,exposed,no
+Web Developer,Engineering,5,3,4,5,1.5,1.05,0.6,1.0,42,exposed,42,exposed,no
 Talend Engineer,Data & AI,2,5,6,4,0.6,1.75,0.9,0.8,41,exposed,41,exposed,no
 Ember.js Engineer,Engineering,2,5,6,4,0.6,1.75,0.9,0.8,41,exposed,41,exposed,no
 Stencil Engineer,Engineering,2,5,6,4,0.6,1.75,0.9,0.8,41,exposed,41,exposed,no
@@ -974,6 +981,7 @@ Marketo Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,a
 WooCommerce Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
 Zapier Specialist,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
 Zendesk Developer,Specialized & Emerging,3,4,4,4,0.9,1.4,0.6,0.8,37,at_risk,37,at_risk,no
+Programmer,Engineering,4,3,4,4,1.2,1.05,0.6,0.8,37,at_risk,37,at_risk,no
 Backbone.js Maintainer,Engineering,1,5,6,3,0.3,1.75,0.9,0.6,36,at_risk,36,at_risk,no
 CodeIgniter Engineer,Engineering,2,4,5,4,0.6,1.4,0.75,0.8,36,at_risk,36,at_risk,no
 Pascal / Delphi Engineer,Engineering,1,5,6,3,0.3,1.75,0.9,0.6,36,at_risk,36,at_risk,no

@@ -318,684 +318,692 @@ rank,role,category,score,tier,demand_trend
 296,Product Manager,Product & Design,73,safe,stable
 296,GDPR / Privacy Compliance Engineer,Security,73,safe,rising
 296,Pre-sales Engineer,Specialized & Emerging,73,safe,stable
-320,Databricks Data Engineer,Data & AI,72,safe,rising
-320,Hugging Face / Transformers Engineer,Data & AI,72,safe,rising
-320,NLP Researcher,Data & AI,72,safe,stable
-320,PyTorch Specialist,Data & AI,72,safe,rising
-320,Real-time Data Engineer,Data & AI,72,safe,rising
-320,Recommender Systems Engineer,Data & AI,72,safe,stable
-320,Streaming Data Engineer,Data & AI,72,safe,rising
-320,Voice AI Engineer,Data & AI,72,safe,rising
-320,Backend API Engineer,Engineering,72,safe,stable
-320,Backend Engineer,Engineering,72,safe,stable
-320,Python Backend Engineer,Engineering,72,safe,rising
-320,AWS DevOps Engineer,Platform & Infrastructure,72,safe,stable
-320,CI/CD Engineer,Platform & Infrastructure,72,safe,stable
-320,DevOps Engineer,Platform & Infrastructure,72,safe,stable
-320,Snowflake Engineer,Platform & Infrastructure,72,safe,rising
-320,Vector Database Engineer (Pinecone/Weaviate),Platform & Infrastructure,72,safe,rising
-320,Design Director,Product & Design,72,safe,stable
-320,Design Engineer,Product & Design,72,safe,rising
-320,Design Systems Engineer,Product & Design,72,safe,stable
-320,Security QA Engineer,Quality & Testing,72,safe,rising
-320,Test Architect,Quality & Testing,72,safe,stable
-320,Bug Bounty Hunter,Security,72,safe,stable
-320,Identity & Access Management Engineer,Security,72,safe,stable
-320,Security Automation / SOAR Engineer,Security,72,safe,rising
-320,Threat Hunter,Security,72,safe,rising
-320,Web Application Pentester,Security,72,safe,stable
-346,Audio ML Engineer,Data & AI,71,safe,stable
-346,Principal Data Scientist,Data & AI,71,safe,stable
-346,Quantitative Analyst,Data & AI,71,safe,stable
-346,Speech Recognition Engineer,Data & AI,71,safe,stable
-346,Speech Synthesis (TTS) Engineer,Data & AI,71,safe,rising
-346,Audio DSP Engineer,Engineering,71,safe,stable
-346,DFT (Design for Test) Engineer,Engineering,71,safe,stable
-346,Drone Firmware Engineer,Engineering,71,safe,stable
-346,Drone Software Engineer,Engineering,71,safe,rising
-346,Energy / Smart Grid Engineer,Engineering,71,safe,rising
-346,Game Anti-cheat Engineer,Engineering,71,safe,rising
-346,Game Physics Programmer,Engineering,71,safe,stable
-346,Idempotency / Retries Engineer,Engineering,71,safe,stable
-346,Lightning Network Engineer,Engineering,71,safe,stable
-346,Medical Imaging Software Engineer,Engineering,71,safe,stable
-346,Microcontroller Programmer,Engineering,71,safe,stable
-346,Real-time Communications Engineer (WebRTC),Engineering,71,safe,stable
-346,Robotics Simulation Engineer,Engineering,71,safe,stable
-346,Senior Smart Contract Engineer,Engineering,71,safe,stable
-346,Service Mesh Architect,Engineering,71,safe,stable
-346,Shader Programmer,Engineering,71,safe,stable
-346,Staff Android Engineer,Engineering,71,safe,stable
-346,Staff Full-Stack Engineer,Engineering,71,safe,stable
-346,Staff iOS Engineer,Engineering,71,safe,stable
-346,Static Analysis Engineer,Engineering,71,safe,stable
-346,VHDL Engineer,Engineering,71,safe,stable
-346,Video Encoding Engineer,Engineering,71,safe,stable
-346,Head of Mobile,Engineering Leadership,71,safe,stable
-346,Database Architect,Platform & Infrastructure,71,safe,stable
-346,Senior Design Manager,Product & Design,71,safe,stable
-346,Senior Design Systems Engineer,Product & Design,71,safe,stable
-346,Embedded Security Engineer,Security,71,safe,rising
-346,Fuzzing Engineer,Security,71,safe,stable
-346,Hardware Pentester,Security,71,safe,stable
-346,ICS / SCADA Security Engineer,Security,71,safe,rising
-346,Malware Analyst,Security,71,safe,stable
-346,Open Source Maintainer,Specialized & Emerging,71,safe,stable
-383,AI Ethics Researcher,Data & AI,70,safe,stable
-383,AI Workflow / Orchestration Engineer,Data & AI,70,safe,rising
-383,Senior NLP Engineer,Data & AI,70,safe,stable
-383,Compliance Software Engineer,Engineering,70,safe,stable
-383,GCC Maintainer,Engineering,70,safe,stable
-383,Chief Digital Officer,Engineering Leadership,70,safe,stable
-383,Director of Design,Engineering Leadership,70,safe,stable
-383,Engineering Chief of Staff,Engineering Leadership,70,safe,stable
-383,Chaos Engineer,Platform & Infrastructure,70,safe,stable
-383,Payments Product Manager,Product & Design,70,safe,stable
-383,SOC Manager,Security,70,safe,stable
-383,Vulnerability Management Engineer,Security,70,safe,stable
-395,Anomaly Detection ML Engineer,Data & AI,69,stable,stable
-395,Big Data Engineer,Data & AI,69,stable,stable
-395,Data Lakehouse Engineer,Data & AI,69,stable,rising
-395,Data Reliability Engineer,Data & AI,69,stable,stable
-395,Embedding Engineer,Data & AI,69,stable,rising
-395,Feature Store Engineer,Data & AI,69,stable,rising
-395,Genomics Pipeline Engineer,Data & AI,69,stable,stable
-395,Iceberg / Delta / Hudi Engineer,Data & AI,69,stable,rising
-395,Kafka Streams Engineer,Data & AI,69,stable,stable
-395,ML Tooling Engineer (Ray/Dask),Data & AI,69,stable,rising
-395,Model Deployment Engineer,Data & AI,69,stable,rising
-395,Model Monitoring Engineer,Data & AI,69,stable,rising
-395,Spark Engineer,Data & AI,69,stable,stable
-395,Synthetic Data Engineer,Data & AI,69,stable,rising
-395,Time Series ML Engineer,Data & AI,69,stable,stable
-395,Vector Search Engineer,Data & AI,69,stable,rising
-395,Application Architect,Engineering,69,stable,stable
-395,Backend Caching Engineer,Engineering,69,stable,stable
-395,Developer Tools Engineer,Engineering,69,stable,stable
-395,Edge Runtime Engineer (Cloudflare Workers/Deno Deploy),Engineering,69,stable,rising
-395,Game AI Programmer,Engineering,69,stable,rising
-395,HL7 / FHIR Integration Engineer,Engineering,69,stable,stable
-395,Hardware Validation Engineer,Engineering,69,stable,stable
-395,Industrial Control / PLC Engineer,Engineering,69,stable,stable
-395,Industrial Robotics Programmer,Engineering,69,stable,stable
-395,IoT Edge Engineer,Engineering,69,stable,rising
-395,Mobile Performance Engineer,Engineering,69,stable,stable
-395,Pricing / Monetization Engineer,Engineering,69,stable,stable
-395,Refactoring / Modernization Engineer,Engineering,69,stable,stable
-395,Rust Smart Contract Engineer (Solana),Engineering,69,stable,stable
-395,Senior Android Engineer,Engineering,69,stable,stable
-395,Senior iOS Engineer,Engineering,69,stable,stable
-395,Streaming Media Engineer,Engineering,69,stable,stable
-395,Workflow Engine Engineer (Temporal/Cadence),Engineering,69,stable,rising
-395,Yocto / Buildroot Engineer,Engineering,69,stable,stable
-395,gRPC / Protobuf Engineer,Engineering,69,stable,stable
-395,Backstage Engineer,Platform & Infrastructure,69,stable,rising
-395,ClickHouse Engineer,Platform & Infrastructure,69,stable,rising
-395,Database Engineer / DBA,Platform & Infrastructure,69,stable,stable
-395,Database Reliability Engineer,Platform & Infrastructure,69,stable,stable
-395,Edge Computing Engineer,Platform & Infrastructure,69,stable,stable
-395,GCP Data Engineer,Platform & Infrastructure,69,stable,stable
-395,Multi-cloud Architect,Platform & Infrastructure,69,stable,stable
-395,Network Architect,Platform & Infrastructure,69,stable,stable
-395,PostgreSQL DBA,Platform & Infrastructure,69,stable,rising
-395,Service Mesh Engineer (Istio/Linkerd),Platform & Infrastructure,69,stable,stable
-395,Tracing Engineer (OpenTelemetry/Jaeger),Platform & Infrastructure,69,stable,rising
-395,Growth Product Manager,Product & Design,69,stable,stable
-395,Senior Product Designer,Product & Design,69,stable,stable
-395,Senior UX Researcher,Product & Design,69,stable,stable
-395,Staff Product Designer,Product & Design,69,stable,stable
-395,Performance / Load Test Engineer,Quality & Testing,69,stable,stable
-395,Staff SDET,Quality & Testing,69,stable,stable
-395,Linux Security Engineer,Security,69,stable,stable
-395,Mobile Application Pentester,Security,69,stable,stable
-395,Mobile Security Engineer,Security,69,stable,rising
-395,Network Pentester,Security,69,stable,stable
-395,Experimentation Platform Engineer,Specialized & Emerging,69,stable,rising
-395,Salesforce Architect,Specialized & Emerging,69,stable,stable
-395,Senior Developer Advocate,Specialized & Emerging,69,stable,stable
-455,AI Curriculum / Training Lead,Data & AI,68,stable,rising
-455,Causal Inference Scientist,Data & AI,68,stable,stable
-455,BCI (Brain-Computer Interface) Engineer,Engineering,68,stable,rising
-455,BSD Kernel Engineer,Engineering,68,stable,stable
-455,Browser Engine Engineer (Gecko/Firefox),Engineering,68,stable,stable
-455,Erlang Engineer,Engineering,68,stable,stable
-455,Event Sourcing / CQRS Engineer,Engineering,68,stable,stable
-455,MEV Engineer / Searcher,Engineering,68,stable,stable
-455,Photonics Software Engineer,Engineering,68,stable,stable
-455,Quantum Compiler Engineer,Engineering,68,stable,stable
-455,Scala Backend Engineer,Engineering,68,stable,declining
-455,Search Backend Engineer (Vespa),Engineering,68,stable,stable
-455,Design Manager,Product & Design,68,stable,stable
-455,Principal Product Designer,Product & Design,68,stable,stable
-455,Blockchain Security Auditor,Security,68,stable,stable
-455,Foundation Engineer (CNCF/Apache),Specialized & Emerging,68,stable,stable
-455,Senior Implementation Engineer,Specialized & Emerging,68,stable,stable
-455,Standards Engineer (W3C/IETF),Specialized & Emerging,68,stable,stable
-473,AI Tooling Engineer,Data & AI,67,stable,rising
-473,Conversational AI Engineer,Data & AI,67,stable,rising
-473,Data Pipeline Engineer,Data & AI,67,stable,stable
-473,LangGraph / Agent Framework Engineer,Data & AI,67,stable,rising
-473,SageMaker Engineer,Data & AI,67,stable,rising
-473,Snowflake Data Engineer,Data & AI,67,stable,rising
-473,FastAPI Engineer,Engineering,67,stable,rising
-473,Java Backend Engineer,Engineering,67,stable,stable
-473,Java Spring / Spring Boot Engineer,Engineering,67,stable,stable
-473,Job Scheduler Engineer (Airflow/Prefect),Engineering,67,stable,stable
-473,Kotlin Backend Engineer,Engineering,67,stable,rising
-473,Senior Full-Stack Engineer,Engineering,67,stable,stable
-473,Senior Game Engineer,Engineering,67,stable,stable
-473,AWS Engineer,Platform & Infrastructure,67,stable,stable
-473,Azure DevOps Engineer,Platform & Infrastructure,67,stable,stable
-473,BigQuery Engineer,Platform & Infrastructure,67,stable,stable
-473,Cloud Engineer,Platform & Infrastructure,67,stable,declining
-473,Disaster Recovery Engineer,Platform & Infrastructure,67,stable,stable
-473,Identity Engineer (Corp IT — Okta/Azure AD),Platform & Infrastructure,67,stable,rising
-473,Monitoring Engineer (Prometheus/Grafana),Platform & Infrastructure,67,stable,stable
-473,Redis Engineer,Platform & Infrastructure,67,stable,stable
-473,UX Designer / Researcher,Product & Design,67,stable,stable
-473,Senior SDET,Quality & Testing,67,stable,stable
-473,Endpoint Security Engineer,Security,67,stable,stable
-473,SOC Analyst (Tier 3),Security,67,stable,stable
-473,Security Operations Engineer,Security,67,stable,stable
-473,Threat Intelligence Analyst,Security,67,stable,stable
-473,Post-sales / Customer Engineer,Specialized & Emerging,67,stable,stable
-473,Senior Salesforce Developer,Specialized & Emerging,67,stable,stable
-502,AdTech ML Engineer,Data & AI,66,stable,stable
-502,CDC (Change Data Capture) Engineer,Data & AI,66,stable,stable
-502,Experimentation Scientist (A/B testing),Data & AI,66,stable,stable
-502,Staff Data Scientist,Data & AI,66,stable,stable
-502,Airline Software Engineer,Engineering,66,stable,stable
-502,Apple Vision Pro Application Engineer,Engineering,66,stable,rising
-502,CAD Software Engineer,Engineering,66,stable,stable
-502,Color Science Engineer,Engineering,66,stable,stable
-502,Console Game Engineer,Engineering,66,stable,stable
-502,Cosmos SDK Engineer,Engineering,66,stable,stable
-502,Decentralized Identity Engineer,Engineering,66,stable,stable
-502,Elixir / Phoenix Engineer,Engineering,66,stable,stable
-502,Eye Tracking Engineer,Engineering,66,stable,stable
-502,Frontend Architect,Engineering,66,stable,stable
-502,Frontend Performance Engineer,Engineering,66,stable,rising
-502,Game Network Programmer,Engineering,66,stable,stable
-502,Hand Tracking / Gesture Recognition Engineer,Engineering,66,stable,stable
-502,Hardware Wallet Firmware Engineer,Engineering,66,stable,stable
-502,IoT Software Engineer,Engineering,66,stable,stable
-502,Logistics Software Engineer,Engineering,66,stable,rising
-502,Mainframe Modernization Engineer,Engineering,66,stable,rising
-502,Mobile Architect,Engineering,66,stable,stable
-502,OpenGL Engineer,Engineering,66,stable,declining
-502,Pharma Software Engineer,Engineering,66,stable,stable
-502,Smart Contract Engineer,Engineering,66,stable,stable
-502,Spatial Computing Engineer,Engineering,66,stable,rising
-502,Supply Chain Software Engineer,Engineering,66,stable,stable
-502,VR Game Engineer,Engineering,66,stable,rising
-502,WebGL / WebGPU Engineer,Engineering,66,stable,rising
-502,Zig Engineer,Engineering,66,stable,rising
-502,visionOS / Apple Vision Pro Engineer,Engineering,66,stable,rising
-502,Capacity Planning Engineer,Platform & Infrastructure,66,stable,stable
-502,Elasticsearch DBA / Engineer,Platform & Infrastructure,66,stable,stable
-502,File System Engineer,Platform & Infrastructure,66,stable,stable
-502,FinOps Practitioner,Platform & Infrastructure,66,stable,rising
-502,Senior Network Engineer,Platform & Infrastructure,66,stable,stable
-502,Implementation Engineer,Specialized & Emerging,66,stable,stable
-539,NLP Engineer,Data & AI,65,stable,declining
-539,Haskell Engineer,Engineering,65,stable,stable
-539,OCaml Engineer,Engineering,65,stable,stable
-539,Sustainability Tech Engineer,Engineering,65,stable,rising
-539,Quality Engineering Director,Quality & Testing,65,stable,stable
-539,Field Engineer,Specialized & Emerging,65,stable,stable
-539,Open Source Program Manager (OSPO),Specialized & Emerging,65,stable,stable
-546,Active Learning Engineer,Data & AI,64,stable,stable
-546,Azure ML Engineer,Data & AI,64,stable,rising
-546,Beam / Dataflow Engineer,Data & AI,64,stable,stable
-546,BigQuery Data Engineer,Data & AI,64,stable,stable
-546,Data Lake Engineer,Data & AI,64,stable,stable
-546,Flink Engineer,Data & AI,64,stable,stable
-546,Llama Fine-tuning Engineer,Data & AI,64,stable,rising
-546,Vertex AI Engineer,Data & AI,64,stable,rising
-546,Android Auto / CarPlay Engineer,Engineering,64,stable,rising
-546,Audio Plugin Developer (VST),Engineering,64,stable,stable
-546,Banking Software Engineer,Engineering,64,stable,stable
-546,C# / .NET Backend Engineer,Engineering,64,stable,stable
-546,Crypto Exchange Engineer,Engineering,64,stable,stable
-546,Crypto Wallet Engineer,Engineering,64,stable,stable
-546,E-commerce Backend Engineer,Engineering,64,stable,stable
-546,EHR Integration Engineer,Engineering,64,stable,stable
-546,Frontend Build / Tooling Engineer,Engineering,64,stable,stable
-546,GIS Developer,Engineering,64,stable,stable
-546,Game Server Engineer,Engineering,64,stable,stable
-546,Geospatial Software Engineer,Engineering,64,stable,stable
-546,Government / GovTech Engineer,Engineering,64,stable,stable
-546,GraphQL Engineer,Engineering,64,stable,stable
-546,Haptics Engineer,Engineering,64,stable,stable
-546,Hardware Test Engineer,Engineering,64,stable,stable
-546,Mapping Software Engineer (Mapbox/OSM),Engineering,64,stable,stable
-546,Marketplace Engineer,Engineering,64,stable,stable
-546,PCB Design Engineer,Engineering,64,stable,stable
-546,Streaming Protocol Engineer (HLS/DASH),Engineering,64,stable,stable
-546,Telemedicine Software Engineer,Engineering,64,stable,stable
-546,Unreal Engine Engineer,Engineering,64,stable,stable
-546,Head of Frontend,Engineering Leadership,64,stable,stable
-546,5G Software Engineer,Platform & Infrastructure,64,stable,rising
-546,Azure Engineer,Platform & Infrastructure,64,stable,stable
-546,Build Engineer (Bazel/Buck),Platform & Infrastructure,64,stable,stable
-546,GCP Engineer,Platform & Infrastructure,64,stable,stable
-546,Neo4j / Graph Database Engineer,Platform & Infrastructure,64,stable,stable
-546,Network Automation Engineer,Platform & Infrastructure,64,stable,rising
-546,Network Engineer,Platform & Infrastructure,64,stable,stable
-546,SDN Engineer,Platform & Infrastructure,64,stable,stable
-546,Storage Architect,Platform & Infrastructure,64,stable,stable
-546,Storage Engineer,Platform & Infrastructure,64,stable,stable
-546,Wireless Software Engineer,Platform & Infrastructure,64,stable,stable
-546,Product Designer,Product & Design,64,stable,stable
-546,Quantitative UX Researcher,Product & Design,64,stable,stable
-546,SDET / Test Infrastructure,Quality & Testing,64,stable,stable
-546,Stress Test Engineer,Quality & Testing,64,stable,stable
-546,Active Directory Security Engineer,Security,64,stable,stable
-546,PKI Engineer,Security,64,stable,stable
-546,macOS Security Engineer,Security,64,stable,stable
-546,Developer Advocate / DevRel,Specialized & Emerging,64,stable,stable
-596,Clojure Engineer,Engineering,63,stable,declining
-596,DeFi Protocol Engineer,Engineering,63,stable,declining
-596,Game Producer / Tech Producer,Engineering,63,stable,stable
-596,Principal Frontend Engineer,Engineering,63,stable,stable
-596,Web Accessibility (a11y) Engineer,Engineering,63,stable,rising
-596,Engineering Operations Manager,Engineering Leadership,63,stable,stable
-596,Cloud Cost Optimization Engineer,Platform & Infrastructure,63,stable,rising
-596,Consumer Product Manager,Product & Design,63,stable,stable
-596,Mobile Product Manager,Product & Design,63,stable,stable
-596,HIPAA Compliance Engineer,Security,63,stable,stable
-596,ISO 27001 Auditor,Security,63,stable,stable
-596,PCI-DSS Compliance Engineer,Security,63,stable,stable
-596,SOC 2 Compliance Engineer,Security,63,stable,rising
-596,Program Manager (Software),Specialized & Emerging,63,stable,stable
-610,Anthropic Claude API Engineer,Data & AI,62,stable,rising
-610,AutoGen / Multi-agent Engineer,Data & AI,62,stable,rising
-610,DBT Engineer,Data & AI,62,stable,rising
-610,OpenAI GPT API Engineer,Data & AI,62,stable,rising
-610,Android Engineer,Engineering,62,stable,stable
-610,Full-Stack Engineer,Engineering,62,stable,declining
-610,Full-Stack TypeScript Engineer,Engineering,62,stable,rising
-610,Mobile Build / CI Engineer,Engineering,62,stable,stable
-610,Mobile DevOps / Release Engineer,Engineering,62,stable,stable
-610,Node.js Backend Engineer,Engineering,62,stable,stable
-610,REST API Engineer,Engineering,62,stable,stable
-610,TypeScript Specialist,Engineering,62,stable,rising
-610,iOS Engineer,Engineering,62,stable,stable
-610,Cloudflare Engineer,Platform & Infrastructure,62,stable,rising
-610,Data Modeler,Platform & Infrastructure,62,stable,stable
-610,Helm / Argo Engineer,Platform & Infrastructure,62,stable,stable
-610,Logging Engineer (ELK/Loki/Splunk),Platform & Infrastructure,62,stable,stable
-610,MySQL / MariaDB DBA,Platform & Infrastructure,62,stable,stable
-610,Release Engineer,Platform & Infrastructure,62,stable,stable
-610,UX Researcher,Product & Design,62,stable,stable
-610,SAST Engineer,Security,62,stable,stable
-610,SIEM Engineer,Security,62,stable,stable
-610,Salesforce Developer,Specialized & Emerging,62,stable,stable
-633,AR Engineer,Engineering,61,stable,stable
-633,Ada Engineer (Defense),Engineering,61,stable,stable
-633,CAM Software Engineer,Engineering,61,stable,stable
-633,Cairo Developer (StarkNet),Engineering,61,stable,stable
-633,Cardano Plutus Developer,Engineering,61,stable,stable
-633,DAW Software Engineer,Engineering,61,stable,stable
-633,Fortran Engineer (Scientific),Engineering,61,stable,stable
-633,Linter / Formatter Maintainer,Engineering,61,stable,stable
-633,Live Video / Broadcast Engineer,Engineering,61,stable,stable
-633,Micro-frontends Architect,Engineering,61,stable,stable
-633,Mixed Reality Engineer,Engineering,61,stable,stable
-633,Move Developer (Sui/Aptos),Engineering,61,stable,stable
-633,Search Backend Engineer (Solr),Engineering,61,stable,declining
-633,Solidity Developer,Engineering,61,stable,stable
-633,Staff Frontend Engineer,Engineering,61,stable,stable
-633,Substrate Engineer (Polkadot),Engineering,61,stable,stable
-633,VR Engineer,Engineering,61,stable,stable
-633,Wearable Tech Engineer,Engineering,61,stable,stable
-633,XR Engineer,Engineering,61,stable,stable
-633,Cassandra Engineer,Platform & Infrastructure,61,stable,stable
-633,CockroachDB / TiDB Engineer,Platform & Infrastructure,61,stable,stable
-633,ScyllaDB Engineer,Platform & Infrastructure,61,stable,stable
-633,Social Engineering Specialist,Security,61,stable,stable
-656,API / Integration Engineer,Engineering,60,stable,stable
-656,AgTech Software Engineer,Engineering,60,stable,stable
-656,Django Engineer,Engineering,60,stable,stable
-656,Game Engineer,Engineering,60,stable,stable
-656,Gameplay Programmer,Engineering,60,stable,stable
-656,Next.js / SSR Engineer,Engineering,60,stable,rising
-656,Backup / Recovery Engineer,Platform & Infrastructure,60,stable,stable
-656,DNS Engineer,Platform & Infrastructure,60,stable,stable
-656,Data Center Engineer,Platform & Infrastructure,60,stable,stable
-656,IT Director,Platform & Infrastructure,60,stable,stable
-656,Oracle DBA,Platform & Infrastructure,60,stable,declining
-656,Inclusive Design Specialist,Product & Design,60,stable,rising
-656,Accessibility QA Engineer,Quality & Testing,60,stable,rising
-656,Compliance Test Engineer,Quality & Testing,60,stable,stable
-656,QA Manager,Quality & Testing,60,stable,stable
-656,Intelligent Automation Engineer,Specialized & Emerging,60,stable,rising
-672,AutoML Engineer,Data & AI,59,stable,stable
-672,Data Augmentation Engineer,Data & AI,59,stable,stable
-672,Data Warehouse Engineer,Data & AI,59,stable,stable
-672,Database Administrator,Data & AI,59,stable,declining
-672,Prefect / Dagster Engineer,Data & AI,59,stable,rising
-672,Senior Analytics Engineer,Data & AI,59,stable,stable
-672,Senior Data Scientist,Data & AI,59,stable,stable
-672,TensorFlow Specialist,Data & AI,59,stable,stable
-672,XGBoost / Gradient Boosting Specialist,Data & AI,59,stable,stable
-672,BIM Software Engineer,Engineering,59,stable,stable
-672,Code Quality Engineer,Engineering,59,stable,stable
-672,Full-Stack Python Engineer,Engineering,59,stable,stable
-672,Game Audio Programmer,Engineering,59,stable,stable
-672,Game Live Ops Engineer,Engineering,59,stable,stable
-672,Game Tools Programmer,Engineering,59,stable,stable
-672,Hyperledger Fabric Engineer,Engineering,59,stable,declining
-672,Insurance Tech Engineer (Insurtech),Engineering,59,stable,stable
-672,Java EE / Jakarta EE Engineer,Engineering,59,stable,declining
-672,Kotlin Multiplatform Engineer,Engineering,59,stable,rising
-672,Legal Tech Engineer,Engineering,59,stable,rising
-672,Mainframe Engineer,Engineering,59,stable,declining
-672,Meta Quest Developer,Engineering,59,stable,stable
-672,Photography Software Engineer,Engineering,59,stable,stable
-672,Quarkus Engineer,Engineering,59,stable,rising
-672,Ruby on Rails Engineer,Engineering,59,stable,declining
-672,T3 / tRPC Stack Engineer,Engineering,59,stable,rising
-672,Unity XR Developer,Engineering,59,stable,stable
-672,Alibaba Cloud Engineer,Platform & Infrastructure,59,stable,stable
-672,Block Storage Engineer,Platform & Infrastructure,59,stable,stable
-672,CDN Engineer,Platform & Infrastructure,59,stable,stable
-672,DuckDB Engineer,Platform & Infrastructure,59,stable,rising
-672,DynamoDB Specialist,Platform & Infrastructure,59,stable,stable
-672,MongoDB Engineer,Platform & Infrastructure,59,stable,stable
-672,Monorepo Engineer (Nx/Turborepo),Platform & Infrastructure,59,stable,rising
-672,Object Storage Engineer (S3/MinIO),Platform & Infrastructure,59,stable,stable
-672,SQL Server DBA,Platform & Infrastructure,59,stable,declining
-672,Service Catalog Engineer,Platform & Infrastructure,59,stable,stable
-672,Industrial Designer (hardware-software products),Product & Design,59,stable,stable
-672,Service Designer,Product & Design,59,stable,stable
-672,Hardware QA Engineer,Quality & Testing,59,stable,stable
-672,DAST Engineer,Security,59,stable,stable
-672,Windows Security Engineer,Security,59,stable,stable
-672,Wireless Pentester,Security,59,stable,stable
-672,A/B Testing Engineer,Specialized & Emerging,59,stable,stable
-672,SAP HANA Developer,Specialized & Emerging,59,stable,stable
-717,AI Trainer / RLHF Annotator,Data & AI,58,stable,rising
-717,Active Learning / Labeling Operations Lead,Data & AI,58,stable,rising
-717,Head of QA,Engineering Leadership,58,stable,declining
-717,Conversational Designer,Product & Design,58,stable,rising
-717,Product Operations Manager,Product & Design,58,stable,stable
-717,Developer Educator,Specialized & Emerging,58,stable,stable
-717,Developer Marketing Engineer,Specialized & Emerging,58,stable,stable
-724,Airflow Engineer,Data & AI,57,exposed,stable
-724,Analytics Engineer,Data & AI,57,exposed,stable
-724,LangChain / LlamaIndex Engineer,Data & AI,57,exposed,stable
-724,ASP.NET Engineer,Engineering,57,exposed,stable
-724,Flutter Engineer,Engineering,57,exposed,rising
-724,Game Build / Pipeline Engineer,Engineering,57,exposed,stable
-724,Game Telemetry Engineer,Engineering,57,exposed,stable
-724,HarmonyOS Engineer,Engineering,57,exposed,rising
-724,IDE Plugin Developer,Engineering,57,exposed,stable
-724,Junior Backend Engineer,Engineering,57,exposed,stable
-724,MERN Stack Engineer,Engineering,57,exposed,stable
-724,Mobile Game Engineer,Engineering,57,exposed,stable
-724,NestJS Engineer,Engineering,57,exposed,rising
-724,React Native Engineer,Engineering,57,exposed,stable
-724,Senior Frontend Engineer,Engineering,57,exposed,stable
-724,Unity Engineer,Engineering,57,exposed,stable
-724,Deployment Engineer,Platform & Infrastructure,57,exposed,stable
-724,Endpoint Management Engineer (Intune/Jamf),Platform & Infrastructure,57,exposed,stable
-724,Telecom Software Engineer,Platform & Infrastructure,57,exposed,stable
-724,CDP / Customer Data Platform Engineer,Specialized & Emerging,57,exposed,rising
-724,Customer Success Engineer,Specialized & Emerging,57,exposed,stable
-724,Stripe Integration Engineer,Specialized & Emerging,57,exposed,stable
-724,Workflow Automation Engineer,Specialized & Emerging,57,exposed,rising
-747,Decision Scientist,Data & AI,56,exposed,stable
-747,3D Printing Software Engineer,Engineering,56,exposed,stable
-747,Bun.sh Engineer,Engineering,56,exposed,rising
-747,COBOL Developer,Engineering,56,exposed,stable
-747,IPFS / Filecoin Engineer,Engineering,56,exposed,stable
-747,Micronaut Engineer,Engineering,56,exposed,stable
-747,Oracle (Chainlink) Engineer,Engineering,56,exposed,stable
-747,Unreal XR Developer,Engineering,56,exposed,stable
-747,Vyper Developer,Engineering,56,exposed,stable
-747,z/OS Engineer,Engineering,56,exposed,stable
-747,Onboarding Engineer,Specialized & Emerging,56,exposed,stable
-747,Project Manager (Software),Specialized & Emerging,56,exposed,declining
-759,Chatbot Engineer,Data & AI,55,exposed,stable
-759,Product Data Scientist,Data & AI,55,exposed,stable
-759,Cruise / Maritime Software Engineer,Engineering,55,exposed,stable
-759,Express.js Engineer,Engineering,55,exposed,stable
-759,Internal Tools Engineer,Engineering,55,exposed,stable
-759,React Engineer,Engineering,55,exposed,declining
-759,SOC Analyst (Tier 2),Security,55,exposed,stable
-759,Curriculum Designer (Technical),Specialized & Emerging,55,exposed,stable
-767,AdTech Engineer,Engineering,54,exposed,stable
-767,Algorand Developer,Engineering,54,exposed,declining
-767,Angular Engineer,Engineering,54,exposed,declining
-767,Cartography Engineer,Engineering,54,exposed,stable
-767,Construction Tech Engineer,Engineering,54,exposed,rising
-767,Corda / R3 Engineer,Engineering,54,exposed,declining
-767,E-discovery Engineer,Engineering,54,exposed,stable
-767,EdTech Engineer,Engineering,54,exposed,stable
-767,Flask Engineer,Engineering,54,exposed,stable
-767,HR Tech Engineer,Engineering,54,exposed,stable
-767,Internationalization (i18n) Engineer,Engineering,54,exposed,stable
-767,JetBrains Plugin Developer,Engineering,54,exposed,stable
-767,Laravel Engineer,Engineering,54,exposed,stable
-767,MarTech Engineer,Engineering,54,exposed,stable
-767,Mental Health Tech Engineer,Engineering,54,exposed,rising
-767,Middleware Engineer,Engineering,54,exposed,declining
-767,Music Tech Engineer,Engineering,54,exposed,stable
-767,PHP Backend Engineer,Engineering,54,exposed,declining
-767,Real Estate Tech Engineer (Proptech),Engineering,54,exposed,stable
-767,Tezos Developer,Engineering,54,exposed,declining
-767,Travel Tech Engineer,Engineering,54,exposed,stable
-767,Webpack / Vite Specialist,Engineering,54,exposed,stable
-767,Hetzner / Bare Metal Specialist,Platform & Infrastructure,54,exposed,stable
-767,InfluxDB Engineer,Platform & Infrastructure,54,exposed,stable
-767,Linux Sysadmin,Platform & Infrastructure,54,exposed,stable
-767,Load Balancer Engineer,Platform & Infrastructure,54,exposed,stable
-767,Oracle Cloud Engineer,Platform & Infrastructure,54,exposed,declining
-767,TimescaleDB Engineer,Platform & Infrastructure,54,exposed,stable
-767,VoIP / SIP Engineer,Platform & Infrastructure,54,exposed,stable
-767,Associate Product Manager,Product & Design,54,exposed,stable
-767,Information Architect,Product & Design,54,exposed,stable
-767,Interaction Designer,Product & Design,54,exposed,stable
-767,Marketing Product Manager,Product & Design,54,exposed,stable
-767,Senior Content Designer,Product & Design,54,exposed,stable
-767,Voice Interface Designer,Product & Design,54,exposed,stable
-767,API Test Engineer,Quality & Testing,54,exposed,stable
-767,Playwright Engineer,Quality & Testing,54,exposed,rising
-767,QA Lead,Quality & Testing,54,exposed,stable
-767,Test Data Engineer,Quality & Testing,54,exposed,stable
-767,Documentation Engineer,Specialized & Emerging,54,exposed,stable
-767,Feature Flag Engineer (LaunchDarkly/Split),Specialized & Emerging,54,exposed,stable
-767,SAP ABAP Developer,Specialized & Emerging,54,exposed,declining
-767,SAP Basis Administrator,Specialized & Emerging,54,exposed,declining
-767,Senior Technical Writer,Specialized & Emerging,54,exposed,stable
-767,ServiceNow Developer,Specialized & Emerging,54,exposed,stable
-812,IT Manager,Platform & Infrastructure,53,exposed,stable
-813,Data Scientist,Data & AI,52,exposed,declining
-813,ELT Engineer,Data & AI,52,exposed,stable
-813,Frontend Engineer,Engineering,52,exposed,declining
-813,Godot Engineer,Engineering,52,exposed,rising
-813,VSCode Extension Developer,Engineering,52,exposed,rising
-813,Vercel / Netlify Specialist,Platform & Infrastructure,52,exposed,stable
-813,3D Designer,Product & Design,52,exposed,stable
-813,Test Environment Engineer,Quality & Testing,52,exposed,stable
-813,MuleSoft Engineer,Specialized & Emerging,52,exposed,stable
-813,Power Platform Developer,Specialized & Emerging,52,exposed,stable
-813,Salesforce CPQ Developer,Specialized & Emerging,52,exposed,stable
-813,Workday Developer,Specialized & Emerging,52,exposed,stable
-825,AS/400 / RPG Developer,Engineering,51,exposed,declining
-825,Android TV Engineer,Engineering,51,exposed,stable
-825,Crystal Engineer,Engineering,51,exposed,declining
-825,D Lang Engineer,Engineering,51,exposed,declining
-825,Deno Engineer,Engineering,51,exposed,stable
-825,HTMX Engineer,Engineering,51,exposed,rising
-825,Nim Engineer,Engineering,51,exposed,declining
-825,Wear OS Engineer,Engineering,51,exposed,stable
-825,Web Components / Lit Engineer,Engineering,51,exposed,stable
-825,Xamarin / .NET MAUI Engineer,Engineering,51,exposed,declining
-825,iPadOS Engineer,Engineering,51,exposed,stable
-825,watchOS Engineer,Engineering,51,exposed,stable
-825,IBM Cloud Engineer,Platform & Infrastructure,51,exposed,declining
-825,Community Manager (Technical),Specialized & Emerging,51,exposed,stable
-825,Twilio Engineer,Specialized & Emerging,51,exposed,stable
-840,Customer Support Engineer,Specialized & Emerging,50,exposed,stable
-841,Data Annotation Engineer,Data & AI,49,exposed,rising
-841,Scikit-learn Specialist,Data & AI,49,exposed,stable
-841,Browser Extension Engineer,Engineering,49,exposed,stable
-841,CSS Architect (Sass/Tailwind),Engineering,49,exposed,stable
-841,Esports Platform Engineer,Engineering,49,exposed,stable
-841,Food Tech Engineer,Engineering,49,exposed,stable
-841,Full-Stack Ruby Engineer,Engineering,49,exposed,declining
-841,JAMstack Engineer,Engineering,49,exposed,stable
-841,JCL Developer,Engineering,49,exposed,declining
-841,Junior Android Engineer,Engineering,49,exposed,stable
-841,Junior iOS Engineer,Engineering,49,exposed,stable
-841,MEAN Stack Engineer,Engineering,49,exposed,declining
-841,Remix Engineer,Engineering,49,exposed,stable
-841,Sinatra / Hanami Engineer,Engineering,49,exposed,declining
-841,Sports Tech Engineer,Engineering,49,exposed,stable
-841,Svelte Engineer,Engineering,49,exposed,rising
-841,Symfony Engineer,Engineering,49,exposed,stable
-841,Tornado Backend Engineer,Engineering,49,exposed,declining
-841,Couchbase Engineer,Platform & Infrastructure,49,exposed,declining
-841,Fly.io / Render Specialist,Platform & Infrastructure,49,exposed,stable
-841,Sysadmin / System Administrator,Platform & Infrastructure,49,exposed,declining
-841,Vertica / Teradata Engineer,Platform & Infrastructure,49,exposed,declining
-841,Windows Sysadmin,Platform & Infrastructure,49,exposed,declining
-841,Apex Developer,Specialized & Emerging,49,exposed,stable
-841,Atlassian Developer (Jira/Confluence),Specialized & Emerging,49,exposed,stable
-841,Microsoft Dynamics Developer,Specialized & Emerging,49,exposed,stable
-841,NetSuite Developer,Specialized & Emerging,49,exposed,stable
-841,Release Train Engineer (SAFe),Specialized & Emerging,49,exposed,declining
-841,SEO Engineer (Technical),Specialized & Emerging,49,exposed,stable
-870,BI Developer,Data & AI,47,exposed,declining
-870,Cohere / Mistral API Engineer,Data & AI,47,exposed,stable
-870,Statistical Programmer (SAS/R),Data & AI,47,exposed,declining
-870,Astro Engineer,Engineering,47,exposed,rising
-870,Game UI Programmer,Engineering,47,exposed,stable
-870,Junior Full-Stack Engineer,Engineering,47,exposed,stable
-870,Localization (l10n) Engineer,Engineering,47,exposed,stable
-870,Vue Engineer,Engineering,47,exposed,stable
-870,IT Operations Engineer,Platform & Infrastructure,47,exposed,stable
-870,M365 / Google Workspace Admin,Platform & Infrastructure,47,exposed,stable
-870,Content Designer / UX Writer,Product & Design,47,exposed,declining
-870,Motion Designer,Product & Design,47,exposed,stable
-870,API Documentation Specialist,Specialized & Emerging,47,exposed,stable
-870,Marketing Automation Engineer,Specialized & Emerging,47,exposed,stable
-870,Mixpanel / Amplitude / Heap Engineer,Specialized & Emerging,47,exposed,stable
-870,Power BI Specialist,Specialized & Emerging,47,exposed,stable
-870,RPA Engineer (UiPath/Power Automate),Specialized & Emerging,47,exposed,stable
-870,Salesforce Marketing Cloud Developer,Specialized & Emerging,47,exposed,stable
-870,Scrum Master / Agile Coach,Specialized & Emerging,47,exposed,declining
-870,Segment / Rudderstack Engineer,Specialized & Emerging,47,exposed,stable
-870,Shopify App Developer,Specialized & Emerging,47,exposed,stable
-870,Technical Writer,Specialized & Emerging,47,exposed,declining
-892,SSIS / SQL Server Integration Engineer,Data & AI,46,exposed,declining
-892,BPM / Workflow Engineer,Engineering,46,exposed,stable
-892,DAO Tooling Engineer,Engineering,46,exposed,declining
-892,PWA Engineer,Engineering,46,exposed,stable
-892,SolidJS Engineer,Engineering,46,exposed,rising
-892,tvOS Engineer,Engineering,46,exposed,stable
-892,Oracle ERP Developer,Specialized & Emerging,46,exposed,declining
-899,Hadoop Engineer,Data & AI,45,exposed,declining
-899,Marketing Data Scientist,Data & AI,45,exposed,stable
-899,Senior UI Designer,Product & Design,45,exposed,declining
-899,Senior QA Automation,Quality & Testing,45,exposed,declining
-899,SOC Analyst (Tier 1),Security,45,exposed,declining
-899,Power Apps Developer,Specialized & Emerging,45,exposed,stable
-899,Salesforce Administrator,Specialized & Emerging,45,exposed,stable
-906,ETL Developer,Data & AI,44,exposed,declining
-906,Growth Analyst,Data & AI,44,exposed,stable
-906,Informatica Engineer,Data & AI,44,exposed,declining
-906,Looker / LookML Developer,Data & AI,44,exposed,stable
-906,Product Analyst,Data & AI,44,exposed,stable
-906,ESB / Service Bus Engineer,Engineering,44,exposed,declining
-906,LAMP Stack Engineer,Engineering,44,exposed,declining
-906,Nuxt Engineer,Engineering,44,exposed,stable
-906,Restaurant / Hospitality Tech Engineer,Engineering,44,exposed,stable
-906,Tizen Engineer,Engineering,44,exposed,declining
-906,DigitalOcean Specialist,Platform & Infrastructure,44,exposed,stable
-906,Brand Designer,Product & Design,44,exposed,stable
-906,Visual Designer,Product & Design,44,exposed,declining
-906,Cypress Engineer,Quality & Testing,44,exposed,stable
-906,Mobile QA Engineer,Quality & Testing,44,exposed,stable
-906,Boomi Engineer,Specialized & Emerging,44,exposed,stable
-906,Conversion Rate Optimization Engineer,Specialized & Emerging,44,exposed,stable
-906,Magento / Adobe Commerce Developer,Specialized & Emerging,44,exposed,declining
-906,SAP Fiori / UI5 Developer,Specialized & Emerging,44,exposed,stable
-906,Square / Block Integration Engineer,Specialized & Emerging,44,exposed,stable
-926,Junior Frontend Engineer,Engineering,43,exposed,declining
-927,Fivetran / Stitch Specialist,Data & AI,42,exposed,stable
-927,Admin Panel Engineer,Engineering,42,exposed,stable
-927,Fitness / Wellness Tech Engineer,Engineering,42,exposed,stable
-927,Ionic / Cordova Engineer,Engineering,42,exposed,declining
-927,Perl Engineer,Engineering,42,exposed,declining
-927,Collaboration Tools Engineer (Slack/Teams),Platform & Infrastructure,42,exposed,stable
-927,Heroku Specialist,Platform & Infrastructure,42,exposed,declining
-927,Game QA Lead,Quality & Testing,42,exposed,stable
-927,Localization QA Engineer,Quality & Testing,42,exposed,stable
-927,BigCommerce Developer,Specialized & Emerging,42,exposed,stable
-927,Low-code Developer,Specialized & Emerging,42,exposed,stable
-927,SendGrid / Mailgun Engineer,Specialized & Emerging,42,exposed,stable
-927,Tray.io / iPaaS Engineer,Specialized & Emerging,42,exposed,stable
-927,Workato Engineer,Specialized & Emerging,42,exposed,stable
-941,Talend Engineer,Data & AI,41,exposed,declining
-941,Ember.js Engineer,Engineering,41,exposed,declining
-941,Stencil Engineer,Engineering,41,exposed,stable
-941,IT Asset Manager,Platform & Infrastructure,41,exposed,stable
-941,Citizen Developer Coach,Specialized & Emerging,41,exposed,stable
-941,Make.com / n8n Specialist,Specialized & Emerging,41,exposed,rising
-947,Power BI Developer,Data & AI,40,at_risk,stable
-947,Senior Data Analyst,Data & AI,40,at_risk,declining
-947,Tableau Developer,Data & AI,40,at_risk,declining
-947,IT Support Engineer,Platform & Infrastructure,40,at_risk,declining
-947,UI Designer,Product & Design,40,at_risk,declining
-947,QA Automation,Quality & Testing,40,at_risk,declining
-947,UI / Web Test Engineer,Quality & Testing,40,at_risk,declining
-947,Tier 2 Technical Support Engineer,Specialized & Emerging,40,at_risk,declining
-947,WordPress Developer,Specialized & Emerging,40,at_risk,stable
-956,Business Analyst,Data & AI,39,at_risk,declining
-956,Marketing Analyst,Data & AI,39,at_risk,declining
-956,Childcare Tech Engineer,Engineering,39,at_risk,stable
-956,NFT Platform Engineer,Engineering,39,at_risk,declining
-956,Pet Tech Engineer,Engineering,39,at_risk,stable
-956,Preact Engineer,Engineering,39,at_risk,stable
-956,Appium Engineer,Quality & Testing,39,at_risk,stable
-956,SEM / Paid Search Engineer,Specialized & Emerging,39,at_risk,stable
-956,SharePoint Developer,Specialized & Emerging,39,at_risk,declining
-965,BI Analyst,Data & AI,37,at_risk,declining
-965,HTML / CSS Specialist,Engineering,37,at_risk,declining
-965,Marketing Designer,Product & Design,37,at_risk,declining
-965,Drupal Developer,Specialized & Emerging,37,at_risk,declining
-965,Freshworks Developer,Specialized & Emerging,37,at_risk,stable
-965,HubSpot Developer,Specialized & Emerging,37,at_risk,stable
-965,Intercom / Help Desk Developer,Specialized & Emerging,37,at_risk,stable
-965,Marketo Developer,Specialized & Emerging,37,at_risk,stable
-965,WooCommerce Developer,Specialized & Emerging,37,at_risk,stable
-965,Zapier Specialist,Specialized & Emerging,37,at_risk,stable
-965,Zendesk Developer,Specialized & Emerging,37,at_risk,stable
-976,Backbone.js Maintainer,Engineering,36,at_risk,declining
-976,CodeIgniter Engineer,Engineering,36,at_risk,declining
-976,Pascal / Delphi Engineer,Engineering,36,at_risk,declining
-979,Qlik Developer,Data & AI,35,at_risk,declining
-979,Help Desk Tier 2,Platform & Infrastructure,35,at_risk,declining
-979,Selenium Engineer,Quality & Testing,35,at_risk,declining
-979,No-code Developer / Maker,Specialized & Emerging,35,at_risk,stable
-983,Sigma / ThoughtSpot Developer,Data & AI,34,at_risk,stable
-983,Alpine.js Engineer,Engineering,34,at_risk,stable
-983,KaiOS Engineer,Engineering,34,at_risk,declining
-983,PowerBuilder Maintainer,Engineering,34,at_risk,declining
-983,Visual Basic / VB.NET Maintainer,Engineering,34,at_risk,declining
-988,Data Analyst,Data & AI,33,at_risk,declining
-989,Pardot Developer,Specialized & Emerging,32,at_risk,declining
-990,QA Manual Lead,Quality & Testing,31,at_risk,declining
-991,MicroStrategy Developer,Data & AI,30,at_risk,declining
-991,Game QA Tester,Engineering,30,at_risk,declining
-991,Desktop Support,Platform & Infrastructure,30,at_risk,declining
-994,Domo Developer,Data & AI,29,at_risk,declining
-994,Mode Analytics Developer,Data & AI,29,at_risk,stable
-994,ColdFusion Maintainer,Engineering,29,at_risk,declining
-994,jQuery Maintainer,Engineering,29,at_risk,declining
-998,Prompt Engineer,Data & AI,27,at_risk,declining
-999,Help Desk Tier 1,Platform & Infrastructure,25,at_risk,declining
-1000,QA Manual,Quality & Testing,20,at_risk,declining
+296,Principal Software Engineer,Engineering,73,safe,stable
+321,Databricks Data Engineer,Data & AI,72,safe,rising
+321,Hugging Face / Transformers Engineer,Data & AI,72,safe,rising
+321,NLP Researcher,Data & AI,72,safe,stable
+321,PyTorch Specialist,Data & AI,72,safe,rising
+321,Real-time Data Engineer,Data & AI,72,safe,rising
+321,Recommender Systems Engineer,Data & AI,72,safe,stable
+321,Streaming Data Engineer,Data & AI,72,safe,rising
+321,Voice AI Engineer,Data & AI,72,safe,rising
+321,Backend API Engineer,Engineering,72,safe,stable
+321,Backend Engineer,Engineering,72,safe,stable
+321,Python Backend Engineer,Engineering,72,safe,rising
+321,AWS DevOps Engineer,Platform & Infrastructure,72,safe,stable
+321,CI/CD Engineer,Platform & Infrastructure,72,safe,stable
+321,DevOps Engineer,Platform & Infrastructure,72,safe,stable
+321,Snowflake Engineer,Platform & Infrastructure,72,safe,rising
+321,Vector Database Engineer (Pinecone/Weaviate),Platform & Infrastructure,72,safe,rising
+321,Design Director,Product & Design,72,safe,stable
+321,Design Engineer,Product & Design,72,safe,rising
+321,Design Systems Engineer,Product & Design,72,safe,stable
+321,Security QA Engineer,Quality & Testing,72,safe,rising
+321,Test Architect,Quality & Testing,72,safe,stable
+321,Bug Bounty Hunter,Security,72,safe,stable
+321,Identity & Access Management Engineer,Security,72,safe,stable
+321,Security Automation / SOAR Engineer,Security,72,safe,rising
+321,Threat Hunter,Security,72,safe,rising
+321,Web Application Pentester,Security,72,safe,stable
+347,Audio ML Engineer,Data & AI,71,safe,stable
+347,Principal Data Scientist,Data & AI,71,safe,stable
+347,Quantitative Analyst,Data & AI,71,safe,stable
+347,Speech Recognition Engineer,Data & AI,71,safe,stable
+347,Speech Synthesis (TTS) Engineer,Data & AI,71,safe,rising
+347,Audio DSP Engineer,Engineering,71,safe,stable
+347,DFT (Design for Test) Engineer,Engineering,71,safe,stable
+347,Drone Firmware Engineer,Engineering,71,safe,stable
+347,Drone Software Engineer,Engineering,71,safe,rising
+347,Energy / Smart Grid Engineer,Engineering,71,safe,rising
+347,Game Anti-cheat Engineer,Engineering,71,safe,rising
+347,Game Physics Programmer,Engineering,71,safe,stable
+347,Idempotency / Retries Engineer,Engineering,71,safe,stable
+347,Lightning Network Engineer,Engineering,71,safe,stable
+347,Medical Imaging Software Engineer,Engineering,71,safe,stable
+347,Microcontroller Programmer,Engineering,71,safe,stable
+347,Real-time Communications Engineer (WebRTC),Engineering,71,safe,stable
+347,Robotics Simulation Engineer,Engineering,71,safe,stable
+347,Senior Smart Contract Engineer,Engineering,71,safe,stable
+347,Service Mesh Architect,Engineering,71,safe,stable
+347,Shader Programmer,Engineering,71,safe,stable
+347,Staff Android Engineer,Engineering,71,safe,stable
+347,Staff Full-Stack Engineer,Engineering,71,safe,stable
+347,Staff iOS Engineer,Engineering,71,safe,stable
+347,Static Analysis Engineer,Engineering,71,safe,stable
+347,VHDL Engineer,Engineering,71,safe,stable
+347,Video Encoding Engineer,Engineering,71,safe,stable
+347,Head of Mobile,Engineering Leadership,71,safe,stable
+347,Database Architect,Platform & Infrastructure,71,safe,stable
+347,Senior Design Manager,Product & Design,71,safe,stable
+347,Senior Design Systems Engineer,Product & Design,71,safe,stable
+347,Embedded Security Engineer,Security,71,safe,rising
+347,Fuzzing Engineer,Security,71,safe,stable
+347,Hardware Pentester,Security,71,safe,stable
+347,ICS / SCADA Security Engineer,Security,71,safe,rising
+347,Malware Analyst,Security,71,safe,stable
+347,Open Source Maintainer,Specialized & Emerging,71,safe,stable
+347,Staff Software Engineer,Engineering,71,safe,stable
+385,AI Ethics Researcher,Data & AI,70,safe,stable
+385,AI Workflow / Orchestration Engineer,Data & AI,70,safe,rising
+385,Senior NLP Engineer,Data & AI,70,safe,stable
+385,Compliance Software Engineer,Engineering,70,safe,stable
+385,GCC Maintainer,Engineering,70,safe,stable
+385,Chief Digital Officer,Engineering Leadership,70,safe,stable
+385,Director of Design,Engineering Leadership,70,safe,stable
+385,Engineering Chief of Staff,Engineering Leadership,70,safe,stable
+385,Chaos Engineer,Platform & Infrastructure,70,safe,stable
+385,Payments Product Manager,Product & Design,70,safe,stable
+385,SOC Manager,Security,70,safe,stable
+385,Vulnerability Management Engineer,Security,70,safe,stable
+397,Anomaly Detection ML Engineer,Data & AI,69,stable,stable
+397,Big Data Engineer,Data & AI,69,stable,stable
+397,Data Lakehouse Engineer,Data & AI,69,stable,rising
+397,Data Reliability Engineer,Data & AI,69,stable,stable
+397,Embedding Engineer,Data & AI,69,stable,rising
+397,Feature Store Engineer,Data & AI,69,stable,rising
+397,Genomics Pipeline Engineer,Data & AI,69,stable,stable
+397,Iceberg / Delta / Hudi Engineer,Data & AI,69,stable,rising
+397,Kafka Streams Engineer,Data & AI,69,stable,stable
+397,ML Tooling Engineer (Ray/Dask),Data & AI,69,stable,rising
+397,Model Deployment Engineer,Data & AI,69,stable,rising
+397,Model Monitoring Engineer,Data & AI,69,stable,rising
+397,Spark Engineer,Data & AI,69,stable,stable
+397,Synthetic Data Engineer,Data & AI,69,stable,rising
+397,Time Series ML Engineer,Data & AI,69,stable,stable
+397,Vector Search Engineer,Data & AI,69,stable,rising
+397,Application Architect,Engineering,69,stable,stable
+397,Backend Caching Engineer,Engineering,69,stable,stable
+397,Developer Tools Engineer,Engineering,69,stable,stable
+397,Edge Runtime Engineer (Cloudflare Workers/Deno Deploy),Engineering,69,stable,rising
+397,Game AI Programmer,Engineering,69,stable,rising
+397,HL7 / FHIR Integration Engineer,Engineering,69,stable,stable
+397,Hardware Validation Engineer,Engineering,69,stable,stable
+397,Industrial Control / PLC Engineer,Engineering,69,stable,stable
+397,Industrial Robotics Programmer,Engineering,69,stable,stable
+397,IoT Edge Engineer,Engineering,69,stable,rising
+397,Mobile Performance Engineer,Engineering,69,stable,stable
+397,Pricing / Monetization Engineer,Engineering,69,stable,stable
+397,Refactoring / Modernization Engineer,Engineering,69,stable,stable
+397,Rust Smart Contract Engineer (Solana),Engineering,69,stable,stable
+397,Senior Android Engineer,Engineering,69,stable,stable
+397,Senior iOS Engineer,Engineering,69,stable,stable
+397,Streaming Media Engineer,Engineering,69,stable,stable
+397,Workflow Engine Engineer (Temporal/Cadence),Engineering,69,stable,rising
+397,Yocto / Buildroot Engineer,Engineering,69,stable,stable
+397,gRPC / Protobuf Engineer,Engineering,69,stable,stable
+397,Backstage Engineer,Platform & Infrastructure,69,stable,rising
+397,ClickHouse Engineer,Platform & Infrastructure,69,stable,rising
+397,Database Engineer / DBA,Platform & Infrastructure,69,stable,stable
+397,Database Reliability Engineer,Platform & Infrastructure,69,stable,stable
+397,Edge Computing Engineer,Platform & Infrastructure,69,stable,stable
+397,GCP Data Engineer,Platform & Infrastructure,69,stable,stable
+397,Multi-cloud Architect,Platform & Infrastructure,69,stable,stable
+397,Network Architect,Platform & Infrastructure,69,stable,stable
+397,PostgreSQL DBA,Platform & Infrastructure,69,stable,rising
+397,Service Mesh Engineer (Istio/Linkerd),Platform & Infrastructure,69,stable,stable
+397,Tracing Engineer (OpenTelemetry/Jaeger),Platform & Infrastructure,69,stable,rising
+397,Growth Product Manager,Product & Design,69,stable,stable
+397,Senior Product Designer,Product & Design,69,stable,stable
+397,Senior UX Researcher,Product & Design,69,stable,stable
+397,Staff Product Designer,Product & Design,69,stable,stable
+397,Performance / Load Test Engineer,Quality & Testing,69,stable,stable
+397,Staff SDET,Quality & Testing,69,stable,stable
+397,Linux Security Engineer,Security,69,stable,stable
+397,Mobile Application Pentester,Security,69,stable,stable
+397,Mobile Security Engineer,Security,69,stable,rising
+397,Network Pentester,Security,69,stable,stable
+397,Experimentation Platform Engineer,Specialized & Emerging,69,stable,rising
+397,Salesforce Architect,Specialized & Emerging,69,stable,stable
+397,Senior Developer Advocate,Specialized & Emerging,69,stable,stable
+457,AI Curriculum / Training Lead,Data & AI,68,stable,rising
+457,Causal Inference Scientist,Data & AI,68,stable,stable
+457,BCI (Brain-Computer Interface) Engineer,Engineering,68,stable,rising
+457,BSD Kernel Engineer,Engineering,68,stable,stable
+457,Browser Engine Engineer (Gecko/Firefox),Engineering,68,stable,stable
+457,Erlang Engineer,Engineering,68,stable,stable
+457,Event Sourcing / CQRS Engineer,Engineering,68,stable,stable
+457,MEV Engineer / Searcher,Engineering,68,stable,stable
+457,Photonics Software Engineer,Engineering,68,stable,stable
+457,Quantum Compiler Engineer,Engineering,68,stable,stable
+457,Scala Backend Engineer,Engineering,68,stable,declining
+457,Search Backend Engineer (Vespa),Engineering,68,stable,stable
+457,Design Manager,Product & Design,68,stable,stable
+457,Principal Product Designer,Product & Design,68,stable,stable
+457,Blockchain Security Auditor,Security,68,stable,stable
+457,Foundation Engineer (CNCF/Apache),Specialized & Emerging,68,stable,stable
+457,Senior Implementation Engineer,Specialized & Emerging,68,stable,stable
+457,Standards Engineer (W3C/IETF),Specialized & Emerging,68,stable,stable
+475,AI Tooling Engineer,Data & AI,67,stable,rising
+475,Conversational AI Engineer,Data & AI,67,stable,rising
+475,Data Pipeline Engineer,Data & AI,67,stable,stable
+475,LangGraph / Agent Framework Engineer,Data & AI,67,stable,rising
+475,SageMaker Engineer,Data & AI,67,stable,rising
+475,Snowflake Data Engineer,Data & AI,67,stable,rising
+475,FastAPI Engineer,Engineering,67,stable,rising
+475,Java Backend Engineer,Engineering,67,stable,stable
+475,Java Spring / Spring Boot Engineer,Engineering,67,stable,stable
+475,Job Scheduler Engineer (Airflow/Prefect),Engineering,67,stable,stable
+475,Kotlin Backend Engineer,Engineering,67,stable,rising
+475,Senior Full-Stack Engineer,Engineering,67,stable,stable
+475,Senior Game Engineer,Engineering,67,stable,stable
+475,AWS Engineer,Platform & Infrastructure,67,stable,stable
+475,Azure DevOps Engineer,Platform & Infrastructure,67,stable,stable
+475,BigQuery Engineer,Platform & Infrastructure,67,stable,stable
+475,Cloud Engineer,Platform & Infrastructure,67,stable,declining
+475,Disaster Recovery Engineer,Platform & Infrastructure,67,stable,stable
+475,Identity Engineer (Corp IT — Okta/Azure AD),Platform & Infrastructure,67,stable,rising
+475,Monitoring Engineer (Prometheus/Grafana),Platform & Infrastructure,67,stable,stable
+475,Redis Engineer,Platform & Infrastructure,67,stable,stable
+475,UX Designer / Researcher,Product & Design,67,stable,stable
+475,Senior SDET,Quality & Testing,67,stable,stable
+475,Endpoint Security Engineer,Security,67,stable,stable
+475,SOC Analyst (Tier 3),Security,67,stable,stable
+475,Security Operations Engineer,Security,67,stable,stable
+475,Threat Intelligence Analyst,Security,67,stable,stable
+475,Post-sales / Customer Engineer,Specialized & Emerging,67,stable,stable
+475,Senior Salesforce Developer,Specialized & Emerging,67,stable,stable
+475,Senior Software Engineer,Engineering,67,stable,stable
+505,AdTech ML Engineer,Data & AI,66,stable,stable
+505,CDC (Change Data Capture) Engineer,Data & AI,66,stable,stable
+505,Experimentation Scientist (A/B testing),Data & AI,66,stable,stable
+505,Staff Data Scientist,Data & AI,66,stable,stable
+505,Airline Software Engineer,Engineering,66,stable,stable
+505,Apple Vision Pro Application Engineer,Engineering,66,stable,rising
+505,CAD Software Engineer,Engineering,66,stable,stable
+505,Color Science Engineer,Engineering,66,stable,stable
+505,Console Game Engineer,Engineering,66,stable,stable
+505,Cosmos SDK Engineer,Engineering,66,stable,stable
+505,Decentralized Identity Engineer,Engineering,66,stable,stable
+505,Elixir / Phoenix Engineer,Engineering,66,stable,stable
+505,Eye Tracking Engineer,Engineering,66,stable,stable
+505,Frontend Architect,Engineering,66,stable,stable
+505,Frontend Performance Engineer,Engineering,66,stable,rising
+505,Game Network Programmer,Engineering,66,stable,stable
+505,Hand Tracking / Gesture Recognition Engineer,Engineering,66,stable,stable
+505,Hardware Wallet Firmware Engineer,Engineering,66,stable,stable
+505,IoT Software Engineer,Engineering,66,stable,stable
+505,Logistics Software Engineer,Engineering,66,stable,rising
+505,Mainframe Modernization Engineer,Engineering,66,stable,rising
+505,Mobile Architect,Engineering,66,stable,stable
+505,OpenGL Engineer,Engineering,66,stable,declining
+505,Pharma Software Engineer,Engineering,66,stable,stable
+505,Smart Contract Engineer,Engineering,66,stable,stable
+505,Spatial Computing Engineer,Engineering,66,stable,rising
+505,Supply Chain Software Engineer,Engineering,66,stable,stable
+505,VR Game Engineer,Engineering,66,stable,rising
+505,WebGL / WebGPU Engineer,Engineering,66,stable,rising
+505,Zig Engineer,Engineering,66,stable,rising
+505,visionOS / Apple Vision Pro Engineer,Engineering,66,stable,rising
+505,Capacity Planning Engineer,Platform & Infrastructure,66,stable,stable
+505,Elasticsearch DBA / Engineer,Platform & Infrastructure,66,stable,stable
+505,File System Engineer,Platform & Infrastructure,66,stable,stable
+505,FinOps Practitioner,Platform & Infrastructure,66,stable,rising
+505,Senior Network Engineer,Platform & Infrastructure,66,stable,stable
+505,Implementation Engineer,Specialized & Emerging,66,stable,stable
+542,NLP Engineer,Data & AI,65,stable,declining
+542,Haskell Engineer,Engineering,65,stable,stable
+542,OCaml Engineer,Engineering,65,stable,stable
+542,Sustainability Tech Engineer,Engineering,65,stable,rising
+542,Quality Engineering Director,Quality & Testing,65,stable,stable
+542,Field Engineer,Specialized & Emerging,65,stable,stable
+542,Open Source Program Manager (OSPO),Specialized & Emerging,65,stable,stable
+549,Active Learning Engineer,Data & AI,64,stable,stable
+549,Azure ML Engineer,Data & AI,64,stable,rising
+549,Beam / Dataflow Engineer,Data & AI,64,stable,stable
+549,BigQuery Data Engineer,Data & AI,64,stable,stable
+549,Data Lake Engineer,Data & AI,64,stable,stable
+549,Flink Engineer,Data & AI,64,stable,stable
+549,Llama Fine-tuning Engineer,Data & AI,64,stable,rising
+549,Vertex AI Engineer,Data & AI,64,stable,rising
+549,Android Auto / CarPlay Engineer,Engineering,64,stable,rising
+549,Audio Plugin Developer (VST),Engineering,64,stable,stable
+549,Banking Software Engineer,Engineering,64,stable,stable
+549,C# / .NET Backend Engineer,Engineering,64,stable,stable
+549,Crypto Exchange Engineer,Engineering,64,stable,stable
+549,Crypto Wallet Engineer,Engineering,64,stable,stable
+549,E-commerce Backend Engineer,Engineering,64,stable,stable
+549,EHR Integration Engineer,Engineering,64,stable,stable
+549,Frontend Build / Tooling Engineer,Engineering,64,stable,stable
+549,GIS Developer,Engineering,64,stable,stable
+549,Game Server Engineer,Engineering,64,stable,stable
+549,Geospatial Software Engineer,Engineering,64,stable,stable
+549,Government / GovTech Engineer,Engineering,64,stable,stable
+549,GraphQL Engineer,Engineering,64,stable,stable
+549,Haptics Engineer,Engineering,64,stable,stable
+549,Hardware Test Engineer,Engineering,64,stable,stable
+549,Mapping Software Engineer (Mapbox/OSM),Engineering,64,stable,stable
+549,Marketplace Engineer,Engineering,64,stable,stable
+549,PCB Design Engineer,Engineering,64,stable,stable
+549,Streaming Protocol Engineer (HLS/DASH),Engineering,64,stable,stable
+549,Telemedicine Software Engineer,Engineering,64,stable,stable
+549,Unreal Engine Engineer,Engineering,64,stable,stable
+549,Head of Frontend,Engineering Leadership,64,stable,stable
+549,5G Software Engineer,Platform & Infrastructure,64,stable,rising
+549,Azure Engineer,Platform & Infrastructure,64,stable,stable
+549,Build Engineer (Bazel/Buck),Platform & Infrastructure,64,stable,stable
+549,GCP Engineer,Platform & Infrastructure,64,stable,stable
+549,Neo4j / Graph Database Engineer,Platform & Infrastructure,64,stable,stable
+549,Network Automation Engineer,Platform & Infrastructure,64,stable,rising
+549,Network Engineer,Platform & Infrastructure,64,stable,stable
+549,SDN Engineer,Platform & Infrastructure,64,stable,stable
+549,Storage Architect,Platform & Infrastructure,64,stable,stable
+549,Storage Engineer,Platform & Infrastructure,64,stable,stable
+549,Wireless Software Engineer,Platform & Infrastructure,64,stable,stable
+549,Product Designer,Product & Design,64,stable,stable
+549,Quantitative UX Researcher,Product & Design,64,stable,stable
+549,SDET / Test Infrastructure,Quality & Testing,64,stable,stable
+549,Stress Test Engineer,Quality & Testing,64,stable,stable
+549,Active Directory Security Engineer,Security,64,stable,stable
+549,PKI Engineer,Security,64,stable,stable
+549,macOS Security Engineer,Security,64,stable,stable
+549,Developer Advocate / DevRel,Specialized & Emerging,64,stable,stable
+599,Clojure Engineer,Engineering,63,stable,declining
+599,DeFi Protocol Engineer,Engineering,63,stable,declining
+599,Game Producer / Tech Producer,Engineering,63,stable,stable
+599,Principal Frontend Engineer,Engineering,63,stable,stable
+599,Web Accessibility (a11y) Engineer,Engineering,63,stable,rising
+599,Engineering Operations Manager,Engineering Leadership,63,stable,stable
+599,Cloud Cost Optimization Engineer,Platform & Infrastructure,63,stable,rising
+599,Consumer Product Manager,Product & Design,63,stable,stable
+599,Mobile Product Manager,Product & Design,63,stable,stable
+599,HIPAA Compliance Engineer,Security,63,stable,stable
+599,ISO 27001 Auditor,Security,63,stable,stable
+599,PCI-DSS Compliance Engineer,Security,63,stable,stable
+599,SOC 2 Compliance Engineer,Security,63,stable,rising
+599,Program Manager (Software),Specialized & Emerging,63,stable,stable
+613,Anthropic Claude API Engineer,Data & AI,62,stable,rising
+613,AutoGen / Multi-agent Engineer,Data & AI,62,stable,rising
+613,DBT Engineer,Data & AI,62,stable,rising
+613,OpenAI GPT API Engineer,Data & AI,62,stable,rising
+613,Android Engineer,Engineering,62,stable,stable
+613,Full-Stack Engineer,Engineering,62,stable,declining
+613,Full-Stack TypeScript Engineer,Engineering,62,stable,rising
+613,Mobile Build / CI Engineer,Engineering,62,stable,stable
+613,Mobile DevOps / Release Engineer,Engineering,62,stable,stable
+613,Node.js Backend Engineer,Engineering,62,stable,stable
+613,REST API Engineer,Engineering,62,stable,stable
+613,TypeScript Specialist,Engineering,62,stable,rising
+613,iOS Engineer,Engineering,62,stable,stable
+613,Cloudflare Engineer,Platform & Infrastructure,62,stable,rising
+613,Data Modeler,Platform & Infrastructure,62,stable,stable
+613,Helm / Argo Engineer,Platform & Infrastructure,62,stable,stable
+613,Logging Engineer (ELK/Loki/Splunk),Platform & Infrastructure,62,stable,stable
+613,MySQL / MariaDB DBA,Platform & Infrastructure,62,stable,stable
+613,Release Engineer,Platform & Infrastructure,62,stable,stable
+613,UX Researcher,Product & Design,62,stable,stable
+613,SAST Engineer,Security,62,stable,stable
+613,SIEM Engineer,Security,62,stable,stable
+613,Salesforce Developer,Specialized & Emerging,62,stable,stable
+613,Software Engineer,Engineering,62,stable,stable
+613,Full Stack Developer,Engineering,62,stable,stable
+638,AR Engineer,Engineering,61,stable,stable
+638,Ada Engineer (Defense),Engineering,61,stable,stable
+638,CAM Software Engineer,Engineering,61,stable,stable
+638,Cairo Developer (StarkNet),Engineering,61,stable,stable
+638,Cardano Plutus Developer,Engineering,61,stable,stable
+638,DAW Software Engineer,Engineering,61,stable,stable
+638,Fortran Engineer (Scientific),Engineering,61,stable,stable
+638,Linter / Formatter Maintainer,Engineering,61,stable,stable
+638,Live Video / Broadcast Engineer,Engineering,61,stable,stable
+638,Micro-frontends Architect,Engineering,61,stable,stable
+638,Mixed Reality Engineer,Engineering,61,stable,stable
+638,Move Developer (Sui/Aptos),Engineering,61,stable,stable
+638,Search Backend Engineer (Solr),Engineering,61,stable,declining
+638,Solidity Developer,Engineering,61,stable,stable
+638,Staff Frontend Engineer,Engineering,61,stable,stable
+638,Substrate Engineer (Polkadot),Engineering,61,stable,stable
+638,VR Engineer,Engineering,61,stable,stable
+638,Wearable Tech Engineer,Engineering,61,stable,stable
+638,XR Engineer,Engineering,61,stable,stable
+638,Cassandra Engineer,Platform & Infrastructure,61,stable,stable
+638,CockroachDB / TiDB Engineer,Platform & Infrastructure,61,stable,stable
+638,ScyllaDB Engineer,Platform & Infrastructure,61,stable,stable
+638,Social Engineering Specialist,Security,61,stable,stable
+661,API / Integration Engineer,Engineering,60,stable,stable
+661,AgTech Software Engineer,Engineering,60,stable,stable
+661,Django Engineer,Engineering,60,stable,stable
+661,Game Engineer,Engineering,60,stable,stable
+661,Gameplay Programmer,Engineering,60,stable,stable
+661,Next.js / SSR Engineer,Engineering,60,stable,rising
+661,Backup / Recovery Engineer,Platform & Infrastructure,60,stable,stable
+661,DNS Engineer,Platform & Infrastructure,60,stable,stable
+661,Data Center Engineer,Platform & Infrastructure,60,stable,stable
+661,IT Director,Platform & Infrastructure,60,stable,stable
+661,Oracle DBA,Platform & Infrastructure,60,stable,declining
+661,Inclusive Design Specialist,Product & Design,60,stable,rising
+661,Accessibility QA Engineer,Quality & Testing,60,stable,rising
+661,Compliance Test Engineer,Quality & Testing,60,stable,stable
+661,QA Manager,Quality & Testing,60,stable,stable
+661,Intelligent Automation Engineer,Specialized & Emerging,60,stable,rising
+677,AutoML Engineer,Data & AI,59,stable,stable
+677,Data Augmentation Engineer,Data & AI,59,stable,stable
+677,Data Warehouse Engineer,Data & AI,59,stable,stable
+677,Database Administrator,Data & AI,59,stable,declining
+677,Prefect / Dagster Engineer,Data & AI,59,stable,rising
+677,Senior Analytics Engineer,Data & AI,59,stable,stable
+677,Senior Data Scientist,Data & AI,59,stable,stable
+677,TensorFlow Specialist,Data & AI,59,stable,stable
+677,XGBoost / Gradient Boosting Specialist,Data & AI,59,stable,stable
+677,BIM Software Engineer,Engineering,59,stable,stable
+677,Code Quality Engineer,Engineering,59,stable,stable
+677,Full-Stack Python Engineer,Engineering,59,stable,stable
+677,Game Audio Programmer,Engineering,59,stable,stable
+677,Game Live Ops Engineer,Engineering,59,stable,stable
+677,Game Tools Programmer,Engineering,59,stable,stable
+677,Hyperledger Fabric Engineer,Engineering,59,stable,declining
+677,Insurance Tech Engineer (Insurtech),Engineering,59,stable,stable
+677,Java EE / Jakarta EE Engineer,Engineering,59,stable,declining
+677,Kotlin Multiplatform Engineer,Engineering,59,stable,rising
+677,Legal Tech Engineer,Engineering,59,stable,rising
+677,Mainframe Engineer,Engineering,59,stable,declining
+677,Meta Quest Developer,Engineering,59,stable,stable
+677,Photography Software Engineer,Engineering,59,stable,stable
+677,Quarkus Engineer,Engineering,59,stable,rising
+677,Ruby on Rails Engineer,Engineering,59,stable,declining
+677,T3 / tRPC Stack Engineer,Engineering,59,stable,rising
+677,Unity XR Developer,Engineering,59,stable,stable
+677,Alibaba Cloud Engineer,Platform & Infrastructure,59,stable,stable
+677,Block Storage Engineer,Platform & Infrastructure,59,stable,stable
+677,CDN Engineer,Platform & Infrastructure,59,stable,stable
+677,DuckDB Engineer,Platform & Infrastructure,59,stable,rising
+677,DynamoDB Specialist,Platform & Infrastructure,59,stable,stable
+677,MongoDB Engineer,Platform & Infrastructure,59,stable,stable
+677,Monorepo Engineer (Nx/Turborepo),Platform & Infrastructure,59,stable,rising
+677,Object Storage Engineer (S3/MinIO),Platform & Infrastructure,59,stable,stable
+677,SQL Server DBA,Platform & Infrastructure,59,stable,declining
+677,Service Catalog Engineer,Platform & Infrastructure,59,stable,stable
+677,Industrial Designer (hardware-software products),Product & Design,59,stable,stable
+677,Service Designer,Product & Design,59,stable,stable
+677,Hardware QA Engineer,Quality & Testing,59,stable,stable
+677,DAST Engineer,Security,59,stable,stable
+677,Windows Security Engineer,Security,59,stable,stable
+677,Wireless Pentester,Security,59,stable,stable
+677,A/B Testing Engineer,Specialized & Emerging,59,stable,stable
+677,SAP HANA Developer,Specialized & Emerging,59,stable,stable
+722,AI Trainer / RLHF Annotator,Data & AI,58,stable,rising
+722,Active Learning / Labeling Operations Lead,Data & AI,58,stable,rising
+722,Head of QA,Engineering Leadership,58,stable,declining
+722,Conversational Designer,Product & Design,58,stable,rising
+722,Product Operations Manager,Product & Design,58,stable,stable
+722,Developer Educator,Specialized & Emerging,58,stable,stable
+722,Developer Marketing Engineer,Specialized & Emerging,58,stable,stable
+729,Airflow Engineer,Data & AI,57,exposed,stable
+729,Analytics Engineer,Data & AI,57,exposed,stable
+729,LangChain / LlamaIndex Engineer,Data & AI,57,exposed,stable
+729,ASP.NET Engineer,Engineering,57,exposed,stable
+729,Flutter Engineer,Engineering,57,exposed,rising
+729,Game Build / Pipeline Engineer,Engineering,57,exposed,stable
+729,Game Telemetry Engineer,Engineering,57,exposed,stable
+729,HarmonyOS Engineer,Engineering,57,exposed,rising
+729,IDE Plugin Developer,Engineering,57,exposed,stable
+729,Junior Backend Engineer,Engineering,57,exposed,stable
+729,MERN Stack Engineer,Engineering,57,exposed,stable
+729,Mobile Game Engineer,Engineering,57,exposed,stable
+729,NestJS Engineer,Engineering,57,exposed,rising
+729,React Native Engineer,Engineering,57,exposed,stable
+729,Senior Frontend Engineer,Engineering,57,exposed,stable
+729,Unity Engineer,Engineering,57,exposed,stable
+729,Deployment Engineer,Platform & Infrastructure,57,exposed,stable
+729,Endpoint Management Engineer (Intune/Jamf),Platform & Infrastructure,57,exposed,stable
+729,Telecom Software Engineer,Platform & Infrastructure,57,exposed,stable
+729,CDP / Customer Data Platform Engineer,Specialized & Emerging,57,exposed,rising
+729,Customer Success Engineer,Specialized & Emerging,57,exposed,stable
+729,Stripe Integration Engineer,Specialized & Emerging,57,exposed,stable
+729,Workflow Automation Engineer,Specialized & Emerging,57,exposed,rising
+752,Decision Scientist,Data & AI,56,exposed,stable
+752,3D Printing Software Engineer,Engineering,56,exposed,stable
+752,Bun.sh Engineer,Engineering,56,exposed,rising
+752,COBOL Developer,Engineering,56,exposed,stable
+752,IPFS / Filecoin Engineer,Engineering,56,exposed,stable
+752,Micronaut Engineer,Engineering,56,exposed,stable
+752,Oracle (Chainlink) Engineer,Engineering,56,exposed,stable
+752,Unreal XR Developer,Engineering,56,exposed,stable
+752,Vyper Developer,Engineering,56,exposed,stable
+752,z/OS Engineer,Engineering,56,exposed,stable
+752,Onboarding Engineer,Specialized & Emerging,56,exposed,stable
+752,Project Manager (Software),Specialized & Emerging,56,exposed,declining
+764,Chatbot Engineer,Data & AI,55,exposed,stable
+764,Product Data Scientist,Data & AI,55,exposed,stable
+764,Cruise / Maritime Software Engineer,Engineering,55,exposed,stable
+764,Express.js Engineer,Engineering,55,exposed,stable
+764,Internal Tools Engineer,Engineering,55,exposed,stable
+764,React Engineer,Engineering,55,exposed,declining
+764,SOC Analyst (Tier 2),Security,55,exposed,stable
+764,Curriculum Designer (Technical),Specialized & Emerging,55,exposed,stable
+772,AdTech Engineer,Engineering,54,exposed,stable
+772,Algorand Developer,Engineering,54,exposed,declining
+772,Angular Engineer,Engineering,54,exposed,declining
+772,Cartography Engineer,Engineering,54,exposed,stable
+772,Construction Tech Engineer,Engineering,54,exposed,rising
+772,Corda / R3 Engineer,Engineering,54,exposed,declining
+772,E-discovery Engineer,Engineering,54,exposed,stable
+772,EdTech Engineer,Engineering,54,exposed,stable
+772,Flask Engineer,Engineering,54,exposed,stable
+772,HR Tech Engineer,Engineering,54,exposed,stable
+772,Internationalization (i18n) Engineer,Engineering,54,exposed,stable
+772,JetBrains Plugin Developer,Engineering,54,exposed,stable
+772,Laravel Engineer,Engineering,54,exposed,stable
+772,MarTech Engineer,Engineering,54,exposed,stable
+772,Mental Health Tech Engineer,Engineering,54,exposed,rising
+772,Middleware Engineer,Engineering,54,exposed,declining
+772,Music Tech Engineer,Engineering,54,exposed,stable
+772,PHP Backend Engineer,Engineering,54,exposed,declining
+772,Real Estate Tech Engineer (Proptech),Engineering,54,exposed,stable
+772,Tezos Developer,Engineering,54,exposed,declining
+772,Travel Tech Engineer,Engineering,54,exposed,stable
+772,Webpack / Vite Specialist,Engineering,54,exposed,stable
+772,Hetzner / Bare Metal Specialist,Platform & Infrastructure,54,exposed,stable
+772,InfluxDB Engineer,Platform & Infrastructure,54,exposed,stable
+772,Linux Sysadmin,Platform & Infrastructure,54,exposed,stable
+772,Load Balancer Engineer,Platform & Infrastructure,54,exposed,stable
+772,Oracle Cloud Engineer,Platform & Infrastructure,54,exposed,declining
+772,TimescaleDB Engineer,Platform & Infrastructure,54,exposed,stable
+772,VoIP / SIP Engineer,Platform & Infrastructure,54,exposed,stable
+772,Associate Product Manager,Product & Design,54,exposed,stable
+772,Information Architect,Product & Design,54,exposed,stable
+772,Interaction Designer,Product & Design,54,exposed,stable
+772,Marketing Product Manager,Product & Design,54,exposed,stable
+772,Senior Content Designer,Product & Design,54,exposed,stable
+772,Voice Interface Designer,Product & Design,54,exposed,stable
+772,API Test Engineer,Quality & Testing,54,exposed,stable
+772,Playwright Engineer,Quality & Testing,54,exposed,rising
+772,QA Lead,Quality & Testing,54,exposed,stable
+772,Test Data Engineer,Quality & Testing,54,exposed,stable
+772,Documentation Engineer,Specialized & Emerging,54,exposed,stable
+772,Feature Flag Engineer (LaunchDarkly/Split),Specialized & Emerging,54,exposed,stable
+772,SAP ABAP Developer,Specialized & Emerging,54,exposed,declining
+772,SAP Basis Administrator,Specialized & Emerging,54,exposed,declining
+772,Senior Technical Writer,Specialized & Emerging,54,exposed,stable
+772,ServiceNow Developer,Specialized & Emerging,54,exposed,stable
+817,IT Manager,Platform & Infrastructure,53,exposed,stable
+818,Data Scientist,Data & AI,52,exposed,declining
+818,ELT Engineer,Data & AI,52,exposed,stable
+818,Frontend Engineer,Engineering,52,exposed,declining
+818,Godot Engineer,Engineering,52,exposed,rising
+818,VSCode Extension Developer,Engineering,52,exposed,rising
+818,Vercel / Netlify Specialist,Platform & Infrastructure,52,exposed,stable
+818,3D Designer,Product & Design,52,exposed,stable
+818,Test Environment Engineer,Quality & Testing,52,exposed,stable
+818,MuleSoft Engineer,Specialized & Emerging,52,exposed,stable
+818,Power Platform Developer,Specialized & Emerging,52,exposed,stable
+818,Salesforce CPQ Developer,Specialized & Emerging,52,exposed,stable
+818,Workday Developer,Specialized & Emerging,52,exposed,stable
+830,AS/400 / RPG Developer,Engineering,51,exposed,declining
+830,Android TV Engineer,Engineering,51,exposed,stable
+830,Crystal Engineer,Engineering,51,exposed,declining
+830,D Lang Engineer,Engineering,51,exposed,declining
+830,Deno Engineer,Engineering,51,exposed,stable
+830,HTMX Engineer,Engineering,51,exposed,rising
+830,Nim Engineer,Engineering,51,exposed,declining
+830,Wear OS Engineer,Engineering,51,exposed,stable
+830,Web Components / Lit Engineer,Engineering,51,exposed,stable
+830,Xamarin / .NET MAUI Engineer,Engineering,51,exposed,declining
+830,iPadOS Engineer,Engineering,51,exposed,stable
+830,watchOS Engineer,Engineering,51,exposed,stable
+830,IBM Cloud Engineer,Platform & Infrastructure,51,exposed,declining
+830,Community Manager (Technical),Specialized & Emerging,51,exposed,stable
+830,Twilio Engineer,Specialized & Emerging,51,exposed,stable
+845,Customer Support Engineer,Specialized & Emerging,50,exposed,stable
+846,Data Annotation Engineer,Data & AI,49,exposed,rising
+846,Scikit-learn Specialist,Data & AI,49,exposed,stable
+846,Browser Extension Engineer,Engineering,49,exposed,stable
+846,CSS Architect (Sass/Tailwind),Engineering,49,exposed,stable
+846,Esports Platform Engineer,Engineering,49,exposed,stable
+846,Food Tech Engineer,Engineering,49,exposed,stable
+846,Full-Stack Ruby Engineer,Engineering,49,exposed,declining
+846,JAMstack Engineer,Engineering,49,exposed,stable
+846,JCL Developer,Engineering,49,exposed,declining
+846,Junior Android Engineer,Engineering,49,exposed,stable
+846,Junior iOS Engineer,Engineering,49,exposed,stable
+846,MEAN Stack Engineer,Engineering,49,exposed,declining
+846,Remix Engineer,Engineering,49,exposed,stable
+846,Sinatra / Hanami Engineer,Engineering,49,exposed,declining
+846,Sports Tech Engineer,Engineering,49,exposed,stable
+846,Svelte Engineer,Engineering,49,exposed,rising
+846,Symfony Engineer,Engineering,49,exposed,stable
+846,Tornado Backend Engineer,Engineering,49,exposed,declining
+846,Couchbase Engineer,Platform & Infrastructure,49,exposed,declining
+846,Fly.io / Render Specialist,Platform & Infrastructure,49,exposed,stable
+846,Sysadmin / System Administrator,Platform & Infrastructure,49,exposed,declining
+846,Vertica / Teradata Engineer,Platform & Infrastructure,49,exposed,declining
+846,Windows Sysadmin,Platform & Infrastructure,49,exposed,declining
+846,Apex Developer,Specialized & Emerging,49,exposed,stable
+846,Atlassian Developer (Jira/Confluence),Specialized & Emerging,49,exposed,stable
+846,Microsoft Dynamics Developer,Specialized & Emerging,49,exposed,stable
+846,NetSuite Developer,Specialized & Emerging,49,exposed,stable
+846,Release Train Engineer (SAFe),Specialized & Emerging,49,exposed,declining
+846,SEO Engineer (Technical),Specialized & Emerging,49,exposed,stable
+875,BI Developer,Data & AI,47,exposed,declining
+875,Cohere / Mistral API Engineer,Data & AI,47,exposed,stable
+875,Statistical Programmer (SAS/R),Data & AI,47,exposed,declining
+875,Astro Engineer,Engineering,47,exposed,rising
+875,Game UI Programmer,Engineering,47,exposed,stable
+875,Junior Full-Stack Engineer,Engineering,47,exposed,stable
+875,Localization (l10n) Engineer,Engineering,47,exposed,stable
+875,Vue Engineer,Engineering,47,exposed,stable
+875,IT Operations Engineer,Platform & Infrastructure,47,exposed,stable
+875,M365 / Google Workspace Admin,Platform & Infrastructure,47,exposed,stable
+875,Content Designer / UX Writer,Product & Design,47,exposed,declining
+875,Motion Designer,Product & Design,47,exposed,stable
+875,API Documentation Specialist,Specialized & Emerging,47,exposed,stable
+875,Marketing Automation Engineer,Specialized & Emerging,47,exposed,stable
+875,Mixpanel / Amplitude / Heap Engineer,Specialized & Emerging,47,exposed,stable
+875,Power BI Specialist,Specialized & Emerging,47,exposed,stable
+875,RPA Engineer (UiPath/Power Automate),Specialized & Emerging,47,exposed,stable
+875,Salesforce Marketing Cloud Developer,Specialized & Emerging,47,exposed,stable
+875,Scrum Master / Agile Coach,Specialized & Emerging,47,exposed,declining
+875,Segment / Rudderstack Engineer,Specialized & Emerging,47,exposed,stable
+875,Shopify App Developer,Specialized & Emerging,47,exposed,stable
+875,Technical Writer,Specialized & Emerging,47,exposed,declining
+875,Junior Software Engineer,Engineering,47,exposed,declining
+898,SSIS / SQL Server Integration Engineer,Data & AI,46,exposed,declining
+898,BPM / Workflow Engineer,Engineering,46,exposed,stable
+898,DAO Tooling Engineer,Engineering,46,exposed,declining
+898,PWA Engineer,Engineering,46,exposed,stable
+898,SolidJS Engineer,Engineering,46,exposed,rising
+898,tvOS Engineer,Engineering,46,exposed,stable
+898,Oracle ERP Developer,Specialized & Emerging,46,exposed,declining
+905,Hadoop Engineer,Data & AI,45,exposed,declining
+905,Marketing Data Scientist,Data & AI,45,exposed,stable
+905,Senior UI Designer,Product & Design,45,exposed,declining
+905,Senior QA Automation,Quality & Testing,45,exposed,declining
+905,SOC Analyst (Tier 1),Security,45,exposed,declining
+905,Power Apps Developer,Specialized & Emerging,45,exposed,stable
+905,Salesforce Administrator,Specialized & Emerging,45,exposed,stable
+912,ETL Developer,Data & AI,44,exposed,declining
+912,Growth Analyst,Data & AI,44,exposed,stable
+912,Informatica Engineer,Data & AI,44,exposed,declining
+912,Looker / LookML Developer,Data & AI,44,exposed,stable
+912,Product Analyst,Data & AI,44,exposed,stable
+912,ESB / Service Bus Engineer,Engineering,44,exposed,declining
+912,LAMP Stack Engineer,Engineering,44,exposed,declining
+912,Nuxt Engineer,Engineering,44,exposed,stable
+912,Restaurant / Hospitality Tech Engineer,Engineering,44,exposed,stable
+912,Tizen Engineer,Engineering,44,exposed,declining
+912,DigitalOcean Specialist,Platform & Infrastructure,44,exposed,stable
+912,Brand Designer,Product & Design,44,exposed,stable
+912,Visual Designer,Product & Design,44,exposed,declining
+912,Cypress Engineer,Quality & Testing,44,exposed,stable
+912,Mobile QA Engineer,Quality & Testing,44,exposed,stable
+912,Boomi Engineer,Specialized & Emerging,44,exposed,stable
+912,Conversion Rate Optimization Engineer,Specialized & Emerging,44,exposed,stable
+912,Magento / Adobe Commerce Developer,Specialized & Emerging,44,exposed,declining
+912,SAP Fiori / UI5 Developer,Specialized & Emerging,44,exposed,stable
+912,Square / Block Integration Engineer,Specialized & Emerging,44,exposed,stable
+932,Junior Frontend Engineer,Engineering,43,exposed,declining
+933,Fivetran / Stitch Specialist,Data & AI,42,exposed,stable
+933,Admin Panel Engineer,Engineering,42,exposed,stable
+933,Fitness / Wellness Tech Engineer,Engineering,42,exposed,stable
+933,Ionic / Cordova Engineer,Engineering,42,exposed,declining
+933,Perl Engineer,Engineering,42,exposed,declining
+933,Collaboration Tools Engineer (Slack/Teams),Platform & Infrastructure,42,exposed,stable
+933,Heroku Specialist,Platform & Infrastructure,42,exposed,declining
+933,Game QA Lead,Quality & Testing,42,exposed,stable
+933,Localization QA Engineer,Quality & Testing,42,exposed,stable
+933,BigCommerce Developer,Specialized & Emerging,42,exposed,stable
+933,Low-code Developer,Specialized & Emerging,42,exposed,stable
+933,SendGrid / Mailgun Engineer,Specialized & Emerging,42,exposed,stable
+933,Tray.io / iPaaS Engineer,Specialized & Emerging,42,exposed,stable
+933,Workato Engineer,Specialized & Emerging,42,exposed,stable
+933,Web Developer,Engineering,42,exposed,declining
+948,Talend Engineer,Data & AI,41,exposed,declining
+948,Ember.js Engineer,Engineering,41,exposed,declining
+948,Stencil Engineer,Engineering,41,exposed,stable
+948,IT Asset Manager,Platform & Infrastructure,41,exposed,stable
+948,Citizen Developer Coach,Specialized & Emerging,41,exposed,stable
+948,Make.com / n8n Specialist,Specialized & Emerging,41,exposed,rising
+954,Power BI Developer,Data & AI,40,at_risk,stable
+954,Senior Data Analyst,Data & AI,40,at_risk,declining
+954,Tableau Developer,Data & AI,40,at_risk,declining
+954,IT Support Engineer,Platform & Infrastructure,40,at_risk,declining
+954,UI Designer,Product & Design,40,at_risk,declining
+954,QA Automation,Quality & Testing,40,at_risk,declining
+954,UI / Web Test Engineer,Quality & Testing,40,at_risk,declining
+954,Tier 2 Technical Support Engineer,Specialized & Emerging,40,at_risk,declining
+954,WordPress Developer,Specialized & Emerging,40,at_risk,stable
+963,Business Analyst,Data & AI,39,at_risk,declining
+963,Marketing Analyst,Data & AI,39,at_risk,declining
+963,Childcare Tech Engineer,Engineering,39,at_risk,stable
+963,NFT Platform Engineer,Engineering,39,at_risk,declining
+963,Pet Tech Engineer,Engineering,39,at_risk,stable
+963,Preact Engineer,Engineering,39,at_risk,stable
+963,Appium Engineer,Quality & Testing,39,at_risk,stable
+963,SEM / Paid Search Engineer,Specialized & Emerging,39,at_risk,stable
+963,SharePoint Developer,Specialized & Emerging,39,at_risk,declining
+972,BI Analyst,Data & AI,37,at_risk,declining
+972,HTML / CSS Specialist,Engineering,37,at_risk,declining
+972,Marketing Designer,Product & Design,37,at_risk,declining
+972,Drupal Developer,Specialized & Emerging,37,at_risk,declining
+972,Freshworks Developer,Specialized & Emerging,37,at_risk,stable
+972,HubSpot Developer,Specialized & Emerging,37,at_risk,stable
+972,Intercom / Help Desk Developer,Specialized & Emerging,37,at_risk,stable
+972,Marketo Developer,Specialized & Emerging,37,at_risk,stable
+972,WooCommerce Developer,Specialized & Emerging,37,at_risk,stable
+972,Zapier Specialist,Specialized & Emerging,37,at_risk,stable
+972,Zendesk Developer,Specialized & Emerging,37,at_risk,stable
+972,Programmer,Engineering,37,at_risk,declining
+984,Backbone.js Maintainer,Engineering,36,at_risk,declining
+984,CodeIgniter Engineer,Engineering,36,at_risk,declining
+984,Pascal / Delphi Engineer,Engineering,36,at_risk,declining
+987,Qlik Developer,Data & AI,35,at_risk,declining
+987,Help Desk Tier 2,Platform & Infrastructure,35,at_risk,declining
+987,Selenium Engineer,Quality & Testing,35,at_risk,declining
+987,No-code Developer / Maker,Specialized & Emerging,35,at_risk,stable
+991,Sigma / ThoughtSpot Developer,Data & AI,34,at_risk,stable
+991,Alpine.js Engineer,Engineering,34,at_risk,stable
+991,KaiOS Engineer,Engineering,34,at_risk,declining
+991,PowerBuilder Maintainer,Engineering,34,at_risk,declining
+991,Visual Basic / VB.NET Maintainer,Engineering,34,at_risk,declining
+996,Data Analyst,Data & AI,33,at_risk,declining
+997,Pardot Developer,Specialized & Emerging,32,at_risk,declining
+998,QA Manual Lead,Quality & Testing,31,at_risk,declining
+999,MicroStrategy Developer,Data & AI,30,at_risk,declining
+999,Game QA Tester,Engineering,30,at_risk,declining
+999,Desktop Support,Platform & Infrastructure,30,at_risk,declining
+1002,Domo Developer,Data & AI,29,at_risk,declining
+1002,Mode Analytics Developer,Data & AI,29,at_risk,stable
+1002,ColdFusion Maintainer,Engineering,29,at_risk,declining
+1002,jQuery Maintainer,Engineering,29,at_risk,declining
+1006,Prompt Engineer,Data & AI,27,at_risk,declining
+1007,Help Desk Tier 1,Platform & Infrastructure,25,at_risk,declining
+1008,QA Manual,Quality & Testing,20,at_risk,declining
