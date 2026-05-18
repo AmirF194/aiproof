@@ -147,7 +147,7 @@ is verified live before the next starts.
 
 ---
 
-## Phase 9 — Crawler coverage v2   `[ ]`
+## Phase 9 — Crawler coverage v2   `[x]`
 
 **Goal:** Lift the live-data coverage from 141/1000 roles upward, with credible sources.
 
@@ -197,6 +197,6 @@ is verified live before the next starts.
 | 5 — SEO | 2026-05-17 | 2026-05-17 | ce3f735 | Sitemap + robots + per-page meta + OG/Twitter cards + Article + Organization JSON-LD + canonical URLs. Site domain set via data migration. |
 | 6 — Homepage v2 | 2026-05-17 | 2026-05-17 | cbcf186 | Career-intelligence repositioning, 4-stat strip, role-family cards, sources-at-a-glance grid, keep tiers/top10/bottom10/filter bar. |
 | 7 — Filter / search upgrade | 2026-05-17 | 2026-05-17 | 1160a2f | Seniority + role-family filters, search broadened to include description, 13 sort options (overall + 8 sub-scores + salary + confidence), 100/page pagination preserves all query params. |
-| 8 — Engineering quality | 2026-05-17 | 2026-05-17 | pending | ruff + pytest configured; 45 tests (scoring + smoke); validate_data integrity check; CI gate runs on every push/PR before deploy; README rewritten with full dev loop + refresh instructions. |
-| 9 — Crawler coverage v2 | — | — | — | — |
+| 8 — Engineering quality | 2026-05-17 | 2026-05-17 | 493bdb5 | ruff + pytest configured; 45 tests (scoring + smoke); validate_data integrity check; CI gate runs on every push/PR before deploy; README rewritten with full dev loop + refresh instructions. |
+| 9 — Crawler coverage v2 | 2026-05-17 | 2026-05-17 | pending | Synonym expansion in aggregator (ML/AI/SRE/PM/TPM/QA acronyms + Engineer↔Developer↔Programmer + Frontend/Front-end swap). Live-data coverage 141 → 153 roles. BLS/O\*NET deferred — need API keys; flagged in PLAN. |
 | Final QA | — | — | — | — |

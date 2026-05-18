@@ -65,28 +65,94 @@ def _slugify(s: str) -> str:
     return s.replace("/", "-")[:220].strip("-")
 
 
+# Acronym <-> expansion synonyms applied bidirectionally to every role name.
+# Each entry is (short, long). When a role name contains `short`, we also
+# emit a variant with `long` substituted, and vice-versa. Order matters:
+# longer forms first so substitutions are stable.
+_SYNONYMS: list[tuple[str, str]] = [
+    ("Machine Learning", "ML"),
+    ("Artificial Intelligence", "AI"),
+    ("Site Reliability Engineer", "SRE"),
+    ("Database Administrator", "DBA"),
+    ("Product Manager", "PM"),
+    ("Technical Program Manager", "TPM"),
+    ("Quality Assurance", "QA"),
+    ("Information Security", "InfoSec"),
+    ("User Experience", "UX"),
+    ("User Interface", "UI"),
+    ("Natural Language Processing", "NLP"),
+    ("Computer Vision", "CV"),
+]
+
+
+_ROLE_NOUN_SWAPS: list[tuple[str, str]] = [
+    ("Engineer", "Developer"),
+    ("Engineer", "Programmer"),
+    ("Developer", "Programmer"),
+    ("Front-end", "Frontend"),
+    ("Back-end", "Backend"),
+]
+
+
+def _expand_synonyms(name: str) -> list[str]:
+    """Return a list of variants of `name` with synonyms applied.
+
+    Two passes:
+      1. Acronym/expansion dictionary (ML ↔ Machine Learning etc.) applied in
+         both directions.
+      2. Common role-noun swaps (Engineer/Developer/Programmer, Front-end/Frontend).
+
+    Avoids stripping seniority prefixes — that risks over-attribution between
+    Senior/Mid/Staff variants of the same base role.
+    """
+    out: set[str] = {name}
+    # Pass 1: acronym dictionary
+    for long, short in _SYNONYMS:
+        long_re = re.compile(rf"\b{re.escape(long)}\b", re.IGNORECASE)
+        short_re = re.compile(rf"\b{re.escape(short)}\b", re.IGNORECASE)
+        for v in list(out):
+            if long_re.search(v):
+                out.add(long_re.sub(short, v))
+            if short_re.search(v):
+                out.add(short_re.sub(long, v))
+    # Pass 2: role-noun swaps — applied symmetrically
+    for a, b in _ROLE_NOUN_SWAPS:
+        a_re = re.compile(rf"\b{re.escape(a)}\b", re.IGNORECASE)
+        b_re = re.compile(rf"\b{re.escape(b)}\b", re.IGNORECASE)
+        for v in list(out):
+            if a_re.search(v):
+                out.add(a_re.sub(b, v))
+            if b_re.search(v):
+                out.add(b_re.sub(a, v))
+    return list(out)
+
+
 def _matcher(role_names: list[str]) -> list[tuple[re.Pattern, str]]:
     """Build word-boundary regexes per role, longest first.
 
-    Only the full role name is matched as a phrase. Splitting on "/" was
-    tried and rejected — it surfaced over-generic sub-variants like
-    "Engineer" that captured every posting in the corpus. Roles with "/"
-    in their name (e.g. "VP of AI / ML") only match when a posting uses
-    the exact phrase, which is the conservative correct behaviour.
+    Each role expands to its canonical name plus any synonym variants
+    (e.g. "Senior Machine Learning Engineer" → also "Senior ML Engineer").
+    Longest-pattern-wins per posting ensures specific titles outrank generic
+    abbreviations. Roles shorter than 10 chars are dropped to avoid spurious
+    matches on titles like "Engineer".
     """
-    seen = set()
-    by_len = sorted(role_names, key=lambda r: (-len(r), r))
-    matchers = []
-    for name in by_len:
+    seen: set[str] = set()
+    rows: list[tuple[str, str]] = []  # (pattern_string, canonical_role_name)
+    for name in role_names:
         clean = name.strip()
-        if len(clean) < 10:  # filter generic 1-word titles like "Engineer", "Developer"
+        if len(clean) < 10:
             continue
-        if clean.lower() in seen:
-            continue
-        seen.add(clean.lower())
-        pat = re.compile(rf"\b{re.escape(clean)}\b", re.IGNORECASE)
-        matchers.append((pat, clean))
-    return matchers
+        for variant in _expand_synonyms(clean):
+            if len(variant) < 10:
+                continue
+            key = variant.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            rows.append((variant, clean))
+
+    rows.sort(key=lambda r: -len(r[0]))
+    return [(re.compile(rf"\b{re.escape(v)}\b", re.IGNORECASE), canonical) for v, canonical in rows]
 
 
 def _match_role(text: str, matchers: list[tuple[re.Pattern, str]]) -> str | None:
