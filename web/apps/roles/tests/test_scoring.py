@@ -107,3 +107,95 @@ def test_why_resistant_picks_top_two():
     })
     assert "automation resistance (10/10)" in blurb
     assert "skill depth (9/10)" in blurb
+
+
+# --- Role enrichment templates ------------------------------------------
+
+def test_role_overview_prefers_family_over_category():
+    # Backend has its own entry — should be picked over generic Engineering.
+    backend = scoring.role_overview("Backend", "Engineering", "Senior")
+    engineering = scoring.role_overview("Engineering", "Engineering", "Senior")
+    assert "Backend engineers" in backend
+    assert backend != engineering
+
+
+def test_role_overview_falls_back_to_category_then_engineering():
+    # Unknown family + known category → category entry wins.
+    out = scoring.role_overview("NotAFamily", "Engineering Leadership", "Director")
+    assert "leadership" in out.lower()
+    # Unknown family + unknown category → Engineering fallback (never empty).
+    fallback = scoring.role_overview("", "", "Mid")
+    assert fallback
+    assert "engineers" in fallback.lower()
+
+
+def test_role_overview_appends_seniority_scope():
+    out_junior = scoring.role_overview("Backend", "Engineering", "Junior")
+    out_staff = scoring.role_overview("Backend", "Engineering", "Staff")
+    assert "Junior" in out_junior
+    assert "Staff" in out_staff
+    assert out_junior != out_staff
+
+
+def test_role_responsibilities_returns_a_list_with_content():
+    items = scoring.role_responsibilities("Backend", "Engineering")
+    assert isinstance(items, list)
+    assert len(items) >= 4
+    assert all(isinstance(s, str) and s.strip() for s in items)
+
+
+def test_role_responsibilities_returns_a_fresh_list():
+    # Should not mutate the internal dict if a caller modifies the result.
+    a = scoring.role_responsibilities("Backend", "Engineering")
+    a.append("test mutation")
+    b = scoring.role_responsibilities("Backend", "Engineering")
+    assert "test mutation" not in b
+
+
+def test_role_typical_tools_returns_list_with_content():
+    tools = scoring.role_typical_tools("Frontend", "Engineering")
+    assert "TypeScript" in tools
+    assert len(tools) >= 4
+
+
+def test_role_day_to_day_and_ai_impact_are_nonempty():
+    assert scoring.role_day_to_day("Backend", "Engineering")
+    assert scoring.role_ai_impact("Backend", "Engineering")
+    # Even on full fallback (no family, no category match), we still get content.
+    assert scoring.role_day_to_day("", "")
+    assert scoring.role_ai_impact("", "")
+
+
+@pytest.mark.parametrize("family", [
+    "Backend", "Frontend", "Mobile", "AI & ML", "Data", "Security",
+    "DevOps & SRE", "Cloud", "QA & Testing", "Product", "Design",
+    "Hardware", "Game", "Blockchain",
+])
+def test_all_families_have_complete_enrichment(family):
+    """Every family declared in _FAMILY_PATTERNS must have all five enrichment fields."""
+    assert scoring.role_overview(family, "Engineering", "Mid")
+    assert scoring.role_responsibilities(family, "Engineering")
+    assert scoring.role_typical_tools(family, "Engineering")
+    assert scoring.role_day_to_day(family, "Engineering")
+    assert scoring.role_ai_impact(family, "Engineering")
+
+
+@pytest.mark.parametrize("category", [
+    "Engineering", "Engineering Leadership", "Data & AI",
+    "Platform & Infrastructure", "Product & Design", "Quality & Testing",
+    "Security", "Specialized & Emerging",
+])
+def test_all_categories_have_complete_enrichment(category):
+    """Every category in the dataset must have a fallback enrichment entry."""
+    assert scoring.role_overview("", category, "Mid")
+    assert scoring.role_responsibilities("", category)
+    assert scoring.role_typical_tools("", category)
+    assert scoring.role_day_to_day("", category)
+    assert scoring.role_ai_impact("", category)
+
+
+def test_role_overview_is_deterministic():
+    """Same inputs → same outputs across calls (Rule #2 invariant)."""
+    a = scoring.role_overview("Backend", "Engineering", "Senior")
+    b = scoring.role_overview("Backend", "Engineering", "Senior")
+    assert a == b

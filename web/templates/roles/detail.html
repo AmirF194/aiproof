@@ -99,6 +99,60 @@
     </div>
   </div>
 
+  {# --- Role enrichment: deterministic per-family content --- #}
+  {% if enrichment %}
+    <div class="mt-10">
+      <div class="flex items-baseline justify-between">
+        <h2 class="text-sm uppercase tracking-wider text-slate-500 font-semibold">What this role does</h2>
+        <a href="{% url 'reports:methodology' %}#role-enrichment" class="text-xs text-slate-400 hover:text-slate-700">How this section is generated →</a>
+      </div>
+      <p class="mt-3 text-slate-700 max-w-3xl leading-relaxed">{{ enrichment.overview }}</p>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2">
+        {% if enrichment.responsibilities %}
+          <div>
+            <h3 class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Typical responsibilities</h3>
+            <ul class="mt-2 space-y-1.5 text-sm text-slate-700">
+              {% for r in enrichment.responsibilities %}
+                <li class="flex gap-2"><span class="text-slate-400 select-none">•</span><span>{{ r }}</span></li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+        {% if enrichment.tools %}
+          <div>
+            <h3 class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Common tools &amp; technologies</h3>
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              {% for t in enrichment.tools %}
+                <span class="text-xs px-2 py-0.5 rounded-md border border-slate-200 bg-slate-50 text-slate-700">{{ t }}</span>
+              {% endfor %}
+            </div>
+            <p class="mt-3 text-xs text-slate-400">Indicative stack for this role family; specific companies will use a subset or substitutes.</p>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        {% if enrichment.day_to_day %}
+          <div class="rounded-md border border-slate-200 bg-white p-4">
+            <h3 class="text-xs uppercase tracking-wider text-slate-500 font-semibold">A typical day</h3>
+            <p class="mt-2 text-sm text-slate-700 leading-relaxed">{{ enrichment.day_to_day }}</p>
+          </div>
+        {% endif %}
+        {% if enrichment.ai_impact %}
+          <div class="rounded-md border border-slate-200 bg-white p-4">
+            <h3 class="text-xs uppercase tracking-wider text-slate-500 font-semibold">How AI is changing this work</h3>
+            <p class="mt-2 text-sm text-slate-700 leading-relaxed">{{ enrichment.ai_impact }}</p>
+          </div>
+        {% endif %}
+      </div>
+
+      <p class="mt-3 text-xs text-slate-400 italic">
+        This section is templated by role family ({{ role.role_family|default:role.category.name }}) and seniority ({{ role.seniority_level|default:'Mid' }}) — same wording for any role in the same bucket, no LLM-generated per-role prose. The numeric score above is what's individual to this role.
+      </p>
+    </div>
+  {% endif %}
+
   {# --- AI-resistant / AI-exposed narrative panels --- #}
   <div class="mt-8 grid gap-4 sm:grid-cols-2">
     <div class="rounded-lg border border-emerald-200 bg-emerald-50/40 p-5">

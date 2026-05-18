@@ -247,8 +247,17 @@ Title prefix is matched against an ordered list of patterns (`Chief|CTO|CIO|CISO
 
 A sub-grouping inside the parent category — derived from the title by keyword match (AI & ML, Backend, Frontend, Mobile, Data, DevOps & SRE, Cloud, Security, QA & Testing, Product, Design, Hardware, Game, Blockchain). Falls back to the parent category name when no keyword matches. Used for filtering and breadcrumbs; never enters the score itself.
 
+### Role enrichment
+
+Every role detail page renders a **What this role does** section — a short overview, a list of typical responsibilities, common tools and technologies, a "typical day" sketch, and a short note on how AI is changing the work. These are *not* researched per role; they are deterministic templates keyed by `(role_family, category, seniority)` and live in [web/apps/roles/scoring.py](web/apps/roles/scoring.py) (`role_overview`, `role_responsibilities`, `role_typical_tools`, `role_day_to_day`, `role_ai_impact`).
+
+The selection rule is identical to the existing narrative templates: pick the family if a fixed entry exists, otherwise the category, otherwise a generic Engineering fallback. Two roles with the same family/category/seniority therefore render identical enrichment, and the detail page discloses this on every render so users do not mistake the prose for per-role research. The numeric score and the sub-score breakdown above the enrichment section remain individual to each role.
+
+This satisfies the project's hard rule against LLM-imagined per-role prose ([CLAUDE.md](CLAUDE.md), Rule #2) — the templates are written once, audited in source, and selected by attributes.
+
 ### Honest properties of the extended schema
 
 - **Deterministic.** Same inputs, same outputs. The full formula set is auditable in [scoring.py](web/apps/roles/scoring.py) and tested in the data validation script (Phase 8).
 - **Conservative.** All formulas are bounded to 0–10, with category coefficients calibrated so the median role sits near 5/10.
 - **Honestly limited.** The four derived dimensions are *transforms* of the original four axes, not independent observations. They are useful for showing the score from multiple angles, not for triangulating an independent ground truth.
+- **Templated enrichment, not researched prose.** The "What this role does / typical day / AI impact" copy is one template per family + seniority — useful context for users, not per-role analysis.

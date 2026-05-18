@@ -205,6 +205,19 @@ def role_detail(request, slug):
         ("Regulatory relevance",           role.regulatory_relevance_score or 0,     "#6366f1"),
     ]
 
+    # Deterministic role enrichment — selected by (role_family, category, seniority);
+    # see scoring.py and METHODOLOGY.md#role-enrichment.
+    family = role.role_family or ""
+    category_name = role.category.name
+    seniority = role.seniority_level or "Mid"
+    enrichment = {
+        "overview":          scoring.role_overview(family, category_name, seniority),
+        "responsibilities":  scoring.role_responsibilities(family, category_name),
+        "tools":             scoring.role_typical_tools(family, category_name),
+        "day_to_day":        scoring.role_day_to_day(family, category_name),
+        "ai_impact":         scoring.role_ai_impact(family, category_name),
+    }
+
     page_title = (
         f"{role.role} — AI-proof score {role.score}/100 ({role.tier_label}) · AIProof"
     )
@@ -225,6 +238,7 @@ def role_detail(request, slug):
             "adjacent": adjacent,
             "peers": peers,
             "breakdown": breakdown,
+            "enrichment": enrichment,
             "tier_blurb": TIER_BLURBS.get(role.tier, ""),
             "page_title": page_title,
             "page_description": page_description,
