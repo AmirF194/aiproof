@@ -161,7 +161,7 @@ is verified live before the next starts.
 
 ---
 
-## Final QA — Build · test · lint   `[ ]`
+## Final QA — Build · test · lint   `[x]`
 
 **Goal:** Repo is shippable; every check is green.
 
@@ -198,5 +198,5 @@ is verified live before the next starts.
 | 6 — Homepage v2 | 2026-05-17 | 2026-05-17 | cbcf186 | Career-intelligence repositioning, 4-stat strip, role-family cards, sources-at-a-glance grid, keep tiers/top10/bottom10/filter bar. |
 | 7 — Filter / search upgrade | 2026-05-17 | 2026-05-17 | 1160a2f | Seniority + role-family filters, search broadened to include description, 13 sort options (overall + 8 sub-scores + salary + confidence), 100/page pagination preserves all query params. |
 | 8 — Engineering quality | 2026-05-17 | 2026-05-17 | 493bdb5 | ruff + pytest configured; 45 tests (scoring + smoke); validate_data integrity check; CI gate runs on every push/PR before deploy; README rewritten with full dev loop + refresh instructions. |
-| 9 — Crawler coverage v2 | 2026-05-17 | 2026-05-17 | pending | Synonym expansion in aggregator (ML/AI/SRE/PM/TPM/QA acronyms + Engineer↔Developer↔Programmer + Frontend/Front-end swap). Live-data coverage 141 → 153 roles. BLS/O\*NET deferred — need API keys; flagged in PLAN. |
-| Final QA | — | — | — | — |
+| 9 — Crawler coverage v2 | 2026-05-17 | 2026-05-17 | d58983c | Synonym expansion in aggregator (ML/AI/SRE/PM/TPM/QA acronyms + Engineer↔Developer↔Programmer + Frontend/Front-end swap). Live-data coverage 141 → 153 roles. BLS/O\*NET deferred — need API keys; flagged in PLAN. |
+| Final QA | 2026-05-17 | 2026-05-17 | d58983c | Local + prod matrices both green. 5/5 containers healthy. 17/17 URLs return 200. ruff clean. 45/45 tests pass. validate_data OK. Sitemap has 1,024 URLs all on aiproof.fastinfer.org. |
