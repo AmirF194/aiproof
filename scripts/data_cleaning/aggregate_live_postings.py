@@ -168,15 +168,24 @@ def _parse_dt(value: str) -> _dt.datetime | None:
     if not value:
         return None
     value = value.strip()
-    for fmt in ("%Y-%m-%dT%H:%M:%S.%fZ", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%dT%H:%M:%S"):
+    for fmt in (
+        "%Y-%m-%dT%H:%M:%S.%fZ",
+        "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%dT%H:%M:%S.%f",
+        "%Y-%m-%dT%H:%M:%S",
+        "%d/%m/%Y",
+    ):
         try:
             return _dt.datetime.strptime(value, fmt).replace(tzinfo=_dt.timezone.utc)
         except ValueError:
             continue
     try:
-        return _dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        parsed = _dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
     except ValueError:
         return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=_dt.timezone.utc)
+    return parsed
 
 
 def _iter_postings():
