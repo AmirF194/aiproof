@@ -1,35 +1,35 @@
-"""O*NET Web Services crawler.
+"""O*NET Web Services crawler (V2 API).
 
 O*NET is the U.S. Department of Labor's authoritative occupational dataset:
-skills, abilities, work activities, knowledge, and automation susceptibility
-per occupation. Free after registration at https://services.onetcenter.org/.
+skills, abilities, work activities, knowledge, and tasks per occupation.
+Free after registration at https://services.onetcenter.org/.
 
-Required environment variables (set in /opt/aiproof/.env on prod):
-    ONET_USER   — username from the O*NET developer portal
-    ONET_PASS   — paired password
+V2 auth: single API key in an `X-API-Key` header against
+`https://api-v2.onetcenter.org/`. (The legacy `services.onetcenter.org/ws/`
+host with HTTP Basic Auth is no longer accepted for new accounts.)
 
-We pull the same SOC codes the BLS crawler uses, and request the four
-"work-context" and "skill" summaries that feed our human_judgment_score
-and physical_world_dependency_score derivations.
+Required environment variable (set in /opt/aiproof/.env on prod):
+    ONET_API_KEY   — API key from My Account page on services.onetcenter.org
+                     (falls back to ONET_PASS for backward compat)
 
 Output: data/raw/onet_summaries.json — keyed by SOC code
 """
 from __future__ import annotations
 
-import base64
 import json
 import os
 
 from _common import RAW, http_get
 
 OUT = RAW / "onet_summaries.json"
+ENDPOINT = "https://api-v2.onetcenter.org/online/occupations/{soc}"
 
 TECH_SOC: tuple[str, ...] = (
     "15-1252.00",   # Software Developers
     "15-2051.00",   # Data Scientists
     "15-1212.00",   # Information Security Analysts
     "15-1241.00",   # Computer Network Architects
-    "15-1245.00",   # Database Administrators
+    "15-1242.00",   # Database Administrators (was 15-1245 pre-2018 SOC)
     "15-1244.00",   # Network & Systems Administrators
     "15-1211.00",   # Computer Systems Analysts
     "15-1254.00",   # Web Developers
@@ -39,17 +39,12 @@ TECH_SOC: tuple[str, ...] = (
 )
 
 
-def _basic_auth(user: str, password: str) -> str:
-    return "Basic " + base64.b64encode(f"{user}:{password}".encode()).decode()
-
-
-def _fetch_occupation(soc: str, auth: str) -> dict | None:
-    base = f"https://services.onetcenter.org/ws/online/occupations/{soc}/summary"
+def _fetch_occupation(soc: str, api_key: str) -> dict | None:
     raw = http_get(
-        base,
+        ENDPOINT.format(soc=soc),
         timeout=20.0,
         headers={
-            "Authorization": auth,
+            "X-API-Key": api_key,
             "Accept": "application/json",
         },
     )
@@ -62,16 +57,14 @@ def _fetch_occupation(soc: str, auth: str) -> dict | None:
 
 
 def collect() -> int:
-    user = os.environ.get("ONET_USER", "").strip()
-    password = os.environ.get("ONET_PASS", "").strip()
-    if not (user and password):
-        print("onet_api: ONET_USER / ONET_PASS not set — skipping.")
+    api_key = (os.environ.get("ONET_API_KEY") or os.environ.get("ONET_PASS") or "").strip()
+    if not api_key:
+        print("onet_api: ONET_API_KEY not set — skipping.")
         return 0
 
-    auth = _basic_auth(user, password)
     out: dict[str, dict] = {}
     for soc in TECH_SOC:
-        data = _fetch_occupation(soc, auth)
+        data = _fetch_occupation(soc, api_key)
         if data:
             out[soc] = data
 
