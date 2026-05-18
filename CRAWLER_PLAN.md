@@ -337,10 +337,10 @@ Update when each phase ships.
 
 | Phase | Started | Shipped | Commit | Notes |
 | --- | --- | --- | --- | --- |
-| 10A — Infrastructure | — | — | — | — |
-| 10B — ATS expansion | — | — | — | — |
-| 10C — Free-tier APIs | — | — | — | — |
-| 10D — Gov open data | — | — | — | — |
-| 10E — RapidAPI aggregators | — | — | — | — |
-| 10F — Annual snapshot automation | — | — | — | — |
-| 10G — Observability | — | — | — | — |
+| 10A — Infrastructure | — | deferred | — | RawPosting model + token-bucket rate-limiter. Deferred — current per-source CSV pattern still fits 15k rows/run. Revisit at 50k+ |
+| 10B — ATS expansion (Tier 1) | 2026-05-17 | 2026-05-17 | pending | Added Ashby (~2,030), SmartRecruiters (~5,074), WeWorkRemotely (278), Working Nomads (37). Total Tier 1 lift: +7,419 postings/week. |
+| 10C — Free-tier APIs (Tier 2) | 2026-05-17 | 2026-05-17 | pending | Built USAJobs, Adzuna, Reed UK, O\*NET, BLS OEWS crawlers with graceful env-var fallback. BLS works key-less (25/day quota). Others activate when keys are set in `.env`. |
+| 10D — Gov open data (Tier 4) | 2026-05-17 | 2026-05-17 | pending | Canada Job Bank live HTML crawler — 135 postings/run across 13 tech keywords, 5-second crawl-delay honoured. EURES and OECD deferred. |
+| 10E — RapidAPI aggregators (Tier 3) | — | skipped per user request | — | User asked to skip Tier 3. |
+| 10F — Annual snapshot poller (Tier 5) | 2026-05-17 | 2026-05-17 | pending | `annual_snapshots.py` polls SO Survey / Octoverse / ISC2 / WEF publisher pages and emits a status JSON when a newer release ships. No auto-ingest. |
+| 10G — Observability | — | deferred | — | Crawl-status admin page + Slack alerts on 3-consecutive-failures. Revisit. |

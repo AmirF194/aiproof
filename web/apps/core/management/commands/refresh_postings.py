@@ -23,11 +23,26 @@ from django.core.management import call_command
 from django.core.management.base import BaseCommand
 
 CRAWLERS = (
+    # --- Tier 1 — free, no auth (always runs) ---
     "hn_who_is_hiring",
     "greenhouse_ats",
     "lever_ats",
     "themuse_api",
     "remotive_api",
+    "ashby_ats",
+    "smartrecruiters_ats",
+    "weworkremotely_rss",
+    "workingnomads_rss",
+    # --- Tier 4 — government open data (allowed crawl) ---
+    "canada_jobbank",
+    # --- Tier 2 — free with email/key registration (skip gracefully if missing) ---
+    "usajobs_api",
+    "adzuna_api",
+    "reed_uk_api",
+    "bls_oews_api",
+    "onet_api",
+    # --- Tier 5 — annual snapshot poller (status check only) ---
+    "annual_snapshots",
 )
 
 

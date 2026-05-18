@@ -15,4 +15,15 @@ data/raw/greenhouse_postings.csv
 data/raw/lever_postings.csv
 data/raw/themuse_postings.csv
 data/raw/remotive_postings.csv
+data/raw/ashby_postings.csv
+data/raw/smartrecruiters_postings.csv
+data/raw/weworkremotely_postings.csv
+data/raw/workingnomads_postings.csv
+data/raw/canada_jobbank_postings.csv
+data/raw/usajobs_postings.csv
+data/raw/adzuna_postings.csv
+data/raw/reed_uk_postings.csv
+data/raw/bls_oews_live.json
+data/raw/onet_summaries.json
+data/raw/annual_snapshots_status.json
 data/processed/role_postings_live.csv

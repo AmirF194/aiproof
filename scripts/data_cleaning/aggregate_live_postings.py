@@ -247,6 +247,83 @@ def _iter_postings():
                 "remotive",
             )
 
+    # --- Tier 1 additions ---
+    ashby = RAW / "ashby_postings.csv"
+    if ashby.exists():
+        for row in read_csv(ashby):
+            text = row.get("title", "")
+            dt = _parse_dt(row.get("updated_at", ""))
+            yield (
+                text,
+                dt,
+                bool(int(row.get("mentions_ai", "0") or 0)),
+                bool(int(row.get("remote", "0") or 0)),
+                "ashby",
+            )
+
+    sr = RAW / "smartrecruiters_postings.csv"
+    if sr.exists():
+        for row in read_csv(sr):
+            text = row.get("title", "")
+            dt = _parse_dt(row.get("release_date", ""))
+            yield (
+                text,
+                dt,
+                bool(int(row.get("mentions_ai", "0") or 0)),
+                bool(int(row.get("remote", "0") or 0)),
+                "smartrecruiters",
+            )
+
+    wwr = RAW / "weworkremotely_postings.csv"
+    if wwr.exists():
+        for row in read_csv(wwr):
+            text = row.get("title", "")
+            yield (
+                text,
+                None,
+                bool(int(row.get("mentions_ai", "0") or 0)),
+                True,  # WWR is remote-only by definition
+                "weworkremotely",
+            )
+
+    wn = RAW / "workingnomads_postings.csv"
+    if wn.exists():
+        for row in read_csv(wn):
+            text = row.get("title", "")
+            dt = _parse_dt(row.get("publication_date", ""))
+            yield (text, dt, bool(int(row.get("mentions_ai", "0") or 0)), True, "workingnomads")
+
+    # --- Tier 4 — Canada Job Bank ---
+    cjb = RAW / "canada_jobbank_postings.csv"
+    if cjb.exists():
+        for row in read_csv(cjb):
+            text = row.get("title", "")
+            yield (
+                text,
+                None,
+                bool(int(row.get("mentions_ai", "0") or 0)),
+                False,
+                "canada_jobbank",
+            )
+
+    # --- Tier 2 — only produce rows when the key-gated CSVs are present ---
+    for path, source in (
+        (RAW / "adzuna_postings.csv", "adzuna"),
+        (RAW / "usajobs_postings.csv", "usajobs"),
+        (RAW / "reed_uk_postings.csv", "reed_uk"),
+    ):
+        if path.exists():
+            for row in read_csv(path):
+                text = row.get("title", "")
+                dt = _parse_dt(row.get("publication_date", ""))
+                yield (
+                    text,
+                    dt,
+                    bool(int(row.get("mentions_ai", "0") or 0)),
+                    bool(int(row.get("remote", "0") or 0)),
+                    source,
+                )
+
 
 def aggregate() -> int:
     if not ROLES_CSV.exists():

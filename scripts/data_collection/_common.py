@@ -18,18 +18,27 @@ def read_json(path: Path) -> Any:
     return json.loads(path.read_text())
 
 
-def http_get(url: str, timeout: float = 10.0) -> str | None:
+def http_get(
+    url: str,
+    timeout: float = 10.0,
+    headers: dict[str, str] | None = None,
+) -> str | None:
     """Best-effort HTTP fetch using only the stdlib. Returns None on failure.
 
     Returns None when the network is unavailable, the host blocks the UA, or
     the request times out — pipelines downstream must fall back to cache.
+
+    Caller-supplied `headers` override the defaults; the default User-Agent
+    identifies us as aiproof-research with a contact URL.
     """
+    default_headers = {
+        "User-Agent": "aiproof-research/1.0 (+https://aiproof.fastinfer.org)",
+    }
+    if headers:
+        default_headers.update(headers)
     try:
         import urllib.request
-        req = urllib.request.Request(
-            url,
-            headers={"User-Agent": "tech-jobs-research/1.0 (+https://github.com/fastinfer/tech-jobs)"},
-        )
+        req = urllib.request.Request(url, headers=default_headers)
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read().decode("utf-8", errors="replace")
     except Exception:
