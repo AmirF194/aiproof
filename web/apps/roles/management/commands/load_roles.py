@@ -6,8 +6,8 @@ from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 from django.utils.text import slugify
 
-from apps.roles.models import Category, Role, RoleMetric, TierSummary
 from apps.roles import scoring
+from apps.roles.models import Category, Role, RoleMetric, TierSummary
 
 
 def _int(value: str) -> int | None:

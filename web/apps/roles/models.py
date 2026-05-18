@@ -2,7 +2,6 @@ from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
 
-
 TIER_FORTRESS = "fortress"
 TIER_SAFE = "safe"
 TIER_STABLE = "stable"

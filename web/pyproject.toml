@@ -16,3 +16,34 @@ dependencies = [
     "redis>=5.2",
     "django-celery-beat>=2.7",
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-django>=4.8",
+    "ruff>=0.5",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+extend-exclude = ["migrations", "staticfiles"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "W",   # pycodestyle warnings
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line length handled by formatter
+    "B008",  # function calls in arg defaults (Django uses this everywhere)
+]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "aiproof.settings"
+python_files = ["test_*.py", "*_test.py"]
+addopts = "-q --tb=short"

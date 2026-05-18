@@ -132,7 +132,7 @@ is verified live before the next starts.
 
 ---
 
-## Phase 8 — Engineering quality   `[ ]`
+## Phase 8 — Engineering quality   `[x]`
 
 **Goal:** Build/test/lint pipeline so the repo is contributor-ready.
 
@@ -196,7 +196,7 @@ is verified live before the next starts.
 | 4 — Methodology / Limitations / Policy | 2026-05-17 | 2026-05-17 | eb8b073 | METHODOLOGY.md gains an 'Extended scoring (2026 update)' section with all 8 formulas + confidence math + narrative templates. New /limitations/ and /data-policy/ pages. Footer links. |
 | 5 — SEO | 2026-05-17 | 2026-05-17 | ce3f735 | Sitemap + robots + per-page meta + OG/Twitter cards + Article + Organization JSON-LD + canonical URLs. Site domain set via data migration. |
 | 6 — Homepage v2 | 2026-05-17 | 2026-05-17 | cbcf186 | Career-intelligence repositioning, 4-stat strip, role-family cards, sources-at-a-glance grid, keep tiers/top10/bottom10/filter bar. |
-| 7 — Filter / search upgrade | 2026-05-17 | 2026-05-17 | pending | Seniority + role-family filters, search broadened to include description, 13 sort options (overall + 8 sub-scores + salary + confidence), 100/page pagination preserves all query params. |
-| 8 — Engineering quality | — | — | — | — |
+| 7 — Filter / search upgrade | 2026-05-17 | 2026-05-17 | 1160a2f | Seniority + role-family filters, search broadened to include description, 13 sort options (overall + 8 sub-scores + salary + confidence), 100/page pagination preserves all query params. |
+| 8 — Engineering quality | 2026-05-17 | 2026-05-17 | pending | ruff + pytest configured; 45 tests (scoring + smoke); validate_data integrity check; CI gate runs on every push/PR before deploy; README rewritten with full dev loop + refresh instructions. |
 | 9 — Crawler coverage v2 | — | — | — | — |
 | Final QA | — | — | — | — |

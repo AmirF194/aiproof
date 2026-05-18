@@ -5,10 +5,9 @@ from django.db.models import Avg, Count
 from django.http import FileResponse, Http404
 from django.shortcuts import render
 
-from apps.roles.models import Category, Role, TIER_ORDER, TIER_LABELS, TIER_BLURBS
+from apps.roles.models import TIER_BLURBS, TIER_LABELS, TIER_ORDER, Category, Role
 
 from .sources import SOURCES
-
 
 # Allowlist of CSVs that the public can download from the processed data dir.
 _DOWNLOADABLE = {
@@ -24,6 +23,7 @@ def home(request):
     from django.db.models import Max, Sum
 
     from apps.roles.models import RoleMetric
+
     from .sources import SOURCES
 
     tier_rows = (

@@ -4,7 +4,7 @@ from __future__ import annotations
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 
-from apps.roles.models import Category, Role, TIER_ORDER
+from apps.roles.models import TIER_ORDER, Category, Role
 
 
 class StaticSitemap(Sitemap):

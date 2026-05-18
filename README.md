@@ -1,6 +1,70 @@
-# Which Tech Jobs Are Safe? A 2026–2035 Market Analysis
+# AIProof — career-intelligence platform for the 2026–2035 AI shake-out
 
-A structured comparison of **1,000 distinct, posting-real roles** across modern software organizations, scored on demand, automation resistance, skill depth, and strategic importance. Designed for real career decisions — choosing a first specialization, mid-career pivots, hiring planning. Every entry corresponds to a job title that posts as its own listing on Indeed, LinkedIn, or Levels.fyi today.
+**Live site:** <https://aiproof.fastinfer.org/>
+
+AIProof is a research project by **[FastInfer Inc.](https://fastinfer.org)** that ranks **1,000 technology roles** by their expected resilience to AI automation over **2026–2035**. Every role is scored across **8 dimensions** — four base (demand, automation resistance, skill depth, strategic importance) and four derived (human judgment, stakeholder interaction, AI augmentation potential, regulatory relevance). Live posting signals from 5 public job feeds refresh weekly.
+
+The site presents the ranking, individual role profiles with score breakdowns, side-by-side comparisons, full methodology, source list, and limitations. The same data is available as downloadable CSVs.
+
+## Quick links
+
+- [Methodology](METHODOLOGY.md) — scoring rubric, weights, the 8 dimensions, confidence math
+- [Insights](INSIGHTS.md) — deep research synthesis with cited claims
+- [Report](REPORT.md) — top + bottom of the ranking, every category
+- [PLAN.md](PLAN.md) — phased roadmap and execution log for the 2026 product overhaul
+- Live: `/sources/`, `/limitations/`, `/data-policy/`, `/compare/`
+
+---
+
+## Running the web app locally
+
+```bash
+docker compose up -d --build
+docker compose exec api python manage.py migrate
+docker compose exec api python manage.py load_roles --wipe
+docker compose exec worker python manage.py refresh_postings   # optional — pulls live data
+```
+
+Open <http://localhost:9012/>. Five containers run: API (gunicorn), Celery worker, Celery beat, Postgres, Redis.
+
+### Dev loop
+
+```bash
+# Inside the api container
+docker compose exec -w /app api ruff check .
+docker compose exec -w /app api python -m pytest -q
+docker compose exec api python manage.py validate_data
+docker compose exec api python manage.py check
+```
+
+The same checks run in CI on every push and pull request (see [.github/workflows/deploy.yml](.github/workflows/deploy.yml)) — deploys are gated behind them.
+
+### Refreshing the dataset
+
+Live posting feeds are crawled weekly by Celery beat. To force a refresh manually:
+
+```bash
+docker compose exec worker python manage.py refresh_postings
+```
+
+That runs all 5 crawlers (HN Algolia, Greenhouse public boards, Lever public boards, The Muse, Remotive), aggregates the raw CSVs into per-role metrics, and updates `RoleMetric` rows. See [/data-policy/](https://aiproof.fastinfer.org/data-policy/) for the full feed list, cadence, and ethics.
+
+### Re-deriving scores after a methodology change
+
+```bash
+# Edit web/apps/roles/scoring.py
+docker compose exec api python manage.py load_roles --wipe    # re-derives every role
+docker compose exec api python manage.py validate_data        # confirms formula integrity
+docker compose exec -w /app api python -m pytest -q          # exercises every URL + the scoring formulas
+```
+
+Then commit and push — CI gates the deploy.
+
+---
+
+## Original data analysis (pre-web-app)
+
+What follows is the original analytical project — the dataset, methodology, and per-role scoring that the web app surfaces. The numbers below were the starting calibration set; the web app extends them with 4 derived dimensions and live posting data.
 
 > Scope: senior-IC framing, US/EU markets, USD total comp. Sources are directional — BLS 2024–34 projections, ISC2 2025 Cybersecurity Workforce Study, Stack Overflow Developer Survey 2025 (~49K respondents), Levels.fyi (April 2026), Gartner platform-engineering and AI-agent forecasts, McKinsey 2025 generative AI workforce study, Pragmatic Engineer 2026 industry report, Challenger / Gray & Christmas Q1 2026 layoff data. Full source list: [METHODOLOGY.md](METHODOLOGY.md). Deep research synthesis with citations per claim: [INSIGHTS.md](INSIGHTS.md).
 

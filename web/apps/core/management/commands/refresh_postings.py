@@ -22,7 +22,6 @@ from django.conf import settings
 from django.core.management import call_command
 from django.core.management.base import BaseCommand
 
-
 CRAWLERS = (
     "hn_who_is_hiring",
     "greenhouse_ats",

@@ -3,17 +3,16 @@ from django.db.models import Q
 from django.http import Http404
 from django.shortcuts import get_object_or_404, render
 
+from . import scoring
 from .models import (
-    Category,
-    Role,
     TIER_BLURBS,
     TIER_COLORS,
     TIER_LABELS,
     TIER_ORDER,
     TREND_LABELS,
+    Category,
+    Role,
 )
-from . import scoring
-
 
 # label, db field expression for ordering. Sub-score sorts are descending.
 SORT_FIELDS: dict[str, tuple[str, str]] = {
@@ -178,7 +177,7 @@ def _adjacent_roles(role: Role, n: int = 3) -> list[Role]:
 
     def dist_sq(other: Role) -> int:
         ov = _score_vector(other)
-        return sum((a - b) ** 2 for a, b in zip(target, ov))
+        return sum((a - b) ** 2 for a, b in zip(target, ov, strict=True))
 
     return sorted(candidates, key=dist_sq)[:n]
 

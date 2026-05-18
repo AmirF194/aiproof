@@ -9,7 +9,6 @@ import markdown
 from django.conf import settings
 from django.utils.text import slugify
 
-
 MD_EXTENSIONS = [
     "extra",
     "tables",

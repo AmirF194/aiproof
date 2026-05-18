@@ -13,7 +13,6 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
-
 # --- Category coefficients ------------------------------------------------
 # Per-category multipliers for the four derived dimensions. Set conservatively
 # so the median role sits near 5/10 on each dimension.
@@ -69,13 +68,13 @@ _FAMILY_PATTERNS: list[tuple[str, re.Pattern]] = [
     ("Data",            re.compile(r"\b(Data\s+(Engineer|Scientist|Analyst)|Analytics|BI\b|Business\s+Intelligence|ETL)\b", re.IGNORECASE)),
     ("Security",        re.compile(r"\b(Security|SecOps|AppSec|GRC|Penetration|Forensic|SIEM|Compliance)\b", re.IGNORECASE)),
     ("Backend",         re.compile(r"\b(Backend|Server|API|Database|Distributed|Systems)\b", re.IGNORECASE)),
-    ("Frontend",        re.compile(r"\b(Frontend|Front-end|UI\b|UX|React|Web\s+Developer)\b", re.IGNORECASE)),
+    ("Frontend",        re.compile(r"\b(Frontend|Front-end|UI\s+Engineer|React|Web\s+Developer)\b", re.IGNORECASE)),
     ("Mobile",          re.compile(r"\b(Mobile|iOS|Android|Flutter|React\s+Native)\b", re.IGNORECASE)),
     ("DevOps & SRE",    re.compile(r"\b(DevOps|SRE|Site\s+Reliability|Platform\s+Engineer|Infrastructure)\b", re.IGNORECASE)),
     ("Cloud",           re.compile(r"\b(Cloud|AWS|GCP|Azure|Kubernetes|Solutions\s+Architect)\b", re.IGNORECASE)),
     ("QA & Testing",    re.compile(r"\b(QA\b|Quality|Test\b|SDET|Automation\s+Engineer)\b", re.IGNORECASE)),
     ("Product",         re.compile(r"\b(Product\s+Manager|PM\b|Product\s+Owner|TPM)\b", re.IGNORECASE)),
-    ("Design",          re.compile(r"\b(Designer|Design\s+|UX\s+Researcher)\b", re.IGNORECASE)),
+    ("Design",          re.compile(r"\b(Designer|UX\s+Researcher|Design\s+Lead|Design\s+Director|UI\s+Designer)\b", re.IGNORECASE)),
     ("Hardware",        re.compile(r"\b(Hardware|Firmware|Embedded|FPGA|ASIC|Robotics|Electrical)\b", re.IGNORECASE)),
     ("Game",            re.compile(r"\b(Game\s+|Unreal|Unity|3D\s+|Graphics)\b", re.IGNORECASE)),
     ("Blockchain",      re.compile(r"\b(Blockchain|Crypto|Web3|Smart\s+Contract|Solidity)\b", re.IGNORECASE)),

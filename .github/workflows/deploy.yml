@@ -3,11 +3,46 @@ name: CI/CD
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
+  check:
+    name: Lint + tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dev dependencies
+        working-directory: web
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-django ruff
+
+      - name: ruff check
+        working-directory: web
+        run: ruff check .
+
+      - name: pytest
+        working-directory: web
+        env:
+          DJANGO_SECRET_KEY: ci-only-test-secret
+          DJANGO_DEBUG: "True"
+          DJANGO_ALLOWED_HOSTS: "*"
+          DATABASE_URL: "sqlite:///ci.sqlite3"
+        run: pytest -q
+
   deploy:
     name: Deploy to production
+    needs: check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +64,8 @@ jobs:
             docker compose build
             echo "=== Restarting services ==="
             docker compose up -d --force-recreate --remove-orphans
+            echo "=== Validating data ==="
+            docker exec aiproof-api python manage.py validate_data || echo "validate_data warned (continuing)"
             echo "=== Cleaning up old images ==="
             docker image prune -f
             echo "=== Deployment successful ==="
