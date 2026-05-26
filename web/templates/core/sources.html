@@ -7,8 +7,7 @@
   <p class="mt-4 text-slate-600 max-w-2xl leading-relaxed">
     Every score on this site is built from {{ n_sources }} primary sources, listed below with URL,
     access type, licence, the axes they feed, and last refresh date. Live crawlers refresh the rolling
-    sources weekly; annual reports refresh on publication. Methodology is in
-    <a href="{% url 'reports:methodology' %}" class="text-sky-700 underline underline-offset-2 hover:text-sky-900">/report/methodology</a>.
+    sources weekly; annual reports refresh on publication.
   </p>
 
   {% for label, sources in groups.items %}

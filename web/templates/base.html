@@ -78,10 +78,7 @@
       <nav class="flex items-center gap-1 text-sm">
         <a href="{% url 'roles:ranking' %}" class="px-3 py-1.5 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100">Ranking</a>
         <a href="{% url 'roles:category_index' %}" class="px-3 py-1.5 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100">Categories</a>
-        <a href="{% url 'core:compare' %}" class="px-3 py-1.5 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 hidden sm:inline">Compare</a>
-        <a href="{% url 'reports:report' %}" class="px-3 py-1.5 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100">Report</a>
         <a href="{% url 'reports:insights' %}" class="px-3 py-1.5 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 hidden sm:inline">Insights</a>
-        <a href="{% url 'reports:methodology' %}" class="px-3 py-1.5 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 hidden md:inline">Methodology</a>
         <a href="{% url 'core:sources' %}" class="px-3 py-1.5 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 hidden md:inline">Sources</a>
       </nav>
     </div>
@@ -114,9 +111,7 @@
         <ul class="space-y-1.5 text-slate-600">
           <li><a href="{% url 'roles:ranking' %}" class="hover:text-slate-900">Full ranking</a></li>
           <li><a href="{% url 'roles:category_index' %}" class="hover:text-slate-900">Categories</a></li>
-          <li><a href="{% url 'reports:report' %}" class="hover:text-slate-900">Report</a></li>
           <li><a href="{% url 'reports:insights' %}" class="hover:text-slate-900">Insights</a></li>
-          <li><a href="{% url 'reports:methodology' %}" class="hover:text-slate-900">Methodology</a></li>
         </ul>
       </div>
       <div>
