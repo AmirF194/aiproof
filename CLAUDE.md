@@ -10,7 +10,7 @@ Project memory for future Claude sessions on this repo. Keep this file accurate 
 
 - **Live:** https://aiproof.fastinfer.org/
 - **GitHub:** https://github.com/FastInfer/aiproof
-- **Server:** production VPS, SSH host alias `<deploy-host>`, code at `/opt/aiproof`
+- **Server:** production VPS, deployed over SSH; app code at `/opt/aiproof`
 - **Phased roadmap + execution log:** [PLAN.md](PLAN.md)
 
 ---
@@ -134,9 +134,9 @@ All three steps run end-to-end from `manage.py refresh_postings`.
 
 ## SSH access
 
-`ssh <deploy-host>` is configured locally; the host is a production VPS shared with several other FastInfer apps. Repo lives at `/opt/aiproof`. Other apps on the box include other FastInfer apps, etc. — don't conflate.
+The production host is reached over SSH (host alias configured locally as `<deploy-host>`; not committed). The repo lives at `/opt/aiproof` on the box.
 
-When working in CLAUDE Code:
+When working in Claude Code:
 - `ssh <deploy-host> "<command>"` works for one-off commands
 - For long-running container operations use `docker exec aiproof-{api,worker,beat}` from inside an SSH session
 
