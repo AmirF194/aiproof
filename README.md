@@ -74,6 +74,12 @@ Data distinguishes real sources (BLS, ISC2, Levels.fyi, Stack Overflow, Gartner,
 
 This is a frame for thinking, not a forecast. Full detail on the [`/limitations/`](https://aiproof.fastinfer.org/limitations/) page.
 
+## Contributing
+
+Bug fixes, data/source corrections, and methodology improvements are welcome. Start with
+[CONTRIBUTING.md](CONTRIBUTING.md) — it covers local setup, the CI gates, and the hard rules
+(deterministic scoring, public sources only) that keep the project defensible.
+
 ## License
 
 [MIT](LICENSE) © FastInfer Inc.

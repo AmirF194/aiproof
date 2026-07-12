@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Live site
+    url: https://aiproof.fastinfer.org/
+    about: Browse the ranking, per-role profiles, methodology, sources, and limitations.
+  - name: Methodology & limitations
+    url: https://aiproof.fastinfer.org/limitations/
+    about: How scores are derived and what the analysis does and doesn't claim.
