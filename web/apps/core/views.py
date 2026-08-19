@@ -178,12 +178,24 @@ def compare(request):
 
 
 def limitations(request):
+    from apps.roles.models import RoleMetric
+
+    # Coverage is quoted on the page, so read it from the database rather than
+    # hard-coding a number that goes stale as the crawlers pick up more roles.
+    total_roles = Role.objects.count()
+    roles_with_live_postings = RoleMetric.objects.filter(
+        postings_2026_current__gt=0
+    ).count()
+
     return render(
         request,
         "core/limitations.html",
         {
             "page_title": "Limitations — what AIProof is and isn't · AIProof",
             "page_description": "AIProof scores are calibrated estimates, not forecasts. Read the seven limitations — measurement vs. estimate, labour-market drift, AI capability drift, title noise, geographic and seniority bias, and what the score is not.",
+            "total_roles": total_roles,
+            "roles_with_live_postings": roles_with_live_postings,
+            "roles_baseline_only": total_roles - roles_with_live_postings,
         },
     )
 

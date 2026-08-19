@@ -27,3 +27,8 @@ data/raw/bls_oews_live.json
 data/raw/onet_summaries.json
 data/raw/annual_snapshots_status.json
 data/processed/role_postings_live.csv
+
+# Local agent notes. This file is the un-scrubbed twin of CLAUDE.md: it names the
+# SSH host alias, the hosting provider, and the sibling apps on the same box, all
+# of which were deliberately removed from the public repo in c4e994a. Keep it local.
+AGENTS.md
