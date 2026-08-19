@@ -107,3 +107,20 @@ def test_filter_seniority_and_family(client, base_data):
     body = r.content.decode()
     assert "QA Manual" in body
     assert "Solutions Architect" not in body
+
+
+def test_limitations_coverage_is_computed_not_hardcoded(client, base_data):
+    """The coverage figure on /limitations/ must come from the database.
+
+    It was hard-coded at "141 of 1,000" for months while the crawlers grew to
+    cover far more roles, so the page understated our own coverage by ~2x.
+    """
+    response = client.get(reverse("core:limitations"))
+    assert response.status_code == 200
+    # The template wraps this sentence across several source lines.
+    body = " ".join(response.content.decode().split())
+
+    # base_data has 2 roles, exactly one of which carries a live posting count.
+    assert "1 of 2 roles have a live posting count" in body
+    assert "The other 1 use the calibrated baseline" in body
+    assert "141" not in body
