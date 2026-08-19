@@ -1,11 +1,14 @@
-Django>=5.1,<5.2
-psycopg[binary]>=3.2
-gunicorn>=23.0
-whitenoise>=6.8
-django-environ>=0.11
-markdown>=3.7
-pymdown-extensions>=10.12
-Pygments>=2.18
-celery>=5.4
-redis>=5.2
-django-celery-beat>=2.7
+# Django 5.2 is the LTS line: security support until April 2028.
+# The upper bound keeps us on that line so patch releases land automatically.
+# Do not remove the bound without picking the next LTS (6.2, April 2027).
+Django>=5.2,<6.0
+psycopg[binary]>=3.3
+gunicorn>=26.0
+whitenoise>=6.12
+django-environ>=0.14
+markdown>=3.10
+pymdown-extensions>=11.0
+Pygments>=2.20
+celery>=5.6
+redis>=8.0
+django-celery-beat>=2.9

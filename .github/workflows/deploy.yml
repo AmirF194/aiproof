@@ -12,19 +12,18 @@ jobs:
     name: Lint + tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
+          python-version: "3.13"
           cache: pip
 
       - name: Install dev dependencies
         working-directory: web
         run: |
           pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest pytest-django ruff
+          pip install -r requirements-dev.txt
 
       - name: ruff check
         working-directory: web
@@ -46,10 +45,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Deploy to production VPS
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1.2.5
         with:
           host: ${{ secrets.HETZNER_SSH_IP }}
           username: ${{ secrets.HETZNER_SSH_USERNAME }}
