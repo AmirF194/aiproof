@@ -53,6 +53,7 @@ Touch these and the consequences ripple — be careful, run `validate_data` afte
 - [data/roles.csv](data/roles.csv) — canonical 1,000+ role roster with the 4 base axes.
 - [docs/role_directory.md](docs/role_directory.md) — one-line description for every role (loaded into `Role.notes` by `load_roles`).
 - [web/apps/core/sources.py](web/apps/core/sources.py) — registry of every data feed we cite on `/sources/`.
+- [web/apps/core/management/commands/refresh_postings.py](web/apps/core/management/commands/refresh_postings.py): the `CRAWLERS` tuple is the canonical list of what runs each week. Count sources from here, never from memory.
 
 ---
 
@@ -101,9 +102,12 @@ docker compose exec api python manage.py check
                             │
                             ▼
   ┌──────────────────────────────────────────────┐
-  │ scripts/data_collection/                     │  5 public-API crawlers
-  │   hn_who_is_hiring · greenhouse_ats · lever  │  → data/raw/*.csv
-  │   themuse_api · remotive_api                 │
+  │ scripts/data_collection/                     │  16 sources per run
+  │   13 job feeds: HN, Greenhouse, Lever,       │  → data/raw/*.csv
+  │   Ashby, SmartRecruiters, TheMuse,           │
+  │   Remotive, WeWorkRemotely, WorkingNomads,   │
+  │   Canada Job Bank, USAJOBS, Adzuna, Reed     │
+  │   3 reference: BLS OEWS, O*NET, annual       │
   └─────────────────────┬────────────────────────┘
                         ▼
   ┌──────────────────────────────────────────────┐
@@ -127,6 +131,8 @@ All three steps run end-to-end from `manage.py refresh_postings`.
 - **Data and scripts directories are mounted into the api/worker containers** — `./data` as RW (worker writes crawler output) and `./scripts:/scripts:ro` + `./docs:/docs:ro` so the crawler scripts and role_directory.md are reachable from within the container.
 - **Local-file links in markdown reports get rewritten** to real URLs by [web/apps/reports/services.py:_rewrite_internal_links](web/apps/reports/services.py). When adding a new local-path pattern (e.g. linking to a new CSV), extend `_LINK_REWRITES`. Otherwise it'll render as a broken raw filename.
 - **`DJANGO_LOAD_ROLES_ON_START` defaults to 0 on prod.** Don't flip this to 1 unless you want a wipe-and-reload on every container restart.
+- **Django is pinned to the 5.2 LTS line** (`>=5.2,<6.0` in [web/requirements.txt](web/requirements.txt)), security-supported until April 2028. The project sat on 5.1 for 8 months after that series went unsupported on 2025-12-03, because the pin was `<5.2`. Everything else floats to latest, so Django is the one dependency that needs a calendar reminder. Next LTS is 6.2 (April 2027).
+- **Numbers quoted in page copy must be computed in the view**, not typed into the template. `/limitations/` hard-coded its coverage figure and understated it by ~2x for months. See `apps/core/views.py:limitations` and the test that guards it.
 - **Per-page titles come from `page_title` / `page_description` context vars**, not from per-template `{% block title %}`. Pass them from the view.
 - **`utf` test `DATABASE_URL`** in CI uses sqlite via env var; pytest needs `db` fixture (covered by pytest-django). The smoke tests don't depend on the 1,000-role roster; they use minimal fixtures.
 
@@ -146,8 +152,13 @@ When working in Claude Code:
 
 See PLAN.md and the live [`/limitations/`](https://aiproof.fastinfer.org/limitations/) page. Headlines:
 
-- Live coverage is ~153 / 1,000 roles (most C-suite / niche roles aren't posted publicly to the boards we crawl).
-- BLS public-data API and O\*NET live crawlers need free API keys — currently we use cached snapshots and document them on `/sources/`.
+- Live coverage is 313 / 1,008 roles as of 2026-08-18. Most C-suite and niche roles aren't posted
+  publicly to the boards we crawl. A role keeps its last matched count until a later crawl matches it
+  again, so a single weekly run refreshes a subset (225 roles on 2026-08-16). The `/limitations/` page
+  computes these numbers from the DB, so don't hard-code them anywhere.
+- BLS OEWS and O\*NET now run live (keys are set on prod), but they return few rows per run: 36 and 11
+  respectively on 2026-08-16. Both skip gracefully when their key is missing, which is what happens on
+  a fresh local checkout.
 - YoY % only comes from HN (the only feed exposing posting dates).
 - Narrative fields are deterministic templates, not researched per-role prose — disclosed in methodology + limitations.
 

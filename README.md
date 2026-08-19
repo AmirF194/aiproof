@@ -2,7 +2,7 @@
 
 **Live:** <https://aiproof.fastinfer.org/>
 
-AIProof is a research project by **[FastInfer Inc.](https://fastinfer.org)** that ranks **1,000+ technology roles** by their expected resilience to AI automation over **2026–2035**. Each role is scored across **8 dimensions** — four base (demand, automation resistance, skill depth, strategic importance) and four derived (human judgment, stakeholder interaction, AI augmentation potential, regulatory relevance). Live posting signals from 5 public job feeds refresh weekly.
+AIProof is a research project by **[FastInfer Inc.](https://fastinfer.org)** that ranks **1,000+ technology roles** by their expected resilience to AI automation over **2026–2035**. Each role is scored across **8 dimensions** — four base (demand, automation resistance, skill depth, strategic importance) and four derived (human judgment, stakeholder interaction, AI augmentation potential, regulatory relevance). Live posting signals from 13 public job feeds refresh weekly.
 
 The site presents the full ranking, per-role profiles with score breakdowns, side-by-side comparisons, methodology, sources, and limitations. All data is downloadable as CSV.
 
