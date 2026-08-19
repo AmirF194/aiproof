@@ -124,3 +124,48 @@ def test_limitations_coverage_is_computed_not_hardcoded(client, base_data):
     assert "1 of 2 roles have a live posting count" in body
     assert "The other 1 use the calibrated baseline" in body
     assert "141" not in body
+
+
+def test_home_last_refreshed_tracks_the_crawl_not_the_roster_load(client, base_data):
+    """"Last refreshed" must report when live metrics were written.
+
+    It used to read Role.last_updated, which only moves when load_roles runs.
+    The homepage therefore advertised 2026-05-18 for three months while the
+    weekly crawl kept updating RoleMetric rows underneath it.
+    """
+    import datetime as dt
+
+    from apps.roles.models import Role, RoleMetric
+
+    # .update() bypasses auto_now, so the roster clock can be forced backwards.
+    Role.objects.update(last_updated=dt.datetime(2020, 1, 1, tzinfo=dt.UTC))
+    metric_written_at = RoleMetric.objects.get().updated_at
+    assert metric_written_at is not None
+
+    body = client.get(reverse("core:home")).content.decode()
+    assert metric_written_at.strftime("%Y-%m-%d") in body
+    assert "2020-01-01" not in body
+
+
+def test_home_falls_back_to_roster_clock_when_no_metric_is_timestamped(client, base_data):
+    """Between deploying updated_at and the next crawl, no metric has a timestamp."""
+    import datetime as dt
+
+    from apps.roles.models import Role, RoleMetric
+
+    RoleMetric.objects.update(updated_at=None)
+    Role.objects.update(last_updated=dt.datetime(2020, 1, 1, tzinfo=dt.UTC))
+
+    body = client.get(reverse("core:home")).content.decode()
+    assert "2020-01-01" in body
+
+
+def test_home_feed_count_comes_from_the_crawler_registry(client, base_data):
+    """The hero strip said "5 public feeds" long after the crawl grew to 13."""
+    from apps.core.management.commands.refresh_postings import CRAWLERS, JOB_FEEDS
+
+    body = " ".join(client.get(reverse("core:home")).content.decode().split())
+    assert f"{len(JOB_FEEDS)} public feeds" in body
+    assert "5 public feeds" not in body
+    # Reference feeds are not job boards and must not inflate the count.
+    assert len(JOB_FEEDS) < len(CRAWLERS)
