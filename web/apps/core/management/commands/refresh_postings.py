@@ -22,7 +22,9 @@ from django.conf import settings
 from django.core.management import call_command
 from django.core.management.base import BaseCommand
 
-CRAWLERS = (
+# Feeds that yield individual job postings. Site copy quotes this count, so
+# read len(JOB_FEEDS) rather than typing a number into a template.
+JOB_FEEDS = (
     # --- Tier 1 — free, no auth (always runs) ---
     "hn_who_is_hiring",
     "greenhouse_ats",
@@ -39,11 +41,18 @@ CRAWLERS = (
     "usajobs_api",
     "adzuna_api",
     "reed_uk_api",
+)
+
+# Reference data rather than postings: wage levels, occupation summaries, and
+# the annual-report poller. These do not contribute to posting counts.
+REFERENCE_SOURCES = (
     "bls_oews_api",
     "onet_api",
     # --- Tier 5 — annual snapshot poller (status check only) ---
     "annual_snapshots",
 )
+
+CRAWLERS = JOB_FEEDS + REFERENCE_SOURCES
 
 
 class Command(BaseCommand):

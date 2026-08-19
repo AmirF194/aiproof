@@ -5,6 +5,7 @@ from django.db.models import Avg, Count
 from django.http import FileResponse, Http404
 from django.shortcuts import render
 
+from apps.core.management.commands.refresh_postings import JOB_FEEDS
 from apps.roles.models import TIER_BLURBS, TIER_LABELS, TIER_ORDER, Category, Role
 
 from .sources import SOURCES
@@ -54,7 +55,17 @@ def home(request):
         RoleMetric.objects.aggregate(s=Sum("postings_2026_current"))["s"] or 0
     )
     n_live_roles = RoleMetric.objects.filter(postings_2026_current__gt=0).count()
-    last_updated = Role.objects.aggregate(m=Max("last_updated"))["m"]
+
+    # "Last refreshed" means the last time the crawl wrote live metrics.
+    # Role.last_updated is the wrong clock: it moves when load_roles runs, so the
+    # homepage claimed 2026-05-18 while the crawl was running every Monday.
+    # Fall back to it only while no metric row carries a timestamp yet, which is
+    # the window between deploying the new field and the next refresh.
+    last_updated = (
+        RoleMetric.objects.aggregate(m=Max("updated_at"))["m"]
+        or Role.objects.aggregate(m=Max("last_updated"))["m"]
+    )
+    n_job_feeds = len(JOB_FEEDS)
 
     # --- Role-family aggregates ---
     family_rows = (
@@ -80,6 +91,7 @@ def home(request):
             "categories": categories,
             "live_postings_total": live_postings_total,
             "n_live_roles": n_live_roles,
+            "n_job_feeds": n_job_feeds,
             "n_dimensions": 8,
             "last_updated": last_updated,
             "role_families": role_families,

@@ -182,6 +182,10 @@ class RoleMetric(models.Model):
     ai_mention_delta_pp = models.FloatField(null=True, blank=True)
     copilot_mention_pct_2026 = models.FloatField(null=True, blank=True)
     trend_direction = models.CharField(max_length=40, blank=True)
+    # Set every time update_live_metrics writes this row, which is the only
+    # honest answer to "when was the live data last refreshed?". Role.last_updated
+    # cannot answer it: that moves when load_roles runs, not when the crawl does.
+    updated_at = models.DateTimeField(auto_now=True, null=True)
 
     def __str__(self) -> str:
         return f"metrics for {self.role.role}"
